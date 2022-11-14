@@ -118,6 +118,36 @@ Size: 21291
 SHA256sum: 60b7e0f487c5ad5b4678b752785a8d19f67b6771261a2fb5adedc33385436a45
 Description:  Disk Manager interface for LuCI
 
+Package: luci-app-docker
+Version: 1-12
+Depends: libc, dockerd, docker, e2fsprogs, fdisk
+Source: feeds/luci/applications/luci-app-docker
+SourceName: luci-app-docker
+Section: luci
+SourceDateEpoch: 1665936775
+Architecture: all
+Installed-Size: 658928
+Filename: luci-app-docker_1-12_all.ipk
+Size: 659134
+SHA256sum: ec47d999ed088f035ddbdefc5c1ec13616ead4ea07a274faeae95096a105048c
+Description:  Luci for Docker-CE
+
+Package: luci-app-dockerman
+Version: v0.5.25-1
+Depends: libc, luci-lib-docker, luci-lib-ip, docker, dockerd, ttyd
+Source: feeds/luci/applications/luci-app-dockerman
+SourceName: luci-app-dockerman
+License: AGPL-3.0
+Section: luci
+SourceDateEpoch: 1665936775
+Maintainer: lisaac <lisaac.cn@gmail.com>
+Architecture: all
+Installed-Size: 52825
+Filename: luci-app-dockerman_v0.5.25-1_all.ipk
+Size: 53759
+SHA256sum: b236d15cbf29ae9eb2a3585e4bcf6981527cca14028293ac06d961a784326405
+Description:  Docker Manager interface for LuCI
+
 Package: luci-app-filetransfer
 Version: 1-2
 Depends: libc, luci-lib-fs
@@ -718,6 +748,36 @@ Size: 3093
 SHA256sum: b0eafdb3650b3f03a76844e18dcfc0d6afd5f4c95caca52f8adb06e204da44ed
 Description:  Translation for luci-app-diskman - 简体中文 (Simplified Chinese)
 
+Package: luci-i18n-docker-zh-cn
+Version: 1-12
+Depends: libc, luci-app-docker
+Source: feeds/luci/applications/luci-app-docker
+SourceName: luci-i18n-docker-zh-cn
+Section: luci
+SourceDateEpoch: 1665936775
+Architecture: all
+Installed-Size: 914
+Filename: luci-i18n-docker-zh-cn_1-12_all.ipk
+Size: 1743
+SHA256sum: d5ce0ff87dbd8cde5a492db66d45dd3943dccd924d568ec17cf453f9d35cd6a5
+Description:  Translation for luci-app-docker - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-dockerman-zh-cn
+Version: v0.5.25-1
+Depends: libc, luci-app-dockerman
+Source: feeds/luci/applications/luci-app-dockerman
+SourceName: luci-i18n-dockerman-zh-cn
+License: AGPL-3.0
+Section: luci
+SourceDateEpoch: 1665936775
+Maintainer: lisaac <lisaac.cn@gmail.com>
+Architecture: all
+Installed-Size: 5786
+Filename: luci-i18n-dockerman-zh-cn_v0.5.25-1_all.ipk
+Size: 6627
+SHA256sum: bdfa2a794248255caad5d358cfba2c0f593277bbd8e9a3ebf8597d9846bab048
+Description:  Translation for luci-app-dockerman - 简体中文 (Simplified Chinese)
+
 Package: luci-i18n-filetransfer-zh-cn
 Version: 1-2
 Depends: libc, luci-app-filetransfer
@@ -1123,6 +1183,22 @@ Filename: luci-i18n-zerotier-zh-cn_1.0-20_all.ipk
 Size: 1657
 SHA256sum: 96f89d1c642b65e2794cfbfe960a5dbdf83510986740f82710458f0c54fcfb56
 Description:  Translation for luci-app-zerotier - 简体中文 (Simplified Chinese)
+
+Package: luci-lib-docker
+Version: v0.3.4-1
+Depends: libc, luci-lib-jsonc
+Source: feeds/luci/collections/luci-lib-docker
+SourceName: luci-lib-docker
+License: AGPL-3.0
+Section: luci
+SourceDateEpoch: 1665936775
+Maintainer: lisaac <lisaac.cn@gmail.com> Florian Eckert <fe@dev.tdt.de>
+Architecture: all
+Installed-Size: 3777
+Filename: luci-lib-docker_v0.3.4-1_all.ipk
+Size: 4547
+SHA256sum: 0746e52ae02c56392dcf446a8323b2061a02298947581c0aca93b96c45f5e675
+Description:  Docker Engine API for LuCI
 
 Package: luci-lib-fs
 Version: 1.0-1

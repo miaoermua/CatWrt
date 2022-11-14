@@ -310,6 +310,19 @@ SHA256sum: 63745bdee747681131792e039c56284c26095c3f8941bd50f3c8596bc7591459
 Description:  ethtool is a small utility for examining and tuning your ethernet-based
  network interface
 
+Package: fdisk
+Version: 2.38-1
+Depends: libc, libblkid1, libsmartcols1, libfdisk1, libncursesw6
+License: GPL-2.0-only
+Section: utils
+CPE-ID: cpe:/a:kernel:util-linux
+Architecture: x86_64
+Installed-Size: 52879
+Filename: fdisk_2.38-1_x86_64.ipk
+Size: 53753
+SHA256sum: 21e9873939f8c632cdd2321d14d3de2c39cbe8959346d817ed1d170f753746e2
+Description:  a menu-driven program for creation and manipulation of partition tables
+
 Package: firewall
 Version: 2022-02-17-4cd7d4f3-1
 Depends: libc, libubox20211104, libubus20210603, libuci20130104, libip4tc2, libip6tc2, libxtables12, kmod-ipt-core, kmod-ipt-conntrack, kmod-nf-conntrack6, kmod-ipt-nat, iptables-mod-fullconenat

@@ -316,6 +316,38 @@ Description:  Btrfs is a new copy on write filesystem for Linux aimed at impleme
  administration. Initially developed by Oracle, Btrfs is licensed under the
  GPL and open for contribution from anyone.
 
+Package: cgroupfs-mount
+Version: 2020-06-26-05494281-2
+Depends: libc, mount-utils
+Source: feeds/packages/utils/cgroupfs-mount
+SourceName: cgroupfs-mount
+Section: utils
+SourceDateEpoch: 1667842764
+Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
+Architecture: x86_64
+Installed-Size: 1236
+Filename: cgroupfs-mount_2020-06-26-05494281-2_x86_64.ipk
+Size: 2031
+SHA256sum: fe8714621c7a997cf6003469b9a4e409cebca6e88e6c1f8699674d10446bdb57
+Description:  Simple scripts to properly mount the cgroupfs hierarchy, especially structured for Debian packaging
+
+Package: containerd
+Version: 1.6.6-1
+Depends: libc, btrfs-progs, runc
+Source: feeds/packages/utils/containerd
+SourceName: containerd
+License: Apache-2.0
+LicenseFiles: LICENSE
+Section: utils
+SourceDateEpoch: 1667842764
+Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
+Architecture: x86_64
+Installed-Size: 44452346
+Filename: containerd_1.6.6-1_x86_64.ipk
+Size: 44163526
+SHA256sum: cca4e640ac8977f56e618117bfcf60c7426d7d0f1698c62f78a727850921bbda
+Description:  An industry-standard container runtime with an emphasis on simplicity, robustness and portability
+
 Package: coremark
 Version: 2022-07-27-eefc986e-1
 Depends: libc
@@ -530,6 +562,41 @@ SHA256sum: eaf1044a64c34c3e59d128bda42eb6de9faa6e2349c22dd9d5b3d2445bb2ebab
 Description:  A simple DNS proxy server that supports all existing DNS protocols including
  DNS-over-TLS, DNS-over-HTTPS, DNSCrypt, and DNS-over-QUIC.Moreover, it can
  work as a DNS-over-HTTPS, DNS-over-TLS or DNS-over-QUIC server.
+
+Package: docker
+Version: 20.10.17-1
+Depends: libc
+Source: feeds/packages/utils/docker
+SourceName: docker
+License: Apache-2.0
+LicenseFiles: LICENSE
+Section: utils
+SourceDateEpoch: 1667842764
+Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
+Architecture: x86_64
+Installed-Size: 12834214
+Filename: docker_20.10.17-1_x86_64.ipk
+Size: 12763147
+SHA256sum: 535ee4bc632e4f7da54fc90c84475819f52914ed9b6b35f1857431b9da1032dc
+Description:  The CLI used in the Docker CE and Docker EE products.
+
+Package: dockerd
+Version: 20.10.17-1
+Depends: libc, btrfs-progs, ca-certificates, containerd, libdevmapper, libnetwork, tini, libseccomp, iptables-mod-extra, kmod-br-netfilter, kmod-ikconfig, kmod-nf-conntrack-netlink, kmod-nf-ipvs, kmod-nf-nat, kmod-veth
+Source: feeds/packages/utils/dockerd
+SourceName: dockerd
+License: Apache-2.0
+LicenseFiles: LICENSE
+Section: utils
+Require-User: docker:docker
+SourceDateEpoch: 1667842764
+Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
+Architecture: x86_64
+Installed-Size: 16606586
+Filename: dockerd_20.10.17-1_x86_64.ipk
+Size: 16557537
+SHA256sum: e56e60f5a491ed6729cf60cc6431950c062851dccf37a21ce00774a4c90d91f6
+Description:  The Docker CE Engine.
 
 Package: etherwake
 Version: 1.09-5
@@ -924,6 +991,25 @@ Size: 119863
 SHA256sum: bef13c15486443c789d1c3d95d39971bb79731ad54097ba6319172a0c73ff879
 Description:  Simple interprocess messaging system (library)
 
+Package: libdevmapper
+Version: 2.03.16-1
+Depends: libc, kmod-dm, libpthread, libuuid1, librt, libblkid1
+Source: feeds/packages/utils/lvm2
+SourceName: libdevmapper
+License: GPL-2.0 LGPL-2.1
+LicenseFiles: COPYING COPYING.lib
+Section: libs
+SourceDateEpoch: 1667842764
+CPE-ID: cpe:/a:heinz_mauelshagen:lvm2
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Architecture: x86_64
+Installed-Size: 148069
+Filename: libdevmapper_2.03.16-1_x86_64.ipk
+Size: 148983
+SHA256sum: 66319994d856c99bc9bd06ce407ea9a8017a1e0fe62d0819c8965116eb1502b2
+Description:  The device-mapper is a component of the 2.6 linux kernel that supports logical
+ volume management. It is required by LVM2 and EVMS.
+
 Package: libev
 Version: 4.33-1
 Depends: libc
@@ -1270,6 +1356,24 @@ SHA256sum: 8d68f351bff98fa9153afcfc03d3d331c6244f3103f810399eb391b7dad0d209
 Description:  libnetfilter_queue is a userspace library providing a programming
  interface (API) to packets that have been queued by the kernel
  packet filter.
+
+Package: libnetwork
+Version: 2022-06-02-f6ccccb1-1
+Depends: libc
+Source: feeds/packages/utils/libnetwork
+SourceName: libnetwork
+License: Apache-2.0
+LicenseFiles: LICENSE
+Section: utils
+SourceDateEpoch: 1667842764
+Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
+Architecture: x86_64
+Installed-Size: 6983091
+Filename: libnetwork_2022-06-02-f6ccccb1-1_x86_64.ipk
+Size: 6963326
+SHA256sum: 29dcb10b6833f09a1c56e24193a3d2aa6ddacd7f3da9a912f90e1f93fe9d91f3
+Description:  Libnetwork provides a native Go implementation for connecting containers.
+ The goal of libnetwork is to deliver a robust Container Network Model that provides a consistent programming interface and the required network abstractions for applications.
 
 Package: libnghttp2-14
 Version: 1.43.0-1
@@ -2468,6 +2572,23 @@ Description:  Ruby is the interpreted scripting language for quick and easy
  straight-forward, and extensible.
  
 
+Package: runc
+Version: 1.1.2-1
+Depends: libc, libseccomp
+Source: feeds/packages/utils/runc
+SourceName: runc
+License: Apache-2.0
+LicenseFiles: LICENSE
+Section: utils
+SourceDateEpoch: 1667842764
+Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
+Architecture: x86_64
+Installed-Size: 3629335
+Filename: runc_1.1.2-1_x86_64.ipk
+Size: 3607012
+SHA256sum: 705228f1be18cfa7c64b225f975a67a4dbe727f6e64e78ddb9c1c3f98a721b5a
+Description:  runc is a CLI tool for spawning and running containers according to the OCI specification.
+
 Package: samba4-libs
 Version: 4.14.14-1
 Depends: libc, libtirpc, libreadline8, libpopt0, libcap, zlib, libgnutls, libtasn1, libuuid1, libopenssl1.1, libpthread, liburing, attr, libavahi-client
@@ -2982,6 +3103,23 @@ Size: 201863
 SHA256sum: 58756bca84e3683f9c3b076bdfd5feecb0acfbbe62064d67dcbd5910f431640b
 Description:  Tar is a program for packaging a set of files as a
  single archive in tar format.
+
+Package: tini
+Version: 0.19.0-2
+Depends: libc
+Source: feeds/packages/utils/tini
+SourceName: tini
+License: MIT
+LicenseFiles: LICENSE
+Section: utils
+SourceDateEpoch: 1667842764
+Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
+Architecture: x86_64
+Installed-Size: 31338
+Filename: tini_0.19.0-2_x86_64.ipk
+Size: 31948
+SHA256sum: f79c5272ef0f473995012838b11c54f725df3d3d2d94ca87923d2e29b174f72e
+Description:  A tiny but valid init process for containers.
 
 Package: ttyd
 Version: 1.6.3-3

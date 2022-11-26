@@ -896,6 +896,20 @@ Size: 11526
 SHA256sum: 3dbcc106fa5ccc2a66c64786cab31453f70a7e0fbd4c0e8dfc39f483f37ecd96
 Description:  OpenWrt system log implementation
 
+Package: losetup
+Version: 2.38-1
+Depends: libc, libsmartcols1
+License: GPL-2.0-only
+Section: utils
+CPE-ID: cpe:/a:kernel:util-linux
+Architecture: aarch64_generic
+Installed-Size: 42227
+Filename: losetup_2.38-1_aarch64_generic.ipk
+Size: 43160
+SHA256sum: b4f6bdb82a22c499a7e72187dc7d35f727f45f2728edcdf27d8dc1dc536411e2
+Description:  losetup is used to associate loop devices with regular files or block devices,
+ to detach loop devices and to query the status of a loop device
+
 Package: lsblk
 Version: 2.38-1
 Depends: libc, libblkid1, libmount1, libsmartcols1
@@ -932,6 +946,18 @@ Filename: luci-app-adguardhome_git-22.326.44448-03b96b6-1_all.ipk
 Size: 90122
 SHA256sum: cb1cc0b2293f7777631038f67ead7cadaf94794624486e8b9fcb20eb5f1bfc94
 Description:  LuCI support for AdGuardHome
+
+Package: luci-app-amlogic
+Version: 3.1.141-1
+Depends: libc, luci, luci-lib-nixio, block-mount, blkid, parted, dosfstools, e2fsprogs, lsblk, pv, losetup, uuidgen, bash, perl, fdisk
+License: GPL-2.0 License
+Section: luci
+Architecture: all
+Installed-Size: 77075
+Filename: luci-app-amlogic_3.1.141-1_all.ipk
+Size: 78109
+SHA256sum: ec0ecacf1177a7845b198c83ff6b88e32bb6a08bafec1e94b517a67239530d5d
+Description:  LuCI support for Amlogic, Allwinner and Rockchip related boxs
 
 Package: luci-app-argon-config
 Version: 0.9-20220424
@@ -1043,6 +1069,18 @@ Filename: luci-i18n-adguardhome-zh-cn_git-22.326.44448-03b96b6-1_all.ipk
 Size: 3436
 SHA256sum: fc33920ec733ab98434ccbf2e4d3c5abc1624fee5e24644a66efb4c622a0e8df
 Description:  Translation for luci-app-adguardhome - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-amlogic-zh-cn
+Version: 3.1.141-1
+Depends: libc, luci-app-amlogic
+License: GPL-2.0 License
+Section: luci
+Architecture: all
+Installed-Size: 5638
+Filename: luci-i18n-amlogic-zh-cn_3.1.141-1_all.ipk
+Size: 6494
+SHA256sum: 9bb7f1ae80592b71f2139e3ce8900fdd73d99b179b073227c3c2287ebcf04c4b
+Description:  Translation for luci-app-amlogic - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-argon-config-zh-cn
 Version: 0.9-20220424
@@ -1747,6 +1785,22 @@ Filename: usign_2020-05-23-f1f65026-1_aarch64_generic.ipk
 Size: 12578
 SHA256sum: 9d33512d03d40e0b8c179eab9863a2c265dad17b29c4c0eb8634cec99875f594
 Description:  OpenWrt signature verification utility
+
+Package: uuidgen
+Version: 2.38-1
+Depends: libc, libuuid1
+License: GPL-2.0-only
+Section: utils
+CPE-ID: cpe:/a:kernel:util-linux
+Architecture: aarch64_generic
+Installed-Size: 3459
+Filename: uuidgen_2.38-1_aarch64_generic.ipk
+Size: 4359
+SHA256sum: 3b0f6d8d10f18decf76b8d5ff26fb9b71b2a2daa070a7a2dfca883ef9d8b6875
+Description:  The uuidgen program creates (and prints) a new universally unique identifier
+ (UUID) using the libuuid library. The new UUID can reasonably be considered
+ unique among all UUIDs created on the local system, and among UUIDs created on
+ other systems in the past and in the future.
 
 Package: v2ray-plugin
 Version: 5.1.0-1

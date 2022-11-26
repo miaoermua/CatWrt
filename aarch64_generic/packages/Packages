@@ -423,6 +423,19 @@ Size: 15030598
 SHA256sum: 8de55275d5b7e235761e20c98a4b867bc38d9df895b05c8ea433b8f8bfe8b2a7
 Description:  The Docker CE Engine.
 
+Package: dosfstools
+Version: 4.2-1
+Depends: libc
+License: GPL-3.0-or-later
+Section: utils
+CPE-ID: cpe:/a:dosfstools_project:dosfstools
+Architecture: aarch64_generic
+Installed-Size: 70892
+Filename: dosfstools_4.2-1_aarch64_generic.ipk
+Size: 71309
+SHA256sum: 4d179d5365cceca4cfd2d44d6c3e2827eb588de73044854d2ae6aae0150b3498
+Description:  The dosfstools package includes the mkfs.fat and fsck.fat utilities, which respectively make and check MS-DOS FAT filesystems.
+
 Package: etherwake
 Version: 1.09-5
 Depends: libc
@@ -1187,6 +1200,21 @@ Description:  pdnsd, is an IPv6 capable proxy DNS server with permanent caching 
  can't be configured to change that behaviour, to prevent the often
  minute-long hangs (or even crashes) that result from stalled dns queries.
 
+Package: perl
+Version: 5.28.1-7
+Depends: libc
+License: GPL-1.0-or-later Artistic-1.0-Perl
+Section: lang
+CPE-ID: cpe:/a:perl:perl
+Architecture: aarch64_generic
+Installed-Size: 1117478
+Filename: perl_5.28.1-7_aarch64_generic.ipk
+Size: 1106676
+SHA256sum: 94427a406347a1c6649a76628ca9883c17e5fd4571577c657565598ad2e1b625
+Description:  Perl is a stable, cross platform programming language.
+ It is used for mission critical projects in the public and private sectors
+ and is widely used to program web applications of all needs.
+
 Package: proto-bonding
 Version: 2021-04-09-3
 Depends: libc, kmod-bonding
@@ -1198,6 +1226,22 @@ Filename: proto-bonding_2021-04-09-3_all.ipk
 Size: 2637
 SHA256sum: 9a88aac35f4f9ad337e8cb8db26cb713c9998ac210d296896586ba84eec2cdfd
 Description:  This package contains the channel bonding proto handler for netifd
+
+Package: pv
+Version: 1.6.6-1
+Depends: libc
+License: Artistic-2.0
+Section: utils
+Architecture: aarch64_generic
+Installed-Size: 23315
+Filename: pv_1.6.6-1_aarch64_generic.ipk
+Size: 24127
+SHA256sum: 96bfee5a47eea9e39474e6059f05ed4c574e3fbad7c4435041549c8ec21e402e
+Description:  Pipe Viewer is a terminal-based tool for monitoring the progress of data
+ through a pipeline. It can be inserted into any normal pipeline between
+ two processes to give a visual indication of how quickly data is passing
+ through, how long it has taken, how near to completion it is, and an
+ estimate of how long it will be until completion.
 
 Package: qBittorrent-static
 Version: 4.4.5_v2.0.7-1

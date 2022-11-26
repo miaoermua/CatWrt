@@ -56,6 +56,17 @@ Size: 1454
 SHA256sum: dbc6e312b8d6395ca5ffddc63e5c745833b05fd599190d1bfd3e48889b140391
 Description:  A usb autoconfig hotplug script.
 
+Package: autosamba
+Version: 1-13
+Depends: libc, luci-app-samba4, wsdd2
+Section: opt
+Architecture: aarch64_generic
+Installed-Size: 1176
+Filename: autosamba_1-13_aarch64_generic.ipk
+Size: 1907
+SHA256sum: ca84911097fafbac24c104999abc3fb6ce279c5f11d8291e2109c7c5a5ac53d7
+Description:  A hotplug script to config Samba share automatically.
+
 Package: blkid
 Version: 2.38-1
 Depends: libc, libblkid1, libuuid1
@@ -81,8 +92,8 @@ Essential: yes
 Architecture: aarch64_generic
 Installed-Size: 238192
 Filename: busybox_1.35.0-5_aarch64_generic.ipk
-Size: 238586
-SHA256sum: 0b7cc5e22315350dbf54eb4511ceb02a86de8a5afbd72fa0e30a8e69db7ef15b
+Size: 238583
+SHA256sum: 52eed2fe2852679e8c9ed3e4d80f8888b5104190585cc444f39a0e4832b03ef2
 Description:  The Swiss Army Knife of embedded Linux.
  It slices, it dices, it makes Julian Fries.
 
@@ -171,6 +182,19 @@ Size: 2688
 SHA256sum: e584a4c0729c1138b83f8f75fd12a5d0f5afc16220b64aa5bcd5d4db9a8eede3
 Description:  Language Support Packages.
 
+Package: dns2socks
+Version: 2.1-2
+Depends: libc, libpthread
+License: BSD-3-Clause
+Section: net
+Architecture: aarch64_generic
+Installed-Size: 11090
+Filename: dns2socks_2.1-2_aarch64_generic.ipk
+Size: 11881
+SHA256sum: 11701763525996b8863167237dc619a0923a42ff95f0f740479022d2fbc57869
+Description:  This is a command line utility to resolve DNS requests via
+ a SOCKS tunnel like Tor or a HTTP proxy.
+
 Package: dns2tcp
 Version: 1.1.0-2
 Depends: libc
@@ -184,17 +208,17 @@ SHA256sum: 75af7726b09fec881efbc5a8f304f384c8c061f050d4d5951b4b4790b198d483
 Description:  utility to convert dns query from udp to tcp
 
 Package: dnsmasq-full
-Version: 2.86-14
+Version: 2.87-1
 Depends: libc, libubus20210603, kmod-ipt-ipset
 Provides: dnsmasq
 License: GPL-2.0
 Section: net
 CPE-ID: cpe:/a:thekelleys:dnsmasq
 Architecture: aarch64_generic
-Installed-Size: 140623
-Filename: dnsmasq-full_2.86-14_aarch64_generic.ipk
-Size: 141423
-SHA256sum: a2e67a10f39d9faf5d12d14e7f3ad22c3eebb1d8ae5013991457f46d0500bfa4
+Installed-Size: 143681
+Filename: dnsmasq-full_2.87-1_aarch64_generic.ipk
+Size: 144447
+SHA256sum: 0136f0ae8a0b8cd569f968f933d90c01815d4aa079da1b14b6556678d2ff8d68
 Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
  
  This is a fully configurable variant with DHCPv4, DHCPv6, DNSSEC, Authoritative DNS
@@ -266,15 +290,15 @@ SHA256sum: 872f4664158399b0f36ed3d00f5a1f43f01cad77cfd01b799141d549e054651a
 Description:  OpenWrt getrandom system helper
 
 Package: hysteria
-Version: 1.2.2-16
+Version: 1.3.0-18
 Depends: libc, ca-bundle
 License: MIT
 Section: net
 Architecture: aarch64_generic
-Installed-Size: 6145350
-Filename: hysteria_1.2.2-16_aarch64_generic.ipk
-Size: 6127575
-SHA256sum: 0cbb95e0d111f1e7f5489b0a15b5f82f09b7b375cc2468cec8cf0655516dc148
+Installed-Size: 6153573
+Filename: hysteria_1.3.0-18_aarch64_generic.ipk
+Size: 6135596
+SHA256sum: cfdab40096c872ab2ad6c24bd39ff389bf303dfac76ecfcd79f81465950b0c84
 Description:  Hysteria is a feature-packed network utility optimized for networks
  of poor quality (e.g. satellite connections, congested public Wi-Fi,
  connecting from China to servers abroad) powered by a custom version
@@ -318,6 +342,18 @@ Filename: ipset_7.15-1_aarch64_generic.ipk
 Size: 2209
 SHA256sum: ed444d756f4e92f9bc086031272a65c9c094367a8bbd1872dac01946d4099693
 Description:  IPset administration utility
+
+Package: ipt2socks
+Version: 1.1.3-3
+Depends: libc, libpthread
+License: AGPL-3.0
+Section: net
+Architecture: aarch64_generic
+Installed-Size: 26495
+Filename: ipt2socks_1.1.3-3_aarch64_generic.ipk
+Size: 27211
+SHA256sum: 7ced9e01bbd62fa8860d5d1649a24d2852827c1a03e01901937f9156cbba3202
+Description:  Utility for converting iptables (redirect/tproxy) to socks5.
 
 Package: iptables-mod-fullconenat
 Version: 2022-02-13-108a36cb-6
@@ -409,10 +445,10 @@ Depends: libc, libcap
 License: GPL-2.0-only
 Section: libs
 Architecture: aarch64_generic
-Installed-Size: 20817
+Installed-Size: 20823
 Filename: libcap-bin_2.65-1_aarch64_generic.ipk
-Size: 21574
-SHA256sum: cba8e6bb321011e2c9ffd7708c3a14a910f87d83dda0ad1f0a54768a81e9fd6d
+Size: 21569
+SHA256sum: ffd0ebff0bdf662309526fcdf561bdc4bebcbfd96b001832fb63ba7b507c7f34
 Description:  Linux capabilities
  .
  This package contains the libcap utilities.
@@ -454,10 +490,10 @@ Section: libs
 ABIVersion: 1
 CPE-ID: cpe:/a:elfutils_project:elfutils
 Architecture: aarch64_generic
-Installed-Size: 41403
+Installed-Size: 41477
 Filename: libelf1_0.187-1_aarch64_generic.ipk
-Size: 42254
-SHA256sum: 83ef743c694733e8aa2f22e0739c9831e26d8a956e864e9da04d9eec563fb947
+Size: 42308
+SHA256sum: efdfed78249243dfade63384d9f69c0d965ba9f5fdd4f3d030ddb5217cda8ae6
 Description:  ELF manipulation libraries (libelf)
 
 Package: libevent2-7
@@ -625,17 +661,17 @@ SHA256sum: 42a78576ac8857f006c8365681110ff1987e6a735e9d3330366dedb4252dab25
 Description:  Terminal handling library (Unicode)
 
 Package: libnetfilter-conntrack3
-Version: 1.0.8-1
+Version: 1.0.9-2
 Depends: libc, libnfnetlink0, kmod-nf-conntrack-netlink, libmnl0
 Provides: libnetfilter-conntrack
 License: GPL-2.0-or-later
 Section: libs
 ABIVersion: 3
 Architecture: aarch64_generic
-Installed-Size: 38942
-Filename: libnetfilter-conntrack3_1.0.8-1_aarch64_generic.ipk
-Size: 39873
-SHA256sum: 98c79a5100c2a12673dfadc9d5cf1b5bbd284478e5cf0189fb7eb5d515d7a6ff
+Installed-Size: 39792
+Filename: libnetfilter-conntrack3_1.0.9-2_aarch64_generic.ipk
+Size: 40714
+SHA256sum: 57f1553fde176d4d9d834e3304a21e360857d4bb8bf675525644369cdf7a7648
 Description:  libnetfilter_conntrack is a userspace library providing a programming
  interface (API) to the in-kernel connection tracking state table. The
  library libnetfilter_conntrack has been previously known as
@@ -699,10 +735,10 @@ Section: libs
 ABIVersion: 1.1
 CPE-ID: cpe:/a:openssl:openssl
 Architecture: aarch64_generic
-Installed-Size: 1488465
+Installed-Size: 1488459
 Filename: libopenssl1.1_1.1.1s-1_aarch64_generic.ipk
-Size: 1480376
-SHA256sum: a3469f091629af9b8d6a9f2fbc145305eee5ded2b4f1340713a3dcb303308e88
+Size: 1480426
+SHA256sum: 87f489dddd4107630347585002f045e1f9c568e8cfac496839cfdc6dffc93e3b
 Description:  The OpenSSL Project is a collaborative effort to develop a robust,
  commercial-grade, full-featured, and Open Source toolkit implementing the
  Transport Layer Security (TLS) protocol as well as a full-strength
@@ -887,14 +923,14 @@ Description:  This small Lua library provides a few functions to parse URL with
  querystring and build new URL easily.
 
 Package: luci-app-adguardhome
-Version: git-22.313.03230-587fa1a-1
+Version: git-22.326.44448-03b96b6-1
 Depends: libc, ca-certs, curl, wget-ssl, adguardhome
 Section: luci
 Architecture: all
 Installed-Size: 88960
-Filename: luci-app-adguardhome_git-22.313.03230-587fa1a-1_all.ipk
-Size: 90123
-SHA256sum: 60a5094577b819816158152a84070ff98b06a9897ea2f6e413ebeb9defec0e89
+Filename: luci-app-adguardhome_git-22.326.44448-03b96b6-1_all.ipk
+Size: 90122
+SHA256sum: cb1cc0b2293f7777631038f67ead7cadaf94794624486e8b9fcb20eb5f1bfc94
 Description:  LuCI support for AdGuardHome
 
 Package: luci-app-argon-config
@@ -976,14 +1012,14 @@ SHA256sum: 63384f36484b3d27cd92b849d81f7cc59930c68fbcda139704f87346ac6a6ce2
 Description:  Provides Luci for smartdns
 
 Package: luci-app-ssr-plus
-Version: 186-6
+Version: 186-7
 Depends: libc, coreutils, coreutils-base64, dns2socks, dns2tcp, dnsmasq-full, ipset, kmod-ipt-nat, ip-full, iptables, iptables-mod-tproxy, lua, lua-neturl, libuci-lua, microsocks, tcping, resolveip, shadowsocksr-libev-ssr-check, uclient-fetch, curl, xray-core, kcptun-client, hysteria, ipt2socks, naiveproxy, redsocks2, shadowsocks-rust-sslocal, shadowsocks-rust-ssserver, simple-obfs, v2ray-plugin, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-server, trojan
 Section: luci
 Architecture: all
-Installed-Size: 196556
-Filename: luci-app-ssr-plus_186-6_all.ipk
-Size: 196708
-SHA256sum: 2459b42b0e7ecfa7de94e9b5160077b1fb8ca8251b7857098b6cdad6c31ad536
+Installed-Size: 196554
+Filename: luci-app-ssr-plus_186-7_all.ipk
+Size: 196714
+SHA256sum: 30d89d74ff960e9f80d1f0de3db2cd09ac35d7256fdfd8ca77fc30d7a69fcd00
 Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
 
 Package: luci-app-store
@@ -998,14 +1034,14 @@ SHA256sum: 8ab21705004871444f12f38a3ba0979c2c6b374c50ae1dada2f8ba41b27e7849
 Description:  luci-app-store is a ipk store developed by LinkEase team
 
 Package: luci-i18n-adguardhome-zh-cn
-Version: git-22.313.03230-587fa1a-1
+Version: git-22.326.44448-03b96b6-1
 Depends: libc, luci-app-adguardhome
 Section: luci
 Architecture: all
 Installed-Size: 2547
-Filename: luci-i18n-adguardhome-zh-cn_git-22.313.03230-587fa1a-1_all.ipk
+Filename: luci-i18n-adguardhome-zh-cn_git-22.326.44448-03b96b6-1_all.ipk
 Size: 3436
-SHA256sum: 177b59e087a74dc458462adb836822f60d7ba18fe239999b29ba4e0dec52e36d
+SHA256sum: fc33920ec733ab98434ccbf2e4d3c5abc1624fee5e24644a66efb4c622a0e8df
 Description:  Translation for luci-app-adguardhome - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-argon-config-zh-cn
@@ -1065,14 +1101,14 @@ SHA256sum: 674c9f1c5db84a667c5f8f030dab8434451e0f92e30939a240d1be973db2b9fb
 Description:  Translation for luci-app-smartdns - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-ssr-plus-zh-cn
-Version: 186-6
+Version: 186-7
 Depends: libc, luci-app-ssr-plus
 Section: luci
 Architecture: all
 Installed-Size: 7140
-Filename: luci-i18n-ssr-plus-zh-cn_186-6_all.ipk
-Size: 8000
-SHA256sum: 4569390bf4239d43987e6c65c564b41c63e0449121a65365c90517ed400ae65a
+Filename: luci-i18n-ssr-plus-zh-cn_186-7_all.ipk
+Size: 7995
+SHA256sum: f6f25658632e4e041bb8f3494ddad929d12cda73d76398350ebbf379b3ac4061
 Description:  Translation for luci-app-ssr-plus - 简体中文 (Simplified Chinese)
 
 Package: luci-lib-taskd
@@ -1099,14 +1135,14 @@ SHA256sum: d5ef6649d3e33ff84906b8df00584e40852eaee722d76683a328ed0335333725
 Description:  Xterm.js library
 
 Package: luci-theme-argon
-Version: 2.2.9.4-20220425
-Depends: libc, curl, jsonfilter
+Version: 1.7.3-20220421
+Depends: libc
 Section: luci
 Architecture: all
-Installed-Size: 534301
-Filename: luci-theme-argon_2.2.9.4-20220425_all.ipk
-Size: 534763
-SHA256sum: 995d660cccce90464e9ba4c1470e478e04e003a7b1881128fc216f584136ef04
+Installed-Size: 482990
+Filename: luci-theme-argon_1.7.3-20220421_all.ipk
+Size: 483744
+SHA256sum: 0d068d7af4e3757fcb3bd62470634d21173c99172839f3c132feb1924e2f9e1d
 Description:  Argon Theme
 
 Package: luci-theme-neobird
@@ -1114,21 +1150,21 @@ Version: 2.0-202202260758
 Depends: libc
 Section: luci
 Architecture: all
-Installed-Size: 310874
+Installed-Size: 310873
 Filename: luci-theme-neobird_2.0-202202260758_all.ipk
-Size: 311678
-SHA256sum: 78d27154caa5420e679bd92ad13a26f7b847d8b29239846567bdc3988952e4a3
+Size: 311693
+SHA256sum: a71e656cb5b06e0d1844b9690a179ab38caec2d6f494de818281d9650025048d
 Description:  Neobird Theme
 
 Package: luci-theme-tomato
-Version: git-22.313.03230-587fa1a-1
+Version: git-22.326.44448-03b96b6-1
 Depends: libc
 Section: luci
 Architecture: all
 Installed-Size: 211853
-Filename: luci-theme-tomato_git-22.313.03230-587fa1a-1_all.ipk
-Size: 212664
-SHA256sum: 6c1ae103301ae4eee61eacb7a7d7d8420fb357e7429a8ce785b54c5ed0c1e044
+Filename: luci-theme-tomato_git-22.326.44448-03b96b6-1_all.ipk
+Size: 212666
+SHA256sum: ba3589f466dc7c8da9654f5c042ba60e0509e5e0c2de0de0e58bba0642548844
 Description:  Tomato new kenzo
 
 Package: mdadm
@@ -1145,6 +1181,19 @@ Description:  A tool for managing Linux Software RAID arrays.
  RAID 0, 1 and 10 support included.
  If you need RAID 4,5 or 6 functionality please
  install kmod-md-raid456 .
+
+Package: microsocks
+Version: 1.0.3-5
+Depends: libc, libpthread
+License: MIT
+Section: net
+Architecture: aarch64_generic
+Installed-Size: 5766
+Filename: microsocks_1.0.3-5_aarch64_generic.ipk
+Size: 6545
+SHA256sum: b5bfef3af7cc8726e662461c45f4c931481ed0057fcbf9aec8b8efac70f48d5f
+Description:  A SOCKS5 service that you can run on your remote boxes to tunnel connections
+ through them, if for some reason SSH doesn't cut it for you.
 
 Package: mkf2fs
 Version: 1.14.0-1
@@ -1173,15 +1222,15 @@ SHA256sum: 653dabf22abd8f70acf274d8d603e1174fc589bd266bcc159dcacb905a74f29d
 Description:  contains: mount, umount, findmnt
 
 Package: naiveproxy
-Version: 106.0.5249.91-2-2
+Version: 107.0.5304.87-3-1
 Depends: libc, libatomic1
 License: BSD 3-Clause
 Section: net
 Architecture: aarch64_generic
-Installed-Size: 2626561
-Filename: naiveproxy_106.0.5249.91-2-2_aarch64_generic.ipk
-Size: 2624169
-SHA256sum: 8d873d548be9a2c4fc5125545632fc021ebe075ce101835ca6fc052a01adb960
+Installed-Size: 2710206
+Filename: naiveproxy_107.0.5304.87-3-1_aarch64_generic.ipk
+Size: 2707527
+SHA256sum: 7aa48f79134167f6e0fc383f35620eba5fb3543dbe3495f12dc8dd89eb41ef09
 Description:  NaïveProxy uses Chrome's network stack to camouflage traffic with strong
  censorship resistance and low detectability. Reusing Chrome's stack also
  ensures best practices in performance and security.
@@ -1338,6 +1387,18 @@ Size: 139486
 SHA256sum: 22474b524666d4d047b6c0f38d7d4695cdb8f0b323a03c910b4123b33430d400
 Description:  This package contains the PPP (Point-to-Point Protocol) daemon.
 
+Package: procd-ujail
+Version: 2021-11-04-0ee8e734-3
+Depends: libc, libubox20211104, libubus20210603, libuci20130104, libblobmsg-json20211104
+License: GPL-2.0
+Section: base
+Architecture: aarch64_generic
+Installed-Size: 36783
+Filename: procd-ujail_2021-11-04-0ee8e734-3_aarch64_generic.ipk
+Size: 37572
+SHA256sum: 34a715ae39852e6bab803aaa4bef0819561e66588e81fe919c7c0cd7240b8119
+Description:  OpenWrt process jail helper
+
 Package: procd
 Version: 2021-11-04-0ee8e734-3
 Depends: libc, ubusd, ubus, libjson-script20211104, ubox, libubox20211104, libubus20210603, libblobmsg-json20211104, libjson-c5, jshn
@@ -1350,6 +1411,17 @@ Filename: procd_2021-11-04-0ee8e734-3_aarch64_generic.ipk
 Size: 59236
 SHA256sum: 53fa6120d97b5a51f71b7e42e68f907103a01e4bbc47e645de4eb22863c2827b
 Description:  OpenWrt system process manager
+
+Package: redsocks2
+Version: 0.67-4
+Depends: libc, libevent2-7, libopenssl1.1
+Section: net
+Architecture: aarch64_generic
+Installed-Size: 56888
+Filename: redsocks2_0.67-4_aarch64_generic.ipk
+Size: 57781
+SHA256sum: 740491a9d308a41517db292d90fb969a739ba9427459d9cf9e615819fc2a238e
+Description:  This is a modified version of original redsocks. The name is changed to be REDSOCKS2 since this release to distinguish with original redsocks. This variant is useful for anti-GFW (Great Fire Wall).
 
 Package: resolveip
 Version: 2
@@ -1630,6 +1702,28 @@ Size: 1552
 SHA256sum: 8187034f837c2f96d1cf13cad0e2006c31347c41676714dd57ab9dfe3054c84d
 Description:  /etc/urandom.seed handling for OpenWrt
 
+Package: urngd
+Version: 2020-01-21-c7f7b6b6-2
+Depends: libc, libubox20211104
+License: GPL-2.0 BSD-3-Clause
+Section: utils
+Architecture: aarch64_generic
+Installed-Size: 5030
+Filename: urngd_2020-01-21-c7f7b6b6-2_aarch64_generic.ipk
+Size: 5993
+SHA256sum: ceea32a134102d0bf3a08d59cbaac1cf06e1d4dd35ab315bee660efcac30fc39
+Description:  urngd is OpenWrt's micro non-physical true random number generator based on
+ timing jitter.
+ 
+ Using the Jitter RNG core, the rngd provides an entropy source that feeds into
+ the Linux /dev/random device if its entropy runs low. It updates the
+ /dev/random entropy estimator such that the newly provided entropy unblocks
+ /dev/random.
+ 
+ The seeding of /dev/random also ensures that /dev/urandom benefits from
+ entropy. Especially during boot time, when the entropy of Linux is low, the
+ Jitter RNGd provides a source of sufficient entropy.
+
 Package: usb-modeswitch
 Version: 2022-02-24-3c8595a4-1
 Depends: libc, libubox20211104, libblobmsg-json20211104, libusb-1.0-0
@@ -1660,10 +1754,10 @@ Depends: libc, ca-bundle
 License: MIT
 Section: net
 Architecture: aarch64_generic
-Installed-Size: 4629885
+Installed-Size: 4629491
 Filename: v2ray-plugin_5.1.0-1_aarch64_generic.ipk
-Size: 4618423
-SHA256sum: 76fd7b725908fde983d506f09e8af33cfb37d68362a81807de8696b262d66f14
+Size: 4617939
+SHA256sum: f1fa601b45932d9309bac2c32bc84f5831de6f7e3f507d4ea648bd9f9bd4e512
 Description:  SIP003 plugin for shadowsocks, based on v2ray
 
 Package: vsftpd-alt
@@ -1711,15 +1805,15 @@ Description:  wol implements Wake On LAN functionality in a small program.
  It wakes up hardware that is Magic Packet compliant.
 
 Package: xray-core
-Version: 1.6.3-1
+Version: 1.6.4-1
 Depends: libc, ca-bundle
 License: MPL-2.0
 Section: net
 Architecture: aarch64_generic
-Installed-Size: 7477271
-Filename: xray-core_1.6.3-1_aarch64_generic.ipk
-Size: 7454677
-SHA256sum: f01f51940d1ad84e28cb01a66efdc8a6d220fd41858b7039ed8316e0fd8098bb
+Installed-Size: 7483859
+Filename: xray-core_1.6.4-1_aarch64_generic.ipk
+Size: 7461697
+SHA256sum: 579d773d96984e2de7687e3d51f6ab8d93f329a4ccf5e6b59bd534edb3126c9d
 Description:  Xray, Penetrates Everything. It helps you to build your own computer network.
  It secures your network connections and thus protects your privacy.
 

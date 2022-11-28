@@ -1,0 +1,23 @@
+Package: batctl-default
+Version: 2022.0-1
+Depends: libc, libnl-tiny2022-05-23, librt
+Provides: batctl
+Alternatives: 200:/usr/sbin/batctl:/usr/libexec/batctl-default
+Source: feeds/routing/batctl
+SourceName: batctl-default
+License: GPL-2.0-only ISC MIT
+LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT LICENSES/deprecated/ISC
+Section: net
+SourceDateEpoch: 1651317683
+Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
+Architecture: mipsel_24kc
+Installed-Size: 36238
+Filename: batctl-default_2022.0-1_mipsel_24kc.ipk
+Size: 37309
+SHA256sum: 426af0331bcb4da40adfb9e95be6e47c0e1b77ad4963248c90b133548a997eb7
+Description:  batctl is a more intuitive managment utility for B.A.T.M.A.N.-Advanced.
+ It is an easier method for configuring batman-adv and provides some
+ additional tools for debugging as well. This package builds
+ version 2022.0 of the user space utility.
+ Standard subcommands for configuration and online debugging are enabled.
+

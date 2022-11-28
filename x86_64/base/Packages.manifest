@@ -496,6 +496,25 @@ Size: 13139
 SHA256sum: 994eeb14e0dc6033e821ba3022b4edd33e7695ffeedd83951e007589d77599e5
 Description:  hostapd/wpa_supplicant common support files
 
+Package: hostapd
+Version: 2022-01-16-cff80b4f-5
+Depends: hostapd-common (=2022-01-16-cff80b4f-5), libc, libnl-tiny2022-05-23, hostapd-common, libubus20210603
+Source: package/network/services/hostapd
+SourceName: hostapd
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1661442301
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 411729
+Filename: hostapd_2022-01-16-cff80b4f-5_x86_64.ipk
+Size: 412555
+SHA256sum: 0ae8aa8d477e41a1b2def43255fb7b2a34c0c94c6849dfe5412db74055335867
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator.
+
 Package: hysteria
 Version: 1.3.0-18
 Depends: libc, ca-bundle
@@ -2845,10 +2864,10 @@ SourceDateEpoch: 1661442301
 CPE-ID: cpe:/a:w1.fi:hostapd
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 702811
+Installed-Size: 702940
 Filename: wpad_2022-01-16-cff80b4f-5_x86_64.ipk
-Size: 703424
-SHA256sum: 405b6ffa00b6f5bd99a050b4c567179790641987205c31cb4cc8248ade7757cb
+Size: 703526
+SHA256sum: ee280334cabf087a6a8e65dd6e51620ae68c66c23c3a84c31b5a140562f79b44
 Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator and Supplicant
 

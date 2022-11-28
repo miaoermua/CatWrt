@@ -757,6 +757,19 @@ SHA256sum: 49f55375d8536c016b5734c11e713cf5848810c4f15267916ea2bbc2d59b9298
 Description:  The device-mapper is a component of the 2.6 linux kernel that supports logical
  volume management. It is required by LVM2 and EVMS.
 
+Package: libdnet
+Version: 1.16.1-1
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+Architecture: x86_64
+Installed-Size: 24224
+Filename: libdnet_1.16.1-1_x86_64.ipk
+Size: 24537
+SHA256sum: 3e1264e41f2ad9486817ec2b83c8b2fe9589ea729e54c5729d99f4c58a7815cf
+Description:  libdnet is a library of simplified, portable interface to several low-level
+ networking routines.
+
 Package: libev
 Version: 4.33-1
 Depends: libc
@@ -917,6 +930,21 @@ Filename: libminiupnpc_2.2.3-1_x86_64.ipk
 Size: 20911
 SHA256sum: 919e93d58673b07bc5b86743b7d06e1a4594031b75c34cbadf4f04460fc1ddae
 Description:  Lightweight UPnP library
+
+Package: libmspack
+Version: 0.10.1alpha-1
+Depends: libc
+License: LGPL-2.1-or-later
+Section: libs
+Architecture: x86_64
+Installed-Size: 30847
+Filename: libmspack_0.10.1alpha-1_x86_64.ipk
+Size: 31752
+SHA256sum: 6080f1980eccb24bc8c346ed178ff9f84ae3345ebff79608495f3deb730977d9
+Description:  The purpose of libmspack is to provide compressors and decompressors,
+ archivers and dearchivers for Microsoft compression formats: CAB, CHM, WIM,
+ LIT, HLP, KWAJ and SZDD. It is also designed to be easily embeddable,
+ stable, robust and resource-efficient.
 
 Package: libnatpmp1
 Version: 20150609-3
@@ -1300,6 +1328,18 @@ Description:  Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript 
  2. To build a 32-bit target, gcc-multilib, g++-multilib are required.
  3. Requires libatomic package. (If necessary, install the 32-bit library at the same time.)
  ex) sudo apt-get install gcc-multilib g++-multilib
+
+Package: open-vm-tools
+Version: 12.0.0-1
+Depends: libc, glib2, libpthread, libtirpc, libmspack, libdnet
+License: LGPL-2.1-or-later
+Section: utils
+Architecture: x86_64
+Installed-Size: 599831
+Filename: open-vm-tools_12.0.0-1_x86_64.ipk
+Size: 598571
+SHA256sum: b053c3a0f24837c40e4a61f9e9c43f06759cd158f82aa08713fca7d3b42864e1
+Description:  Open Virtual Machine Tools for VMware guest OS
 
 Package: openssh-keygen
 Version: 9.0p1-1

@@ -10,6 +10,8 @@ CatWrt 是基于 [Lede](https://github.com/coolsnowwolf/lede) 仓库编译的 Op
 
 这是此仓库的软件源
 
+**x86-64**
+
 ```
 src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/x86/64/packages
 src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/x86_64/base
@@ -18,6 +20,17 @@ src/gz openwrt_oui https://downloads.catwrt.miaoer.xyz/x86_64/oui
 src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/x86_64/packages
 src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/x86_64/routing
 src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/x86_64/telephony
+```
+
+**mt7621**
+
+```
+src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/ramips/mt7621/packages
+src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/mipsel_24kc/base
+src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/mipsel_24kc/luci
+src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/mipsel_24kc/packages
+src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/mipsel_24kc/routing
+src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/mipsel_24kc/telephony
 ```
 
 注意文件对应，拉取部署时需要注意！

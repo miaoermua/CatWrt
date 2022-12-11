@@ -287,21 +287,6 @@ Size: 13143
 SHA256sum: 388c36e6a4e588f8466d2fea4ac8a84858936e9129a2d9e939751c49938c7679
 Description:  hostapd/wpa_supplicant common support files
 
-Package: hysteria
-Version: 1.3.1-19
-Depends: libc, ca-bundle
-License: MIT
-Section: net
-Architecture: mipsel_24kc
-Installed-Size: 6014423
-Filename: hysteria_1.3.1-19_mipsel_24kc.ipk
-Size: 6002584
-SHA256sum: 9bcde9c29e4babba5d6579a5c35bf2b260d4d1b9e91f20442c0c016d3db20a36
-Description:  Hysteria is a feature-packed network utility optimized for networks
- of poor quality (e.g. satellite connections, congested public Wi-Fi,
- connecting from China to servers abroad) powered by a custom version
- of QUIC protocol.
-
 Package: ip-full
 Version: 5.19.0-3
 Depends: libc, libnl-tiny2022-11-01, libbpf20220308
@@ -1022,18 +1007,6 @@ Size: 60914
 SHA256sum: 55212cc821398818127db7f05bc76fec5e4340b0c64cd1488207bd5a1d3febcd
 Description:  lsblk lists information about all or the specified block devices
 
-Package: lua-maxminddb
-Version: 0.2-5
-Depends: libc, lua, libmaxminddb
-License: MIT
-Section: lang
-Architecture: mipsel_24kc
-Installed-Size: 2597
-Filename: lua-maxminddb_0.2-5_mipsel_24kc.ipk
-Size: 3287
-SHA256sum: fc39b6e7e9c5eb731e89331663c719db4fa9d8e8ec227652d51a58004092600a
-Description:  libmaxminddb bindings for lua
-
 Package: lua-neturl
 Version: 1.1-1-1
 Depends: libc, lua
@@ -1140,17 +1113,6 @@ Size: 4217049
 SHA256sum: acd14a1fcfadd1591c6d056d246b0b4de8feacffd6a5a15d2ddac569c1c35f86
 Description:  A LuCI support for clash
 
-Package: luci-app-passwall
-Version: 4.55-2
-Depends: libc, coreutils, coreutils-base64, coreutils-nohup, curl, dns2socks, dns2tcp, ip-full, libuci-lua, lua, luci-compat, luci-lib-jsonc, microsocks, resolveip, tcping, unzip, chinadns-ng, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-server, simple-obfs, trojan-go, trojan-plus, xray-core, xray-plugin
-Section: luci
-Architecture: all
-Installed-Size: 972397
-Filename: luci-app-passwall_4.55-2_all.ipk
-Size: 972739
-SHA256sum: 914e01b5464a0b1b35091641ba3c34778f6a76bec0449f70a8bfe9263e794532
-Description:  LuCI support for PassWall
-
 Package: luci-app-poweroff
 Version: 20200726-1
 Depends: libc
@@ -1185,17 +1147,6 @@ Size: 198206
 SHA256sum: 268d4b95e7584d4e17e3c6ba64da158bcde848d4a26daf8fbe33f02423c48458
 Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
 
-Package: luci-app-vssr
-Version: 1.25-20220423
-Depends: libc, ipset, ip-full, iptables-mod-tproxy, dnsmasq-full, coreutils, coreutils-base64, bash, pdnsd-alt, wget-ssl, lua, luasocket, lua-maxminddb, lua-cjson, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-check, simple-obfs, xray-core, trojan, ipt2socks, kcptun-client, xray-plugin, shadowsocksr-libev-ssr-server, hysteria
-Section: luci
-Architecture: all
-Installed-Size: 5568612
-Filename: luci-app-vssr_1.25-20220423_all.ipk
-Size: 5293391
-SHA256sum: ee0bdc95ec3054195d317f242870923f9eb22d9ba1330a003b7cda9e7b30b642
-Description:  A New SS/SSR/Xray/Trojan LuCI interface
-
 Package: luci-i18n-adguardhome-zh-cn
 Version: git-22.343.44112-84ee8d8-1
 Depends: libc, luci-app-adguardhome
@@ -1228,17 +1179,6 @@ Filename: luci-i18n-oaf-zh-cn_5.0.2-1_all.ipk
 Size: 2899
 SHA256sum: 536b7290c1129b4b2856a1b7269b5bcf614b8a0687e3e3fbd1c088380fe90308
 Description:  Translation for luci-app-oaf - 简体中文 (Simplified Chinese)
-
-Package: luci-i18n-passwall-zh-cn
-Version: 4.55-2
-Depends: libc, luci-app-passwall
-Section: luci
-Architecture: all
-Installed-Size: 12362
-Filename: luci-i18n-passwall-zh-cn_4.55-2_all.ipk
-Size: 13191
-SHA256sum: e6d81972c2c97a42332e0f61642db247c42a1c054613cbc80dd5c5e7a33873c7
-Description:  Translation for luci-app-passwall - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-poweroff-zh-cn
 Version: 20200726-1
@@ -1273,17 +1213,6 @@ Filename: luci-i18n-ssr-plus-zh-cn_186-7_all.ipk
 Size: 8102
 SHA256sum: 6208c909c66f2d9352d7effa2cefb2a65f59ca3b5287f07a13605f2f96ddd052
 Description:  Translation for luci-app-ssr-plus - 简体中文 (Simplified Chinese)
-
-Package: luci-i18n-vssr-zh-cn
-Version: 1.25-20220423
-Depends: libc, luci-app-vssr
-Section: luci
-Architecture: all
-Installed-Size: 6135
-Filename: luci-i18n-vssr-zh-cn_1.25-20220423_all.ipk
-Size: 6947
-SHA256sum: 1fce0aaa18292e9030cfaf4df76f458cc2a670b8cd344a20b019ba28deaa51ec
-Description:  Translation for luci-app-vssr - 简体中文 (Simplified Chinese)
 
 Package: luci-theme-argon
 Version: 1.7.3-20220421
@@ -1365,10 +1294,10 @@ Depends: libc, wireless-tools
 Conflicts: kmod-mt7615d_dbdc
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 6945
+Installed-Size: 6518
 Filename: mt_wifi_1-2_mipsel_24kc.ipk
-Size: 7610
-SHA256sum: 5fde742b59958ec2cdf65db9a92eb1317c0175f60f0d7968bd1b5d74faa66a4c
+Size: 7209
+SHA256sum: a40f29153a05e5e23c7d19862955ab6949f838abc2efd0505a2f87958725964a
 Description:  MT_WiFi auto config for mt7603/mt7612/mt7615 chips
 
 Package: netifd
@@ -1636,18 +1565,6 @@ Size: 51610
 SHA256sum: a39e028aaad2618cb7c8415e7fa3dd3da11cf5255857531eed8e3790e4eb14cb
 Description:  shadowsocksr-libev ssr-redir
 
-Package: shadowsocksr-libev-ssr-server
-Version: 2.5.6-9
-Depends: libc, libev, libsodium, libopenssl1.1, libpthread, libpcre, libudns, zlib
-License: GPL-3.0
-Section: net
-Architecture: mipsel_24kc
-Installed-Size: 59078
-Filename: shadowsocksr-libev-ssr-server_2.5.6-9_mipsel_24kc.ipk
-Size: 59528
-SHA256sum: ecaf13d5c0b6229212795a99d94ac43ff28637e6f288378321110842ca777e2d
-Description:  shadowsocksr-libev ssr-server
-
 Package: shellsync
 Version: 0.2-2
 Depends: libc, libpthread, kmod-macvlan
@@ -1724,31 +1641,6 @@ Filename: terminfo_6.3-2_mipsel_24kc.ipk
 Size: 8009
 SHA256sum: 41e9bc71ab87892c6fc86d679b903a563a1e5df625375a3e6ed66ee892b5d50f
 Description:  Terminal Info Database (ncurses)
-
-Package: trojan-go
-Version: 0.10.6-3
-Depends: libc, ca-bundle
-License: GPL-3.0-only
-Section: net
-Architecture: mipsel_24kc
-Installed-Size: 4699362
-Filename: trojan-go_0.10.6-3_mipsel_24kc.ipk
-Size: 4690867
-SHA256sum: 02bdb89c46929c4f5738ed5ec9586fb48472c5efce7b18ea20792c062ae6d570
-Description:  Trojan features multiple protocols over TLS to avoid both
- active/passive detections and ISP QoS limitations.
-
-Package: trojan-plus
-Version: 10.0.3-2
-Depends: libc, libpthread, libstdcpp6, libopenssl1.1, boost, boost-system, boost-program_options
-License: GPL-3.0
-Section: net
-Architecture: mipsel_24kc
-Installed-Size: 364908
-Filename: trojan-plus_10.0.3-2_mipsel_24kc.ipk
-Size: 365666
-SHA256sum: 66dc24cbde8d3e2b8a1c806f6dae437a181c6853363e04825862bf67cc66026a
-Description:  An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
 
 Package: trojan
 Version: 1.16.0-2
@@ -1999,10 +1891,10 @@ License: BSD-3-Clause
 Section: net
 CPE-ID: cpe:/a:w1.fi:hostapd
 Architecture: mipsel_24kc
-Installed-Size: 632722
+Installed-Size: 635253
 Filename: wpad-openssl_2022-01-16-cff80b4f-5_mipsel_24kc.ipk
-Size: 632995
-SHA256sum: 0f6da265fd9969fb14edabb8aaa5e1943ec087df8fa84175e56021a04d1e20ca
+Size: 635313
+SHA256sum: 3ebda75dc8f94790795a2cbdda3951573f3fe44caa4194c443565990d24a8f5a
 Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator and Supplicant
 
@@ -2018,18 +1910,6 @@ Size: 8305004
 SHA256sum: 46070d7bb12973b372a16810df300888f4a7737dad0d76438cd795d3b3f93304
 Description:  Xray, Penetrates Everything. It helps you to build your own computer network.
  It secures your network connections and thus protects your privacy.
-
-Package: xray-plugin
-Version: 1.6.4-1
-Depends: libc, ca-bundle
-License: MIT
-Section: net
-Architecture: mipsel_24kc
-Installed-Size: 5501161
-Filename: xray-plugin_1.6.4-1_mipsel_24kc.ipk
-Size: 5488601
-SHA256sum: 6390603bf782bec9eceae19f1e4f8008331025b6608662bc72f3fa8a4c42567f
-Description:  SIP003 plugin for Shadowsocks, based on Xray
 
 Package: zlib
 Version: 1.2.13-9

@@ -46,6 +46,44 @@ Size: 11028773
 SHA256sum: 7ce56ea0b71155fcf5e12805b1e75d85e8d9c3eacd1f48519294d0cc2766ac25
 Description:  Free and open source, powerful network-wide ads and trackers blocking DNS server.
 
+Package: aliyundrive-webdav
+Version: 1.10.3-1
+Depends: libc
+License: MIT
+Section: multimedia
+Architecture: mipsel_24kc
+Installed-Size: 3708041
+Filename: aliyundrive-webdav_1.10.3-1_mipsel_24kc.ipk
+Size: 3709409
+SHA256sum: bea186f002e45bb3c7633af497cd8af9eded07a1ccdceb085d6d9296615496d3
+Description:  WebDAV server for AliyunDrive.
+
+Package: aria2
+Version: 1.36.0-2
+Depends: libc, zlib, libstdcpp6, libopenssl1.1
+License: GPLv2
+Section: net
+CPE-ID: cpe:/a:tatsuhiro_tsujikawa:aria2
+Architecture: mipsel_24kc
+Installed-Size: 508928
+Filename: aria2_1.36.0-2_mipsel_24kc.ipk
+Size: 508970
+SHA256sum: 6cb9ecd8778cd7af715738e94e98adb61432664b4c8651c5a6e497f0524ecf3f
+Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
+ utility
+
+Package: ariang
+Version: 1.3.2-1
+Depends: libc, aria2, uhttpd
+License: MIT
+Section: net
+Architecture: all
+Installed-Size: 990353
+Filename: ariang_1.3.2-1_all.ipk
+Size: 990857
+SHA256sum: 56ebe97ce7926f2e8adc7caf44a705643784d386f1ad15f916fe0822afd7a1c8
+Description:  AriaNg is a web frontend making aria2 easier to use. AriaNg is written in pure html & javascript, thus it does not need any compilers or runtime environment.
+
 Package: attr
 Version: 2.5.1-1
 Depends: libc, libattr
@@ -454,21 +492,6 @@ Description:  frp is a fast reverse proxy to help you expose a local server behi
  
  This package contains the frps.
 
-Package: htop
-Version: 3.2.1-1
-Depends: libc, libncurses6
-License: GPL-2.0-or-later
-Section: admin
-CPE-ID: cpe:/a:htop:htop
-Architecture: mipsel_24kc
-Installed-Size: 84827
-Filename: htop_3.2.1-1_mipsel_24kc.ipk
-Size: 85802
-SHA256sum: c9ea0d48eeefe450e2fb4e07892b9e1ddc911eb4631707754cd062c3051c93ff
-Description:  Htop is an ncursed-based process viewer similar to top, but
- it allows to scroll the list vertically and horizontally to
- see all processes and their full command lines.
-
 Package: igmpproxy
 Version: 0.2.1-4
 Depends: libc
@@ -520,31 +543,6 @@ Filename: jq_1.6-2_mipsel_24kc.ipk
 Size: 96322
 SHA256sum: c3de384681b07e0d243ba8c3566c5540dfbca775f94b4ddb8bd31e34de0df6e3
 Description:  Lightweight and flexible command-line JSON processor.
-
-Package: kcptun-client
-Version: 20210922-1
-Depends: libc, kcptun-config
-License: MIT
-Section: net
-Architecture: mipsel_24kc
-Installed-Size: 2382187
-Filename: kcptun-client_20210922-1_mipsel_24kc.ipk
-Size: 2376990
-SHA256sum: 1d5df78c6ea8dc781a8fc57f39bd2023cc8271b29bb8e9c364bf98b59d6ce19a
-Description:  kcptun is a Stable & Secure Tunnel Based On KCP with N:M Multiplexing.
- This package only contains kcptun client.
-
-Package: kcptun-config
-Version: 20210922-1
-Depends: libc
-License: MIT
-Section: net
-Architecture: mipsel_24kc
-Installed-Size: 1963
-Filename: kcptun-config_20210922-1_mipsel_24kc.ipk
-Size: 2773
-SHA256sum: f1b0b696654b7e9d57f34def970450622a0dc81f299c41be20a8cf5ffe2342f4
-Description:  Kcptun Config Scripts
 
 Package: libattr
 Version: 2.5.1-1
@@ -809,18 +807,6 @@ SHA256sum: 615409ea269f60cf538073406553f9b515914fe128d16cc96d26bab5daf4ce35
 Description:  LZO is a data compression library which is suitable for data de-/compression
  in real-time. This means it favours speed over compression ratio.
 
-Package: libmaxminddb
-Version: 1.7.1-1
-Depends: libc
-License: Apache-2.0
-Section: libs
-Architecture: mipsel_24kc
-Installed-Size: 12956
-Filename: libmaxminddb_1.7.1-1_mipsel_24kc.ipk
-Size: 13718
-SHA256sum: eb2a98a665705cfe03ce06dea65e8606cd4cbbbb291466e1f222b3d71090fa48
-Description:  The libmaxminddb library provides functions for working MaxMind DB files.
-
 Package: libminiupnpc
 Version: 2.2.3-1
 Depends: libc
@@ -1062,31 +1048,17 @@ Size: 36581
 SHA256sum: b4212f1bc101ebe53e9f8b050781cd0cf10ee3e8c25ba47e9796385ee4382ef0
 Description:  Fast YAML 1.1 parser and emitter library
 
-Package: lua-cjson
-Version: 2.1.0-2
-Depends: libc, lua
-License: MIT
-Section: lang
+Package: maccalc
+Version: 1
+Depends: libc
+License: GPL-2.0
+Section: utils
 Architecture: mipsel_24kc
-Installed-Size: 11131
-Filename: lua-cjson_2.1.0-2_mipsel_24kc.ipk
-Size: 11900
-SHA256sum: 5dabc421cde0609eedbceb9e44f32beebc565b9eb473724041dbaef54cfe0d58
-Description:  Lua CJSON is a fast JSON encoding/parsing module for Lua.
-
-Package: luasocket
-Version: 3.0.0-1
-Depends: libc, lua
-License: MIT
-Section: lang
-Architecture: mipsel_24kc
-Installed-Size: 51990
-Filename: luasocket_3.0.0-1_mipsel_24kc.ipk
-Size: 52808
-SHA256sum: 60784dff741f4b8e018d93cc43259728443a3511de12137ffa74dce466a8d2c4
-Description:  LuaSocket is the most comprehensive networking support
- library for the Lua language. It provides easy access to
- TCP, UDP, DNS, SMTP, FTP, HTTP, MIME and much more.
+Installed-Size: 2048
+Filename: maccalc_1_mipsel_24kc.ipk
+Size: 2761
+SHA256sum: bc8cdd2f7081f8bb0aa97178cbe055835f907f944be142a108bf4690f55fd211
+Description:  This package contains a MAC address manipulation utility.
 
 Package: miniupnpd
 Version: 2.0.20170421-3

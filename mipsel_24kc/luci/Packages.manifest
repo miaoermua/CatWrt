@@ -42,6 +42,22 @@ Size: 10480
 SHA256sum: e25ef0ae5972aeba3cc976a08c4b503f026ac46c3c09913befd7cca7b56b3699
 Description:  LuCI support for Adbyby
 
+Package: luci-app-aliyundrive-webdav
+Version: 1.10.3-1
+Depends: libc, aliyundrive-webdav
+Source: feeds/luci/applications/luci-app-aliyundrive-webdav
+SourceName: luci-app-aliyundrive-webdav
+License: MIT
+Section: luci
+SourceDateEpoch: 1670224941
+Maintainer: messense <messense@icloud.com>
+Architecture: all
+Installed-Size: 20525
+Filename: luci-app-aliyundrive-webdav_1.10.3-1_all.ipk
+Size: 21317
+SHA256sum: 4d47c16c9fa434a159ef1392059dc0b054e805b3c04d6f1de16d2502af9d138f
+Description:  LuCI Support for aliyundrive-webdav
+
 Package: luci-app-argon-config
 Version: 0.9-20220424
 Depends: libc, luci-compat
@@ -56,6 +72,22 @@ Filename: luci-app-argon-config_0.9-20220424_all.ipk
 Size: 4415
 SHA256sum: b3afd7619001160445cb63a8e80b0caacfc637013a44a6054271c3d8876f7507
 Description:  LuCI page for Argon Config
+
+Package: luci-app-aria2
+Version: 1.0.1-3
+Depends: libc, aria2, ariang
+Source: feeds/luci/applications/luci-app-aria2
+SourceName: luci-app-aria2
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1670224941
+Maintainer: Hsing-Wang Liao <kuoruan@gmail.com>
+Architecture: all
+Installed-Size: 4303
+Filename: luci-app-aria2_1.0.1-3_all.ipk
+Size: 5102
+SHA256sum: af6db72d408859ee806b7bc5845c8f25603f20a355e9dac77fbd5c5db83996ce
+Description:  LuCI Support for Aria2
 
 Package: luci-app-arpbind
 Version: 1-3
@@ -668,6 +700,22 @@ Size: 3398
 SHA256sum: 0f5bf46773e7286cdb4f3cd11544f460e746de13570a987688fa5272602618d0
 Description:  Translation for luci-app-adbyby-plus - 简体中文 (Simplified Chinese)
 
+Package: luci-i18n-aliyundrive-webdav-zh-cn
+Version: 1.10.3-1
+Depends: libc, luci-app-aliyundrive-webdav
+Source: feeds/luci/applications/luci-app-aliyundrive-webdav
+SourceName: luci-i18n-aliyundrive-webdav-zh-cn
+License: MIT
+Section: luci
+SourceDateEpoch: 1670224941
+Maintainer: messense <messense@icloud.com>
+Architecture: all
+Installed-Size: 1690
+Filename: luci-i18n-aliyundrive-webdav-zh-cn_1.10.3-1_all.ipk
+Size: 2568
+SHA256sum: ba16e981f2eda2491ee58eede9fd2da73319e13cb01b8bf574c99eb6d7f07121
+Description:  Translation for luci-app-aliyundrive-webdav - 简体中文 (Simplified Chinese)
+
 Package: luci-i18n-argon-config-zh-cn
 Version: 0.9-20220424
 Depends: libc, luci-app-argon-config
@@ -682,6 +730,22 @@ Filename: luci-i18n-argon-config-zh-cn_0.9-20220424_all.ipk
 Size: 2472
 SHA256sum: ca7aad42a057fb1d39fbce131d09722aa4d2794a1c194a698263fb4120971236
 Description:  Translation for luci-app-argon-config - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-aria2-zh-cn
+Version: 1.0.1-3
+Depends: libc, luci-app-aria2
+Source: feeds/luci/applications/luci-app-aria2
+SourceName: luci-i18n-aria2-zh-cn
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1670224941
+Maintainer: Hsing-Wang Liao <kuoruan@gmail.com>
+Architecture: all
+Installed-Size: 2143
+Filename: luci-i18n-aria2-zh-cn_1.0.1-3_all.ipk
+Size: 3026
+SHA256sum: a7bf82ff5cbde23031cb08953c8c33f7e215087aba2d939b60e30c50e8230271
+Description:  Translation for luci-app-aria2 - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-arpbind-zh-cn
 Version: 1-3
@@ -1293,20 +1357,6 @@ Filename: luci-mod-admin-full_git-22.339.26541-ba1f838-1_mipsel_24kc.ipk
 Size: 82898
 SHA256sum: 5ed3c7d1a3a7ec430bd36985593be6b47a5ea891f5ea3f10fc002bbbe8dd3744
 Description:  LuCI Administration - full-featured for full control
-
-Package: luci-newapi
-Version: git-22.339.26541-ba1f838-1
-Depends: libc, luci-base
-Source: feeds/luci/modules/luci-newapi
-SourceName: luci-newapi
-Section: luci
-SourceDateEpoch: 1670224941
-Architecture: all
-Installed-Size: 11667
-Filename: luci-newapi_git-22.339.26541-ba1f838-1_all.ipk
-Size: 12438
-SHA256sum: bd9aa97c89b8984219dc4467d1a4bd7a9916fa8934c45e1a74289719971be22f
-Description:  LuCI NewAPI
 
 Package: luci-proto-bonding
 Version: git-22.339.26541-ba1f838-1

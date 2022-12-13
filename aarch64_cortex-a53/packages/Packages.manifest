@@ -1,144 +1,3 @@
-Package: UnblockNeteaseMusic-Go
-Version: 0.2.13-1
-Depends: libc
-Source: feeds/packages/multimedia/UnblockNeteaseMusic-Go
-SourceName: UnblockNeteaseMusic-Go
-License: GPL-3.0
-Section: multimedia
-SourceDateEpoch: 1667842764
-Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Architecture: aarch64_cortex-a53
-Installed-Size: 2412024
-Filename: UnblockNeteaseMusic-Go_0.2.13-1_aarch64_cortex-a53.ipk
-Size: 2406672
-SHA256sum: 9ef3d30f731017983e87b62f5d8c0ff086d16b8a1e0e52ff6fb201bc6e02e28f
-Description:  Revive Netease Cloud Music (Golang)
-
-Package: UnblockNeteaseMusic
-Version: 0.27.0-rc.6-2022-05-20-83e3467d-1
-Depends: libc, node
-Source: feeds/packages/multimedia/UnblockNeteaseMusic
-SourceName: UnblockNeteaseMusic
-License: LGPL-3.0-only
-Section: multimedia
-SourceDateEpoch: 1667842764
-Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Architecture: all
-Installed-Size: 342913
-Filename: UnblockNeteaseMusic_0.27.0-rc.6-2022-05-20-83e3467d-1_all.ipk
-Size: 343768
-SHA256sum: d6d58096abd3fdb8a883596e9c8e87e81423ef1023f041b79941209416e3c725
-Description:  Revive Netease Cloud Music (NodeJS)
-
-Package: acme
-Version: 3.0.3-1
-Depends: libc, wget-ssl, ca-bundle, openssl-util, socat
-Source: feeds/packages/net/acme
-SourceName: acme
-License: GPL-3.0-only
-LicenseFiles: LICENSE.md
-Section: net
-SourceDateEpoch: 1667842764
-Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Architecture: all
-Installed-Size: 53238
-Filename: acme_3.0.3-1_all.ipk
-Size: 54172
-SHA256sum: 80ec6835c02a0468368dd994d0e4b23762e3aee2fd4432bcaeac812b0e9d7adf
-Description:  A client for issuing Letsencrypt certificates.
-
-Package: adguardhome
-Version: 0.107.12-1
-Depends: libc, ca-bundle
-Source: feeds/packages/net/adguardhome
-SourceName: adguardhome
-License: GPL-3.0-only
-LicenseFiles: LICENSE.txt
-Section: net
-SourceDateEpoch: 1667842764
-Maintainer: Dobroslaw Kijowski <dobo90@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 5892824
-Filename: adguardhome_0.107.12-1_aarch64_cortex-a53.ipk
-Size: 5877160
-SHA256sum: 2a67bb3e1f21fd61de1c44917039868b4d4cd9d82c6c7f24fe946d7a84fe10ee
-Description:  Free and open source, powerful network-wide ads and trackers blocking DNS server.
-
-Package: aria2
-Version: 1.36.0-1
-Depends: libc, zlib, libstdcpp6, libopenssl1.1
-Source: feeds/packages/net/aria2
-SourceName: aria2
-License: GPLv2
-LicenseFiles: COPYING
-Section: net
-Require-User: aria2=6800:aria2=6800
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:tatsuhiro_tsujikawa:aria2
-Maintainer: Imre Kaloz <kaloz@openwrt.org>, Hsing-Wang Liao <kuoruan@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 609345
-Filename: aria2_1.36.0-1_aarch64_cortex-a53.ipk
-Size: 609303
-SHA256sum: 64ebe8f78e0d255f91a6da0c36dc876245f5abd31c47ccd153a4891a6efe965e
-Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
- utility
-
-Package: ariang
-Version: 1.2.4-1
-Depends: libc, aria2, uhttpd
-Source: feeds/packages/net/ariang
-SourceName: ariang
-License: MIT
-LicenseFiles: LICENSE
-Section: net
-SourceDateEpoch: 1667842764
-Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
-Architecture: all
-Installed-Size: 983782
-Filename: ariang_1.2.4-1_all.ipk
-Size: 984372
-SHA256sum: 9bdf15809f47f6fe33e56899cb9ba86c75bf7402a20f595ad38f21135b8a5e54
-Description:  AriaNg is a web frontend making aria2 easier to use. AriaNg is written in pure html & javascript, thus it does not need any compilers or runtime environment.
-
-Package: bash
-Version: 5.1.16-1
-Depends: libc, libncurses6, libreadline8
-Source: feeds/packages/utils/bash
-SourceName: bash
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
-Section: utils
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:gnu:bash
-Maintainer: Marcel Denia <naoir@gmx.net>
-Architecture: aarch64_cortex-a53
-Installed-Size: 457830
-Filename: bash_5.1.16-1_aarch64_cortex-a53.ipk
-Size: 458311
-SHA256sum: bd6ea99b3110762b49f10f07f2a38ebc6be822379589faf01477f8a87c89c2fc
-Description:  Bash is an sh-compatible command language interpreter that executes
- commands read from the standard input or from a file. Bash also
- incorporates useful features from the Korn and C shells (ksh and csh).
-
-Package: boost-date_time
-Version: 1.80.0-1
-Depends: libc, libstdcpp6, libpthread, librt
-Source: feeds/packages/libs/boost
-SourceName: boost-date_time
-License: BSL-1.0
-LicenseFiles: LICENSE_1_0.txt
-Section: libs
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:boost:boost
-Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 916
-Filename: boost-date_time_1.80.0-1_aarch64_cortex-a53.ipk
-Size: 1734
-SHA256sum: 1224a9044f912824ef075c733f8f3de3d1c804d36ae59b34274e74378851e303
-Description:  This package contains the Boost date_time library.
-
 Package: boost-program_options
 Version: 1.80.0-1
 Depends: libc, libstdcpp6, libpthread, librt
@@ -147,14 +6,14 @@ SourceName: boost-program_options
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
 Section: libs
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 CPE-ID: cpe:/a:boost:boost
 Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Architecture: aarch64_cortex-a53
-Installed-Size: 65047
+Installed-Size: 65046
 Filename: boost-program_options_1.80.0-1_aarch64_cortex-a53.ipk
-Size: 65868
-SHA256sum: b1b11af0b6a3197dee21af533936f90d760313e001d7bd83cb7bf2ac5113ee6a
+Size: 65869
+SHA256sum: a57b7f978e8bea29e4ec33b465e3ffea76a8edfeb95ee6b42a207424e4963d70
 Description:  This package contains the Boost program_options library.
 
 Package: boost-system
@@ -165,14 +24,14 @@ SourceName: boost-system
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
 Section: libs
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 CPE-ID: cpe:/a:boost:boost
 Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Architecture: aarch64_cortex-a53
 Installed-Size: 908
 Filename: boost-system_1.80.0-1_aarch64_cortex-a53.ipk
 Size: 1717
-SHA256sum: a2b0c72fb21c730eac7922f8b8d5c6ca2f169c5ad9c33b7dcacbf6559df1cfcc
+SHA256sum: fb29e7bf44ab599ae29509c6b34f67c5ba6cd4c1a1330eaa291db48c18babd4e
 Description:  This package contains the Boost system library.
 
 Package: boost
@@ -183,14 +42,14 @@ SourceName: boost
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
 Section: libs
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 CPE-ID: cpe:/a:boost:boost
 Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Architecture: aarch64_cortex-a53
 Installed-Size: 96
 Filename: boost_1.80.0-1_aarch64_cortex-a53.ipk
-Size: 1227
-SHA256sum: b105ab8e22a238eda3ec4b23c13b99757238c5392968d84bb854dcc31c130a6d
+Size: 1225
+SHA256sum: 5e45ff73c28b9c700dde727cef7bf4b55cb5e4f62d7e431f5248c3ff1558690c
 Description:  This package provides the Boost v1.80.0 libraries.
  Boost is a set of free, peer-reviewed, portable C++ source libraries.
  
@@ -236,13 +95,13 @@ SourceName: coremark
 License: Apache-2.0
 LicenseFiles: LICENSE.md
 Section: utils
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 Maintainer: Lim Guo Wei <limguowei@gmail.com> Aleksander Jan Bajkowski <olek2@wp.pl>
 Architecture: aarch64_cortex-a53
 Installed-Size: 10646
 Filename: coremark_2022-07-27-eefc986e-1_aarch64_cortex-a53.ipk
 Size: 11464
-SHA256sum: 95e185642a8437c8cd103f2761c7ec54c5a211d332f2f0b7a252389c93359e4d
+SHA256sum: 925255dbbeca09efe1f51347bf3003d0c9fea82f3ba3691d617054a2e27f4e14
 Description:  Embedded Microprocessor Benchmark
 
 Package: coreutils-base64
@@ -254,14 +113,14 @@ SourceName: coreutils-base64
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Section: utils
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 CPE-ID: cpe:/a:gnu:coreutils
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: aarch64_cortex-a53
-Installed-Size: 22790
+Installed-Size: 22792
 Filename: coreutils-base64_9.1-1_aarch64_cortex-a53.ipk
-Size: 23570
-SHA256sum: 0f6bf2ce4719e6fa2aa7f75f3ca0d7a1a2d93db63c89e3d79f4157083f93ea10
+Size: 23569
+SHA256sum: 31ffa57cd007da0fff3bcfaca2510af8faf974a87e5d7a8831c2dc23479b48f3
 Description:  Full version of standard GNU base64 utility.
 
 Package: coreutils-nohup
@@ -273,53 +132,15 @@ SourceName: coreutils-nohup
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Section: utils
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 CPE-ID: cpe:/a:gnu:coreutils
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: aarch64_cortex-a53
-Installed-Size: 21269
+Installed-Size: 21270
 Filename: coreutils-nohup_9.1-1_aarch64_cortex-a53.ipk
-Size: 22038
-SHA256sum: b20d760f3767b179a825b7ee415c0514c56e6de5ab9a06c8df12ec1ce93fb84a
+Size: 22045
+SHA256sum: e275e340e316ed03ff1c7ef5feb34dacf80c409ce7f98e73ae2356b368efd4f0
 Description:  Full version of standard GNU nohup utility.
-
-Package: coreutils-stat
-Version: 9.1-1
-Depends: libc, coreutils
-Alternatives: 300:/bin/stat:/usr/libexec/stat-coreutils
-Source: feeds/packages/utils/coreutils
-SourceName: coreutils-stat
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
-Section: utils
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:gnu:coreutils
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Architecture: aarch64_cortex-a53
-Installed-Size: 45063
-Filename: coreutils-stat_9.1-1_aarch64_cortex-a53.ipk
-Size: 45770
-SHA256sum: a7150eae12121fd5cd10e36700fea94cd5660a6e24bb22245d6ccbfa1e5dcced
-Description:  Full version of standard GNU stat utility.
-
-Package: coreutils-stty
-Version: 9.1-1
-Depends: libc, coreutils
-Alternatives: 300:/bin/stty:/usr/libexec/stty-coreutils
-Source: feeds/packages/utils/coreutils
-SourceName: coreutils-stty
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
-Section: utils
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:gnu:coreutils
-Maintainer: Jo-Philipp Wich <jo@mein.io>
-Architecture: aarch64_cortex-a53
-Installed-Size: 30170
-Filename: coreutils-stty_9.1-1_aarch64_cortex-a53.ipk
-Size: 30965
-SHA256sum: b33309e5e958e31b20343585554e1758ffbc79be50c00b32030a6cf42862672b
-Description:  Full version of standard GNU stty utility.
 
 Package: coreutils
 Version: 9.1-1
@@ -329,52 +150,35 @@ SourceName: coreutils
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Section: utils
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 CPE-ID: cpe:/a:gnu:coreutils
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: aarch64_cortex-a53
 Installed-Size: 96
 Filename: coreutils_9.1-1_aarch64_cortex-a53.ipk
-Size: 970
-SHA256sum: d0c24cd07f0fb425c40ca0b381c0ab59d86fe8fd6fde4b85ecd288a8fd244d22
+Size: 971
+SHA256sum: b4a5ec65e4044df5472d185466472b609970cc3ce4ee44bb019da5bb826499fb
 Description:  Full versions of standard GNU utilities. If an equivalent Busybox applet is
  available, you should consider compiling that instead as Busybox applets are
  usually smaller, at the expense of reduced functionality.
 
 Package: curl
-Version: 7.85.0-1
+Version: 7.85.0-1.1
 Depends: libc, libcurl4
 Source: feeds/packages/net/curl
 SourceName: curl
 License: MIT
 LicenseFiles: COPYING
 Section: net
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 CPE-ID: cpe:/a:haxx:libcurl
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Architecture: aarch64_cortex-a53
-Installed-Size: 57594
-Filename: curl_7.85.0-1_aarch64_cortex-a53.ipk
-Size: 58421
-SHA256sum: 0db8b8a2be8127cb4f0fe929beb02145f2f8247faa92dc17256801aee7993be3
+Installed-Size: 57624
+Filename: curl_7.85.0-1.1_aarch64_cortex-a53.ipk
+Size: 58461
+SHA256sum: 06e36e0ccec3069b03ec66aa03d2ac2ef68d21bd04e6ec929c804d0102498b54
 Description:  A client-side URL transfer utility
-
-Package: dawn
-Version: 2022-07-16-181549f7-1
-Depends: libc, libubus20210603, libubox20211104, libblobmsg-json20211104, libuci20130104, libgcrypt, libiwinfo20210430, umdns
-Source: feeds/packages/net/dawn
-SourceName: dawn
-License: GPL-2.0-only
-LicenseFiles: LICENSE
-Section: net
-SourceDateEpoch: 1667842764
-Maintainer: Nick Hainke <vincent@systemli.org>
-Architecture: aarch64_cortex-a53
-Installed-Size: 48476
-Filename: dawn_2022-07-16-181549f7-1_aarch64_cortex-a53.ipk
-Size: 49349
-SHA256sum: 30bbefb5b76897feb6266e939fb11cd1b2271a2b4a25a4b8cf9583f94cdb29e0
-Description:  This package implements a decentralized wireless daemon.
 
 Package: ddns-scripts
 Version: 2.7.8-5
@@ -382,67 +186,13 @@ Source: feeds/packages/net/ddns-scripts
 SourceName: ddns-scripts
 License: GPL-2.0
 Section: net
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 Architecture: all
-Installed-Size: 14575
+Installed-Size: 14578
 Filename: ddns-scripts_2.7.8-5_all.ipk
-Size: 15641
-SHA256sum: 1ba5355fdb865af9d8299aee542a717622f976e1ddbfc7d1eec5f2d9a09856df
+Size: 15648
+SHA256sum: bfe51b87e00e786387af9121b76c78f5f955e7ff1a26f422e5e138ebb1aedda0
 Description:  Dynamic DNS Client scripts (with IPv6 support) - Info: http://wiki.openwrt.org/doc/howto/ddns.client
-
-Package: dns2socks
-Version: 2.1-2
-Depends: libc, libpthread
-Source: feeds/packages/net/dns2socks
-SourceName: dns2socks
-License: BSD-3-Clause
-Section: net
-SourceDateEpoch: 1667842764
-Maintainer: ghostmaker
-Architecture: aarch64_cortex-a53
-Installed-Size: 11074
-Filename: dns2socks_2.1-2_aarch64_cortex-a53.ipk
-Size: 11868
-SHA256sum: 8454f6a54eb96df5c96cde40c52a5c9881225387449e1aec6d8bd553aeb705dd
-Description:  This is a command line utility to resolve DNS requests via
- a SOCKS tunnel like Tor or a HTTP proxy.
-
-Package: dnsforwarder
-Version: 6.1.15-11
-Depends: libc, coreutils, coreutils-base64, dnsmasq-full, libpthread, wget-ssl
-Source: feeds/packages/net/dnsforwarder
-SourceName: dnsforwarder
-License: GPL-3.0
-Section: net
-SourceDateEpoch: 1667842764
-Maintainer: Dennis <openwrt@tossp.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 87908
-Filename: dnsforwarder_6.1.15-11_aarch64_cortex-a53.ipk
-Size: 88448
-SHA256sum: e1e172b7cc94a678c2047a2d6f21e52ae8101988c4c4c6a4f687662807c9e0cf
-Description:  Forwarding queries to customized domains (and their subdomains) to specified servers
- over a specified protocol (UDP or TCP). non-standard ports are supported.
-
-Package: dnsproxy
-Version: 0.45.0-1
-Depends: libc, ca-bundle
-Source: feeds/packages/net/dnsproxy
-SourceName: dnsproxy
-License: Apache-2.0
-LicenseFiles: LICENSE
-Section: net
-Require-User: dnsproxy=411:dnsproxy=411
-SourceDateEpoch: 1667842764
-Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Architecture: aarch64_cortex-a53
-Installed-Size: 3381955
-Filename: dnsproxy_0.45.0-1_aarch64_cortex-a53.ipk
-Size: 3373993
-SHA256sum: a4e0766b244f85b6f3a9898de24f7a61b9e3fbacb751ab9eabfd89bde971bd7b
-Description:  A simple DNS proxy server that supports all existing DNS protocols including
- DNS-over-TLS, DNS-over-HTTPS, DNSCrypt, and DNS-over-QUIC.Moreover, it can
- work as a DNS-over-HTTPS, DNS-over-TLS or DNS-over-QUIC server.
 
 Package: etherwake
 Version: 1.09-5
@@ -450,107 +200,37 @@ Depends: libc
 Source: feeds/packages/net/etherwake
 SourceName: etherwake
 Section: net
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Architecture: aarch64_cortex-a53
 Installed-Size: 5213
 Filename: etherwake_1.09-5_aarch64_cortex-a53.ipk
-Size: 6131
-SHA256sum: 5876de8b2f8099b3b9bd4dea11695de2551a34058f3f37f1143bac2df1cefe17
+Size: 6132
+SHA256sum: b5d4f707c629a513c33579aae141c84f74acfe67e4bff2507b1a5e8fb7fc7bac
 Description:  You can wake up WOL compliant Computers which have been powered down to
  sleep mode or start WOL compliant Computers with a BIOS feature.
  WOL is an abbreviation for Wake-on-LAN. It is a standard that allows you
  to turn on a computer from another location over a network connection.
  ether-wake also supports WOL passwords.
 
-Package: frpc
-Version: 0.44.0-1
-Depends: libc
-Source: feeds/packages/net/frp
-SourceName: frpc
-License: Apache-2.0
+Package: haproxy
+Version: 2.6.6-1
+Depends: libc, libpcre, libltdl7, zlib, libpthread, liblua5.3-5.3, libopenssl1.1, libncurses6, libreadline8, libatomic1
+Source: feeds/packages/net/haproxy
+SourceName: haproxy
+License: GPL-2.0-only
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1667842764
-Maintainer: Xingwang Liao <kuoruan@gmail.com>
+SourceDateEpoch: 1670507219
+CPE-ID: cpe:/a:haproxy:haproxy
+Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 Architecture: aarch64_cortex-a53
-Installed-Size: 2896015
-Filename: frpc_0.44.0-1_aarch64_cortex-a53.ipk
-Size: 2897471
-SHA256sum: 5b2408724a6e8d06d907f9d3b7599d553b08fabbcd849bd4eddb7cfb79f1cd83
-Description:  frp is a fast reverse proxy to help you expose a local server behind a NAT or firewall
- to the internet. As of now, it supports tcp & udp, as well as http and https protocols,
- where requests can be forwarded to internal services by domain name.
- 
- This package contains the frpc.
-
-Package: iperf3
-Version: 3.12-1
-Depends: libc, libiperf3
-Source: feeds/packages/net/iperf3
-SourceName: iperf3
-License: BSD-3-Clause
-Section: net
-SourceDateEpoch: 1667842764
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Architecture: aarch64_cortex-a53
-Installed-Size: 2278
-Filename: iperf3_3.12-1_aarch64_cortex-a53.ipk
-Size: 3059
-SHA256sum: d25d2a3aca5e5f17e117945e5ab72d9c713cf0756f89d4479c328ec3d752d398
-Description:  Iperf is a modern alternative for measuring TCP and UDP bandwidth
- performance, allowing the tuning of various parameters and
- characteristics.
-
-Package: ipt2socks
-Version: 1.1.3-3
-Depends: libc, libpthread
-Source: feeds/packages/net/ipt2socks
-SourceName: ipt2socks
-License: AGPL-3.0
-Section: net
-SourceDateEpoch: 1667842764
-Architecture: aarch64_cortex-a53
-Installed-Size: 26487
-Filename: ipt2socks_1.1.3-3_aarch64_cortex-a53.ipk
-Size: 27201
-SHA256sum: 7dd31cc7b417acf0665dc473777908ebef172d8a454218f9d9c17e723fe4e60e
-Description:  Utility for converting iptables (redirect/tproxy) to socks5.
-
-Package: kcptun-client
-Version: 20210922-1
-Depends: libc, kcptun-config
-Source: feeds/packages/net/kcptun
-SourceName: kcptun-client
-License: MIT
-LicenseFiles: LICENSE.md
-Section: net
-SourceDateEpoch: 1667842764
-Maintainer: Dengfeng Liu <liudf0716@gmail.com>, Chao Liu <expiron18@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 2452422
-Filename: kcptun-client_20210922-1_aarch64_cortex-a53.ipk
-Size: 2445567
-SHA256sum: 36c4529c62b31777a5fd4a22b47c4fb6c6b65e4965efa7a43f8ae1126a6f620f
-Description:  kcptun is a Stable & Secure Tunnel Based On KCP with N:M Multiplexing.
- This package only contains kcptun client.
-
-Package: kcptun-config
-Version: 20210922-1
-Depends: libc
-Source: feeds/packages/net/kcptun
-SourceName: kcptun-config
-License: MIT
-LicenseFiles: LICENSE.md
-Section: net
-SourceDateEpoch: 1667842764
-Maintainer: Dengfeng Liu <liudf0716@gmail.com>, Chao Liu <expiron18@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 1953
-Filename: kcptun-config_20210922-1_aarch64_cortex-a53.ipk
-Size: 2775
-SHA256sum: 1a99ca7e8e87850b057e2c21463412855302aa139d77a5df7882fa0e27de6719
-Description:  Kcptun Config Scripts
+Installed-Size: 1019902
+Filename: haproxy_2.6.6-1_aarch64_cortex-a53.ipk
+Size: 1018953
+SHA256sum: ed90e765a193357cd30db01b2749dc43c96dafc82faa66b60645af6db61fc351
+Description:  Open source Reliable, High Performance TCP/HTTP Load Balancer.
+ This package is built with SSL and LUA support.
 
 Package: libcares
 Version: 1.18.1-1
@@ -560,14 +240,14 @@ SourceName: libcares
 License: MIT
 LicenseFiles: LICENSE.md
 Section: libs
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 CPE-ID: cpe:/a:c-ares_project:c-ares
 Maintainer: Karl Palsson <karlp@etactica.com>
 Architecture: aarch64_cortex-a53
-Installed-Size: 38294
+Installed-Size: 38295
 Filename: libcares_1.18.1-1_aarch64_cortex-a53.ipk
-Size: 39193
-SHA256sum: 4e5996370359b5bc55420a2f5aeffc812b30893e07a6f82b174d80d9acefe322
+Size: 39196
+SHA256sum: 2e6a0483691816e8232aa058d702e481ba19bdfb2d8c795b41865c7976f4542e
 Description:  c-ares is a C library for asynchronous DNS requests (including name resolves)
  
  C89 compatibility, MIT licensed, builds for and runs on POSIX, Windows,
@@ -575,23 +255,23 @@ Description:  c-ares is a C library for asynchronous DNS requests (including nam
  
 
 Package: libcurl4
-Version: 7.85.0-1
-Depends: libc, libopenssl1.1, ca-bundle
+Version: 7.85.0-1.1
+Depends: libc, libopenssl1.1, libnghttp2-14, ca-bundle
 Provides: libcurl
 Source: feeds/packages/net/curl
 SourceName: libcurl
 License: MIT
 LicenseFiles: COPYING
 Section: libs
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 ABIVersion: 4
 CPE-ID: cpe:/a:haxx:libcurl
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Architecture: aarch64_cortex-a53
-Installed-Size: 173140
-Filename: libcurl4_7.85.0-1_aarch64_cortex-a53.ipk
-Size: 173865
-SHA256sum: 7dc0754d8a87b0b74326866e6769ad11b4ccbf6bcca06c017eac5adc86df2b08
+Installed-Size: 182089
+Filename: libcurl4_7.85.0-1.1_aarch64_cortex-a53.ipk
+Size: 182829
+SHA256sum: 465554fdb14eb6f67ebc3faff3040463b10127b7d43af01e463a044f39efdec6
 Description:  A client-side URL transfer library
 
 Package: libev
@@ -601,173 +281,18 @@ Source: feeds/packages/libs/libev
 SourceName: libev
 License: BSD-2-Clause
 Section: libs
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 Maintainer: Karl Palsson <karlp@tweak.net.au>
 Architecture: aarch64_cortex-a53
 Installed-Size: 23783
 Filename: libev_4.33-1_aarch64_cortex-a53.ipk
-Size: 24556
-SHA256sum: 4794c04eb2a0141fd32e2151a49227d8a11e6525a832d7b762880114cdf983ab
+Size: 24552
+SHA256sum: f71381e04489fe86d71d8a392b0516ceb5d78c8844240982786a5fc199139ab7
 Description:  A full-featured and high-performance event loop that is loosely modelled after
  libevent, but without its limitations and bugs.
 
-Package: libgcrypt
-Version: 1.10.1-1
-Depends: libc, libgpg-error
-Source: feeds/packages/libs/libgcrypt
-SourceName: libgcrypt
-License: LGPL-2.1-or-later
-LicenseFiles: COPYING.LIB
-Section: libs
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:gnupg:libgcrypt
-Maintainer: W. Michael Petullo <mike@flyn.org>
-Architecture: aarch64_cortex-a53
-Installed-Size: 406903
-Filename: libgcrypt_1.10.1-1_aarch64_cortex-a53.ipk
-Size: 406768
-SHA256sum: a920ae8a9f38bca9272842ccaa066974b517444cf6955feffb390a774cab70c9
-Description:  This is a general purpose cryptographic library based on the code from
- GnuPG. It provides functions for all cryptograhic building blocks:
- symmetric ciphers (AES, DES, Arcfour, CAST5), hash algorithms (MD5, SHA-1,
- RIPE-MD160, SHA-224/256, SHA-384/512), MACs (HMAC for all hash
- algorithms), public key algorithms (RSA, DSA), large integer functions,
- random numbers and a lot of supporting functions. Some algorithms have
- been disabled to reduce size (Blowfish, Twofish, Serpent,
- RC2, SEED, Camellia, CRC, MD4, TIGER-192, Whirlpool, ElGamal, ECC).
-
-Package: libgpg-error
-Version: 1.45-1
-Depends: libc
-Source: feeds/packages/libs/libgpg-error
-SourceName: libgpg-error
-License: LGPL-2.1-or-later
-LicenseFiles: COPYING
-Section: libs
-SourceDateEpoch: 1667842764
-Maintainer: W. Michael Petullo <mike@flyn.org>
-Architecture: aarch64_cortex-a53
-Installed-Size: 60250
-Filename: libgpg-error_1.45-1_aarch64_cortex-a53.ipk
-Size: 61166
-SHA256sum: 8b9e86c65ec200c1e465a50817621ae5a628779f27566158f4d9bcc197e8ec5e
-Description:  An helper library for common error codes and descriptions.
- This is a library that defines common error values for all GnuPG
- components. Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
- Libksba, DirMngr, Pinentry, SmartCard Daemon and possibly more in the
- future.
-
-Package: libiperf3
-Version: 3.12-1
-Depends: libc
-Source: feeds/packages/net/iperf3
-SourceName: libiperf3
-License: BSD-3-Clause
-Section: libs
-SourceDateEpoch: 1667842764
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Architecture: aarch64_cortex-a53
-Installed-Size: 64323
-Filename: libiperf3_3.12-1_aarch64_cortex-a53.ipk
-Size: 65062
-SHA256sum: c28d5a5074da6e2af58542ae13c2d2d55cc923bb4f0f68feda3f1d7192ad49ef
-Description:  Libiperf is a library providing an API for iperf3 functionality.
-
-Package: liblzma
-Version: 5.2.7-1
-Depends: libc, libpthread
-Source: feeds/packages/utils/xz
-SourceName: liblzma
-License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
-LicenseFiles: COPYING
-Section: libs
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:tukaani:xz
-Architecture: aarch64_cortex-a53
-Installed-Size: 53915
-Filename: liblzma_5.2.7-1_aarch64_cortex-a53.ipk
-Size: 54732
-SHA256sum: 74b9917e96c86a64101b13f31e6a803e6dfd390b229fb432d461270bd63f0afe
-Description:  liblzma library from XZ Utils
-
-Package: libmaxminddb
-Version: 1.6.0-1
-Depends: libc
-Source: feeds/packages/libs/libmaxminddb
-SourceName: libmaxminddb
-License: Apache-2.0
-LicenseFiles: LICENSE
-Section: libs
-SourceDateEpoch: 1667842764
-Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 14375
-Filename: libmaxminddb_1.6.0-1_aarch64_cortex-a53.ipk
-Size: 15107
-SHA256sum: c0a78d618ea3984cd1f65407cb7037e572afaabaf0e87f72510e8faadf8a1156
-Description:  The libmaxminddb library provides functions for working MaxMind DB files.
-
-Package: libminiupnpc
-Version: 2.2.2-1
-Depends: libc
-Source: feeds/packages/net/miniupnpc
-SourceName: libminiupnpc
-License: BSD-3-Clause
-LicenseFiles: LICENSE
-Section: libs
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:miniupnp_project:miniupnp
-Architecture: aarch64_cortex-a53
-Installed-Size: 23307
-Filename: libminiupnpc_2.2.2-1_aarch64_cortex-a53.ipk
-Size: 23994
-SHA256sum: 1eddbda02c436da22619ff8c34150511550d3d2b1b7ca0af18846e4f2ff97f76
-Description:  Lightweight UPnP library
-
-Package: libnatpmp1
-Version: 20150609-3
-Depends: libc
-Provides: libnatpmp
-Source: feeds/packages/libs/libnatpmp
-SourceName: libnatpmp
-License: BSD-3-Clause
-LicenseFiles: LICENSE
-Section: libs
-SourceDateEpoch: 1667842764
-ABIVersion: 1
-Architecture: aarch64_cortex-a53
-Installed-Size: 3600
-Filename: libnatpmp1_20150609-3_aarch64_cortex-a53.ipk
-Size: 4485
-SHA256sum: 49b34233778216cb20c734b7115e8997df950d30619410d6c2cca8c926e33214
-Description:  libnatpmp is an attempt to make a portable and fully compliant implementation
- of the protocol for the client side. It is based on non blocking sockets and
- all calls of the API are asynchronous. It is therefore very easy to integrate
- the NAT-PMP code to any event driven code.
- This package contains the shared library.
-
-Package: libnetfilter-queue1
-Version: 1.0.5-4
-Depends: libc, libmnl0, libnfnetlink0
-Provides: libnetfilter-queue
-Source: feeds/packages/libs/libnetfilter-queue
-SourceName: libnetfilter-queue
-License: GPL-2.0-or-later
-LicenseFiles: COPYING
-Section: libs
-SourceDateEpoch: 1667842764
-ABIVersion: 1
-Architecture: aarch64_cortex-a53
-Installed-Size: 10937
-Filename: libnetfilter-queue1_1.0.5-4_aarch64_cortex-a53.ipk
-Size: 11748
-SHA256sum: ecd0284e64ea979978fe284146d5f34004563b2e609215ece66d614daa502830
-Description:  libnetfilter_queue is a userspace library providing a programming
- interface (API) to packets that have been queued by the kernel
- packet filter.
-
 Package: libnghttp2-14
-Version: 1.43.0-1
+Version: 1.44.0-1
 Depends: libc
 Provides: libnghttp2
 Source: feeds/packages/libs/nghttp2
@@ -775,51 +300,31 @@ SourceName: libnghttp2
 License: MIT
 LicenseFiles: COPYING
 Section: libs
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 ABIVersion: -14
 Maintainer: Hans Dedecker <dedeckeh@gmail.com>
 Architecture: aarch64_cortex-a53
-Installed-Size: 70717
-Filename: libnghttp2-14_1.43.0-1_aarch64_cortex-a53.ipk
-Size: 69960
-SHA256sum: d1ab2ba1d560bd4e34691c987ffe3311b5f316d2630dd9b7b88d404ce0745ab4
+Installed-Size: 66847
+Filename: libnghttp2-14_1.44.0-1_aarch64_cortex-a53.ipk
+Size: 65721
+SHA256sum: 23e59b7752789af94c684bdfd1678573176763013b3a53d3a51fff2b3e84fc99
 Description:  C library implementing the framing layer of the HTTP/2 protocol. It can be used to build a HTTP/2-capable HTTP client or server
 
-Package: libruby3.1
-Version: 3.1.2-1
-Depends: libc, libpthread, librt, libgmp10, zlib
-Provides: libruby
-Source: feeds/packages/lang/ruby
-SourceName: libruby
-License: BSD-2-Clause
-LicenseFiles: COPYING
-Section: libs
-SourceDateEpoch: 1667842764
-ABIVersion: 3.1
-CPE-ID: cpe:/a:ruby-lang:ruby
-Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 1182682
-Filename: libruby3.1_3.1.2-1_aarch64_cortex-a53.ipk
-Size: 1178472
-SHA256sum: aecd032c3ce3299004195374d13db211e17dd7819794b9c1f5258a1f4de8e80e
-Description:  Ruby scripting language (shared library)
-
 Package: libsodium
-Version: 1.0.18-3
+Version: 1.0.18-4
 Depends: libc
 Source: feeds/packages/libs/libsodium
 SourceName: libsodium
 License: ISC
 LicenseFiles: LICENSE
 Section: libs
-SourceDateEpoch: 1667842764
-Maintainer: Damiano Renfer <damiano.renfer@gmail.com>
+SourceDateEpoch: 1670507219
+Maintainer: Damiano Renfer <x9w2n7xnu@relay.firefox.com>
 Architecture: aarch64_cortex-a53
-Installed-Size: 103970
-Filename: libsodium_1.0.18-3_aarch64_cortex-a53.ipk
-Size: 105215
-SHA256sum: 0137a85e933b169788bdc28e979ce4d7acf61ce93ea70b41788b865eaba8b2ce
+Installed-Size: 105255
+Filename: libsodium_1.0.18-4_aarch64_cortex-a53.ipk
+Size: 106481
+SHA256sum: 137ad609231ea69a2f5eee2a318b4f024226262764368cb675ca310c42ce4490
 Description:  NaCl (pronounced "salt") is a new easy-to-use high-speed software library for network communication, encryption, decryption, signatures, etc.
  NaCl's goal is to provide all of the core operations needed to build higher-level cryptographic tools.
  Sodium is a portable, cross-compilable, installable, packageable fork of NaCl (based on the latest released upstream version nacl-20110221), with a compatible API.
@@ -834,143 +339,15 @@ Source: feeds/packages/libs/udns
 SourceName: libudns
 License: LGPL-2.1
 Section: libs
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
 Architecture: aarch64_cortex-a53
-Installed-Size: 20137
+Installed-Size: 20135
 Filename: libudns_0.4-1_aarch64_cortex-a53.ipk
-Size: 20866
-SHA256sum: b19b4103f25c7f446ee8c5cf715ea1205497f67b2e2c1422d5350cd670483c70
+Size: 20863
+SHA256sum: 5fb12b67d451ef122840ff8003e308c5399bd42d58efdb4bab9e2e7a85c775d0
 Description:  UDNS is a stub DNS resolver library with ability to perform both syncronous
  and asyncronous DNS queries.
-
-Package: libuv1
-Version: 1.44.1-1
-Depends: libc, libpthread, librt
-Provides: libuv
-Source: feeds/packages/libs/libuv
-SourceName: libuv
-License: MIT
-LicenseFiles: LICENSE
-Section: libs
-SourceDateEpoch: 1667842764
-ABIVersion: 1
-CPE-ID: cpe:/a:libuv_project:libuv
-Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 69069
-Filename: libuv1_1.44.1-1_aarch64_cortex-a53.ipk
-Size: 69720
-SHA256sum: 0933a6b136557fa23ae1942217b1a84fc0cd91f60ed84fd1c5ca83d113e6ea4c
-Description:  libuv is a multi-platform support library with a focus on asynchronous I/O. It
- was primarily developed for use by Node.js, but it's also used by Luvit, Julia,
- pyuv, and others.
-
-Package: libwebsockets-full
-Version: 4.1.6-1
-Depends: libc, zlib, libcap, libopenssl1.1, libuv1
-Provides: libwebsockets
-Source: feeds/packages/libs/libwebsockets
-SourceName: libwebsockets-full
-License: MIT
-LicenseFiles: LICENSE
-Section: libs
-SourceDateEpoch: 1667842764
-Maintainer: Karl Palsson <karlp@etactica.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 169950
-Filename: libwebsockets-full_4.1.6-1_aarch64_cortex-a53.ipk
-Size: 170653
-SHA256sum: ed8aefc10959a645a110a75608862ed9b9fa6b3ab62af011e19f492fa9c6642a
-Description:  libwebsockets (Full - OpenSSL, libuv, plugins, CGI)
-
-Package: libyaml
-Version: 0.2.5-1
-Depends: libc
-Source: feeds/packages/libs/yaml
-SourceName: libyaml
-License: MIT
-LicenseFiles: COPYING
-Section: libs
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:pyyaml_project:pyyaml
-Architecture: aarch64_cortex-a53
-Installed-Size: 41523
-Filename: libyaml_0.2.5-1_aarch64_cortex-a53.ipk
-Size: 42366
-SHA256sum: c316614ec67a8575476343d89cab051a6fb41a2c332b19a445156c63f8273694
-Description:  Fast YAML 1.1 parser and emitter library
-
-Package: libzstd
-Version: 1.5.2-1
-Depends: libc
-Source: feeds/packages/utils/zstd
-SourceName: libzstd
-License: GPL-2.0-or-later
-LicenseFiles: COPYING
-Section: libs
-SourceDateEpoch: 1667842764
-Architecture: aarch64_cortex-a53
-Installed-Size: 297669
-Filename: libzstd_1.5.2-1_aarch64_cortex-a53.ipk
-Size: 297968
-SHA256sum: 26197e4fe5e17133a57b8099aa38fee8fe5117d6f9cdeea0cb3a81a2780bfc16
-Description:  Zstandard - Fast real-time compression algorithm.
- This package provides libzstd library.
-
-Package: lua-cjson
-Version: 2.1.0-2
-Depends: libc, lua
-Source: feeds/packages/lang/lua-cjson
-SourceName: lua-cjson
-License: MIT
-LicenseFiles: LICENSE
-Section: lang
-SourceDateEpoch: 1667842764
-Maintainer: Dirk Chang <dirk@kooiot.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 12669
-Filename: lua-cjson_2.1.0-2_aarch64_cortex-a53.ipk
-Size: 13429
-SHA256sum: 367d448ac450d34843addcb7b12c97eb7aaa0aa0fe014d1d46e774d6defcce44
-Description:  Lua CJSON is a fast JSON encoding/parsing module for Lua.
-
-Package: luasocket
-Version: 3.0.0-1
-Depends: libc, lua
-Source: feeds/packages/lang/luasocket
-SourceName: luasocket
-License: MIT
-LicenseFiles: LICENSE
-Section: lang
-SourceDateEpoch: 1667842764
-Maintainer: W. Michael Petullo <mike@flyn.org>
-Architecture: aarch64_cortex-a53
-Installed-Size: 62118
-Filename: luasocket_3.0.0-1_aarch64_cortex-a53.ipk
-Size: 63029
-SHA256sum: b7134682aa00d6cd69e56dc7a3e558c478048bcf643573179694776504243514
-Description:  LuaSocket is the most comprehensive networking support
- library for the Lua language. It provides easy access to
- TCP, UDP, DNS, SMTP, FTP, HTTP, MIME and much more.
-
-Package: microsocks
-Version: 1.0.3-1
-Depends: libc, libpthread
-Source: feeds/packages/net/microsocks
-SourceName: microsocks
-License: MIT
-LicenseFiles: COPYING
-Section: net
-SourceDateEpoch: 1667842764
-Maintainer: lean
-Architecture: aarch64_cortex-a53
-Installed-Size: 5761
-Filename: microsocks_1.0.3-1_aarch64_cortex-a53.ipk
-Size: 6541
-SHA256sum: 1ce400fce5e04285d7f81c1cfab868e10a063bbf3fbac1e603cad250aaedc000
-Description:  A SOCKS5 service that you can run on your remote boxes to tunnel connections
- through them, if for some reason SSH doesn't cut it for you.
 
 Package: miniupnpd
 Version: 2.0.20170421-3
@@ -979,115 +356,31 @@ Source: feeds/packages/net/miniupnpd
 SourceName: miniupnpd
 License: BSD-3-Clause
 Section: net
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 Maintainer: Markus Stenberg <fingon@iki.fi>
 Architecture: aarch64_cortex-a53
-Installed-Size: 58131
+Installed-Size: 58129
 Filename: miniupnpd_2.0.20170421-3_aarch64_cortex-a53.ipk
-Size: 59047
-SHA256sum: df6766c31b5da2701ec1aa36ee1e92cc3b659f59d3db5cf9effcc7d4c73c19c7
+Size: 59059
+SHA256sum: 537ece49fca84a8ebaa7e2a270263cf608769af84729669bc24040401dc1b86c
 Description:  Lightweight UPnP IGD, NAT-PMP & PCP daemon
-
-Package: netdata
-Version: 1.33.1-1
-Depends: libc, zlib, libuuid1, libuv1, libmnl0, libjson-c5
-Source: feeds/packages/admin/netdata
-SourceName: netdata
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
-Section: admin
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:my-netdata:netdata
-Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>, Daniel Engberg <daniel.engberg.lists@pyret.net>
-Architecture: aarch64_cortex-a53
-Installed-Size: 8017700
-Filename: netdata_1.33.1-1_aarch64_cortex-a53.ipk
-Size: 7988279
-SHA256sum: 51cf26fcc11d619c2a42634d9cf509670d208a56a34d4a5b85cb47c772dcd350
-Description:  netdata is a highly optimized Linux daemon providing real-time performance
- monitoring for Linux systems, applications and SNMP devices over the web.
- 
- If you want to use Python plugins install python3, python3-yaml and
- python3-urllib3
 
 Package: nlbwmon
 Version: 2021-09-01-d82c910c-1
-Depends: libc, libubox20211104, libnl-tiny2022-05-23, zlib, kmod-nf-conntrack-netlink
+Depends: libc, libubox20220927, libnl-tiny2022-11-01, zlib, kmod-nf-conntrack-netlink
 Source: feeds/packages/net/nlbwmon
 SourceName: nlbwmon
 License: ISC
 LicenseFiles: COPYING
 Section: net
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: aarch64_cortex-a53
-Installed-Size: 21544
+Installed-Size: 21543
 Filename: nlbwmon_2021-09-01-d82c910c-1_aarch64_cortex-a53.ipk
-Size: 22364
-SHA256sum: 8c33bb4a2f09fa7d946e041879234f6f52bffc5d2eab9c6a55c38deffac5b512
+Size: 22359
+SHA256sum: 8e71ac2fc081078e0afc45a99dcbddbeea8fdaa93f7a41b79afa60436062d00e
 Description:  OpenWrt Traffic Usage Monitor
-
-Package: node
-Version: v16.17.1-1
-Depends: libc, libstdcpp6, libopenssl1.1, zlib, libnghttp2-14, libcares, libatomic1
-Source: feeds/packages/lang/node
-SourceName: node
-License: MIT
-LicenseFiles: LICENSE
-Section: lang
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:nodejs:node.js
-Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 8843071
-Filename: node_v16.17.1-1_aarch64_cortex-a53.ipk
-Size: 8811154
-SHA256sum: 4f2e553de4e589a1bbe4cf9554b7ebdced54f382ede606226e8dd63e8ed4d7d9
-Description:  Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses
- an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js'
- package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
- 
- *** The following preparations must be made on the host side. ***
- 1. gcc 8.3 or higher is required.
- 2. To build a 32-bit target, gcc-multilib, g++-multilib are required.
- 3. Requires libatomic package. (If necessary, install the 32-bit library at the same time.)
- ex) sudo apt-get install gcc-multilib g++-multilib
-
-Package: openssh-keygen
-Version: 9.0p1-1
-Depends: libc, libopenssl1.1, zlib
-Source: feeds/packages/net/openssh
-SourceName: openssh-keygen
-License: BSD ISC
-LicenseFiles: LICENCE
-Section: net
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:openssh:openssh
-Maintainer: Peter Wagner <tripolar@gmx.at>
-Architecture: aarch64_cortex-a53
-Installed-Size: 213330
-Filename: openssh-keygen_9.0p1-1_aarch64_cortex-a53.ipk
-Size: 213861
-SHA256sum: 724e13434936260976f8a7a4b9ea7e19916e53b0f3ef99f3943b783bd8f26c0e
-Description:  OpenSSH keygen.
-
-Package: openssh-sftp-server
-Version: 9.0p1-1
-Depends: libc, libopenssl1.1, zlib
-Source: feeds/packages/net/openssh
-SourceName: openssh-sftp-server
-License: BSD ISC
-LicenseFiles: LICENCE
-Section: net
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:openssh:openssh
-Maintainer: Peter Wagner <tripolar@gmx.at>
-Architecture: aarch64_cortex-a53
-Installed-Size: 63098
-Filename: openssh-sftp-server_9.0p1-1_aarch64_cortex-a53.ipk
-Size: 63906
-SHA256sum: 8830a5019a62a547a9638dcf413e2338d617fecb8470d1f5b9201d28f4779555
-Description:  OpenSSH SFTP server.
 
 Package: pdnsd-alt
 Version: 1.2.9b-par-3
@@ -1095,12 +388,12 @@ Depends: libc, libpthread
 Source: feeds/packages/net/pdnsd-alt
 SourceName: pdnsd-alt
 Section: net
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 Architecture: aarch64_cortex-a53
-Installed-Size: 91575
+Installed-Size: 91576
 Filename: pdnsd-alt_1.2.9b-par-3_aarch64_cortex-a53.ipk
-Size: 92478
-SHA256sum: dfa8df030d9343087cc7992362ad9aa35a5cb16f81e3baa08503b00ffa8a789a
+Size: 92476
+SHA256sum: d2a77f4ed222aa6686453946e2cc0bf65329e5cee765b07296363e86de113a58
 Description:  pdnsd, is an IPv6 capable proxy DNS server with permanent caching (the cache
  contents are written to hard disk on exit) that is designed to cope with
  unreachable or down DNS servers (for example in dial-in networking).
@@ -1109,433 +402,56 @@ Description:  pdnsd, is an IPv6 capable proxy DNS server with permanent caching 
  can't be configured to change that behaviour, to prevent the often
  minute-long hangs (or even crashes) that result from stalled dns queries.
 
-Package: redsocks2
-Version: 0.67-4
-Depends: libc, libevent2-7, libopenssl1.1
-Source: feeds/packages/net/redsocks2
-SourceName: redsocks2
-Section: net
-SourceDateEpoch: 1667842764
-Maintainer: semigodking <semigodking@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 56862
-Filename: redsocks2_0.67-4_aarch64_cortex-a53.ipk
-Size: 57749
-SHA256sum: d669d7d3cf8982fb97d8572cf2f22d2f3b69e0525d57dd4d1ca3f608f5ded5c0
-Description:  This is a modified version of original redsocks. The name is changed to be REDSOCKS2 since this release to distinguish with original redsocks. This variant is useful for anti-GFW (Great Fire Wall).
-
-Package: rp-pppoe-common
-Version: 3.14-3
-Depends: libc, ppp
-Source: feeds/packages/net/rp-pppoe
-SourceName: rp-pppoe-common
-License: LGPL-2.0-or-later
-LicenseFiles: doc/LICENSE
-Section: net
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:roaring_penguin:pppoe
-Architecture: aarch64_cortex-a53
-Installed-Size: 396
-Filename: rp-pppoe-common_3.14-3_aarch64_cortex-a53.ipk
-Size: 1283
-SHA256sum: 226b822d912664fd274c8289bf68c86063338e75ef67845751e7504adacfae49
-Description:  Dubbed RP-PPPoE, this open-source product is ideal for Linux users with
- a DSL "modem" whose Internet service provider uses PPPoE.
- 
- This package contains files common to server and relay.
-
-Package: rp-pppoe-relay
-Version: 3.14-3
-Depends: libc, rp-pppoe-common
-Source: feeds/packages/net/rp-pppoe
-SourceName: rp-pppoe-relay
-License: LGPL-2.0-or-later
-LicenseFiles: doc/LICENSE
-Section: net
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:roaring_penguin:pppoe
-Architecture: aarch64_cortex-a53
-Installed-Size: 13741
-Filename: rp-pppoe-relay_3.14-3_aarch64_cortex-a53.ipk
-Size: 14572
-SHA256sum: aa8411ef08d54d74e6b8b436c8c22fad60ffae74a9a4ab1ebdce3b5bc0336836
-Description:  Dubbed RP-PPPoE, this open-source product is ideal for Linux users with
- a DSL "modem" whose Internet service provider uses PPPoE.
- 
- This package contains pppoe-relay.
-
-Package: ruby-bigdecimal
-Version: 3.1.2-1
-Depends: libc, ruby
-Source: feeds/packages/lang/ruby
-SourceName: ruby-bigdecimal
-License: BSD-2-Clause
-LicenseFiles: COPYING
-Section: lang
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:ruby-lang:ruby
-Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 43273
-Filename: ruby-bigdecimal_3.1.2-1_aarch64_cortex-a53.ipk
-Size: 44179
-SHA256sum: e202c8afe4acbdd375193bb0fcc0dec5a4eb0684cd7a8f46b30e0364810344db
-Description:  This package contains the ruby Arbitrary-precision decimal floating-point library.
- 
- Provides:
- 
- - /usr/lib/ruby/3.1/*/bigdecimal.so 
- - /usr/lib/ruby/3.1/bigdecimal/ 
- - /usr/lib/ruby/3.1/bigdecimal.rb 
- - /usr/lib/ruby/gems/3.1/specifications/default/bigdecimal-*.gemspec
- 
-
-Package: ruby-date
-Version: 3.1.2-1
-Depends: libc, ruby
-Source: feeds/packages/lang/ruby
-SourceName: ruby-date
-License: BSD-2-Clause
-LicenseFiles: COPYING
-Section: lang
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:ruby-lang:ruby
-Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 62486
-Filename: ruby-date_3.1.2-1_aarch64_cortex-a53.ipk
-Size: 63360
-SHA256sum: f1dd1a8119879c19c46e986d54b6fcb325b3c92398aac6f9924b1dedffba5572
-Description:  This package contains the ruby Comparable module for handling dates.
- 
- Provides:
- 
- - /usr/lib/ruby/3.1/date.rb 
- - /usr/lib/ruby/3.1/*/date_core.so 
- - /usr/lib/ruby/gems/3.1/specifications/default/date-*.gemspec
- 
-
-Package: ruby-digest
-Version: 3.1.2-1
-Depends: libc, ruby
-Source: feeds/packages/lang/ruby
-SourceName: ruby-digest
-License: BSD-2-Clause
-LicenseFiles: COPYING
-Section: lang
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:ruby-lang:ruby
-Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 25775
-Filename: ruby-digest_3.1.2-1_aarch64_cortex-a53.ipk
-Size: 26576
-SHA256sum: 069d2176073ee63255c585d764ca8839b68d5927b3b7d9d9b35ac62b91301f7e
-Description:  Provides digest* files. Can be configured to use OpenSSL or
- bundled hash functions.
- 
- Provides:
- 
- - /usr/lib/ruby/3.1/digest 
- - /usr/lib/ruby/3.1/digest.rb 
- - /usr/lib/ruby/3.1/*/digest.so 
- - /usr/lib/ruby/3.1/*/digest/* 
- - /usr/lib/ruby/gems/3.1/specifications/default/digest-*.gemspec
- 
-
-Package: ruby-enc
-Version: 3.1.2-1
-Depends: libc, ruby
-Source: feeds/packages/lang/ruby
-SourceName: ruby-enc
-License: BSD-2-Clause
-LicenseFiles: COPYING
-Section: lang
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:ruby-lang:ruby
-Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 10080
-Filename: ruby-enc_3.1.2-1_aarch64_cortex-a53.ipk
-Size: 10915
-SHA256sum: 00d50eddd735f5b6322e744dc47af63e9220f6174835fde096457e6150df29b1
-Description:  This package contains the ruby character re-coding library charset (small subset).
- 
- Provides:
- 
- - /usr/lib/ruby/3.1/*/enc/encdb.so 
- - /usr/lib/ruby/3.1/*/enc/iso_8859_1.so 
- - /usr/lib/ruby/3.1/*/enc/utf_*.so 
- - /usr/lib/ruby/3.1/*/enc/euc_jp.so
- 
-
-Package: ruby-forwardable
-Version: 3.1.2-1
-Depends: libc, ruby
-Source: feeds/packages/lang/ruby
-SourceName: ruby-forwardable
-License: BSD-2-Clause
-LicenseFiles: COPYING
-Section: lang
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:ruby-lang:ruby
-Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 3788
-Filename: ruby-forwardable_3.1.2-1_aarch64_cortex-a53.ipk
-Size: 4668
-SHA256sum: 4b381c2d60098bb91a1f4b4e878584e4fdc5babd3b259ff55d3d37e648581db6
-Description:  This package contains the ruby delegation of methods to a object.
- 
- Provides:
- 
- - /usr/lib/ruby/3.1/forwardable.rb 
- - /usr/lib/ruby/3.1/forwardable 
- - /usr/lib/ruby/gems/3.1/specifications/default/forwardable-*.gemspec
- 
-
-Package: ruby-pstore
-Version: 3.1.2-1
-Depends: libc, ruby, ruby-digest, ruby-enc
-Source: feeds/packages/lang/ruby
-SourceName: ruby-pstore
-License: BSD-2-Clause
-LicenseFiles: COPYING
-Section: lang
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:ruby-lang:ruby
-Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 5462
-Filename: ruby-pstore_3.1.2-1_aarch64_cortex-a53.ipk
-Size: 6327
-SHA256sum: 0cb0bc4a9226dfb49082dd848fed79e7dccfd3c6d12a0aac323ae4334a1d2dfe
-Description:  This package contains the ruby file based persistence.
- 
- Provides:
- 
- - /usr/lib/ruby/3.1/pstore.rb 
- - /usr/lib/ruby/3.1/pstore/ 
- - /usr/lib/ruby/gems/3.1/gems/pstore-*/ 
- - /usr/lib/ruby/gems/3.1/specifications/default/pstore-*.gemspec
- 
-
-Package: ruby-psych
-Version: 3.1.2-1
-Depends: libc, ruby, ruby-bigdecimal, ruby-date, ruby-enc, ruby-forwardable, ruby-stringio, ruby-strscan, libyaml
-Source: feeds/packages/lang/ruby
-SourceName: ruby-psych
-License: BSD-2-Clause
-LicenseFiles: COPYING
-Section: lang
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:ruby-lang:ruby
-Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 33713
-Filename: ruby-psych_3.1.2-1_aarch64_cortex-a53.ipk
-Size: 34701
-SHA256sum: d723b91a023d205f3ef8e73997cdd1a209e02ee178c5c870824fb3079a46d600
-Description:  This package contains the ruby YAML parser and emitter.
- 
- Provides:
- 
- - /usr/lib/ruby/3.1/psych 
- - /usr/lib/ruby/3.1/psych.rb 
- - /usr/lib/ruby/3.1/*/psych.so 
- - /usr/lib/ruby/gems/3.1/specifications/default/psych-*.gemspec
- 
-
-Package: ruby-stringio
-Version: 3.1.2-1
-Depends: libc, ruby
-Source: feeds/packages/lang/ruby
-SourceName: ruby-stringio
-License: BSD-2-Clause
-LicenseFiles: COPYING
-Section: lang
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:ruby-lang:ruby
-Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 12459
-Filename: ruby-stringio_3.1.2-1_aarch64_cortex-a53.ipk
-Size: 13291
-SHA256sum: 74c6e83a9910bdfd11e6e280bd6b7013ae03b85dc0b1d37eb8c7bc2eb6c9747f
-Description:  This package contains the ruby Pseudo `IO` class from/to `String`.
- 
- Provides:
- 
- - /usr/lib/ruby/3.1/*/stringio.so 
- - /usr/lib/ruby/gems/3.1/specifications/default/stringio-*.gemspec
- 
-
-Package: ruby-strscan
-Version: 3.1.2-1
-Depends: libc, ruby
-Source: feeds/packages/lang/ruby
-SourceName: ruby-strscan
-License: BSD-2-Clause
-LicenseFiles: COPYING
-Section: lang
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:ruby-lang:ruby
-Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 8913
-Filename: ruby-strscan_3.1.2-1_aarch64_cortex-a53.ipk
-Size: 9782
-SHA256sum: 37602334cb6a318011d43a30540e63b8a2dff217a1c5f77dc5c2d91dea9e34f9
-Description:  This package contains the ruby Lexical scanning operations on a String.
- 
- Provides:
- 
- - /usr/lib/ruby/3.1/*/strscan.so 
- - /usr/lib/ruby/gems/3.1/specifications/default/strscan-*.gemspec
- 
-
-Package: ruby-yaml
-Version: 3.1.2-1
-Depends: libc, ruby, ruby-pstore, ruby-psych
-Source: feeds/packages/lang/ruby
-SourceName: ruby-yaml
-License: BSD-2-Clause
-LicenseFiles: COPYING
-Section: lang
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:ruby-lang:ruby
-Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 4352
-Filename: ruby-yaml_3.1.2-1_aarch64_cortex-a53.ipk
-Size: 5199
-SHA256sum: 48ff59a551161e6bcc3d008b36e54afb720c018b6e6027e8bcd77c501f953167
-Description:  This package contains the ruby YAML toolkit.
- 
- Provides:
- 
- - /usr/lib/ruby/3.1/yaml 
- - /usr/lib/ruby/3.1/yaml.rb 
- - /usr/lib/ruby/gems/3.1/gems/yaml-*/ 
- - /usr/lib/ruby/gems/3.1/specifications/default/yaml-*.gemspec
- 
-
-Package: ruby
-Version: 3.1.2-1
-Depends: libc, libruby3.1
-Source: feeds/packages/lang/ruby
-SourceName: ruby
-License: BSD-2-Clause
-LicenseFiles: COPYING
-Section: lang
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:ruby-lang:ruby
-Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 1778
-Filename: ruby_3.1.2-1_aarch64_cortex-a53.ipk
-Size: 2690
-SHA256sum: 9d7c1faee3bb0c644b299468b8f439bdfc8c518b49f14cb4c904e04dccc803ba
-Description:  Ruby is the interpreted scripting language for quick and easy
- object-oriented programming.  It has many features to process text files
- and to do system management tasks (as in perl).  It is simple,
- straight-forward, and extensible.
- 
-
-Package: smartdns
-Version: 1.2022.38-1
-Depends: libc, libpthread, libopenssl1.1
-Source: feeds/packages/net/smartdns
-SourceName: smartdns
+Package: shadowsocks-libev-ss-local
+Version: 3.3.5-1
+Depends: libc, libev, libmbedtls12, libpthread, libsodium, libpcre
+Source: feeds/packages/net/shadowsocks-libev
+SourceName: shadowsocks-libev-ss-local
 License: GPL-3.0-or-later
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1667842764
-Maintainer: Nick Peng <pymumu@gmail.com>
+SourceDateEpoch: 1670507219
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
 Architecture: aarch64_cortex-a53
-Installed-Size: 105781
-Filename: smartdns_1.2022.38-1_aarch64_cortex-a53.ipk
-Size: 106482
-SHA256sum: c21c26cd83a3fc9f1d40f7f2dcce495adac4d7fade3769a32e77d887fefd2dfd
-Description:  SmartDNS is a local DNS server which accepts DNS query requests from local network clients,
- gets DNS query results from multiple upstream DNS servers concurrently, and returns the fastest IP to clients.
- Unlike dnsmasq's all-servers, smartdns returns the fastest IP. 
+Installed-Size: 51032
+Filename: shadowsocks-libev-ss-local_3.3.5-1_aarch64_cortex-a53.ipk
+Size: 51832
+SHA256sum: 5180e9d5bb2ba520e91b3bfd74ec6cc79e9014c257226111f7db9dced03b5921
+Description:  shadowsocks-libev ss-local
 
-Package: socat
-Version: 1.7.4.1-1
-Depends: libc, libpthread, librt
-Source: feeds/packages/net/socat
-SourceName: socat
-License: GPL-2.0-or-later OpenSSL
-LicenseFiles: COPYING COPYING.OpenSSL
-Section: net
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:dest-unreach:socat
-Maintainer: Ted Hess <thess@kitschensync.net>
-Architecture: aarch64_cortex-a53
-Installed-Size: 107112
-Filename: socat_1.7.4.1-1_aarch64_cortex-a53.ipk
-Size: 108059
-SHA256sum: 7f1f977568fa4aa6861dcb62d43221e8113b8caac7d5a71e15f025c1e6f5469c
-Description:  SoCat (for SOcket CAT) establishes two bidirectional byte streams and
- transfers data between them.
- Data channels may be files, pipes, devices (terminal or modem, etc.), or
- sockets (Unix, IPv4, IPv6, raw, UDP, TCP, SSL). It provides forking,
- logging and tracing, different modes for interprocess communication and
- many more options.
-
-Package: sqm-scripts
-Version: 1.6.0-1
-Depends: libc, tc, kmod-sched-core, kmod-ifb, iptables, iptables-mod-ipopt, iptables-mod-conntrack-extra, kmod-sched-cake
-Source: feeds/packages/net/sqm-scripts
-SourceName: sqm-scripts
-License: GPL-2.0-only
-Section: net
-SourceDateEpoch: 1667842764
-Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Architecture: all
-Installed-Size: 18613
-Filename: sqm-scripts_1.6.0-1_all.ipk
-Size: 19459
-SHA256sum: 882dcaf45965a2b5948bbfd0b9d49c16601f5c47e9ad67220b3e0ff7e11c7e57
-Description:  A set of scripts that does simple SQM configuration.
-
-Package: tar
-Version: 1.34-1
-Depends: xz, libc, bzip2
-Alternatives: 300:/bin/tar:/usr/libexec/tar-gnu
-Source: feeds/packages/utils/tar
-SourceName: tar
+Package: shadowsocks-libev-ss-redir
+Version: 3.3.5-1
+Depends: libc, libev, libmbedtls12, libpthread, libsodium
+Source: feeds/packages/net/shadowsocks-libev
+SourceName: shadowsocks-libev-ss-redir
 License: GPL-3.0-or-later
-LicenseFiles: COPYING
-Section: utils
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:gnu:tar
-Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 198477
-Filename: tar_1.34-1_aarch64_cortex-a53.ipk
-Size: 199176
-SHA256sum: 6c3f4bf12c8ccac865d65c1a374c3ac0a7ede4296809ccab53d7893e6b89ca12
-Description:  Tar is a program for packaging a set of files as a
- single archive in tar format.
-
-Package: ttyd
-Version: 1.6.3-3
-Depends: libc, libopenssl1.1, libjson-c5, libuv1, zlib, libwebsockets-full
-Source: feeds/packages/utils/ttyd
-SourceName: ttyd
-License: MIT
 LicenseFiles: LICENSE
-Section: utils
-SourceDateEpoch: 1667842764
-Maintainer: Shuanglei Tao <tsl0922@gmail.com>
+Section: net
+SourceDateEpoch: 1670507219
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
 Architecture: aarch64_cortex-a53
-Installed-Size: 252448
-Filename: ttyd_1.6.3-3_aarch64_cortex-a53.ipk
-Size: 253145
-SHA256sum: 02cb9ae283d6ab584f6b2dbac6595e83e74a3325f425bc32d8aa1c26365d262a
-Description:  ttyd is a command-line tool for sharing terminal over the web.
+Installed-Size: 45814
+Filename: shadowsocks-libev-ss-redir_3.3.5-1_aarch64_cortex-a53.ipk
+Size: 46565
+SHA256sum: ed1317a181bde5746dc129d8abe92c64804529c56653e4869265c7294a4f5984
+Description:  shadowsocks-libev ss-redir
+
+Package: shadowsocks-libev-ss-server
+Version: 3.3.5-1
+Depends: libc, libev, libmbedtls12, libpthread, libsodium, libcares, libpcre
+Source: feeds/packages/net/shadowsocks-libev
+SourceName: shadowsocks-libev-ss-server
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1670507219
+Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
+Architecture: aarch64_cortex-a53
+Installed-Size: 55870
+Filename: shadowsocks-libev-ss-server_3.3.5-1_aarch64_cortex-a53.ipk
+Size: 56537
+SHA256sum: 4781c6c941b2c46ae4c222d6ccb87dd45af245aef3dc8212eab418c1c5c919ba
+Description:  shadowsocks-libev ss-server
 
 Package: unzip
 Version: 6.0-8
@@ -1545,32 +461,18 @@ SourceName: unzip
 License: BSD-4-Clause
 LicenseFiles: LICENSE
 Section: utils
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 CPE-ID: cpe:/a:info-zip:unzip
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
 Architecture: aarch64_cortex-a53
-Installed-Size: 112922
+Installed-Size: 112921
 Filename: unzip_6.0-8_aarch64_cortex-a53.ipk
-Size: 113859
-SHA256sum: 0e0ead04887f78ee15f6150c055afb98f1b955aa180ee81785812537cd0de300
+Size: 113872
+SHA256sum: ae2ae2d7b18470b9aa562efa8f7a7208350c32cb690b088fdaaaebba14474023
 Description:  InfoZIP's unzip program. With the exception of multi-volume archives
  (ie, .ZIP files that are split across several disks using PKZIP's /& option),
  this can handle any file produced either by PKZIP, or the corresponding
  InfoZIP zip program.
-
-Package: uugamebooster
-Version: v3.0.4-1
-Depends: libc, kmod-tun
-Source: feeds/packages/net/uugamebooster
-SourceName: uugamebooster
-Section: net
-SourceDateEpoch: 1667842764
-Architecture: aarch64_cortex-a53
-Installed-Size: 1487529
-Filename: uugamebooster_v3.0.4-1_aarch64_cortex-a53.ipk
-Size: 1485322
-SHA256sum: d8d9ebf8addfb97b6deb09f54d97c4a1d14b71bdaf9d5750d9f0b82ab5c91ca0
-Description:  NetEase's UU Game Booster Accelerates Triple-A Gameplay and Market
 
 Package: vlmcsd
 Version: svn1113-3
@@ -1580,17 +482,17 @@ SourceName: vlmcsd
 License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 Maintainer: fuyumi <280604399@qq.com>
 Architecture: aarch64_cortex-a53
-Installed-Size: 23775
+Installed-Size: 23773
 Filename: vlmcsd_svn1113-3_aarch64_cortex-a53.ipk
-Size: 24401
-SHA256sum: d83b1f612860c65c056f3799f61d77a6ad47cbe4607296a2db5ace6d7d565516
+Size: 24408
+SHA256sum: 2d7dbc242a8b70dbd67c2a7e446433cd76ebac1b62493aa9e417e142fecf0491
 Description:  vlmcsd is a KMS Emulator in C.
 
 Package: wget-ssl
-Version: 1.21.2-1
+Version: 1.21.3-1
 Depends: libc, libpcre, zlib, libopenssl1.1, librt
 Provides: gnu-wget, wget
 Alternatives: 300:/usr/bin/wget:/usr/libexec/wget-ssl
@@ -1599,14 +501,13 @@ SourceName: wget-ssl
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Section: net
-SourceDateEpoch: 1667842764
+SourceDateEpoch: 1670507219
 CPE-ID: cpe:/a:gnu:wget
-Maintainer: Peter Wagner <tripolar@gmx.at>
 Architecture: aarch64_cortex-a53
-Installed-Size: 215900
-Filename: wget-ssl_1.21.2-1_aarch64_cortex-a53.ipk
-Size: 216526
-SHA256sum: 2889f17c47252fef811edc2877738e872e1a97afe1cca5d89fa6096a55b55ee3
+Installed-Size: 214986
+Filename: wget-ssl_1.21.3-1_aarch64_cortex-a53.ipk
+Size: 215529
+SHA256sum: 5db4bd9d934731f967436c4ad779b5621babebe27be4d170c5ba07d7f0b2b399
 Description:  Wget is a network utility to retrieve files from the Web using http
  and ftp, the two most widely used Internet protocols. It works
  non-interactively, so it will work in the background, after having
@@ -1614,56 +515,4 @@ Description:  Wget is a network utility to retrieve files from the Web using htt
  pages as well as ftp sites -- you can use wget to make mirrors of
  archives and home pages or to travel the Web like a WWW robot.
  This package is built with SSL support.
-
-Package: xz-utils
-Version: 5.2.7-1
-Depends: libc
-Source: feeds/packages/utils/xz
-SourceName: xz-utils
-License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
-LicenseFiles: COPYING
-Section: utils
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:tukaani:xz
-Architecture: aarch64_cortex-a53
-Installed-Size: 96
-Filename: xz-utils_5.2.7-1_aarch64_cortex-a53.ipk
-Size: 838
-SHA256sum: d7494a1082d3fc4d0c44b6233622768a5048eaa67443f67f35d7dcb709f3ad33
-Description:  XZ Utils (meta)
-
-Package: xz
-Version: 5.2.7-1
-Depends: libc, xz-utils, liblzma
-Alternatives: 300:/usr/bin/xz:/usr/libexec/xz-lzmautils, 300:/usr/bin/lzcat:/usr/libexec/xz-lzmautils, 300:/usr/bin/lzma:/usr/libexec/xz-lzmautils, 300:/usr/bin/unlzma:/usr/libexec/xz-lzmautils, 300:/usr/bin/unxz:/usr/libexec/xz-lzmautils, 300:/usr/bin/xzcat:/usr/libexec/xz-lzmautils
-Source: feeds/packages/utils/xz
-SourceName: xz
-License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
-LicenseFiles: COPYING
-Section: utils
-SourceDateEpoch: 1667842764
-CPE-ID: cpe:/a:tukaani:xz
-Architecture: aarch64_cortex-a53
-Installed-Size: 28503
-Filename: xz_5.2.7-1_aarch64_cortex-a53.ipk
-Size: 29308
-SHA256sum: 058229ea9fa5ec28d03cf4d2f70349201821464dea6d36f21e9241e9b1b3b424
-Description:  Contains: xz  lzcat lzma unlzma unxz xzcat
-
-Package: zerotier
-Version: 1.10.1-1
-Depends: libc, libpthread, libstdcpp6, kmod-tun, ip, libminiupnpc, libnatpmp1
-Source: feeds/packages/net/zerotier
-SourceName: zerotier
-License: BSL 1.1
-LicenseFiles: LICENSE.txt
-Section: net
-SourceDateEpoch: 1667842764
-Maintainer: Moritz Warning <moritzwarning@web.de>
-Architecture: aarch64_cortex-a53
-Installed-Size: 486358
-Filename: zerotier_1.10.1-1_aarch64_cortex-a53.ipk
-Size: 486569
-SHA256sum: fc8ca0bd4eaa15bba025b96782b6a675c8fd92099cd693a5f1e1daf295b60c31
-Description:  ZeroTier creates a global provider-independent virtual private cloud network.
 

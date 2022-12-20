@@ -46,44 +46,6 @@ Size: 11028773
 SHA256sum: 7ce56ea0b71155fcf5e12805b1e75d85e8d9c3eacd1f48519294d0cc2766ac25
 Description:  Free and open source, powerful network-wide ads and trackers blocking DNS server.
 
-Package: aliyundrive-webdav
-Version: 1.10.3-1
-Depends: libc
-License: MIT
-Section: multimedia
-Architecture: mipsel_24kc
-Installed-Size: 3708041
-Filename: aliyundrive-webdav_1.10.3-1_mipsel_24kc.ipk
-Size: 3709409
-SHA256sum: bea186f002e45bb3c7633af497cd8af9eded07a1ccdceb085d6d9296615496d3
-Description:  WebDAV server for AliyunDrive.
-
-Package: aria2
-Version: 1.36.0-2
-Depends: libc, zlib, libstdcpp6, libopenssl1.1
-License: GPLv2
-Section: net
-CPE-ID: cpe:/a:tatsuhiro_tsujikawa:aria2
-Architecture: mipsel_24kc
-Installed-Size: 508928
-Filename: aria2_1.36.0-2_mipsel_24kc.ipk
-Size: 508970
-SHA256sum: 6cb9ecd8778cd7af715738e94e98adb61432664b4c8651c5a6e497f0524ecf3f
-Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
- utility
-
-Package: ariang
-Version: 1.3.2-1
-Depends: libc, aria2, uhttpd
-License: MIT
-Section: net
-Architecture: all
-Installed-Size: 990353
-Filename: ariang_1.3.2-1_all.ipk
-Size: 990857
-SHA256sum: 56ebe97ce7926f2e8adc7caf44a705643784d386f1ad15f916fe0822afd7a1c8
-Description:  AriaNg is a web frontend making aria2 easier to use. AriaNg is written in pure html & javascript, thus it does not need any compilers or runtime environment.
-
 Package: attr
 Version: 2.5.1-1
 Depends: libc, libattr
@@ -491,6 +453,21 @@ Description:  frp is a fast reverse proxy to help you expose a local server behi
  where requests can be forwarded to internal services by domain name.
  
  This package contains the frps.
+
+Package: htop
+Version: 3.2.1-1
+Depends: libc, libncurses6
+License: GPL-2.0-or-later
+Section: admin
+CPE-ID: cpe:/a:htop:htop
+Architecture: mipsel_24kc
+Installed-Size: 84827
+Filename: htop_3.2.1-1_mipsel_24kc.ipk
+Size: 85802
+SHA256sum: c9ea0d48eeefe450e2fb4e07892b9e1ddc911eb4631707754cd062c3051c93ff
+Description:  Htop is an ncursed-based process viewer similar to top, but
+ it allows to scroll the list vertically and horizontally to
+ see all processes and their full command lines.
 
 Package: igmpproxy
 Version: 0.2.1-4
@@ -1048,18 +1025,6 @@ Size: 36581
 SHA256sum: b4212f1bc101ebe53e9f8b050781cd0cf10ee3e8c25ba47e9796385ee4382ef0
 Description:  Fast YAML 1.1 parser and emitter library
 
-Package: maccalc
-Version: 1
-Depends: libc
-License: GPL-2.0
-Section: utils
-Architecture: mipsel_24kc
-Installed-Size: 2048
-Filename: maccalc_1_mipsel_24kc.ipk
-Size: 2761
-SHA256sum: bc8cdd2f7081f8bb0aa97178cbe055835f907f944be142a108bf4690f55fd211
-Description:  This package contains a MAC address manipulation utility.
-
 Package: miniupnpd
 Version: 2.0.20170421-3
 Depends: libc, iptables, libip4tc2, libuuid1
@@ -1210,18 +1175,6 @@ Description:  pdnsd, is an IPv6 capable proxy DNS server with permanent caching 
  pdnsd can be used with applications that do dns lookups, eg on startup, and
  can't be configured to change that behaviour, to prevent the often
  minute-long hangs (or even crashes) that result from stalled dns queries.
-
-Package: proto-bonding
-Version: 2021-04-09-3
-Depends: libc, kmod-bonding
-License: GPL-2.0
-Section: net
-Architecture: all
-Installed-Size: 1865
-Filename: proto-bonding_2021-04-09-3_all.ipk
-Size: 2637
-SHA256sum: 7e0639e32229a13794d460bbc1f1884099b2142c5e70698f8cace4e1718abf8c
-Description:  This package contains the channel bonding proto handler for netifd
 
 Package: qbittorrent
 Version: 4.4.5-1

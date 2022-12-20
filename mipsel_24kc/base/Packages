@@ -302,18 +302,6 @@ Size: 182043
 SHA256sum: 14a4d27035e7632094c49aefbd8ffe73a66f1104b1440c134225271674aab3f3
 Description:  Routing control utility (full)
 
-Package: ipip
-Version: 3
-Depends: libc, kmod-ipip, resolveip
-License: GPL-2.0
-Section: net
-Architecture: all
-Installed-Size: 892
-Filename: ipip_3_all.ipk
-Size: 1643
-SHA256sum: 11efcf83c616d6c91ae53152d86e3a254ee2473f11e1c03ca9282607b2741764
-Description:  IP in IP Tunnel config support in /etc/config/network.
-
 Package: ipset
 Version: 7.16-1
 Depends: libc, kmod-ipt-ipset, libmnl0, libipset13
@@ -1047,14 +1035,14 @@ SHA256sum: 3cfa5859fb5953aff4fbba02306589791f91ad4cf81da57eb0566f942aee62a3
 Description:  LuCI Support of Simple Switch to turn LingTiGameAcc ON/OFF
 
 Package: luci-app-adguardhome
-Version: git-22.343.44112-84ee8d8-1
+Version: git-22.354.02537-f9d4675-1
 Depends: libc, ca-certs, curl, wget-ssl, adguardhome
 Section: luci
 Architecture: all
 Installed-Size: 88941
-Filename: luci-app-adguardhome_git-22.343.44112-84ee8d8-1_all.ipk
-Size: 90102
-SHA256sum: e84573bc02e455195a4fbcd5825a5179756daf8d3fb09cac3842a688e576748b
+Filename: luci-app-adguardhome_git-22.354.02537-f9d4675-1_all.ipk
+Size: 90101
+SHA256sum: 192d154975b36c53f244fd587d22200d701e470280b474e1ed19d5e1e9c8da80
 Description:  LuCI support for AdGuardHome
 
 Package: luci-app-ddnsto
@@ -1103,14 +1091,14 @@ SHA256sum: b5d5d9f377916aa16493c32ffb3c6695606395e42f2f49bd85d4a91887d5f7eb
 Description:  Open App Filter Module
 
 Package: luci-app-openclash
-Version: 0.45.70-beta
+Version: 0.45.78-beta
 Depends: libc, dnsmasq-full, coreutils, coreutils-nohup, bash, curl, ca-certificates, ipset, ip-full, libcap, libcap-bin, ruby, ruby-yaml, kmod-tun, unzip
 Section: opt
 Architecture: all
-Installed-Size: 4233607
-Filename: luci-app-openclash_0.45.70-beta_all.ipk
-Size: 4217049
-SHA256sum: acd14a1fcfadd1591c6d056d246b0b4de8feacffd6a5a15d2ddac569c1c35f86
+Installed-Size: 4245042
+Filename: luci-app-openclash_0.45.78-beta_all.ipk
+Size: 4228426
+SHA256sum: 3bc9ca5e25fbda4672f8ad9c16911fec2dcc38cccbeef4ec4d952bf05369ddec
 Description:  A LuCI support for clash
 
 Package: luci-app-poweroff
@@ -1148,14 +1136,14 @@ SHA256sum: 268d4b95e7584d4e17e3c6ba64da158bcde848d4a26daf8fbe33f02423c48458
 Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
 
 Package: luci-i18n-adguardhome-zh-cn
-Version: git-22.343.44112-84ee8d8-1
+Version: git-22.354.02537-f9d4675-1
 Depends: libc, luci-app-adguardhome
 Section: luci
 Architecture: all
 Installed-Size: 2547
-Filename: luci-i18n-adguardhome-zh-cn_git-22.343.44112-84ee8d8-1_all.ipk
+Filename: luci-i18n-adguardhome-zh-cn_git-22.354.02537-f9d4675-1_all.ipk
 Size: 3436
-SHA256sum: 50b1fd9bdfa01101e5c24fa24502a4cef269e7f6b449a3ee4ed29effcd0016f0
+SHA256sum: 0367878def3400a3484df6a95aac8ae6d0886690893d339a12ad8b308b413aef
 Description:  Translation for luci-app-adguardhome - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-ddnsto-zh-cn
@@ -1237,14 +1225,14 @@ SHA256sum: 33eff7e5a83b3d9ce42a02dbfb1fcf641d350fe941116f47a79c396765d71305
 Description:  Neobird Theme
 
 Package: luci-theme-tomato
-Version: git-22.343.44112-84ee8d8-1
+Version: git-22.354.02537-f9d4675-1
 Depends: libc
 Section: luci
 Architecture: all
-Installed-Size: 211844
-Filename: luci-theme-tomato_git-22.343.44112-84ee8d8-1_all.ipk
-Size: 212652
-SHA256sum: fb33828c326e97b0ae401838da5426207519ebd88250ff3fea923a75d75d4464
+Installed-Size: 211845
+Filename: luci-theme-tomato_git-22.354.02537-f9d4675-1_all.ipk
+Size: 212655
+SHA256sum: dbff2599ca93956182315c78d01a341813f4303b21290b1d962562d6f1a0abec
 Description:  Tomato new kenzo
 
 Package: mdadm
@@ -1294,10 +1282,10 @@ Depends: libc, wireless-tools
 Conflicts: kmod-mt7615d_dbdc
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 6518
+Installed-Size: 6550
 Filename: mt_wifi_1-2_mipsel_24kc.ipk
-Size: 7209
-SHA256sum: a40f29153a05e5e23c7d19862955ab6949f838abc2efd0505a2f87958725964a
+Size: 7252
+SHA256sum: 3c3c7c85cc07405ead9849a75200447edfbe29442d33b3b3ff7e2bcc27d40ab2
 Description:  MT_WiFi auto config for mt7603/mt7612/mt7615 chips
 
 Package: netifd
@@ -1899,15 +1887,15 @@ Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator and Supplicant
 
 Package: xray-core
-Version: 1.6.5-1
+Version: 1.6.6-2-1
 Depends: libc, ca-bundle
 License: MPL-2.0
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 8322191
-Filename: xray-core_1.6.5-1_mipsel_24kc.ipk
-Size: 8305004
-SHA256sum: 46070d7bb12973b372a16810df300888f4a7737dad0d76438cd795d3b3f93304
+Installed-Size: 8327629
+Filename: xray-core_1.6.6-2-1_mipsel_24kc.ipk
+Size: 8310943
+SHA256sum: 1c1b8d7167c41ccc157db4b84737521cc0282d8287bed553899ca5d2e469a9aa
 Description:  Xray, Penetrates Everything. It helps you to build your own computer network.
  It secures your network connections and thus protects your privacy.
 

@@ -25,7 +25,7 @@ src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/x86_64/routing
 src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/x86_64/telephony
 ```
 
-**mt7621**
+**mt7621 (Xiaomi/Redmi AC 2100/Newifi d2)**
 
 ```
 src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/ramips/mt7621/packages
@@ -34,6 +34,17 @@ src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/mipsel_24kc/luci
 src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/mipsel_24kc/packages
 src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/mipsel_24kc/routing
 src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/mipsel_24kc/telephony
+```
+
+**aarch64_cortex-a53 (Redmi AX 6000)**
+
+```
+src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/mediatek/filogic/packages
+src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/base
+src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/luci
+src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/packages
+src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/routing
+src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/telephony
 ```
 
 仓库中文件不同于编译结果，请注意文件对应。

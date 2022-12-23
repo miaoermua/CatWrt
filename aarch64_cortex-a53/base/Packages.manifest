@@ -61,21 +61,6 @@ Size: 19788
 SHA256sum: abc51285d90851addc8a0ce1af4159411276f5ec16339972594459d98320d7f8
 Description:  open appfilter app
 
-Package: autocore-arm
-Version: 59
-Depends: libc, ethtool
-Source: package/lean/autocore
-SourceName: autocore-arm
-Section: opt
-SourceDateEpoch: 1670434350
-Maintainer: CN_SZTL
-Architecture: aarch64_cortex-a53
-Installed-Size: 7772
-Filename: autocore-arm_59_aarch64_cortex-a53.ipk
-Size: 8516
-SHA256sum: f116de475d500bf5afc8fef40918f5fab1316c46d9769e31c98b8df38ebd1bf6
-Description:  A luci autoconfig hotplug script.
-
 Package: busybox
 Version: 1.35.0-7
 Depends: libc
@@ -93,8 +78,8 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_cortex-a53
 Installed-Size: 235075
 Filename: busybox_1.35.0-7_aarch64_cortex-a53.ipk
-Size: 235489
-SHA256sum: f305426a0c66198aa19526b7fe3f11ec2e41259ad56f0c8dcf6d3cd5e1174a80
+Size: 235494
+SHA256sum: 953b890e45f8d51e12efdba8d2680b108543a3384099979c24a1f372a71a0d37
 Description:  The Swiss Army Knife of embedded Linux.
  It slices, it dices, it makes Julian Fries.
 
@@ -199,12 +184,12 @@ SourceName: default-settings
 License: GPLv3
 LicenseFiles: LICENSE
 Section: luci
-SourceDateEpoch: 1670257633
+SourceDateEpoch: 1670775596
 Architecture: all
-Installed-Size: 1960
+Installed-Size: 1964
 Filename: default-settings_2-33_all.ipk
-Size: 2692
-SHA256sum: d52cd147aefd28fe2e5ba8e71f665ddd8472bd9ac38e2c219ebde42e611d58aa
+Size: 2694
+SHA256sum: 74b94e2450e04711c42f6a3e609f192fe3ecd7c2ea0e46486969d08345f87e24
 Description:  Language Support Packages.
 
 Package: dns2socks
@@ -242,7 +227,7 @@ SHA256sum: 883b39d8bc19375d94996ca17d782a29f1c66ca8579ef0ae5a8bc944b568b921
 Description:  utility to convert dns query from udp to tcp
 
 Package: dnsmasq-full
-Version: 2.86-1
+Version: 2.87-6
 Depends: libc, libubus20220601, kmod-ipt-ipset
 Provides: dnsmasq
 Source: package/network/services/dnsmasq
@@ -251,66 +236,84 @@ License: GPL-2.0
 LicenseFiles: COPYING
 Section: net
 Require-User: dnsmasq=453:dnsmasq=453
-SourceDateEpoch: 1669199306
+SourceDateEpoch: 1671463294
 CPE-ID: cpe:/a:thekelleys:dnsmasq
 Architecture: aarch64_cortex-a53
-Installed-Size: 140322
-Filename: dnsmasq-full_2.86-1_aarch64_cortex-a53.ipk
-Size: 141095
-SHA256sum: c214316a842fee54713e76fd8d2c96aa075716bf8fe927ef79d82ca560926126
+Installed-Size: 171190
+Filename: dnsmasq-full_2.87-6_aarch64_cortex-a53.ipk
+Size: 171893
+SHA256sum: de3fd9596c111e1ba6c62da2931e3adba27a8679038eb558059074bf6bbfc1eb
 Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
  
  This is a fully configurable variant with DHCPv4, DHCPv6, DNSSEC, Authoritative DNS
- and IPset, Conntrack support & NO_ID enabled by default.
+ and nftset, Conntrack support & NO_ID enabled by default.
+
+Package: e2fsprogs
+Version: 1.46.5-2
+Depends: libc, libuuid1, libext2fs2
+Source: package/utils/e2fsprogs
+SourceName: e2fsprogs
+License: GPL-2.0
+LicenseFiles: NOTICE
+Section: utils
+SourceDateEpoch: 1670428937
+CPE-ID: cpe:/a:e2fsprogs_project:e2fsprogs
+Architecture: aarch64_cortex-a53
+Installed-Size: 193873
+Filename: e2fsprogs_1.46.5-2_aarch64_cortex-a53.ipk
+Size: 194577
+SHA256sum: 2fda044e9d04a7650281fa4d226cbc187199bc783bf3ae0f43c9d9440f758b6b
+Description:  This package contains essential ext2 filesystem utilities which consists of
+ e2fsck, mke2fs and most of the other core ext2 filesystem utilities.
 
 Package: eip197-mini-firmware
-Version: 20221012-1
+Version: 20221109-2
 Depends: libc
 Source: package/firmware/linux-firmware
 SourceName: eip197-mini-firmware
 Section: firmware
-SourceDateEpoch: 1666582594
+SourceDateEpoch: 1671595195
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_cortex-a53
 Installed-Size: 425
-Filename: eip197-mini-firmware_20221012-1_aarch64_cortex-a53.ipk
-Size: 1157
-SHA256sum: 45e28c43c70416139d2425e923f78d4cfa8c7f089cfa10fd8c4e0e8188e7b493
+Filename: eip197-mini-firmware_20221109-2_aarch64_cortex-a53.ipk
+Size: 1153
+SHA256sum: e16fc05cfc5c43e8d638b70bc71308971e3410c8e1e162321e2dfb196d87c493
 Description:  Inside Secure EIP197 mini firmware
 
-Package: ethtool
-Version: 5.19-1
-Depends: libc
-Conflicts: ethtool-full
-Source: package/network/utils/ethtool
-SourceName: ethtool
-License: GPL-2.0
+Package: f2fsck
+Version: 1.15.0-1
+Depends: libc, libf2fs6
+Conflicts: f2fsck-selinux
+Source: package/utils/f2fs-tools
+SourceName: f2fsck
+License: GPL-2.0-only
 LicenseFiles: COPYING
-Section: net
-SourceDateEpoch: 1662531066
+Section: utils
+SourceDateEpoch: 1670480457
+CPE-ID: cpe:/a:f2fs-tools_project:f2fs-tools
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_cortex-a53
-Installed-Size: 41345
-Filename: ethtool_5.19-1_aarch64_cortex-a53.ipk
-Size: 42136
-SHA256sum: 2fb4886fd9170ec7ce91275b40456ec5b1dc2f023d07853c94b8d5370050272d
-Description:  ethtool is a small utility for examining and tuning your ethernet-based
- network interface
+Installed-Size: 87928
+Filename: f2fsck_1.15.0-1_aarch64_cortex-a53.ipk
+Size: 88626
+SHA256sum: 4f93b409c969a340ffc2d76736d8694b4b5b58de24055d874b1ef8e450f3f0c7
+Description:  Utility for checking/repairing a Flash-Friendly File System (F2FS)
 
 Package: firewall
-Version: 2022-02-17-4cd7d4f3-2
+Version: 2021-03-23-61db17ed-2
 Depends: libc, libubox20220927, libubus20220601, libuci20130104, libip4tc2, libip6tc2, libxtables12, kmod-ipt-core, kmod-ipt-conntrack, kmod-nf-conntrack6, kmod-ipt-nat, iptables-mod-fullconenat
 Source: package/network/config/firewall
 SourceName: firewall
 License: ISC
 Section: net
-SourceDateEpoch: 1670310081
+SourceDateEpoch: 1671161561
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: aarch64_cortex-a53
-Installed-Size: 52907
-Filename: firewall_2022-02-17-4cd7d4f3-2_aarch64_cortex-a53.ipk
-Size: 53635
-SHA256sum: 896332b2597687fc8de6e288e5df247a7ff5b8190cfda6f753a4300e7a835f40
+Installed-Size: 53100
+Filename: firewall_2021-03-23-61db17ed-2_aarch64_cortex-a53.ipk
+Size: 53872
+SHA256sum: 6412b550407997d43fcaaa701e9b319a63aacf98dc68d070d901da0af2a39502
 Description:  This package provides a config-compatible C implementation of the UCI firewall.
 
 Package: getrandom
@@ -397,20 +400,20 @@ SHA256sum: 4ba2e1f030d7fd76cce5a186b5f12b00dfab1c07ef84fdbd7e965cf7e4a5a732
 Description:  Utility for converting iptables (redirect/tproxy) to socks5.
 
 Package: iptables-mod-fullconenat
-Version: 2022-02-13-108a36cb-6
+Version: 2022-02-13-108a36cb-9
 Depends: libc, iptables, kmod-ipt-fullconenat
 Source: package/network/services/fullconenat
 SourceName: iptables-mod-fullconenat
 License: GPL-2.0
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1653668924
+SourceDateEpoch: 1670844549
 Maintainer: Chion Tang <tech@chionlab.moe>
 Architecture: aarch64_cortex-a53
-Installed-Size: 2521
-Filename: iptables-mod-fullconenat_2022-02-13-108a36cb-6_aarch64_cortex-a53.ipk
-Size: 3284
-SHA256sum: 803c7f2e754f2bd2b6b08795553562b6e8c0fbf10ee2a83da125be9e2c2e70f7
+Installed-Size: 2520
+Filename: iptables-mod-fullconenat_2022-02-13-108a36cb-9_aarch64_cortex-a53.ipk
+Size: 3285
+SHA256sum: dee4f3922dc7d0eabff79c171fe666f3c93473b4f4c60cf46174aa8c7bfba924
 Description:  FULLCONENAT iptables extension
 
 Package: ipv6helper
@@ -477,6 +480,28 @@ Filename: jsonfilter_2018-02-04-c7e938d6-1_aarch64_cortex-a53.ipk
 Size: 11035
 SHA256sum: 439f6c8eef235b79e84576184177bcbcfcfa0cdd60bb659e0204c0c2362565f3
 Description:  OpenWrt JSON filter utility
+
+Package: libblkid1
+Version: 2.38-2
+Depends: libc, libuuid1
+Provides: libblkid
+Source: package/utils/util-linux
+SourceName: libblkid
+License: GPL-2.0-only
+LicenseFiles: COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: libs
+SourceDateEpoch: 1670480457
+ABIVersion: 1
+CPE-ID: cpe:/a:kernel:util-linux
+Architecture: aarch64_cortex-a53
+Installed-Size: 102230
+Filename: libblkid1_2.38-2_aarch64_cortex-a53.ipk
+Size: 103128
+SHA256sum: 3ccc2d2764d127b8df17ce94995bbdd311df839deb1c6e1f6807ffc1288b9e7f
+Description:  The libblkid library is used to identify block devices (disks) as to their
+ content (e.g. filesystem type, partitions) as well as extracting additional
+ information such as filesystem labels/volume names, partitions, unique
+ identifiers/serial numbers...
 
 Package: libblobmsg-json20220927
 Version: 2022-09-27-ea560134-1
@@ -552,6 +577,26 @@ Size: 16749
 SHA256sum: 395c12f8b0efa1749565ea7cbb82c2422c162448008da4cf89800a913b942a5e
 Description:  Linux capabilities library library
 
+Package: libcomerr0
+Version: 1.46.5-2
+Depends: libc, libuuid1
+Provides: libcomerr
+Source: package/utils/e2fsprogs
+SourceName: libcomerr
+License: GPL-2.0
+LicenseFiles: NOTICE
+Section: libs
+SourceDateEpoch: 1670428937
+ABIVersion: 0
+CPE-ID: cpe:/a:e2fsprogs_project:e2fsprogs
+Architecture: aarch64_cortex-a53
+Installed-Size: 4195
+Filename: libcomerr0_1.46.5-2_aarch64_cortex-a53.ipk
+Size: 4976
+SHA256sum: 330c84988c6d813b9bc4c8048599faeda9c25621241a1d9e731cf37caff1cee8
+Description:  This package contains libcom_err, the common error description library
+ bundled with e2fsprogs.
+
 Package: libelf1
 Version: 0.188-1
 Depends: libc, zlib
@@ -566,11 +611,51 @@ ABIVersion: 1
 CPE-ID: cpe:/a:elfutils_project:elfutils
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
 Architecture: aarch64_cortex-a53
-Installed-Size: 41460
+Installed-Size: 41459
 Filename: libelf1_0.188-1_aarch64_cortex-a53.ipk
-Size: 42307
-SHA256sum: 7e2c6ce8976af9424b1fdf110f567803e41266ce7fbde2dbf5cd6aa88f21d5f2
+Size: 42295
+SHA256sum: 94dc5abc01be8a15b285e9409b44416ece2761bd8b5e1a62f1c97865c12bc11d
 Description:  ELF manipulation libraries (libelf)
+
+Package: libext2fs2
+Version: 1.46.5-2
+Depends: libc, libuuid1, libblkid1, libss2, libcomerr0
+Provides: libext2fs
+Source: package/utils/e2fsprogs
+SourceName: libext2fs
+License: GPL-2.0
+LicenseFiles: NOTICE
+Section: libs
+SourceDateEpoch: 1670428937
+ABIVersion: 2
+CPE-ID: cpe:/a:e2fsprogs_project:e2fsprogs
+Architecture: aarch64_cortex-a53
+Installed-Size: 185474
+Filename: libext2fs2_1.46.5-2_aarch64_cortex-a53.ipk
+Size: 185949
+SHA256sum: 23a4a6133067144cb070e6c48ca03a99ca2f26980630b4b54c2011e19cec49cf
+Description:  libext2fs is a library which can access ext2, ext3 and ext4 filesystems.
+
+Package: libf2fs6
+Version: 1.15.0-1
+Depends: libc, libuuid1
+Conflicts: libf2fs-selinux
+Provides: libf2fs
+Source: package/utils/f2fs-tools
+SourceName: libf2fs
+License: GPL-2.0-only
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1670480457
+ABIVersion: 6
+CPE-ID: cpe:/a:f2fs-tools_project:f2fs-tools
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 42224
+Filename: libf2fs6_1.15.0-1_aarch64_cortex-a53.ipk
+Size: 42919
+SHA256sum: 7f9bf05704d477c8dbe7c49348f9edf1523110a74119204135497f43e7c384f4
+Description:  Library for Flash-Friendly File System (F2FS) tools
 
 Package: libgmp10
 Version: 6.2.1-1
@@ -827,8 +912,8 @@ Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
 Architecture: aarch64_cortex-a53
 Installed-Size: 1488788
 Filename: libopenssl1.1_1.1.1s-1_aarch64_cortex-a53.ipk
-Size: 1480831
-SHA256sum: c6f8b71a7069684b646326ea2788b35577d09b0773f4c24fa8ab5438c91a230c
+Size: 1480833
+SHA256sum: f3d7157f24722a9039c205db95f77098128a6310369e50eab15e195bba6041f0
 Description:  The OpenSSL Project is a collaborative effort to develop a robust,
  commercial-grade, full-featured, and Open Source toolkit implementing the
  Transport Layer Security (TLS) protocol as well as a full-strength
@@ -876,6 +961,26 @@ Description:  The Readline library provides a set of functions for use by applic
  additional functions to maintain a list of previously-entered command
  lines, to recall and perhaps reedit those lines, and perform csh-like
  history expansion on previous commands.
+
+Package: libss2
+Version: 1.46.5-2
+Depends: libc, libcomerr0
+Provides: libss
+Source: package/utils/e2fsprogs
+SourceName: libss
+License: GPL-2.0
+LicenseFiles: NOTICE
+Section: libs
+SourceDateEpoch: 1670428937
+ABIVersion: 2
+CPE-ID: cpe:/a:e2fsprogs_project:e2fsprogs
+Architecture: aarch64_cortex-a53
+Installed-Size: 9224
+Filename: libss2_1.46.5-2_aarch64_cortex-a53.ipk
+Size: 10026
+SHA256sum: baca716bfff622547eafce3ac6fc10ce6101634b01329af0859f6a1cc5db18d8
+Description:  This pacakge contains libss, a command-line interface parsing library
+ bundled with e2fsprogs.
 
 Package: libubox20220927
 Version: 2022-09-27-ea560134-1
@@ -1021,28 +1126,6 @@ Description:  The UUID library is used to generate unique identifiers for object
  generates UUIDs compatible with those created by the Open Software
  Foundation (OSF) Distributed Computing Environment (DCE) utility.
 
-Package: libwolfssl5.5.3.e624513f
-Version: 5.5.3-stable-2
-Depends: libc
-Conflicts: libwolfsslcpu-crypto
-Provides: libcyassl, libwolfssl, libcyassl5.5.3.e624513f
-Source: package/libs/wolfssl
-SourceName: libwolfssl
-License: GPL-2.0-or-later
-LicenseFiles: LICENSING COPYING
-Section: libs
-SourceDateEpoch: 1669623847
-ABIVersion: 5.5.3.e624513f
-CPE-ID: cpe:/a:wolfssl:wolfssl
-Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Architecture: aarch64_cortex-a53
-Installed-Size: 546348
-Filename: libwolfssl5.5.3.e624513f_5.5.3-stable-2_aarch64_cortex-a53.ipk
-Size: 545153
-SHA256sum: c312ef1586cbd3b81492bc2b6bafa0ae342b2d60bfc56bd66c09c21b28bf9fb0
-Description:  wolfSSL (formerly CyaSSL) is an SSL library optimized for small
- footprint, both on disk and for memory use.
-
 Package: logd
 Version: 2022-08-13-4c7b720b-13
 Depends: libc, libubox20220927, libubus20220601, libblobmsg-json20220927
@@ -1113,7 +1196,7 @@ SHA256sum: 3cfa5859fb5953aff4fbba02306589791f91ad4cf81da57eb0566f942aee62a3
 Description:  LuCI Support of Simple Switch to turn LingTiGameAcc ON/OFF
 
 Package: luci-app-adguardhome
-Version: git-22.354.02537-f9d4675-1
+Version: git-22.356.44143-4eadeac-1
 Depends: libc, ca-certs, curl, wget-ssl, adguardhome
 Source: package/openwrt-packages/luci-app-adguardhome
 SourceName: luci-app-adguardhome
@@ -1122,9 +1205,9 @@ SourceDateEpoch: 1667573338
 Maintainer: <https://github.com/rufengsuixing/luci-app-adguardhome>
 Architecture: all
 Installed-Size: 88941
-Filename: luci-app-adguardhome_git-22.354.02537-f9d4675-1_all.ipk
-Size: 90101
-SHA256sum: 192d154975b36c53f244fd587d22200d701e470280b474e1ed19d5e1e9c8da80
+Filename: luci-app-adguardhome_git-22.356.44143-4eadeac-1_all.ipk
+Size: 90100
+SHA256sum: 2ab75159e71564e45fa51e1a2a68679257a54eaa2a5e4b4f61fefa5d47a88788
 Description:  LuCI support for AdGuardHome
 
 Package: luci-app-ddnsto
@@ -1221,16 +1304,16 @@ Depends: libc, coreutils, coreutils-base64, dns2socks, dns2tcp, dnsmasq-full, ip
 Source: package/openwrt-packages/luci-app-ssr-plus
 SourceName: luci-app-ssr-plus
 Section: luci
-SourceDateEpoch: 1670588112
+SourceDateEpoch: 1671624905
 Architecture: all
-Installed-Size: 198058
+Installed-Size: 198062
 Filename: luci-app-ssr-plus_186-7_all.ipk
-Size: 198206
-SHA256sum: 268d4b95e7584d4e17e3c6ba64da158bcde848d4a26daf8fbe33f02423c48458
+Size: 198216
+SHA256sum: 4a13de45cacc450c0aad6cd739744266c9f5c1efa647e46c71c5299cda2489d9
 Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
 
 Package: luci-i18n-adguardhome-zh-cn
-Version: git-22.354.02537-f9d4675-1
+Version: git-22.356.44143-4eadeac-1
 Depends: libc, luci-app-adguardhome
 Source: package/openwrt-packages/luci-app-adguardhome
 SourceName: luci-i18n-adguardhome-zh-cn
@@ -1239,9 +1322,9 @@ SourceDateEpoch: 1667573338
 Maintainer: <https://github.com/rufengsuixing/luci-app-adguardhome>
 Architecture: all
 Installed-Size: 2547
-Filename: luci-i18n-adguardhome-zh-cn_git-22.354.02537-f9d4675-1_all.ipk
-Size: 3436
-SHA256sum: 0367878def3400a3484df6a95aac8ae6d0886690893d339a12ad8b308b413aef
+Filename: luci-i18n-adguardhome-zh-cn_git-22.356.44143-4eadeac-1_all.ipk
+Size: 3434
+SHA256sum: 03c2eb2a3dfec2500a8f45314453a3d06d2f9675c44df53c11dfd41bd4c38193
 Description:  Translation for luci-app-adguardhome - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-ddnsto-zh-cn
@@ -1308,12 +1391,12 @@ Depends: libc, luci-app-ssr-plus
 Source: package/openwrt-packages/luci-app-ssr-plus
 SourceName: luci-i18n-ssr-plus-zh-cn
 Section: luci
-SourceDateEpoch: 1670588112
+SourceDateEpoch: 1671624905
 Architecture: all
-Installed-Size: 7237
+Installed-Size: 7238
 Filename: luci-i18n-ssr-plus-zh-cn_186-7_all.ipk
-Size: 8102
-SHA256sum: 6208c909c66f2d9352d7effa2cefb2a65f59ca3b5287f07a13605f2f96ddd052
+Size: 8100
+SHA256sum: 2eab9d72c409c2ee8d88689eb6749609e96d585a58313266da5a2ae347b55f75
 Description:  Translation for luci-app-ssr-plus - 简体中文 (Simplified Chinese)
 
 Package: luci-theme-argon
@@ -1345,7 +1428,7 @@ SHA256sum: 33eff7e5a83b3d9ce42a02dbfb1fcf641d350fe941116f47a79c396765d71305
 Description:  Neobird Theme
 
 Package: luci-theme-tomato
-Version: git-22.354.02537-f9d4675-1
+Version: git-22.356.44143-4eadeac-1
 Depends: libc
 Source: package/openwrt-packages/luci-theme-tomato
 SourceName: luci-theme-tomato
@@ -1353,9 +1436,9 @@ Section: luci
 SourceDateEpoch: 1650900761
 Architecture: all
 Installed-Size: 211845
-Filename: luci-theme-tomato_git-22.354.02537-f9d4675-1_all.ipk
-Size: 212655
-SHA256sum: dbff2599ca93956182315c78d01a341813f4303b21290b1d962562d6f1a0abec
+Filename: luci-theme-tomato_git-22.356.44143-4eadeac-1_all.ipk
+Size: 212661
+SHA256sum: 7c2721f7314a8b1d2d947d490c24c36ac1c355aaad25fc24f7cdf46b87637777
 Description:  Tomato new kenzo
 
 Package: microsocks
@@ -1375,6 +1458,40 @@ Size: 6550
 SHA256sum: fd80ae796ebff76f24d68cd04b5a4108ef36596fabbcea4391182256c84d7e77
 Description:  A SOCKS5 service that you can run on your remote boxes to tunnel connections
  through them, if for some reason SSH doesn't cut it for you.
+
+Package: mkf2fs
+Version: 1.15.0-1
+Depends: libc, libf2fs6
+Conflicts: mkf2fs-selinux
+Source: package/utils/f2fs-tools
+SourceName: mkf2fs
+License: GPL-2.0-only
+LicenseFiles: COPYING
+Section: utils
+SourceDateEpoch: 1670480457
+CPE-ID: cpe:/a:f2fs-tools_project:f2fs-tools
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 15456
+Filename: mkf2fs_1.15.0-1_aarch64_cortex-a53.ipk
+Size: 16224
+SHA256sum: 05751d57fec462b8ca7d81483bbfa19da4351128ef3a9e24ca371ccf5f79151a
+Description:  Utility for creating a Flash-Friendly File System (F2FS)
+
+Package: mt7622bt-firmware
+Version: 20221109-2
+Depends: libc
+Source: package/firmware/linux-firmware
+SourceName: mt7622bt-firmware
+Section: firmware
+SourceDateEpoch: 1671595195
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 53871
+Filename: mt7622bt-firmware_20221109-2_aarch64_cortex-a53.ipk
+Size: 54706
+SHA256sum: 5ae8dc8b3bf64d68cfd1afe031743f9f6c66a8f0256c76b72eee59fd734dfc02
+Description:  mt7622bt firmware
 
 Package: netifd
 Version: 2021-06-04-50381d0a-1
@@ -1629,37 +1746,37 @@ Description:  This package provides the UBUS RPC backend server to expose variou
  functionality to frontend programs via JSON-RPC.
 
 Package: shadowsocks-rust-sslocal
-Version: 1.15.0-alpha.9-1
+Version: 1.15.1-1
 Depends: libc
 Source: package/small/shadowsocks-rust
 SourceName: shadowsocks-rust-sslocal
 License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1665536852
+SourceDateEpoch: 1671673256
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_cortex-a53
-Installed-Size: 2763264
-Filename: shadowsocks-rust-sslocal_1.15.0-alpha.9-1_aarch64_cortex-a53.ipk
-Size: 2754568
-SHA256sum: a2a5a50a7c1be9fbd3cd02789a9f903b21e61ad24d107df2dc0931ddf6da55d0
+Installed-Size: 2769142
+Filename: shadowsocks-rust-sslocal_1.15.1-1_aarch64_cortex-a53.ipk
+Size: 2759835
+SHA256sum: fb2c1aeb480a2ccf70f16dbbee9a12709ba9b8f9aed6e5042a279fd1d5a306cd
 Description:  shadowsocks-rust sslocal
 
 Package: shadowsocks-rust-ssserver
-Version: 1.15.0-alpha.9-1
+Version: 1.15.1-1
 Depends: libc
 Source: package/small/shadowsocks-rust
 SourceName: shadowsocks-rust-ssserver
 License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1665536852
+SourceDateEpoch: 1671673256
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_cortex-a53
-Installed-Size: 1918862
-Filename: shadowsocks-rust-ssserver_1.15.0-alpha.9-1_aarch64_cortex-a53.ipk
-Size: 1912462
-SHA256sum: dee8c6c92451bcb4944584517237dd1be4fbf5ca76c8fc4b8282589486fb3156
+Installed-Size: 1919249
+Filename: shadowsocks-rust-ssserver_1.15.1-1_aarch64_cortex-a53.ipk
+Size: 1912406
+SHA256sum: 441ac67dcff8fcaa842e32ebe03d6c998d6116724671aa7d257ce2e18f2f9959
 Description:  shadowsocks-rust ssserver
 
 Package: shadowsocksr-libev-ssr-check
@@ -1804,10 +1921,10 @@ Section: net
 SourceDateEpoch: 1649681165
 Maintainer: GreaterFire
 Architecture: aarch64_cortex-a53
-Installed-Size: 302647
+Installed-Size: 299964
 Filename: trojan_1.16.0-2_aarch64_cortex-a53.ipk
-Size: 303411
-SHA256sum: ffa08360bb54290a117e338aad571ceb3c8763ef70cb69e7ffae1864790cd7fa
+Size: 300742
+SHA256sum: 56ca7fa49f325d556c89d954183f7f00d16273624242d10e27bbb4579eac7148
 Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: ua2f
@@ -2087,26 +2204,6 @@ SHA256sum: 907e48d539f2092f38b2b865872fd6b4002a16937deb082febe47f904a726672
 Description:  wol implements Wake On LAN functionality in a small program.
  It wakes up hardware that is Magic Packet compliant.
 
-Package: wpad-basic-wolfssl
-Version: 2022-01-16-cff80b4f-5
-Depends: hostapd-common (=2022-01-16-cff80b4f-5), libc, libnl-tiny2022-11-01, hostapd-common, libubus20220601, libwolfssl5.5.3.e624513f
-Conflicts: hostapd, hostapd-basic, hostapd-basic-openssl, hostapd-basic-wolfssl, hostapd-mini, hostapd-openssl, hostapd-wolfssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl, wpad, wpad-mesh-openssl, wpad-mesh-wolfssl, wpad-basic, wpad-basic-openssl
-Provides: hostapd, wpa-supplicant
-Source: package/network/services/hostapd
-SourceName: wpad-basic-wolfssl
-License: BSD-3-Clause
-Section: net
-Require-User: network=101:network=101
-SourceDateEpoch: 1661442301
-CPE-ID: cpe:/a:w1.fi:hostapd
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Architecture: aarch64_cortex-a53
-Installed-Size: 426624
-Filename: wpad-basic-wolfssl_2022-01-16-cff80b4f-5_aarch64_cortex-a53.ipk
-Size: 427632
-SHA256sum: f5662a3d0069270f65f66ceb67dcf9d8b28ce6cc9ceeb4afb6ad8d773e12dd93
-Description:  This package contains a basic IEEE 802.1x/WPA Authenticator and Supplicant with WPA-PSK, SAE (WPA3-Personal), 802.11r and 802.11w support.
-
 Package: wpad-openssl
 Version: 2022-01-16-cff80b4f-5
 Depends: hostapd-common (=2022-01-16-cff80b4f-5), libc, libnl-tiny2022-11-01, hostapd-common, libubus20220601, libopenssl1.1
@@ -2121,10 +2218,10 @@ SourceDateEpoch: 1661442301
 CPE-ID: cpe:/a:w1.fi:hostapd
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_cortex-a53
-Installed-Size: 710656
+Installed-Size: 704919
 Filename: wpad-openssl_2022-01-16-cff80b4f-5_aarch64_cortex-a53.ipk
-Size: 711066
-SHA256sum: 42a9e971376225b189a5e9495709cac9f20d8c426aa9fa4a83255003c3dc3390
+Size: 705391
+SHA256sum: e7a9a398e047e710c8c96c14cb59093296639c81f0bef1adcf5deac108fa4ea1
 Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator and Supplicant
 
@@ -2139,10 +2236,10 @@ Section: net
 SourceDateEpoch: 1670982515
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: aarch64_cortex-a53
-Installed-Size: 8624927
+Installed-Size: 8624805
 Filename: xray-core_1.6.6-2-1_aarch64_cortex-a53.ipk
-Size: 8599606
-SHA256sum: 213d5e992eb328a5a33ecf8aedf6fb25abf0140c929a95fd2803e1429220be92
+Size: 8599340
+SHA256sum: 312db9835659b842a4cc0209cbaa826eabb843d720847ec602c7065919d5c5ea
 Description:  Xray, Penetrates Everything. It helps you to build your own computer network.
  It secures your network connections and thus protects your privacy.
 

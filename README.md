@@ -59,6 +59,8 @@ src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/mipsel_24kc/telepho
 
 红米 AX 6000
 
+Redmi AX 6000
+
 ```
 src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/mediatek/filogic/packages
 src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/base

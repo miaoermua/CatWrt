@@ -25,7 +25,26 @@ src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/x86_64/routing
 src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/x86_64/telephony
 ```
 
-**mt7621 (Xiaomi/Redmi AC 2100/Newifi d2)**
+**aarch64_generic**
+
+电犀牛 r66s r68s，友善 r2s r2c r4s r4se r5s，香橙派 r1
+
+fastrhino/friendlyarm/orangepi
+
+```
+src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/rockchip/armv8/packages
+src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/aarch64_generic/base
+src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/aarch64_generic/luci
+src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/aarch64_generic/packages
+src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/aarch64_generic/routing
+src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/aarch64_generic/telephony
+```
+
+**mt7621**
+
+小米/红米 AC2100，新路由3
+
+Xiaomi/Redmi AC 2100/Newifi d2
 
 ```
 src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/ramips/mt7621/packages
@@ -38,6 +57,8 @@ src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/mipsel_24kc/telepho
 
 **aarch64_cortex-a53 (Redmi AX 6000)**
 
+红米 AX 6000
+
 ```
 src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/mediatek/filogic/packages
 src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/base
@@ -47,7 +68,7 @@ src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/ro
 src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/telephony
 ```
 
-仓库中文件不同于编译结果，请注意文件对应。
+🤩 仓库中文件不同于编译结果，请注意文件对应。
 
 ```
 lede/bin/packages = miaoermua/CatWrt/

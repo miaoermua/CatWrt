@@ -44,7 +44,7 @@ jobs:
           load: true
           tags: ${{ steps.meta.outputs.tags }},miaoer/catwrt-soft:latest
           labels: ${{ steps.meta.outputs.labels }}
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64,linux/arm64/v8,linux/arm/v7
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and push

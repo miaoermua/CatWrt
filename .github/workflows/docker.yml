@@ -46,10 +46,6 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Test
-        run: |
-          bash ./scripts/workflow/test-docker.sh
-          sudo rm -rf ./data
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v4

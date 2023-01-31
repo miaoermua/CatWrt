@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  app:
+    container_name: CatWrt-soft
+    image: timochan/CatWrt-soft:latest
+    # debug
+    # build: .
+    environment:
+      - TZ=Asia/Shanghai
+    ports:
+      - '1480:80'
+    networks:
+      - CatWrt-network
+    restart: always
+networks:
+ CatWrt-network:
+    driver: bridge

@@ -22,9 +22,6 @@ jobs:
           images: |
             miaoer/catwrt-soft     
             
-          # generate Docker tags based on the following events/attributes
-          platforms:
-            - all
           tags: |
             type=ref,event=branch
             type=semver,pattern={{version}}

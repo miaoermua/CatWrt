@@ -57,7 +57,6 @@ jobs:
           platforms: linux/arm64/v8
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}       
-          l
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v4

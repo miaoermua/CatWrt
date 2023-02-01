@@ -58,7 +58,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}       
       - name: Build and push
-        id: docker_build
+        id: docker_build_amd64
         uses: docker/build-push-action@v4
         with:
           context: .
@@ -67,7 +67,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           platforms: linux/amd64
       - name: Build and push
-        id: docker_build
+        id: docker_build_arm64
         uses: docker/build-push-action@v4
         with:
           context: .

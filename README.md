@@ -1,5 +1,5 @@
 <p align="center">
-<img width="256" src="https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/images/CatWrt logo.jpg">
+<img width="350" src="https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/images/CatWrt logo.jpg">
 </p>
 
 <p align="center">
@@ -11,11 +11,14 @@
 专为好用、稳定可靠的 OpenWrt 路由而服务！
 
 [![](https://img.shields.io/badge/blog-@CatWrt.svg)](https://www.miaoer.xyz/network/catwrt)
+<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/miaoermua/CatWrt">
 [![](https://img.shields.io/docker/stars/miaoer/catwrt-soft)](https://hub.docker.com/r/miaoer/catwrt-soft)
-<img src="https://img.shields.io/github/repo-size/tensorflow/tensorflow.svg"/>
+<img alt="Docker Image Size (latest by date)" src="https://img.shields.io/docker/image-size/miaoer/catwrt-soft">
 <img src="https://img.shields.io/github/last-commit/tensorflow/tensorflow.svg"/>
 
 </div>
+
+***
 
 🎯 欢迎来到 CatWrt 仓库，这里不存放源码会存放最新版本编译的插件
 

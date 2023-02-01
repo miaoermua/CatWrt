@@ -20,7 +20,7 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            miaoer/catwrt-soft     
+            timochan/catwrt-soft     
             
           tags: |
             type=ref,event=branch
@@ -42,7 +42,7 @@ jobs:
         with:
           context: .
           load: true
-          tags: ${{ steps.meta.outputs.tags }},miaoer/catwrt-soft:latest
+          tags: ${{ steps.meta.outputs.tags }},timochan/catwrt-soft:latest
           labels: ${{ steps.meta.outputs.labels }}
           platforms: linux/amd64
         env:
@@ -52,7 +52,7 @@ jobs:
         with:
           context: .
           load: true
-          tags: ${{ steps.meta.outputs.tags }},miaoer/catwrt-soft:latest
+          tags: ${{ steps.meta.outputs.tags }},timochan/catwrt-soft:latest
           labels: ${{ steps.meta.outputs.labels }}
           platforms: linux/arm64/v8
         env:
@@ -63,7 +63,7 @@ jobs:
         with:
           context: .
           push: ${{ startsWith(github.ref, 'refs/tags/v') }}
-          tags: ${{ steps.meta.outputs.tags }},miaoer/catwrt-soft:latest
+          tags: ${{ steps.meta.outputs.tags }},timochan/catwrt-soft:latest
           labels: ${{ steps.meta.outputs.labels }}
           platforms: linux/amd64
       - name: Build and push
@@ -72,6 +72,6 @@ jobs:
         with:
           context: .
           push: ${{ startsWith(github.ref, 'refs/tags/v') }}
-          tags: ${{ steps.meta.outputs.tags }},miaoer/catwrt-soft:latest
+          tags: ${{ steps.meta.outputs.tags }},timochan/catwrt-soft:latest
           labels: ${{ steps.meta.outputs.labels }}
           platforms: linux/arm64/v8

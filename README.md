@@ -10,11 +10,13 @@
 
 专为好用、稳定可靠的 OpenWrt 路由而服务！
 
+[安装扩展](https://www.miaoer.xyz/posts/network/catwrt-expand) | [发行版集合](https://www.miaoer.xyz/posts/network/catwrt) | [❤️ 赞助喵二](https://www.miaoer.xyz/sponsor)
+
 [![](https://img.shields.io/badge/blog-@CatWrt.svg)](https://www.miaoer.xyz/network/catwrt)
-<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/miaoermua/CatWrt">
+[![](https://img.shields.io/github/v/release/miaoermua/CatWrt)](https://github.com/miaoermua/CatWrt/releases)
 [![](https://img.shields.io/docker/stars/miaoer/catwrt-soft)](https://hub.docker.com/r/miaoer/catwrt-soft)
-<img alt="Docker Image Size (latest by date)" src="https://img.shields.io/docker/image-size/miaoer/catwrt-soft">
-<img src="https://img.shields.io/github/last-commit/tensorflow/tensorflow.svg"/>
+[![](https://img.shields.io/docker/image-size/miaoer/catwrt-soft)](https://hub.docker.com/r/miaoer/catwrt-soft)
+[![](https://img.shields.io/github/last-commit/tensorflow/tensorflow.svg)](https://github.com/miaoermua/CatWrt/commits/main)
 
 </div>
 
@@ -23,6 +25,7 @@
 🎯 欢迎来到 CatWrt 仓库，这里不存放源码会存放最新版本编译的插件
 
 CatWrt 是基于 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版
+
 > 最新固件为 [CatWrt-v22.12 扩展无“线”，NAT 小包加速组件更新！](https://www.miaoer.xyz/posts/network/catwrt-v22.12)
 
 
@@ -42,19 +45,20 @@ CatWrt 是基于 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓库编译�
 $ docker run -d -p 1480:80 miaoer/catwrt-soft:latest
 ```
 
-亦或拉取到本地使用 docker compose 启动
+或拉取到本地使用 docker compose 启动
 
 ```bash
 $ wget https://fastly.jsdelivr.net/gh/miaoermua/CatWrt@main/docker-compose.yml
 
 $ docker compose up -d  
-
 $ # docker-compose up -d
 ```
 
 - 使用 Linux 面板部署（宝塔，小皮……）
 
-将此仓库通过 git clone 拉取到服务器网站目录里，修改面板中关于网站目录到 CatWrt 中即可
+将此仓库通过 git clone 拉取到服务器网站目录里，修改面板中关于网站目录到 CatWrt 中；
+
+部署完成后再按照架构平台系列修改模板到本地部署中。
 
 ***
 ## 软件源

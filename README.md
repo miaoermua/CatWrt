@@ -1,21 +1,75 @@
-# CatWrt
+<p align="center">
+<img width="350" src="https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/images/CatWrt logo.jpg">
+</p>
 
-🎯 欢迎来到 CatWrt 插件仓库，这里会存放最新版本编译的插件，不安装 CatWrt 也能使用特色插件！
+<p align="center">
+<b>CatWrt</b>
+</p>
 
-CatWrt 是基于 [Lede](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版，专为好用、稳定可靠的 OpenWrt 路由而服务！
+<div align="center">
+
+专为好用、稳定可靠的 OpenWrt 路由而服务！
+
+[安装扩展](https://www.miaoer.xyz/posts/network/catwrt-expand) | [发行版集合](https://www.miaoer.xyz/posts/network/catwrt) | [❤️ 赞助喵二](https://www.miaoer.xyz/sponsor)
+
+[![](https://img.shields.io/badge/blog-@CatWrt.svg)](https://www.miaoer.xyz/network/catwrt)
+[![](https://img.shields.io/github/v/release/miaoermua/CatWrt)](https://github.com/miaoermua/CatWrt/releases)
+[![](https://img.shields.io/docker/stars/miaoer/catwrt-soft)](https://hub.docker.com/r/miaoer/catwrt-soft)
+[![](https://img.shields.io/docker/image-size/miaoer/catwrt-soft)](https://hub.docker.com/r/miaoer/catwrt-soft)
+[![](https://img.shields.io/github/last-commit/tensorflow/tensorflow.svg)](https://github.com/miaoermua/CatWrt/commits/main)
+
+</div>
+
+***
+
+🎯 欢迎来到 CatWrt 仓库，这里不存放源码会存放最新版本编译的插件
+
+CatWrt 是基于 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版
 
 > 最新固件为 [CatWrt-v22.12 扩展无“线”，NAT 小包加速组件更新！](https://www.miaoer.xyz/posts/network/catwrt-v22.12)
 
 
-🧲 本仓库所以不包含源码内容，如果你想知道我们使用了哪些源码，请查看固件发布博客留下的链接。
+🧲 本仓库所以不包含源码内容，如果你想知道我们使用了哪些源码，请查看固件发布博客留下的上游链接。
 
-不同于其他人编译的固件，我们编译过程完全开源！并且免费服务 CatWrt 用户帮助小白用户也能轻松玩转 OpenWrt 软路由系统，通过和社区交流也能编译出自己的 CatWrt 关键是这些都是在社区活跃下免费的。
+不同于其他人编译的固件，我们编译过程完全开源！并且免费服务 CatWrt 用户帮助小白用户也能轻松玩转 OpenWrt 系统，通过和社区交流也能编译出自己的 CatWrt 关键是这些都是在社区活跃下都是免费的。
 
-你也可以将此仓库部署在你自己的服务器上搭建软件源，以下这是此仓库的软件源。
+## 软件源部署
+
+你也可以将此仓库部署在你自己的服务器上搭建属于自己的软件源，以下这是此仓库的软件源。
+
+<br>
+
+- 使用 Docker 部署（🚀 支持 x86-64 和 ARM64 平台软路由安装）
+
+```bash
+$ docker run -d -p 1480:80 miaoer/catwrt-soft:latest
+```
+
+或拉取到本地使用 docker compose 启动
+
+```bash
+$ wget https://fastly.jsdelivr.net/gh/miaoermua/CatWrt@main/docker-compose.yml
+
+$ docker compose up -d  
+$ # docker-compose up -d
+```
+
+- 使用 Linux 面板部署（宝塔，小皮……）
+
+将此仓库通过 git clone 拉取到服务器网站目录里，修改面板中关于网站目录到 CatWrt 中；
+
+部署完成后再按照架构平台系列修改模板到本地部署中。
+
+***
+## 软件源
+
+以下为使用 [vercel](https://vercel.com) 部署站点，可以拉取软件源并更新，但部分地区可能需要加速。
 
 **x86-64**
 
-```
+传统 x86 软路由
+
+```mirrors
 src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/x86/64/packages
 src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/x86_64/base
 src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/x86_64/luci
@@ -27,11 +81,9 @@ src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/x86_64/telephony
 
 **aarch64_generic**
 
-电犀牛 r66s r68s，友善 r2s r2c r4s r4se r5s，香橙派 r1
+电犀牛 r66s r68s，友善 r2s r2c r4s r4se r5s，香橙派 r1 plus
 
-fastrhino/friendlyarm/orangepi
-
-```
+```mirrors
 src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/rockchip/armv8/packages
 src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/aarch64_generic/base
 src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/aarch64_generic/luci
@@ -42,11 +94,9 @@ src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/aarch64_generic/tel
 
 **mt7621**
 
-小米/红米 AC2100，新路由3
+小米/红米 AC2100，新路由3（Newifi3）
 
-Xiaomi/Redmi AC 2100/Newifi d2
-
-```
+```mirrors
 src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/ramips/mt7621/packages
 src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/mipsel_24kc/base
 src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/mipsel_24kc/luci
@@ -55,13 +105,11 @@ src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/mipsel_24kc/routing
 src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/mipsel_24kc/telephony
 ```
 
-**aarch64_cortex-a53 (Redmi AX 6000)**
+**aarch64_cortex-a53**
 
-红米 AX 6000
+红米 AX6000
 
-Redmi AX 6000
-
-```
+```mirrors
 src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/mediatek/filogic/packages
 src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/base
 src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/luci
@@ -70,7 +118,7 @@ src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/ro
 src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/telephony
 ```
 
-🤩 仓库中文件不同于编译结果，请注意文件对应。
+文件对应仓库中编译结果。
 
 ```
 lede/bin/packages = miaoermua/CatWrt/
@@ -78,4 +126,4 @@ lede/bin/packages = miaoermua/CatWrt/
 lede/bin/targets = miaoermua/CatWrt/targets
 ```
 
-固件有问题请提 Issues 或者在博客评论，欢迎使用后留下你的评论 ━(*｀∀´*)ノ亻!
+固件有问题请提 Issues 或者在博客评论，欢迎使用后留下你的评论和 Star！

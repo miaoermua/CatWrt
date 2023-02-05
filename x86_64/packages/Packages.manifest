@@ -1208,6 +1208,43 @@ Description:  GnuTLS is a secure communications library implementing the SSL, TL
  efficient with focus on security and interoperability.
  This package contains the GnuTLS shared library, needed by other programs.
 
+Package: libimobiledevice-utils
+Version: 1.3.0-2
+Depends: libc, libimobiledevice
+Source: feeds/packages/libs/libimobiledevice
+SourceName: libimobiledevice-utils
+License: GPL-2.0-or-later
+LicenseFiles: COPYING.LESSER
+Section: utils
+SourceDateEpoch: 1668816619
+Maintainer: Rosen Penev <rosenp@gmail.com>
+Architecture: x86_64
+Installed-Size: 100532
+Filename: libimobiledevice-utils_1.3.0-2_x86_64.ipk
+Size: 100496
+SHA256sum: b5a186a4af4cdf4f3eb172d8d7bda2a5aaf2f3cac26c74ff8a40ed7874b04ff0
+Description:  libimobiledevice is a software library that talks the protocols to support
+ iPhone®, iPod Touch®, iPad® and Apple TV® devices.
+ This package contains the libimobiledevice utilities.
+
+Package: libimobiledevice
+Version: 1.3.0-2
+Depends: libc, libplist, libusbmuxd, libopenssl1.1
+Source: feeds/packages/libs/libimobiledevice
+SourceName: libimobiledevice
+License: LGPL-2.1-or-later
+LicenseFiles: COPYING.LESSER
+Section: libs
+SourceDateEpoch: 1668816619
+Maintainer: Rosen Penev <rosenp@gmail.com>
+Architecture: x86_64
+Installed-Size: 57406
+Filename: libimobiledevice_1.3.0-2_x86_64.ipk
+Size: 58282
+SHA256sum: ff899bd78a3fc7581c2f23c54e129dc12e68c421cf46a6a041f5ce2d609ba986
+Description:  libimobiledevice is a software library that talks the protocols to support
+ iPhone®, iPod Touch®, iPad® and Apple TV® devices.
+
 Package: libiperf3
 Version: 3.12-1
 Depends: libc
@@ -1462,6 +1499,22 @@ Size: 182799
 SHA256sum: 9a626d6f4b99242e34b3715db0b71417df4d5292909c5967161504d65a24ebaf
 Description:  A Perl Compatible Regular Expression library
 
+Package: libplist
+Version: 2.2.0-3
+Depends: libc, libxml2
+Source: feeds/packages/libs/libplist
+SourceName: libplist
+Section: libs
+SourceDateEpoch: 1668816619
+CPE-ID: cpe:/a:libimobiledevice:libplist
+Maintainer: Rosen Penev <rosenp@gmail.com>
+Architecture: x86_64
+Installed-Size: 23031
+Filename: libplist_2.2.0-3_x86_64.ipk
+Size: 23751
+SHA256sum: 8d12aeabd33d6416502b0d250c71f29df0fad6fbecdc737e69c9938bd88e4ce5
+Description:  A library to handle Apple Property List format whereas it's binary or XML
+
 Package: libruby3.1
 Version: 3.1.3-1
 Depends: libc, libpthread, librt, libgmp10, zlib
@@ -1613,6 +1666,27 @@ Description:  liburing provides helpers to setup and teardown io_uring instances
  (or want) to deal with the full kernel side implementation.
  For more info on io_uring, please see: https://kernel.dk/io_uring.pdf
 
+Package: libusbmuxd
+Version: 2.0.2-1
+Depends: libc, libplist, libpthread, libxml2, zlib
+Source: feeds/packages/libs/libusbmuxd
+SourceName: libusbmuxd
+Section: libs
+SourceDateEpoch: 1668816619
+CPE-ID: cpe:/a:libimobiledevice:libusbmuxd
+Maintainer: Rosen Penev <rosenp@gmail.com>
+Architecture: x86_64
+Installed-Size: 16056
+Filename: libusbmuxd_2.0.2-1_x86_64.ipk
+Size: 16992
+SHA256sum: 10af7a08d21089115ab40a580af456a8023a1b702fa7c7e815e5cf15c51e637a
+Description:  This daemon is in charge of multiplexing connections over USB to an iPhone or
+ iPod touch. To users, it means you can sync your music, contacts, photos, etc.
+ over USB. To developers, it means you can connect to any listening localhost
+ socket on the device. usbmuxd is not used for tethering data transfer, which
+ uses a dedicated USB interface as a virtual network device.
+ This package contains the libusbmuxd shared library.
+
 Package: libuv1
 Version: 1.44.1-1
 Depends: libc, libpthread, librt
@@ -1652,6 +1726,24 @@ Filename: libwebsockets-full_4.3.2-2_x86_64.ipk
 Size: 192636
 SHA256sum: 1c5a73726bec35d0d28c6588bd2e58c5e3fb8d9a1dfa9ab73f1b7d1ecc29cf95
 Description:  libwebsockets (Full - OpenSSL, libuv, plugins, CGI)
+
+Package: libxml2
+Version: 2.10.3-1
+Depends: libc, libpthread, zlib
+Source: feeds/packages/libs/libxml2
+SourceName: libxml2
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1668816619
+CPE-ID: cpe:/a:xmlsoft:libxml2
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: x86_64
+Installed-Size: 506102
+Filename: libxml2_2.10.3-1_x86_64.ipk
+Size: 505012
+SHA256sum: af77d22fa805f127a0a372d2173e17dc33f8428246aa6358e1d63688baefe887
+Description:  A library for manipulating XML and HTML resources.
 
 Package: libyaml
 Version: 0.2.5-1
@@ -2542,10 +2634,10 @@ Section: net
 SourceDateEpoch: 1669693946
 CPE-ID: cpe:/a:samba:samba
 Architecture: x86_64
-Installed-Size: 96151
+Installed-Size: 96191
 Filename: samba4-client_4.14.14-2_x86_64.ipk
-Size: 96894
-SHA256sum: 480c6b7e7a09735fe0704436b82e1ae366ae8eb003561c9f33c27aca8fc27e45
+Size: 96961
+SHA256sum: 1256a482990de370be79643f392a7a438d4a2fdd03486d9a1d40796a1e5a27fd
 Description:  installs: cifsdd smbclient smbget
  
  The smbclient program implements a simple ftp-like client for accessing SMB shares
@@ -2561,10 +2653,10 @@ Section: net
 SourceDateEpoch: 1669693946
 CPE-ID: cpe:/a:samba:samba
 Architecture: x86_64
-Installed-Size: 8147138
+Installed-Size: 8141436
 Filename: samba4-libs_4.14.14-2_x86_64.ipk
-Size: 8100509
-SHA256sum: 34b0c99840dfb28e7fdd772f186194ff5705022e4819f4eadc4ea3066dd2b2a7
+Size: 8097205
+SHA256sum: 743f6d9455acb3eb27d954046eb680b989f86faa5d0bcbe1a9a1093989a6259a
 Description:  Samba 4.14.14 libs
 
 Package: samba4-server
@@ -2579,10 +2671,10 @@ Section: net
 SourceDateEpoch: 1669693946
 CPE-ID: cpe:/a:samba:samba
 Architecture: x86_64
-Installed-Size: 237005
+Installed-Size: 237006
 Filename: samba4-server_4.14.14-2_x86_64.ipk
 Size: 238036
-SHA256sum: df0a252201ddb012f31d97f6e9358ddf8b2aa2d6beffa56be7308a20a15e52c0
+SHA256sum: 0e6cb721c6d1a4fbf480826b6b78e9d4984e791c52ec90b4a1236f2ac8034929
 Description:  installs: smbd (nmbd) smbpasswd pdbedit testparm (nmblookup) (smbcacls sharesec)
  (samba samba-tool ntlm_auth samba-gpupdate samba_dnsupdate samba_kcc samba_spnupdate samba_upgradedns samba_downgrade_db)
  
@@ -3199,6 +3291,28 @@ Description:  InfoZIP's unzip program. With the exception of multi-volume archiv
  (ie, .ZIP files that are split across several disks using PKZIP's /& option),
  this can handle any file produced either by PKZIP, or the corresponding
  InfoZIP zip program.
+
+Package: usbmuxd
+Version: 1.1.1-1
+Depends: libc, librt, libusb-1.0-0, libusbmuxd, libopenssl1.1, libimobiledevice
+Source: feeds/packages/utils/usbmuxd
+SourceName: usbmuxd
+License: GPL-2.0-or-later
+LicenseFiles: COPYING.GPLv2
+Section: utils
+SourceDateEpoch: 1668816619
+CPE-ID: cpe:/a:libimobiledevice:usbmuxd
+Maintainer: Rosen Penev <rosenp@gmail.com>
+Architecture: x86_64
+Installed-Size: 30739
+Filename: usbmuxd_1.1.1-1_x86_64.ipk
+Size: 31739
+SHA256sum: 5e50a4747b7cb2f32e638153457181efca8699e0453005cc33319128c72e7596
+Description:  This daemon is in charge of multiplexing connections over USB to an iPhone or
+ iPod touch. To users, it means you can sync your music, contacts, photos, etc.
+ over USB. To developers, it means you can connect to any listening localhost
+ socket on the device. usbmuxd is not used for tethering data transfer, which
+ uses a dedicated USB interface as a virtual network device.
 
 Package: usbutils
 Version: 014-1

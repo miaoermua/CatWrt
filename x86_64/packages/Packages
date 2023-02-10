@@ -49,30 +49,6 @@ Description:  Powerful adblock solution to block ad/abuse domains via dnsmasq, u
  Please see https://github.com/openwrt/packages/blob/master/net/adblock/files/README.md for further information.
  
 
-Package: adguardhome
-Version: 0.107.21-1
-Depends: libc, ca-bundle
-License: GPL-3.0-only
-Section: net
-Architecture: x86_64
-Installed-Size: 11783717
-Filename: adguardhome_0.107.21-1_x86_64.ipk
-Size: 11764336
-SHA256sum: 89167b45f268446b72b4d9f3bae48ea9635d35e4555da77fc78b1beb8e867ef0
-Description:  Free and open source, powerful network-wide ads and trackers blocking DNS server.
-
-Package: aliyundrive-webdav
-Version: 1.10.3-1
-Depends: libc
-License: MIT
-Section: multimedia
-Architecture: x86_64
-Installed-Size: 3859645
-Filename: aliyundrive-webdav_1.10.3-1_x86_64.ipk
-Size: 3861020
-SHA256sum: 0f7af0657190d6c5894f720fcf83f6c0826cb6e63affbbe1e141fe82df5e8c38
-Description:  WebDAV server for AliyunDrive.
-
 Package: aria2
 Version: 1.36.0-2
 Depends: libc, zlib, libstdcpp6, libopenssl1.1
@@ -931,20 +907,6 @@ Description:  GnuTLS is a secure communications library implementing the SSL, TL
  OpenPGP and other required structures. It is aimed to be portable and
  efficient with focus on security and interoperability.
  This package contains the GnuTLS shared library, needed by other programs.
-
-Package: libimobiledevice-utils
-Version: 1.3.0-2
-Depends: libc, libimobiledevice
-License: GPL-2.0-or-later
-Section: utils
-Architecture: x86_64
-Installed-Size: 100532
-Filename: libimobiledevice-utils_1.3.0-2_x86_64.ipk
-Size: 100496
-SHA256sum: b5a186a4af4cdf4f3eb172d8d7bda2a5aaf2f3cac26c74ff8a40ed7874b04ff0
-Description:  libimobiledevice is a software library that talks the protocols to support
- iPhone®, iPod Touch®, iPad® and Apple TV® devices.
- This package contains the libimobiledevice utilities.
 
 Package: libimobiledevice
 Version: 1.3.0-2
@@ -2019,10 +1981,10 @@ License: GPL-3.0-only
 Section: net
 CPE-ID: cpe:/a:samba:samba
 Architecture: x86_64
-Installed-Size: 96191
+Installed-Size: 96234
 Filename: samba4-client_4.14.14-2_x86_64.ipk
-Size: 96961
-SHA256sum: 1256a482990de370be79643f392a7a438d4a2fdd03486d9a1d40796a1e5a27fd
+Size: 96990
+SHA256sum: 9c25680b6fd134bf5e47d305fbdf273213f24a9a7606403bcbbff6ea9de031ad
 Description:  installs: cifsdd smbclient smbget
  
  The smbclient program implements a simple ftp-like client for accessing SMB shares
@@ -2034,10 +1996,10 @@ License: GPL-3.0-only
 Section: net
 CPE-ID: cpe:/a:samba:samba
 Architecture: x86_64
-Installed-Size: 8141436
+Installed-Size: 8142962
 Filename: samba4-libs_4.14.14-2_x86_64.ipk
-Size: 8097205
-SHA256sum: 743f6d9455acb3eb27d954046eb680b989f86faa5d0bcbe1a9a1093989a6259a
+Size: 8098169
+SHA256sum: f0092f5afd25dbd7f6342f8bc34a4e23edddcc6b3a87593956376d0c61ba628a
 Description:  Samba 4.14.14 libs
 
 Package: samba4-server
@@ -2048,10 +2010,10 @@ License: GPL-3.0-only
 Section: net
 CPE-ID: cpe:/a:samba:samba
 Architecture: x86_64
-Installed-Size: 237006
+Installed-Size: 237020
 Filename: samba4-server_4.14.14-2_x86_64.ipk
-Size: 238036
-SHA256sum: 0e6cb721c6d1a4fbf480826b6b78e9d4984e791c52ec90b4a1236f2ac8034929
+Size: 238057
+SHA256sum: d3664384ef53c1113d06bf0f7c4fd9f7fb0be27c3727de939e56facf83099bbb
 Description:  installs: smbd (nmbd) smbpasswd pdbedit testparm (nmblookup) (smbcacls sharesec)
  (samba samba-tool ntlm_auth samba-gpupdate samba_dnsupdate samba_kcc samba_spnupdate samba_upgradedns samba_downgrade_db)
  

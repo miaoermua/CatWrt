@@ -1,0 +1,1 @@
+包含内核 Kmod 包，buildinfo，hash。

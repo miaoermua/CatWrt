@@ -1,1 +1,1 @@
-包含内核 Kmod 包，buildinfo，hash。
+此处提供最新编译的内核 Kmod 软件包，Buildinfo，固件 Hash 值 等内容是系统核心部分，从这里也可以查看原始的 buildinfo 参数而并非博客里提供的全部修改项。

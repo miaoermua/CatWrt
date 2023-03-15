@@ -38,17 +38,17 @@
 <li>解答</li>
 <p>🪄 可以解答你对 CatWrt 的疑问，有限免费的</p><br>
 
-## 开源
+## 开源相关
 
-CatWrt 是基于开源的 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版；所以本仓库没有源码内容，如果你想知道我们使用了哪些源码，可以查看固件发布博客留下的上游提交链接和本仓库提交更新时描述。
+CatWrt 是基于开源的 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版；本仓库没有源码内容，如果你想知道我们使用了哪些源码，可以查看固件发布博客留下的上游提交链接和本仓库提交更新时描述。
 
 不同于其他人编译的固件，我们编译过程完全开源！并且免费服务 CatWrt 用户帮助小白用户也能轻松玩转 OpenWrt 系统，通过和社区交流也能编译出自己的 CatWrt 关键是这些都是在社区活跃下都是免费的。
 
-固件中绝不含任何后门和可以监控或者劫持你的 HTTPS 的闭源软件，所有修改均已展示开源，SSL 安全是互联网最后的壁垒。安全干净才是固件应该做到的。
+固件中绝不含任何后门和可以监控或者劫持你的 HTTPS 的闭源软件，所有对 LEDE 修改均已展示并开源，SSL 安全是互联网最后的壁垒，安全干净才是固件应该做到的。
 
-![](https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/blog/23-02-28/opensource.jpg)
+![开源示例](https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/blog/23-02-28/opensource.jpg)
 
-文件对应仓库中编译结果
+文件对应仓库中编译结果：
 
 ```
 lede/bin/packages = miaoermua/CatWrt/
@@ -58,7 +58,7 @@ lede/bin/targets = miaoermua/CatWrt/targets
 
 ## 部署软件源
 
-你也可以将此仓库部署在你自己的服务器上搭建属于自己的软件源
+你可以将此仓库部署在你自己的服务器上搭建属于自己的软件源
 
 <br>
 
@@ -79,7 +79,7 @@ $ docker compose up -d
 
 - 使用 Linux 面板部署（宝塔，小皮……）
 
-将此仓库通过 git clone 拉取到服务器网站目录里，修改面板中关于网站目录到 CatWrt 中；
+将此仓库通过 git clone 拉取到服务器网站目录里，修改面板网站目录到 CatWrt 中；
 
 部署完成后再按照架构平台或系列修改模板到本地部署中。
 
@@ -130,7 +130,7 @@ src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/mt7986a/telephony
 
 **mt7621**
 
-小米/红米 AC2100，新路由3（Newifi3）
+小米/红米 AC2100，新路由3（Newifi_d2）
 
 ```mirrors
 src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/ramips/mt7621/packages

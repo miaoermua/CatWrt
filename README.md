@@ -93,13 +93,13 @@ $ docker compose up -d
 传统 x86 软路由
 
 ```mirrors
-src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/x86/64/packages
-src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/x86_64/base
-src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/x86_64/luci
-src/gz openwrt_oui https://downloads.catwrt.miaoer.xyz/x86_64/oui
-src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/x86_64/packages
-src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/x86_64/routing
-src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/x86_64/telephony
+src/gz openwrt_core http://47.113.229.16:1480/targets/x86/64/packages
+src/gz openwrt_base http://47.113.229.16:1480/x86_64/base
+src/gz openwrt_luci http://47.113.229.16:1480/x86_64/luci
+src/gz openwrt_oui http://47.113.229.16:1480/x86_64/oui
+src/gz openwrt_packages http://47.113.229.16:1480/x86_64/packages
+src/gz openwrt_routing http://47.113.229.16:1480/x86_64/routing
+src/gz openwrt_telephony http://47.113.229.16:1480/x86_64/telephony
 ```
 
 **aarch64_generic**
@@ -107,12 +107,12 @@ src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/x86_64/telephony
 电犀牛 r66s，友善 r5s *（适配问题仅可用机型）*
 
 ```mirrors
-src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/rockchip/armv8/packages
-src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/aarch64_generic/base
-src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/aarch64_generic/luci
-src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/aarch64_generic/packages
-src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/aarch64_generic/routing
-src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/aarch64_generic/telephony
+src/gz openwrt_core http://47.113.229.16:1480/targets/rockchip/armv8/packages
+src/gz openwrt_base http://47.113.229.16:1480/aarch64_generic/base
+src/gz openwrt_luci http://47.113.229.16:1480/aarch64_generic/luci
+src/gz openwrt_packages http://47.113.229.16:1480/aarch64_generic/packages
+src/gz openwrt_routing http://47.113.229.16:1480/aarch64_generic/routing
+src/gz openwrt_telephony http://47.113.229.16:1480/aarch64_generic/telephony
 ```
 
 **mt7986a**
@@ -120,12 +120,12 @@ src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/aarch64_generic/tel
 红米 AX6000，TP-Link TL-XDR6086/6088
 
 ```mirrors
-src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/mediatek/filogic/packages
-src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/mt7986a/base
-src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/mt7986a/luci
-src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/mt7986a/packages
-src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/mt7986a/routing
-src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/mt7986a/telephony
+src/gz openwrt_core http://47.113.229.16:1480/targets/mediatek/filogic/packages
+src/gz openwrt_base http://47.113.229.16:1480/mt7986a/base
+src/gz openwrt_luci http://47.113.229.16:1480/mt7986a/luci
+src/gz openwrt_packages http://47.113.229.16:1480/mt7986a/packages
+src/gz openwrt_routing http://47.113.229.16:1480/mt7986a/routing
+src/gz openwrt_telephony http://47.113.229.16:1480/mt7986a/telephony
 ```
 
 **mt7621**
@@ -133,12 +133,12 @@ src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/mt7986a/telephony
 小米/红米 AC2100，新路由3（Newifi_d2）
 
 ```mirrors
-src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/ramips/mt7621/packages
-src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/mipsel_24kc/base
-src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/mipsel_24kc/luci
-src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/mipsel_24kc/packages
-src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/mipsel_24kc/routing
-src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/mipsel_24kc/telephony
+src/gz openwrt_core http://47.113.229.16:1480/targets/ramips/mt7621/packages
+src/gz openwrt_base http://47.113.229.16:1480/mipsel_24kc/base
+src/gz openwrt_luci http://47.113.229.16:1480/mipsel_24kc/luci
+src/gz openwrt_packages http://47.113.229.16:1480/mipsel_24kc/packages
+src/gz openwrt_routing http://47.113.229.16:1480/mipsel_24kc/routing
+src/gz openwrt_telephony http://47.113.229.16:1480/mipsel_24kc/telephony
 ```
 
 固件有问题请提 Issues 或者在博客评论，欢迎使用后留下你的评论和 Star！

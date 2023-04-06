@@ -593,10 +593,10 @@ SourceDateEpoch: 1672818075
 CPE-ID: cpe:/a:w1.fi:hostapd
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 414462
+Installed-Size: 420614
 Filename: hostapd_2022-01-16-cff80b4f-6_x86_64.ipk
-Size: 415295
-SHA256sum: 57e70ca1ce0b66ad47f19ea5b4bd3b9a550d78d1e5c23755bddad924c9fee950
+Size: 421474
+SHA256sum: f2e2621fcf6585495218af289db951a385d37828f5d87ffda17e76ea74aa8433
 Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator.
 
@@ -1915,6 +1915,21 @@ Size: 76687
 SHA256sum: 17111ff9893f6a6725d10f73450339ca0a11e91acf035db73e3a8a663253caac
 Description:  LuCI support for ddnsto
 
+Package: luci-app-eqos
+Version: git-23.034.32856-e01a3be-1
+Depends: libc, luci-base, tc, kmod-sched-core, kmod-ifb
+Source: package/openwrt-packages/luci-app-eqos
+SourceName: luci-app-eqos
+Section: luci
+SourceDateEpoch: 1650903219
+Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com> GaryPang <https://github.com/garypang13/luci-app-eqos>
+Architecture: all
+Installed-Size: 2183
+Filename: luci-app-eqos_git-23.034.32856-e01a3be-1_all.ipk
+Size: 3059
+SHA256sum: a209648194e5dc2260c1d264e8f2cfbf7baae38cb7a5c75fa0e7bdc0d1f0b109
+Description:  EQOS - LuCI interface
+
 Package: luci-app-nezha-agent
 Version: 1.0-1
 Depends: libc, nezha-agent
@@ -2046,21 +2061,6 @@ Size: 5293241
 SHA256sum: f377ae90f9eed316ed256a9c8ef7e8c950235a1d7f1753e9715f9650828add60
 Description:  A New SS/SSR/Xray/Trojan LuCI interface
 
-Package: luci-i18n-adguardhome-zh-cn
-Version: git-23.018.02670-836faff-1
-Depends: libc, luci-app-adguardhome
-Source: package/openwrt-packages/luci-app-adguardhome
-SourceName: luci-i18n-adguardhome-zh-cn
-Section: luci
-SourceDateEpoch: 1673916198
-Maintainer: <https://github.com/rufengsuixing/luci-app-adguardhome>
-Architecture: all
-Installed-Size: 2547
-Filename: luci-i18n-adguardhome-zh-cn_git-23.018.02670-836faff-1_all.ipk
-Size: 3436
-SHA256sum: 8f6fafd71285dc98281c81b04d679c13b2f552dd3532af4a64d62d2da392cb17
-Description:  Translation for luci-app-adguardhome - 简体中文 (Simplified Chinese)
-
 Package: luci-i18n-alist-zh-cn
 Version: 1.0.7-1
 Depends: libc, luci-app-alist
@@ -2117,6 +2117,21 @@ Filename: luci-i18n-ddnsto-zh-cn_3.0.3-0_all.ipk
 Size: 1526
 SHA256sum: e52f1d77cc097b7a0552e1551d92c1465fbe49162c137aaaba0471bcdd0e29e2
 Description:  Translation for luci-app-ddnsto - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-eqos-zh-cn
+Version: git-23.034.32856-e01a3be-1
+Depends: libc, luci-app-eqos
+Source: package/openwrt-packages/luci-app-eqos
+SourceName: luci-i18n-eqos-zh-cn
+Section: luci
+SourceDateEpoch: 1650903219
+Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com> GaryPang <https://github.com/garypang13/luci-app-eqos>
+Architecture: all
+Installed-Size: 570
+Filename: luci-i18n-eqos-zh-cn_git-23.034.32856-e01a3be-1_all.ipk
+Size: 1473
+SHA256sum: 3c1de80afd396b0093ff7241ffb499598247e389279bf1762fc08109f66aa27e
+Description:  Translation for luci-app-eqos - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-oaf-zh-cn
 Version: 5.0.2-1
@@ -2363,21 +2378,6 @@ Filename: mount-utils_2.38-2_x86_64.ipk
 Size: 54527
 SHA256sum: 6dfb33d284e155b4c9203dfa184366da02bba441908248048c6bec5eaaf0fdbb
 Description:  contains: mount, umount, findmnt
-
-Package: mt7921bt-firmware
-Version: 20221214-3
-Depends: libc
-Source: package/firmware/linux-firmware
-SourceName: mt7921bt-firmware
-Section: firmware
-SourceDateEpoch: 1672374979
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Architecture: x86_64
-Installed-Size: 395496
-Filename: mt7921bt-firmware_20221214-3_x86_64.ipk
-Size: 396167
-SHA256sum: 2db232836e01c121947295eac572675ea0cdc575d642645bb30ffcff4e7cc201
-Description:  mt7921bt firmware
 
 Package: naiveproxy
 Version: 109.0.5414.74-2-1
@@ -2647,6 +2647,21 @@ Size: 57294
 SHA256sum: 8b053670386adb0b0af56366d14f31098e9c973e1588b3685e7fd78ee1d69286
 Description:  OpenWrt system process manager
 
+Package: r8152-firmware
+Version: 20221214-3
+Depends: libc
+Source: package/firmware/linux-firmware
+SourceName: r8152-firmware
+Section: firmware
+SourceDateEpoch: 1672374979
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 9400
+Filename: r8152-firmware_20221214-3_x86_64.ipk
+Size: 10118
+SHA256sum: 317ff3da0847b4679bf7b33a18930048f4dc088c89cd6f9aed7d11c207095ff9
+Description:  RealTek RTL8152 firmware
+
 Package: radeon-firmware
 Version: 20221214-3
 Depends: libc
@@ -2714,6 +2729,66 @@ SHA256sum: 1d8cd68130cb1676b0981eae0d5d523fcddf1eae6ab07052ec3dd1fe8d6fd089
 Description:  This package provides the UBUS RPC backend server to expose various
  functionality to frontend programs via JSON-RPC.
 
+Package: rtl8192ce-firmware
+Version: 20221214-3
+Depends: libc
+Source: package/firmware/linux-firmware
+SourceName: rtl8192ce-firmware
+Section: firmware
+SourceDateEpoch: 1672374979
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 20752
+Filename: rtl8192ce-firmware_20221214-3_x86_64.ipk
+Size: 21449
+SHA256sum: 563487bfd7e6ff81b57098b7e8b5604c1d6684a44f70d56df5189a2290303322
+Description:  RealTek RTL8192CE firmware
+
+Package: rtl8192cu-firmware
+Version: 20221214-3
+Depends: libc
+Source: package/firmware/linux-firmware
+SourceName: rtl8192cu-firmware
+Section: firmware
+SourceDateEpoch: 1672374979
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 18706
+Filename: rtl8192cu-firmware_20221214-3_x86_64.ipk
+Size: 19457
+SHA256sum: 51df10b2e83436f56391545c8f4f7c35f7dda9bcddaa903a8398610375219ad1
+Description:  RealTek RTL8192CU firmware
+
+Package: rtl8192de-firmware
+Version: 20221214-3
+Depends: libc
+Source: package/firmware/linux-firmware
+SourceName: rtl8192de-firmware
+Section: firmware
+SourceDateEpoch: 1672374979
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 13523
+Filename: rtl8192de-firmware_20221214-3_x86_64.ipk
+Size: 14239
+SHA256sum: 9fee288c72a8bc6926744caab53eb9cb5796232175df75a6f2d9f452dc31c8a1
+Description:  RealTek RTL8192DE firmware
+
+Package: rtl8192se-firmware
+Version: 20221214-3
+Depends: libc
+Source: package/firmware/linux-firmware
+SourceName: rtl8192se-firmware
+Section: firmware
+SourceDateEpoch: 1672374979
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 36769
+Filename: rtl8192se-firmware_20221214-3_x86_64.ipk
+Size: 37452
+SHA256sum: 3d919251039f222d19ca5f243b4a6bd05b144666ad6578815662b85a7a588296
+Description:  RealTek RTL8192SE firmware
+
 Package: rtl8821ce-firmware
 Version: 20221214-3
 Depends: libc
@@ -2728,6 +2803,21 @@ Filename: rtl8821ce-firmware_20221214-3_x86_64.ipk
 Size: 58023
 SHA256sum: 95a7b7515ad588184050b7925dfa59041b64736f8ab83878772dcbe93a9f5e12
 Description:  RealTek RTL8821CE firmware
+
+Package: rtl8822ce-firmware
+Version: 20221214-3
+Depends: libc
+Source: package/firmware/linux-firmware
+SourceName: rtl8822ce-firmware
+Section: firmware
+SourceDateEpoch: 1672374979
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 161900
+Filename: rtl8822ce-firmware_20221214-3_x86_64.ipk
+Size: 162553
+SHA256sum: a1cb85b20e82cdc33286019b57f1e4aace944b5a862dcc9e416c90b4d3013238
+Description:  RealTek RTL8822CE firmware
 
 Package: script-utils
 Version: 2.38-2

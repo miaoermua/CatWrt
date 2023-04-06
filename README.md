@@ -46,6 +46,7 @@ CatWrt 是基于开源的 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓�
 
 固件中绝不含任何后门和可以监控或者劫持你的 HTTPS 的闭源软件，所有对 LEDE 修改均已展示并开源，SSL 安全是互联网最后的壁垒，安全干净才是固件应该做到的。
 
+
 PS: 修改项已开源,编译时可参考但不推荐拉库编译 [OpenCatLEDE](https://github.com/miaoermua/OpenCatLEDE) 请 [遵守 GPL2.0 协议](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 二次开发请标注出处。
 
 ![开源示例](https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/blog/23-02-28/opensource.jpg)
@@ -120,6 +121,36 @@ src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/geeker_6.1_amd64/te
 
 **aarch64_generic**
 
+电犀牛 r66s，友善 r5s *（适配问题仅可用机型）*
+
+```mirrors
+src/gz openwrt_core http://47.113.229.16:1480/targets/rockchip/armv8/packages
+src/gz openwrt_base http://47.113.229.16:1480/aarch64_generic/base
+src/gz openwrt_luci http://47.113.229.16:1480/aarch64_generic/luci
+src/gz openwrt_packages http://47.113.229.16:1480/aarch64_generic/packages
+src/gz openwrt_routing http://47.113.229.16:1480/aarch64_generic/routing
+src/gz openwrt_telephony http://47.113.229.16:1480/aarch64_generic/telephony
+```
+
+**mt7986a**
+
+红米 AX6000，TP-Link TL-XDR6086/6088
+
+```mirrors
+src/gz openwrt_core http://47.113.229.16:1480/targets/mediatek/filogic/packages
+src/gz openwrt_base http://47.113.229.16:1480/mt7986a/base
+src/gz openwrt_luci http://47.113.229.16:1480/mt7986a/luci
+src/gz openwrt_packages http://47.113.229.16:1480/mt7986a/packages
+src/gz openwrt_routing http://47.113.229.16:1480/mt7986a/routing
+src/gz openwrt_telephony http://47.113.229.16:1480/mt7986a/telephony
+```
+
+**mt7621**
+
+小米/红米 AC2100，新路由3（Newifi_d2）
+
+```mirrors
+=======
 电犀牛 r66s，友善 r5s *（适配问题仅可用机型）*
 
 ```mirrors

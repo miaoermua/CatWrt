@@ -22,20 +22,45 @@
 
 ***
 
-🎯 欢迎来到 CatWrt 仓库，这里不存放源码会存放最新版本编译的插件
+🎯 欢迎来到 CatWrt 仓库，这里不存放源码会存放最新版本历史版本编译插件
 
-CatWrt 是基于 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版
+## 为什么选择 CatWrt
 
-> 最新固件为 [CatWrt-v22.12 扩展无“线”，NAT 小包加速组件更新！](https://www.miaoer.xyz/posts/network/catwrt-v22.12)
+<li>高可用</li>
+<p>👋 告别臃肿，软件在够用情况下 CatWrt 更稳定</p><br>
 
+<li>社区生态</li>
+<p>🎈 我们自己是玩家，寻找更多玩家加入互助 CatWrt 生态</p><br>
 
-🧲 本仓库所以不包含源码内容，如果你想知道我们使用了哪些源码，请查看固件发布博客留下的上游链接。
+<li>自建软件源</li>
+<p>🕊️ CatWrt 拥有时下热门插件在软件源，很方便通过教程安装</p><br>
+
+<li>解答</li>
+<p>🪄 可以解答你对 CatWrt 的疑问，有限免费的</p><br>
+
+## 开源相关
+
+CatWrt 是基于开源的 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版；本仓库没有源码内容，如果你想知道我们使用了哪些源码，可以查看固件发布博客留下的上游提交链接和本仓库提交更新时描述。
 
 不同于其他人编译的固件，我们编译过程完全开源！并且免费服务 CatWrt 用户帮助小白用户也能轻松玩转 OpenWrt 系统，通过和社区交流也能编译出自己的 CatWrt 关键是这些都是在社区活跃下都是免费的。
 
-## 软件源部署
+固件中绝不含任何后门和可以监控或者劫持你的 HTTPS 的闭源软件，所有对 LEDE 修改均已展示并开源，SSL 安全是互联网最后的壁垒，安全干净才是固件应该做到的。
 
-你也可以将此仓库部署在你自己的服务器上搭建属于自己的软件源，以下这是此仓库的软件源。
+PS: 修改项已开源,编译时可参考但不推荐拉库编译 [OpenCatLEDE](https://github.com/miaoermua/OpenCatLEDE) 请 [遵守 GPL2.0 协议](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 二次开发请标注出处。
+
+![开源示例](https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/blog/23-02-28/opensource.jpg)
+
+文件对应仓库中编译结果：
+
+```
+lede/bin/packages = miaoermua/CatWrt/
+
+lede/bin/targets = miaoermua/CatWrt/targets
+```
+
+## 部署软件源
+
+你可以将此仓库部署在你自己的服务器上搭建属于自己的软件源
 
 <br>
 
@@ -45,85 +70,91 @@ CatWrt 是基于 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓库编译�
 $ docker run -d -p 1480:80 miaoer/catwrt-soft:latest
 ```
 
-或拉取到本地使用 docker compose 启动
+或拉取到本地使用 Docker compose 启动
 
 ```bash
 $ wget https://fastly.jsdelivr.net/gh/miaoermua/CatWrt@main/docker-compose.yml
 
 $ docker compose up -d  
-$ # docker-compose up -d
+# docker-compose up -d
 ```
 
 - 使用 Linux 面板部署（宝塔，小皮……）
 
-将此仓库通过 git clone 拉取到服务器网站目录里，修改面板中关于网站目录到 CatWrt 中；
+将此仓库通过 git clone 拉取到服务器网站目录里，修改面板网站目录到 CatWrt 中；
 
-部署完成后再按照架构平台系列修改模板到本地部署中。
+部署完成后再按照架构平台或系列修改模板到本地部署中。
 
 ***
-## 软件源
+## 使用在线软件源
 
-以下为使用 [vercel](https://vercel.com) 部署站点，可以拉取软件源并更新，但部分地区可能需要加速。
+以下为使用 [vercel](https://vercel.com) 部署站点，可以拉取软件源并更新，但部分地区可能需要网络加速。
 
 **x86-64**
 
-传统 x86 软路由
+传统 x86 软路由(amd64)
 
 ```mirrors
-src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/x86/64/packages
-src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/x86_64/base
-src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/x86_64/luci
-src/gz openwrt_oui https://downloads.catwrt.miaoer.xyz/x86_64/oui
-src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/x86_64/packages
-src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/x86_64/routing
-src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/x86_64/telephony
+src/gz openwrt_core http://47.113.229.16:1480/targets/x86/64/packages
+src/gz openwrt_base http://47.113.229.16:1480/x86_64/base
+src/gz openwrt_luci http://47.113.229.16:1480/x86_64/luci
+src/gz openwrt_oui http://47.113.229.16:1480/x86_64/oui
+src/gz openwrt_packages http://47.113.229.16:1480/x86_64/packages
+src/gz openwrt_routing http://47.113.229.16:1480/x86_64/routing
+src/gz openwrt_telephony http://47.113.229.16:1480/x86_64/telephony
 ```
+
+**Geeker_6.1**
+
+Geeker 6.1 内核 x86_64(amd64)
+
+```mirrors
+src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/geeker_6.1/amd64/packages
+src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/geeker_6.1_amd64/base
+src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/geeker_6.1_amd64/luci
+src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/geeker_6.1_amd64/packages
+src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/geeker_6.1_amd64/routing
+src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/geeker_6.1_amd64/telephony
+```
+
 
 **aarch64_generic**
 
-电犀牛 r66s r68s，友善 r2s r2c r4s r4se r5s，香橙派 r1 plus
+电犀牛 r66s，友善 r5s *（适配问题仅可用机型）*
 
 ```mirrors
-src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/rockchip/armv8/packages
-src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/aarch64_generic/base
-src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/aarch64_generic/luci
-src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/aarch64_generic/packages
-src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/aarch64_generic/routing
-src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/aarch64_generic/telephony
+src/gz openwrt_core http://47.113.229.16:1480/targets/rockchip/armv8/packages
+src/gz openwrt_base http://47.113.229.16:1480/aarch64_generic/base
+src/gz openwrt_luci http://47.113.229.16:1480/aarch64_generic/luci
+src/gz openwrt_packages http://47.113.229.16:1480/aarch64_generic/packages
+src/gz openwrt_routing http://47.113.229.16:1480/aarch64_generic/routing
+src/gz openwrt_telephony http://47.113.229.16:1480/aarch64_generic/telephony
+```
+
+**mt7986a**
+
+红米 AX6000，TP-Link TL-XDR6086/6088
+
+```mirrors
+src/gz openwrt_core http://47.113.229.16:1480/targets/mediatek/filogic/packages
+src/gz openwrt_base http://47.113.229.16:1480/mt7986a/base
+src/gz openwrt_luci http://47.113.229.16:1480/mt7986a/luci
+src/gz openwrt_packages http://47.113.229.16:1480/mt7986a/packages
+src/gz openwrt_routing http://47.113.229.16:1480/mt7986a/routing
+src/gz openwrt_telephony http://47.113.229.16:1480/mt7986a/telephony
 ```
 
 **mt7621**
 
-小米/红米 AC2100，新路由3（Newifi3）
+小米/红米 AC2100，新路由3（Newifi_d2）
 
 ```mirrors
-src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/ramips/mt7621/packages
-src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/mipsel_24kc/base
-src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/mipsel_24kc/luci
-src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/mipsel_24kc/packages
-src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/mipsel_24kc/routing
-src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/mipsel_24kc/telephony
-```
-
-**aarch64_cortex-a53**
-
-红米 AX6000
-
-```mirrors
-src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/mediatek/filogic/packages
-src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/base
-src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/luci
-src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/packages
-src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/routing
-src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/aarch64_cortex-a53/telephony
-```
-
-文件对应仓库中编译结果。
-
-```
-lede/bin/packages = miaoermua/CatWrt/
-
-lede/bin/targets = miaoermua/CatWrt/targets
+src/gz openwrt_core http://47.113.229.16:1480/targets/ramips/mt7621/packages
+src/gz openwrt_base http://47.113.229.16:1480/mipsel_24kc/base
+src/gz openwrt_luci http://47.113.229.16:1480/mipsel_24kc/luci
+src/gz openwrt_packages http://47.113.229.16:1480/mipsel_24kc/packages
+src/gz openwrt_routing http://47.113.229.16:1480/mipsel_24kc/routing
+src/gz openwrt_telephony http://47.113.229.16:1480/mipsel_24kc/telephony
 ```
 
 固件有问题请提 Issues 或者在博客评论，欢迎使用后留下你的评论和 Star！

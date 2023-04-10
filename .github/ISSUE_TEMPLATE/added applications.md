@@ -1,33 +1,27 @@
-name: 🛟 提交遇到的问题
-description: 提交使用 CatWrt 遇到的问题，需要帮助或者让我们改进
+name: 👾 提议新功能
+description: 提议新的功能，让 CatWrt 更好玩
 labels: [pending triage]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
   - type: textarea
     id: bug-description
     attributes:
-      label: 问题
-      description: Describe the bug
-      placeholder: Bug description
+      label: 提议
+      description: 你想加入的新应用（插件，软件）
+      placeholder: applications
     validations:
       required: true
   - type: input
-    id: openwrt-release
+    id: why is it useful
     attributes:
-      label: 固件版本
-      description: 在 状态 - 概览 中的固件版本.
-      placeholder: openwrt-release
+      label: 为何有用
+      description: 讲述该提议的新功能的特性，可以用来做什么
     validations:
       required: true
   - type: input
-    id: catwrt-release
+    id: practical demonstration
     attributes:
-      label: CatWrt 发行版本
-      description: 如果你不知道你的 CatWrt 发行版本，可以在路由终端输入完密码后查看到类似于: `CatWrt.x86_64.v23.4` 的字样.
-      placeholder: catwrt-release
+      label: 实际演示
+      description: 这里可以以博客，视频链接，GitHub 项目，图片等演示
     validations:
       required: true
   - type: dropdown

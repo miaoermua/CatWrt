@@ -46,7 +46,8 @@ CatWrt 是基于开源的 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓�
 
 固件中绝不含任何后门和可以监控或者劫持你的 HTTPS 的闭源软件，所有对 LEDE 修改均已展示并开源，SSL 安全是互联网最后的壁垒，安全干净才是固件应该做到的。
 
-PS: 修改项已开源,编译时可参考但不推荐拉库编译 [OpenCatLEDE](https://github.com/miaoermua/OpenCatLEDE) [遵守 GPL2.0 协议](https://github.com/miaoermua/CatWrt/blob/main/COPYING)，二次开发请标注出处。
+
+PS: 修改项已开源,编译时可参考但不推荐拉库编译 [OpenCatLEDE](https://github.com/miaoermua/OpenCatLEDE) 请遵守 [GPL2.0](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 协议，二次开发需要标注出处。
 
 ![开源示例](https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/blog/23-02-28/opensource.jpg)
 
@@ -88,11 +89,15 @@ $ docker compose up -d
 ***
 ## 使用在线软件源
 
-以下为使用 [vercel](https://vercel.com) 部署站点，可以拉取软件源并更新，但部分地区可能需要网络加速。
+以下为使用阿里云高校计划的（河源）云服务器ECS，仅提供 1M 带宽对外使用 1480 http 服务请勿滥用，使用后务必注释掉！
+
+也可以使用 [vercel](https://vercel.com) 软件镜像站，可以拉取软件源并更新，但部分地区可能需要网络加速。
+
+将 `http://47.113.229.16:1480` 替换为 `https://downloads.catwrt.miaoer.xyz` 即可使用 vercel 提供的镜像。
 
 **x86-64**
 
-传统 x86 软路由
+传统 x86 软路由(amd64)
 
 ```mirrors
 src/gz openwrt_core http://47.113.229.16:1480/targets/x86/64/packages
@@ -103,6 +108,20 @@ src/gz openwrt_packages http://47.113.229.16:1480/x86_64/packages
 src/gz openwrt_routing http://47.113.229.16:1480/x86_64/routing
 src/gz openwrt_telephony http://47.113.229.16:1480/x86_64/telephony
 ```
+
+**Geeker_6.1**
+
+Geeker 6.1 内核 x86_64(amd64)
+
+```mirrors
+src/gz openwrt_core https://47.113.229.16:1480/targets/geeker_6.1/amd64/packages
+src/gz openwrt_base https://47.113.229.16:1480/geeker_6.1_amd64/base
+src/gz openwrt_luci https://47.113.229.16:1480/geeker_6.1_amd64/luci
+src/gz openwrt_packages https://47.113.229.16:1480/geeker_6.1_amd64/packages
+src/gz openwrt_routing https://47.113.229.16:1480/geeker_6.1_amd64/routing
+src/gz openwrt_telephony https://47.113.229.16:1480/geeker_6.1_amd64/telephony
+```
+
 
 **aarch64_generic**
 
@@ -135,12 +154,12 @@ src/gz openwrt_telephony http://47.113.229.16:1480/mt7986a/telephony
 小米/红米 AC2100，新路由3（Newifi_d2）
 
 ```mirrors
-src/gz openwrt_core http://47.113.229.16:1480/targets/ramips/mt7621/packages
-src/gz openwrt_base http://47.113.229.16:1480/mipsel_24kc/base
-src/gz openwrt_luci http://47.113.229.16:1480/mipsel_24kc/luci
-src/gz openwrt_packages http://47.113.229.16:1480/mipsel_24kc/packages
-src/gz openwrt_routing http://47.113.229.16:1480/mipsel_24kc/routing
-src/gz openwrt_telephony http://47.113.229.16:1480/mipsel_24kc/telephony
+src/gz openwrt_core http://47.113.229.16:1480/targets/rockchip/armv8/packages
+src/gz openwrt_base http://47.113.229.16:1480/aarch64_generic/base
+src/gz openwrt_luci http://47.113.229.16:1480/aarch64_generic/luci
+src/gz openwrt_packages http://47.113.229.16:1480/aarch64_generic/packages
+src/gz openwrt_routing http://47.113.229.16:1480/aarch64_generic/routing
+src/gz openwrt_telephony http://47.113.229.16:1480/aarch64_generic/telephony
 ```
 
-固件有问题请提 Issues 或者在博客评论，欢迎使用后留下你的评论和 Star！
+固件有问题请提 [Issues](https://github.com/miaoermua/CatWrt/issues/new/choose) 或者在[博客评论](https://www.miaoer.xyz)，欢迎使用后留下你的评论和 Star！

@@ -1,0 +1,53 @@
+name: 🛟 提交遇到的问题
+description: 提交使用 CatWrt 遇到的问题，需要帮助或者让我们改进
+labels: [pending triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 问题
+      description: Describe the bug
+      placeholder: Bug description
+    validations:
+      required: true
+  - type: input
+    id: openwrt-release
+    attributes:
+      label: 固件版本
+      description: 在 状态 - 概览 中的固件版本.
+      placeholder: openwrt-release
+    validations:
+      required: true
+  - type: input
+    id: catwrt-release
+    attributes:
+      label: CatWrt 发行版本
+      description: 如果你不知道你的 CatWrt 发行版本，可以在路由终端输入完密码后查看到类似于: `CatWrt.x86_64.v23.4` 的字样.
+      placeholder: catwrt-release
+    validations:
+      required: true
+  - type: dropdown
+    id: targets
+    attributes:
+      label: 使用的平台 & 架构
+      options:
+        - x86_64 (amd64)
+        - rkarm (Rockchip)
+        - mt7621 (mipsel)
+        - mt7986a (aarch64_cortex-a53)
+    validations:
+      required: true
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: Before submitting the issue, please make sure you do the following
+      options:
+        - label: 我已认真填写问题描述.
+          required: true
+        - label: 我使用的是 CatWrt 发行版.
+          required: true

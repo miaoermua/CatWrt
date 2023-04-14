@@ -46,8 +46,7 @@ CatWrt 是基于开源的 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓�
 
 固件中绝不含任何后门和可以监控或者劫持你的 HTTPS 的闭源软件，所有对 LEDE 修改均已展示并开源，SSL 安全是互联网最后的壁垒，安全干净才是固件应该做到的。
 
-
-PS: 修改项已开源,编译时可参考但不推荐拉库编译 [OpenCatLEDE](https://github.com/miaoermua/OpenCatLEDE) 请 [遵守 GPL2.0 协议](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 二次开发请标注出处。
+PS: 修改项已开源,编译时可参考但不推荐拉库编译 [OpenCatLEDE](https://github.com/miaoermua/OpenCatLEDE) [遵守 GPL2.0 协议](https://github.com/miaoermua/CatWrt/blob/main/COPYING)，二次开发请标注出处。
 
 ![开源示例](https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/blog/23-02-28/opensource.jpg)
 
@@ -93,7 +92,7 @@ $ docker compose up -d
 
 **x86-64**
 
-传统 x86 软路由(amd64)
+传统 x86 软路由
 
 ```mirrors
 src/gz openwrt_core http://47.113.229.16:1480/targets/x86/64/packages
@@ -104,20 +103,6 @@ src/gz openwrt_packages http://47.113.229.16:1480/x86_64/packages
 src/gz openwrt_routing http://47.113.229.16:1480/x86_64/routing
 src/gz openwrt_telephony http://47.113.229.16:1480/x86_64/telephony
 ```
-
-**Geeker_6.1**
-
-Geeker 6.1 内核 x86_64(amd64)
-
-```mirrors
-src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/geeker_6.1/amd64/packages
-src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/geeker_6.1_amd64/base
-src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/geeker_6.1_amd64/luci
-src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/geeker_6.1_amd64/packages
-src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/geeker_6.1_amd64/routing
-src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/geeker_6.1_amd64/telephony
-```
-
 
 **aarch64_generic**
 
@@ -150,12 +135,12 @@ src/gz openwrt_telephony http://47.113.229.16:1480/mt7986a/telephony
 小米/红米 AC2100，新路由3（Newifi_d2）
 
 ```mirrors
-src/gz openwrt_core http://47.113.229.16:1480/targets/rockchip/armv8/packages
-src/gz openwrt_base http://47.113.229.16:1480/aarch64_generic/base
-src/gz openwrt_luci http://47.113.229.16:1480/aarch64_generic/luci
-src/gz openwrt_packages http://47.113.229.16:1480/aarch64_generic/packages
-src/gz openwrt_routing http://47.113.229.16:1480/aarch64_generic/routing
-src/gz openwrt_telephony http://47.113.229.16:1480/aarch64_generic/telephony
+src/gz openwrt_core http://47.113.229.16:1480/targets/ramips/mt7621/packages
+src/gz openwrt_base http://47.113.229.16:1480/mipsel_24kc/base
+src/gz openwrt_luci http://47.113.229.16:1480/mipsel_24kc/luci
+src/gz openwrt_packages http://47.113.229.16:1480/mipsel_24kc/packages
+src/gz openwrt_routing http://47.113.229.16:1480/mipsel_24kc/routing
+src/gz openwrt_telephony http://47.113.229.16:1480/mipsel_24kc/telephony
 ```
 
 固件有问题请提 Issues 或者在博客评论，欢迎使用后留下你的评论和 Star！

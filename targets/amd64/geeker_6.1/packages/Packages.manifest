@@ -7,10 +7,10 @@ License: GPL-2.0
 Section: base
 SourceDateEpoch: 1680085938
 Architecture: x86_64
-Installed-Size: 46117
+Installed-Size: 46116
 Filename: base-files_65-r5899-464769604_x86_64.ipk
-Size: 47088
-SHA256sum: 2dac7bad64ac5052ca423d6b33045a1384a1dbbb08736bc6a38ee1e8d468e01d
+Size: 47090
+SHA256sum: 2f8af0003f80c6bd7f7439df3bdac9a1233940d4f89dceddbc3bc2719129184a
 Description:  This package contains a base filesystem and system scripts for OpenWrt.
 
 Package: block-mount
@@ -3028,6 +3028,20 @@ Filename: kmod-nls-utf8_6.1.24-1_x86_64.ipk
 Size: 1916
 SHA256sum: 51cf84c85a8be58a40ecce98598c10c32ba560efdd0161c80ec2ee90f0187835
 Description:  Kernel module for NLS UTF-8
+
+Package: kmod-oaf
+Version: 6.1.24-1
+Depends: kernel (=6.1.24-1-33d43f1f380ed45bee126f3eaef3a139), kmod-ipt-conntrack
+Source: package/OpenAppFilter/oaf
+SourceName: kmod-oaf
+Section: Derry Apps
+SourceDateEpoch: 1680511115
+Architecture: x86_64
+Installed-Size: 102899
+Filename: kmod-oaf_6.1.24-1_x86_64.ipk
+Size: 103032
+SHA256sum: b329f34e64f7ded2ee9b447ec5344f8b2feec3ca5b55f189099a4264262360a2
+Description:  open appfilter kernel module 
 
 Package: kmod-oid-registry
 Version: 6.1.24-1

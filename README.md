@@ -114,12 +114,12 @@ src/gz openwrt_telephony http://47.113.229.16:1480/x86_64/telephony
 Geeker 6.1 内核 x86_64(amd64)
 
 ```mirrors
-src/gz openwrt_core https://47.113.229.16:1480/targets/geeker_6.1/amd64/packages
-src/gz openwrt_base https://47.113.229.16:1480/geeker_6.1_amd64/base
-src/gz openwrt_luci https://47.113.229.16:1480/geeker_6.1_amd64/luci
-src/gz openwrt_packages https://47.113.229.16:1480/geeker_6.1_amd64/packages
-src/gz openwrt_routing https://47.113.229.16:1480/geeker_6.1_amd64/routing
-src/gz openwrt_telephony https://47.113.229.16:1480/geeker_6.1_amd64/telephony
+src/gz openwrt_core https://47.113.229.16:1480/targets/amd64/geeker_6.1/packages
+src/gz openwrt_base https://47.113.229.16:1480/amd64_6.1/base
+src/gz openwrt_luci https://47.113.229.16:1480/amd64_6.1/luci
+src/gz openwrt_packages https://47.113.229.16:1480/amd64_6.1/packages
+src/gz openwrt_routing https://47.113.229.16:1480/amd64_6.1/routing
+src/gz openwrt_telephony https://47.113.229.16:1480/amd64_6.1/telephony
 ```
 
 

@@ -27,16 +27,16 @@
 ## 为什么选择 CatWrt
 
 <li>高可用</li>
-<p>👋 告别臃肿，软件在够用情况下 CatWrt 更稳定</p><br>
+<p>👋 告别臃肿，软件在够用情况下 CatWrt 更稳定。</p><br>
 
 <li>社区生态</li>
-<p>🎈 我们自己是玩家，寻找更多玩家加入互助 CatWrt 生态</p><br>
+<p>🎈 我们自己是玩家，寻找更多玩家加入互助 CatWrt 生态。</p><br>
 
 <li>自建软件源</li>
-<p>🕊️ CatWrt 拥有时下热门插件在软件源，很方便通过教程安装</p><br>
+<p>🕊️ CatWrt 拥有时下热门插件在软件源，很方便通过教程安装。</p><br>
 
 <li>解答</li>
-<p>🪄 可以解答你对 CatWrt 的疑问，有限免费的</p><br>
+<p>🪄 可以解答你对 CatWrt 的疑问，有限免费的。</p><br>
 
 ## 开源相关
 
@@ -59,37 +59,10 @@ lede/bin/packages = miaoermua/CatWrt/
 lede/bin/targets = miaoermua/CatWrt/targets
 ```
 
-## 部署软件源
-
-你可以将此仓库部署在你自己的服务器上搭建属于自己的软件源
-
-<br>
-
-- 使用 Docker 部署（🚀 支持 x86-64 和 ARM64 平台软路由安装）
-
-```bash
-$ docker run -d -p 1480:80 miaoer/catwrt-soft:latest
-```
-
-或拉取到本地使用 Docker compose 启动
-
-```bash
-$ wget https://fastly.jsdelivr.net/gh/miaoermua/CatWrt@main/docker-compose.yml
-
-$ docker compose up -d  
-# docker-compose up -d
-```
-
-- 使用 Linux 面板部署（宝塔，小皮……）
-
-将此仓库通过 git clone 拉取到服务器网站目录里，修改面板网站目录到 CatWrt 中；
-
-部署完成后再按照架构平台或系列修改模板到本地部署中。
-
 ***
 ## 使用在线软件源
 
-以下为使用阿里云高校计划的（河源）云服务器ECS，仅提供 1M 带宽对外使用 1480 http 服务请勿滥用，使用后务必注释掉！
+以下为使用阿里云高校计划的（河源）云服务器 ECS，仅提供 1M 带宽对外使用 1480:http 服务请勿滥用，使用后务必注释掉！
 
 也可以使用 [vercel](https://vercel.com) 软件镜像站，可以拉取软件源并更新，但部分地区可能需要网络加速。
 
@@ -121,7 +94,6 @@ src/gz openwrt_packages http://47.113.229.16:1480/amd64_6.1/packages
 src/gz openwrt_routing http://47.113.229.16:1480/amd64_6.1/routing
 src/gz openwrt_telephony http://47.113.229.16:1480/amd64_6.1/telephony
 ```
-
 
 **aarch64_generic**
 
@@ -161,5 +133,62 @@ src/gz openwrt_packages http://47.113.229.16:1480/aarch64_generic/packages
 src/gz openwrt_routing http://47.113.229.16:1480/aarch64_generic/routing
 src/gz openwrt_telephony http://47.113.229.16:1480/aarch64_generic/telephony
 ```
+## 源的另外使用方法
 
-固件有问题请提 [Issues](https://github.com/miaoermua/CatWrt/issues/new/choose) 或者在[博客评论](https://www.miaoer.xyz)，欢迎使用后留下你的评论和 Star！
+### 使用 Vercel 源
+
+使用 Vercel 源示例
+
+```mirrors
+src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/x86/64/packages
+src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/x86_64/base
+src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/x86_64/luci
+src/gz openwrt_oui https://downloads.catwrt.miaoer.xyz/x86_64/oui
+src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/x86_64/packages
+src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/x86_64/routing
+src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/x86_64/telephony
+```
+### 使用历史（LTS）源
+
+以 CatWrt.v22.2 x86_64 示例
+
+```mirrors
+src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/history/v22.2/targets/x86/64/packages
+src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/history/v22.2/x86_64/base
+src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/history/v22.2/x86_64/luci
+src/gz openwrt_oui https://downloads.catwrt.miaoer.xyz/history/v22.2/x86_64/oui
+src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/history/v22.2/x86_64/packages
+src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/history/v22.2/x86_64/routing
+src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/history/v22.2/x86_64/telephony
+```
+
+### 部署软件源
+
+你可以将此仓库部署在你自己的服务器上搭建属于自己的软件源
+
+<br>
+
+- 使用 Docker 部署（🚀 支持 x86-64 和 ARM64 平台软路由安装）
+
+```bash
+$ docker run -d -p 1480:80 miaoer/catwrt-soft:latest
+```
+
+或拉取到本地使用 docker-compose 启动
+
+```bash
+$ wget https://fastly.jsdelivr.net/gh/miaoermua/CatWrt@main/docker-compose.yml
+
+$ docker compose up -d  
+# docker-compose up -d
+```
+
+- 使用 Linux 面板部署（宝塔，小皮……）
+
+将此仓库通过 git clone 拉取到服务器网站目录里，修改面板网站目录到 CatWrt 中；
+
+部署完成后再按照架构平台或系列修改模板到本地部署中。
+
+***
+
+欢迎预览 [博客](https://www.miaoer.xyz) 多多评论交流，欢迎使用后留下你的评论和 Star！

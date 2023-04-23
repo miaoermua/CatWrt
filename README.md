@@ -126,12 +126,12 @@ src/gz openwrt_telephony http://47.113.229.16:1480/mt7986a/telephony
 小米/红米 AC2100，新路由3（Newifi_d2）
 
 ```mirrors
-src/gz openwrt_core http://47.113.229.16:1480/targets/rockchip/armv8/packages
-src/gz openwrt_base http://47.113.229.16:1480/aarch64_generic/base
-src/gz openwrt_luci http://47.113.229.16:1480/aarch64_generic/luci
-src/gz openwrt_packages http://47.113.229.16:1480/aarch64_generic/packages
-src/gz openwrt_routing http://47.113.229.16:1480/aarch64_generic/routing
-src/gz openwrt_telephony http://47.113.229.16:1480/aarch64_generic/telephony
+src/gz openwrt_core http://47.113.229.16:1480/targets/ramips/mt7621/packages
+src/gz openwrt_base http://47.113.229.16:1480/mipsel_24kc/base
+src/gz openwrt_luci http://47.113.229.16:1480/mipsel_24kc/luci
+src/gz openwrt_packages http://47.113.229.16:1480/mipsel_24kc/packages
+src/gz openwrt_routing http://47.113.229.16:1480/mipsel_24kc/routing
+src/gz openwrt_telephony http://47.113.229.16:1480/mipsel_24kc/telephony
 ```
 ## 源的另外使用方法
 

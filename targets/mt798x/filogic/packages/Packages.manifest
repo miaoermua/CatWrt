@@ -1,0 +1,3385 @@
+Package: base-files
+Version: 67-r6086-cf9e26af8
+Depends: libc, netifd, jsonfilter, usign, openwrt-keyring, ubi-utils, fstools, fwtool
+Source: package/base-files
+SourceName: base-files
+License: GPL-2.0
+Section: base
+SourceDateEpoch: 1687618697
+Architecture: aarch64_cortex-a53
+Installed-Size: 49516
+Filename: base-files_67-r6086-cf9e26af8_aarch64_cortex-a53.ipk
+Size: 50528
+SHA256sum: 807f6aa2a633ee35b375eaf48eac4824b52e63d0378390cc532d53b5ca9f3e5d
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: block-mount
+Version: 2023-01-22-1ea5855e-1
+Depends: libc, fstools, ubox, libubox20220927, libuci20130104, libblobmsg-json20220927, libjson-c5
+Source: package/system/fstools
+SourceName: block-mount
+License: GPL-2.0
+Section: base
+SourceDateEpoch: 1674631835
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: aarch64_cortex-a53
+Installed-Size: 24347
+Filename: block-mount_2023-01-22-1ea5855e-1_aarch64_cortex-a53.ipk
+Size: 25032
+SHA256sum: 753871a926d9e216831f0a52749c85d1fdf3e10720c897a95878fe1476058a31
+Description:  Block device mounting and checking
+
+Package: dropbear
+Version: 2022.82-2
+Depends: libc
+Alternatives: 100:/usr/bin/scp:/usr/sbin/dropbear, 100:/usr/bin/ssh:/usr/sbin/dropbear
+Source: package/network/services/dropbear
+SourceName: dropbear
+License: MIT
+LicenseFiles: LICENSE libtomcrypt/LICENSE libtommath/LICENSE
+Section: net
+SourceDateEpoch: 1656575778
+CPE-ID: cpe:/a:matt_johnston:dropbear_ssh_server
+Architecture: aarch64_cortex-a53
+Installed-Size: 108204
+Filename: dropbear_2022.82-2_aarch64_cortex-a53.ipk
+Size: 109099
+SHA256sum: e66c4893e3f8b56fd5dc766610d6a9043ac7ae52dc0b6fc27272cc71dcfcb96f
+Description:  A small SSH2 server/client designed for small memory environments.
+
+Package: fstools
+Version: 2023-01-22-1ea5855e-1
+Depends: libc, ubox, ubi-utils
+Source: package/system/fstools
+SourceName: fstools
+License: GPL-2.0
+Section: base
+SourceDateEpoch: 1674631835
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: aarch64_cortex-a53
+Installed-Size: 19733
+Filename: fstools_2023-01-22-1ea5855e-1_aarch64_cortex-a53.ipk
+Size: 20498
+SHA256sum: 30e7978df42cf2a64295c87a63e376eb68e3079bd2276a2e872df3abfd7e6e76
+Description:  OpenWrt filesystem tools
+
+Package: fwtool
+Version: 2019-11-12-8f7fe925-1
+Depends: libc
+Source: package/system/fwtool
+SourceName: fwtool
+License: GPL-2.0
+Section: utils
+SourceDateEpoch: 1623751087
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 4266
+Filename: fwtool_2019-11-12-8f7fe925-1_aarch64_cortex-a53.ipk
+Size: 5022
+SHA256sum: e241634b37d458c786a0881656d25d97890c1d9022ffa0a08abcda2d4955ac2c
+Description:  Utility for appending and extracting firmware metadata and signatures
+
+Package: ip6tables
+Version: 1.8.7-2
+Depends: libc, kmod-ip6tables, iptables
+Source: package/network/utils/iptables
+SourceName: ip6tables
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1671040048
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_cortex-a53
+Installed-Size: 209
+Filename: ip6tables_1.8.7-2_aarch64_cortex-a53.ipk
+Size: 951
+SHA256sum: 404ba65c389b1009b034e096a980ae67a60feba5199e40b4838f3dc5a128da28
+Description:  IPv6 firewall administration tool
+
+Package: iptables-mod-conntrack-extra
+Version: 1.8.7-2
+Depends: libc, iptables, kmod-ipt-conntrack-extra, kmod-ipt-raw
+Source: package/network/utils/iptables
+SourceName: iptables-mod-conntrack-extra
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1671040048
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_cortex-a53
+Installed-Size: 12733
+Filename: iptables-mod-conntrack-extra_1.8.7-2_aarch64_cortex-a53.ipk
+Size: 13526
+SHA256sum: 9af205ef7ef6231ecc74d68a4fa16a7b4660890d164a240343164240dfc0b033
+Description:  Extra iptables extensions for connection tracking.
+ 
+ Matches:
+ - connbytes
+ - connlimit
+ - connmark
+ - recent
+ - helper
+ 
+ Targets:
+ - CONNMARK
+ 
+
+Package: iptables-mod-extra
+Version: 1.8.7-2
+Depends: libc, iptables, kmod-ipt-extra
+Source: package/network/utils/iptables
+SourceName: iptables-mod-extra
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1671040048
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_cortex-a53
+Installed-Size: 10532
+Filename: iptables-mod-extra_1.8.7-2_aarch64_cortex-a53.ipk
+Size: 11260
+SHA256sum: ff543c7605eccb56c4737ed29b8e28867c1b9cae926130fa463114d1f029f411
+Description:  Other extra iptables extensions.
+ 
+ Matches:
+ - addrtype
+ - condition
+ - owner
+ - pkttype
+ - quota
+ 
+
+Package: iptables-mod-filter
+Version: 1.8.7-2
+Depends: libc, iptables, kmod-ipt-filter
+Source: package/network/utils/iptables
+SourceName: iptables-mod-filter
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1671040048
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_cortex-a53
+Installed-Size: 5327
+Filename: iptables-mod-filter_1.8.7-2_aarch64_cortex-a53.ipk
+Size: 6077
+SHA256sum: 0a56c294b58b3ccb8466f8b74aa4ba97f404aa889b65e71a2ac9b8e043ce6141
+Description:  iptables extensions for packet content inspection.
+ Includes support for:
+ 
+ Matches:
+ - string
+ - bpf
+ 
+
+Package: iptables-mod-ipopt
+Version: 1.8.7-2
+Depends: libc, iptables, kmod-ipt-ipopt
+Source: package/network/utils/iptables
+SourceName: iptables-mod-ipopt
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1671040048
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_cortex-a53
+Installed-Size: 16061
+Filename: iptables-mod-ipopt_1.8.7-2_aarch64_cortex-a53.ipk
+Size: 16775
+SHA256sum: e089e5a65196aa51801415b34b74b50986e9ed7460c7850ad44f070e2658acc7
+Description:  iptables extensions for matching/changing IP packet options.
+ 
+ Matches:
+ - dscp
+ - ecn
+ - length
+ - statistic
+ - tcpmss
+ - unclean
+ - hl
+ 
+ Targets:
+ - DSCP
+ - CLASSIFY
+ - ECN
+ - HL
+ 
+
+Package: iptables-mod-iprange
+Version: 1.8.7-2
+Depends: libc, iptables, kmod-ipt-iprange
+Source: package/network/utils/iptables
+SourceName: iptables-mod-iprange
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1671040048
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_cortex-a53
+Installed-Size: 3581
+Filename: iptables-mod-iprange_1.8.7-2_aarch64_cortex-a53.ipk
+Size: 4336
+SHA256sum: 694061db623012b6722e73508ad6980ca0d4989daf4be9a5158976a13195747f
+Description:  iptables extensions for matching ip ranges.
+ 
+ Matches:
+ - iprange
+ 
+
+Package: iptables-mod-ipsec
+Version: 1.8.7-2
+Depends: libc, iptables, kmod-ipt-ipsec
+Source: package/network/utils/iptables
+SourceName: iptables-mod-ipsec
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1671040048
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_cortex-a53
+Installed-Size: 6166
+Filename: iptables-mod-ipsec_1.8.7-2_aarch64_cortex-a53.ipk
+Size: 6981
+SHA256sum: 7758c8a0d35b8ac54e6ec28a02536d1cd83fc7112e30b9683bf7c194da7c3b6d
+Description:  iptables extensions for matching ipsec traffic.
+ 
+ Matches:
+ - ah
+ - esp
+ - policy
+ 
+
+Package: iptables-mod-nfqueue
+Version: 1.8.7-2
+Depends: libc, iptables, kmod-nfnetlink-queue, kmod-ipt-nfqueue
+Source: package/network/utils/iptables
+SourceName: iptables-mod-nfqueue
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1671040048
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_cortex-a53
+Installed-Size: 2728
+Filename: iptables-mod-nfqueue_1.8.7-2_aarch64_cortex-a53.ipk
+Size: 3522
+SHA256sum: a83a765e6abc0e3f8158a36f238463d159761e762140273e953c72bde40a33e3
+Description:  iptables extension for user-space queuing via NFNETLINK.
+ 
+ Includes:
+ - libxt_NFQUEUE
+ 
+
+Package: iptables-mod-socket
+Version: 1.8.7-2
+Depends: libc, iptables, kmod-ipt-socket
+Source: package/network/utils/iptables
+SourceName: iptables-mod-socket
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1671040048
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_cortex-a53
+Installed-Size: 1932
+Filename: iptables-mod-socket_1.8.7-2_aarch64_cortex-a53.ipk
+Size: 2673
+SHA256sum: 9e9e12d4b8f5d26e8771a5dcafae87913336837794dc3519e44f98b7cc287ac0
+Description:  Socket match iptables extensions.
+ 
+ Matches:
+ - socket
+ 
+
+Package: iptables-mod-tproxy
+Version: 1.8.7-2
+Depends: libc, iptables, kmod-ipt-tproxy
+Source: package/network/utils/iptables
+SourceName: iptables-mod-tproxy
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1671040048
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_cortex-a53
+Installed-Size: 2035
+Filename: iptables-mod-tproxy_1.8.7-2_aarch64_cortex-a53.ipk
+Size: 2785
+SHA256sum: 47403f33b16e666aff8696d409436e5d4be884aadea4a6683b552a0498654fa3
+Description:  Transparent proxy iptables extensions.
+ 
+ Targets:
+ - TPROXY
+ 
+
+Package: iptables
+Version: 1.8.7-2
+Depends: libc, kmod-ipt-core, libip4tc2, libip6tc2, libxtables12
+Source: package/network/utils/iptables
+SourceName: iptables
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1671040048
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_cortex-a53
+Installed-Size: 25356
+Filename: iptables_1.8.7-2_aarch64_cortex-a53.ipk
+Size: 26140
+SHA256sum: 862d1d0277055c7ad441adff89744f8b7967c5ce3f72598edde2353682338bc7
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - FLOWOFFLOAD
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: iwinfo
+Version: 2023-05-17-c9f5c3f7-1
+Depends: libc, libiwinfo20230121
+Source: package/network/utils/iwinfo
+SourceName: iwinfo
+License: GPL-2.0
+Section: utils
+SourceDateEpoch: 1684425201
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: aarch64_cortex-a53
+Installed-Size: 7323
+Filename: iwinfo_2023-05-17-c9f5c3f7-1_aarch64_cortex-a53.ipk
+Size: 8150
+SHA256sum: 8500c9957a0b87fa141bd2eb971c0065d96a7c9a610025f44cf70660fc0dff64
+Description:  Command line frontend for the wireless information library.
+
+Package: kmod-asn1-decoder
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-asn1-decoder
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2520
+Filename: kmod-asn1-decoder_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3281
+SHA256sum: 902100acee82b48e9a01ec77f551a94f1988dcb349f3bde222b4e579602cb334
+Description:  Simple ASN1 decoder
+
+Package: kmod-asn1-encoder
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-asn1-encoder
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2551
+Filename: kmod-asn1-encoder_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3265
+SHA256sum: 2c98d68943cf8e1b9ef848e864cf0ab3c31fb24aeb2a4106417f92b153dd702f
+Description:  Simple ASN1 encoder
+
+Package: kmod-batman-adv
+Version: 5.15.116+2022.3-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-lib-crc16, kmod-lib-crc32c, kmod-cfg80211, batctl
+Source: feeds/routing/batman-adv
+SourceName: kmod-batman-adv
+License: GPL-2.0-only MIT
+LicenseFiles: LICENSES/preferred/GPL-2.0 LICENSES/preferred/MIT
+Section: kernel
+SourceDateEpoch: 1671082222
+Maintainer: Simon Wunderlich <sw@simonwunderlich.de>
+Architecture: aarch64_cortex-a53
+Installed-Size: 105282
+Filename: kmod-batman-adv_5.15.116+2022.3-1_aarch64_cortex-a53.ipk
+Size: 105982
+SHA256sum: 6db9ab89889809b2bb4f96bb04daa841f43c5b53d78fe9f737d68e31460730a2
+Description:  B.A.T.M.A.N. (better approach to mobile ad-hoc networking) is
+ a routing protocol for multi-hop ad-hoc mesh networks. The
+ networks may be wired or wireless. See
+ https://www.open-mesh.org/ for more information and user space
+ tools. This package builds version 2022.3 of the kernel
+ module.
+
+Package: kmod-br-netfilter
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ipt-core
+Source: package/kernel/linux
+SourceName: kmod-br-netfilter
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 9784
+Filename: kmod-br-netfilter_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 10529
+SHA256sum: b49653fef53cc16ae0c7462b5395c15216860db9c9306dd23230208cefd3e650
+Description:  Bridge netfilter support modules
+
+Package: kmod-cfg80211
+Version: 5.15.116+6.1.24-2
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), iw, iwinfo, wireless-regdb
+Source: package/kernel/mac80211
+SourceName: kmod-cfg80211
+Section: kernel
+SourceDateEpoch: 1687618576
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 171428
+Filename: kmod-cfg80211_5.15.116+6.1.24-2_aarch64_cortex-a53.ipk
+Size: 171699
+SHA256sum: c42d74550df52ca483d96a88b5279faf0630cfeb9af8e87acc52d7e3b5fbfe08
+Description:  cfg80211 is the Linux wireless LAN (802.11) configuration API.
+
+Package: kmod-crypto-acompress
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-crypto-acompress
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 194
+Filename: kmod-crypto-acompress_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 932
+SHA256sum: d31651cc9472fb087af0e80317def3d56823d88328957d14cfc7fee3909dfa6b
+Description:  Asynchronous Compression operations
+
+Package: kmod-crypto-aead
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-null
+Source: package/kernel/linux
+SourceName: kmod-crypto-aead
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 228
+Filename: kmod-crypto-aead_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 963
+SHA256sum: 070298affab864a503aa9a6686c0814d98529ec1b3c331552b295dfd3034704d
+Description:  CryptoAPI AEAD support
+
+Package: kmod-crypto-arc4
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-user
+Source: package/kernel/linux
+SourceName: kmod-crypto-arc4
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 1379
+Filename: kmod-crypto-arc4_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 2121
+SHA256sum: 7f785bba91db0d81f6086bac890fc389976f22ed7597be608054c4499ed836bc
+Description:  ARC4 cipher CryptoAPI module
+
+Package: kmod-crypto-authenc
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-manager, kmod-crypto-null
+Source: package/kernel/linux
+SourceName: kmod-crypto-authenc
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 5403
+Filename: kmod-crypto-authenc_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 6148
+SHA256sum: 64334b174aaf4798248a071a7899ffef87c03e57beee0c4db8b0af82af4d135b
+Description:  Combined mode wrapper for IPsec
+
+Package: kmod-crypto-cbc
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-manager
+Source: package/kernel/linux
+SourceName: kmod-crypto-cbc
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 1831
+Filename: kmod-crypto-cbc_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 2573
+SHA256sum: 587469960bb181e2acbd51eaed95718a5f6203a79908c4212048d94929b21b36
+Description:  Cipher Block Chaining CryptoAPI module
+
+Package: kmod-crypto-ccm
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-ctr, kmod-crypto-aead
+Source: package/kernel/linux
+SourceName: kmod-crypto-ccm
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 185
+Filename: kmod-crypto-ccm_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 942
+SHA256sum: 13889eb4de39e077e9b40b788bae693c0369e2e0e98aa84f76609461f7ec15c0
+Description:  Support for Counter with CBC MAC (CCM)
+
+Package: kmod-crypto-cmac
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-cmac
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 184
+Filename: kmod-crypto-cmac_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 945
+SHA256sum: 59babde0997835eb4f3adfd15136f41b186968e567dfff2b05084116c1348080
+Description:  Support for Cipher-based Message Authentication Code (CMAC)
+
+Package: kmod-crypto-crc32c
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-crc32c
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 237
+Filename: kmod-crypto-crc32c_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 975
+SHA256sum: d33a54d5735fd0d467b9ba863128b772e8c95a2070a0dddbd7086a79fd9e5372
+Description:  CRC32c CRC module
+
+Package: kmod-crypto-ctr
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-manager, kmod-crypto-seqiv
+Source: package/kernel/linux
+SourceName: kmod-crypto-ctr
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 183
+Filename: kmod-crypto-ctr_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 933
+SHA256sum: 2920922d2ee804219c310544feadade01f0892e3058c2a04c8f6abc46df70295
+Description:  Counter Mode CryptoAPI module
+
+Package: kmod-crypto-deflate
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-lib-zlib-inflate, kmod-lib-zlib-deflate, kmod-crypto-acompress
+Source: package/kernel/linux
+SourceName: kmod-crypto-deflate
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 188
+Filename: kmod-crypto-deflate_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 946
+SHA256sum: a3e5f097b8173d41bf5aee1765eac9f56ace2e8f8dde9960780013f0b3024346
+Description:  Deflate compression CryptoAPI module
+
+Package: kmod-crypto-des
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-crypto-des
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 9281
+Filename: kmod-crypto-des_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 9874
+SHA256sum: ab1d9237b4cbfc4bcd3c5105b3c52abce24df6cd9834f0ec3f33a4fd0a51d2c9
+Description:  DES/3DES cipher CryptoAPI module
+
+Package: kmod-crypto-ecb
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-manager
+Source: package/kernel/linux
+SourceName: kmod-crypto-ecb
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 184
+Filename: kmod-crypto-ecb_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 929
+SHA256sum: 61db2e05c1efec91ce2d7cf5a28042bc8117c5c0de170ec5b514c96512946947
+Description:  Electronic CodeBook CryptoAPI module
+
+Package: kmod-crypto-echainiv
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-aead
+Source: package/kernel/linux
+SourceName: kmod-crypto-echainiv
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 1772
+Filename: kmod-crypto-echainiv_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 2500
+SHA256sum: b24d7041d287e4468e4d659cb65234d3c431349b3aa8b38013a244975887c972
+Description:  Encrypted Chain IV Generator
+
+Package: kmod-crypto-gcm
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-ctr, kmod-crypto-ghash, kmod-crypto-null
+Source: package/kernel/linux
+SourceName: kmod-crypto-gcm
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 185
+Filename: kmod-crypto-gcm_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 936
+SHA256sum: c1e04be8fd0bb4e11ebf65fbac35075c39e57b036dd57860c7d5f8788ad396c4
+Description:  GCM/GMAC CryptoAPI module
+
+Package: kmod-crypto-gf128
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-crypto-gf128
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 190
+Filename: kmod-crypto-gf128_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 941
+SHA256sum: 2c7d31bd0aa6e7821dda7a01603181e319c65256af271c45dedae0322fbe9ca7
+Description:  GF(2^128) multiplication functions CryptoAPI module
+
+Package: kmod-crypto-ghash
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-gf128, kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-ghash
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 195
+Filename: kmod-crypto-ghash_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 948
+SHA256sum: 7320566c29114e5b9becb3609ccc5d61ce7a29d40032e48dcf5e37a52b838d37
+Description:  GHASH digest CryptoAPI module
+
+Package: kmod-crypto-hash
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 234
+Filename: kmod-crypto-hash_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 968
+SHA256sum: bcdc7ee2488204b2851fc144f28b5522836d038c33597dd3efd4e4cecae1aa7e
+Description:  CryptoAPI hash support
+
+Package: kmod-crypto-hmac
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-hash, kmod-crypto-manager
+Source: package/kernel/linux
+SourceName: kmod-crypto-hmac
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 185
+Filename: kmod-crypto-hmac_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 938
+SHA256sum: e5f1d2564fb0c2233afa682b762257eb6c0868fdb51aeb0c23158bed7fc2a286
+Description:  HMAC digest CryptoAPI module
+
+Package: kmod-crypto-hw-safexcel
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), eip197-mini-firmware, kmod-crypto-authenc, kmod-crypto-des, kmod-crypto-md5, kmod-crypto-hmac, kmod-crypto-sha1, kmod-crypto-sha256, kmod-crypto-sha512
+Source: package/kernel/linux
+SourceName: kmod-crypto-hw-safexcel
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 35411
+Filename: kmod-crypto-hw-safexcel_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 36035
+SHA256sum: 76c15fa8e7d646585814d7587f7d86f5328207508f6e1220158bb857a20fe15f
+Description:  MVEBU's EIP97 and EIP197 Cryptographic Engine driver designed by
+ Inside Secure. This is found on Marvell Armada 37xx/7k/8k SoCs.
+ 
+ Particular version of these IP (EIP197B and EIP197D) require firmware.
+ The mini firmware package provides limited functionality, for most operations
+ a full-featured firmware is required. Unfortunately the "full" firmware is not
+ freely available and needs signed Non-Disclosure Agreement (NDA) with Marvell.
+ For those who have signed NDA the firmware can be obtained at
+ https://extranet.marvell.com.
+
+Package: kmod-crypto-lib-chacha20
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-crypto-lib-chacha20
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 5263
+Filename: kmod-crypto-lib-chacha20_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 5958
+SHA256sum: fce0c9861a1c5d127752f036d47831ec4f8ca4be1e995f29974c2ed5430cd70a
+Description:  ChaCha library interface
+
+Package: kmod-crypto-lib-chacha20poly1305
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-lib-chacha20, kmod-crypto-lib-poly1305
+Source: package/kernel/linux
+SourceName: kmod-crypto-lib-chacha20poly1305
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 3372
+Filename: kmod-crypto-lib-chacha20poly1305_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 4131
+SHA256sum: a53954036b855a61af7b6bde723e80b4e62eea59ffa2d06d2683a0f7be33369e
+Description:  ChaCha20-Poly1305 AEAD support (8-byte nonce library version)
+
+Package: kmod-crypto-lib-curve25519
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-crypto-lib-curve25519
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 18341
+Filename: kmod-crypto-lib-curve25519_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 19058
+SHA256sum: 9afde3a41f8a47a816f0e8d867aba114bf03b33adbcd4619880134ecf7944069
+Description:  Curve25519 scalar multiplication library
+
+Package: kmod-crypto-lib-poly1305
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-lib-poly1305
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 4249
+Filename: kmod-crypto-lib-poly1305_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 4992
+SHA256sum: 00da34ab9f33bda8ba67e11d1276b34d0fdf1e9efdfb182ae6e2e56811cbbb14
+Description:  Poly1305 library interface
+
+Package: kmod-crypto-manager
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-aead, kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-manager
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 234
+Filename: kmod-crypto-manager_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 978
+SHA256sum: ed7c26d969eac611fdd426a1086e1d9701fc5ad14ebce3e7e292d8a530b04558
+Description:  CryptoAPI algorithm manager
+
+Package: kmod-crypto-md5
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-md5
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 3599
+Filename: kmod-crypto-md5_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 4340
+SHA256sum: 481100c72121d8429af09c5e16f6312f9bf87b109c9fa3306f20dfda1f552060
+Description:  MD5 digest CryptoAPI module
+
+Package: kmod-crypto-null
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-null
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 190
+Filename: kmod-crypto-null_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 928
+SHA256sum: 7aa786e82a9e7d17256be07663ca764efc6232d1568a0d97fb2cc6d94585ef0e
+Description:  Null CryptoAPI module
+
+Package: kmod-crypto-rng
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-hash, kmod-crypto-hmac, kmod-crypto-sha512
+Source: package/kernel/linux
+SourceName: kmod-crypto-rng
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 203
+Filename: kmod-crypto-rng_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 954
+SHA256sum: 48ec24e34dddb46ee3e196843ac92e72a624e385478fff41330905fc69fed71c
+Description:  CryptoAPI random number generation
+
+Package: kmod-crypto-seqiv
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-aead, kmod-crypto-rng
+Source: package/kernel/linux
+SourceName: kmod-crypto-seqiv
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 1957
+Filename: kmod-crypto-seqiv_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 2709
+SHA256sum: 9f5258423a5217e951ca5c68a802dfc70007f1afb5eb1c14c3e2cc6a4b631250
+Description:  CryptoAPI Sequence Number IV Generator
+
+Package: kmod-crypto-sha1
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-sha1
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2170
+Filename: kmod-crypto-sha1_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 2910
+SHA256sum: 90a93c6378fa4d7d0ba8aa53768e6a94dc0f16da9aa280f6c76f8f841e7bddeb
+Description:  SHA1 digest CryptoAPI module
+
+Package: kmod-crypto-sha256
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-sha256
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 196
+Filename: kmod-crypto-sha256_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 938
+SHA256sum: a3da58efdd67e3f8e95088af7284c619be5c21914cde7472fcfea443f64ff02c
+Description:  SHA224 SHA256 digest CryptoAPI module
+
+Package: kmod-crypto-sha512
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-hash
+Source: package/kernel/linux
+SourceName: kmod-crypto-sha512
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 196
+Filename: kmod-crypto-sha512_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 937
+SHA256sum: baa25c033879d61afb12999f9537d09e68af65038e1dfa35e540638fb9ebe690
+Description:  SHA512 digest CryptoAPI module
+
+Package: kmod-crypto-user
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-hash, kmod-crypto-manager
+Source: package/kernel/linux
+SourceName: kmod-crypto-user
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 20058
+Filename: kmod-crypto-user_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 20777
+SHA256sum: 9bfee14c8e0fb6852ec9017de4b178584c04c30a0b9cec4fcb85e939afe46721
+Description:  CryptoAPI userspace interface
+
+Package: kmod-cryptodev
+Version: 5.15.116+1.12-mediatek-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-authenc, kmod-crypto-hash
+Source: package/kernel/cryptodev-linux
+SourceName: kmod-cryptodev
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: kernel
+SourceDateEpoch: 1632989897
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
+Architecture: aarch64_cortex-a53
+Installed-Size: 21361
+Filename: kmod-cryptodev_5.15.116+1.12-mediatek-1_aarch64_cortex-a53.ipk
+Size: 22182
+SHA256sum: 1ce9c16916ac1f03158a781b6b3388c55360974f7c8a1fae6940f1d7370b1143
+Description:  This is a driver for that allows to use the Linux kernel supported
+ hardware ciphers by user-space applications.
+
+Package: kmod-dax
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-dax
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 12946
+Filename: kmod-dax_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 13678
+SHA256sum: 293cff774445a92f94cda3ab1fc700d26520a72db320af9758d66cfbffb7c275
+Description:  DAX: direct access to differentiated memory
+
+Package: kmod-dm
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-manager, kmod-dax, kmod-keys-encrypted
+Source: package/kernel/linux
+SourceName: kmod-dm
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 95348
+Filename: kmod-dm_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 95830
+SHA256sum: c7f4de6f3febeed0042475caf8b2a45b838ffdd99debd048ab9f208bf80067f6
+Description:  Kernel module necessary for LVM2 support
+
+Package: kmod-dnsresolver
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-dnsresolver
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 4715
+Filename: kmod-dnsresolver_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 5452
+SHA256sum: 3b380f0a67cd1826c8765fce7df9fb9d3e1204e165105748eade3dbfe3570853
+Description:  In-kernel DNS Resolver
+
+Package: kmod-dummy
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-dummy
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2433
+Filename: kmod-dummy_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3163
+SHA256sum: e92f79cf27403f0ab25436c612bdb1c2638d23ba03c91cf352c141284c44540c
+Description:  The dummy network device
+
+Package: kmod-fs-btrfs
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-lib-crc32c, kmod-lib-lzo, kmod-lib-zlib-inflate, kmod-lib-zlib-deflate, kmod-lib-raid6, kmod-lib-xor, kmod-lib-zstd
+Source: package/kernel/linux
+SourceName: kmod-fs-btrfs
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 525489
+Filename: kmod-fs-btrfs_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 523032
+SHA256sum: 0fcb783955dc8ee8e5de1d18d206d852e781a53976bfa70894a28ffc897a5eeb
+Description:  Kernel module for BTRFS support
+
+Package: kmod-fs-cifs
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nls-base, kmod-crypto-md5, kmod-crypto-sha256, kmod-crypto-sha512, kmod-crypto-cmac, kmod-crypto-hmac, kmod-crypto-aead, kmod-crypto-ccm, kmod-crypto-ecb, kmod-crypto-des, kmod-asn1-decoder, kmod-oid-registry, kmod-dnsresolver
+Source: package/kernel/linux
+SourceName: kmod-fs-cifs
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 233900
+Filename: kmod-fs-cifs_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 231195
+SHA256sum: b0747a50e4a8ba5933c0dd73a4b4b551bf10ed079eb3b0030cf446116f34c248
+Description:  Kernel module for CIFS support
+
+Package: kmod-fs-exfat
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-fs-exfat
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 37624
+Filename: kmod-fs-exfat_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 38296
+SHA256sum: 20a42790c90c6ddd536b4e27184c7ac6cfff5da8e944175c48d7c8010d5ce518
+Description:  Kernel module for exFAT filesystem support
+
+Package: kmod-fs-ext4
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-lib-crc16, kmod-crypto-hash, kmod-crypto-crc32c
+Source: package/kernel/linux
+SourceName: kmod-fs-ext4
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 234
+Filename: kmod-fs-ext4_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 998
+SHA256sum: 8b8e69815688f870e9fe920c9d4b30ab97d2fcff4289e0dcdf13d577e0a76ad6
+Description:  Kernel module for EXT4 filesystem support
+
+Package: kmod-fs-ntfs3
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-fs-ntfs3
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 109214
+Filename: kmod-fs-ntfs3_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 109661
+SHA256sum: e284718165ebecd1c499ebfe2d1a005d5a5099b612fab7b5ed2586c3073abcb1
+Description:  Kernel module for fully functional NTFS filesystem support. It allows
+ reading as well as writing.
+ 
+ It supports NTFS versions up to 3.1.
+
+Package: kmod-fs-vfat
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nls-base, kmod-nls-cp437, kmod-nls-iso8859-1, kmod-nls-utf8
+Source: package/kernel/linux
+SourceName: kmod-fs-vfat
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 42243
+Filename: kmod-fs-vfat_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 43035
+SHA256sum: 09891cb1c941e7edc0c6523b3e23704a0bfceb869eec65d98754d5f0e13de28a
+Description:  Kernel module for VFAT filesystem support
+
+Package: kmod-gpio-button-hotplug
+Version: 5.15.116-3
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/gpio-button-hotplug
+SourceName: kmod-gpio-button-hotplug
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1671732574
+Architecture: aarch64_cortex-a53
+Installed-Size: 5871
+Filename: kmod-gpio-button-hotplug_5.15.116-3_aarch64_cortex-a53.ipk
+Size: 6775
+SHA256sum: eb30904b10bd9a95da2e8713b5ef6defa8ababe8fcf1b419ddb47c74087b45ee
+Description:  This is a replacement for the following in-kernel drivers:
+ 1) gpio_keys (KEYBOARD_GPIO)
+ 2) gpio_keys_polled (KEYBOARD_GPIO_POLLED)
+ 
+ Instead of generating input events (like in-kernel drivers do) it generates
+ uevent-s and broadcasts them. This allows disabling input subsystem which is
+ an overkill for OpenWrt simple needs.
+
+Package: kmod-gre
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-iptunnel
+Source: package/kernel/linux
+SourceName: kmod-gre
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 12858
+Filename: kmod-gre_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 13585
+SHA256sum: 48397c97387302f50bc954a97fd12a0a55b47de4f7895619f8210f09fbafc0b8
+Description:  Generic Routing Encapsulation support
+
+Package: kmod-hwmon-core
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-hwmon-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 95
+Filename: kmod-hwmon-core_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 828
+SHA256sum: a2bfa0c0286963c42424753a5fcec8bf2263b6bc5c8dc4e5daffff6c4c278c00
+Description:  Kernel modules for hardware monitoring
+
+Package: kmod-ifb
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-ifb
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 3395
+Filename: kmod-ifb_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 4133
+SHA256sum: 7d43ee414336af0737704576f2b0730b8a3fcd7f9549d69b768b12dd49496d68
+Description:  The Intermediate Functional Block
+
+Package: kmod-ikconfig
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-ikconfig
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 30682
+Filename: kmod-ikconfig_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 31459
+SHA256sum: e59797f00dc7dd12c4d0599d4b065318de3ec95843fbff08b3f95d5eb5cdadc6
+Description:  Kernel configuration via /proc/config.gz
+
+Package: kmod-ip6tables
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nf-reject6, kmod-nf-ipt6, kmod-ipt-core
+Source: package/kernel/linux
+SourceName: kmod-ip6tables
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 3319
+Filename: kmod-ip6tables_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 4069
+SHA256sum: 331645fc79cc89c4b14548fc0ca43bb905ad0585a7e0044076f6b261039eead2
+Description:  Netfilter IPv6 firewalling support
+
+Package: kmod-ipsec4
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ipsec, kmod-iptunnel4
+Source: package/kernel/linux
+SourceName: kmod-ipsec4
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 13098
+Filename: kmod-ipsec4_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 13875
+SHA256sum: 92b64bb68f5e4c33a0703c1faa7b9d0953d2696212d675fc610c6da7e9b2d4d1
+Description:  Kernel modules for IPsec support in IPv4.
+ Includes:
+ - ah4
+ - esp4
+ - ipcomp4
+ - xfrm4_tunnel
+
+Package: kmod-ipsec6
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ipsec, kmod-iptunnel6
+Source: package/kernel/linux
+SourceName: kmod-ipsec6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 15094
+Filename: kmod-ipsec6_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 15842
+SHA256sum: 57979d7e70b7c296f78b5ac648aef782a2647b92a30d33c70e321070f39eae1b
+Description:  Kernel modules for IPsec support in IPv6.
+ Includes:
+ - ah6
+ - esp6
+ - ipcomp6
+ - xfrm6_tunnel
+
+Package: kmod-ipsec
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-authenc, kmod-crypto-cbc, kmod-crypto-deflate, kmod-crypto-des, kmod-crypto-echainiv, kmod-crypto-hmac, kmod-crypto-md5, kmod-crypto-sha1
+Source: package/kernel/linux
+SourceName: kmod-ipsec
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 36299
+Filename: kmod-ipsec_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 37140
+SHA256sum: 8921f959a36f1eea5bc3131c2af7423b2a26d1ca9a9a61cc03511b17f2b400c2
+Description:  Kernel modules for IPsec support in both IPv4 and IPv6.
+ Includes:
+ - af_key
+ - xfrm_algo
+ - xfrm_ipcomp
+ - xfrm_user
+
+Package: kmod-ipt-conntrack-extra
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ipt-core, kmod-ipt-conntrack
+Source: package/kernel/linux
+SourceName: kmod-ipt-conntrack-extra
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 16138
+Filename: kmod-ipt-conntrack-extra_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 16890
+SHA256sum: 389ac122a1eebd480dd86f385d33cf31a9c170aff7ffb0c69121dc89ea37811b
+Description:  Netfilter (IPv4) extra kernel modules for connection tracking
+ Includes:
+ - connbytes
+ - connmark/CONNMARK
+ - conntrack
+ - helper
+ - recent
+
+Package: kmod-ipt-conntrack
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ipt-core, kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-ipt-conntrack
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 4786
+Filename: kmod-ipt-conntrack_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 5584
+SHA256sum: c78801459f8c5a8a88a2647568cbe56a9b87d33706e742df5a06416fe5468a1f
+Description:  Netfilter (IPv4) kernel modules for connection tracking
+ Includes:
+ - conntrack
+ - defrag
+ - iptables_raw
+ - NOTRACK
+ - state
+
+Package: kmod-ipt-core
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nf-reject, kmod-nf-ipt, kmod-nf-log
+Source: package/kernel/linux
+SourceName: kmod-ipt-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 11469
+Filename: kmod-ipt-core_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 12244
+SHA256sum: bb2d43389e52a9b679c437521f338a9d43126eb5023122129eff7e4dc60c5ec5
+Description:  Netfilter core kernel modules
+ Includes:
+ - comment
+ - limit
+ - LOG
+ - mac
+ - multiport
+ - REJECT
+ - TCPMSS
+
+Package: kmod-ipt-extra
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ipt-core
+Source: package/kernel/linux
+SourceName: kmod-ipt-extra
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 5739
+Filename: kmod-ipt-extra_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 6498
+SHA256sum: 913fe59e548baf5b4ebf9d3c4e410ae68f0f86abd37a7f651b60b29e23c5ee56
+Description:  Other Netfilter (IPv4) kernel modules
+ Includes:
+ - addrtype
+ - owner
+ - pkttype
+ - quota
+
+Package: kmod-ipt-filter
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ipt-core, kmod-lib-textsearch, kmod-ipt-conntrack
+Source: package/kernel/linux
+SourceName: kmod-ipt-filter
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2830
+Filename: kmod-ipt-filter_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3630
+SHA256sum: dc589919364297b13dc4742bfa2c1bc1822aa1e71b690ffdf3d3fb5f6d00aa1e
+Description:  Netfilter (IPv4) kernel modules for packet content inspection
+ Includes:
+ - string
+ - bpf
+
+Package: kmod-ipt-fullconenat
+Version: 5.15.116+2022-02-13-108a36cb-10
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nf-ipt, kmod-nf-nat
+Source: package/network/services/fullconenat
+SourceName: kmod-ipt-fullconenat
+License: GPL-2.0
+LicenseFiles: LICENSE
+Section: kernel
+SourceDateEpoch: 1672378208
+Maintainer: Chion Tang <tech@chionlab.moe>
+Architecture: aarch64_cortex-a53
+Installed-Size: 7448
+Filename: kmod-ipt-fullconenat_5.15.116+2022-02-13-108a36cb-10_aarch64_cortex-a53.ipk
+Size: 8295
+SHA256sum: f80c5fc66cd352324d856ce97b96003e3e69c2ed1d331fcd47bc716b1ad065dc
+Description:  FULLCONENAT netfilter module
+
+Package: kmod-ipt-ipopt
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ipt-core
+Source: package/kernel/linux
+SourceName: kmod-ipt-ipopt
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 6670
+Filename: kmod-ipt-ipopt_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 7519
+SHA256sum: e8e016caeaa3a0e2793a4ec71dd04dded17417eb84638f674368485089dd268d
+Description:  Netfilter (IPv4) modules for matching/changing IP packet options
+ Includes:
+ - CLASSIFY
+ - dscp/DSCP
+ - ecn/ECN
+ - hl/HL
+ - length
+ - mark/MARK
+ - statistic
+ - tcpmss
+ - time
+ - ttl/TTL
+ - unclean
+
+Package: kmod-ipt-iprange
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ipt-core
+Source: package/kernel/linux
+SourceName: kmod-ipt-iprange
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 1308
+Filename: kmod-ipt-iprange_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 2097
+SHA256sum: 1c93d445152a75636570c8281a7b046d1271ffbb39304b6abda48fab4dae2b29
+Description:  Netfilter (IPv4) module for matching ip ranges
+ Includes:
+ - iprange
+
+Package: kmod-ipt-ipsec
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ipt-core
+Source: package/kernel/linux
+SourceName: kmod-ipt-ipsec
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2903
+Filename: kmod-ipt-ipsec_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3696
+SHA256sum: 34623c6dc4d37b7aae063cac4c3695a7aacd43bad69e9eadb414fede1ea83bae
+Description:  Netfilter (IPv4) modules for matching IPSec packets
+ Includes:
+ - ah
+ - esp
+ - policy
+
+Package: kmod-ipt-ipset
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ipt-core, kmod-nfnetlink
+Source: package/kernel/linux
+SourceName: kmod-ipt-ipset
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 203846
+Filename: kmod-ipt-ipset_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 204153
+SHA256sum: c21374b5a5de5fc6c1f02c53f6b0ab276fc22cc446902cdaec4e79a7279778dc
+Description:  IPset netfilter modules
+
+Package: kmod-ipt-nat6
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ipt-core, kmod-nf-nat6, kmod-ipt-core, kmod-ipt-conntrack, kmod-ipt-core, kmod-ipt-nat, kmod-ipt-core, kmod-ip6tables
+Source: package/kernel/linux
+SourceName: kmod-ipt-nat6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 3462
+Filename: kmod-ipt-nat6_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 4261
+SHA256sum: 3e10fd69894b9ccf5f791d6d28fbef60e0c87557dda1461020399e2be4f56f3f
+Description:  Netfilter (IPv6) kernel modules for NAT targets
+
+Package: kmod-ipt-nat
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ipt-core, kmod-nf-nat
+Source: package/kernel/linux
+SourceName: kmod-ipt-nat
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 4270
+Filename: kmod-ipt-nat_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 5055
+SHA256sum: 73734f457923912b1205e0d07f2e38adfc19fff6956fc9ec9ff63df4a51005f7
+Description:  Netfilter (IPv4) kernel modules for basic NAT targets
+ Includes:
+ - MASQUERADE
+
+Package: kmod-ipt-nfqueue
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ipt-core, kmod-nfnetlink-queue
+Source: package/kernel/linux
+SourceName: kmod-ipt-nfqueue
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2647
+Filename: kmod-ipt-nfqueue_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3429
+SHA256sum: fd325b40ca8e393f6f31cbf50690f88e521406498a201a35a3f7cb72773c00fa
+Description:  Netfilter module for user-space packet queuing
+ Includes:
+ - NFQUEUE
+
+Package: kmod-ipt-offload
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ipt-core, kmod-nf-flow
+Source: package/kernel/linux
+SourceName: kmod-ipt-offload
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 5241
+Filename: kmod-ipt-offload_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 6010
+SHA256sum: 96ecc7c193791864e45e3c7ab827cecd1c3205a268b7041b7d3c9896859efb8a
+Description:  Netfilter routing/NAT offload support
+
+Package: kmod-ipt-raw
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ipt-core
+Source: package/kernel/linux
+SourceName: kmod-ipt-raw
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 1750
+Filename: kmod-ipt-raw_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 2479
+SHA256sum: f71e9225abfcc0dd70367f039075bf9c2d49b0177227e6aee9e6a104a6864f08
+Description:  Netfilter IPv4 raw table support
+
+Package: kmod-ipt-socket
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nf-socket, kmod-nf-conntrack, kmod-ipt-core
+Source: package/kernel/linux
+SourceName: kmod-ipt-socket
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2411
+Filename: kmod-ipt-socket_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3158
+SHA256sum: e7c2cafd2f8ebcfe7af0e8e9a8cc6868efea5baee18c24bea38e61c690c9b12e
+Description:  Kernel modules for socket matching
+
+Package: kmod-ipt-tproxy
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nf-tproxy, kmod-nf-conntrack, kmod-ipt-core
+Source: package/kernel/linux
+SourceName: kmod-ipt-tproxy
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2584
+Filename: kmod-ipt-tproxy_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3343
+SHA256sum: cd50253b65a0cafea9f0f2c42b6d1be8a68d5a03cff56cc3ce60866c52402330
+Description:  Kernel modules for Transparent Proxying
+
+Package: kmod-iptunnel4
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-iptunnel4
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2279
+Filename: kmod-iptunnel4_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3010
+SHA256sum: a3401d6e911ee24935c09ddba71e3eeb6b269506df5a1a0fa70e251187129fdc
+Description:  Kernel modules for IPv4 tunneling
+
+Package: kmod-iptunnel6
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-iptunnel6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2470
+Filename: kmod-iptunnel6_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3200
+SHA256sum: 1274ec52bdb216dac5f16549f07dbbc2a22b40e4ab052c66655cd7229b8c3ccf
+Description:  Kernel modules for IPv6 tunneling
+
+Package: kmod-iptunnel
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-iptunnel
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 10916
+Filename: kmod-iptunnel_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 11647
+SHA256sum: e015da03fd0380648e110b14b3da825400671d7aee6626d1efdc1504a7075192
+Description:  Kernel module for generic IP tunnel support
+
+Package: kmod-keys-encrypted
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-cbc, kmod-crypto-hmac, kmod-crypto-rng, kmod-crypto-sha256, kmod-keys-trusted
+Source: package/kernel/linux
+SourceName: kmod-keys-encrypted
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 7143
+Filename: kmod-keys-encrypted_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 8108
+SHA256sum: 0b6d6ecafc43ac22a18472f7ecff5665ce6734f72741d8c6700cd9f7ae50af0f
+Description:  This module provides support for create/encrypting/decrypting keys
+ in the kernel.  Encrypted keys are kernel generated random numbers,
+ which are encrypted/decrypted with a 'master' symmetric key. The
+ 'master' key can be either a trusted-key or user-key type.
+ Userspace only ever sees/stores encrypted blobs.
+
+Package: kmod-keys-trusted
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-hash, kmod-crypto-hmac, kmod-crypto-sha1, kmod-tpm
+Source: package/kernel/linux
+SourceName: kmod-keys-trusted
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 12745
+Filename: kmod-keys-trusted_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 13634
+SHA256sum: 168e6a2e09374d1debb480e6240f3d40eb99b8fe9d83eddf54f8c1d57b7c69aa
+Description:  This module provides support for creating, sealing, and unsealing
+ keys in the kernel. Trusted keys are random number symmetric keys,
+ generated and RSA-sealed by the TPM. The TPM only unseals the keys,
+ if the boot PCRs and other criteria match.  Userspace will only ever
+ see encrypted blobs.
+
+Package: kmod-l2tp
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-udptunnel4, kmod-udptunnel6
+Source: package/kernel/linux
+SourceName: kmod-l2tp
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 15311
+Filename: kmod-l2tp_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 16017
+SHA256sum: 91b3e9c3e76b2a91d6c400b9e6ed213eaf6f5b712a650fa62dbba449089b0475
+Description:  Kernel modules for L2TP V3 Support
+
+Package: kmod-leds-gpio
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-leds-gpio
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2888
+Filename: kmod-leds-gpio_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3626
+SHA256sum: 05506bb34e7546926360dcfa9b17cce20360275b754135b1a50d00f73bad0bec
+Description:  Kernel module for LEDs on GPIO lines
+
+Package: kmod-lib-crc-ccitt
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-lib-crc-ccitt
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2224
+Filename: kmod-lib-crc-ccitt_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 2952
+SHA256sum: f497551f7f64bef435cc69d0f8117894fbfa2d68f66a38d229fe263133d4f6e3
+Description:  Kernel module for CRC-CCITT support
+
+Package: kmod-lib-crc16
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-lib-crc16
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 224
+Filename: kmod-lib-crc16_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 960
+SHA256sum: b035f33b81b1b19fb6ff9be93f28554678a09596193ba9e036a703a35ea490aa
+Description:  Kernel module for CRC16 support
+
+Package: kmod-lib-crc32c
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-crc32c
+Source: package/kernel/linux
+SourceName: kmod-lib-crc32c
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 1370
+Filename: kmod-lib-crc32c_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 2141
+SHA256sum: b1777c42ea5e4b8d6bc88b3d0956b12e51c95d0be61d82a8b4948390cf5b0e2b
+Description:  Kernel module for CRC32 support
+
+Package: kmod-lib-lzo
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-acompress
+Source: package/kernel/linux
+SourceName: kmod-lib-lzo
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 198
+Filename: kmod-lib-lzo_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 953
+SHA256sum: 3d8139898ef6264ea9b4e209d7284cefd36092d81297040a9af4bc03f1a8bdd8
+Description:  Kernel module for LZO compression/decompression support
+
+Package: kmod-lib-raid6
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-lib-raid6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 79428
+Filename: kmod-lib-raid6_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 80187
+SHA256sum: 93cd766f9ad24e9f6fdeea04204b81f29fe97d84153abf0c1adbc258b0199018
+Description:  Kernel module for RAID6 algorithms
+
+Package: kmod-lib-textsearch
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-lib-textsearch
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 3967
+Filename: kmod-lib-textsearch_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 4669
+SHA256sum: e69d26ebd05225a61c3a5c9f01080e133071722514eefd6ee772d53dd773e0ad
+Description:  Textsearch support
+
+Package: kmod-lib-xor
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-lib-xor
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 3888
+Filename: kmod-lib-xor_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 4639
+SHA256sum: 6def4e14a78f35cefa0a0d10b5bfed9f7b05c7b1b6ceae62474e723b12d079ed
+Description:  Kernel module for XOR blocks algorithms
+
+Package: kmod-lib-zlib-deflate
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-lib-zlib-deflate
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 190
+Filename: kmod-lib-zlib-deflate_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 918
+SHA256sum: 030e14b57a3b9434cd6ea0539336a13027e50229b515cea1bce661a92ffa1bbc
+Description:  Zlib support
+
+Package: kmod-lib-zlib-inflate
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-lib-zlib-inflate
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 190
+Filename: kmod-lib-zlib-inflate_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 914
+SHA256sum: c692a4f60ba3a7a895af43e1b2c6e2cde5fb2f55ad7fcb241756a5b8fb53c3b4
+Description:  Zlib support
+
+Package: kmod-lib-zstd
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-acompress
+Source: package/kernel/linux
+SourceName: kmod-lib-zstd
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 201
+Filename: kmod-lib-zstd_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 955
+SHA256sum: 39eb2a7d962234f39706354de22b98556582f5109d29c84e269e6487bb3eaaee
+Description:  Kernel module for ZSTD compression/decompression support
+
+Package: kmod-libphy
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-libphy
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 223
+Filename: kmod-libphy_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 938
+SHA256sum: 0b87195d9f53906e3f07e3ed273d4d60c228264e3d6bcb4821d4abdc46e480df
+Description:  PHY library
+
+Package: kmod-mac80211
+Version: 5.15.116+6.1.24-2
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-cfg80211, kmod-crypto-cmac, kmod-crypto-ccm, kmod-crypto-gcm, hostapd-common
+Source: package/kernel/mac80211
+SourceName: kmod-mac80211
+Section: kernel
+SourceDateEpoch: 1687618576
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 324203
+Filename: kmod-mac80211_5.15.116+6.1.24-2_aarch64_cortex-a53.ipk
+Size: 322904
+SHA256sum: 41441bf7015531f66a4c589913e5668878c797790855812da7c5cd5cfa09ccad
+Description:  Generic IEEE 802.11 Networking Stack (mac80211)
+
+Package: kmod-macvlan
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-macvlan
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 10216
+Filename: kmod-macvlan_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 11004
+SHA256sum: f0d4db5ae7496ed3eb71a74a57d32c6cb6388b65f11be3e6c754340b27723c69
+Description:  A kernel module which allows one to create virtual interfaces that
+ map packets to or from specific MAC addresses to a particular interface
+
+Package: kmod-md-mod
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-md-mod
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 68987
+Filename: kmod-md-mod_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 69558
+SHA256sum: c337f9a0c0ec3febccb321da3255f4c836f19769779d56a506f0410aa5ee3585
+Description:  Kernel RAID md module (md-mod.ko).
+ You will need to select at least one RAID level module below.
+
+Package: kmod-md-raid0
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-md-mod
+Source: package/kernel/linux
+SourceName: kmod-md-raid0
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 5913
+Filename: kmod-md-raid0_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 6644
+SHA256sum: c806256a6745ec2cb7d0a780d963771fc00b4966387f986c3fe9ba792682aceb
+Description:  RAID Level 0 (Striping) driver module (raid0.ko)
+
+Package: kmod-md-raid10
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-md-mod
+Source: package/kernel/linux
+SourceName: kmod-md-raid10
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 29044
+Filename: kmod-md-raid10_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 29742
+SHA256sum: a8d17c12ae73e50232ca018e2c58c7a954be6395c746cc8bd9fc031f07d8871d
+Description:  RAID Level 10 (Mirroring+Striping) driver module (raid10.ko)
+
+Package: kmod-md-raid1
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-md-mod
+Source: package/kernel/linux
+SourceName: kmod-md-raid1
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 21656
+Filename: kmod-md-raid1_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 22339
+SHA256sum: c3db5af4ea3b0570dc5ab30002f1dd55c09777bf536ffe70769cbe1ff8132ab4
+Description:  RAID Level 1 (Mirroring) driver (raid1.ko)
+
+Package: kmod-md-raid456
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-md-mod, kmod-lib-raid6, kmod-lib-xor, kmod-lib-crc32c
+Source: package/kernel/linux
+SourceName: kmod-md-raid456
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 77289
+Filename: kmod-md-raid456_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 77824
+SHA256sum: 3a581da635980eaf949077d9df600e47997a3273f4ef6510d26e229f633b838b
+Description:  RAID Level 4,5,6 kernel module (raid456.ko)
+ 
+ Includes the following modules required by
+ raid456.ko:
+ xor.ko
+ async_tx.ko
+ async_xor.ko
+ async_memcpy.ko
+ async_pq.ko
+ async_raid5_recov.ko
+ raid6_pq.ko
+
+Package: kmod-mii
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-mii
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 3831
+Filename: kmod-mii_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 4556
+SHA256sum: 4bd91b9e8433efae6722e2332e5840e1faa153c682e10906defe6397ada90358
+Description:  MII library
+
+Package: kmod-mppe
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ppp, kmod-crypto-arc4, kmod-crypto-sha1, kmod-crypto-ecb
+Source: package/kernel/linux
+SourceName: kmod-mppe
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 3726
+Filename: kmod-mppe_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 4495
+SHA256sum: 574192d1555d60411575698fd1b4809492424a725d60cea0e7571a0ecacf3cbb
+Description:  Kernel modules for Microsoft PPP compression/encryption
+
+Package: kmod-mt76-connac
+Version: 5.15.116+2023-05-13-969b7b5e-5
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-mac80211, kmod-mt76-core
+Source: package/kernel/mt76
+SourceName: kmod-mt76-connac
+License: GPLv2
+Section: kernel
+SourceDateEpoch: 1685432310
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 24785
+Filename: kmod-mt76-connac_5.15.116+2023-05-13-969b7b5e-5_aarch64_cortex-a53.ipk
+Size: 25560
+SHA256sum: b8f2550f855ff293402c81c87805761b217a7bc1533a86e7ef318d3e0ab59291
+Description:  MediaTek MT7615/MT79xx wireless driver common code
+
+Package: kmod-mt76-core
+Version: 5.15.116+2023-05-13-969b7b5e-5
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-mac80211
+Source: package/kernel/mt76
+SourceName: kmod-mt76-core
+License: GPLv2
+Section: kernel
+SourceDateEpoch: 1685432310
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 33374
+Filename: kmod-mt76-core_5.15.116+2023-05-13-969b7b5e-5_aarch64_cortex-a53.ipk
+Size: 34107
+SHA256sum: fd18b80f16f7a95b7c1a4842f3ceee18f73e04c05137b4657643ca51c4a26c6e
+Description:  MediaTek MT76xx wireless driver
+
+Package: kmod-mt7915e
+Version: 5.15.116+2023-05-13-969b7b5e-5
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-mac80211, kmod-mt76-connac, kmod-hwmon-core, kmod-thermal
+Source: package/kernel/mt76
+SourceName: kmod-mt7915e
+License: GPLv2
+Section: kernel
+SourceDateEpoch: 1685432310
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 70563
+Filename: kmod-mt7915e_5.15.116+2023-05-13-969b7b5e-5_aarch64_cortex-a53.ipk
+Size: 71206
+SHA256sum: 0485f2c1f0317292c73bc2fb50d8fa3fd96f96dfe2cde5fe30c344adfb3583af
+Description:  MediaTek MT7915e wireless driver
+
+Package: kmod-mt7986-firmware
+Version: 5.15.116+2023-05-13-969b7b5e-5
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/mt76
+SourceName: kmod-mt7986-firmware
+License: GPLv2
+Section: kernel
+SourceDateEpoch: 1685432310
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 1218398
+Filename: kmod-mt7986-firmware_5.15.116+2023-05-13-969b7b5e-5_aarch64_cortex-a53.ipk
+Size: 1208984
+SHA256sum: ff52ef7193cce971cd85bdff7a477c3bc7c62ee94283e8e797a8de67d5ba9480
+Description:  MediaTek MT7986 firmware
+
+Package: kmod-mtd-rw
+Version: 5.15.116+git-20160214-2
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: feeds/packages/kernel/mtd-rw
+SourceName: kmod-mtd-rw
+License: GPL-2.0
+LicenseFiles: LICENSE
+Section: kernel
+SourceDateEpoch: 1687010783
+Maintainer: Joseph C. Lehner <joseph.c.lehner@gmail.com>
+Architecture: aarch64_cortex-a53
+Installed-Size: 1520
+Filename: kmod-mtd-rw_5.15.116+git-20160214-2_aarch64_cortex-a53.ipk
+Size: 2372
+SHA256sum: 56ff99f34f1a912711223f9e175ddf7cf5862ccd3f7a3ca57ce462e42a7f7715
+Description:  A kernel module that temporarily makes all MTD partitions writeable.
+
+Package: kmod-nat46
+Version: 5.15.116+2022-03-30-95ca1c3b-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/nat46
+SourceName: kmod-nat46
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1668877777
+Maintainer: Hans Dedecker <dedeckeh@gmail.com>
+Architecture: aarch64_cortex-a53
+Installed-Size: 16225
+Filename: kmod-nat46_5.15.116+2022-03-30-95ca1c3b-1_aarch64_cortex-a53.ipk
+Size: 16946
+SHA256sum: 119381eb021b3efced7ed2facf98a496de058f252efc5312211b5350082f27e9
+Description:  Stateless NAT46 translation kernel module
+
+Package: kmod-nf-conntrack-netlink
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nfnetlink, kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-conntrack-netlink
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 17165
+Filename: kmod-nf-conntrack-netlink_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 17923
+SHA256sum: 48ef9abd41dc1cec5dca00250fb130abf0eca11e30ee5186c7a5d44cbfcc6c80
+Description:  Kernel modules support for a netlink-based connection tracking
+ userspace interface
+
+Package: kmod-nf-conntrack6
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-conntrack6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 95
+Filename: kmod-nf-conntrack6_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 826
+SHA256sum: de5bbe958c6f65b233bbee49f76f0554c2114772d1967ff5610bffb4191dd4b2
+Description:  Netfilter IPv6 connection tracking
+
+Package: kmod-nf-conntrack
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 55826
+Filename: kmod-nf-conntrack_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 56319
+SHA256sum: 98465ed6509a608b141f88cff2ad696a65a77a61770e1ec3061fd169c2d37673
+Description:  Netfilter connection tracking
+
+Package: kmod-nf-flow
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-flow
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 15415
+Filename: kmod-nf-flow_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 16109
+SHA256sum: 54768b7ea9edc23396c53ecabf91a1364f5b24f57c149fd1abf0cdfd0282771c
+Description:  Netfilter flowtable support
+
+Package: kmod-nf-ipt6
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nf-ipt, kmod-nf-log6
+Source: package/kernel/linux
+SourceName: kmod-nf-ipt6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 8817
+Filename: kmod-nf-ipt6_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 9591
+SHA256sum: f33368d492a4bd8949d78d5b8dbba2cfe250779aa8184d60469eb148c37fba02
+Description:  Ip6tables core
+
+Package: kmod-nf-ipt
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-nf-ipt
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 20892
+Filename: kmod-nf-ipt_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 21602
+SHA256sum: d4dc48fec32dd6fa5333679331cc5f72521ae1007c1e8527431756c426d744db
+Description:  Iptables core
+
+Package: kmod-nf-ipvs
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-lib-crc32c, kmod-ipt-conntrack, kmod-nf-conntrack, kmod-ipt-core, kmod-ipt-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-ipvs
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 82933
+Filename: kmod-nf-ipvs_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 83568
+SHA256sum: 1d4f6b2734a55cdc97206db8d9fe6aa23e00efa8ef5520624477f1662a9f07c8
+Description:  IPVS (IP Virtual Server) implements transport-layer load balancing inside
+ the Linux kernel so called Layer-4 switching.
+
+Package: kmod-nf-log6
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nf-log
+Source: package/kernel/linux
+SourceName: kmod-nf-log6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 95
+Filename: kmod-nf-log6_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 822
+SHA256sum: 2776363a28701a3ef123ad0a50b2332b0a7dfd9162808c5a7f6b7e846e1c5c15
+Description:  Netfilter IPV6 Logging
+
+Package: kmod-nf-log
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-nf-log
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 7731
+Filename: kmod-nf-log_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 8458
+SHA256sum: 4140d8c82058671013c6b3799b56beb7f199d56d9818e0e80584fd5a1b2c74de
+Description:  Netfilter Logging
+
+Package: kmod-nf-nat6
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nf-conntrack6, kmod-nf-nat
+Source: package/kernel/linux
+SourceName: kmod-nf-nat6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 95
+Filename: kmod-nf-nat6_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 826
+SHA256sum: bd5ae912607114e9604595a063b5f546bd729acfe36c9151f33dc74ca9e52174
+Description:  Netfilter IPV6-NAT
+
+Package: kmod-nf-nat
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nf-nat
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 15682
+Filename: kmod-nf-nat_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 16387
+SHA256sum: ebe86ddb089cc702f1b774e2e7b1f2c082e7bd63b662b36a5008983090bc3524
+Description:  Netfilter NAT
+
+Package: kmod-nf-nathelper-extra
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nf-nat, kmod-lib-textsearch, kmod-asn1-decoder
+Source: package/kernel/linux
+SourceName: kmod-nf-nathelper-extra
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 51793
+Filename: kmod-nf-nathelper-extra_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 52557
+SHA256sum: 79eb97b3440a4ff98869e2e458b9fa538e781a350d5d4443a03cc8230087eb98
+Description:  Extra Netfilter (IPv4) Conntrack and NAT helpers
+ Includes:
+ - amanda
+ - h323
+ - irc
+ - mms
+ - pptp
+ - proto_gre
+ - sip
+ - snmp_basic
+ - tftp
+ - broadcast
+
+Package: kmod-nf-nathelper
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nf-nat
+Source: package/kernel/linux
+SourceName: kmod-nf-nathelper
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 5838
+Filename: kmod-nf-nathelper_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 6611
+SHA256sum: 18ee2cd7cab873002ca57e75ab5bf365dfe87a5dd3cc53c0cffdfe0c67d9c65d
+Description:  Default Netfilter (IPv4) Conntrack and NAT helpers
+ Includes:
+ - ftp
+
+Package: kmod-nf-reject6
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-nf-reject6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 3883
+Filename: kmod-nf-reject6_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 4624
+SHA256sum: d8082bbf46b1f1f1d5fa023db794fa159ea4e8f0b113e29481ce84bfd9aca8c5
+Description:  Netfilter IPv6 reject support
+
+Package: kmod-nf-reject
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-nf-reject
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 3498
+Filename: kmod-nf-reject_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 4234
+SHA256sum: 79f83f88c3eecf021bc9062e38c9d4c5ecd1374d33a561396ebd172887bc2d91
+Description:  Netfilter IPv4 reject support
+
+Package: kmod-nf-socket
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-nf-socket
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2542
+Filename: kmod-nf-socket_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3286
+SHA256sum: 2855b68c36c0ad7721d2fd1b374e2388e8f23166854a72873066b071939466fd
+Description:  Netfilter socket lookup support
+
+Package: kmod-nf-tproxy
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-nf-tproxy
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 3222
+Filename: kmod-nf-tproxy_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3961
+SHA256sum: a41ae5feb7530579a2a6a5e0b65a2f5993abede28a3a2382e9b4521f5d62a948
+Description:  Netfilter tproxy support
+
+Package: kmod-nfnetlink-queue
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nfnetlink
+Source: package/kernel/linux
+SourceName: kmod-nfnetlink-queue
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 8975
+Filename: kmod-nfnetlink-queue_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 9776
+SHA256sum: 048117caaa7c4eb44bf76cf1dcd47c3255eddfd4cc84fb2498f706a35dc93b8c
+Description:  Kernel modules support for queueing packets via NFNETLINK
+ Includes:
+ - NFQUEUE
+
+Package: kmod-nfnetlink
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-nfnetlink
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 5179
+Filename: kmod-nfnetlink_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 5894
+SHA256sum: c3e87e86af1547728ef97d713a95e14f8746e42817d67e42397003d4853968a9
+Description:  Kernel modules support for a netlink-based userspace interface
+
+Package: kmod-nft-core
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nfnetlink, kmod-nf-reject, kmod-nf-reject6, kmod-nf-conntrack6, kmod-nf-nat, kmod-nf-log, kmod-nf-log6, kmod-lib-crc32c
+Source: package/kernel/linux
+SourceName: kmod-nft-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 109240
+Filename: kmod-nft-core_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 109828
+SHA256sum: 83d664c8af2207d30e6a9c28e629440389724cd08272a50d04a2d9829013c146
+Description:  Kernel module support for nftables
+
+Package: kmod-nft-nat
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nft-core, kmod-nf-nat
+Source: package/kernel/linux
+SourceName: kmod-nft-nat
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 4488
+Filename: kmod-nft-nat_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 5229
+SHA256sum: 2a3cae44998e5889a6e29acb6caf3c3f9daf750d3e0413ca072ae0d3258b1633
+Description:  Netfilter nf_tables NAT support
+
+Package: kmod-nft-queue
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nft-core, kmod-nfnetlink-queue
+Source: package/kernel/linux
+SourceName: kmod-nft-queue
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2436
+Filename: kmod-nft-queue_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3176
+SHA256sum: cbf109b07f04eda513302b7f4fd8bb4ece06c390542fbb497e8f321957d1d8f7
+Description:  Netfilter nf_tables queue support
+
+Package: kmod-nft-socket
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nft-core, kmod-nf-socket
+Source: package/kernel/linux
+SourceName: kmod-nft-socket
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2024
+Filename: kmod-nft-socket_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 2763
+SHA256sum: d06b2888a1d408806358acab7c78ae067bf3b07f883c280b2a8ad3a520beeff0
+Description:  Netfilter nf_tables socket support
+
+Package: kmod-nft-tproxy
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nft-core, kmod-nf-tproxy, kmod-nf-conntrack
+Source: package/kernel/linux
+SourceName: kmod-nft-tproxy
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2768
+Filename: kmod-nft-tproxy_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3525
+SHA256sum: 5f8c5584cbd7b0fc614515ac98a805fff5fd577b95e98487113c302ce660e86a
+Description:  Netfilter nf_tables tproxy support
+
+Package: kmod-nls-base
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-nls-base
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 95
+Filename: kmod-nls-base_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 838
+SHA256sum: b580b9f68a5fd93f531d133b8956012e35a58d7c060ec3d8c30c84c7c64e8c72
+Description:  Kernel module for NLS (Native Language Support)
+
+Package: kmod-nls-cp437
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-nls-cp437
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2262
+Filename: kmod-nls-cp437_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3031
+SHA256sum: d9c0e3544df4b00bb95135d0b02237accff141e560605f23c9dd11dbad89a143
+Description:  Kernel module for NLS Codepage 437 (United States, Canada)
+
+Package: kmod-nls-iso8859-1
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-nls-iso8859-1
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 1950
+Filename: kmod-nls-iso8859-1_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 2692
+SHA256sum: 541ebba581ffb438fcfd399fd57fab18654cb41441b45a66c3ebacbc3a87366a
+Description:  Kernel module for NLS ISO 8859-1 (Latin 1)
+
+Package: kmod-nls-utf8
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-nls-utf8
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 1183
+Filename: kmod-nls-utf8_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 1948
+SHA256sum: 7a8e90b3795461de871afa02ec2e88d33c69ab6c6b7176a76f005a5270009519
+Description:  Kernel module for NLS UTF-8
+
+Package: kmod-oid-registry
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-oid-registry
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2680
+Filename: kmod-oid-registry_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 3416
+SHA256sum: fbdf5037e8bb3b1d4501efb6740a382909aa60b0f549d0c05a60e9c3e73db577
+Description:  Object identifier registry
+
+Package: kmod-phy-realtek
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-28755868d92caa1b754b20b9c3f7c3d5), kmod-libphy
+Source: package/kernel/linux
+SourceName: kmod-phy-realtek
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1686496520
+Architecture: aarch64_cortex-a53
+Installed-Size: 229
+Filename: kmod-phy-realtek_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 971
+SHA256sum: 28880226cfcc8232a09381d0c9aefd87eb20fe45c4b70639e8d9cbd483e4d111
+Description:  Supports the Realtek 821x PHY.
+
+Package: kmod-ppp
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-lib-crc-ccitt, kmod-slhc
+Source: package/kernel/linux
+SourceName: kmod-ppp
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 27063
+Filename: kmod-ppp_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 27801
+SHA256sum: d6271197518443bd917a7c32bac1afc2b25506e791aae277560529d4894f5534
+Description:  Kernel modules for PPP support
+
+Package: kmod-pppoe
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ppp, kmod-pppox
+Source: package/kernel/linux
+SourceName: kmod-pppoe
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 7737
+Filename: kmod-pppoe_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 8517
+SHA256sum: 3731664e554792064af9f46f5739e26b02526b9cf330011c25ef1be723dddaa7
+Description:  Kernel module for PPPoE (PPP over Ethernet) support
+
+Package: kmod-pppol2tp
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ppp, kmod-pppox, kmod-l2tp
+Source: package/kernel/linux
+SourceName: kmod-pppol2tp
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 9245
+Filename: kmod-pppol2tp_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 10002
+SHA256sum: 90ae4fb8baf4f714e7645ff111fb413421bd12e36d4d6a120332720048809638
+Description:  Kernel modules for PPPoL2TP (PPP over L2TP) support
+
+Package: kmod-pppox
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-ppp
+Source: package/kernel/linux
+SourceName: kmod-pppox
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 1983
+Filename: kmod-pppox_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 2751
+SHA256sum: 1233983a5e0f49265ec6c2f3ca4318f6402261b7081313910b508f16912e334b
+Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: kmod-random-core
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-random-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 95
+Filename: kmod-random-core_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 845
+SHA256sum: 715760b48fbb9731876c784a70b2cda2ce7d287b28d86b903ae4348fec632e88
+Description:  Kernel module for the HW random number generator core infrastructure
+
+Package: kmod-sched-cake
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-sched-core
+Source: package/kernel/linux
+SourceName: kmod-sched-cake
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 15448
+Filename: kmod-sched-cake_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 16200
+SHA256sum: fd302bc11ef0d12908afb80ca105e84058f9b65134ceef17913091ef8cddbd96
+Description:  Common Applications Kept Enhanced fq_codel/blue derived shaper
+
+Package: kmod-sched-connmark
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-sched-core, kmod-ipt-core, kmod-ipt-conntrack-extra
+Source: package/kernel/linux
+SourceName: kmod-sched-connmark
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 3474
+Filename: kmod-sched-connmark_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 4235
+SHA256sum: a0d513717ae33b2a2ce8c8c3cd084ddb1830208884165ad6d5eb91e375c1351b
+Description:  Traffic shaper conntrack mark support
+
+Package: kmod-sched-core
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-sched-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 62773
+Filename: kmod-sched-core_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 63501
+SHA256sum: e2fc8660c92c4396e48fae0c6aa9ecd717db6e18242bca67bd0afd844300f54f
+Description:  Core kernel scheduler support for IP traffic
+
+Package: kmod-scsi-core
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-scsi-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 237
+Filename: kmod-scsi-core_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 967
+SHA256sum: 0e1781e9ce258200eb699465ec5581ed32555384431dc66f1d114f8091104a27
+Description:  SCSI device support
+
+Package: kmod-sit
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-iptunnel, kmod-iptunnel4
+Source: package/kernel/linux
+SourceName: kmod-sit
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 12557
+Filename: kmod-sit_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 13304
+SHA256sum: 23b7fb7e1c2195d97fa90359abe9ef74e67c282b2db27b22f431198cc0cedd6e
+Description:  Kernel modules for IPv6-in-IPv4 tunnelling
+
+Package: kmod-slhc
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-lib-crc-ccitt
+Source: package/kernel/linux
+SourceName: kmod-slhc
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 3924
+Filename: kmod-slhc_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 4659
+SHA256sum: 0b1e90745d63b2c9cc4e3811604c35e85ae334ce6c04a2916fd0727daf5d93f7
+Description:  Serial Line Header Compression
+
+Package: kmod-tcp-bbr
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-tcp-bbr
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 4919
+Filename: kmod-tcp-bbr_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 5758
+SHA256sum: 6bfe7b9e472f745be4d1a15356d4d077028b13ab146a443235eae26aedcfe889
+Description:  Kernel module for BBR (Bottleneck Bandwidth and RTT) TCP congestion
+ control. It requires the fq ("Fair Queue") pacing packet scheduler.
+ For kernel 4.13+, TCP internal pacing is implemented as fallback.
+
+Package: kmod-thermal
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-hwmon-core
+Source: package/kernel/linux
+SourceName: kmod-thermal
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 95
+Filename: kmod-thermal_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 901
+SHA256sum: 891d754d1df36fa5d02de1970960db010874b72bf21f54706447baad2440040f
+Description:  Thermal driver offers a generic mechanism for thermal management.
+ Usually it's made up of one or more thermal zone and cooling device.
+
+Package: kmod-tpm
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-random-core, kmod-asn1-decoder, kmod-asn1-encoder, kmod-oid-registry
+Source: package/kernel/linux
+SourceName: kmod-tpm
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 26009
+Filename: kmod-tpm_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 26239
+SHA256sum: fc440ba35b22c4dc91932a58a61f6136aec99ffcf6617f4404b640810d345c94
+Description:  This enables TPM Hardware Support.
+
+Package: kmod-tun
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-tun
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 24784
+Filename: kmod-tun_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 25497
+SHA256sum: f86b869d130d13d1b642f7841982e9cef6da66cac7c6564790eb885e9919df94
+Description:  Kernel support for the TUN/TAP tunneling device
+
+Package: kmod-udptunnel4
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-udptunnel4
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 7996
+Filename: kmod-udptunnel4_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 8750
+SHA256sum: a78946fbad264200273ec803111b87359431724158431d7c42cd4781542051ad
+Description:  IPv4 UDP tunneling support
+
+Package: kmod-udptunnel6
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-udptunnel6
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 2001
+Filename: kmod-udptunnel6_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 2722
+SHA256sum: 9018f4bd9ad9222b7f8f5e3a3af3bd2864199f00bd377b5e4a4085db038bc0e0
+Description:  IPv6 UDP tunneling support
+
+Package: kmod-usb-core
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-nls-base
+Source: package/kernel/linux
+SourceName: kmod-usb-core
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 113812
+Filename: kmod-usb-core_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 113847
+SHA256sum: 868078074d03d0bcdd54223cff17b0c008a0a6beae0965b23b20846a925e5cfb
+Description:  Kernel support for USB
+
+Package: kmod-usb-ehci
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-ehci
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 31013
+Filename: kmod-usb-ehci_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 31701
+SHA256sum: d53e6b613672deaf9c783bfe5c8927dd31c988e361e1276098029546f412aba2
+Description:  EHCI controller support
+
+Package: kmod-usb-net-cdc-ether
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-usb-net
+Source: package/kernel/linux
+SourceName: kmod-usb-net-cdc-ether
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 4007
+Filename: kmod-usb-net-cdc-ether_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 4764
+SHA256sum: f295fd55c8d894338b8d345aa456231b1e3577db76facccff344777d4ad3f6e2
+Description:  Kernel support for USB CDC Ethernet devices
+
+Package: kmod-usb-net-cdc-ncm
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-usb-net, kmod-usb-net-cdc-ether
+Source: package/kernel/linux
+SourceName: kmod-usb-net-cdc-ncm
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 11135
+Filename: kmod-usb-net-cdc-ncm_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 11907
+SHA256sum: 90c0ebceef2f0f5a61baa0d557ee88cba0659dfe24638cd12dab80ee1d391737
+Description:  Kernel support for CDC NCM connections
+
+Package: kmod-usb-net-ipheth
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-usb-net
+Source: package/kernel/linux
+SourceName: kmod-usb-net-ipheth
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 4371
+Filename: kmod-usb-net-ipheth_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 5139
+SHA256sum: 7cbb774428c5292ae867247234ef0482eb68146e92d58615c32265a75ee463bb
+Description:  Kernel support for Apple iPhone USB Ethernet driver
+
+Package: kmod-usb-net-rndis
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-usb-net, kmod-usb-net-cdc-ether
+Source: package/kernel/linux
+SourceName: kmod-usb-net-rndis
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 4456
+Filename: kmod-usb-net-rndis_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 5217
+SHA256sum: db29cb11289f8b9852f7eda36be4b660eb3b1bae3d3a8ef7f26d96a4a5318903
+Description:  Kernel support for RNDIS connections
+
+Package: kmod-usb-net-rtl8152-vendor
+Version: 5.15.116+2.16.3-4-mediatek-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-usb-net
+Conflicts: kmod-usb-net-rtl8152
+Source: package/lean/r8152
+SourceName: kmod-usb-net-rtl8152-vendor
+Section: kernel
+SourceDateEpoch: 1679315445
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: aarch64_cortex-a53
+Installed-Size: 80119
+Filename: kmod-usb-net-rtl8152-vendor_5.15.116+2.16.3-4-mediatek-1_aarch64_cortex-a53.ipk
+Size: 80189
+SHA256sum: 6c4b4ef6286033dac832bcdc947f566b0948d0548f07153d1386619052ac46d9
+Description:  Kernel module for Realtek RTL8152 USB Ethernet chipsets
+
+Package: kmod-usb-net-rtl8152
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), r8152-firmware, kmod-crypto-sha256, kmod-usb-net-cdc-ncm, kmod-usb-net
+Source: package/kernel/linux
+SourceName: kmod-usb-net-rtl8152
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 40419
+Filename: kmod-usb-net-rtl8152_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 41170
+SHA256sum: 177c5f9f4c4dfecfc0477245a41cf734707a930511f72ed19f64378ede41777b
+Description:  Kernel module for USB-to-Ethernet Realtek 8152 USB2.0/3.0 convertors
+
+Package: kmod-usb-net
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-mii, kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-net
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 14688
+Filename: kmod-usb-net_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 15399
+SHA256sum: 3350e94dd1f0e9e2080a289208baff717d6e2ef6277a389e6e9d89d8b6d66471
+Description:  Kernel modules for USB-to-Ethernet convertors
+
+Package: kmod-usb-printer
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-printer
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 8641
+Filename: kmod-usb-printer_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 9364
+SHA256sum: 999055b7ce1c69464c3ab3b5ca9edb910c9102b469b6f15c58629d539b91dbf0
+Description:  Kernel support for USB printers
+
+Package: kmod-usb-storage-extras
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-usb-storage
+Source: package/kernel/linux
+SourceName: kmod-usb-storage-extras
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 31186
+Filename: kmod-usb-storage-extras_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 31932
+SHA256sum: 7a2a2b3417f561df961f09189abacef7c28351aa54b989d5b22eec02f4bd7d38
+Description:  Say Y here if you want to have some more drivers,
+ such as for SmartMedia card readers
+
+Package: kmod-usb-storage-uas
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-usb-storage
+Source: package/kernel/linux
+SourceName: kmod-usb-storage-uas
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 9085
+Filename: kmod-usb-storage-uas_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 9921
+SHA256sum: 5f3c0f4884912e30639aa4b415a8b6a5a7f293ecf58c12bc532969af9d5b0611
+Description:  Say Y here if you want to include support for
+ USB Attached SCSI (UAS/UASP), a higher
+ performance protocol available on many
+ newer USB 3.0 storage devices
+
+Package: kmod-usb-storage
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-scsi-core, kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-storage
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 25866
+Filename: kmod-usb-storage_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 26223
+SHA256sum: 570103bc6fd04da0b8475a7043ff92d6ac92bf923d7fd59e406baed4245d3f35
+Description:  Kernel support for USB Mass Storage devices
+
+Package: kmod-usb-xhci-hcd
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-xhci-hcd
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 78061
+Filename: kmod-usb-xhci-hcd_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 78334
+SHA256sum: 54a8c32a56c9facf45ca8bb21259318d66aa72ddfd35447749c6fc754b12a01f
+Description:  The eXtensible Host Controller Interface (xHCI) is standard for USB 3.0
+ "SuperSpeed" host controller hardware.
+
+Package: kmod-usb-xhci-mtk
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-usb-xhci-hcd, kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb-xhci-mtk
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 9156
+Filename: kmod-usb-xhci-mtk_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 9925
+SHA256sum: 6e2ebca409a88f2d045a25b42e47760c3ba6ff42b9920a12aaa90ef43e37ae97
+Description:  Kernel support for the xHCI host controller found in MediaTek SoCs.
+
+Package: kmod-usb2
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-usb-ehci, kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb2
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 8941
+Filename: kmod-usb2_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 9680
+SHA256sum: 3bb5d86d3fa4f4a68407461a89738dc724194336f4787216a6e9f7213542cf29
+Description:  Kernel support for USB2 (EHCI) controllers
+
+Package: kmod-usb3
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-usb-xhci-hcd, kmod-usb-xhci-mtk, kmod-usb-core
+Source: package/kernel/linux
+SourceName: kmod-usb3
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 7446
+Filename: kmod-usb3_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 8239
+SHA256sum: 8bf290a9fe81d82a08ad9e8a6973ab5c43198f0708d2db01d81eb78fde8be2e4
+Description:  Kernel support for USB3 (XHCI) controllers
+
+Package: kmod-veth
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-veth
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 11329
+Filename: kmod-veth_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 12140
+SHA256sum: 3551312fd1194e72f9715c6e48dc2a80624e9a12e342248852567b5d2dbe9776
+Description:  This device is a local ethernet tunnel. Devices are created in pairs.
+ When one end receives the packet it appears on its pair and vice
+ versa.
+
+Package: kmod-wireguard
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59), kmod-crypto-lib-chacha20poly1305, kmod-crypto-lib-curve25519, kmod-udptunnel4, kmod-udptunnel6
+Source: package/kernel/linux
+SourceName: kmod-wireguard
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 34820
+Filename: kmod-wireguard_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 35830
+SHA256sum: 855d2051fa2c9e4f6cb419bdae6d1d76c006351832b37137bac4939aa3307548
+Description:  WireGuard is a novel VPN that runs inside the Linux Kernel and utilizes
+ state-of-the-art cryptography. It aims to be faster, simpler, leaner, and
+ more useful than IPSec, while avoiding the massive headache. It intends to
+ be considerably more performant than OpenVPN.  WireGuard is designed as a
+ general purpose VPN for running on embedded interfaces and super computers
+ alike, fit for many different circumstances. It uses UDP.
+
+Package: kmod-zram
+Version: 5.15.116-1
+Depends: kernel (=5.15.116-1-828381f2bd9611b0b9902ffde798fd59)
+Source: package/kernel/linux
+SourceName: kmod-zram
+License: GPL-2.0
+Section: kernel
+SourceDateEpoch: 1687697592
+Architecture: aarch64_cortex-a53
+Installed-Size: 18229
+Filename: kmod-zram_5.15.116-1_aarch64_cortex-a53.ipk
+Size: 18984
+SHA256sum: 9c3ee3d38859e410833021d280ca87f6c58830e702c7328373dd9fe804b5b38e
+Description:  Compressed RAM block device support
+
+Package: libatomic1
+Version: 11.3.0-4
+Depends: libgcc1
+Provides: libatomic
+Source: package/libs/toolchain
+SourceName: libatomic
+License: GPL-3.0-with-GCC-exception
+Section: libs
+SourceDateEpoch: 1670480457
+ABIVersion: 1
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 7926
+Filename: libatomic1_11.3.0-4_aarch64_cortex-a53.ipk
+Size: 8725
+SHA256sum: 009e4b7107298265a3f1a2d6c088a50b45e46c1967ecf84db24dfad2b0794d80
+Description:  Atomic support library
+
+Package: libgcc1
+Version: 11.3.0-4
+Provides: libgcc
+Source: package/libs/toolchain
+SourceName: libgcc
+License: GPL-3.0-with-GCC-exception
+Section: libs
+SourceDateEpoch: 1670480457
+ABIVersion: 1
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 34843
+Filename: libgcc1_11.3.0-4_aarch64_cortex-a53.ipk
+Size: 35631
+SHA256sum: ac7c69c0e7925bd2f1a1e9b48a14b4c7c34be878c51647c939faebf3a2a136e1
+Description:  GCC support library
+
+Package: libip4tc2
+Version: 1.8.7-2
+Depends: libc, libxtables12
+Provides: libip4tc
+Source: package/network/utils/iptables
+SourceName: libip4tc
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1671040048
+ABIVersion: 2
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_cortex-a53
+Installed-Size: 22882
+Filename: libip4tc2_1.8.7-2_aarch64_cortex-a53.ipk
+Size: 23601
+SHA256sum: 1329c17e89971a3216c156b6f9c544b65251f8f815c46bc68263377bb6497d50
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc2
+Version: 1.8.7-2
+Depends: libc, libxtables12
+Provides: libip6tc
+Source: package/network/utils/iptables
+SourceName: libip6tc
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1671040048
+ABIVersion: 2
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_cortex-a53
+Installed-Size: 22397
+Filename: libip6tc2_1.8.7-2_aarch64_cortex-a53.ipk
+Size: 23114
+SHA256sum: 70c97fa0ee3bac314f7b3b3ddacdadff821d5d7820d8bde59f7723422944f8fa
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libiwinfo-data
+Version: 2023-05-17-c9f5c3f7-1
+Depends: libc
+Source: package/network/utils/iwinfo
+SourceName: libiwinfo-data
+License: GPL-2.0
+Section: opt
+SourceDateEpoch: 1684425201
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: aarch64_cortex-a53
+Installed-Size: 2983
+Filename: libiwinfo-data_2023-05-17-c9f5c3f7-1_aarch64_cortex-a53.ipk
+Size: 3747
+SHA256sum: 6fc11a91df9658fa127aef9552b9c5c913e63e12bde602304ccc38d5ea6e35c0
+Description:  libiwinfo Lua binding
+
+Package: libiwinfo-lua
+Version: 2023-05-17-c9f5c3f7-1
+Depends: libc, libiwinfo20230121, liblua5.1.5
+Source: package/network/utils/iwinfo
+SourceName: libiwinfo-lua
+License: GPL-2.0
+Section: lang
+SourceDateEpoch: 1684425201
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: aarch64_cortex-a53
+Installed-Size: 6571
+Filename: libiwinfo-lua_2023-05-17-c9f5c3f7-1_aarch64_cortex-a53.ipk
+Size: 7401
+SHA256sum: 067bdd12410fc1b9adc8cf228d0720559b54fc86a3b5b12fbb9bda178a9f8f46
+Description:  This is the Lua binding for the iwinfo library. It provides access to all enabled
+ backends.
+
+Package: libiwinfo20230121
+Version: 2023-05-17-c9f5c3f7-1
+Depends: libc, libnl-tiny2022-11-01, libuci20130104, libubus20220601, libiwinfo-data
+Provides: libiwinfo
+Source: package/network/utils/iwinfo
+SourceName: libiwinfo
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1684425201
+ABIVersion: 20230121
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: aarch64_cortex-a53
+Installed-Size: 28079
+Filename: libiwinfo20230121_2023-05-17-c9f5c3f7-1_aarch64_cortex-a53.ipk
+Size: 28936
+SHA256sum: 791641bed39699eff2e550b197ca686c9ba61f3b8c606e8022c1f507904a5a2d
+Description:  Wireless information library with simplified API for nl80211
+ and wext driver interfaces.
+
+Package: libpthread
+Version: 1.2.3-4
+Depends: libgcc1
+Source: package/libs/toolchain
+SourceName: libpthread
+License: GPL-3.0-with-GCC-exception
+Section: libs
+SourceDateEpoch: 1670480457
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 116
+Filename: libpthread_1.2.3-4_aarch64_cortex-a53.ipk
+Size: 876
+SHA256sum: a399701e149778a7be4cfce7bb6f0b09ccf68fc97c90a59118e0b734a6d5bdc6
+Description:  POSIX thread library
+
+Package: librt
+Version: 1.2.3-4
+Depends: libpthread
+Source: package/libs/toolchain
+SourceName: librt
+License: GPL-3.0-with-GCC-exception
+Section: libs
+SourceDateEpoch: 1670480457
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 116
+Filename: librt_1.2.3-4_aarch64_cortex-a53.ipk
+Size: 885
+SHA256sum: e6ff16780e0a5384413d3cd03038c452d8a0a2b3168f0805b9b083bac2d1fca3
+Description:  POSIX.1b RealTime extension library
+
+Package: libstdcpp6
+Version: 11.3.0-4
+Provides: libstdcpp
+Source: package/libs/toolchain
+SourceName: libstdcpp
+License: GPL-3.0-with-GCC-exception
+Section: libs
+SourceDateEpoch: 1670480457
+ABIVersion: 6
+Status: unknown hold not-installed
+Essential: yes
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 563110
+Filename: libstdcpp6_11.3.0-4_aarch64_cortex-a53.ipk
+Size: 561574
+SHA256sum: 391ea6590d942b68e7b60e51519f0a82e87b11af7647bc71778bcf5afa39dc9d
+Description:  GNU Standard C++ Library v3
+
+Package: libxtables12
+Version: 1.8.7-2
+Depends: libc
+Provides: libxtables
+Source: package/network/utils/iptables
+SourceName: libxtables
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1671040048
+ABIVersion: 12
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: aarch64_cortex-a53
+Installed-Size: 50908
+Filename: libxtables12_1.8.7-2_aarch64_cortex-a53.ipk
+Size: 51683
+SHA256sum: 9f8840be1757dcddd9160f76aa090b897e68b1ba12416bce65650d6da76a9db8
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: mtd
+Version: 26
+Depends: libc, libubox20220927
+Source: package/system/mtd
+SourceName: mtd
+License: GPL-2.0+
+Section: utils
+SourceDateEpoch: 1666071806
+Architecture: aarch64_cortex-a53
+Installed-Size: 11656
+Filename: mtd_26_aarch64_cortex-a53.ipk
+Size: 12414
+SHA256sum: e2d9e5c164169297355bc0677497fe02865dfede76e4eb0b3caa925caea90250
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
+Package: ubi-utils
+Version: 2.1.5-1
+Depends: libc
+Source: package/utils/mtd-utils
+SourceName: ubi-utils
+License: GPLv2
+Section: utils
+SourceDateEpoch: 1670480457
+CPE-ID: cpe:/a:mtd-utils_project:mtd-utils
+Maintainer: John Crispin <john@phrozen.org>
+Architecture: aarch64_cortex-a53
+Installed-Size: 82775
+Filename: ubi-utils_2.1.5-1_aarch64_cortex-a53.ipk
+Size: 82872
+SHA256sum: 86398ab1bd506c48981a9c423176b49a41d9685d3a73d56576e196bd3c73035f
+Description:  Utilities for manipulating memory technology devices.
+
+Package: uboot-envtools
+Version: 2023.01-1
+Depends: libc
+Source: package/boot/uboot-envtools
+SourceName: uboot-envtools
+License: GPL-2.0 GPL-2.0+
+LicenseFiles: Licenses/README
+Section: utils
+SourceDateEpoch: 1687878318
+Architecture: aarch64_cortex-a53
+Installed-Size: 14881
+Filename: uboot-envtools_2023.01-1_aarch64_cortex-a53.ipk
+Size: 15576
+SHA256sum: 700084a501fc98c9c32e454c9d0868ec86f13bbf13e61804615c3769ce7e74a9
+Description:  This package includes tools to read and modify U-Boot bootloader environment.
+

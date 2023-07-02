@@ -108,6 +108,19 @@ src/gz openwrt_routing http://47.113.229.16:1480/aarch64_generic/routing
 src/gz openwrt_telephony http://47.113.229.16:1480/aarch64_generic/telephony
 ```
 
+**mt798x**
+
+红米 AX6000，红米 wr30u，TP-Link TL-XDR6086/6088/4288，360 t7，jcg q30，glinet mt3000
+
+```mirrors
+src/gz openwrt_core http://47.113.229.16:1480/targets/mt798x/filogic/packages
+src/gz openwrt_base http://47.113.229.16:1480/mt798x/base
+src/gz openwrt_luci http://47.113.229.16:1480/mt798x/luci
+src/gz openwrt_packages http://47.113.229.16:1480/mt798x/packages
+src/gz openwrt_routing http://47.113.229.16:1480/mt798x/routing
+src/gz openwrt_telephony http://47.113.229.16:1480/mt798x/telephony
+```
+
 **mt7986a**
 
 红米 AX6000，TP-Link TL-XDR6086/6088

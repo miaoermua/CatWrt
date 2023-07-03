@@ -123,7 +123,9 @@ src/gz openwrt_telephony http://47.113.229.16:1480/mt798x/telephony
 
 **mt7986a**
 
-红米 AX6000，TP-Link TL-XDR6086/6088
+* 测试版本有问题请反馈
+
+支持 TP-link TL-XDR 4288/6086/6088，Redmi AX6000，Xiaomi WR30U，jcg q30，glinet mt3000，H3C nx30Pro
 
 ```mirrors
 src/gz openwrt_core http://47.113.229.16:1480/targets/mediatek/filogic/packages

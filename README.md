@@ -110,10 +110,12 @@ src/gz openwrt_telephony http://47.113.229.16:1480/aarch64_generic/telephony
 
 **mt798x**
 
-红米 AX6000，红米 wr30u，TP-Link TL-XDR6086/6088/4288，360 t7，jcg q30，glinet mt3000
+* 测试版本有问题请反馈
+
+支持 TP-link TL-XDR 4288/6086/6088，Redmi AX6000，Xiaomi WR30U，jcg q30，glinet mt3000，H3C nx30Pro
 
 ```mirrors
-src/gz openwrt_core http://47.113.229.16:1480/targets/mt798x/filogic/packages
+src/gz openwrt_core https://catwrt.eu.org/targets/mt798x/filogic/packages
 src/gz openwrt_base http://47.113.229.16:1480/mt798x/base
 src/gz openwrt_luci http://47.113.229.16:1480/mt798x/luci
 src/gz openwrt_packages http://47.113.229.16:1480/mt798x/packages
@@ -123,9 +125,7 @@ src/gz openwrt_telephony http://47.113.229.16:1480/mt798x/telephony
 
 **mt7986a**
 
-* 测试版本有问题请反馈
-
-支持 TP-link TL-XDR 4288/6086/6088，Redmi AX6000，Xiaomi WR30U，jcg q30，glinet mt3000，H3C nx30Pro
+红米 AX6000，TL-XDR 6086/6088
 
 ```mirrors
 src/gz openwrt_core http://47.113.229.16:1480/targets/mediatek/filogic/packages

@@ -64,9 +64,7 @@ lede/bin/targets = miaoermua/CatWrt/targets
 
 以下为使用阿里云高校计划的（河源）云服务器 ECS，仅提供 1M 带宽对外使用 1480:http 服务请勿滥用，使用后务必注释掉！
 
-也可以使用 [vercel](https://vercel.com) 软件镜像站，可以拉取软件源并更新，但部分地区可能需要网络加速。
-
-将 `http://47.113.229.16:1480` 替换为 `https://downloads.catwrt.miaoer.xyz` 即可使用 vercel 提供的镜像。
+将 `http://47.113.229.16:1480` 替换为 `https://catwrt.eu.org` 即可使用 Cloudflare CDN 源，但部分地区可能需要网络加速。
 
 **x86-64**
 
@@ -76,7 +74,6 @@ lede/bin/targets = miaoermua/CatWrt/targets
 src/gz openwrt_core http://47.113.229.16:1480/targets/x86/64/packages
 src/gz openwrt_base http://47.113.229.16:1480/x86_64/base
 src/gz openwrt_luci http://47.113.229.16:1480/x86_64/luci
-src/gz openwrt_oui http://47.113.229.16:1480/x86_64/oui
 src/gz openwrt_packages http://47.113.229.16:1480/x86_64/packages
 src/gz openwrt_routing http://47.113.229.16:1480/x86_64/routing
 src/gz openwrt_telephony http://47.113.229.16:1480/x86_64/telephony
@@ -84,7 +81,7 @@ src/gz openwrt_telephony http://47.113.229.16:1480/x86_64/telephony
 
 **Geeker_6.1**
 
-Geeker 6.1 内核 x86_64(amd64)
+Geeker v23.5 k6.1
 
 ```mirrors
 src/gz openwrt_core http://47.113.229.16:1480/targets/amd64/geeker_6.1/packages
@@ -148,21 +145,24 @@ src/gz openwrt_packages http://47.113.229.16:1480/mipsel_24kc/packages
 src/gz openwrt_routing http://47.113.229.16:1480/mipsel_24kc/routing
 src/gz openwrt_telephony http://47.113.229.16:1480/mipsel_24kc/telephony
 ```
+
+***
+
 ## 源的另外使用方法
 
-### 使用 Vercel 源
+### 使用 Cloudflare
 
-使用 Vercel 源示例
+使用 Cloudflare CDN 源示例（也是消耗服务器资源，请节约使用）
 
 ```mirrors
-src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/targets/x86/64/packages
-src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/x86_64/base
-src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/x86_64/luci
-src/gz openwrt_oui https://downloads.catwrt.miaoer.xyz/x86_64/oui
-src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/x86_64/packages
-src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/x86_64/routing
-src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/x86_64/telephony
+src/gz openwrt_core https://catwrt.eu.org/targets/x86/64/packages
+src/gz openwrt_base https://catwrt.eu.org/x86_64/base
+src/gz openwrt_luci https://catwrt.eu.org/x86_64/luci
+src/gz openwrt_packages https://catwrt.eu.org/x86_64/packages
+src/gz openwrt_routing https://catwrt.eu.org/x86_64/routing
+src/gz openwrt_telephony https://catwrt.eu.org/x86_64/telephony
 ```
+
 ### 使用历史（LTS）源
 
 以 CatWrt.v22.2 x86_64 示例
@@ -198,7 +198,7 @@ $ docker compose up -d
 # docker-compose up -d
 ```
 
-- 使用 Linux 面板部署（宝塔，小皮……）
+- 使用 Linux 面板部署
 
 将此仓库通过 git clone 拉取到服务器网站目录里，修改面板网站目录到 CatWrt 中；
 

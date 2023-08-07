@@ -1,5 +1,5 @@
 <p align="center">
-<img width="350" src="https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/images/CatWrt logo.jpg">
+<img width="350" src="https://fastly.jsdelivr.net/gh/miaoermua/static@main/images/CatWrt banner.jpg">
 </p>
 
 <p align="center">
@@ -26,17 +26,9 @@
 
 ## 为什么选择 CatWrt
 
-<li>高可用</li>
-<p>👋 告别臃肿，软件在够用情况下 CatWrt 更稳定。</p><br>
-
-<li>社区生态</li>
-<p>🎈 我们自己是玩家，寻找更多玩家加入互助 CatWrt 生态。</p><br>
-
-<li>自建软件源</li>
-<p>🕊️ CatWrt 拥有时下热门插件在软件源，很方便通过教程安装。</p><br>
-
-<li>解答</li>
-<p>🪄 可以解答你对 CatWrt 的疑问，有限免费的。</p><br>
+<p align="center">
+<img src="https://fastly.jsdelivr.net/gh/miaoermua/static@main/images/CatWrt_gh.jpg">
+</p>
 
 ## 开源相关
 

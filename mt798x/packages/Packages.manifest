@@ -734,6 +734,24 @@ Description:  Htop is an ncursed-based process viewer similar to top, but
  it allows to scroll the list vertically and horizontally to
  see all processes and their full command lines.
 
+Package: iperf3
+Version: 3.12-1
+Depends: libc, libiperf3
+Source: feeds/packages/net/iperf3
+SourceName: iperf3
+License: BSD-3-Clause
+Section: net
+SourceDateEpoch: 1687010783
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 2279
+Filename: iperf3_3.12-1_aarch64_cortex-a53.ipk
+Size: 3060
+SHA256sum: 5c7587c37c41f682e1a8a91b50a6359c4e5e000bb8e08ebbd1cf027636b8b1d1
+Description:  Iperf is a modern alternative for measuring TCP and UDP bandwidth
+ performance, allowing the tuning of various parameters and
+ characteristics.
+
 Package: iputils-arping
 Version: 20211215-2
 Depends: libc
@@ -1177,6 +1195,22 @@ SHA256sum: e5c5655a66d2b4286dbb2586193c02b5e813dac9afa06ffd0ea7cb622e901426
 Description:  libimobiledevice is a software library that talks the protocols to support
  iPhone®, iPod Touch®, iPad® and Apple TV® devices.
 
+Package: libiperf3
+Version: 3.12-1
+Depends: libc
+Source: feeds/packages/net/iperf3
+SourceName: libiperf3
+License: BSD-3-Clause
+Section: libs
+SourceDateEpoch: 1687010783
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: aarch64_cortex-a53
+Installed-Size: 64323
+Filename: libiperf3_3.12-1_aarch64_cortex-a53.ipk
+Size: 65061
+SHA256sum: 7b23aedf7995d3cc0c1796ede756ce26f7b0c3cd007997c08b9ce2110c9fc7cf
+Description:  Libiperf is a library providing an API for iperf3 functionality.
+
 Package: liblzma
 Version: 5.4.1-1
 Depends: libc, libpthread
@@ -1212,6 +1246,23 @@ Size: 39911
 SHA256sum: cb2596c2a80d152d8875c42e5a0740f22ae12676492694942ff4761f3012f787
 Description:  LZO is a data compression library which is suitable for data de-/compression
  in real-time. This means it favours speed over compression ratio.
+
+Package: libmaxminddb
+Version: 1.7.1-1
+Depends: libc
+Source: feeds/packages/libs/libmaxminddb
+SourceName: libmaxminddb
+License: Apache-2.0
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1687010783
+Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
+Architecture: aarch64_cortex-a53
+Installed-Size: 14481
+Filename: libmaxminddb_1.7.1-1_aarch64_cortex-a53.ipk
+Size: 15207
+SHA256sum: f6d8743efc9875773521208577d042c52138f1b98becebe926b1cc5397771b0f
+Description:  The libmaxminddb library provides functions for working MaxMind DB files.
 
 Package: libminiupnpc
 Version: 2.2.3-1
@@ -1586,6 +1637,42 @@ Size: 297973
 SHA256sum: 48b216a94cb647c01215d815120439137134dbe1d06fe2139b533632636b8a2f
 Description:  Zstandard - Fast real-time compression algorithm.
  This package provides libzstd library.
+
+Package: lua-cjson
+Version: 2.1.0-2
+Depends: libc, lua
+Source: feeds/packages/lang/lua-cjson
+SourceName: lua-cjson
+License: MIT
+LicenseFiles: LICENSE
+Section: lang
+SourceDateEpoch: 1687010783
+Maintainer: Dirk Chang <dirk@kooiot.com>
+Architecture: aarch64_cortex-a53
+Installed-Size: 12668
+Filename: lua-cjson_2.1.0-2_aarch64_cortex-a53.ipk
+Size: 13421
+SHA256sum: dfb6083d3fe2f9e9a5e9302ff6e39c305b271efef9f68c24abe3ad9f9f655fcc
+Description:  Lua CJSON is a fast JSON encoding/parsing module for Lua.
+
+Package: luasocket
+Version: 3.1.0-1
+Depends: libc, lua
+Source: feeds/packages/lang/luasocket
+SourceName: luasocket
+License: MIT
+LicenseFiles: LICENSE
+Section: lang
+SourceDateEpoch: 1687010783
+Maintainer: W. Michael Petullo <mike@flyn.org>
+Architecture: aarch64_cortex-a53
+Installed-Size: 62283
+Filename: luasocket_3.1.0-1_aarch64_cortex-a53.ipk
+Size: 63178
+SHA256sum: fcac0a5d48d413b8ad57dfbb3ca912a1a0cdf6976d6974264eaf94fc7be20c59
+Description:  LuaSocket is the most comprehensive networking support
+ library for the Lua language. It provides easy access to
+ TCP, UDP, DNS, SMTP, FTP, HTTP, MIME and much more.
 
 Package: miniupnpd
 Version: 2.0.20170421-3
@@ -2388,10 +2475,10 @@ Section: net
 SourceDateEpoch: 1687010783
 CPE-ID: cpe:/a:samba:samba
 Architecture: aarch64_cortex-a53
-Installed-Size: 7993916
+Installed-Size: 7997788
 Filename: samba4-libs_4.14.14-1_aarch64_cortex-a53.ipk
-Size: 7933981
-SHA256sum: 9abf68bfbf22347d571cc69f8cd124ee1ec9c8833e8c4477404ff6893041eacb
+Size: 7944778
+SHA256sum: a39f9235a5ddf5dc92ddb891b92582f1a7168ee5fc954287dfe7c87c6e722918
 Description:  Samba 4.14.14 libs
 
 Package: samba4-server
@@ -2406,10 +2493,10 @@ Section: net
 SourceDateEpoch: 1687010783
 CPE-ID: cpe:/a:samba:samba
 Architecture: aarch64_cortex-a53
-Installed-Size: 245415
+Installed-Size: 245597
 Filename: samba4-server_4.14.14-1_aarch64_cortex-a53.ipk
-Size: 246290
-SHA256sum: 81815d9d0000e2f288b4f3aa8550f5e22ca730cb2a09d23754ec59cdc2cb4c3c
+Size: 246407
+SHA256sum: 4381b9c300097d15e5874e6dc7e5554fdf2b9d4b1ed5220c7a7ee4b6b016e425
 Description:  installs: smbd (nmbd) smbpasswd pdbedit testparm (nmblookup) (smbcacls sharesec)
  (samba samba-tool ntlm_auth samba-gpupdate samba_dnsupdate samba_kcc samba_spnupdate samba_upgradedns samba_downgrade_db)
  
@@ -2466,6 +2553,25 @@ Filename: shadowsocks-libev-ss-server_3.3.5-1_aarch64_cortex-a53.ipk
 Size: 56552
 SHA256sum: b4ef26d1bf94cb3a70c7db3ced78ddb21072560d00c13acc2ea9b0317fa31058
 Description:  shadowsocks-libev ss-server
+
+Package: smartdns
+Version: 1.2023.42-1
+Depends: libc, libpthread, libopenssl1.1
+Source: feeds/packages/net/smartdns
+SourceName: smartdns
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1687010783
+Maintainer: Nick Peng <pymumu@gmail.com>
+Architecture: aarch64_cortex-a53
+Installed-Size: 137642
+Filename: smartdns_1.2023.42-1_aarch64_cortex-a53.ipk
+Size: 138455
+SHA256sum: 7615569db54d9089d658f06aa9b2666c8679bc8e31b62337ce06a0149c19fe94
+Description:  SmartDNS is a local DNS server which accepts DNS query requests from local network clients,
+ gets DNS query results from multiple upstream DNS servers concurrently, and returns the fastest IP to clients.
+ Unlike dnsmasq's all-servers, smartdns returns the fastest IP, and encrypt DNS queries with DoT or DoH. 
 
 Package: smartmontools
 Version: 7.3-1
@@ -2942,6 +3048,46 @@ Filename: tini_0.19.0-2_aarch64_cortex-a53.ipk
 Size: 38049
 SHA256sum: 5af0ffe626517de9abd4ce9489f0cea0704506fab723a000231df583518c252f
 Description:  A tiny but valid init process for containers.
+
+Package: transmission-daemon-openssl
+Version: 2.94-8
+Depends: libc, libcurl4, libevent2-7, libminiupnpc, libnatpmp1, libpthread, librt, zlib, libopenssl1.1
+Source: feeds/packages/net/transmission
+SourceName: transmission-daemon-openssl
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: net
+Require-User: transmission=224:transmission=224
+SourceDateEpoch: 1687010783
+CPE-ID: cpe:/a:transmissionbt:transmission
+Maintainer: Rosen Penev <rosenp@gmail.com>
+Architecture: aarch64_cortex-a53
+Installed-Size: 191887
+Filename: transmission-daemon-openssl_2.94-8_aarch64_cortex-a53.ipk
+Size: 192787
+SHA256sum: e9d9c98a83c2810c0105b2acfb7b7740e581b566d1421c9b9ae7f19160bf5441
+Description:  Transmission is a simple BitTorrent client.
+ It features a very simple, intuitive interface
+ on top on an efficient, cross-platform back-end.
+ This package contains the daemon itself.
+
+Package: transmission-web-control
+Version: 2020-09-13-c26a0761-1
+Depends: libc, transmission-daemon-openssl
+Conflicts: transmission-web
+Source: feeds/packages/net/transmission-web-control
+SourceName: transmission-web-control
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1687010783
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Architecture: all
+Installed-Size: 1193289
+Filename: transmission-web-control_2020-09-13-c26a0761-1_all.ipk
+Size: 1194271
+SHA256sum: 81d05cfa35b1a89e150f07ca6d1954de4380e14a6040b967dd1ecce5ca0b0e08
+Description:  Transmission Web Control is a custom Web UI for Transmission.
 
 Package: ttyd
 Version: 1.6.3-3

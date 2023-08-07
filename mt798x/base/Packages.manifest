@@ -100,6 +100,20 @@ Size: 455530
 SHA256sum: 1a044cfa4247ecc180d6176a62bb740b7f396e8cfeee1d4b12a727f23e4c3238
 Description:  Adbyby is a powerful adblock module to block ad,just like adblock.
 
+Package: appfilter
+Version: 5.0.2-1
+Depends: libc, libubox20220927, libubus20220601, libuci20130104, libpthread, libjson-c5, libblobmsg-json20220927
+Source: package/OpenAppFilter/open-app-filter
+SourceName: appfilter
+Section: Derry Apps
+SourceDateEpoch: 1680511115
+Architecture: aarch64_cortex-a53
+Installed-Size: 19888
+Filename: appfilter_5.0.2-1_aarch64_cortex-a53.ipk
+Size: 20589
+SHA256sum: d18863d2fbe4fa66df9cffcfea1832eb04bfc03506a64f5d66f659d147c3d5ed
+Description:  open appfilter app
+
 Package: automount
 Version: 1-40
 Depends: libc, block-mount, kmod-fs-exfat, kmod-fs-ext4, kmod-fs-vfat, libblkid1, kmod-usb-storage, kmod-usb-storage-extras, kmod-usb-storage-uas, kmod-fs-ntfs3
@@ -304,19 +318,19 @@ SHA256sum: 5941407b690e76d429bdfd0dbef85a2b2c141b37acc320b633f607c2747500e2
 Description:  Dynamic DNS Client scripts extension for Dnspod.com/Dnspod.cn
 
 Package: default-settings
-Version: 3-1
+Version: 3-2
 Depends: libc, luci-base, luci
 Source: package/lean/default-settings
 SourceName: default-settings
 License: GPLv3
 LicenseFiles: LICENSE
 Section: luci
-SourceDateEpoch: 1685866070
+SourceDateEpoch: 1688660320
 Architecture: all
-Installed-Size: 2025
-Filename: default-settings_3-1_all.ipk
-Size: 2754
-SHA256sum: 56ac38e6d2fbf9f08e741e80a3d776f6b5fdd4e9f3a3cb6403aaf4e47991936b
+Installed-Size: 2039
+Filename: default-settings_3-2_all.ipk
+Size: 2770
+SHA256sum: 9329c492c9a1a98871e84f1a476812511aea94482ed2d0a925d47659322f2cc5
 Description:  Language Support Packages.
 
 Package: dns2socks
@@ -394,18 +408,18 @@ Description:  This package contains essential ext2 filesystem utilities which co
  e2fsck, mke2fs and most of the other core ext2 filesystem utilities.
 
 Package: eip197-mini-firmware
-Version: 20230515-1
+Version: 20230625-1
 Depends: libc
 Source: package/firmware/linux-firmware
 SourceName: eip197-mini-firmware
 Section: firmware
-SourceDateEpoch: 1684252477
+SourceDateEpoch: 1689343695
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_cortex-a53
-Installed-Size: 424
-Filename: eip197-mini-firmware_20230515-1_aarch64_cortex-a53.ipk
-Size: 1156
-SHA256sum: b5925dbcf146b4d6e98de040e7371f5facb61d65e415549eb3bcec7ca79bd07b
+Installed-Size: 423
+Filename: eip197-mini-firmware_20230625-1_aarch64_cortex-a53.ipk
+Size: 1157
+SHA256sum: b2148f8cc05de2e1326f083bf7ff7d2712864c190f4d505cc21469cf0dd8632f
 Description:  Inside Secure EIP197 mini firmware
 
 Package: fdisk
@@ -1567,6 +1581,22 @@ Size: 71188
 SHA256sum: 6311ac7bb293b2581b9c3f3491f2e0e21a86a3b29948f8bf292cdf7690a1d1e5
 Description:  lsblk lists information about all or the specified block devices
 
+Package: lua-maxminddb
+Version: 0.2-4
+Depends: libc, lua, libmaxminddb
+Source: package/lua-maxminddb
+SourceName: lua-maxminddb
+License: MIT
+Section: lang
+SourceDateEpoch: 1634959980
+Maintainer: fabled
+Architecture: aarch64_cortex-a53
+Installed-Size: 2655
+Filename: lua-maxminddb_0.2-4_aarch64_cortex-a53.ipk
+Size: 3343
+SHA256sum: c930803a285cbd2a140c2c7423ca1f143f387061da6c41f0e0b39df56d3d21f1
+Description:  libmaxminddb bindings for lua
+
 Package: lua-neturl
 Version: 1.1-1-3
 Depends: libc, lua
@@ -1620,19 +1650,46 @@ SHA256sum: c93754b5be37aed15410a56e3064ac464d21533940b94306d192847045fd686b
 Description:  LuCI Support of Simple Switch to turn LingTiGameAcc ON/OFF
 
 Package: luci-app-adguardhome
-Version: git-23.173.06109-27b48b4-1
-Depends: libc, wget-ssl, xz-utils, xz
-Source: package/small-package/luci-app-adguardhome
+Version: 1.8-11
+Depends: libc, wget
+Source: package/luci-app-adguardhome
 SourceName: luci-app-adguardhome
 Section: luci
-SourceDateEpoch: 1680703346
-Maintainer: <https://github.com/rufengsuixing/luci-app-adguardhome>
+SourceDateEpoch: 1578845896
 Architecture: all
-Installed-Size: 91423
-Filename: luci-app-adguardhome_git-23.173.06109-27b48b4-1_all.ipk
-Size: 92551
-SHA256sum: 319220f3fb09a72a0f0bef3e6b50452f8261a425e3d3686c33c676c7085eb0ef
-Description:  LuCI support for AdGuardHome
+Installed-Size: 90659
+Filename: luci-app-adguardhome_1.8-11_all.ipk
+Size: 91749
+SHA256sum: 308c8ddf38f960262064d170606a6425b9bfa8bb3da672a493ef492d7c29663f
+Description:  LuCI support for adguardhome
+
+Package: luci-app-alist
+Version: 1.0.10-1
+Depends: libc, alist, luci-compat
+Source: package/luci-app-alist
+SourceName: luci-app-alist
+Section: luci
+SourceDateEpoch: 1687402786
+Architecture: all
+Installed-Size: 7350
+Filename: luci-app-alist_1.0.10-1_all.ipk
+Size: 8084
+SHA256sum: 303bf003b954f78075adfe11266771e12c58998ada46fe5f271fdea6358e74c4
+Description:  LuCI support for alist
+
+Package: luci-app-bypass
+Version: git-23.216.57062-20f23ca-1
+Depends: libc, ipset, kmod-ipt-nat, ip-full, iptables-mod-tproxy, lua-neturl, dnsmasq-full, smartdns, coreutils, coreutils-base64, curl, tcping, chinadns-ng, lua, luci-compat, luci-lib-ipkg, unzip, lua-maxminddb, shadowsocks-libev-ss-server, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-server, v2ray-plugin, xray-core, trojan-plus, naiveproxy, kcptun-client, hysteria, redsocks2, microsocks
+Source: package/luci-app-bypass
+SourceName: luci-app-bypass
+Section: luci
+SourceDateEpoch: 1687402786
+Architecture: all
+Installed-Size: 2646892
+Filename: luci-app-bypass_git-23.216.57062-20f23ca-1_all.ipk
+Size: 2465113
+SHA256sum: 990fad665ff0bdf3569a8144fb3e175b7b51c61658252e5b88e6a429237482c4
+Description:  SS/SSR/Xray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
 
 Package: luci-app-nezha-agent
 Version: 2.0-1
@@ -1648,6 +1705,20 @@ Filename: luci-app-nezha-agent_2.0-1_all.ipk
 Size: 2871
 SHA256sum: ec45e11834da03b5cb27d1dbbe7d7c19911b22dba5204695cecbd3ab2a437b79
 Description:  LuCI support for nezha agent
+
+Package: luci-app-oaf
+Version: 5.0.2-1
+Depends: libc, appfilter, kmod-oaf, luci-compat
+Source: package/OpenAppFilter/luci-app-oaf
+SourceName: luci-app-oaf
+Section: luci
+SourceDateEpoch: 1686909178
+Architecture: all
+Installed-Size: 269019
+Filename: luci-app-oaf_5.0.2-1_all.ipk
+Size: 269912
+SHA256sum: f69e4f64c524f579a1b5ca1c4eb21bc789de0263f209a0207ea3bfe7507c4055
+Description:  Open App Filter Module
 
 Package: luci-app-openclash
 Version: 0.45.121-beta
@@ -1665,17 +1736,17 @@ SHA256sum: c458c99e554a3465c2234e4e57acf10cc78950ed14b0749f227884fdda6c6020
 Description:  A LuCI support for clash
 
 Package: luci-app-passwall2
-Version: 1.16-6
-Depends: libc, coreutils, coreutils-base64, coreutils-nohup, curl, ip-full, libuci-lua, lua, luci-compat, luci-lib-jsonc, resolveip, tcping, xray-core, v2ray-geoip, v2ray-geosite, unzip, brook, haproxy, hysteria, naiveproxy, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocks-libev-ss-server, shadowsocks-rust-sslocal, shadowsocks-rust-ssserver, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-server, simple-obfs, v2ray-core, v2ray-plugin
+Version: 1.17-2
+Depends: libc, coreutils, coreutils-base64, coreutils-nohup, curl, ip-full, libuci-lua, lua, luci-compat, luci-lib-jsonc, resolveip, tcping, xray-core, v2ray-geoip, v2ray-geosite, unzip, brook, haproxy, hysteria, naiveproxy, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocks-libev-ss-server, shadowsocks-rust-sslocal, shadowsocks-rust-ssserver, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-server, simple-obfs, v2ray-core
 Source: package/openwrt-passwall2/luci-app-passwall2
 SourceName: luci-app-passwall2
 Section: luci
-SourceDateEpoch: 1687851365
+SourceDateEpoch: 1690563936
 Architecture: all
-Installed-Size: 200367
-Filename: luci-app-passwall2_1.16-6_all.ipk
-Size: 201335
-SHA256sum: 28ef05fdfdc24cc4955c6264de8ba6dd05b3d3471ffa963c91030ac492eaee14
+Installed-Size: 201911
+Filename: luci-app-passwall2_1.17-2_all.ipk
+Size: 202879
+SHA256sum: 88cebf694e8e19357ca9a88e91c67f940a42361f43828aa7f39dea10ebe7d065
 Description:  LuCI support for PassWall 2
 
 Package: luci-app-passwall
@@ -1686,10 +1757,10 @@ SourceName: luci-app-passwall
 Section: luci
 SourceDateEpoch: 1687402786
 Architecture: all
-Installed-Size: 967880
+Installed-Size: 967902
 Filename: luci-app-passwall_4.66-8_all.ipk
-Size: 968013
-SHA256sum: 75bcc469c7ffa90f816c582a5a0d6579ad9f7828513d6f0fc2d5fd899eb626a4
+Size: 968034
+SHA256sum: 5694b72f06bb5a94218a49c617302eb5b59c4b73e032f7a0c5cce3b6a67207dc
 Description:  LuCI support for PassWall
 
 Package: luci-app-poweroff
@@ -1708,7 +1779,7 @@ Description:  LuCI Support of PowerOff Router
 
 Package: luci-app-ssr-plus
 Version: 187-1
-Depends: libc, coreutils, coreutils-base64, dns2socks, dns2tcp, dnsmasq-full, ipset, kmod-ipt-nat, ip-full, iptables, iptables-mod-tproxy, lua, lua-neturl, libuci-lua, microsocks, tcping, resolveip, shadowsocksr-libev-ssr-check, uclient-fetch, curl, xray-core, chinadns-ng, ipt2socks, shadowsocks-rust-sslocal, shadowsocks-rust-ssserver, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, trojan
+Depends: libc, coreutils, coreutils-base64, dns2socks, dns2tcp, dnsmasq-full, ipset, kmod-ipt-nat, ip-full, iptables, iptables-mod-tproxy, lua, lua-neturl, libuci-lua, microsocks, tcping, resolveip, shadowsocksr-libev-ssr-check, uclient-fetch, curl, xray-core, chinadns-ng, hysteria, ipt2socks, kcptun-client, naiveproxy, redsocks2, shadowsocks-rust-sslocal, shadowsocks-rust-ssserver, simple-obfs, v2ray-plugin, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, trojan
 Source: package/helloworld/luci-app-ssr-plus
 SourceName: luci-app-ssr-plus
 Section: luci
@@ -1716,8 +1787,8 @@ SourceDateEpoch: 1687030769
 Architecture: all
 Installed-Size: 272047
 Filename: luci-app-ssr-plus_187-1_all.ipk
-Size: 272182
-SHA256sum: ae062463ca0b5882aa1fce623501f8fa45b33f260a3c704fd525780a6fb0b258
+Size: 272222
+SHA256sum: fda2f303cd122b8bea04d46cfc45a0b0716f14f09d63a0afe9294641293f1d13
 Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
 
 Package: luci-app-store
@@ -1749,6 +1820,34 @@ Size: 1720
 SHA256sum: bdc4d6e695b48eb63fbe7e1c81d032b2be275716dad2dc4c94d724cc6ad0bd44
 Description:  LuCI support disable usb3
 
+Package: luci-app-v2raya
+Version: 10-1
+Depends: libc, v2raya
+Source: package/v2raya-openwrt/luci-app-v2raya
+SourceName: luci-app-v2raya
+Section: luci
+SourceDateEpoch: 1679334860
+Architecture: all
+Installed-Size: 3031
+Filename: luci-app-v2raya_10-1_all.ipk
+Size: 3715
+SHA256sum: d57b5856365056a605aef051e1a41d5f38f276a7b2d91eda97ebf7b0c2d15e3f
+Description:  LuCI support for v2rayA
+
+Package: luci-app-vssr
+Version: 1.25-20220423
+Depends: libc, ipset, ip-full, iptables-mod-tproxy, dnsmasq-full, coreutils, coreutils-base64, bash, pdnsd-alt, wget-ssl, lua, luasocket, lua-maxminddb, lua-cjson, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-check, simple-obfs, xray-core, trojan, ipt2socks, kcptun-client, xray-plugin, shadowsocksr-libev-ssr-server, hysteria
+Source: package/luci-app-vssr
+SourceName: luci-app-vssr
+Section: luci
+SourceDateEpoch: 1668701143
+Architecture: all
+Installed-Size: 5568625
+Filename: luci-app-vssr_1.25-20220423_all.ipk
+Size: 5293456
+SHA256sum: ad44845128f25765b70e99a8dbddf96441dfade0571d9dae9f4b91602073d73d
+Description:  A New SS/SSR/Xray/Trojan LuCI interface
+
 Package: luci-i18n-adguardhome-zh-cn
 Version: git-23.173.06109-27b48b4-1
 Depends: libc, luci-app-adguardhome
@@ -1763,6 +1862,48 @@ Filename: luci-i18n-adguardhome-zh-cn_git-23.173.06109-27b48b4-1_all.ipk
 Size: 3857
 SHA256sum: badc8de938e764208708e9488fe400b98de646da584fe3e7f5bc6b55f6c48dab
 Description:  Translation for luci-app-adguardhome - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-alist-zh-cn
+Version: 1.0.10-1
+Depends: libc, luci-app-alist
+Source: package/luci-app-alist
+SourceName: luci-i18n-alist-zh-cn
+Section: luci
+SourceDateEpoch: 1687402786
+Architecture: all
+Installed-Size: 1458
+Filename: luci-i18n-alist-zh-cn_1.0.10-1_all.ipk
+Size: 2273
+SHA256sum: 46be1c097f72868b71abf83a84b274746a5c5a25956ad1771b4943957149c590
+Description:  Translation for luci-app-alist - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-bypass-zh-cn
+Version: git-23.216.57062-20f23ca-1
+Depends: libc, luci-app-bypass
+Source: package/luci-app-bypass
+SourceName: luci-i18n-bypass-zh-cn
+Section: luci
+SourceDateEpoch: 1687402786
+Architecture: all
+Installed-Size: 6474
+Filename: luci-i18n-bypass-zh-cn_git-23.216.57062-20f23ca-1_all.ipk
+Size: 7323
+SHA256sum: e83930e5debdc95c570c252a44cf4d617d92de54be1bb786b846d41acbcfed26
+Description:  Translation for luci-app-bypass - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-oaf-zh-cn
+Version: 5.0.2-1
+Depends: libc, luci-app-oaf
+Source: package/OpenAppFilter/luci-app-oaf
+SourceName: luci-i18n-oaf-zh-cn
+Section: luci
+SourceDateEpoch: 1686909178
+Architecture: all
+Installed-Size: 2075
+Filename: luci-i18n-oaf-zh-cn_5.0.2-1_all.ipk
+Size: 2898
+SHA256sum: 2a202932e65ca0810d6d448a33dbcfe2a434d43c94b321f163f0115261fbace9
+Description:  Translation for luci-app-oaf - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-passwall-zh-cn
 Version: 4.66-8
@@ -1779,17 +1920,17 @@ SHA256sum: 265a5e75da966be33641dcb2b2d4254963915e7db5eaefc340cf862c069d10f4
 Description:  Translation for luci-app-passwall - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-passwall2-zh-cn
-Version: 1.16-6
+Version: 1.17-2
 Depends: libc, luci-app-passwall2
 Source: package/openwrt-passwall2/luci-app-passwall2
 SourceName: luci-i18n-passwall2-zh-cn
 Section: luci
-SourceDateEpoch: 1687851365
+SourceDateEpoch: 1690563936
 Architecture: all
-Installed-Size: 12514
-Filename: luci-i18n-passwall2-zh-cn_1.16-6_all.ipk
-Size: 13353
-SHA256sum: 08ac5ec7826bf5ec7c65d6b2a20fa06c3336eac48867b05905e3f10815a86e31
+Installed-Size: 13003
+Filename: luci-i18n-passwall2-zh-cn_1.17-2_all.ipk
+Size: 13843
+SHA256sum: a5cc15855c0e3996771684c18f0ed9ce9c208da4f9fcc1014d89d94c73cc996a
 Description:  Translation for luci-app-passwall2 - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-poweroff-zh-cn
@@ -1819,6 +1960,20 @@ Filename: luci-i18n-ssr-plus-zh-cn_187-1_all.ipk
 Size: 8284
 SHA256sum: 38f8f03aa30b9cf0c3660268e35e48fe6cad5a09580274826f53e73f5f903005
 Description:  Translation for luci-app-ssr-plus - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-vssr-zh-cn
+Version: 1.25-20220423
+Depends: libc, luci-app-vssr
+Source: package/luci-app-vssr
+SourceName: luci-i18n-vssr-zh-cn
+Section: luci
+SourceDateEpoch: 1668701143
+Architecture: all
+Installed-Size: 6135
+Filename: luci-i18n-vssr-zh-cn_1.25-20220423_all.ipk
+Size: 6932
+SHA256sum: cfc795e6d7fede33d5acabd900b1cb2cd58ce261874486e490c137dec6a2e028
+Description:  Translation for luci-app-vssr - 简体中文 (Simplified Chinese)
 
 Package: luci-lib-taskd
 Version: 1.0.17
@@ -1852,17 +2007,17 @@ SHA256sum: a9d84e004dce995a1933ad0d2b628841418a1923761e57a87c41afe6c25ee03e
 Description:  Xterm.js library
 
 Package: luci-theme-argon
-Version: 1.8.2-20230609
+Version: 1.8.3-20230710
 Depends: libc, curl, jsonfilter
 Source: package/luci-theme-argon
 SourceName: luci-theme-argon
 Section: luci
-SourceDateEpoch: 1686419078
+SourceDateEpoch: 1690987580
 Architecture: all
-Installed-Size: 489420
-Filename: luci-theme-argon_1.8.2-20230609_all.ipk
-Size: 490244
-SHA256sum: 6a5d73b3c1356002d1454744530a2073f35c0e61cc1340c8248e527379c7d63d
+Installed-Size: 490410
+Filename: luci-theme-argon_1.8.3-20230710_all.ipk
+Size: 491193
+SHA256sum: 890f375bedf6bcc29ba5785ef9cf38506277747f343895882851b8bf1e7bd312
 Description:  Argon Theme
 
 Package: mdadm
@@ -1920,18 +2075,18 @@ SHA256sum: d9d60c8990482e431b0e949b9cfca531bbde5d9fb3eaf301d92df4711e4a56c9
 Description:  contains: mount, umount, findmnt
 
 Package: mt7986-wo-firmware
-Version: 20230515-1
+Version: 20230625-1
 Depends: libc
 Source: package/firmware/linux-firmware
 SourceName: mt7986-wo-firmware
 Section: firmware
-SourceDateEpoch: 1684252477
+SourceDateEpoch: 1689343695
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_cortex-a53
-Installed-Size: 106390
-Filename: mt7986-wo-firmware_20230515-1_aarch64_cortex-a53.ipk
-Size: 96350
-SHA256sum: 16844e298d7ae95d60295725203dec7a4bd6282d103b000fadec6b9f1e1a066c
+Installed-Size: 106388
+Filename: mt7986-wo-firmware_20230625-1_aarch64_cortex-a53.ipk
+Size: 96362
+SHA256sum: 858077e73438a48dba4ee3d9d8931f3e5225704c58f2c4d45caeb83de4e3e8b0
 Description:  MT7986 offload firmware
 
 Package: naiveproxy
@@ -2221,18 +2376,18 @@ Description:  A set of scripts that abstract QoS configuration into a simple
  entries.
 
 Package: r8152-firmware
-Version: 20230515-1
+Version: 20230625-1
 Depends: libc
 Source: package/firmware/linux-firmware
 SourceName: r8152-firmware
 Section: firmware
-SourceDateEpoch: 1684252477
+SourceDateEpoch: 1689343695
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: aarch64_cortex-a53
 Installed-Size: 10910
-Filename: r8152-firmware_20230515-1_aarch64_cortex-a53.ipk
-Size: 11647
-SHA256sum: 3368a35a6bc8cd74deb08abf46f1480900a65de44105aa00bbbd01456a204484
+Filename: r8152-firmware_20230625-1_aarch64_cortex-a53.ipk
+Size: 11648
+SHA256sum: e40be5addeab0edf06186e3ecc2e208c43735c79bcae397225924cd1b8c64dc5
 Description:  RealTek RTL8152 firmware
 
 Package: redsocks2
@@ -2808,6 +2963,24 @@ Filename: v2ray-plugin_5.7.0-1_aarch64_cortex-a53.ipk
 Size: 4746519
 SHA256sum: c920f71168d198a2d7738fdebbb4cf0f8e68ed3a55f667257310372e35865385
 Description:  SIP003 plugin for shadowsocks, based on v2ray
+
+Package: v2raya
+Version: 1.5.9.1698.1-2
+Depends: libc, ca-bundle, iptables-mod-conntrack-extra, iptables-mod-extra, iptables-mod-filter, iptables-mod-tproxy, kmod-ipt-nat6, xray-core
+Source: package/helloworld/v2raya
+SourceName: v2raya
+License: AGPL-3.0-only
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1677894920
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: aarch64_cortex-a53
+Installed-Size: 9139909
+Filename: v2raya_1.5.9.1698.1-2_aarch64_cortex-a53.ipk
+Size: 9101320
+SHA256sum: 2b42b2c813523469d2ab8b819a267be34026a2257415afd2fdaae60454f87b7f
+Description:  v2rayA is a V2Ray Linux client supporting global transparent proxy,
+ compatible with SS, SSR, Trojan(trojan-go), PingTunnel protocols.
 
 Package: vsftpd-alt
 Version: 3.0.5-1

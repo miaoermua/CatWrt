@@ -1,5 +1,5 @@
 <p align="center">
-<img width="350" src="https://fastly.jsdelivr.net/gh/miaoermua/static@main/images/CatWrt_banner.jpg">
+<img width="350" src="https://fastly.jsdelivr.net/gh/miaoermua/static@main/images/CatWrt_bannerlogo.jpg">
 </p>
 
 <p align="center">

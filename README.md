@@ -8,7 +8,7 @@
 
 <div align="center">
 
-专为好用、稳定可靠的 OpenWrt 路由而服务！
+客制化 OpenWrt 智能网关
 
 [安装扩展](https://www.miaoer.xyz/posts/network/catwrt-expand) | [发行版集合](https://www.miaoer.xyz/posts/network/catwrt) | [❤️ 赞助喵二](https://www.miaoer.xyz/sponsor)
 

@@ -54,97 +54,13 @@ lede/bin/targets = miaoermua/CatWrt/targets
 ***
 ## 使用在线软件源
 
-以下为使用阿里云高校计划的（河源）云服务器 ECS，仅提供 1M 带宽对外使用 1480:http 服务请勿滥用，使用后务必注释掉！
+目前使用 Cloudflare 源，如更新不畅请按照 [博客](https://www.miaoer.xyz/notes/27) 将 catwrt.eu.org 也一并优选。
 
-将 `http://47.113.229.16:1480` 替换为 `https://catwrt.eu.org` 即可使用 Cloudflare CDN 源，但部分地区可能需要网络加速。
+将 `https://catwrt.eu.org` 替换为 `http://47.113.229.16:1480` 国内源，更新缓慢不保证包是最新。
 
 **x86-64**
 
 传统 x86 软路由(amd64)
-
-```mirrors
-src/gz openwrt_core http://47.113.229.16:1480/targets/x86/64/packages
-src/gz openwrt_base http://47.113.229.16:1480/x86_64/base
-src/gz openwrt_luci http://47.113.229.16:1480/x86_64/luci
-src/gz openwrt_packages http://47.113.229.16:1480/x86_64/packages
-src/gz openwrt_routing http://47.113.229.16:1480/x86_64/routing
-src/gz openwrt_telephony http://47.113.229.16:1480/x86_64/telephony
-```
-
-**Geeker_6.1**
-
-Geeker v23.5 k6.1
-
-```mirrors
-src/gz openwrt_core http://47.113.229.16:1480/targets/amd64/geeker_6.1/packages
-src/gz openwrt_base http://47.113.229.16:1480/amd64_6.1/base
-src/gz openwrt_luci http://47.113.229.16:1480/amd64_6.1/luci
-src/gz openwrt_packages http://47.113.229.16:1480/amd64_6.1/packages
-src/gz openwrt_routing http://47.113.229.16:1480/amd64_6.1/routing
-src/gz openwrt_telephony http://47.113.229.16:1480/amd64_6.1/telephony
-```
-
-**aarch64_generic**
-
-电犀牛 r66s，友善 r5s *（适配问题仅可用机型）*
-
-```mirrors
-src/gz openwrt_core http://47.113.229.16:1480/targets/rockchip/armv8/packages
-src/gz openwrt_base http://47.113.229.16:1480/aarch64_generic/base
-src/gz openwrt_luci http://47.113.229.16:1480/aarch64_generic/luci
-src/gz openwrt_packages http://47.113.229.16:1480/aarch64_generic/packages
-src/gz openwrt_routing http://47.113.229.16:1480/aarch64_generic/routing
-src/gz openwrt_telephony http://47.113.229.16:1480/aarch64_generic/telephony
-```
-
-**mt798x**
-
-* 测试版本有问题请反馈
-
-支持 TP-link TL-XDR 4288/6086/6088，Redmi AX6000，Xiaomi WR30U，jcg q30，glinet mt3000，H3C nx30Pro
-
-```mirrors
-src/gz openwrt_core https://catwrt.eu.org/targets/mt798x/filogic/packages
-src/gz openwrt_base http://47.113.229.16:1480/mt798x/base
-src/gz openwrt_luci http://47.113.229.16:1480/mt798x/luci
-src/gz openwrt_packages http://47.113.229.16:1480/mt798x/packages
-src/gz openwrt_routing http://47.113.229.16:1480/mt798x/routing
-src/gz openwrt_telephony http://47.113.229.16:1480/mt798x/telephony
-```
-
-**mt7986a**
-
-红米 AX6000，TL-XDR 6086/6088
-
-```mirrors
-src/gz openwrt_core http://47.113.229.16:1480/targets/mediatek/filogic/packages
-src/gz openwrt_base http://47.113.229.16:1480/mt7986a/base
-src/gz openwrt_luci http://47.113.229.16:1480/mt7986a/luci
-src/gz openwrt_packages http://47.113.229.16:1480/mt7986a/packages
-src/gz openwrt_routing http://47.113.229.16:1480/mt7986a/routing
-src/gz openwrt_telephony http://47.113.229.16:1480/mt7986a/telephony
-```
-
-**mt7621**
-
-小米/红米 AC2100，新路由3（Newifi_d2）
-
-```mirrors
-src/gz openwrt_core http://47.113.229.16:1480/targets/ramips/mt7621/packages
-src/gz openwrt_base http://47.113.229.16:1480/mipsel_24kc/base
-src/gz openwrt_luci http://47.113.229.16:1480/mipsel_24kc/luci
-src/gz openwrt_packages http://47.113.229.16:1480/mipsel_24kc/packages
-src/gz openwrt_routing http://47.113.229.16:1480/mipsel_24kc/routing
-src/gz openwrt_telephony http://47.113.229.16:1480/mipsel_24kc/telephony
-```
-
-***
-
-## 源的另外使用方法
-
-### 使用 Cloudflare
-
-使用 Cloudflare CDN 源示例（也是消耗服务器资源，请节约使用）
 
 ```mirrors
 src/gz openwrt_core https://catwrt.eu.org/targets/x86/64/packages
@@ -155,18 +71,87 @@ src/gz openwrt_routing https://catwrt.eu.org/x86_64/routing
 src/gz openwrt_telephony https://catwrt.eu.org/x86_64/telephony
 ```
 
+**Geeker_6.1**
+
+Geeker v23.5 k6.1
+
+```mirrors
+src/gz openwrt_core https://catwrt.eu.org/targets/amd64/geeker_6.1/packages
+src/gz openwrt_base https://catwrt.eu.org/amd64_6.1/base
+src/gz openwrt_luci https://catwrt.eu.org/amd64_6.1/luci
+src/gz openwrt_packages https://catwrt.eu.org/amd64_6.1/packages
+src/gz openwrt_routing https://catwrt.eu.org/amd64_6.1/routing
+src/gz openwrt_telephony https://catwrt.eu.org/amd64_6.1/telephony
+```
+
+**aarch64_generic**
+
+电犀牛 r66s，友善 r5s *（适配问题仅可用机型）*
+
+```mirrors
+src/gz openwrt_core https://catwrt.eu.org/targets/rockchip/armv8/packages
+src/gz openwrt_base https://catwrt.eu.org/aarch64_generic/base
+src/gz openwrt_luci https://catwrt.eu.org/aarch64_generic/luci
+src/gz openwrt_packages https://catwrt.eu.org/aarch64_generic/packages
+src/gz openwrt_routing https://catwrt.eu.org/aarch64_generic/routing
+src/gz openwrt_telephony https://catwrt.eu.org/aarch64_generic/telephony
+```
+
+**mt798x**
+
+支持 TP-link TL-XDR 4288/6086/6088，Xiaomi Redmi AX6000，Xiaomi WR30U，jcg q30，GL.inet mt3000，H3C nx30Pro
+
+```mirrors
+src/gz openwrt_core https://catwrt.eu.org/targets/mt798x/filogic/packages
+src/gz openwrt_base https://catwrt.eu.org/mt798x/base
+src/gz openwrt_luci https://catwrt.eu.org/mt798x/luci
+src/gz openwrt_packages https://catwrt.eu.org/mt798x/packages
+src/gz openwrt_routing https://catwrt.eu.org/mt798x/routing
+src/gz openwrt_telephony https://catwrt.eu.org/mt798x/telephony
+```
+
+**mt7986a**
+
+红米 AX6000
+
+```mirrors
+src/gz openwrt_core https://catwrt.eu.org/targets/mediatek/filogic/packages
+src/gz openwrt_base https://catwrt.eu.org/mt7986a/base
+src/gz openwrt_luci https://catwrt.eu.org/mt7986a/luci
+src/gz openwrt_packages https://catwrt.eu.org/mt7986a/packages
+src/gz openwrt_routing https://catwrt.eu.org/mt7986a/routing
+src/gz openwrt_telephony https://catwrt.eu.org/mt7986a/telephony
+```
+
+**mt7621**
+
+小米/红米 AC2100，新路由3（Newifi_d2）
+
+```mirrors
+src/gz openwrt_core https://catwrt.eu.org/targets/ramips/mt7621/packages
+src/gz openwrt_base https://catwrt.eu.org/mipsel_24kc/base
+src/gz openwrt_luci https://catwrt.eu.org/mipsel_24kc/luci
+src/gz openwrt_packages https://catwrt.eu.org/mipsel_24kc/packages
+src/gz openwrt_routing https://catwrt.eu.org/mipsel_24kc/routing
+src/gz openwrt_telephony https://catwrt.eu.org/mipsel_24kc/telephony
+```
+
+***
+
+## 源的另外使用方法
+
 ### 使用历史（LTS）源
 
 以 CatWrt.v22.2 x86_64 示例
 
 ```mirrors
-src/gz openwrt_core https://downloads.catwrt.miaoer.xyz/history/v22.2/targets/x86/64/packages
-src/gz openwrt_base https://downloads.catwrt.miaoer.xyz/history/v22.2/x86_64/base
-src/gz openwrt_luci https://downloads.catwrt.miaoer.xyz/history/v22.2/x86_64/luci
-src/gz openwrt_oui https://downloads.catwrt.miaoer.xyz/history/v22.2/x86_64/oui
-src/gz openwrt_packages https://downloads.catwrt.miaoer.xyz/history/v22.2/x86_64/packages
-src/gz openwrt_routing https://downloads.catwrt.miaoer.xyz/history/v22.2/x86_64/routing
-src/gz openwrt_telephony https://downloads.catwrt.miaoer.xyz/history/v22.2/x86_64/telephony
+src/gz openwrt_core https://catwrt.eu.org/history/v22.2/targets/x86/64/packages
+src/gz openwrt_base https://catwrt.eu.org/history/v22.2/x86_64/base
+src/gz openwrt_luci https://catwrt.eu.org/history/v22.2/x86_64/luci
+src/gz openwrt_oui https://catwrt.eu.org/history/v22.2/x86_64/oui
+src/gz openwrt_packages https://catwrt.eu.org/history/v22.2/x86_64/packages
+src/gz openwrt_routing https://catwrt.eu.org/history/v22.2/x86_64/routing
+src/gz openwrt_telephony https://catwrt.eu.org/history/v22.2/x86_64/telephony
 ```
 
 ### 部署软件源

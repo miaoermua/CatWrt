@@ -54,9 +54,9 @@ lede/bin/targets = miaoermua/CatWrt/targets
 ***
 ## 使用在线软件源
 
-目前使用 Cloudflare 源，如更新不畅请按照 [博客](https://www.miaoer.xyz/notes/27) 将 catwrt.eu.org 也一并优选。
+如果使用前已经刷新列表 `opkg update` 请先 `rm -f /var/lock/opkg.lock` 清理掉默认腾讯源的索引文件，再将源索引填入 CatWrt 发行版软件源中再刷新。
 
-将 `https://catwrt.eu.org` 替换为 `http://47.113.229.16:1480` 国内源，更新缓慢不保证包是最新。
+> 如果不可用可以在底部寻找其他源。
 
 **x86-64**
 
@@ -84,19 +84,6 @@ src/gz openwrt_routing https://catwrt.eu.org/amd64_6.1/routing
 src/gz openwrt_telephony https://catwrt.eu.org/amd64_6.1/telephony
 ```
 
-**aarch64_generic**
-
-电犀牛 r66s，友善 r5s *（适配问题仅可用机型）*
-
-```mirrors
-src/gz openwrt_core https://catwrt.eu.org/targets/rockchip/armv8/packages
-src/gz openwrt_base https://catwrt.eu.org/aarch64_generic/base
-src/gz openwrt_luci https://catwrt.eu.org/aarch64_generic/luci
-src/gz openwrt_packages https://catwrt.eu.org/aarch64_generic/packages
-src/gz openwrt_routing https://catwrt.eu.org/aarch64_generic/routing
-src/gz openwrt_telephony https://catwrt.eu.org/aarch64_generic/telephony
-```
-
 **mt798x**
 
 支持 TP-link TL-XDR 4288/6086/6088，Xiaomi Redmi AX6000，Xiaomi WR30U，jcg q30，GL.inet mt3000，H3C nx30Pro
@@ -108,6 +95,19 @@ src/gz openwrt_luci https://catwrt.eu.org/mt798x/luci
 src/gz openwrt_packages https://catwrt.eu.org/mt798x/packages
 src/gz openwrt_routing https://catwrt.eu.org/mt798x/routing
 src/gz openwrt_telephony https://catwrt.eu.org/mt798x/telephony
+```
+
+**aarch64_generic**
+
+电犀牛 r66s，友善 r5s *（适配问题仅可用机型）*
+
+```mirrors
+src/gz openwrt_core https://catwrt.eu.org/targets/rockchip/armv8/packages
+src/gz openwrt_base https://catwrt.eu.org/aarch64_generic/base
+src/gz openwrt_luci https://catwrt.eu.org/aarch64_generic/luci
+src/gz openwrt_packages https://catwrt.eu.org/aarch64_generic/packages
+src/gz openwrt_routing https://catwrt.eu.org/aarch64_generic/routing
+src/gz openwrt_telephony https://catwrt.eu.org/aarch64_generic/telephony
 ```
 
 **mt7986a**
@@ -139,6 +139,32 @@ src/gz openwrt_telephony https://catwrt.eu.org/mipsel_24kc/telephony
 ***
 
 ## 源的另外使用方法
+
+### 换可用源
+
+有时候 Cloudflare 并不是能访问的情况下，替换一下域名即可
+
+例如使用 vercel 提供的直连节点源: https://vercel.catwrt.eu.org
+
+```mirrors
+src/gz openwrt_core https://vercel.catwrt.eu.org/targets/mt798x/filogic/packages
+src/gz openwrt_base https://vercel.catwrt.eu.org/mt798x/base
+src/gz openwrt_luci https://vercel.catwrt.eu.org/mt798x/luci
+src/gz openwrt_packages https://vercel.catwrt.eu.org/mt798x/packages
+src/gz openwrt_routing https://vercel.catwrt.eu.org/mt798x/routing
+src/gz openwrt_telephony https://vercel.catwrt.eu.org/mt798x/telephony
+```
+
+例如使用阿里云(河源数据中心)提供的直连节点源: http://47.113.229.16:1480
+
+```mirrors
+src/gz openwrt_core http://47.113.229.16:1480/targets/mt798x/filogic/packages
+src/gz openwrt_base http://47.113.229.16:1480/mt798x/base
+src/gz openwrt_luci http://47.113.229.16:1480/mt798x/luci
+src/gz openwrt_packages http://47.113.229.16:1480/mt798x/packages
+src/gz openwrt_routing http://47.113.229.16:1480/mt798x/routing
+src/gz openwrt_telephony http://47.113.229.16:1480/mt798x/telephony
+```
 
 ### 使用历史（LTS）源
 

@@ -10,7 +10,7 @@
 
 客制化 OpenWrt 智能网关
 
-[安装扩展](https://www.miaoer.xyz/posts/network/catwrt-expand) | [发行版集合](https://www.miaoer.xyz/posts/network/catwrt) | [❤️ 赞助喵二](https://www.miaoer.xyz/sponsor)
+[扩展安装](https://www.miaoer.xyz/posts/network/catwrt-install-application) | [发行版集合](https://www.miaoer.xyz/posts/network/catwrt) | [❤️ 赞助喵二](https://www.miaoer.xyz/sponsor)
 
 [![](https://img.shields.io/badge/blog-@CatWrt.svg)](https://www.miaoer.xyz/network/catwrt)
 [![](https://img.shields.io/github/v/release/miaoermua/CatWrt)](https://github.com/miaoermua/CatWrt/releases)
@@ -54,13 +54,17 @@ lede/bin/targets = miaoermua/CatWrt/targets
 ***
 ## 使用在线软件源
 
+> [使用教程](https://www.miaoer.xyz/posts/network/catwrt-install-application) , [应用列表](https://www.miaoer.xyz/posts/network/catwrt-applist)
+
 如果使用前已经刷新列表 `opkg update` 请先 `rm -f /var/lock/opkg.lock` 清理掉默认腾讯源的索引文件，再将源索引填入 CatWrt 发行版软件源中再刷新。
 
-> 如果不可用可以在底部寻找其他源。
+如果不可用可以在底部寻找其他源。
 
 **x86-64**
 
-传统 x86 软路由(amd64)
+传统 x86 软路由 (amd64)
+
+版本：v23.8
 
 ```mirrors
 src/gz openwrt_core https://catwrt.eu.org/targets/x86/64/packages
@@ -73,7 +77,7 @@ src/gz openwrt_telephony https://catwrt.eu.org/x86_64/telephony
 
 **Geeker_6.1**
 
-Geeker v23.5 k6.1
+版本：Geeker v23.5 kernel 6.1
 
 ```mirrors
 src/gz openwrt_core https://catwrt.eu.org/targets/amd64/geeker_6.1/packages
@@ -88,6 +92,8 @@ src/gz openwrt_telephony https://catwrt.eu.org/amd64_6.1/telephony
 
 支持 TP-link TL-XDR 4288/6086/6088，Xiaomi Redmi AX6000，Xiaomi WR30U，jcg q30，GL.inet mt3000，H3C nx30Pro
 
+版本：v23.8
+
 ```mirrors
 src/gz openwrt_core https://catwrt.eu.org/targets/mt798x/filogic/packages
 src/gz openwrt_base https://catwrt.eu.org/mt798x/base
@@ -101,6 +107,8 @@ src/gz openwrt_telephony https://catwrt.eu.org/mt798x/telephony
 
 电犀牛 r66s，友善 r5s *（适配问题仅可用机型）*
 
+版本：v22.12
+
 ```mirrors
 src/gz openwrt_core https://catwrt.eu.org/targets/rockchip/armv8/packages
 src/gz openwrt_base https://catwrt.eu.org/aarch64_generic/base
@@ -112,7 +120,9 @@ src/gz openwrt_telephony https://catwrt.eu.org/aarch64_generic/telephony
 
 **mt7986a**
 
-红米 AX6000
+Xiaomi Redmi AX6000（视频同款适配版本）
+
+版本：v23.2
 
 ```mirrors
 src/gz openwrt_core https://catwrt.eu.org/targets/mediatek/filogic/packages
@@ -125,7 +135,9 @@ src/gz openwrt_telephony https://catwrt.eu.org/mt7986a/telephony
 
 **mt7621**
 
-小米/红米 AC2100，新路由3（Newifi_d2）
+小米/红米 AC2100，新路由 3（Newifi_d2）
+
+版本：v22.12
 
 ```mirrors
 src/gz openwrt_core https://catwrt.eu.org/targets/ramips/mt7621/packages
@@ -136,15 +148,13 @@ src/gz openwrt_routing https://catwrt.eu.org/mipsel_24kc/routing
 src/gz openwrt_telephony https://catwrt.eu.org/mipsel_24kc/telephony
 ```
 
-***
+### 换源
 
-## 源的另外使用方法
-
-### 换可用源
+#### 换可用源
 
 有时候 Cloudflare 并不是能访问的情况下，替换一下域名即可
 
-例如使用 vercel 提供的直连节点源: https://vercel.catwrt.eu.org
+例如使用 vercel 提供的直连节点源
 
 ```mirrors
 src/gz openwrt_core https://vercel.catwrt.eu.org/targets/mt798x/filogic/packages
@@ -155,7 +165,7 @@ src/gz openwrt_routing https://vercel.catwrt.eu.org/mt798x/routing
 src/gz openwrt_telephony https://vercel.catwrt.eu.org/mt798x/telephony
 ```
 
-例如使用阿里云(河源数据中心)提供的直连节点源: http://47.113.229.16:1480
+例如使用阿里云 (河源数据中心) 提供的直连节点源
 
 ```mirrors
 src/gz openwrt_core http://47.113.229.16:1480/targets/mt798x/filogic/packages
@@ -166,7 +176,9 @@ src/gz openwrt_routing http://47.113.229.16:1480/mt798x/routing
 src/gz openwrt_telephony http://47.113.229.16:1480/mt798x/telephony
 ```
 
-### 使用历史（LTS）源
+#### 使用历史（LTS）源
+
+在博客发布的都是长期支持版本 (LTS) 历史版本都加在 /history 文件夹内
 
 以 CatWrt.v22.2 x86_64 示例
 
@@ -180,13 +192,13 @@ src/gz openwrt_routing https://catwrt.eu.org/history/v22.2/x86_64/routing
 src/gz openwrt_telephony https://catwrt.eu.org/history/v22.2/x86_64/telephony
 ```
 
-### 部署软件源
+#### 部署软件源
 
 你可以将此仓库部署在你自己的服务器上搭建属于自己的软件源
 
 <br>
 
-- 使用 Docker 部署（🚀 支持 x86-64 和 ARM64 平台软路由安装）
+- 使用 Docker 部署
 
 ```bash
 $ docker run -d -p 1480:80 miaoer/catwrt-soft:latest

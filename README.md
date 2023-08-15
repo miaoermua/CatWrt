@@ -52,7 +52,6 @@ lede/bin/targets = miaoermua/CatWrt/targets
 ```
 
 ***
-## 使用在线软件源
 
 ## 软件源
 

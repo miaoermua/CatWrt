@@ -75,19 +75,6 @@ src/gz openwrt_routing https://catwrt.eu.org/x86_64/routing
 src/gz openwrt_telephony https://catwrt.eu.org/x86_64/telephony
 ```
 
-**Geeker_6.1**
-
-版本：Geeker v23.5 kernel 6.1
-
-```mirrors
-src/gz openwrt_core https://catwrt.eu.org/targets/amd64/geeker_6.1/packages
-src/gz openwrt_base https://catwrt.eu.org/amd64_6.1/base
-src/gz openwrt_luci https://catwrt.eu.org/amd64_6.1/luci
-src/gz openwrt_packages https://catwrt.eu.org/amd64_6.1/packages
-src/gz openwrt_routing https://catwrt.eu.org/amd64_6.1/routing
-src/gz openwrt_telephony https://catwrt.eu.org/amd64_6.1/telephony
-```
-
 **mt798x**
 
 支持 TP-link TL-XDR 4288/6086/6088，Xiaomi Redmi AX6000，Xiaomi WR30U，jcg q30，GL.inet mt3000，H3C nx30Pro

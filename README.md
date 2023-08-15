@@ -54,11 +54,18 @@ lede/bin/targets = miaoermua/CatWrt/targets
 ***
 ## 使用在线软件源
 
-> [使用教程](https://www.miaoer.xyz/posts/network/catwrt-install-application) , [应用列表](https://www.miaoer.xyz/posts/network/catwrt-applist)
+## 软件源
 
-如果使用前已经刷新列表 `opkg update` 请先 `rm -f /var/lock/opkg.lock` 清理掉默认腾讯源的索引文件，再将源索引填入 CatWrt 发行版软件源中再刷新。
+假如使用前已经刷新列表 `opkg update` 请先在终端 `rm -f /var/lock/opkg.lock` 清理掉默认腾讯源的索引文件，再将源索引填入 CatWrt 发行版软件源中再刷新。
 
-如果不可用可以在底部寻找其他源。
+> 如果不可用无法连接，可以在底部寻找其他源的使用方法示例，当然你也可以在使用之前就测试每一个可用的源。
+
+- VPS (Cloudflare Proxy): https://catwrt.eu.org
+- Vercel: https://vercel.catwrt.eu.org
+- Netlify: https://netlify.catwrt.eu.org
+- Aliyun: http://47.113.229.16:1480
+- Vercel (Cloudflare Proxy): https://cfvercel.catwrt.eu.org
+- Netlify (Cloudflare Proxy): https://cfnetlify.catwrt.eu.org
 
 **x86-64**
 

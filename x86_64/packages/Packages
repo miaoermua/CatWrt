@@ -49,6 +49,43 @@ Description:  Powerful adblock solution to block ad/abuse domains via dnsmasq, u
  Please see https://github.com/openwrt/packages/blob/master/net/adblock/files/README.md for further information.
  
 
+Package: alsa-lib
+Version: 1.2.6.1-1
+Depends: libc, kmod-sound-core, libpthread, librt
+License: LGPL-2.1-or-later
+Section: libs
+Architecture: x86_64
+Installed-Size: 406050
+Filename: alsa-lib_1.2.6.1-1_x86_64.ipk
+Size: 405642
+SHA256sum: 9e5cfce6d15003b17d4c412623637e21e181dfce6858d0c24b5fcf76111ab37a
+Description:  This is the library package for alsa, needed by some userspace programs.
+ You must have enabled the ALSA support in the kernel.
+
+Package: alsa-ucm-conf
+Version: 1.2.6.2-1
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+Architecture: all
+Installed-Size: 38963
+Filename: alsa-ucm-conf_1.2.6.2-1_all.ipk
+Size: 39449
+SHA256sum: 0349e15fd5cefd159834fc6dfcd64fa11e9c556222c79d4ef81f087192ee360e
+Description:  This is a set of configuration files needed for some ALS utilities like alsactl.
+
+Package: alsa-utils
+Version: 1.2.6-1
+Depends: libc, alsa-lib, alsa-ucm-conf, libncursesw6, libpthread
+License: GPL-2.0-or-later
+Section: sound
+Architecture: x86_64
+Installed-Size: 138353
+Filename: alsa-utils_1.2.6-1_x86_64.ipk
+Size: 139062
+SHA256sum: 6128828b8567f7c488abfeef885183ebf8d0b5e01511fda85ce40c7c3a16df50
+Description:  ALSA (Advanced Linux Sound Architecture) utilities
+
 Package: aria2
 Version: 1.36.0-2
 Depends: libc, zlib, libstdcpp6, libopenssl1.1
@@ -90,6 +127,18 @@ Description:  Extended attributes support
  - attr
  - getfattr
  - setfattr
+
+Package: autossh
+Version: 1.4g-2
+Depends: libc
+License: 0BSD
+Section: net
+Architecture: x86_64
+Installed-Size: 10454
+Filename: autossh_1.4g-2_x86_64.ipk
+Size: 11205
+SHA256sum: 10fb5ca8bbba506b909abad60aeb49a1282848b7131e5152ef92f8f6c336c5ea
+Description:  Autossh client
 
 Package: avahi-dbus-daemon
 Version: 0.8-7
@@ -423,8 +472,8 @@ Section: net
 Architecture: x86_64
 Installed-Size: 85834
 Filename: dnsforwarder_6.1.15-11_x86_64.ipk
-Size: 86695
-SHA256sum: 7262d80ec2e914259cfb7730887b30b54d1d18cfbe1a8c007944ea30846fc08c
+Size: 86700
+SHA256sum: 7d50d45b692ebb718aff24b2203e5ef20ac052aa7857a54f30d8635325f423ab
 Description:  Forwarding queries to customized domains (and their subdomains) to specified servers
  over a specified protocol (UDP or TCP). non-standard ports are supported.
 
@@ -472,10 +521,10 @@ Depends: libc, btrfs-progs, ca-certificates, containerd, libdevmapper, libnetwor
 License: Apache-2.0
 Section: utils
 Architecture: x86_64
-Installed-Size: 16735737
+Installed-Size: 16735816
 Filename: dockerd_20.10.17-1_x86_64.ipk
-Size: 16680816
-SHA256sum: d94cd49fc9601fdfc7aec4aec417d60296b5d42743be4113abf66e94f489bbf0
+Size: 16680853
+SHA256sum: 4b150e0daf6aff8906b8e1b9d44adf3c2d81a776741fc16dea18ac6cc4fba7b0
 Description:  The Docker CE Engine.
 
 Package: etherwake
@@ -750,6 +799,28 @@ Filename: libcbor0_0.8.0-1_x86_64.ipk
 Size: 19875
 SHA256sum: c3b5f9c0e57d979028c57b6dc4c61938bc2006b3c155ba1f1827f829c8a682f3
 Description:  libcbor is a C library for parsing and generating CBOR, the general-purpose schema-less binary data format.
+
+Package: libconfig11
+Version: 1.7.3-1
+Depends: libc
+Provides: libconfig
+License: LGPL-2.1-or-later
+Section: libs
+ABIVersion: 11
+Architecture: x86_64
+Installed-Size: 18166
+Filename: libconfig11_1.7.3-1_x86_64.ipk
+Size: 19210
+SHA256sum: ca4c4f57511df7176e03d0bf3a5e70ca4f401969e9f83d99163607eb3d9f75cc
+Description:  Libconfig is a simple library for manipulating structured configuration
+ files. This file format is more compact and more readable than XML. And
+ unlike XML, it is type-aware, so it is not necessary to do string
+ parsing in application code.
+ 
+ Libconfig is very compact -- just 38K for the stripped C shared
+ library (less than one-fourth the size of the expat XML parser library)
+ and 66K for the stripped C++ shared library. This makes it well-suited
+ for memory-constrained systems like handheld devices.
 
 Package: libcurl4
 Version: 8.0.1-1
@@ -1106,10 +1177,10 @@ Depends: libc
 License: GPL-2.0
 Section: libs
 Architecture: x86_64
-Installed-Size: 20844
+Installed-Size: 20859
 Filename: libpci_3.8.0-2_x86_64.ipk
-Size: 21552
-SHA256sum: cf97fbf2728d9b58cdc1cafbcf6cab281dc3dcec25788fa9c3e9606f31b0d7ee
+Size: 21576
+SHA256sum: aed412c3735e6d3c113f062ca4b4debc074a310ee00bdc6bde1cb199ce2efca7
 Description:  Linux PCI Libraries
 
 Package: libpcre2
@@ -1197,6 +1268,20 @@ Description:  NaCl (pronounced "salt") is a new easy-to-use high-speed software 
  The same cannot be said of NIST curves, where the specific origins of certain constants are not described by the standards.
  And despite the emphasis on higher security, primitives are faster across-the-board than most implementations of the NIST standards.
 
+Package: libsoxr
+Version: 0.1.3-2
+Depends: libc, libpthread
+License: LGPL-2.1
+Section: libs
+CPE-ID: cpe:/a:sox:sox
+Architecture: x86_64
+Installed-Size: 71312
+Filename: libsoxr_0.1.3-2_x86_64.ipk
+Size: 71950
+SHA256sum: c278a8b19d66aa9f2ad0ef1af3f407e1644825b89d57e5c60363f0cf4bee9ed6
+Description:  The SoX Resampler library
+ High quality, one-dimensional sample-rate conversion library
+
 Package: libtasn1
 Version: 4.19.0-1
 Depends: libc
@@ -1235,6 +1320,21 @@ Size: 19674
 SHA256sum: 9bb2c5fa27573a1ba66258ab21977dd93df8e6fd164c397aa38c06c37b59c048
 Description:  UDNS is a stub DNS resolver library with ability to perform both syncronous
  and asyncronous DNS queries.
+
+Package: libunbound
+Version: 1.13.1-1
+Depends: libc, ca-bundle, libopenssl1.1, libmnl0, libevent2-7, libpthread
+License: BSD-3-Clause
+Section: libs
+CPE-ID: cpe:/a:nlnetlabs:unbound
+Architecture: x86_64
+Installed-Size: 424397
+Filename: libunbound_1.13.1-1_x86_64.ipk
+Size: 420981
+SHA256sum: fe9061aebe508800284e2324db6ec6d9cc835f93ac3cbd872e18e7a72a3fba8b
+Description:  This package contains the Unbound library including 'libevent', 'libmnl', and
+ 'libpthread' to better handle large networks with heavy query loads. Options
+ are available to custom trim Unbound for smaller targets.
 
 Package: liburing
 Version: 2.3-1
@@ -1382,11 +1482,23 @@ Depends: libc, iptables, libip4tc2, libuuid1
 License: BSD-3-Clause
 Section: net
 Architecture: x86_64
-Installed-Size: 56893
+Installed-Size: 56894
 Filename: miniupnpd_2.0.20170421-3_x86_64.ipk
-Size: 57844
-SHA256sum: d1b6f021c862d07a71c8b1857ba6f5b73ba6e4908aff696129f195ec958ad27b
+Size: 57833
+SHA256sum: e51f67e4a75c98a807308ec9cead19541ced8be0b06f941780bab826dbe9bddc
 Description:  Lightweight UPnP IGD, NAT-PMP & PCP daemon
+
+Package: msd_lite
+Version: 1.11-1
+Depends: libc, libpthread
+License: BSD-2-Clause
+Section: net
+Architecture: x86_64
+Installed-Size: 80688
+Filename: msd_lite_1.11-1_x86_64.ipk
+Size: 81568
+SHA256sum: ed2a7e9effeadee699d96daf4d571929aaa10bf8c168c3079dce6001db4502ab
+Description:  Program for IP TV streaming on the network via HTTP
 
 Package: mwan3
 Version: 2.8.8-2
@@ -1413,6 +1525,51 @@ Filename: n2n_3.0-1_x86_64.ipk
 Size: 161489
 SHA256sum: e10f719a3f26f4b88353557024eb9b82f859e51820afac756c8d0b2243fdd9d3
 Description:  This package contains client node and supernode for the N2N infrastructure.
+
+Package: nano-full
+Version: 7.2-1
+Depends: libc, libncurses6
+License: GPL-3.0-or-later
+Section: utils
+CPE-ID: cpe:/a:gnu:nano
+Architecture: x86_64
+Installed-Size: 174292
+Filename: nano-full_7.2-1_x86_64.ipk
+Size: 175542
+SHA256sum: 4faec985e2c9d279f6283ae8bd28b7f7ea3751eba9ba150134157ea54ddd2572
+Description:  nano-full - all features, including syntax highlighting (also uci),
+ multibuffer, Unicode/UTF-8, nanorc, some key bindings.
+ (libmagic-based file type detection is disabled)
+ 
+ Example /etc/nanorc is included. nanorc documentation at
+ https://www.nano-editor.org/dist/latest/nanorc.5.html
+ 
+ Nano is a small and simple text editor for use on the terminal.
+ 
+ Nano started as an enhanced clone of the Pico text editor.
+ Nowadays Nano wants to be a generally useful editor with sensible
+ defaults (linewise scrolling, no automatic line breaking).
+ 
+ Nano is an official GNU package.
+
+Package: nano
+Version: 7.2-1
+Depends: libc, libncurses6
+License: GPL-3.0-or-later
+Section: utils
+CPE-ID: cpe:/a:gnu:nano
+Architecture: x86_64
+Installed-Size: 72186
+Filename: nano_7.2-1_x86_64.ipk
+Size: 73220
+SHA256sum: 187deb46f6f208f3cf99c464c94ea65419aeb9d20579d7da1bb4d4aaa4dbd68e
+Description:  Nano is a small and simple text editor for use on the terminal.
+ 
+ Nano started as an enhanced clone of the Pico text editor.
+ Nowadays Nano wants to be a generally useful editor with sensible
+ defaults (linewise scrolling, no automatic line breaking).
+ 
+ Nano is an official GNU package.
 
 Package: netdata
 Version: 1.33.1-1
@@ -2034,10 +2191,10 @@ License: GPL-3.0-only
 Section: net
 CPE-ID: cpe:/a:samba:samba
 Architecture: x86_64
-Installed-Size: 8148534
+Installed-Size: 8141465
 Filename: samba4-libs_4.14.14-1_x86_64.ipk
-Size: 8103234
-SHA256sum: 2e3bb7dd9095c6426c723d5e82a8680e9ca5e12a40b65bf86e9b02bd3fb25109
+Size: 8096529
+SHA256sum: b4c44f85fe17ac65abb1ac5dacaf2f24b64ccd8e5d08358e616ddc0fcc7236a5
 Description:  Samba 4.14.14 libs
 
 Package: samba4-server
@@ -2048,15 +2205,29 @@ License: GPL-3.0-only
 Section: net
 CPE-ID: cpe:/a:samba:samba
 Architecture: x86_64
-Installed-Size: 237020
+Installed-Size: 237007
 Filename: samba4-server_4.14.14-1_x86_64.ipk
-Size: 238066
-SHA256sum: 141232c89c86289c3166a1c5e083c3cc88e7cf3390706fb28d28dec242e24def
+Size: 238021
+SHA256sum: 59d508588f4cf9ab0bbaca1b6ebf5cbc945054570b1e84c097aa97875d27d2e9
 Description:  installs: smbd (nmbd) smbpasswd pdbedit testparm (nmblookup) (smbcacls sharesec)
  (samba samba-tool ntlm_auth samba-gpupdate samba_dnsupdate samba_kcc samba_spnupdate samba_upgradedns samba_downgrade_db)
  
  This provides the basic fileserver service and is the minimum needed to serve file shares.
  HINT: https://fitzcarraldoblog.wordpress.com/2016/10/17/a-correct-method-of-configuring-samba-for-browsing-smb-shares-in-a-home-network/
+
+Package: screen
+Version: 4.8.0-2
+Depends: libc, libncurses6
+License: GPL-3.0-or-later
+Section: utils
+CPE-ID: cpe:/a:gnu:screen
+Architecture: x86_64
+Installed-Size: 183709
+Filename: screen_4.8.0-2_x86_64.ipk
+Size: 184626
+SHA256sum: b7bb28b3f78fe9aa77a908a19c91c5b94d7323ccad388d14ea56353aafcec4db
+Description:  Screen is a full-screen window manager that multiplexes a physical
+ terminal between several processes, typically interactive shells.
 
 Package: shadowsocks-libev-ss-local
 Version: 3.3.5-1
@@ -2093,6 +2264,26 @@ Filename: shadowsocks-libev-ss-server_3.3.5-1_x86_64.ipk
 Size: 56930
 SHA256sum: c2f92e20b963d4e9f6fc15cad2d262b3db3d58a5d8c139dff2d5f7cf948b8cfa
 Description:  shadowsocks-libev ss-server
+
+Package: shairport-sync-openssl
+Version: 3.3.9-1
+Depends: libc, libpthread, alsa-lib, libconfig11, libdaemon, libpopt0, libopenssl1.1, libavahi-client, libsoxr
+Provides: shairport-sync
+License: MIT
+Section: sound
+Architecture: x86_64
+Installed-Size: 92807
+Filename: shairport-sync-openssl_3.3.9-1_x86_64.ipk
+Size: 93919
+SHA256sum: e44331021cfe2ce9398b4a84d80d2c1317435fa1a32d01bdea975ba89d6a6207
+Description:  Shairport Sync plays audio from iTunes and AirPlay sources, including
+ iOS devices, Quicktime Player and third party sources such as forkedDaapd.
+ Audio played by a Shairport Sync-powered device stays synchronised with the source
+ and hence with similar devices playing the same source.
+ 
+ Shairport Sync does not support AirPlay video or photo streaming.
+ Ensure Kernel Modules > Sound Support > kmod-sound-core is selected.
+ Also select kmod-usb-audio if you want to use USB-connected sound cards.
 
 Package: smartdns
 Version: 1.2023.42-1
@@ -2529,6 +2720,22 @@ Description:  udproxy makes it possible to convert UDP IPTV streams into HTTP
  provider but just use their own streaming client (for example
  popcornhour/mediatomb/vlc).
 
+Package: unbound-daemon
+Version: 1.13.1-1
+Depends: libc, ca-bundle, libopenssl1.1, libunbound
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:nlnetlabs:unbound
+Architecture: x86_64
+Installed-Size: 128128
+Filename: unbound-daemon_1.13.1-1_x86_64.ipk
+Size: 128460
+SHA256sum: ac8c69c1249db6b78d0647d7896be41531ad2f2250b6b98f4d2bd99a459e3d44
+Description:  This package contains the Unbound daemon including 'libevent', 'libmnl', and
+ 'libpthread' to better handle large networks with heavy query loads. Options
+ are available under libraries/network/libunbound to custom trim Unbound for
+ smaller targets.
+
 Package: unzip
 Version: 6.0-8
 Depends: libc
@@ -2657,6 +2864,19 @@ Size: 437356
 SHA256sum: 97023a32b43175833f8a8b4ad8aaa73764585b97293d332f92c91dcd84a4dae9
 Description:  Geosite List for V2Ray
 
+Package: vim
+Version: 8.2-5
+Depends: libc, libncurses6
+Section: utils
+CPE-ID: cpe:/a:vim:vim
+Architecture: x86_64
+Installed-Size: 512507
+Filename: vim_8.2-5_x86_64.ipk
+Size: 512789
+SHA256sum: 16ab8b35157ff3a8515fe36fb17bffbed15fcecdceaf19761b6cf5bb54bea12a
+Description:  Vim is an almost compatible version of the UNIX editor Vi.
+ (Tiny build)
+
 Package: vlmcsd
 Version: svn1113-3
 Depends: libc, libpthread
@@ -2668,6 +2888,18 @@ Filename: vlmcsd_svn1113-3_x86_64.ipk
 Size: 23511
 SHA256sum: 3edcb4e2267bc9eab93b7697c7ccdd007e1273907c372a2326a0f1a61597453e
 Description:  vlmcsd is a KMS Emulator in C.
+
+Package: watchcat
+Version: 1-12
+Depends: libc
+License: GPL-2.0
+Section: utils
+Architecture: all
+Installed-Size: 3297
+Filename: watchcat_1-12_all.ipk
+Size: 4127
+SHA256sum: 7209c64305e7d5f190e291a5803d5adec42e93326e7bc69e0b900cb3edd5d4fa
+Description:  Restart network interfaces or reboot if pings to hosts fail, or set up periodic reboots. Configured via UCI /etc/config/watchcat
 
 Package: wget-ssl
 Version: 1.21.3-1

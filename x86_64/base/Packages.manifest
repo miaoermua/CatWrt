@@ -101,18 +101,18 @@ SHA256sum: 6dc6ac541055f05bf837651199069dc110dd43e2bb0f33812380d7d69ca65915
 Description:  Adbyby is a powerful adblock module to block ad,just like adblock.
 
 Package: amdgpu-firmware
-Version: 20230515-1
+Version: 20230625-1
 Depends: libc
 Source: package/firmware/linux-firmware
 SourceName: amdgpu-firmware
 Section: firmware
-SourceDateEpoch: 1684252477
+SourceDateEpoch: 1689343695
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 25775805
-Filename: amdgpu-firmware_20230515-1_x86_64.ipk
-Size: 25549212
-SHA256sum: 8071fcebe0a652895d5c914feb7ff52de98715c38d3819310a2ba2745ced878f
+Installed-Size: 26105850
+Filename: amdgpu-firmware_20230625-1_x86_64.ipk
+Size: 25874393
+SHA256sum: 287d4261ac47e58229e62a9e4879b76d480a81b2730299df7d8e2cbae6b85cdf
 Description:  AMDGPU Video Driver firmware
 
 Package: appfilter
@@ -130,18 +130,18 @@ SHA256sum: 333cc2e5c1a0eb8d61037574f6739b1a1f0956b9a6fe06aac32094c264f54444
 Description:  open appfilter app
 
 Package: autocore-x86
-Version: 63
-Depends: libc, bc, lm-sensors, ethtool
+Version: 64
+Depends: libc, bc, lm-sensors, ethtool, pciutils
 Source: package/lean/autocore
 SourceName: autocore-x86
 Section: opt
-SourceDateEpoch: 1683647846
+SourceDateEpoch: 1690383439
 Maintainer: Lean
 Architecture: x86_64
-Installed-Size: 8157
-Filename: autocore-x86_63_x86_64.ipk
-Size: 8897
-SHA256sum: ec45794cce88d91afffaccfe6a31af7fb8e356905bc4e9dddd207d88716970dd
+Installed-Size: 8299
+Filename: autocore-x86_64_x86_64.ipk
+Size: 9055
+SHA256sum: db0807dc585926d5c85a95ec0f1dccbf468ff9aae2f740b977329a738182c2bc
 Description:  A usb autoconfig hotplug script.
 
 Package: automount
@@ -193,33 +193,33 @@ Description:  The blkid program is the command-line interface to working with th
  library.
 
 Package: bnx2-firmware
-Version: 20230515-1
+Version: 20230625-1
 Depends: libc
 Source: package/firmware/linux-firmware
 SourceName: bnx2-firmware
 Section: firmware
-SourceDateEpoch: 1684252477
+SourceDateEpoch: 1689343695
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 105165
-Filename: bnx2-firmware_20230515-1_x86_64.ipk
-Size: 105836
-SHA256sum: 9d9214576a6e5c5e7355f5a72c0407e05f964cb666fc64279e7169557f849fe3
+Installed-Size: 105167
+Filename: bnx2-firmware_20230625-1_x86_64.ipk
+Size: 105844
+SHA256sum: 0d0c2d8c36567e3fcf6b9dc4917c67a57b9f05fc7e765dc945a686abafdedea4
 Description:  Broadcom BCM5706/5708/5709/5716 firmware
 
 Package: bnx2x-firmware
-Version: 20230515-1
+Version: 20230625-1
 Depends: libc
 Source: package/firmware/linux-firmware
 SourceName: bnx2x-firmware
 Section: firmware
-SourceDateEpoch: 1684252477
+SourceDateEpoch: 1689343695
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 2421825
-Filename: bnx2x-firmware_20230515-1_x86_64.ipk
-Size: 2415468
-SHA256sum: b49eb5ce5fdd18c2c2baa700e3a490f1eab71c1ee1e01d2fcb6da49727e36f2f
+Installed-Size: 2421821
+Filename: bnx2x-firmware_20230625-1_x86_64.ipk
+Size: 2415497
+SHA256sum: de440e0fdde1e320d716d3ff5fafb51c5c04884f29a7f2764ca22af275286a4d
 Description:  =QLogic 5771x/578xx firmware
 
 Package: brook
@@ -429,7 +429,7 @@ Description:  utility to convert dns query from udp to tcp
 
 Package: dnsmasq-full
 Version: 2.88-1
-Depends: libc, libubus20220601, kmod-ipt-ipset
+Depends: libc, libubus20220601, kmod-ipt-ipset, nftables-json
 Provides: dnsmasq
 Source: package/network/services/dnsmasq
 SourceName: dnsmasq-full
@@ -440,10 +440,10 @@ Require-User: dnsmasq=453:dnsmasq=453
 SourceDateEpoch: 1672058431
 CPE-ID: cpe:/a:thekelleys:dnsmasq
 Architecture: x86_64
-Installed-Size: 174553
+Installed-Size: 175062
 Filename: dnsmasq-full_2.88-1_x86_64.ipk
-Size: 175351
-SHA256sum: f6fdb477d23dda8c4a8770bd4ef9ef4119b3316cf0e8048b4fa0845ec067886f
+Size: 175830
+SHA256sum: de1cc97f280218b226dff583a4540bc79df09c2c72dc9f058b76b3eec7345154
 Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
  
  This is a fully configurable variant with DHCPv4, DHCPv6, DNSSEC, Authoritative DNS
@@ -536,6 +536,42 @@ Size: 2298
 SHA256sum: 375e24651d6511a0e92ef677c64580fac2c3024c0905294741643a53deaeb654
 Description:  OpenWrt getrandom system helper
 
+Package: hostapd-common
+Version: 2022-07-29-b704dc72-7
+Depends: libc
+Source: package/network/services/hostapd
+SourceName: hostapd-common
+License: BSD-3-Clause
+Section: net
+SourceDateEpoch: 1683192219
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 12644
+Filename: hostapd-common_2022-07-29-b704dc72-7_x86_64.ipk
+Size: 13421
+SHA256sum: 3d4d7eed76ffa542300af86d4040293537f67afc1e2c97251c20fae0aab8e0b9
+Description:  hostapd/wpa_supplicant common support files
+
+Package: hostapd
+Version: 2022-07-29-b704dc72-7
+Depends: hostapd-common (=2022-07-29-b704dc72-7), libc, libnl-tiny2022-11-01, hostapd-common, libubus20220601
+Source: package/network/services/hostapd
+SourceName: hostapd
+License: BSD-3-Clause
+Section: net
+Require-User: network=101:network=101
+SourceDateEpoch: 1683192219
+CPE-ID: cpe:/a:w1.fi:hostapd
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 481857
+Filename: hostapd_2022-07-29-b704dc72-7_x86_64.ipk
+Size: 482792
+SHA256sum: 590ff8cc53789d1a0f9658f5e05dfb14470a3003eced5f2fad82e270961fd1ba
+Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
+ Authenticator.
+
 Package: hysteria
 Version: 1.3.5-1
 Depends: libc, ca-bundle
@@ -556,18 +592,18 @@ Description:  Hysteria is a feature-packed network utility optimized for network
  of QUIC protocol.
 
 Package: i915-firmware
-Version: 20230515-1
+Version: 20230625-1
 Depends: libc
 Source: package/firmware/linux-firmware
 SourceName: i915-firmware
 Section: firmware
-SourceDateEpoch: 1684252477
+SourceDateEpoch: 1689343695
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 7776090
-Filename: i915-firmware_20230515-1_x86_64.ipk
-Size: 7748605
-SHA256sum: 4ab6ac1bbce50c0db938e743a4d9fd0a95b9ebf8014adbe11f2393eeaff5c0d5
+Installed-Size: 7776103
+Filename: i915-firmware_20230625-1_x86_64.ipk
+Size: 7748932
+SHA256sum: 341af05d2eca38e4e0f9faf9498416cb343f380b070f5d2963cbe7506942891c
 Description:  Intel GPU firmware
 
 Package: ip-full
@@ -653,6 +689,86 @@ Filename: ipv6helper_1.0-2_all.ipk
 Size: 1281
 SHA256sum: c2198e6fedc562edfeac66de38f1d158fffc01baa6d595794b439ac7ac743b83
 Description:  IPv6 Helper and Dynamic Update he.net of ip
+
+Package: iw
+Version: 5.19-1
+Depends: libc, libnl-tiny2022-11-01
+Source: package/network/utils/iw
+SourceName: iw
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1683192219
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 54374
+Filename: iw_5.19-1_x86_64.ipk
+Size: 55202
+SHA256sum: c1b6eb0b021a07a448f278bdb4b01f590c6d06a31e4c2e470905a54d0565d463
+Description:  cfg80211 interface configuration utility
+
+Package: iwlwifi-firmware-ax200
+Version: 20230625-1
+Depends: libc
+Source: package/firmware/linux-firmware
+SourceName: iwlwifi-firmware-ax200
+Section: firmware
+SourceDateEpoch: 1689343695
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 522479
+Filename: iwlwifi-firmware-ax200_20230625-1_x86_64.ipk
+Size: 521982
+SHA256sum: de0704cd6137dd7eb8d7b8bdba96416265edb7a5b78042e0a97f2b7e6e165e3f
+Description:  Intel AX200 firmware
+
+Package: iwlwifi-firmware-ax201
+Version: 20230625-1
+Depends: libc
+Source: package/firmware/linux-firmware
+SourceName: iwlwifi-firmware-ax201
+Section: firmware
+SourceDateEpoch: 1689343695
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 560216
+Filename: iwlwifi-firmware-ax201_20230625-1_x86_64.ipk
+Size: 559667
+SHA256sum: 72b49ee34fb449c17618f80fb66b1557bcd56c4fb8695b9b9d86e3d3e4232741
+Description:  Intel AX201 firmware
+
+Package: iwlwifi-firmware-ax210
+Version: 20230625-1
+Depends: libc
+Source: package/firmware/linux-firmware
+SourceName: iwlwifi-firmware-ax210
+Section: firmware
+SourceDateEpoch: 1689343695
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 583725
+Filename: iwlwifi-firmware-ax210_20230625-1_x86_64.ipk
+Size: 582806
+SHA256sum: a3244c6ce61184f393f24b872d44ee80aa3e1d2ee25bdb55d4bd40559a54bdc2
+Description:  Intel AX210 firmware
+
+Package: jansson4
+Version: 2.14-3
+Depends: libc
+Provides: jansson
+Source: package/libs/jansson
+SourceName: jansson
+License: MIT
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1670480457
+ABIVersion: 4
+CPE-ID: cpe:/a:jansson_project:jansson
+Architecture: x86_64
+Installed-Size: 23271
+Filename: jansson4_2.14-3_x86_64.ipk
+Size: 24009
+SHA256sum: 3cfbb63e3498fe0f06828288af7286a9a0443d2ece0a316e256eb150df999154
+Description:  Jansson is a C library for encoding, decoding and manipulating JSON data
 
 Package: jshn
 Version: 2022-09-27-ea560134-1
@@ -1248,6 +1364,27 @@ Description:  libnfnetlink is is the low-level library for netfilter related ker
  (such as nfnetlink_log, nfnetlink_queue, nfnetlink_conntrack) and their respective users
  and/or management tools in userspace.
 
+Package: libnftnl11
+Version: 1.2.4-11
+Depends: libc, libmnl0
+Provides: libnftnl
+Source: package/libs/libnftnl
+SourceName: libnftnl
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1670480457
+ABIVersion: 11
+CPE-ID: cpe:/a:netfilter:libnftnl
+Maintainer: Steven Barth <steven@midlink.org>
+Architecture: x86_64
+Installed-Size: 65051
+Filename: libnftnl11_1.2.4-11_x86_64.ipk
+Size: 65879
+SHA256sum: 791204943063cb8d15dd7399ca20736e81d84dc118eca1453bb4865491d65155
+Description:  libnftnl is a userspace library providing a low-level netlink
+ programming interface (API) to the in-kernel nf_tables subsystem.
+
 Package: libnl-tiny2022-11-01
 Version: 2022-11-01-db3b2cdb-1
 Depends: libc
@@ -1726,7 +1863,7 @@ SHA256sum: 303bf003b954f78075adfe11266771e12c58998ada46fe5f271fdea6358e74c4
 Description:  LuCI support for alist
 
 Package: luci-app-bypass
-Version: git-23.187.58798-bafee3f-1
+Version: git-23.225.13242-961ee0e-1
 Depends: libc, ipset, kmod-ipt-nat, ip-full, iptables-mod-tproxy, lua-neturl, dnsmasq-full, smartdns, coreutils, coreutils-base64, curl, tcping, chinadns-ng, lua, luci-compat, luci-lib-ipkg, unzip, lua-maxminddb, shadowsocks-libev-ss-server, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-server, v2ray-plugin, xray-core, trojan-plus, naiveproxy, kcptun-client, hysteria, redsocks2, microsocks
 Source: package/luci-app-bypass
 SourceName: luci-app-bypass
@@ -1734,10 +1871,25 @@ Section: luci
 SourceDateEpoch: 1687402786
 Architecture: all
 Installed-Size: 2646890
-Filename: luci-app-bypass_git-23.187.58798-bafee3f-1_all.ipk
-Size: 2465268
-SHA256sum: fffc2f18be37f29672df7c13a8af74d1a3141306cd87d6296482df3d557dae12
+Filename: luci-app-bypass_git-23.225.13242-961ee0e-1_all.ipk
+Size: 2465034
+SHA256sum: 429c55f2dcaebf5d075bbfd02a4f3b2f40eac752d8969bbd195ec6608ad5802a
 Description:  SS/SSR/Xray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
+
+Package: luci-app-eqos
+Version: git-20.112.09442-85f9b37-1
+Depends: libc, luci-base, tc, kmod-sched-core, kmod-ifb
+Source: package/luci-app-eqos
+SourceName: luci-app-eqos
+Section: luci
+SourceDateEpoch: 1587436642
+Maintainer: Jianhui Zhao <jianhuizhao329@gmail.com> GaryPang <https://github.com/garypang13/luci-app-eqos>
+Architecture: all
+Installed-Size: 2183
+Filename: luci-app-eqos_git-20.112.09442-85f9b37-1_all.ipk
+Size: 3058
+SHA256sum: a5365fce91182f4be9dfe7018dd904064ac438f8ac5240264a3f68e7599f7d80
+Description:  EQOS - LuCI interface
 
 Package: luci-app-nezha-agent
 Version: 2.0-1
@@ -1784,31 +1936,31 @@ SHA256sum: c458c99e554a3465c2234e4e57acf10cc78950ed14b0749f227884fdda6c6020
 Description:  A LuCI support for clash
 
 Package: luci-app-passwall2
-Version: 1.16-7
-Depends: libc, coreutils, coreutils-base64, coreutils-nohup, curl, ip-full, libuci-lua, lua, luci-compat, luci-lib-jsonc, resolveip, tcping, xray-core, v2ray-geoip, v2ray-geosite, unzip, brook, haproxy, hysteria, naiveproxy, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocks-libev-ss-server, shadowsocks-rust-sslocal, shadowsocks-rust-ssserver, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-server, simple-obfs, v2ray-core, v2ray-plugin
+Version: 1.18-1
+Depends: libc, coreutils, coreutils-base64, coreutils-nohup, curl, ip-full, libuci-lua, lua, luci-compat, luci-lib-jsonc, resolveip, tcping, xray-core, v2ray-geoip, v2ray-geosite, unzip, brook, haproxy, hysteria, ip6tables-mod-nat, naiveproxy, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocks-libev-ss-server, shadowsocks-rust-sslocal, shadowsocks-rust-ssserver, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-server, simple-obfs, tuic-client, v2ray-core, v2ray-plugin
 Source: package/openwrt-passwall2/luci-app-passwall2
 SourceName: luci-app-passwall2
 Section: luci
-SourceDateEpoch: 1688379420
+SourceDateEpoch: 1691779003
 Architecture: all
-Installed-Size: 200371
-Filename: luci-app-passwall2_1.16-7_all.ipk
-Size: 201367
-SHA256sum: 673fb7c47193504864963e70828bb1fe5327c92aead253b830b51f30ba5ab554
+Installed-Size: 202482
+Filename: luci-app-passwall2_1.18-1_all.ipk
+Size: 203557
+SHA256sum: 5a47a4387faf2e3f28e350f2e633e907bada8e4f75305750be006af2eef99e60
 Description:  LuCI support for PassWall 2
 
 Package: luci-app-passwall
-Version: 4.66-8
+Version: 4.67-4
 Depends: libc, coreutils, coreutils-base64, coreutils-nohup, curl, chinadns-ng, dns2socks, dns2tcp, ip-full, libuci-lua, lua, luci-compat, luci-lib-jsonc, microsocks, resolveip, tcping, unzip, brook, haproxy, hysteria, naiveproxy, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocks-libev-ss-server, shadowsocks-rust-sslocal, shadowsocks-rust-ssserver, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-server, simple-obfs, trojan-go, trojan-plus, v2ray-core, v2ray-geoip, v2ray-geosite, v2ray-plugin, xray-core, xray-plugin
 Source: package/luci-app-passwall
 SourceName: luci-app-passwall
 Section: luci
 SourceDateEpoch: 1687402786
 Architecture: all
-Installed-Size: 967902
-Filename: luci-app-passwall_4.66-8_all.ipk
-Size: 968034
-SHA256sum: 5694b72f06bb5a94218a49c617302eb5b59c4b73e032f7a0c5cce3b6a67207dc
+Installed-Size: 970379
+Filename: luci-app-passwall_4.67-4_all.ipk
+Size: 970518
+SHA256sum: ffd7f7f6f6d6eff55c0e8e209422a77b9d64313b6d8e83e3c8aa6b01eb92ab5b
 Description:  LuCI support for PassWall
 
 Package: luci-app-poweroff
@@ -1840,18 +1992,18 @@ SHA256sum: 11dbab21620e8ffcc08951370bd9eb52dced698a2fb6447b04084eb1d49b64a7
 Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
 
 Package: luci-app-store
-Version: 0.1.13-3
+Version: 0.1.14-1
 Depends: libc, curl, opkg, luci-lib-ipkg, tar, coreutils, coreutils-stat, libuci-lua, mount-utils, luci-lib-taskd
 Source: package/istore/luci/luci-app-store
 SourceName: luci-app-store
 Section: luci
-SourceDateEpoch: 1684308914
+SourceDateEpoch: 1690794022
 Maintainer: jjm2473 <jjm2473@gmail.com>
 Architecture: all
-Installed-Size: 93229
-Filename: luci-app-store_0.1.13-3_all.ipk
-Size: 94202
-SHA256sum: c2ff3ffa2412aee3da162fda609c755635e90013d67e8ca57e6afc1a9c517cda
+Installed-Size: 93978
+Filename: luci-app-store_0.1.14-1_all.ipk
+Size: 94933
+SHA256sum: 088537eb67136091695100ae55aab4d05ebdd6bb96c3c5f1e19d7e11e90949b2
 Description:  luci-app-store is a ipk store developed by LinkEase team
 
 Package: luci-app-usb3disable
@@ -1911,7 +2063,7 @@ SHA256sum: 46be1c097f72868b71abf83a84b274746a5c5a25956ad1771b4943957149c590
 Description:  Translation for luci-app-alist - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-bypass-zh-cn
-Version: git-23.187.58798-bafee3f-1
+Version: git-23.225.13242-961ee0e-1
 Depends: libc, luci-app-bypass
 Source: package/luci-app-bypass
 SourceName: luci-i18n-bypass-zh-cn
@@ -1919,9 +2071,9 @@ Section: luci
 SourceDateEpoch: 1687402786
 Architecture: all
 Installed-Size: 6474
-Filename: luci-i18n-bypass-zh-cn_git-23.187.58798-bafee3f-1_all.ipk
-Size: 7326
-SHA256sum: 78c09d771f6614c9c4f63edc3ce7120da6ce79ed9fb2368c28c640cfa8de42fa
+Filename: luci-i18n-bypass-zh-cn_git-23.225.13242-961ee0e-1_all.ipk
+Size: 7330
+SHA256sum: e545237b0b85602ac9b8b9e417a0bebd4e1fc7b783374437a4c586c7b1f3ad91
 Description:  Translation for luci-app-bypass - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-oaf-zh-cn
@@ -1939,31 +2091,31 @@ SHA256sum: 2a202932e65ca0810d6d448a33dbcfe2a434d43c94b321f163f0115261fbace9
 Description:  Translation for luci-app-oaf - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-passwall-zh-cn
-Version: 4.66-8
+Version: 4.67-4
 Depends: libc, luci-app-passwall
 Source: package/luci-app-passwall
 SourceName: luci-i18n-passwall-zh-cn
 Section: luci
 SourceDateEpoch: 1687402786
 Architecture: all
-Installed-Size: 13537
-Filename: luci-i18n-passwall-zh-cn_4.66-8_all.ipk
-Size: 14360
-SHA256sum: 265a5e75da966be33641dcb2b2d4254963915e7db5eaefc340cf862c069d10f4
+Installed-Size: 13998
+Filename: luci-i18n-passwall-zh-cn_4.67-4_all.ipk
+Size: 14761
+SHA256sum: 5ff41059b0a922ba5e2250d1710fff82524fd45ec6707df8585ebf17851bca09
 Description:  Translation for luci-app-passwall - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-passwall2-zh-cn
-Version: 1.16-7
+Version: 1.18-1
 Depends: libc, luci-app-passwall2
 Source: package/openwrt-passwall2/luci-app-passwall2
 SourceName: luci-i18n-passwall2-zh-cn
 Section: luci
-SourceDateEpoch: 1688379420
+SourceDateEpoch: 1691779003
 Architecture: all
-Installed-Size: 12516
-Filename: luci-i18n-passwall2-zh-cn_1.16-7_all.ipk
-Size: 13350
-SHA256sum: 5ee5f5ef3039d85aa2cc3b446b785644a93a674f869dede805c55c1d48039852
+Installed-Size: 12937
+Filename: luci-i18n-passwall2-zh-cn_1.18-1_all.ipk
+Size: 13773
+SHA256sum: a6b0f2b2b0a5ca73a4a2065bb9258103d7505be50e8c618f8ce1b6c28bf18d84
 Description:  Translation for luci-app-passwall2 - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-poweroff-zh-cn
@@ -2040,17 +2192,17 @@ SHA256sum: a9d84e004dce995a1933ad0d2b628841418a1923761e57a87c41afe6c25ee03e
 Description:  Xterm.js library
 
 Package: luci-theme-argon
-Version: 1.8.2-20230609
+Version: 1.8.3-20230710
 Depends: libc, curl, jsonfilter
 Source: package/luci-theme-argon
 SourceName: luci-theme-argon
 Section: luci
-SourceDateEpoch: 1687777604
+SourceDateEpoch: 1690987580
 Architecture: all
-Installed-Size: 489461
-Filename: luci-theme-argon_1.8.2-20230609_all.ipk
-Size: 490281
-SHA256sum: c8adb1eb57f47f17e2dac8ee3e744e8525d65bd36a6438f0d04cd384c43b8cf2
+Installed-Size: 490410
+Filename: luci-theme-argon_1.8.3-20230710_all.ipk
+Size: 491193
+SHA256sum: 890f375bedf6bcc29ba5785ef9cf38506277747f343895882851b8bf1e7bd312
 Description:  Argon Theme
 
 Package: mdadm
@@ -2174,6 +2326,23 @@ Filename: nezha-agent_1-1_x86_64.ipk
 Size: 5840224
 SHA256sum: 295add2db04af671e7eeb4224f2b1af70ccc57edffc5b5a0d070b22116bd84e0
 Description:  Nezha Agent is the client of the Nezha panel
+
+Package: nftables-json
+Version: 1.0.6-1
+Depends: libc, kmod-nft-core, libnftnl11, jansson4
+Provides: nftables
+Source: package/network/utils/nftables
+SourceName: nftables-json
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+SourceDateEpoch: 1674631835
+Architecture: x86_64
+Installed-Size: 296430
+Filename: nftables-json_1.0.6-1_x86_64.ipk
+Size: 296176
+SHA256sum: e126c389a054a3d987b59341976513c5c013e5d88a73e5e784055840d7609066
+Description:  nftables userspace utility with JSON support
 
 Package: odhcp6c
 Version: 2021-01-09-53f07e90-18
@@ -2327,6 +2496,23 @@ Size: 5526
 SHA256sum: 79686b4b49dfe2ec4236ee11c67113728d0194b402256a62ceffbb1749215d7b
 Description:  This package contains a PPPoL2TP (PPP over L2TP) plugin for ppp.
 
+Package: ppp-mod-pptp
+Version: 2.4.9.git-2021-01-04-6
+Depends: libc, kmod-pptp, kmod-mppe, resolveip
+Source: package/network/services/ppp
+SourceName: ppp-mod-pptp
+License: BSD-4-Clause
+Section: net
+SourceDateEpoch: 1664380839
+CPE-ID: cpe:/a:samba:ppp
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 18136
+Filename: ppp-mod-pptp_2.4.9.git-2021-01-04-6_x86_64.ipk
+Size: 18887
+SHA256sum: 36316c9610613309f515ffabd7f12b62294f93322c30b4900c99de8f41e808ef
+Description:  This package contains a PPtP plugin for ppp.
+
 Package: ppp
 Version: 2.4.9.git-2021-01-04-6
 Depends: libc, kmod-ppp, libpthread, shellsync, kmod-mppe
@@ -2413,19 +2599,34 @@ Description:  A set of scripts that abstract QoS configuration into a simple
  entries.
 
 Package: r8152-firmware
-Version: 20230515-1
+Version: 20230625-1
 Depends: libc
 Source: package/firmware/linux-firmware
 SourceName: r8152-firmware
 Section: firmware
-SourceDateEpoch: 1684252477
+SourceDateEpoch: 1689343695
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
 Installed-Size: 10910
-Filename: r8152-firmware_20230515-1_x86_64.ipk
-Size: 11642
-SHA256sum: dfc1d4b660b4eed51f2efc6b6374b232871ef04bc295a0608470b0d6edd66522
+Filename: r8152-firmware_20230625-1_x86_64.ipk
+Size: 11640
+SHA256sum: 5748231cd49b1570f855ae0222c1a0a4d9e808a31e32e7c09a891549e345576b
 Description:  RealTek RTL8152 firmware
+
+Package: radeon-firmware
+Version: 20230625-1
+Depends: libc
+Source: package/firmware/linux-firmware
+SourceName: radeon-firmware
+Section: firmware
+SourceDateEpoch: 1689343695
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 3523059
+Filename: radeon-firmware_20230625-1_x86_64.ipk
+Size: 3517914
+SHA256sum: 0b792628a0dba5b1cfdd93e5f8c5ea6cb3dd2a9847262da4d404260ee4e462d1
+Description:  Radeon Video Driver firmware
 
 Package: redsocks2
 Version: 0.67-4
@@ -2760,19 +2961,35 @@ Size: 334252
 SHA256sum: 2a5fcb4c40d5ce376d03bdcd74a757ec6ba6c08229ecaba27ab66730c232f36a
 Description:  An unidentifiable mechanism that helps you bypass GFW
 
+Package: tuic-client
+Version: 1.0.0-1
+Depends: libc
+Source: package/openwrt-passwall/tuic-client
+SourceName: tuic-client
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1690047123
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: x86_64
+Installed-Size: 1127017
+Filename: tuic-client_1.0.0-1_x86_64.ipk
+Size: 1125149
+SHA256sum: 009051292908c72a72bfa3752824f2f2e568de2d1748c131b5e8622f5065a081
+Description:  Delicately-TUICed 0-RTT proxy protocol
+
 Package: ua2f
 Version: 4.1.2-1
-Depends: libc, libnetfilter-conntrack3, libnetfilter-queue1, libpthread, iptables-mod-conntrack-extra, iptables-mod-filter, iptables-mod-nfqueue
+Depends: libc, libnetfilter-conntrack3, libnetfilter-queue1, libpthread, kmod-nft-queue, iptables-mod-conntrack-extra, iptables-mod-filter, iptables-mod-nfqueue
 Source: package/UA2F/openwrt
 SourceName: ua2f
 License: GPL-3.0-only
 Section: net
 SourceDateEpoch: 1684938533
 Architecture: x86_64
-Installed-Size: 13062
+Installed-Size: 12721
 Filename: ua2f_4.1.2-1_x86_64.ipk
-Size: 13909
-SHA256sum: ffbc575b0529b26a022746390538dbef5261312b16fca60a2c2aa829307c286a
+Size: 13572
+SHA256sum: ea68c95a486104d06c0aa93867a6d67a38a0f661f94bc5f108f8b2d2c610542a
 Description:  Change User-agent to Fwords to prevent being checked by Dr.Com.
 
 Package: ubox
@@ -2996,10 +3213,10 @@ Section: net
 SourceDateEpoch: 1677894920
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
-Installed-Size: 9818578
+Installed-Size: 9818577
 Filename: v2raya_1.5.9.1698.1-2_x86_64.ipk
-Size: 9785768
-SHA256sum: 489812b6dc5ec254098d99906c398dc7402da2dd207fefa456e83ebd87a05d9d
+Size: 9785811
+SHA256sum: 0d605977290a406934a6be0a3484d5a9acf03a17eff91173bd9f5d0222c10d92
 Description:  v2rayA is a V2Ray Linux client supporting global transparent proxy,
  compatible with SS, SSR, Trojan(trojan-go), PingTunnel protocols.
 
@@ -3043,6 +3260,38 @@ Description:  WireGuard is a novel VPN that runs inside the Linux Kernel and uti
  
  This package provides the userspace control program for WireGuard,
  `wg(8)`, a netifd protocol helper, and a re-resolve watchdog script.
+
+Package: wireless-regdb
+Version: 2022.08.12-1
+Depends: libc
+Source: package/firmware/wireless-regdb
+SourceName: wireless-regdb
+Section: firmware
+SourceDateEpoch: 1666181640
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: all
+Installed-Size: 2192
+Filename: wireless-regdb_2022.08.12-1_all.ipk
+Size: 2910
+SHA256sum: 4a751b6a0dd8897c88e15ef4c8225808768dc4ebf6ac337d2d498e99c26f50b9
+Description:  Wireless Regulatory Database
+
+Package: wireless-tools
+Version: 29-7
+Depends: libc
+Source: package/network/utils/wireless-tools
+SourceName: wireless-tools
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1677741567
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 23332
+Filename: wireless-tools_29-7_x86_64.ipk
+Size: 24100
+SHA256sum: 6992e1ebcfbe1cbb010599aaeb8d8b0d67bb5dd60b3c567596c57506cf56c0a0
+Description:  This package contains a collection of tools for configuring wireless
+ adapters implementing the "Linux Wireless Extensions".
 
 Package: wol
 Version: 0.7.1-3

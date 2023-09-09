@@ -62,7 +62,6 @@ lede/bin/targets = miaoermua/CatWrt/targets
 - VPS (Cloudflare Proxy): https://catwrt.eu.org
 - Vercel: https://vercel.catwrt.eu.org
 - Netlify: https://netlify.catwrt.eu.org
-- Aliyun: http://47.113.229.16:1480
 - Vercel (Cloudflare Proxy): https://cfvercel.catwrt.eu.org
 - Netlify (Cloudflare Proxy): https://cfnetlify.catwrt.eu.org
 

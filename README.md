@@ -39,7 +39,7 @@ CatWrt 是基于开源的 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓�
 固件中绝不含任何后门和可以监控或者劫持你的 HTTPS 的闭源软件，所有对 LEDE 修改均已展示并开源，SSL 安全是互联网最后的壁垒，安全干净才是固件应该做到的。
 
 
-PS: 修改项已开源,编译时可参考但不推荐拉库编译 [OpenCatLEDE](https://github.com/miaoermua/OpenCatLEDE) 请遵守 [GPL2.0](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 协议，二次开发需要标注出处。
+PS: 修改项已开源,编译时可参考但不推荐拉库编译 [miaoermua/LEDE](https://github.com/miaoermua/LEDE) 请遵守 [GPL2.0](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 协议，二次开发需要标注出处。
 
 ![开源示例](https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/blog/23-02-28/opensource.jpg)
 
@@ -111,21 +111,6 @@ src/gz openwrt_routing https://catwrt.eu.org/aarch64_generic/routing
 src/gz openwrt_telephony https://catwrt.eu.org/aarch64_generic/telephony
 ```
 
-**mt7986a**
-
-Xiaomi Redmi AX6000（视频同款适配版本）
-
-版本：v23.2
-
-```mirrors
-src/gz openwrt_core https://catwrt.eu.org/targets/mediatek/filogic/packages
-src/gz openwrt_base https://catwrt.eu.org/mt7986a/base
-src/gz openwrt_luci https://catwrt.eu.org/mt7986a/luci
-src/gz openwrt_packages https://catwrt.eu.org/mt7986a/packages
-src/gz openwrt_routing https://catwrt.eu.org/mt7986a/routing
-src/gz openwrt_telephony https://catwrt.eu.org/mt7986a/telephony
-```
-
 **mt7621**
 
 小米/红米 AC2100，新路由 3（Newifi_d2）
@@ -156,17 +141,6 @@ src/gz openwrt_luci https://vercel.catwrt.eu.org/mt798x/luci
 src/gz openwrt_packages https://vercel.catwrt.eu.org/mt798x/packages
 src/gz openwrt_routing https://vercel.catwrt.eu.org/mt798x/routing
 src/gz openwrt_telephony https://vercel.catwrt.eu.org/mt798x/telephony
-```
-
-例如使用阿里云 (河源数据中心) 提供的直连节点源
-
-```mirrors
-src/gz openwrt_core http://47.113.229.16:1480/targets/mt798x/filogic/packages
-src/gz openwrt_base http://47.113.229.16:1480/mt798x/base
-src/gz openwrt_luci http://47.113.229.16:1480/mt798x/luci
-src/gz openwrt_packages http://47.113.229.16:1480/mt798x/packages
-src/gz openwrt_routing http://47.113.229.16:1480/mt798x/routing
-src/gz openwrt_telephony http://47.113.229.16:1480/mt798x/telephony
 ```
 
 #### 使用历史（LTS）源

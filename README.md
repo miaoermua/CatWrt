@@ -10,7 +10,7 @@
 
 客制化 OpenWrt 智能网关
 
-[扩展安装](https://www.miaoer.xyz/posts/network/catwrt-install-application) | [发行版集合](https://www.miaoer.xyz/posts/network/catwrt) | [❤️ 赞助喵二](https://www.miaoer.xyz/sponsor)
+[安装应用](https://www.miaoer.xyz/posts/network/catwrt-install-application) | [发行版博客](https://www.miaoer.xyz/posts/network/catwrt) | [❤️ 支持喵二](https://www.miaoer.xyz/sponsor)
 
 [![](https://img.shields.io/badge/blog-@CatWrt.svg)](https://www.miaoer.xyz/network/catwrt)
 [![](https://img.shields.io/github/v/release/miaoermua/CatWrt)](https://github.com/miaoermua/CatWrt/releases)
@@ -22,24 +22,46 @@
 
 ***
 
-🎯 欢迎来到 CatWrt 仓库，这里不存放源码会存放最新版本历史版本编译插件
+🐧 欢迎来到 CatWrt 仓库，这里是软件源 Repo 发行版仓库。仅存在二级制文件，源码请转到 [miaoermua/LEDE](https://github.com/miaoermua/lede) 审查源代码。
 
-## 为什么选择 CatWrt
+## 项目
 
 <p align="center">
+
+<!--
 <img src="https://fastly.jsdelivr.net/gh/miaoermua/static@main/images/CatWrt_gh.jpg">
+--->
+
+<li><b>👍 获得高校学生，开源社区开发者的青睐，社区互相交流 OpenWrt 知识</b></li>
+    ✅ <i>验证学生: 武汉大学，华中科技大学，中南大学，杭州电子科技大学，江西理工大学</i>
+<br></br>
+
+<li><b>🪅 免费项目不包含商业收费项目，全面拥抱开源，轻松部署私有应用。</b></li>
+<br>
+
+<li><b>🆙 追求强大性能和可靠性，高效地享用 OpenWrt，可用性遥遥领先。</b></li>
+<br>
+
+<li><b>📦 CatWrt 软件源，使用opkg 原生安装不随大流，学习 Linux 的起点。</b></li>
+<br>
 </p>
 
-## 开源相关
+注:
+*1. 项目未和高校开展活动项目合作，来源于社区用户提供的院校（侵联删）。
+*2. 项目免费开源，仅用于学术交流，严禁用于商业用途。
+*3. 无内置商用配置文件，所有配置文件来自使用者与作者无关。
 
-CatWrt 是基于开源的 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版；本仓库没有源码内容，如果你想知道我们使用了哪些源码，可以查看固件发布博客留下的上游提交链接和本仓库提交更新时描述。
+***
 
-不同于其他人编译的固件，我们编译过程完全开源！并且免费服务 CatWrt 用户帮助小白用户也能轻松玩转 OpenWrt 系统，通过和社区交流也能编译出自己的 CatWrt 关键是这些都是在社区活跃下都是免费的。
+## 开源
+
+CatWrt 是基于开源的 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版；想知道我们使用了哪些源码，可以查看发布博客留下的链接和本仓库提交更新时描述。
+
+不同于其他人编译的固件，我们编译过程完全开源！通过和社区交流也能编译出自己的 CatWrt 关键是这些都是在社区活跃下都是免费的。
 
 固件中绝不含任何后门和可以监控或者劫持你的 HTTPS 的闭源软件，所有对 LEDE 修改均已展示并开源，SSL 安全是互联网最后的壁垒，安全干净才是固件应该做到的。
 
-
-PS: 修改项已开源,编译时可参考但不推荐拉库编译 [miaoermua/LEDE](https://github.com/miaoermua/LEDE) 请遵守 [GPL2.0](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 协议，二次开发需要标注出处。
+CatWrt 修改项已开源，编译时可参考但不推荐拉库编译 [miaoermua/LEDE](https://github.com/miaoermua/LEDE) 请遵守 [GPL2.0](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 协议，二次开发需要标注出处。
 
 ![开源示例](https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/blog/23-02-28/opensource.jpg)
 

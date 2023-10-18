@@ -42,7 +42,7 @@
 <li><b>🆙 追求强大性能和可靠性，高效地享用 OpenWrt，可用性遥遥领先。</b></li>
 <br>
 
-<li><b>📦 CatWrt 软件源，使用opkg 原生安装不随大流，学习 Linux 的起点。</b></li>
+<li><b>📦 CatWrt 软件源，使用 opkg 原生安装不随大流，Linux 学习从此开始……</b></li>
 <br>
 </p>
 

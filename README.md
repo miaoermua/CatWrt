@@ -10,7 +10,7 @@
 
 客制化 OpenWrt 智能网关
 
-[安装应用](https://www.miaoer.xyz/posts/network/catwrt-install-application) | [发行版博客](https://www.miaoer.xyz/posts/network/catwrt) | [❤️ 支持喵二](https://www.miaoer.xyz/sponsor)
+[安装应用](https://www.miaoer.xyz/posts/network/catwrt-install-application) | [CatWrt 博客](https://www.miaoer.xyz/posts/network/catwrt) | [❤️ 支持喵二](https://www.miaoer.xyz/sponsor)
 
 [![](https://img.shields.io/badge/blog-@CatWrt.svg)](https://www.miaoer.xyz/network/catwrt)
 [![](https://img.shields.io/github/v/release/miaoermua/CatWrt)](https://github.com/miaoermua/CatWrt/releases)
@@ -26,7 +26,8 @@
 
 ## 项目
 
-<p align="center">
+<p>
+<center>
 
 <!--
 <img src="https://fastly.jsdelivr.net/gh/miaoermua/static@main/images/CatWrt_gh.jpg">
@@ -44,6 +45,7 @@
 
 <li><b>📦 CatWrt 软件源，使用 opkg 原生安装不随大流，Linux 学习从此开始……</b></li>
 <br>
+</center>
 </p>
 
 注:

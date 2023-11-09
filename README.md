@@ -186,7 +186,7 @@ src/gz openwrt_telephony https://catwrt.eu.org/history/v22.2/x86_64/telephony
 - 使用 Docker 部署
 
 ```bash
-$ docker run -d -p 1480:80 miaoer/catwrt-soft:latest
+$ docker run -d -p 1480:80 miaoer/catwrt-repo:latest
 ```
 
 或拉取到本地使用 docker-compose 启动

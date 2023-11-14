@@ -202,15 +202,15 @@ SHA256sum: f6d2f000077fcca246e152f84308819482dcc385dc6e93d479204b6852127a90
 Description:  System CA certificates
 
 Package: chinadns-ng
-Version: 2023.04.20-1
+Version: 2023.10.28-1
 Depends: libc, ipset
 License: AGPL-3.0-only
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 27704
-Filename: chinadns-ng_2023.04.20-1_aarch64_cortex-a53.ipk
-Size: 28479
-SHA256sum: 6c58e52248eea74f576ecf8c697e822ba7ed35a476247c57f79f524bfcc8113d
+Installed-Size: 28091
+Filename: chinadns-ng_2023.10.28-1_aarch64_cortex-a53.ipk
+Size: 28898
+SHA256sum: df9d5ba6cc14d15b7a9464ba83a4835eface58245a18edbb170181ecba89048c
 Description:  ChinaDNS next generation, refactoring with epoll and ipset.
 
 Package: ddns-scripts_aliyun
@@ -387,10 +387,10 @@ Depends: libc, ca-bundle
 License: MIT
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 5304999
+Installed-Size: 5305003
 Filename: hysteria_2.2.0-1_aarch64_cortex-a53.ipk
-Size: 5290146
-SHA256sum: c177d13764dc6c344af0a465065257e1b3ca7169a40fab8f420b6ca0de429684
+Size: 5289981
+SHA256sum: d9c774bd5b8863c0c7411e5682b770ad09f3a02af13e5e7cefd0f7dd5c08e94c
 Description:  Hysteria is a feature-packed network utility optimized for networks
  of poor quality (e.g. satellite connections, congested public Wi-Fi,
  connecting from China to servers abroad) powered by a custom version
@@ -429,10 +429,10 @@ Depends: libc, libpthread
 License: AGPL-3.0
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 26485
+Installed-Size: 26486
 Filename: ipt2socks_1.1.3-3_aarch64_cortex-a53.ipk
-Size: 27189
-SHA256sum: 894c5951ceaee7d73cb10eb8e5c1023a8dca6760f9c59cf35ee4e3f1f718fabc
+Size: 27201
+SHA256sum: b8feff9459f2d457f8a52a50c0e0765e3cddf33dd0ab572510ad9cc8fb7ad938
 Description:  Utility for converting iptables (redirect/tproxy) to socks5.
 
 Package: iptables-mod-fullconenat
@@ -1422,15 +1422,15 @@ SHA256sum: 9c5ff743f678fd30d74d4f00275152b66538ff1fc7d37fd71819205e7efcda8b
 Description:  LuCI Support of PowerOff Router
 
 Package: luci-app-ssr-plus
-Version: 187-1
-Depends: libc, coreutils, coreutils-base64, dns2socks, dns2tcp, dnsmasq-full, ipset, kmod-ipt-nat, ip-full, iptables, iptables-mod-tproxy, lua, lua-neturl, libuci-lua, microsocks, tcping, resolveip, shadowsocksr-libev-ssr-check, uclient-fetch, curl, xray-core, chinadns-ng, ipt2socks, shadowsocks-rust-sslocal, shadowsocks-rust-ssserver, simple-obfs, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, trojan
+Version: 188-3
+Depends: libc, coreutils, coreutils-base64, dns2socks, dns2tcp, dnsmasq-full, ipset, kmod-ipt-nat, ip-full, iptables, iptables-mod-tproxy, lua, lua-neturl, libuci-lua, microsocks, tcping, resolveip, shadowsocksr-libev-ssr-check, uclient-fetch, curl, xray-core, ipt2socks, shadowsocks-rust-sslocal, shadowsocks-rust-ssserver, simple-obfs, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, trojan
 Section: luci
 Architecture: all
-Installed-Size: 272047
-Filename: luci-app-ssr-plus_187-1_all.ipk
-Size: 272191
-SHA256sum: 28851dbaee886f8484bba3eaa29002ddff9c54a7ebf55a34cacccb995567aaee
-Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
+Installed-Size: 276407
+Filename: luci-app-ssr-plus_188-3_all.ipk
+Size: 276664
+SHA256sum: 92b42f254ea524bd642d4cf265b2d17d2221f261613700838c78cac50ab2562a
+Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Tuic/ShadowTLS/Hysteria/Socks5/Tun LuCI interface
 
 Package: luci-app-store
 Version: 0.1.14-2
@@ -1521,14 +1521,14 @@ SHA256sum: cd1ade1ebfc5ea808f4101f3432f1848a91990560bbb4fd5af4e399b3519b2e0
 Description:  Translation for luci-app-poweroff - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-ssr-plus-zh-cn
-Version: 187-1
+Version: 188-3
 Depends: libc, luci-app-ssr-plus
 Section: luci
 Architecture: all
-Installed-Size: 7428
-Filename: luci-i18n-ssr-plus-zh-cn_187-1_all.ipk
-Size: 8284
-SHA256sum: 38f8f03aa30b9cf0c3660268e35e48fe6cad5a09580274826f53e73f5f903005
+Installed-Size: 8418
+Filename: luci-i18n-ssr-plus-zh-cn_188-3_all.ipk
+Size: 9273
+SHA256sum: aac217aedbce84ee8206397a16d897b0a2b2e47b443b0ca4de3c5a1178ab4f05
 Description:  Translation for luci-app-ssr-plus - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-vssr-zh-cn
@@ -1608,10 +1608,10 @@ Depends: libc, libpthread
 License: MIT
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 5762
+Installed-Size: 5761
 Filename: microsocks_1.0.3-1_aarch64_cortex-a53.ipk
-Size: 6547
-SHA256sum: 7cbc14511dcb1b81f8940807b94981de75d634f87b17da698665c2dd5dde638d
+Size: 6536
+SHA256sum: 5a5a32233e4933058047ab0ecf2f08740b0196021bbcde960edbe0e9dcc26a73
 Description:  A SOCKS5 service that you can run on your remote boxes to tunnel connections
  through them, if for some reason SSH doesn't cut it for you.
 
@@ -1638,6 +1638,17 @@ Filename: mt7981-wo-firmware_20230804-1_aarch64_cortex-a53.ipk
 Size: 48284
 SHA256sum: 7df3135ec0395627c339f64aedcdd2d365e998024aa0ae5eb7093720a0c9c137
 Description:  MT7981 offload firmware
+
+Package: mt7986-wo-firmware
+Version: 20230804-1
+Depends: libc
+Section: firmware
+Architecture: aarch64_cortex-a53
+Installed-Size: 106388
+Filename: mt7986-wo-firmware_20230804-1_aarch64_cortex-a53.ipk
+Size: 96342
+SHA256sum: 1c4f0eae77b243994869035dcca65685ab8cbbbe24e0343c393f47878da61a15
+Description:  MT7986 offload firmware
 
 Package: naiveproxy
 Version: 113.0.5672.62-2-1
@@ -1933,28 +1944,39 @@ Size: 39897
 SHA256sum: 9dad42944286fce497b53d4ad64bc78282afa3ac288823ec4436b09f5a5bed62
 Description:  contains: script, scriptreplay
 
+Package: shadow-tls
+Version: 0.2.23-1
+Depends: libc
+Section: net
+Architecture: aarch64_cortex-a53
+Installed-Size: 1690324
+Filename: shadow-tls_0.2.23-1_aarch64_cortex-a53.ipk
+Size: 1684865
+SHA256sum: ae6aef07e0c8275192a1869946ae4e3f3a32e809d90e88012632486840a18c0d
+Description:  A proxy to expose real tls handshake to the firewall.
+
 Package: shadowsocks-rust-sslocal
-Version: 1.15.3-1
+Version: 1.17.0-1
 Depends: libc
 License: MIT
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 2791380
-Filename: shadowsocks-rust-sslocal_1.15.3-1_aarch64_cortex-a53.ipk
-Size: 2781896
-SHA256sum: 5bb63aa3fca89ee7793e4e4e3c143c6177f9ce86363e16eba32a8506b88004ae
+Installed-Size: 3137235
+Filename: shadowsocks-rust-sslocal_1.17.0-1_aarch64_cortex-a53.ipk
+Size: 3123622
+SHA256sum: b22f7b4330f612707b5a6e7bb30380c099710892f604f811b7677a95ba66cbc5
 Description:  shadowsocks-rust sslocal
 
 Package: shadowsocks-rust-ssserver
-Version: 1.15.3-1
+Version: 1.17.0-1
 Depends: libc
 License: MIT
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 1926796
-Filename: shadowsocks-rust-ssserver_1.15.3-1_aarch64_cortex-a53.ipk
-Size: 1919350
-SHA256sum: 64bc24c678ab01dbc8f947b29731d69c6fe2f1970127d5e06e9bcc579faf595e
+Installed-Size: 2163652
+Filename: shadowsocks-rust-ssserver_1.17.0-1_aarch64_cortex-a53.ipk
+Size: 2155665
+SHA256sum: 51750ca0bef0f0f04b02a6d714c7398d493abead6665d86d5481da9af81435b0
 Description:  shadowsocks-rust ssserver
 
 Package: shadowsocksr-libev-ssr-check
@@ -1963,10 +1985,10 @@ Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre, libudns, zlib
 License: GPL-3.0
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 2574
+Installed-Size: 2576
 Filename: shadowsocksr-libev-ssr-check_2.5.6-9_aarch64_cortex-a53.ipk
-Size: 3302
-SHA256sum: f941609732b1f09530c0e2f5f6de2077fc30266f40395d9d02b48719b7335ded
+Size: 3298
+SHA256sum: 46145316086eb2e2b90145dc7126fbcbea5a6fa2036bc590f62edc8b193b4ba5
 Description:  shadowsocksr-libev ssr-check
 
 Package: shadowsocksr-libev-ssr-local
@@ -1975,10 +1997,10 @@ Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre, libudns, zlib
 License: GPL-3.0
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 62581
+Installed-Size: 62583
 Filename: shadowsocksr-libev-ssr-local_2.5.6-9_aarch64_cortex-a53.ipk
-Size: 63328
-SHA256sum: 0ca8d5e014e33a933b24c005e2ecdd19fd2c7f997ba9b4c764d290ed6aa32856
+Size: 63340
+SHA256sum: 229aec8af68e3eb5e3d337c3ff4c3cfaf927dcad51a77809005268288b81ba4d
 Description:  shadowsocksr-libev ssr-local
 
 Package: shadowsocksr-libev-ssr-redir
@@ -1987,10 +2009,10 @@ Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre, libudns, zlib
 License: GPL-3.0
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 56236
+Installed-Size: 56238
 Filename: shadowsocksr-libev-ssr-redir_2.5.6-9_aarch64_cortex-a53.ipk
-Size: 56962
-SHA256sum: 9d7d37f13e8d9432617e0f62e498bed9765debd550b61e64ecf86300e96f4a88
+Size: 56925
+SHA256sum: d16dd9d54d572c7ae966e09707602df1fb777eeff2591fc2f74c1d1782b0cb32
 Description:  shadowsocksr-libev ssr-redir
 
 Package: shadowsocksr-libev-ssr-server
@@ -2024,10 +2046,10 @@ Provides: simple-obfs
 License: GPL-3.0-or-later
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 31294
+Installed-Size: 31297
 Filename: simple-obfs-client_0.0.5-1_aarch64_cortex-a53.ipk
-Size: 32031
-SHA256sum: 33e0a843d805c10d4787afd2aab16f1813ff099687835d36240725378cedf962
+Size: 32011
+SHA256sum: aae83ac7798539e09ee04ddaa6fbf89145c52eb47a052d74fe65edc617587ee2
 Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
 
 Package: sing-box
@@ -2075,10 +2097,10 @@ Depends: libc
 License: GPL-2.0-only
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 3774
+Installed-Size: 3773
 Filename: tcping_0.3-1_aarch64_cortex-a53.ipk
-Size: 4460
-SHA256sum: c783c4de89c93923f79dee2ee7b755a1f7fd378950e1b18056c732a386e9ebb4
+Size: 4455
+SHA256sum: da545115009418b11c39f5b01272baba920c00709865e8dbc3be120faa1bab2b
 Description:  tcping measures the latency of a tcp-connection
 
 Package: terminfo
@@ -2136,10 +2158,10 @@ Version: 1.0.0-1
 Depends: libc
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 1044938
+Installed-Size: 1044939
 Filename: tuic-client_1.0.0-1_aarch64_cortex-a53.ipk
-Size: 1043160
-SHA256sum: 05bf314761fa7d61605d29392b67dbbd3f201a5afa0920cf260fa9454ff3de89
+Size: 1043196
+SHA256sum: 197eed3e91fe3c35e352a751c4a6fbaf088c1d1f04d43d39c8eb51f174b12ef2
 Description:  Delicately-TUICed 0-RTT proxy protocol
 
 Package: ua2f
@@ -2436,15 +2458,15 @@ Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator and Supplicant
 
 Package: xray-core
-Version: 1.8.3-1
+Version: 1.8.4-1
 Depends: libc, ca-bundle
 License: MPL-2.0
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 8547641
-Filename: xray-core_1.8.3-1_aarch64_cortex-a53.ipk
-Size: 8519355
-SHA256sum: be85fe68ae96854828ee2bbe0799a0d2ae736676edc6ed3d3aaf27bbc9e7a386
+Installed-Size: 8591124
+Filename: xray-core_1.8.4-1_aarch64_cortex-a53.ipk
+Size: 8563332
+SHA256sum: eb9defe0955800ecbaf69bf673c08c2b3c4bde9cde83aaa5aac20d6be8b675d4
 Description:  Xray, Penetrates Everything. It helps you to build your own computer network.
  It secures your network connections and thus protects your privacy.
 

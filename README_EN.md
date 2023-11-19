@@ -18,7 +18,7 @@ Customized OpenWrt smart gateway.
 
 **If you accidentally learned about this project, then you are very lucky. However, CatWrt is currently only open to custom OpenWrt projects for users in Mainland China. International users are not our primary audience. If you remove the Chinese language packages (i18n zh-cn) via opkg, it will basically become an English system. But our core content still revolves around the Blog.**
 
-CatWrt is a redistribution of the Lean's LEDE based OpenWrt gateway project. If you need to get OpenWrt firmware in your country or region, it is recommended to use Tianling's [ImmortalWrt](https://github.com/immortalwrt/immortalwrt).
+CatWrt is a redistribution of the [Lean's LEDE](https://github.com/coolsnowwolf/lede) based OpenWrt gateway project. If you need to get OpenWrt firmware in your country or region, it is recommended to use Tianling's [ImmortalWrt](https://github.com/immortalwrt/immortalwrt).
 
 ## Highlights
 
@@ -32,15 +32,16 @@ CatWrt is a redistribution of the Lean's LEDE based OpenWrt gateway project. If 
   
 - **📦 Use the CatWrt software repository to completely abandon third party istore plugins. Install packages natively with the opkg package manager. Start learning Linux here……**<br><br>
 
----
-
 Telegram Group: *Chinese community*. [Join the group](https://t.me/miaoergroup)
 
 If this project did helped you, please consider donating to [❤️support(in Alipay)](https://www.miaoer.xyz/sponsor) the development of this project.
 
+
+---
+
 ## Use repo
 
-If you have already refreshed the list with opkg update before using, please first rm -f /var/lock/opkg.lock in terminal to clean up the index file from the default Tencent source, then fill in the source index into the CatWrt distribution software source and refresh again.
+If you have already refreshed the list with `opkg update` before using, please first rm -f `/var/lock/opkg.lock` in terminal to clean up the index file from the default Tencent source, then fill in the source index into the CatWrt distribution software source and refresh again.
 
 **x86-64**
 

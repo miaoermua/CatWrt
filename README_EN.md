@@ -10,6 +10,8 @@
 
 Customized OpenWrt smart gateway.
 
+</div>
+
 ## About
 
 [i18n zh-cn 简体中文](README.md)
@@ -36,6 +38,39 @@ Telegram Group: *Chinese community*. [Join the group](https://t.me/miaoergroup)
 
 If this project did helped you, please consider donating to [❤️support(in Alipay)](https://www.miaoer.xyz/sponsor) the development of this project.
 
+## Use repo
+
+If you have already refreshed the list with opkg update before using, please first rm -f /var/lock/opkg.lock in terminal to clean up the index file from the default Tencent source, then fill in the source index into the CatWrt distribution software source and refresh again.
+
+**x86-64**
+
+Traditional x86_64 (supports only x86_64/AMD64/64-bit; does not support x86_32/386/32-bit)
+
+Version：v23.8
+
+```mirrors
+src/gz openwrt_core https://catwrt.eu.org/targets/x86/64/packages
+src/gz openwrt_base https://catwrt.eu.org/x86_64/base
+src/gz openwrt_luci https://catwrt.eu.org/x86_64/luci
+src/gz openwrt_packages https://catwrt.eu.org/x86_64/packages
+src/gz openwrt_routing https://catwrt.eu.org/x86_64/routing
+src/gz openwrt_telephony https://catwrt.eu.org/x86_64/telephony
+```
+
+**mt798x**
+
+Support devices: TP-Link TL-XDR 4288/6086/6088，Xiaomi Redmi AX6000
+
+Version：v23.8
+
+```mirrors
+src/gz openwrt_core https://catwrt.eu.org/targets/mt798x/filogic/packages
+src/gz openwrt_base https://catwrt.eu.org/mt798x/base
+src/gz openwrt_luci https://catwrt.eu.org/mt798x/luci
+src/gz openwrt_packages https://catwrt.eu.org/mt798x/packages
+src/gz openwrt_routing https://catwrt.eu.org/mt798x/routing
+src/gz openwrt_telephony https://catwrt.eu.org/mt798x/telephony
+```
 
 Thank you to the developers of the following projects:
 

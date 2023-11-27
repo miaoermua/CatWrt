@@ -34,6 +34,8 @@ CatWrt is a redistribution of the [Lean's LEDE](https://github.com/coolsnowwolf/
 
 Telegram Group: *Chinese community*. [Join the group](https://t.me/miaoergroup)
 
+CatWrt OpenSourceCode [miaoermua/LEDE](https://github.com/miaoermua/LEDE)
+
 If this project did helped you, please consider donating to [❤️support(in Alipay)](https://www.miaoer.xyz/sponsor) the development of this project.
 
 
@@ -73,8 +75,65 @@ src/gz openwrt_routing https://catwrt.eu.org/mt798x/routing
 src/gz openwrt_telephony https://catwrt.eu.org/mt798x/telephony
 ```
 
+**mt7621**
+
+Support devices: Xiaomi/Xiaomi Redmi AC2100，Newifi_d2
+
+Version：v22.12
+
+```mirrors
+src/gz openwrt_core https://catwrt.eu.org/targets/ramips/mt7621/packages
+src/gz openwrt_base https://catwrt.eu.org/mipsel_24kc/base
+src/gz openwrt_luci https://catwrt.eu.org/mipsel_24kc/luci
+src/gz openwrt_packages https://catwrt.eu.org/mipsel_24kc/packages
+src/gz openwrt_routing https://catwrt.eu.org/mipsel_24kc/routing
+src/gz openwrt_telephony https://catwrt.eu.org/mipsel_24kc/telephony
+```
+
+### Alternative Host
+
+- VPS (Cloudflare Proxy): https://catwrt.eu.org
+- Vercel: https://vercel.catwrt.eu.org
+- Netlify: https://netlify.catwrt.eu.org
+- Vercel (Cloudflare Proxy): https://cfvercel.catwrt.eu.org
+- Netlify (Cloudflare Proxy): https://cfnetlify.catwrt.eu.org
+
+### Deploy Repo
+
+- Docker Deploy
+
+```bash
+$ docker run -d -p 1480:80 miaoer/catwrt-repo:latest
+```
+
+or docker-compose
+
+```bash
+$ wget https://fastly.jsdelivr.net/gh/miaoermua/CatWrt@main/docker-compose.yml
+
+$ docker compose up -d  
+# docker-compose up -d
+```
+
+---
+
 Thank you to the developers of the following projects:
 
 - [Lean's LEDE](https://github.com/coolsnowwolf/lede)
 - [aiamadeus](https://github.com/aiamadeus)
 
+
+```COPYING
+OpenWrt is provided under:
+
+	SPDX-License-Identifier: GPL-2.0-only
+
+Being under the terms of the GNU General Public License version 2 only,
+according with:
+
+	LICENSES/GPL-2.0
+
+In addition, other licenses may also apply.
+
+All contributions to OpenWrt are subject to this COPYING file.
+```

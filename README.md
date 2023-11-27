@@ -52,15 +52,13 @@
 
 ## 开源
 
-CatWrt 是基于开源的 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版；想知道我们使用了哪些源码，可以查看发布博客留下的链接和本仓库提交更新时描述。
+CatWrt 是基于开源的 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版；可以查看发布博客留下的链接和本仓库提交更新时描述的源码地址。
 
-不同于其他人编译的固件，我们编译过程完全开源！通过和社区交流也能编译出自己的 CatWrt 关键是这些都是在社区活跃下都是免费的。
+编译过程完全开源！通过和社区交流也能编译出自己的 CatWrt 关键是这些都是在社区活跃下都是免费的；CatWrt 修改项已开源，编译时可参考不推荐直接编译! [miaoermua/LEDE](https://github.com/miaoermua/LEDE) 遵守 [GPL2.0](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 协议，二次开发需要标注出处。
 
 固件中绝不含任何后门和可以监控或者劫持你的 HTTPS 的闭源软件，所有对 LEDE 修改均已展示并开源，SSL 安全是互联网最后的壁垒，安全干净才是固件应该做到的。
 
-CatWrt 修改项已开源，编译时可参考不推荐直接编译! [miaoermua/LEDE](https://github.com/miaoermua/LEDE) 请遵守 [GPL2.0](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 协议，二次开发需要标注出处。
-
-![开源示例](https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/blog/23-02-28/opensource.jpg)
+![示例](https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/blog/23-02-28/opensource.jpg)
 
 文件对应仓库中编译结果：
 
@@ -207,3 +205,5 @@ $ docker compose up -d
 ***
 
 欢迎预览 [博客](https://www.miaoer.xyz) 多多评论交流，欢迎使用后留下你的评论和 Star！
+
+i18n: [EN](https://github.com/miaoermua/CatWrt/blob/main/README_EN.md)

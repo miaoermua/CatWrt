@@ -58,7 +58,7 @@ CatWrt 是基于开源的 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓�
 
 固件中绝不含任何后门和可以监控或者劫持你的 HTTPS 的闭源软件，所有对 LEDE 修改均已展示并开源，SSL 安全是互联网最后的壁垒，安全干净才是固件应该做到的。
 
-CatWrt 修改项已开源，编译时可参考但不推荐拉库编译 [miaoermua/LEDE](https://github.com/miaoermua/LEDE) 请遵守 [GPL2.0](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 协议，二次开发需要标注出处。
+CatWrt 修改项已开源，编译时可参考不推荐直接编译! [miaoermua/LEDE](https://github.com/miaoermua/LEDE) 请遵守 [GPL2.0](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 协议，二次开发需要标注出处。
 
 ![开源示例](https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/blog/23-02-28/opensource.jpg)
 

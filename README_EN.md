@@ -43,7 +43,7 @@ If this project did helped you, please consider donating to [❤️support(in Al
 
 ## Use repo
 
-If you have already refreshed the list with `opkg update` before using, please first rm -f `/var/lock/opkg.lock` in terminal to clean up the index file from the default Tencent source, then fill in the source index into the CatWrt distribution software source and refresh again.
+If you have already refreshed the list with `opkg update` before using, please first `rm -f /var/lock/opkg.lock` in terminal to clean up the index file from the default Tencent source, then fill in the source index into the CatWrt distribution software source and refresh again.
 
 **x86-64**
 

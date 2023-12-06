@@ -74,7 +74,7 @@ lede/bin/targets = miaoermua/CatWrt/targets
 
 假如使用前已经刷新列表 `opkg update` 请先在终端 `rm -f /var/lock/opkg.lock` 清理掉默认腾讯源的索引文件，再将源索引填入 CatWrt 发行版软件源中再刷新。
 
-> 如果不可用无法连接，可以在底部寻找其他源的使用方法示例，当然你也可以在使用之前就测试每一个可用的源。
+> 如果不可用无法连接，可以在底部寻找分流源的使用方法示例，当然你也可以在使用之前就测试每一个可用的源。
 
 - VPS (Cloudflare Proxy): https://catwrt.eu.org
 - Vercel: https://vercel.catwrt.eu.org

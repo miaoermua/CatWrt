@@ -2,6 +2,7 @@
 autocore-arm - 68
 base-files - 72-r6375-a5823d43b
 bash - 5.2.15-1
+batctl-default - 2022.3-1
 block-mount - 2023-01-22-1ea5855e-1
 boost - 1.81.0-1
 boost-date_time - 1.81.0-1
@@ -15,6 +16,7 @@ coremark - 2022-07-27-eefc986e-1
 coreutils - 9.3-1
 coreutils-base64 - 9.3-1
 curl - 8.5.0-1
+dawn - 2022-07-24-9e8060ea-1
 ddns-scripts - 2.7.8-5
 ddns-scripts_aliyun - 1.0.3-1
 ddns-scripts_cloudflare.com-v4 - 2.7.8-5
@@ -51,8 +53,9 @@ iwinfo - 2023-05-17-c9f5c3f7-1
 jq - 1.6-2
 jshn - 2022-09-27-ea560134-1
 jsonfilter - 2018-02-04-c7e938d6-1
-kernel - 5.15.147-1-31fbb0b447bc14d1d56ba96d39a31d3b
+kernel - 5.15.147-1-e534e1a06897bee2010797444372e5bf
 kmod-asn1-decoder - 5.15.147-1
+kmod-batman-adv - 5.15.147+2023.3-3
 kmod-cfg80211 - 5.15.147+6.1.24-3
 kmod-crypto-acompress - 5.15.147-1
 kmod-crypto-aead - 5.15.147-1
@@ -60,6 +63,7 @@ kmod-crypto-arc4 - 5.15.147-1
 kmod-crypto-authenc - 5.15.147-1
 kmod-crypto-ccm - 5.15.147-1
 kmod-crypto-cmac - 5.15.147-1
+kmod-crypto-crc32c - 5.15.147-1
 kmod-crypto-ctr - 5.15.147-1
 kmod-crypto-des - 5.15.147-1
 kmod-crypto-ecb - 5.15.147-1
@@ -87,12 +91,16 @@ kmod-i2c-core - 5.15.147-1
 kmod-i2c-gpio - 5.15.147-1
 kmod-ip6tables - 5.15.147-1
 kmod-ipt-conntrack - 5.15.147-1
+kmod-ipt-conntrack-extra - 5.15.147-1
 kmod-ipt-core - 5.15.147-1
 kmod-ipt-extra - 5.15.147-1
+kmod-ipt-filter - 5.15.147-1
 kmod-ipt-fullconenat - 5.15.147+2022-02-13-108a36cb-10
+kmod-ipt-ipopt - 5.15.147-1
 kmod-ipt-ipset - 5.15.147-1
 kmod-ipt-nat - 5.15.147-1
 kmod-ipt-nat6 - 5.15.147-1
+kmod-ipt-nfqueue - 5.15.147-1
 kmod-ipt-offload - 5.15.147-1
 kmod-ipt-raw - 5.15.147-1
 kmod-ipt-tproxy - 5.15.147-1
@@ -100,6 +108,8 @@ kmod-iptunnel - 5.15.147-1
 kmod-iptunnel4 - 5.15.147-1
 kmod-leds-gpio - 5.15.147-1
 kmod-lib-crc-ccitt - 5.15.147-1
+kmod-lib-crc16 - 5.15.147-1
+kmod-lib-crc32c - 5.15.147-1
 kmod-lib-lzo - 5.15.147-1
 kmod-lib-textsearch - 5.15.147-1
 kmod-libphy - 5.15.147-1
@@ -111,6 +121,8 @@ kmod-mt76-core - 5.15.147+2023-08-14-b14c2351-1
 kmod-mt7915e - 5.15.147+2023-08-14-b14c2351-1
 kmod-mt7986-firmware - 5.15.147+2023-08-14-b14c2351-1
 kmod-mtd-rw - 5.15.147+git-20160214-2
+kmod-netem - 5.15.147-1
+kmod-netlink-diag - 5.15.147-1
 kmod-nf-conntrack - 5.15.147-1
 kmod-nf-conntrack-netlink - 5.15.147-1
 kmod-nf-conntrack6 - 5.15.147-1
@@ -127,11 +139,14 @@ kmod-nf-reject - 5.15.147-1
 kmod-nf-reject6 - 5.15.147-1
 kmod-nf-tproxy - 5.15.147-1
 kmod-nfnetlink - 5.15.147-1
+kmod-nfnetlink-queue - 5.15.147-1
 kmod-nls-base - 5.15.147-1
 kmod-phylink - 5.15.147-1
 kmod-ppp - 5.15.147-1
 kmod-pppoe - 5.15.147-1
 kmod-pppox - 5.15.147-1
+kmod-sched - 5.15.147-1
+kmod-sched-core - 5.15.147-1
 kmod-sfp - 5.15.147-1
 kmod-sit - 5.15.147-1
 kmod-slhc - 5.15.147-1
@@ -142,6 +157,7 @@ kmod-usb-core - 5.15.147-1
 kmod-usb-xhci-hcd - 5.15.147-1
 kmod-usb-xhci-mtk - 5.15.147-1
 kmod-usb3 - 5.15.147-1
+kmod-zram - 5.15.147-1
 libblkid1 - 2.38.1-1
 libblobmsg-json20220927 - 2022-09-27-ea560134-1
 libbpf20220308 - 2022-03-08-04c465fd-1
@@ -153,6 +169,8 @@ libev - 4.33-1
 libext2fs2 - 1.47.0-2
 libf2fs6 - 1.16.0-2
 libgcc1 - 11.3.0-4
+libgcrypt - 1.10.1-1
+libgpg-error - 1.46-1
 libip4tc2 - 1.8.7-2
 libip6tc2 - 1.8.7-2
 libipset13 - 7.17-1
@@ -194,6 +212,7 @@ luci-app-accesscontrol - 1-11
 luci-app-arpbind - 1-3
 luci-app-autoreboot - 1.0-8
 luci-app-ddns - 2.4.9-9
+luci-app-easymesh - 2.0-1
 luci-app-filetransfer - 1-2
 luci-app-firewall - git-24.019.37088-cdf2b69-1
 luci-app-nlbwmon - git-24.019.37088-cdf2b69-1
@@ -211,6 +230,7 @@ luci-i18n-arpbind-zh-cn - 1-3
 luci-i18n-autoreboot-zh-cn - 1.0-8
 luci-i18n-base-zh-cn - git-24.019.37088-cdf2b69-1
 luci-i18n-ddns-zh-cn - 2.4.9-9
+luci-i18n-easymesh-zh-cn - 2.0-1
 luci-i18n-filetransfer-zh-cn - 1-2
 luci-i18n-firewall-zh-cn - git-24.019.37088-cdf2b69-1
 luci-i18n-nlbwmon-zh-cn - git-24.019.37088-cdf2b69-1
@@ -275,6 +295,7 @@ uci - 2021-10-22-f84f49f0-6
 uclient-fetch - 2021-05-14-6a6011df-1
 uhttpd - 2022-10-31-23977554-1
 uhttpd-mod-ubus - 2022-10-31-23977554-1
+umdns - 2021-05-13-b777a0b5-7
 urandom-seed - 3
 urngd - 2020-01-21-c7f7b6b6-1
 usign - 2020-05-23-f1f65026-1
@@ -286,3 +307,4 @@ wol - 0.7.1-3
 wpad-openssl - 2022-07-29-b704dc72-8
 xray-core - 1.8.6-1
 zlib - 1.2.13-9
+zram-swap - 6

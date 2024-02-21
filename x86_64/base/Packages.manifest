@@ -86,6 +86,21 @@ Size: 2168931
 SHA256sum: 55b9621034ac753e1bc2d77acd8d90987f2f2d445dde416af5128d0c586562f0
 Description:  LingTi Game Acc is a Game Accelerator which is paid service.
 
+Package: adb
+Version: android.5.0.2_r1-3
+Depends: libc, zlib, libopenssl3, libpthread
+Source: package/utils/adb
+SourceName: adb
+Section: utils
+SourceDateEpoch: 1593703856
+Maintainer: Henryk Heisig <hyniu@o2.pl>
+Architecture: x86_64
+Installed-Size: 60841
+Filename: adb_android.5.0.2_r1-3_x86_64.ipk
+Size: 61712
+SHA256sum: c1c4804106b2a82db7ce52d82f4df932863bfda771b58a912e646ab8bb3f627a
+Description:  Android Debug Bridge (adb) is a versatile command line tool that lets you communicate with an emulator instance or connected Android-powered device.
+
 Package: adbyby
 Version: 2.7-20200315
 Depends: libc
@@ -100,19 +115,34 @@ Size: 402002
 SHA256sum: 6dc6ac541055f05bf837651199069dc110dd43e2bb0f33812380d7d69ca65915
 Description:  Adbyby is a powerful adblock module to block ad,just like adblock.
 
+Package: amd64-microcode
+Version: 20231211-1
+Depends: libc
+Source: package/firmware/linux-firmware
+SourceName: amd64-microcode
+Section: firmware
+SourceDateEpoch: 1708356204
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 56984
+Filename: amd64-microcode_20231211-1_x86_64.ipk
+Size: 57745
+SHA256sum: 3d9bb5954702cafdc85975eb4d5eb05b7590b7e20a9bb803160b58c60ba9b365
+Description:  AMD64 CPU microcode
+
 Package: amdgpu-firmware
-Version: 20230625-1
+Version: 20231211-1
 Depends: libc
 Source: package/firmware/linux-firmware
 SourceName: amdgpu-firmware
 Section: firmware
-SourceDateEpoch: 1689343695
+SourceDateEpoch: 1708356204
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 26105850
-Filename: amdgpu-firmware_20230625-1_x86_64.ipk
-Size: 25874393
-SHA256sum: 287d4261ac47e58229e62a9e4879b76d480a81b2730299df7d8e2cbae6b85cdf
+Installed-Size: 26964336
+Filename: amdgpu-firmware_20231211-1_x86_64.ipk
+Size: 26727220
+SHA256sum: 3f1c315a661f018e0883a9e25a1cebfa34df2c066f98278e5965c21c85eb33f3
 Description:  AMDGPU Video Driver firmware
 
 Package: appfilter
@@ -130,18 +160,18 @@ SHA256sum: 333cc2e5c1a0eb8d61037574f6739b1a1f0956b9a6fe06aac32094c264f54444
 Description:  open appfilter app
 
 Package: autocore-x86
-Version: 64
+Version: 68
 Depends: libc, bc, lm-sensors, ethtool, pciutils
 Source: package/lean/autocore
 SourceName: autocore-x86
 Section: opt
-SourceDateEpoch: 1690383439
+SourceDateEpoch: 1700202510
 Maintainer: Lean
 Architecture: x86_64
-Installed-Size: 8299
-Filename: autocore-x86_64_x86_64.ipk
-Size: 9055
-SHA256sum: db0807dc585926d5c85a95ec0f1dccbf468ff9aae2f740b977329a738182c2bc
+Installed-Size: 8316
+Filename: autocore-x86_68_x86_64.ipk
+Size: 9069
+SHA256sum: b1e41c10c03a951a1097fdebdcc23736a3dc08ac0780b2d924364f6482e7e6f9
 Description:  A usb autoconfig hotplug script.
 
 Package: automount
@@ -193,50 +223,50 @@ Description:  The blkid program is the command-line interface to working with th
  library.
 
 Package: bnx2-firmware
-Version: 20230625-1
+Version: 20231211-1
 Depends: libc
 Source: package/firmware/linux-firmware
 SourceName: bnx2-firmware
 Section: firmware
-SourceDateEpoch: 1689343695
+SourceDateEpoch: 1708356204
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 105167
-Filename: bnx2-firmware_20230625-1_x86_64.ipk
-Size: 105844
-SHA256sum: 0d0c2d8c36567e3fcf6b9dc4917c67a57b9f05fc7e765dc945a686abafdedea4
+Installed-Size: 105164
+Filename: bnx2-firmware_20231211-1_x86_64.ipk
+Size: 105816
+SHA256sum: f0bbb66d5b7c7830211ac8b60584761aa50780354581a1bdd91dd3a335360c74
 Description:  Broadcom BCM5706/5708/5709/5716 firmware
 
 Package: bnx2x-firmware
-Version: 20230625-1
+Version: 20231211-1
 Depends: libc
 Source: package/firmware/linux-firmware
 SourceName: bnx2x-firmware
 Section: firmware
-SourceDateEpoch: 1689343695
+SourceDateEpoch: 1708356204
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 2421821
-Filename: bnx2x-firmware_20230625-1_x86_64.ipk
-Size: 2415497
-SHA256sum: de440e0fdde1e320d716d3ff5fafb51c5c04884f29a7f2764ca22af275286a4d
+Installed-Size: 2421808
+Filename: bnx2x-firmware_20231211-1_x86_64.ipk
+Size: 2415465
+SHA256sum: da5a88bc69d19ad260487b2a16854b0aa0fb67fe19b448e7a4d3d586287b5058
 Description:  =QLogic 5771x/578xx firmware
 
 Package: brook
-Version: 20230606-2
+Version: 20240214-1
 Depends: libc, ca-bundle
-Source: package/openwrt-passwall/brook
+Source: package/openwrt-passwall-packages/brook
 SourceName: brook
 License: GPL-3.0
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1686317523
+SourceDateEpoch: 1705290427
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
-Installed-Size: 7727154
-Filename: brook_20230606-2_x86_64.ipk
-Size: 7635370
-SHA256sum: a847d2d065896d422586fae7f50dd5a14bf173d455a8fe78ba142835f2db4b45
+Installed-Size: 7690001
+Filename: brook_20240214-1_x86_64.ipk
+Size: 7599265
+SHA256sum: 212176277aaf27961f95e29001b7cc2986a1052d0748ec090a3fe1764da5f099
 Description:  Brook is a cross-platform strong encryption and not detectable proxy.
  Zero-Configuration.
 
@@ -329,21 +359,40 @@ SHA256sum: b77305e7b6c0f26eb9c8bb948ef75fc9cf70da47fd14906e8cbb40379e782dff
 Description:  cfdisk is a curses-based program for partitioning any hard disk drive
 
 Package: chinadns-ng
-Version: 2023.04.20-1
+Version: 2023.10.28-1
 Depends: libc, ipset
 Source: package/helloworld/chinadns-ng
 SourceName: chinadns-ng
 License: AGPL-3.0-only
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1687030599
+SourceDateEpoch: 1699467120
 Maintainer: pexcn <i@pexcn.me>
 Architecture: x86_64
-Installed-Size: 29149
-Filename: chinadns-ng_2023.04.20-1_x86_64.ipk
-Size: 29909
-SHA256sum: a60ef379ad87e4b7216fe0c18443405752aedaa792e9cf7e5244d5b3a883bb8c
+Installed-Size: 29695
+Filename: chinadns-ng_2023.10.28-1_x86_64.ipk
+Size: 30425
+SHA256sum: 2a372d8fe6e8d92d2fb4ee446bf037dd9dea11a0dde4d486026ef0a31f84e157
 Description:  ChinaDNS next generation, refactoring with epoll and ipset.
+
+Package: ddns-go
+Version: 1576b7bf-1
+Depends: libc, ca-bundle
+Source: package/luci-app-ddns-go/ddns-go
+SourceName: ddns-go
+License: AGPL-3.0-only
+LicenseFiles: LICENSE
+Section: net
+Require-User: ddns-go:ddns-go
+SourceDateEpoch: 1703859873
+Maintainer: herboy2008 <herboy2008@gmail.com>
+Architecture: x86_64
+Installed-Size: 3674691
+Filename: ddns-go_1576b7bf-1_x86_64.ipk
+Size: 3668727
+SHA256sum: e28221812c7d5cb3c06cf4bd7f3d2e84319130c2430c6946f037930c09a2148f
+Description:  ddns-go is a automatically obtain your public IPv4 or IPv6 address and resolve it to the corresponding domain name service,
+ support Alidns Dnspod Cloudflare Hicloud Callback Baiducloud porkbun GoDaddy Google Domains.
 
 Package: ddns-scripts_aliyun
 Version: 1.0.3-1
@@ -378,19 +427,19 @@ SHA256sum: 5941407b690e76d429bdfd0dbef85a2b2c141b37acc320b633f607c2747500e2
 Description:  Dynamic DNS Client scripts extension for Dnspod.com/Dnspod.cn
 
 Package: default-settings
-Version: 3-2
+Version: 3-10
 Depends: libc, luci-base, luci
 Source: package/lean/default-settings
 SourceName: default-settings
 License: GPLv3
 LicenseFiles: LICENSE
 Section: luci
-SourceDateEpoch: 1688660320
+SourceDateEpoch: 1706883963
 Architecture: all
-Installed-Size: 2039
-Filename: default-settings_3-2_all.ipk
-Size: 2769
-SHA256sum: 3787c8d88f1abd3ac3a96595fe68d3fb29904bbc687271e94e7c5e449b326cd1
+Installed-Size: 2055
+Filename: default-settings_3-10_all.ipk
+Size: 2781
+SHA256sum: ea6a39f14c830201e6a8d9b9e6ac005fab9a51c2b70fc221afc452f49867c7fb
 Description:  Language Support Packages.
 
 Package: dns2socks
@@ -421,15 +470,15 @@ Section: net
 SourceDateEpoch: 1654262844
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
-Installed-Size: 11740
+Installed-Size: 11753
 Filename: dns2tcp_1.1.0-1_x86_64.ipk
-Size: 12512
-SHA256sum: dc369d2ba4b8b7f29332dc25b02b366d2e09d4db0f6d8e7b18cfb7d564bcb3f5
+Size: 12516
+SHA256sum: 90a69fe80ef4debbbe6ef3780235a95ad6a82c11549344b3b2ce1bf34d3dd0fa
 Description:  utility to convert dns query from udp to tcp
 
 Package: dnsmasq-full
-Version: 2.88-1
-Depends: libc, libubus20220601, kmod-ipt-ipset, nftables-json
+Version: 2.88-2
+Depends: libc, libubus20220601, kmod-ipt-ipset
 Provides: dnsmasq
 Source: package/network/services/dnsmasq
 SourceName: dnsmasq-full
@@ -437,33 +486,33 @@ License: GPL-2.0
 LicenseFiles: COPYING
 Section: net
 Require-User: dnsmasq=453:dnsmasq=453
-SourceDateEpoch: 1672058431
+SourceDateEpoch: 1698143641
 CPE-ID: cpe:/a:thekelleys:dnsmasq
 Architecture: x86_64
-Installed-Size: 175062
-Filename: dnsmasq-full_2.88-1_x86_64.ipk
-Size: 175830
-SHA256sum: de1cc97f280218b226dff583a4540bc79df09c2c72dc9f058b76b3eec7345154
+Installed-Size: 174601
+Filename: dnsmasq-full_2.88-2_x86_64.ipk
+Size: 175382
+SHA256sum: 2f3308a4dd16a84e932899a93319ac08bf417aa09b9eee730fbe2939e5c0633e
 Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
  
  This is a fully configurable variant with DHCPv4, DHCPv6, DNSSEC, Authoritative DNS
  and nftset, Conntrack support & NO_ID enabled by default.
 
 Package: e2fsprogs
-Version: 1.46.5-2
+Version: 1.47.0-2
 Depends: libc, libuuid1, libext2fs2
 Source: package/utils/e2fsprogs
 SourceName: e2fsprogs
 License: GPL-2.0
 LicenseFiles: NOTICE
 Section: utils
-SourceDateEpoch: 1672818075
+SourceDateEpoch: 1705123429
 CPE-ID: cpe:/a:e2fsprogs_project:e2fsprogs
 Architecture: x86_64
-Installed-Size: 184956
-Filename: e2fsprogs_1.46.5-2_x86_64.ipk
-Size: 185746
-SHA256sum: 1c0c05e668df7fddd32d36d59774573df7e6bdea7d136e09faa0579dcd1d51e2
+Installed-Size: 192236
+Filename: e2fsprogs_1.47.0-2_x86_64.ipk
+Size: 193077
+SHA256sum: 5d71fb969923dfc82551a1fdbedb377e092cca4c52ac21cd210fe53fd185efac
 Description:  This package contains essential ext2 filesystem utilities which consists of
  e2fsck, mke2fs and most of the other core ext2 filesystem utilities.
 
@@ -536,74 +585,52 @@ Size: 2298
 SHA256sum: 375e24651d6511a0e92ef677c64580fac2c3024c0905294741643a53deaeb654
 Description:  OpenWrt getrandom system helper
 
-Package: hostapd-common
-Version: 2022-07-29-b704dc72-7
+Package: homebox
+Version: 0.0.0-dev.2020062901-14
 Depends: libc
-Source: package/network/services/hostapd
-SourceName: hostapd-common
-License: BSD-3-Clause
+Source: package/NetSpeedTest/homebox
+SourceName: homebox
 Section: net
-SourceDateEpoch: 1683192219
-CPE-ID: cpe:/a:w1.fi:hostapd
-Maintainer: Felix Fietkau <nbd@nbd.name>
+SourceDateEpoch: 1677733787
 Architecture: x86_64
-Installed-Size: 12644
-Filename: hostapd-common_2022-07-29-b704dc72-7_x86_64.ipk
-Size: 13421
-SHA256sum: 3d4d7eed76ffa542300af86d4040293537f67afc1e2c97251c20fae0aab8e0b9
-Description:  hostapd/wpa_supplicant common support files
-
-Package: hostapd
-Version: 2022-07-29-b704dc72-7
-Depends: hostapd-common (=2022-07-29-b704dc72-7), libc, libnl-tiny2022-11-01, hostapd-common, libubus20220601
-Source: package/network/services/hostapd
-SourceName: hostapd
-License: BSD-3-Clause
-Section: net
-Require-User: network=101:network=101
-SourceDateEpoch: 1683192219
-CPE-ID: cpe:/a:w1.fi:hostapd
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Architecture: x86_64
-Installed-Size: 481857
-Filename: hostapd_2022-07-29-b704dc72-7_x86_64.ipk
-Size: 482792
-SHA256sum: 590ff8cc53789d1a0f9658f5e05dfb14470a3003eced5f2fad82e270961fd1ba
-Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
- Authenticator.
+Installed-Size: 3205038
+Filename: homebox_0.0.0-dev.2020062901-14_x86_64.ipk
+Size: 3200099
+SHA256sum: 2d781ddbb30a55bd72c0d78483d858fc5b69ea147fb65de4649ad750484a9521
+Description:  A Toolbox for Home Local Networks Speed Test
 
 Package: hysteria
-Version: 1.3.5-1
+Version: 2.2.0-1
 Depends: libc, ca-bundle
 Source: package/helloworld/hysteria
 SourceName: hysteria
 License: MIT
 Section: net
-SourceDateEpoch: 1686596317
+SourceDateEpoch: 1699467120
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
-Installed-Size: 6931858
-Filename: hysteria_1.3.5-1_x86_64.ipk
-Size: 6914295
-SHA256sum: b645c34953dc096bfc194c0d340cee0e6a421685462163c7de6bd731c9ca3780
+Installed-Size: 5814676
+Filename: hysteria_2.2.0-1_x86_64.ipk
+Size: 5802689
+SHA256sum: 60734cb6efd77a44820a0660b543d025bc98567eb55eceeb2ecbb46240584b55
 Description:  Hysteria is a feature-packed network utility optimized for networks
  of poor quality (e.g. satellite connections, congested public Wi-Fi,
  connecting from China to servers abroad) powered by a custom version
  of QUIC protocol.
 
 Package: i915-firmware
-Version: 20230625-1
+Version: 20231211-1
 Depends: libc
 Source: package/firmware/linux-firmware
 SourceName: i915-firmware
 Section: firmware
-SourceDateEpoch: 1689343695
+SourceDateEpoch: 1708356204
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 7776103
-Filename: i915-firmware_20230625-1_x86_64.ipk
-Size: 7748932
-SHA256sum: 341af05d2eca38e4e0f9faf9498416cb343f380b070f5d2963cbe7506942891c
+Installed-Size: 7807685
+Filename: i915-firmware_20231211-1_x86_64.ipk
+Size: 7781496
+SHA256sum: 015fdb2a421233815d52e8147bda6fcb38025ff7803be4d7df65a0ffd890953c
 Description:  Intel GPU firmware
 
 Package: ip-full
@@ -619,10 +646,10 @@ SourceDateEpoch: 1678283784
 CPE-ID: cpe:/a:iproute2_project:iproute2
 Maintainer: Russell Senior <russell@personaltelco.net>
 Architecture: x86_64
-Installed-Size: 225032
+Installed-Size: 224995
 Filename: ip-full_6.2.0-1_x86_64.ipk
-Size: 225909
-SHA256sum: b86ed2d5ffb328caae8423263db5e48fb56951ea652bfbf2608f28eea8648619
+Size: 225855
+SHA256sum: 422bdb937c4614b87c4296a7869ab5b12ecbc7142f06a38280a37b1b1a3d9d19
 Description:  Routing control utility (full)
 
 Package: ipset
@@ -648,12 +675,12 @@ Source: package/helloworld/ipt2socks
 SourceName: ipt2socks
 License: AGPL-3.0
 Section: net
-SourceDateEpoch: 1683527940
+SourceDateEpoch: 1697305841
 Architecture: x86_64
-Installed-Size: 27129
+Installed-Size: 27132
 Filename: ipt2socks_1.1.3-3_x86_64.ipk
-Size: 27882
-SHA256sum: 992780bc43652977b6debf3d23fedad2a6d072bc851a8632cd75b76e76dd0c21
+Size: 27886
+SHA256sum: e613a3ae716cbcbd7ae3c816e817b2bf95eb6649cd93e0faf27460793f121da2
 Description:  Utility for converting iptables (redirect/tproxy) to socks5.
 
 Package: iptables-mod-fullconenat
@@ -667,10 +694,10 @@ Section: net
 SourceDateEpoch: 1672378208
 Maintainer: Chion Tang <tech@chionlab.moe>
 Architecture: x86_64
-Installed-Size: 2536
+Installed-Size: 2540
 Filename: iptables-mod-fullconenat_2022-02-13-108a36cb-10_x86_64.ipk
-Size: 3297
-SHA256sum: 8f056747f5bd1df9779f7cdd2e3908e61e1272aa1dff1877f5d55c7dc42890ee
+Size: 3304
+SHA256sum: 2ed886f9517852f7bc206bce127caf515e4ea020a81dc569389618c106dcce26
 Description:  FULLCONENAT iptables extension
 
 Package: ipv6helper
@@ -689,86 +716,6 @@ Filename: ipv6helper_1.0-2_all.ipk
 Size: 1281
 SHA256sum: c2198e6fedc562edfeac66de38f1d158fffc01baa6d595794b439ac7ac743b83
 Description:  IPv6 Helper and Dynamic Update he.net of ip
-
-Package: iw
-Version: 5.19-1
-Depends: libc, libnl-tiny2022-11-01
-Source: package/network/utils/iw
-SourceName: iw
-License: GPL-2.0
-Section: net
-SourceDateEpoch: 1683192219
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Architecture: x86_64
-Installed-Size: 54374
-Filename: iw_5.19-1_x86_64.ipk
-Size: 55202
-SHA256sum: c1b6eb0b021a07a448f278bdb4b01f590c6d06a31e4c2e470905a54d0565d463
-Description:  cfg80211 interface configuration utility
-
-Package: iwlwifi-firmware-ax200
-Version: 20230625-1
-Depends: libc
-Source: package/firmware/linux-firmware
-SourceName: iwlwifi-firmware-ax200
-Section: firmware
-SourceDateEpoch: 1689343695
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Architecture: x86_64
-Installed-Size: 522479
-Filename: iwlwifi-firmware-ax200_20230625-1_x86_64.ipk
-Size: 521982
-SHA256sum: de0704cd6137dd7eb8d7b8bdba96416265edb7a5b78042e0a97f2b7e6e165e3f
-Description:  Intel AX200 firmware
-
-Package: iwlwifi-firmware-ax201
-Version: 20230625-1
-Depends: libc
-Source: package/firmware/linux-firmware
-SourceName: iwlwifi-firmware-ax201
-Section: firmware
-SourceDateEpoch: 1689343695
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Architecture: x86_64
-Installed-Size: 560216
-Filename: iwlwifi-firmware-ax201_20230625-1_x86_64.ipk
-Size: 559667
-SHA256sum: 72b49ee34fb449c17618f80fb66b1557bcd56c4fb8695b9b9d86e3d3e4232741
-Description:  Intel AX201 firmware
-
-Package: iwlwifi-firmware-ax210
-Version: 20230625-1
-Depends: libc
-Source: package/firmware/linux-firmware
-SourceName: iwlwifi-firmware-ax210
-Section: firmware
-SourceDateEpoch: 1689343695
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Architecture: x86_64
-Installed-Size: 583725
-Filename: iwlwifi-firmware-ax210_20230625-1_x86_64.ipk
-Size: 582806
-SHA256sum: a3244c6ce61184f393f24b872d44ee80aa3e1d2ee25bdb55d4bd40559a54bdc2
-Description:  Intel AX210 firmware
-
-Package: jansson4
-Version: 2.14-3
-Depends: libc
-Provides: jansson
-Source: package/libs/jansson
-SourceName: jansson
-License: MIT
-LicenseFiles: LICENSE
-Section: libs
-SourceDateEpoch: 1670480457
-ABIVersion: 4
-CPE-ID: cpe:/a:jansson_project:jansson
-Architecture: x86_64
-Installed-Size: 23271
-Filename: jansson4_2.14-3_x86_64.ipk
-Size: 24009
-SHA256sum: 3cfbb63e3498fe0f06828288af7286a9a0443d2ece0a316e256eb150df999154
-Description:  Jansson is a C library for encoding, decoding and manipulating JSON data
 
 Package: jshn
 Version: 2022-09-27-ea560134-1
@@ -920,7 +867,7 @@ SHA256sum: bd56e92742755c47269a1e2d5b19a11d9a8423def224812a404d1de2195ba5cc
 Description:  Linux capabilities library library
 
 Package: libcomerr0
-Version: 1.46.5-2
+Version: 1.47.0-2
 Depends: libc, libuuid1
 Provides: libcomerr
 Source: package/utils/e2fsprogs
@@ -928,14 +875,14 @@ SourceName: libcomerr
 License: GPL-2.0
 LicenseFiles: NOTICE
 Section: libs
-SourceDateEpoch: 1672818075
+SourceDateEpoch: 1705123429
 ABIVersion: 0
 CPE-ID: cpe:/a:e2fsprogs_project:e2fsprogs
 Architecture: x86_64
-Installed-Size: 4068
-Filename: libcomerr0_1.46.5-2_x86_64.ipk
-Size: 4850
-SHA256sum: 455f732f75e935e4eae741e7e29b43a0f0c727af31659603010835ccbf63d5fa
+Installed-Size: 4080
+Filename: libcomerr0_1.47.0-2_x86_64.ipk
+Size: 4859
+SHA256sum: 888ed3dffc99e2bb6ea427b521bdf43fb09e68c643c777dfe519ed50840b10f3
 Description:  This package contains libcom_err, the common error description library
  bundled with e2fsprogs.
 
@@ -991,10 +938,10 @@ ABIVersion: -7
 CPE-ID: cpe:/a:libevent_project:libevent
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: x86_64
-Installed-Size: 99169
+Installed-Size: 99165
 Filename: libevent2-7_2.1.12-1_x86_64.ipk
-Size: 100356
-SHA256sum: b2d5f4f29234989e37613ef67c5301098c6a0788dd522b278a7fbf4baad29232
+Size: 100352
+SHA256sum: f07b80dcb8beaddda5b0306d85929555547cf1c466ce95e230891bc97aaf8bf2
 Description:  The libevent API provides a mechanism to execute a callback function
  when a specific event occurs on a file descriptor or after a timeout
  has been reached. Furthermore, libevent also support callbacks due
@@ -1009,7 +956,7 @@ Description:  The libevent API provides a mechanism to execute a callback functi
  containing both the core & extra libraries.
 
 Package: libext2fs2
-Version: 1.46.5-2
+Version: 1.47.0-2
 Depends: libc, libuuid1, libblkid1, libss2, libcomerr0
 Provides: libext2fs
 Source: package/utils/e2fsprogs
@@ -1017,18 +964,18 @@ SourceName: libext2fs
 License: GPL-2.0
 LicenseFiles: NOTICE
 Section: libs
-SourceDateEpoch: 1672818075
+SourceDateEpoch: 1705123429
 ABIVersion: 2
 CPE-ID: cpe:/a:e2fsprogs_project:e2fsprogs
 Architecture: x86_64
-Installed-Size: 178585
-Filename: libext2fs2_1.46.5-2_x86_64.ipk
-Size: 179081
-SHA256sum: 64fe2e55c78e605cdd234210bb1b571ed35d78c9aef1e3937c2c497bacc7b3dc
+Installed-Size: 182242
+Filename: libext2fs2_1.47.0-2_x86_64.ipk
+Size: 182772
+SHA256sum: 306784b67524a526ff68c2d2f049035b8444a5741a4b88da99b0afb35a1ead22
 Description:  libext2fs is a library which can access ext2, ext3 and ext4 filesystems.
 
 Package: libf2fs6
-Version: 1.15.0-1
+Version: 1.16.0-2
 Depends: libc, libuuid1
 Conflicts: libf2fs-selinux
 Provides: libf2fs
@@ -1037,15 +984,15 @@ SourceName: libf2fs
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Section: libs
-SourceDateEpoch: 1670480457
+SourceDateEpoch: 1705124623
 ABIVersion: 6
 CPE-ID: cpe:/a:f2fs-tools_project:f2fs-tools
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 41494
-Filename: libf2fs6_1.15.0-1_x86_64.ipk
-Size: 42236
-SHA256sum: 32da9b888ca2280fe905c70e63c86e79436c319f19707897717714e53a3b8f20
+Installed-Size: 41553
+Filename: libf2fs6_1.16.0-2_x86_64.ipk
+Size: 42324
+SHA256sum: abc147a7b139179f573d4c395f8d2d171ec715e54f081855d0a4f9e03edd0805
 Description:  Library for Flash-Friendly File System (F2FS) tools
 
 Package: libfdisk1
@@ -1097,10 +1044,10 @@ SourceDateEpoch: 1674450162
 ABIVersion: 13
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: x86_64
-Installed-Size: 50423
+Installed-Size: 50424
 Filename: libipset13_7.17-1_x86_64.ipk
-Size: 50932
-SHA256sum: f6ec7293316b0f366f86dd1a30eb13924208e49666d7d52bf60310eae1556062
+Size: 50897
+SHA256sum: 73825278f73220c8808ed9da7c0c0d4494e1737a0d7ce9d6e936179a2573ba28
 Description:  IPset administration utility
 
 Package: libjson-c5
@@ -1202,7 +1149,7 @@ Description:
  This package contains the Lua shared libraries, needed by other programs.
 
 Package: libmbedtls12
-Version: 2.28.3-1
+Version: 2.28.5-1
 Depends: libc
 Provides: libmbedtls
 Source: package/libs/mbedtls
@@ -1210,14 +1157,14 @@ SourceName: libmbedtls
 License: GPL-2.0-or-later
 LicenseFiles: gpl-2.0.txt
 Section: libs
-SourceDateEpoch: 1681919798
+SourceDateEpoch: 1697383808
 ABIVersion: 12
 CPE-ID: cpe:/a:arm:mbed_tls
 Architecture: x86_64
-Installed-Size: 239724
-Filename: libmbedtls12_2.28.3-1_x86_64.ipk
-Size: 240574
-SHA256sum: 0d045130ee63bfd6b33aeb1c392c4a527a0ac0eef8191a34fde7c93c15e4b8cf
+Installed-Size: 240368
+Filename: libmbedtls12_2.28.5-1_x86_64.ipk
+Size: 241135
+SHA256sum: c6e8db09f6ae3906af4ce37cb0356e1abaf37fb9d51633cf76bded425a65157e
 Description:  The aim of the mbedtls project is to provide a quality, open-source
  cryptographic library written in C and targeted at embedded systems.
  This package contains the mbedtls library.
@@ -1364,27 +1311,6 @@ Description:  libnfnetlink is is the low-level library for netfilter related ker
  (such as nfnetlink_log, nfnetlink_queue, nfnetlink_conntrack) and their respective users
  and/or management tools in userspace.
 
-Package: libnftnl11
-Version: 1.2.4-11
-Depends: libc, libmnl0
-Provides: libnftnl
-Source: package/libs/libnftnl
-SourceName: libnftnl
-License: GPL-2.0-or-later
-LicenseFiles: COPYING
-Section: libs
-SourceDateEpoch: 1670480457
-ABIVersion: 11
-CPE-ID: cpe:/a:netfilter:libnftnl
-Maintainer: Steven Barth <steven@midlink.org>
-Architecture: x86_64
-Installed-Size: 65051
-Filename: libnftnl11_1.2.4-11_x86_64.ipk
-Size: 65879
-SHA256sum: 791204943063cb8d15dd7399ca20736e81d84dc118eca1453bb4865491d65155
-Description:  libnftnl is a userspace library providing a low-level netlink
- programming interface (API) to the in-kernel nf_tables subsystem.
-
 Package: libnl-tiny2022-11-01
 Version: 2022-11-01-db3b2cdb-1
 Depends: libc
@@ -1404,50 +1330,91 @@ SHA256sum: 9b010cfaea36ce78fce0778c7055f24992f3c77d8bdd72e6fbcb66f185d431f7
 Description:  This package contains a stripped down version of libnl
 
 Package: libopenssl-conf
-Version: 1.1.1u-2
-Depends: libc, libopenssl1.1
+Version: 3.0.13-1
+Depends: libc, libopenssl3
 Source: package/libs/openssl
 SourceName: libopenssl-conf
-License: OpenSSL
+License: Apache-2.0
 LicenseFiles: LICENSE
 Section: libs
-SourceDateEpoch: 1687966700
+SourceDateEpoch: 1706943781
 CPE-ID: cpe:/a:openssl:openssl
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
 Architecture: x86_64
-Installed-Size: 5018
-Filename: libopenssl-conf_1.1.1u-2_x86_64.ipk
-Size: 6026
-SHA256sum: 8f372eef82b5fdc595d084ede8c951593cc261f43a56859b674e9af995427284
+Installed-Size: 6271
+Filename: libopenssl-conf_3.0.13-1_x86_64.ipk
+Size: 7453
+SHA256sum: 884b6f40ddb19a051612f8c2ef4602f8a1348a0913d5fe8778ecd4e0e7b634fa
 Description:  The OpenSSL Project is a collaborative effort to develop a robust,
  commercial-grade, full-featured, and Open Source toolkit implementing the
  Transport Layer Security (TLS) protocol as well as a full-strength
  general-purpose cryptography library.
  This package installs the OpenSSL configuration file /etc/ssl/openssl.cnf.
 
-Package: libopenssl1.1
-Version: 1.1.1u-2
+Package: libopenssl-legacy
+Version: 3.0.13-1
+Depends: libc, libopenssl3, libopenssl-conf
+Source: package/libs/openssl
+SourceName: libopenssl-legacy
+License: Apache-2.0
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1706943781
+CPE-ID: cpe:/a:openssl:openssl
+Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
+Architecture: x86_64
+Installed-Size: 40963
+Filename: libopenssl-legacy_3.0.13-1_x86_64.ipk
+Size: 41900
+SHA256sum: b533149ef8b7ecf7e02b29e9da85711281ff31c80911c0b3104cc795189b9f21
+Description:  The OpenSSL legacy provider supplies OpenSSL implementations of algorithms that
+ have been deemed legacy. Such algorithms have commonly fallen out of use, have
+ been deemed insecure by the cryptography community, or something similar.  See
+ https://www.openssl.org/docs/man3.0/man7/OSSL_PROVIDER-legacy.html
+
+Package: libopenssl3
+Version: 3.0.13-1
 Depends: libc, kmod-crypto-user, kmod-cryptodev
 Provides: libopenssl
 Source: package/libs/openssl
 SourceName: libopenssl
-License: OpenSSL
+License: Apache-2.0
 LicenseFiles: LICENSE
 Section: libs
-SourceDateEpoch: 1687966700
-ABIVersion: 1.1
+SourceDateEpoch: 1706943781
+ABIVersion: 3
 CPE-ID: cpe:/a:openssl:openssl
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
 Architecture: x86_64
-Installed-Size: 1537585
-Filename: libopenssl1.1_1.1.1u-2_x86_64.ipk
-Size: 1531274
-SHA256sum: e0984d13e3138c8cc3035fc15a151ca7ecd849ad28494749bf9186cbe48c9762
+Installed-Size: 2137217
+Filename: libopenssl3_3.0.13-1_x86_64.ipk
+Size: 2128240
+SHA256sum: 2db5ee9cd4eb3cd6579306ccbe4fba93b4586e7edff10fff2650335ea0974a27
 Description:  The OpenSSL Project is a collaborative effort to develop a robust,
  commercial-grade, full-featured, and Open Source toolkit implementing the
  Transport Layer Security (TLS) protocol as well as a full-strength
  general-purpose cryptography library.
  This package contains the OpenSSL shared libraries, needed by other programs.
+
+Package: libpcap1
+Version: 1.10.3-1
+Depends: libc
+Provides: libpcap
+Source: package/libs/libpcap
+SourceName: libpcap
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1674631835
+ABIVersion: 1
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 117294
+Filename: libpcap1_1.10.3-1_x86_64.ipk
+Size: 118120
+SHA256sum: dc12db00729f32b6c6a1119227c8cb8e59baddc23d48695ef3907be50cb4b8da
+Description:  This package contains a system-independent library for user-level network packet
+ capture.
 
 Package: libpcre
 Version: 8.45-5
@@ -1528,7 +1495,7 @@ SHA256sum: 3a0c2484f061eb32089a44583d7a082e1b535b35730be7e0ad07793f9f6b3661
 Description:  The smartcols library is used to print tables and trees in a pretty way.
 
 Package: libss2
-Version: 1.46.5-2
+Version: 1.47.0-2
 Depends: libc, libcomerr0
 Provides: libss
 Source: package/utils/e2fsprogs
@@ -1536,14 +1503,14 @@ SourceName: libss
 License: GPL-2.0
 LicenseFiles: NOTICE
 Section: libs
-SourceDateEpoch: 1672818075
+SourceDateEpoch: 1705123429
 ABIVersion: 2
 CPE-ID: cpe:/a:e2fsprogs_project:e2fsprogs
 Architecture: x86_64
-Installed-Size: 8891
-Filename: libss2_1.46.5-2_x86_64.ipk
-Size: 9667
-SHA256sum: 517ac748a1f5bc1818fd9bd1ac50d9c76808c29f070908b3f799970a13464985
+Installed-Size: 8993
+Filename: libss2_1.47.0-2_x86_64.ipk
+Size: 9757
+SHA256sum: 7e4c2e327c7cf84e7cd3b2bb8b650f9fbad08b65ee34b226918b47dcdb02e800
 Description:  This pacakge contains libss, a command-line interface parsing library
  bundled with e2fsprogs.
 
@@ -1618,6 +1585,20 @@ Filename: libubus20220601_2022-06-01-2bebf93c-1_x86_64.ipk
 Size: 11473
 SHA256sum: 4744abee33087d94ae90bf3097ebf078f58dfe035816fe1823ffe565f1212137
 Description:  OpenWrt RPC client library
+
+Package: libuci-lua53
+Version: 1
+Depends: libc, libuci20130104, liblua5.3-5.3
+Source: package/oui/libuci-lua-53
+SourceName: libuci-lua53
+Section: libs
+SourceDateEpoch: 1700883907
+Architecture: x86_64
+Installed-Size: 7146
+Filename: libuci-lua53_1_x86_64.ipk
+Size: 7859
+SHA256sum: d6c57e5bab92b6d03f2199e2edfa0a9ae21efc11b1c8187e9dc7dc822dbe1a53
+Description:  Lua5.3 plugin for UCI
 
 Package: libuci-lua
 Version: 2021-10-22-f84f49f0-6
@@ -1694,7 +1675,7 @@ Description:  libusb is a C library that gives applications easy access to USB d
 
 Package: libustream-openssl20201210
 Version: 2022-12-08-9217ab46-1
-Depends: libc, libubox20220927, libopenssl1.1
+Depends: libc, libubox20220927, libopenssl3
 Provides: libustream-openssl
 Source: package/libs/ustream-ssl
 SourceName: libustream-openssl
@@ -1704,10 +1685,10 @@ SourceDateEpoch: 1670480457
 ABIVersion: 20201210
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 4762
+Installed-Size: 4742
 Filename: libustream-openssl20201210_2022-12-08-9217ab46-1_x86_64.ipk
-Size: 5524
-SHA256sum: cb24ad66514d2c63b9b16e68e3f5faadc76ec793fedd287914497e00996b4754
+Size: 5504
+SHA256sum: 535494333196a5f970e30b880edd033f963b8d50dc2e673a038ad78ba2988d33
 Description:  ustream SSL Library (openssl)
 
 Package: libuuid1
@@ -1731,6 +1712,28 @@ Description:  The UUID library is used to generate unique identifiers for object
  that may be accessible beyond the local system. This library
  generates UUIDs compatible with those created by the Open Software
  Foundation (OSF) Distributed Computing Environment (DCE) utility.
+
+Package: libwolfssl5.5.4.e624513f
+Version: 5.5.4-stable-2
+Depends: libc
+Conflicts: libwolfsslcpu-crypto
+Provides: libcyassl, libwolfssl, libcyassl5.5.4.e624513f
+Source: package/libs/wolfssl
+SourceName: libwolfssl
+License: GPL-2.0-or-later
+LicenseFiles: LICENSING COPYING
+Section: libs
+SourceDateEpoch: 1675864690
+ABIVersion: 5.5.4.e624513f
+CPE-ID: cpe:/a:wolfssl:wolfssl
+Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
+Architecture: x86_64
+Installed-Size: 535320
+Filename: libwolfssl5.5.4.e624513f_5.5.4-stable-2_x86_64.ipk
+Size: 534591
+SHA256sum: 9852fea5a9fa4b49efb0df29b30dfc4a9a7ed70ad352ee851d6d428b5b3d607e
+Description:  wolfSSL (formerly CyaSSL) is an SSL library optimized for small
+ footprint, both on disk and for memory use.
 
 Package: logd
 Version: 2022-08-13-4c7b720b-14
@@ -1766,21 +1769,21 @@ Size: 69229
 SHA256sum: 4d088131d58ecd33fa8237f6110b85cd4742db8ad2ff0570051e6b388aa9a61c
 Description:  lsblk lists information about all or the specified block devices
 
-Package: lua-maxminddb
-Version: 0.2-4
-Depends: libc, lua, libmaxminddb
-Source: package/lua-maxminddb
-SourceName: lua-maxminddb
+Package: lua-cjson-53
+Version: 2.1.0-1
+Depends: libc, liblua5.3-5.3
+Source: package/oui/lua-cjson-53
+SourceName: lua-cjson-53
 License: MIT
+LicenseFiles: LICENSE
 Section: lang
-SourceDateEpoch: 1634959980
-Maintainer: fabled
+SourceDateEpoch: 1706936256
 Architecture: x86_64
-Installed-Size: 2514
-Filename: lua-maxminddb_0.2-4_x86_64.ipk
-Size: 3213
-SHA256sum: f7dd22fc04435dc10adf1843314acea46413d030911040da3e964c9f43473a6f
-Description:  libmaxminddb bindings for lua
+Installed-Size: 10092
+Filename: lua-cjson-53_2.1.0-1_x86_64.ipk
+Size: 10810
+SHA256sum: e3f97f9b458400da8b335ff1e94136d4574c17a78798e7ed987c928c711c1aa2
+Description:  Lua5.3 CJSON is a fast JSON encoding/parsing module for Lua.
 
 Package: lua-neturl
 Version: 1.1-1-3
@@ -1848,33 +1851,19 @@ Size: 91749
 SHA256sum: 308c8ddf38f960262064d170606a6425b9bfa8bb3da672a493ef492d7c29663f
 Description:  LuCI support for adguardhome
 
-Package: luci-app-alist
-Version: 1.0.10-1
-Depends: libc, alist, luci-compat
-Source: package/luci-app-alist
-SourceName: luci-app-alist
+Package: luci-app-ddns-go
+Version: 1.4.1-10
+Depends: libc, ddns-go
+Source: package/luci-app-ddns-go/luci-app-ddns-go
+SourceName: luci-app-ddns-go
 Section: luci
-SourceDateEpoch: 1687402786
+SourceDateEpoch: 1700296278
 Architecture: all
-Installed-Size: 7350
-Filename: luci-app-alist_1.0.10-1_all.ipk
-Size: 8084
-SHA256sum: 303bf003b954f78075adfe11266771e12c58998ada46fe5f271fdea6358e74c4
-Description:  LuCI support for alist
-
-Package: luci-app-bypass
-Version: git-23.225.13242-961ee0e-1
-Depends: libc, ipset, kmod-ipt-nat, ip-full, iptables-mod-tproxy, lua-neturl, dnsmasq-full, smartdns, coreutils, coreutils-base64, curl, tcping, chinadns-ng, lua, luci-compat, luci-lib-ipkg, unzip, lua-maxminddb, shadowsocks-libev-ss-server, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-server, v2ray-plugin, xray-core, trojan-plus, naiveproxy, kcptun-client, hysteria, redsocks2, microsocks
-Source: package/luci-app-bypass
-SourceName: luci-app-bypass
-Section: luci
-SourceDateEpoch: 1687402786
-Architecture: all
-Installed-Size: 2646890
-Filename: luci-app-bypass_git-23.225.13242-961ee0e-1_all.ipk
-Size: 2465034
-SHA256sum: 429c55f2dcaebf5d075bbfd02a4f3b2f40eac752d8969bbd195ec6608ad5802a
-Description:  SS/SSR/Xray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
+Installed-Size: 3303
+Filename: luci-app-ddns-go_1.4.1-10_all.ipk
+Size: 4022
+SHA256sum: 6b0f7ce8a5f11bc03347a3ab7034a51adb87bca3b8ba422e96e505be62ff4a43
+Description:  LuCI Support for Dynamic ddns-go Client
 
 Package: luci-app-eqos
 Version: git-20.112.09442-85f9b37-1
@@ -1891,19 +1880,63 @@ Size: 3058
 SHA256sum: a5365fce91182f4be9dfe7018dd904064ac438f8ac5240264a3f68e7599f7d80
 Description:  EQOS - LuCI interface
 
+Package: luci-app-eqosplus
+Version: 1.2.2-20230719
+Depends: libc, bash, tc, kmod-sched-core, kmod-ifb, kmod-sched, iptables-mod-filter, iptables-mod-nat-extra
+Source: package/luci-app-eqosplus
+SourceName: luci-app-eqosplus
+Section: luci
+SourceDateEpoch: 1690192109
+Maintainer: sirpdboy <herboy2008@gmail.com>
+Architecture: all
+Installed-Size: 5603
+Filename: luci-app-eqosplus_1.2.2-20230719_all.ipk
+Size: 6443
+SHA256sum: fc2c3fbb3b75b3f673d39618dbb2a2b9e686a1678fa163c0dfbda15e452ee329
+Description:  LuCI support for Easy eqosplus(Support speed limit based on IP address).
+
+Package: luci-app-lucky
+Version: 1.1.2-7
+Depends: libc, lucky
+Source: package/luci-app-lucky/luci-app-lucky
+SourceName: luci-app-lucky
+Section: luci
+SourceDateEpoch: 1700579136
+Architecture: all
+Installed-Size: 3591
+Filename: luci-app-lucky_1.1.2-7_all.ipk
+Size: 4373
+SHA256sum: 6f929907798fab48da16c0819052c27c663fff7d08672afc0fca280081ca8619
+Description:  LuCI Support for Dynamic lucky Client
+
+Package: luci-app-netspeedtest
+Version: 2.1.3-20230302
+Depends: libc, python3, iperf3, homebox, netperf
+Source: package/NetSpeedTest/luci-app-netspeedtest
+SourceName: luci-app-netspeedtest
+Section: luci
+SourceDateEpoch: 1681806203
+Maintainer: <https://github.com/sirpdboy/netspeedtest>
+Architecture: all
+Installed-Size: 23596
+Filename: luci-app-netspeedtest_2.1.3-20230302_all.ipk
+Size: 24423
+SHA256sum: c34fa6686d3c8a20021fc4db9d16fd4f842922e7cbad8441a71d05fdca65b12e
+Description:  LuCI Support for netspeedtest
+
 Package: luci-app-nezha-agent
-Version: 2.0-1
+Version: 3.0-1
 Depends: libc, nezha-agent
 Source: package/openwrt_nezha/luci-app-nezha
 SourceName: luci-app-nezha-agent
 Section: luci
-SourceDateEpoch: 1676951164
+SourceDateEpoch: 1693475932
 Maintainer: <https://github.com/Erope/openwrt_nezha/>
 Architecture: all
-Installed-Size: 2076
-Filename: luci-app-nezha-agent_2.0-1_all.ipk
-Size: 2871
-SHA256sum: ec45e11834da03b5cb27d1dbbe7d7c19911b22dba5204695cecbd3ab2a437b79
+Installed-Size: 2102
+Filename: luci-app-nezha-agent_3.0-1_all.ipk
+Size: 2898
+SHA256sum: 573c968a27956529bedebe2bcb089c8e2175f0ee9a1ab2cb76fd39814a6444e9
 Description:  LuCI support for nezha agent
 
 Package: luci-app-oaf
@@ -1921,7 +1954,7 @@ SHA256sum: f69e4f64c524f579a1b5ca1c4eb21bc789de0263f209a0207ea3bfe7507c4055
 Description:  Open App Filter Module
 
 Package: luci-app-openclash
-Version: 0.45.121-beta
+Version: 0.46.001-beta
 Depends: libc, dnsmasq-full, coreutils, coreutils-nohup, bash, curl, ca-certificates, ipset, ip-full, libcap, libcap-bin, ruby, ruby-yaml, kmod-tun, unzip
 Source: package/luci-app-openclash
 SourceName: luci-app-openclash
@@ -1929,38 +1962,38 @@ Section: opt
 SourceDateEpoch: 1687402786
 Maintainer: vernesong
 Architecture: all
-Installed-Size: 4273535
-Filename: luci-app-openclash_0.45.121-beta_all.ipk
-Size: 4257868
-SHA256sum: c458c99e554a3465c2234e4e57acf10cc78950ed14b0749f227884fdda6c6020
+Installed-Size: 7113917
+Filename: luci-app-openclash_0.46.001-beta_all.ipk
+Size: 7081170
+SHA256sum: 274bbb0b135198e46bd2cb5715512c2711f4f8b90c3c375f3b803e9775f51413
 Description:  A LuCI support for clash
 
 Package: luci-app-passwall2
-Version: 1.18-1
-Depends: libc, coreutils, coreutils-base64, coreutils-nohup, curl, ip-full, libuci-lua, lua, luci-compat, luci-lib-jsonc, resolveip, tcping, xray-core, v2ray-geoip, v2ray-geosite, unzip, brook, haproxy, hysteria, ip6tables-mod-nat, naiveproxy, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocks-libev-ss-server, shadowsocks-rust-sslocal, shadowsocks-rust-ssserver, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-server, simple-obfs, tuic-client, v2ray-core, v2ray-plugin
+Version: 1.26-1
+Depends: libc, coreutils, coreutils-base64, coreutils-nohup, curl, ip-full, libuci-lua, lua, luci-compat, luci-lib-jsonc, resolveip, tcping, xray-core, v2ray-geoip, v2ray-geosite, unzip, haproxy, hysteria, ip6tables-mod-nat, naiveproxy, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocks-libev-ss-server, shadowsocks-rust-sslocal, shadowsocks-rust-ssserver, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-server, simple-obfs, sing-box, tuic-client, v2ray-plugin
 Source: package/openwrt-passwall2/luci-app-passwall2
 SourceName: luci-app-passwall2
 Section: luci
-SourceDateEpoch: 1691779003
+SourceDateEpoch: 1708502495
 Architecture: all
-Installed-Size: 202482
-Filename: luci-app-passwall2_1.18-1_all.ipk
-Size: 203557
-SHA256sum: 5a47a4387faf2e3f28e350f2e633e907bada8e4f75305750be006af2eef99e60
+Installed-Size: 218061
+Filename: luci-app-passwall2_1.26-1_all.ipk
+Size: 219025
+SHA256sum: 45fc58e0efac0573d26b9f131d3d4eb6aa744718de00cd515c855faeb7107b86
 Description:  LuCI support for PassWall 2
 
 Package: luci-app-passwall
-Version: 4.67-4
-Depends: libc, coreutils, coreutils-base64, coreutils-nohup, curl, chinadns-ng, dns2socks, dns2tcp, ip-full, libuci-lua, lua, luci-compat, luci-lib-jsonc, microsocks, resolveip, tcping, unzip, brook, haproxy, hysteria, naiveproxy, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocks-libev-ss-server, shadowsocks-rust-sslocal, shadowsocks-rust-ssserver, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-server, simple-obfs, trojan-go, trojan-plus, v2ray-core, v2ray-geoip, v2ray-geosite, v2ray-plugin, xray-core, xray-plugin
-Source: package/luci-app-passwall
+Version: 4.74-1
+Depends: libc, coreutils, coreutils-base64, coreutils-nohup, curl, chinadns-ng, dns2socks, dns2tcp, ip-full, libuci-lua, lua, luci-compat, luci-lib-jsonc, microsocks, resolveip, tcping, unzip
+Source: package/openwrt-passwall/luci-app-passwall
 SourceName: luci-app-passwall
 Section: luci
-SourceDateEpoch: 1687402786
+SourceDateEpoch: 1708504468
 Architecture: all
-Installed-Size: 970379
-Filename: luci-app-passwall_4.67-4_all.ipk
-Size: 970518
-SHA256sum: ffd7f7f6f6d6eff55c0e8e209422a77b9d64313b6d8e83e3c8aa6b01eb92ab5b
+Installed-Size: 954238
+Filename: luci-app-passwall_4.74-1_all.ipk
+Size: 954641
+SHA256sum: 6d151b4890f62f4158e24e43757441faa6473941f0b97bdd4d6d39ee9bec6255
 Description:  LuCI support for PassWall
 
 Package: luci-app-poweroff
@@ -1978,32 +2011,32 @@ SHA256sum: 9c5ff743f678fd30d74d4f00275152b66538ff1fc7d37fd71819205e7efcda8b
 Description:  LuCI Support of PowerOff Router
 
 Package: luci-app-ssr-plus
-Version: 187-1
-Depends: libc, coreutils, coreutils-base64, dns2socks, dns2tcp, dnsmasq-full, ipset, kmod-ipt-nat, ip-full, iptables, iptables-mod-tproxy, lua, lua-neturl, libuci-lua, microsocks, tcping, resolveip, shadowsocksr-libev-ssr-check, uclient-fetch, curl, xray-core, chinadns-ng, hysteria, ipt2socks, kcptun-client, naiveproxy, redsocks2, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocks-libev-ss-server, simple-obfs, v2ray-plugin, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-server, trojan
+Version: 188-3
+Depends: libc, coreutils, coreutils-base64, dns2socks, dns2tcp, dnsmasq-full, ipset, kmod-ipt-nat, ip-full, iptables, iptables-mod-tproxy, lua, lua-neturl, libuci-lua, microsocks, tcping, resolveip, shadowsocksr-libev-ssr-check, uclient-fetch, curl, xray-core, chinadns-ng, mosdns, hysteria, tuic-client, shadow-tls, ipt2socks, kcptun-client, naiveproxy, redsocks2, shadowsocks-rust-sslocal, shadowsocks-rust-ssserver, simple-obfs, v2ray-plugin, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-server, trojan
 Source: package/helloworld/luci-app-ssr-plus
 SourceName: luci-app-ssr-plus
 Section: luci
-SourceDateEpoch: 1687030769
+SourceDateEpoch: 1699768319
 Architecture: all
-Installed-Size: 272047
-Filename: luci-app-ssr-plus_187-1_all.ipk
-Size: 272225
-SHA256sum: 11dbab21620e8ffcc08951370bd9eb52dced698a2fb6447b04084eb1d49b64a7
-Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Socks5/Tun LuCI interface
+Installed-Size: 276407
+Filename: luci-app-ssr-plus_188-3_all.ipk
+Size: 276716
+SHA256sum: 802f0145df29e966b32ea402d00f018ae716257e4afd7f0440b844bb1515334b
+Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Tuic/ShadowTLS/Hysteria/Socks5/Tun LuCI interface
 
 Package: luci-app-store
-Version: 0.1.14-1
+Version: 0.1.14-2
 Depends: libc, curl, opkg, luci-lib-ipkg, tar, coreutils, coreutils-stat, libuci-lua, mount-utils, luci-lib-taskd
 Source: package/istore/luci/luci-app-store
 SourceName: luci-app-store
 Section: luci
-SourceDateEpoch: 1690794022
+SourceDateEpoch: 1697021058
 Maintainer: jjm2473 <jjm2473@gmail.com>
 Architecture: all
-Installed-Size: 93978
-Filename: luci-app-store_0.1.14-1_all.ipk
-Size: 94933
-SHA256sum: 088537eb67136091695100ae55aab4d05ebdd6bb96c3c5f1e19d7e11e90949b2
+Installed-Size: 94304
+Filename: luci-app-store_0.1.14-2_all.ipk
+Size: 95276
+SHA256sum: 5337bca1fa3ff4fb8a4904e689365e8b0cdee0d53c2d59b0eea119bba0fd4201
 Description:  luci-app-store is a ipk store developed by LinkEase team
 
 Package: luci-app-usb3disable
@@ -2021,60 +2054,77 @@ SHA256sum: bdc4d6e695b48eb63fbe7e1c81d032b2be275716dad2dc4c94d724cc6ad0bd44
 Description:  LuCI support disable usb3
 
 Package: luci-app-v2raya
-Version: 10-1
+Version: 11-1
 Depends: libc, v2raya
 Source: package/v2raya-openwrt/luci-app-v2raya
 SourceName: luci-app-v2raya
 Section: luci
-SourceDateEpoch: 1679334860
+SourceDateEpoch: 1708416257
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: all
-Installed-Size: 3031
-Filename: luci-app-v2raya_10-1_all.ipk
-Size: 3715
-SHA256sum: d57b5856365056a605aef051e1a41d5f38f276a7b2d91eda97ebf7b0c2d15e3f
+Installed-Size: 2624
+Filename: luci-app-v2raya_11-1_all.ipk
+Size: 3349
+SHA256sum: e649a182252a5b0f52edca408bbe62da0698fbafe430042b1005250992cc4815
 Description:  LuCI support for v2rayA
 
-Package: luci-app-vssr
-Version: 1.25-20220423
-Depends: libc, ipset, ip-full, iptables-mod-tproxy, dnsmasq-full, coreutils, coreutils-base64, bash, pdnsd-alt, wget-ssl, lua, luasocket, lua-maxminddb, lua-cjson, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, shadowsocksr-libev-ssr-check, simple-obfs, xray-core, trojan, ipt2socks, kcptun-client, xray-plugin, shadowsocksr-libev-ssr-server, hysteria
-Source: package/luci-app-vssr
-SourceName: luci-app-vssr
+Package: luci-i18n-ddns-go-zh-cn
+Version: 1.4.1-10
+Depends: libc, luci-app-ddns-go
+Source: package/luci-app-ddns-go/luci-app-ddns-go
+SourceName: luci-i18n-ddns-go-zh-cn
 Section: luci
-SourceDateEpoch: 1668701143
+SourceDateEpoch: 1700296278
 Architecture: all
-Installed-Size: 5568625
-Filename: luci-app-vssr_1.25-20220423_all.ipk
-Size: 5293456
-SHA256sum: ad44845128f25765b70e99a8dbddf96441dfade0571d9dae9f4b91602073d73d
-Description:  A New SS/SSR/Xray/Trojan LuCI interface
+Installed-Size: 909
+Filename: luci-i18n-ddns-go-zh-cn_1.4.1-10_all.ipk
+Size: 1739
+SHA256sum: 31d7c800c43af01ae74088bedc3220322ef10d0a87af38eef177303fc97009df
+Description:  Translation for luci-app-ddns-go - 简体中文 (Simplified Chinese)
 
-Package: luci-i18n-alist-zh-cn
-Version: 1.0.10-1
-Depends: libc, luci-app-alist
-Source: package/luci-app-alist
-SourceName: luci-i18n-alist-zh-cn
+Package: luci-i18n-eqosplus-zh-cn
+Version: 1.2.2-20230719
+Depends: libc, luci-app-eqosplus
+Source: package/luci-app-eqosplus
+SourceName: luci-i18n-eqosplus-zh-cn
 Section: luci
-SourceDateEpoch: 1687402786
+SourceDateEpoch: 1690192109
+Maintainer: sirpdboy <herboy2008@gmail.com>
 Architecture: all
-Installed-Size: 1458
-Filename: luci-i18n-alist-zh-cn_1.0.10-1_all.ipk
-Size: 2273
-SHA256sum: 46be1c097f72868b71abf83a84b274746a5c5a25956ad1771b4943957149c590
-Description:  Translation for luci-app-alist - 简体中文 (Simplified Chinese)
+Installed-Size: 1037
+Filename: luci-i18n-eqosplus-zh-cn_1.2.2-20230719_all.ipk
+Size: 1895
+SHA256sum: 172d5f44947a425c1ac1fc9390a1c4ba4e1a72067e076fb397e496b09e0be148
+Description:  Translation for luci-app-eqosplus - 简体中文 (Simplified Chinese)
 
-Package: luci-i18n-bypass-zh-cn
-Version: git-23.225.13242-961ee0e-1
-Depends: libc, luci-app-bypass
-Source: package/luci-app-bypass
-SourceName: luci-i18n-bypass-zh-cn
+Package: luci-i18n-lucky-zh-cn
+Version: 1.1.2-7
+Depends: libc, luci-app-lucky
+Source: package/luci-app-lucky/luci-app-lucky
+SourceName: luci-i18n-lucky-zh-cn
 Section: luci
-SourceDateEpoch: 1687402786
+SourceDateEpoch: 1700579136
 Architecture: all
-Installed-Size: 6474
-Filename: luci-i18n-bypass-zh-cn_git-23.225.13242-961ee0e-1_all.ipk
-Size: 7330
-SHA256sum: e545237b0b85602ac9b8b9e417a0bebd4e1fc7b783374437a4c586c7b1f3ad91
-Description:  Translation for luci-app-bypass - 简体中文 (Simplified Chinese)
+Installed-Size: 956
+Filename: luci-i18n-lucky-zh-cn_1.1.2-7_all.ipk
+Size: 1778
+SHA256sum: 20edb16ef78de435ca3cc2cba254d88e5426bf811d4f3cd72b68dc62d6667cb1
+Description:  Translation for luci-app-lucky - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-netspeedtest-zh-cn
+Version: 2.1.3-20230302
+Depends: libc, luci-app-netspeedtest
+Source: package/NetSpeedTest/luci-app-netspeedtest
+SourceName: luci-i18n-netspeedtest-zh-cn
+Section: luci
+SourceDateEpoch: 1681806203
+Maintainer: <https://github.com/sirpdboy/netspeedtest>
+Architecture: all
+Installed-Size: 1329
+Filename: luci-i18n-netspeedtest-zh-cn_2.1.3-20230302_all.ipk
+Size: 2203
+SHA256sum: 91c3d6d475ad5449b33f4a13c3dd3c6f0be9749990ce26c552b4737576b8df7f
+Description:  Translation for luci-app-netspeedtest - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-oaf-zh-cn
 Version: 5.0.2-1
@@ -2091,31 +2141,31 @@ SHA256sum: 2a202932e65ca0810d6d448a33dbcfe2a434d43c94b321f163f0115261fbace9
 Description:  Translation for luci-app-oaf - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-passwall-zh-cn
-Version: 4.67-4
+Version: 4.74-1
 Depends: libc, luci-app-passwall
-Source: package/luci-app-passwall
+Source: package/openwrt-passwall/luci-app-passwall
 SourceName: luci-i18n-passwall-zh-cn
 Section: luci
-SourceDateEpoch: 1687402786
+SourceDateEpoch: 1708504468
 Architecture: all
-Installed-Size: 13998
-Filename: luci-i18n-passwall-zh-cn_4.67-4_all.ipk
-Size: 14761
-SHA256sum: 5ff41059b0a922ba5e2250d1710fff82524fd45ec6707df8585ebf17851bca09
+Installed-Size: 14884
+Filename: luci-i18n-passwall-zh-cn_4.74-1_all.ipk
+Size: 15665
+SHA256sum: 3a2bccb882331d2097d3994961811c4f3fd83f4a17ef89c19dcebbe587a4fec8
 Description:  Translation for luci-app-passwall - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-passwall2-zh-cn
-Version: 1.18-1
+Version: 1.26-1
 Depends: libc, luci-app-passwall2
 Source: package/openwrt-passwall2/luci-app-passwall2
 SourceName: luci-i18n-passwall2-zh-cn
 Section: luci
-SourceDateEpoch: 1691779003
+SourceDateEpoch: 1708502495
 Architecture: all
-Installed-Size: 12937
-Filename: luci-i18n-passwall2-zh-cn_1.18-1_all.ipk
-Size: 13773
-SHA256sum: a6b0f2b2b0a5ca73a4a2065bb9258103d7505be50e8c618f8ce1b6c28bf18d84
+Installed-Size: 14170
+Filename: luci-i18n-passwall2-zh-cn_1.26-1_all.ipk
+Size: 14955
+SHA256sum: a8b7a98d216adc1b247365c7800517ed1b92b729924278aa94e323b61c8c0cfe
 Description:  Translation for luci-app-passwall2 - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-poweroff-zh-cn
@@ -2133,46 +2183,32 @@ SHA256sum: cd1ade1ebfc5ea808f4101f3432f1848a91990560bbb4fd5af4e399b3519b2e0
 Description:  Translation for luci-app-poweroff - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-ssr-plus-zh-cn
-Version: 187-1
+Version: 188-3
 Depends: libc, luci-app-ssr-plus
 Source: package/helloworld/luci-app-ssr-plus
 SourceName: luci-i18n-ssr-plus-zh-cn
 Section: luci
-SourceDateEpoch: 1687030769
+SourceDateEpoch: 1699768319
 Architecture: all
-Installed-Size: 7428
-Filename: luci-i18n-ssr-plus-zh-cn_187-1_all.ipk
-Size: 8284
-SHA256sum: 38f8f03aa30b9cf0c3660268e35e48fe6cad5a09580274826f53e73f5f903005
+Installed-Size: 8418
+Filename: luci-i18n-ssr-plus-zh-cn_188-3_all.ipk
+Size: 9273
+SHA256sum: aac217aedbce84ee8206397a16d897b0a2b2e47b443b0ca4de3c5a1178ab4f05
 Description:  Translation for luci-app-ssr-plus - 简体中文 (Simplified Chinese)
 
-Package: luci-i18n-vssr-zh-cn
-Version: 1.25-20220423
-Depends: libc, luci-app-vssr
-Source: package/luci-app-vssr
-SourceName: luci-i18n-vssr-zh-cn
-Section: luci
-SourceDateEpoch: 1668701143
-Architecture: all
-Installed-Size: 6135
-Filename: luci-i18n-vssr-zh-cn_1.25-20220423_all.ipk
-Size: 6932
-SHA256sum: cfc795e6d7fede33d5acabd900b1cb2cd58ce261874486e490c137dec6a2e028
-Description:  Translation for luci-app-vssr - 简体中文 (Simplified Chinese)
-
 Package: luci-lib-taskd
-Version: 1.0.17
+Version: 1.0.18
 Depends: libc, luci-lib-xterm, taskd
 Source: package/istore/luci/luci-lib-taskd
 SourceName: luci-lib-taskd
 Section: luci
-SourceDateEpoch: 1661752526
+SourceDateEpoch: 1692198139
 Maintainer: jjm2473 <jjm2473@gmail.com>
 Architecture: all
-Installed-Size: 6572
-Filename: luci-lib-taskd_1.0.17_all.ipk
-Size: 7260
-SHA256sum: bf73ed55575a3e91d1524ba70f30b8aa2942b27ade5c7ba92314063eacd42638
+Installed-Size: 6607
+Filename: luci-lib-taskd_1.0.18_all.ipk
+Size: 7310
+SHA256sum: 71ece6d089681ee2a027344b7679b697cf3bc28b67a71a1319ed50a21689d22b
 Description:  Task library
 
 Package: luci-lib-xterm
@@ -2197,28 +2233,45 @@ Depends: libc, curl, jsonfilter
 Source: package/luci-theme-argon
 SourceName: luci-theme-argon
 Section: luci
-SourceDateEpoch: 1690987580
+SourceDateEpoch: 1693653786
 Architecture: all
-Installed-Size: 490410
+Installed-Size: 490582
 Filename: luci-theme-argon_1.8.3-20230710_all.ipk
-Size: 491193
-SHA256sum: 890f375bedf6bcc29ba5785ef9cf38506277747f343895882851b8bf1e7bd312
+Size: 491374
+SHA256sum: 8be6fbe5c0ba301f9ac6da475a36837f12bf6b8a3f162a4d5c2aec56a25026a1
 Description:  Argon Theme
 
+Package: lucky
+Version: 2.5.3-1
+Depends: libc
+Source: package/luci-app-lucky/lucky
+SourceName: lucky
+License: GPL-3.0-only
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1703863592
+Maintainer: GDY666 <gdy666@foxmail.com>
+Architecture: x86_64
+Installed-Size: 5714687
+Filename: lucky_2.5.3-1_x86_64.ipk
+Size: 5716438
+SHA256sum: 1af2c877c2bf1ae772237e354d0a743854eaccc52d6f417917e616114269da15
+Description:  Main functions of Lucky: dynamic domain name ddns-go service, socat,reverse proxy ,wake on lan
+
 Package: mdadm
-Version: 4.2-1
+Version: 4.2-2
 Depends: libc, libpthread, kmod-md-mod, kmod-md-raid0, kmod-md-raid10, kmod-md-raid1
 Source: package/utils/mdadm
 SourceName: mdadm
 Section: utils
-SourceDateEpoch: 1670480457
+SourceDateEpoch: 1705159302
 CPE-ID: cpe:/a:mdadm_project:mdadm
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 218125
-Filename: mdadm_4.2-1_x86_64.ipk
-Size: 219092
-SHA256sum: ab00addf0ada14c4b91143f25b76486d4f941210b27a99c6ad33281947c8c6cd
+Installed-Size: 218120
+Filename: mdadm_4.2-2_x86_64.ipk
+Size: 219090
+SHA256sum: 89940d39637afcbc6ae4d85056fb97eb5f0d5d11c181a2f3940d1ec4a6ffdfef
 Description:  A tool for managing Linux Software RAID arrays.
  RAID 0, 1 and 10 support included.
  If you need RAID 4,5 or 6 functionality please
@@ -2232,18 +2285,18 @@ SourceName: microsocks
 License: MIT
 LicenseFiles: COPYING
 Section: net
-SourceDateEpoch: 1668685365
+SourceDateEpoch: 1697306146
 Maintainer: lean
 Architecture: x86_64
-Installed-Size: 5480
+Installed-Size: 5483
 Filename: microsocks_1.0.3-1_x86_64.ipk
 Size: 6282
-SHA256sum: 4da16861b1804af3ea2cca9903c62d9a50a875c3beb6a6fe27b207e072826452
+SHA256sum: ce61f8cbd0a764726608f761619cea46338cbbdb9718434a15e00495057d97a9
 Description:  A SOCKS5 service that you can run on your remote boxes to tunnel connections
  through them, if for some reason SSH doesn't cut it for you.
 
 Package: mkf2fs
-Version: 1.15.0-1
+Version: 1.16.0-2
 Depends: libc, libf2fs6
 Conflicts: mkf2fs-selinux
 Source: package/utils/f2fs-tools
@@ -2251,14 +2304,14 @@ SourceName: mkf2fs
 License: GPL-2.0-only
 LicenseFiles: COPYING
 Section: utils
-SourceDateEpoch: 1670480457
+SourceDateEpoch: 1705124623
 CPE-ID: cpe:/a:f2fs-tools_project:f2fs-tools
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 16169
-Filename: mkf2fs_1.15.0-1_x86_64.ipk
-Size: 16922
-SHA256sum: d4c343d345bb38c3144190204e028f3341f4f19667f76f663e0f25d07ca9207f
+Installed-Size: 16692
+Filename: mkf2fs_1.16.0-2_x86_64.ipk
+Size: 17487
+SHA256sum: 843d9cf0913e57223d1025b7718d623bee6c9a6a4bf787b2af8a0da018325303
 Description:  Utility for creating a Flash-Friendly File System (F2FS)
 
 Package: mount-utils
@@ -2286,13 +2339,13 @@ SourceName: naiveproxy
 License: BSD 3-Clause
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1683527723
+SourceDateEpoch: 1697305841
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
-Installed-Size: 3007190
+Installed-Size: 3007192
 Filename: naiveproxy_113.0.5672.62-2-1_x86_64.ipk
-Size: 3004985
-SHA256sum: 9806c898018372ebc5c38b40e24bdb85f04a70626ff5a9a7bff065a9218df0c5
+Size: 3005039
+SHA256sum: 19c0b5f758e45ca548a010e3f67a191de58f5d45220a3f7af750a7a9ccc8331e
 Description:  NaïveProxy uses Chrome's network stack to camouflage traffic with strong
  censorship resistance and low detectability. Reusing Chrome's stack also
  ensures best practices in performance and security.
@@ -2326,23 +2379,6 @@ Filename: nezha-agent_1-1_x86_64.ipk
 Size: 5840224
 SHA256sum: 295add2db04af671e7eeb4224f2b1af70ccc57edffc5b5a0d070b22116bd84e0
 Description:  Nezha Agent is the client of the Nezha panel
-
-Package: nftables-json
-Version: 1.0.6-1
-Depends: libc, kmod-nft-core, libnftnl11, jansson4
-Provides: nftables
-Source: package/network/utils/nftables
-SourceName: nftables-json
-License: GPL-2.0
-LicenseFiles: COPYING
-Section: net
-SourceDateEpoch: 1674631835
-Architecture: x86_64
-Installed-Size: 296430
-Filename: nftables-json_1.0.6-1_x86_64.ipk
-Size: 296176
-SHA256sum: e126c389a054a3d987b59341976513c5c013e5d88a73e5e784055840d7609066
-Description:  nftables userspace utility with JSON support
 
 Package: odhcp6c
 Version: 2021-01-09-53f07e90-18
@@ -2383,21 +2419,21 @@ Description:  odhcpd is a daemon for serving and relaying IP management protocol
  routed (non-bridged) interfaces in case no delegated prefixes are available.
 
 Package: openssl-util
-Version: 1.1.1u-2
-Depends: libc, libopenssl1.1, libopenssl-conf
+Version: 3.0.13-1
+Depends: libc, libopenssl3, libopenssl-conf
 Source: package/libs/openssl
 SourceName: openssl-util
-License: OpenSSL
+License: Apache-2.0
 LicenseFiles: LICENSE
 Section: utils
-SourceDateEpoch: 1687966700
+SourceDateEpoch: 1706943781
 CPE-ID: cpe:/a:openssl:openssl
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
 Architecture: x86_64
-Installed-Size: 266291
-Filename: openssl-util_1.1.1u-2_x86_64.ipk
-Size: 265525
-SHA256sum: eb1c6131f453a88e261c126a0f97b6ada528c6c1b1e74a7b3cb2af46669acb6f
+Installed-Size: 343318
+Filename: openssl-util_3.0.13-1_x86_64.ipk
+Size: 341864
+SHA256sum: 3956692fbfd292f7553c53a2f52876e8fb891eb76427f82e1864748b95bbdc57
 Description:  The OpenSSL Project is a collaborative effort to develop a robust,
  commercial-grade, full-featured, and Open Source toolkit implementing the
  Transport Layer Security (TLS) protocol as well as a full-strength
@@ -2433,10 +2469,10 @@ SourceDateEpoch: 1670480457
 Essential: yes
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Architecture: x86_64
-Installed-Size: 73066
+Installed-Size: 73061
 Filename: opkg_2022-02-24-d038e5b6-5_x86_64.ipk
-Size: 74138
-SHA256sum: 6c558ff698c294756a5831fd7d0fe39490ea2d5c2b1111fda6bc2568dab80883
+Size: 74135
+SHA256sum: 4b6545b52b7d60e87d9f8ef253f906d0508c3b685b158354240cae2a263b13c6
 Description:  Lightweight package management system
  opkg is the opkg Package Management System, for handling
  installation and removal of packages on a system. It can
@@ -2444,6 +2480,192 @@ Description:  Lightweight package management system
  necessary to install a particular package.
  
  opkg knows how to install both .ipk and .deb packages.
+
+Package: oui-app-acl
+Version: git-2023.329.27790-0423c04-1
+Depends: libc, oui-ui-core
+Source: package/oui/applications/oui-app-acl
+SourceName: oui-app-acl
+Section: oui
+SourceDateEpoch: 1700898190
+Architecture: all
+Installed-Size: 2950
+Filename: oui-app-acl_git-2023.329.27790-0423c04-1_all.ipk
+Size: 3628
+SHA256sum: 534cdff49f58f4627db3ec792a086fb9ca53e42cd6f67e4d871d62516c4f599c
+Description:  ACL manage
+
+Package: oui-app-backup
+Version: git-2023.329.27790-0423c04-1
+Depends: libc, oui-ui-core
+Source: package/oui/applications/oui-app-backup
+SourceName: oui-app-backup
+Section: oui
+SourceDateEpoch: 1700898190
+Architecture: all
+Installed-Size: 3104
+Filename: oui-app-backup_git-2023.329.27790-0423c04-1_all.ipk
+Size: 3817
+SHA256sum: 0e9eef1714fcb5e733ef4e72d37c607b1d981a329c13843d7506531034edce84
+Description:  Backup / Restore
+
+Package: oui-app-demo
+Version: git-2023.329.27790-0423c04-1
+Depends: libc, oui-ui-core
+Source: package/oui/applications/oui-app-demo
+SourceName: oui-app-demo
+Section: oui
+SourceDateEpoch: 1700898190
+Architecture: all
+Installed-Size: 1200
+Filename: oui-app-demo_git-2023.329.27790-0423c04-1_all.ipk
+Size: 1910
+SHA256sum: e7de100dad715b7f3e174c650a6be3385474b44ff2dd2c528a54d42d687573d2
+Description:  Demo
+
+Package: oui-app-dhcp-lease
+Version: git-2023.329.31290-e1814e3-1
+Depends: libc, oui-ui-core
+Source: package/oui/applications/oui-app-dhcp-lease
+SourceName: oui-app-dhcp-lease
+Section: oui
+SourceDateEpoch: 1700901690
+Architecture: all
+Installed-Size: 1827
+Filename: oui-app-dhcp-lease_git-2023.329.31290-e1814e3-1_all.ipk
+Size: 2543
+SHA256sum: 1544122098d204778f3ebdc0abb7c0e81cfa277b7bd41321fdd1af68465543ab
+Description:  DHCP lease
+
+Package: oui-app-home
+Version: git-2023.329.27790-0423c04-1
+Depends: libc, oui-ui-core
+Source: package/oui/applications/oui-app-home
+SourceName: oui-app-home
+Section: oui
+SourceDateEpoch: 1700898190
+Architecture: all
+Installed-Size: 3272
+Filename: oui-app-home_git-2023.329.27790-0423c04-1_all.ipk
+Size: 3981
+SHA256sum: a8186c7ce32da29df8b08a5607ef31253f17ccda89e8ded9e385ab9a98c8f5a5
+Description:  OUI built-in home page
+
+Package: oui-app-layout
+Version: git-2023.329.27790-0423c04-1
+Depends: libc, oui-ui-core
+Source: package/oui/applications/oui-app-layout
+SourceName: oui-app-layout
+Section: oui
+SourceDateEpoch: 1700898190
+Architecture: all
+Installed-Size: 4086
+Filename: oui-app-layout_git-2023.329.27790-0423c04-1_all.ipk
+Size: 4804
+SHA256sum: 8dcaa4a3daafdedc6f5138ac404fc4d67ffa2089cc1e8f4c8a4705cc3cfaff6a
+Description:  OUI built-in layout page
+
+Package: oui-app-login
+Version: git-2023.329.27790-0423c04-1
+Depends: libc, oui-ui-core
+Source: package/oui/applications/oui-app-login
+SourceName: oui-app-login
+Section: oui
+SourceDateEpoch: 1700898190
+Architecture: all
+Installed-Size: 2011
+Filename: oui-app-login_git-2023.329.27790-0423c04-1_all.ipk
+Size: 2725
+SHA256sum: 4913708b74bf9b7468c45c108e8002e99125ec8fb4bd348203c4e0471ea750d0
+Description:  OUI built-in login page
+
+Package: oui-app-stations
+Version: git-2023.329.27790-0423c04-1
+Depends: libc, oui-ui-core, lua-eco-nl80211, lua-eco-ubus
+Source: package/oui/applications/oui-app-stations
+SourceName: oui-app-stations
+Section: oui
+SourceDateEpoch: 1700898190
+Architecture: all
+Installed-Size: 2055
+Filename: oui-app-stations_git-2023.329.27790-0423c04-1_all.ipk
+Size: 2783
+SHA256sum: 25c5b6e2b954fa53532ba71f0413b445baf15a695c2e54fe06b8d21abf036c81
+Description:  Stations
+
+Package: oui-app-system
+Version: git-2023.329.27790-0423c04-1
+Depends: libc, oui-ui-core
+Source: package/oui/applications/oui-app-system
+SourceName: oui-app-system
+Section: oui
+SourceDateEpoch: 1700898190
+Architecture: all
+Installed-Size: 6268
+Filename: oui-app-system_git-2023.329.27790-0423c04-1_all.ipk
+Size: 6948
+SHA256sum: 1f718a4b419ff96619269c53927443c856ffe3a6ab9380337b2963615b600059
+Description:  System Configure
+
+Package: oui-app-upgrade
+Version: git-2023.329.27790-0423c04-1
+Depends: libc, oui-ui-core
+Source: package/oui/applications/oui-app-upgrade
+SourceName: oui-app-upgrade
+Section: oui
+SourceDateEpoch: 1700898190
+Architecture: all
+Installed-Size: 2707
+Filename: oui-app-upgrade_git-2023.329.27790-0423c04-1_all.ipk
+Size: 3425
+SHA256sum: 78bba39b735a471e6bcfc6c8afe1d890823d361c6a9f95ef63b3bb173b4602ba
+Description:  Upgrade
+
+Package: oui-app-user
+Version: git-2023.329.27790-0423c04-1
+Depends: libc, oui-ui-core
+Source: package/oui/applications/oui-app-user
+SourceName: oui-app-user
+Section: oui
+SourceDateEpoch: 1700898190
+Architecture: all
+Installed-Size: 2514
+Filename: oui-app-user_git-2023.329.27790-0423c04-1_all.ipk
+Size: 3231
+SHA256sum: 782b83fefd24deede3d83b48148bbdacf936d2c09793fcfd92bb698662035911
+Description:  User manage
+
+Package: oui-rpc-core
+Version: git-2023.329.27790-0423c04-1
+Depends: libc, libuci-lua53, lua-cjson-53, lua-eco-md5, lua-eco-http, lua-eco-ubus, px5g-mbedtls
+Source: package/oui/oui-rpc-core
+SourceName: oui-rpc-core
+License: MIT
+Section: oui
+SourceDateEpoch: 1700898190
+Maintainer: Jianhui Zhao <zhaojh329@gmail.com>
+Architecture: x86_64
+Installed-Size: 7507
+Filename: oui-rpc-core_git-2023.329.27790-0423c04-1_x86_64.ipk
+Size: 8288
+SHA256sum: 588fa9ff5a7bb0c23f8b27cdec607f02ab8e40b65f86bdf23f278595984e05ca
+Description:  Oui rpc core
+
+Package: oui-ui-core
+Version: git-2024.040.51765-f4c06e9-1
+Depends: libc, oui-rpc-core
+Source: package/oui/oui-ui-core
+SourceName: oui-ui-core
+License: MIT
+Section: oui
+SourceDateEpoch: 1707488565
+Maintainer: Jianhui Zhao <zhaojh329@gmail.com>
+Architecture: all
+Installed-Size: 428696
+Filename: oui-ui-core_git-2024.040.51765-f4c06e9-1_all.ipk
+Size: 429562
+SHA256sum: a6afef1c6c840b8b30de1f2af31589c479bb18226b95275a19cd187529da2b99
+Description:  Oui ui core
 
 Package: partx-utils
 Version: 2.38.1-1
@@ -2473,10 +2695,10 @@ SourceDateEpoch: 1664380839
 CPE-ID: cpe:/a:samba:ppp
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 10565
+Installed-Size: 10563
 Filename: ppp-mod-pppoe_2.4.9.git-2021-01-04-6_x86_64.ipk
-Size: 11351
-SHA256sum: 089cba381592fabb5a85640b2e4da601e55b3cb4476f25fdcd812d6a39898fe6
+Size: 11346
+SHA256sum: e2bc14d40f05f28905ebeb41e580a715e2d0bbb4dc214bfd1c034b6cae2c2f9c
 Description:  This package contains a PPPoE (PPP over Ethernet) plugin for ppp.
 
 Package: ppp-mod-pppol2tp
@@ -2490,28 +2712,11 @@ SourceDateEpoch: 1664380839
 CPE-ID: cpe:/a:samba:ppp
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 4765
+Installed-Size: 4761
 Filename: ppp-mod-pppol2tp_2.4.9.git-2021-01-04-6_x86_64.ipk
-Size: 5526
-SHA256sum: 79686b4b49dfe2ec4236ee11c67113728d0194b402256a62ceffbb1749215d7b
+Size: 5520
+SHA256sum: d5252b8a4d661c94820d6301a6ddc54adbedb1f50e3e521f9e4a1ad71c1b8912
 Description:  This package contains a PPPoL2TP (PPP over L2TP) plugin for ppp.
-
-Package: ppp-mod-pptp
-Version: 2.4.9.git-2021-01-04-6
-Depends: libc, kmod-pptp, kmod-mppe, resolveip
-Source: package/network/services/ppp
-SourceName: ppp-mod-pptp
-License: BSD-4-Clause
-Section: net
-SourceDateEpoch: 1664380839
-CPE-ID: cpe:/a:samba:ppp
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Architecture: x86_64
-Installed-Size: 18136
-Filename: ppp-mod-pptp_2.4.9.git-2021-01-04-6_x86_64.ipk
-Size: 18887
-SHA256sum: 36316c9610613309f515ffabd7f12b62294f93322c30b4900c99de8f41e808ef
-Description:  This package contains a PPtP plugin for ppp.
 
 Package: ppp
 Version: 2.4.9.git-2021-01-04-6
@@ -2580,6 +2785,25 @@ Size: 57327
 SHA256sum: bff3f5258e1fa06767ade5aecea660630d136ae523cdee219e3849f7a13ae7f9
 Description:  OpenWrt system process manager
 
+Package: px5g-mbedtls
+Version: 9
+Depends: libc, libmbedtls12
+Provides: px5g
+Source: package/utils/px5g-mbedtls
+SourceName: px5g-mbedtls
+License: LGPL-2.1
+Section: utils
+SourceDateEpoch: 1623666608
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 4318
+Filename: px5g-mbedtls_9_x86_64.ipk
+Size: 5143
+SHA256sum: a7e9a5b5b71520be582b8e13c173c5784125e2e5dff7b27f90ddd47a96154a84
+Description:  Px5g is a tiny standalone X.509 certificate generator.
+ It suitable to create key files and certificates in DER
+ and PEM format for use with stunnel, uhttpd and others.
+
 Package: qos-scripts
 Version: 1.3.1-2
 Depends: libc, tc, kmod-sched-core, kmod-sched-connmark, kmod-ifb, iptables, iptables-mod-ipopt, iptables-mod-conntrack-extra
@@ -2599,48 +2823,48 @@ Description:  A set of scripts that abstract QoS configuration into a simple
  entries.
 
 Package: r8152-firmware
-Version: 20230625-1
+Version: 20231211-1
 Depends: libc
 Source: package/firmware/linux-firmware
 SourceName: r8152-firmware
 Section: firmware
-SourceDateEpoch: 1689343695
+SourceDateEpoch: 1708356204
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 10910
-Filename: r8152-firmware_20230625-1_x86_64.ipk
-Size: 11640
-SHA256sum: 5748231cd49b1570f855ae0222c1a0a4d9e808a31e32e7c09a891549e345576b
+Installed-Size: 10166
+Filename: r8152-firmware_20231211-1_x86_64.ipk
+Size: 10869
+SHA256sum: 327975aaddc3675ee01bf8a770e57c39aa285cca8f4419931d631ba43319bc1c
 Description:  RealTek RTL8152 firmware
 
 Package: radeon-firmware
-Version: 20230625-1
+Version: 20231211-1
 Depends: libc
 Source: package/firmware/linux-firmware
 SourceName: radeon-firmware
 Section: firmware
-SourceDateEpoch: 1689343695
+SourceDateEpoch: 1708356204
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 3523059
-Filename: radeon-firmware_20230625-1_x86_64.ipk
-Size: 3517914
-SHA256sum: 0b792628a0dba5b1cfdd93e5f8c5ea6cb3dd2a9847262da4d404260ee4e462d1
+Installed-Size: 3522895
+Filename: radeon-firmware_20231211-1_x86_64.ipk
+Size: 3518170
+SHA256sum: f742c6af86f380565a9e33544d024a59f32ade6c3123250100b3654d4e60fd65
 Description:  Radeon Video Driver firmware
 
 Package: redsocks2
 Version: 0.67-4
-Depends: libc, libevent2-7, libopenssl1.1
+Depends: libc, libevent2-7, libopenssl3
 Source: package/helloworld/redsocks2
 SourceName: redsocks2
 Section: net
 SourceDateEpoch: 1668685365
 Maintainer: semigodking <semigodking@gmail.com>
 Architecture: x86_64
-Installed-Size: 56048
+Installed-Size: 56051
 Filename: redsocks2_0.67-4_x86_64.ipk
-Size: 56924
-SHA256sum: 29262f56f64c19b555eaad5feb30d6fea0981ad373e27a20aa3018e2b88a02eb
+Size: 56928
+SHA256sum: 756bad1b4ce1aac6373d79c980b6a880029cb557287cecb361111562b1a4b793
 Description:  This is a modified version of original redsocks. The name is changed to be REDSOCKS2 since this release to distinguish with original redsocks. This variant is useful for anti-GFW (Great Fire Wall).
 
 Package: resolveip
@@ -2680,6 +2904,25 @@ SHA256sum: 2f9ed584042a9b869db67d8220febd414a3f083687f2afadce8d493fde438c2c
 Description:  This package provides the UBUS RPC backend server to expose various
  functionality to frontend programs via JSON-RPC.
 
+Package: samba36-server
+Version: 4.0.26-9
+Depends: libc, libaio, libpthread, zlib, libpopt0
+Source: package/network/services/samba36
+SourceName: samba36-server
+License: GPLv3
+LicenseFiles: COPYING
+Section: net
+SourceDateEpoch: 1662744451
+Architecture: x86_64
+Installed-Size: 1470091
+Filename: samba36-server_4.0.26-9_x86_64.ipk
+Size: 1455214
+SHA256sum: 08fc782ed995451309a13dca9c989a02f5817f1945dae5ad9ca3e70f8c4ddc23
+Description:  The Samba software suite is a collection of programs that implements the
+ SMB protocol for UNIX systems, allowing you to serve files and printers to
+ Windows, NT, OS/2 and DOS clients. This protocol is sometimes also referred
+ to as the LanManager or Netbios protocol.
+
 Package: script-utils
 Version: 2.38.1-1
 Depends: libc, librt
@@ -2697,102 +2940,118 @@ Size: 37157
 SHA256sum: 339d5b6dc0b3bdb79fcb2f630770c7e4d21c06cf9dee8fd70aa68d2f7d19099b
 Description:  contains: script, scriptreplay
 
+Package: shadow-tls
+Version: 0.2.23-1
+Depends: libc
+Source: package/helloworld/shadow-tls
+SourceName: shadow-tls
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1695879572
+Maintainer: FluffyTigerFear
+Architecture: x86_64
+Installed-Size: 1826519
+Filename: shadow-tls_0.2.23-1_x86_64.ipk
+Size: 1812553
+SHA256sum: d4f5bebcd09545a4c4e3179fb35ced4a197f34b1ba8bab77d8a0ae60ee20e0a2
+Description:  A proxy to expose real tls handshake to the firewall.
+
 Package: shadowsocks-rust-sslocal
-Version: 1.15.3-1
+Version: 1.17.1-1
 Depends: libc
 Source: package/helloworld/shadowsocks-rust
 SourceName: shadowsocks-rust-sslocal
 License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1678696590
+SourceDateEpoch: 1701096931
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
-Installed-Size: 3087878
-Filename: shadowsocks-rust-sslocal_1.15.3-1_x86_64.ipk
-Size: 3068246
-SHA256sum: 2b9d8e2ed6e21e83143202bfc7adbc27acac858e2ce985b67fc631f57ea88352
+Installed-Size: 2972060
+Filename: shadowsocks-rust-sslocal_1.17.1-1_x86_64.ipk
+Size: 2949784
+SHA256sum: 2b9cb2ee265e42fea1ace7421537fd640bd39c2bb3a488d0bc41209e7877db49
 Description:  shadowsocks-rust sslocal
 
 Package: shadowsocks-rust-ssserver
-Version: 1.15.3-1
+Version: 1.17.1-1
 Depends: libc
 Source: package/helloworld/shadowsocks-rust
 SourceName: shadowsocks-rust-ssserver
 License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1678696590
+SourceDateEpoch: 1701096931
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
-Installed-Size: 2152412
-Filename: shadowsocks-rust-ssserver_1.15.3-1_x86_64.ipk
-Size: 2136136
-SHA256sum: 3dd04079cc7f7a74f1f5db92a3c8ad691f922e45d75d94662374f496ee3c9467
+Installed-Size: 2343772
+Filename: shadowsocks-rust-ssserver_1.17.1-1_x86_64.ipk
+Size: 2324808
+SHA256sum: 18e01a5d44a1cda8e9890d9177dd4f33931eff1c5e51c08523ca5918210cb26f
 Description:  shadowsocks-rust ssserver
 
 Package: shadowsocksr-libev-ssr-check
 Version: 2.5.6-9
-Depends: libc, libev, libsodium, libopenssl1.1, libpthread, libpcre, libudns, zlib
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre, libudns, zlib, libopenssl-legacy
 Source: package/helloworld/shadowsocksr-libev
 SourceName: shadowsocksr-libev-ssr-check
 License: GPL-3.0
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1658919917
+SourceDateEpoch: 1701532231
 Architecture: x86_64
-Installed-Size: 2382
+Installed-Size: 2385
 Filename: shadowsocksr-libev-ssr-check_2.5.6-9_x86_64.ipk
-Size: 3120
-SHA256sum: 0c64860966695c8c9016e716c610f925b23c74b87bea91e197a99c8c15b3859e
+Size: 3124
+SHA256sum: 60c2a3bf594d5eae4eec459e7f494ba36bacd434dbfa34df861006164fff22cf
 Description:  shadowsocksr-libev ssr-check
 
 Package: shadowsocksr-libev-ssr-local
 Version: 2.5.6-9
-Depends: libc, libev, libsodium, libopenssl1.1, libpthread, libpcre, libudns, zlib
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre, libudns, zlib, libopenssl-legacy
 Source: package/helloworld/shadowsocksr-libev
 SourceName: shadowsocksr-libev-ssr-local
 License: GPL-3.0
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1658919917
+SourceDateEpoch: 1701532231
 Architecture: x86_64
-Installed-Size: 63055
+Installed-Size: 63078
 Filename: shadowsocksr-libev-ssr-local_2.5.6-9_x86_64.ipk
-Size: 63904
-SHA256sum: af138cfffe1fc47cf38c49d9414311e994a3029b16c26587cf2ef108185b30a3
+Size: 63921
+SHA256sum: 6f05aebe51dc591cf672105ba295677f767ea36de50410963d72b8f94eabbaa7
 Description:  shadowsocksr-libev ssr-local
 
 Package: shadowsocksr-libev-ssr-redir
 Version: 2.5.6-9
-Depends: libc, libev, libsodium, libopenssl1.1, libpthread, libpcre, libudns, zlib
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre, libudns, zlib, libopenssl-legacy
 Source: package/helloworld/shadowsocksr-libev
 SourceName: shadowsocksr-libev-ssr-redir
 License: GPL-3.0
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1658919917
+SourceDateEpoch: 1701532231
 Architecture: x86_64
 Installed-Size: 56222
 Filename: shadowsocksr-libev-ssr-redir_2.5.6-9_x86_64.ipk
-Size: 57012
-SHA256sum: 3cecbbbd3c7158ef373bfedc37d988ba9b81241c20a060720befdc64a203989e
+Size: 57019
+SHA256sum: 0e6714f30e75a54f804baeb52ef3d5a7f4a07fc4bd3e875e6f5f13ecee055655
 Description:  shadowsocksr-libev ssr-redir
 
 Package: shadowsocksr-libev-ssr-server
 Version: 2.5.6-9
-Depends: libc, libev, libsodium, libopenssl1.1, libpthread, libpcre, libudns, zlib
+Depends: libc, libev, libsodium, libopenssl3, libpthread, libpcre, libudns, zlib, libopenssl-legacy
 Source: package/helloworld/shadowsocksr-libev
 SourceName: shadowsocksr-libev-ssr-server
 License: GPL-3.0
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1658919917
+SourceDateEpoch: 1701532231
 Architecture: x86_64
-Installed-Size: 65999
+Installed-Size: 66010
 Filename: shadowsocksr-libev-ssr-server_2.5.6-9_x86_64.ipk
-Size: 66818
-SHA256sum: a59dd963af624a507fd0e93464ead56589c88a748ebe83748f210e3531e7544d
+Size: 66841
+SHA256sum: 86b7acf996051a482c5748ffa1e1d25dadc54fa5ba08b33114e9fcde9e7635f1
 Description:  shadowsocksr-libev ssr-server
 
 Package: shellsync
@@ -2819,14 +3078,31 @@ SourceName: simple-obfs-client
 License: GPL-3.0-or-later
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1634897490
+SourceDateEpoch: 1697306146
 Maintainer: Jian Chang <aa65535@live.com>
 Architecture: x86_64
-Installed-Size: 30578
+Installed-Size: 30584
 Filename: simple-obfs-client_0.0.5-1_x86_64.ipk
-Size: 31367
-SHA256sum: 70b93706050d0c2883f320e4d7bbf84d8c8509a6d968a3a66ebd2cd03364709e
+Size: 31369
+SHA256sum: aa56267fdbadd2be8ac9d7e5c5b6a396d179e8c20f6a8364568f81b44cb410a2
 Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+
+Package: sing-box
+Version: 1.8.5-1
+Depends: libc, ca-bundle, kmod-inet-diag, kmod-netlink-diag, kmod-tun
+Source: package/openwrt-passwall-packages/sing-box
+SourceName: sing-box
+License: GPL-3.0-or-later
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1706934429
+Architecture: x86_64
+Installed-Size: 8985911
+Filename: sing-box_1.8.5-1_x86_64.ipk
+Size: 8964834
+SHA256sum: 75beaf01ef633a5b28c6d507595fbb7d9f984bb09f517e219c03c9f482ce0d4f
+Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS,
+ Shadowsocks, ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
 
 Package: sysfsutils
 Version: 2.1.0-4
@@ -2860,6 +3136,42 @@ Size: 2381
 SHA256sum: 35d773bcb5ddc72da0c7685f6398547771005e65348ea2f31a6c00ee5e560c22
 Description:  Simple Task Manager based on procd
 
+Package: tc-full
+Version: 6.2.0-1
+Depends: libc, kmod-sched-core, libbpf20220308, libxtables12, tc-mod-iptables
+Provides: tc
+Alternatives: 400:/sbin/tc:/usr/libexec/tc-full
+Source: package/network/utils/iproute2
+SourceName: tc-full
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1678283784
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: x86_64
+Installed-Size: 184299
+Filename: tc-full_6.2.0-1_x86_64.ipk
+Size: 185232
+SHA256sum: 76fc5110e0a37f4f35effc8b356231f67523ea164f1e573373a8c817030a9894
+Description:  Traffic control utility (full)
+
+Package: tc-mod-iptables
+Version: 6.2.0-1
+Depends: libc, libxtables12, libbpf20220308
+Source: package/network/utils/iproute2
+SourceName: tc-mod-iptables
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1678283784
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: x86_64
+Installed-Size: 3454
+Filename: tc-mod-iptables_6.2.0-1_x86_64.ipk
+Size: 4230
+SHA256sum: acb6c3279b5cb7e8e8b088ce895810ca76b5df8eb2cb4971112683f0f266e371
+Description:  Traffic control module - iptables action
+
 Package: tc-tiny
 Version: 6.2.0-1
 Depends: libc, kmod-sched-core
@@ -2873,10 +3185,10 @@ SourceDateEpoch: 1678283784
 CPE-ID: cpe:/a:iproute2_project:iproute2
 Maintainer: Russell Senior <russell@personaltelco.net>
 Architecture: x86_64
-Installed-Size: 174362
+Installed-Size: 174351
 Filename: tc-tiny_6.2.0-1_x86_64.ipk
-Size: 175248
-SHA256sum: b590bc10920b6b3bb9f43c03171d3674acbc7cce7312b93eee812b15eb6c93b2
+Size: 175259
+SHA256sum: b3a075ae58c05d1edb0fef8621bf164e1144dd4d0480d82bb2e3d84986979198
 Description:  Traffic control utility (minimal)
 
 Package: tcping
@@ -2886,12 +3198,12 @@ Source: package/helloworld/tcping
 SourceName: tcping
 License: GPL-2.0-only
 Section: net
-SourceDateEpoch: 1623839730
+SourceDateEpoch: 1697306146
 Architecture: x86_64
-Installed-Size: 3563
+Installed-Size: 3570
 Filename: tcping_0.3-1_x86_64.ipk
-Size: 4261
-SHA256sum: 5812215d1ee7119c2f644315974d5d9667d08a89da1d3b6550a66e3bc343ab75
+Size: 4272
+SHA256sum: 3e2b79b75b4a0c0a8d4984105330068a927396c71460f3b1a97575d5f42840a7
 Description:  tcping measures the latency of a tcp-connection
 
 Package: terminfo
@@ -2914,7 +3226,7 @@ Description:  Terminal Info Database (ncurses)
 Package: trojan-go
 Version: 0.10.6-8
 Depends: libc, ca-bundle
-Source: package/openwrt-passwall/trojan-go
+Source: package/openwrt-passwall-packages/trojan-go
 SourceName: trojan-go
 License: GPL-3.0-only
 LicenseFiles: LICENSE
@@ -2922,32 +3234,32 @@ Section: net
 SourceDateEpoch: 1684898592
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
-Installed-Size: 5446780
+Installed-Size: 5427043
 Filename: trojan-go_0.10.6-8_x86_64.ipk
-Size: 5435502
-SHA256sum: 03da920ac1cdeacc1c59557db9f7a6d8a07ce77f085d83834985d45e6c765404
+Size: 5416332
+SHA256sum: 308b2da49a7f70bc1c88ec39a76bd05d5ddf7cb8002c1c5d1e77a3b9f7c44881
 Description:  Trojan features multiple protocols over TLS to avoid both
  active/passive detections and ISP QoS limitations.
 
 Package: trojan-plus
 Version: 10.0.3-2
-Depends: libc, libpthread, libstdcpp6, libopenssl1.1, boost, boost-system, boost-program_options
-Source: package/openwrt-passwall/trojan-plus
+Depends: libc, libpthread, libstdcpp6, libopenssl3, boost, boost-system, boost-program_options
+Source: package/openwrt-passwall-packages/trojan-plus
 SourceName: trojan-plus
 License: GPL-3.0
 Section: net
 SourceDateEpoch: 1646675824
 Maintainer: Trojan-Plus-Group
 Architecture: x86_64
-Installed-Size: 454715
+Installed-Size: 454987
 Filename: trojan-plus_10.0.3-2_x86_64.ipk
-Size: 455497
-SHA256sum: 2f0b9d869d86dcfed597ef03ae10a8b1684b989f919373562ba3e571bf95d80c
+Size: 455787
+SHA256sum: 3d00f54cf11845eb9bb4a44a0c78e8ca6cca68832bfdce6e6cc3eae7b00467fe
 Description:  An unidentifiable mechanism that helps you bypass GFW. It's compatible with original trojan with experimental features.
 
 Package: trojan
 Version: 1.16.0-2
-Depends: libc, libpthread, libstdcpp6, libopenssl1.1, boost, boost-system, boost-program_options, boost-date_time
+Depends: libc, libpthread, libstdcpp6, libopenssl3, boost, boost-system, boost-program_options, boost-date_time
 Source: package/helloworld/trojan
 SourceName: trojan
 License: GPL-3.0
@@ -2955,41 +3267,41 @@ Section: net
 SourceDateEpoch: 1634897279
 Maintainer: GreaterFire
 Architecture: x86_64
-Installed-Size: 333433
+Installed-Size: 334248
 Filename: trojan_1.16.0-2_x86_64.ipk
-Size: 334252
-SHA256sum: 2a5fcb4c40d5ce376d03bdcd74a757ec6ba6c08229ecaba27ab66730c232f36a
+Size: 335106
+SHA256sum: 714b86392638dda0a46a31334e962ea23668ad2f0e82dc62e83e3cb6d971e550
 Description:  An unidentifiable mechanism that helps you bypass GFW
 
 Package: tuic-client
 Version: 1.0.0-1
 Depends: libc
-Source: package/openwrt-passwall/tuic-client
+Source: package/helloworld/tuic-client
 SourceName: tuic-client
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1690047123
+SourceDateEpoch: 1694900073
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
-Installed-Size: 1127017
+Installed-Size: 1127015
 Filename: tuic-client_1.0.0-1_x86_64.ipk
-Size: 1125149
-SHA256sum: 009051292908c72a72bfa3752824f2f2e568de2d1748c131b5e8622f5065a081
+Size: 1125107
+SHA256sum: a3510e3492e554e3ec480d2288b5f3739786bbf582c0cf8c2428ea27738c271c
 Description:  Delicately-TUICed 0-RTT proxy protocol
 
 Package: ua2f
-Version: 4.1.2-1
-Depends: libc, libnetfilter-conntrack3, libnetfilter-queue1, libpthread, kmod-nft-queue, iptables-mod-conntrack-extra, iptables-mod-filter, iptables-mod-nfqueue
+Version: 4.5.0-1
+Depends: libc, libnetfilter-conntrack3, libnetfilter-queue1, libpthread, libuci20130104, iptables-mod-conntrack-extra, iptables-mod-filter, iptables-mod-nfqueue
 Source: package/UA2F/openwrt
 SourceName: ua2f
 License: GPL-3.0-only
 Section: net
-SourceDateEpoch: 1684938533
+SourceDateEpoch: 1703508030
 Architecture: x86_64
-Installed-Size: 12721
-Filename: ua2f_4.1.2-1_x86_64.ipk
-Size: 13572
-SHA256sum: ea68c95a486104d06c0aa93867a6d67a38a0f661f94bc5f108f8b2d2c610542a
+Installed-Size: 13850
+Filename: ua2f_4.5.0-1_x86_64.ipk
+Size: 14640
+SHA256sum: 7da128782444c0ea32f83a3c4c090bf7bbe766183050ae7597ce089efbe57280
 Description:  Change User-agent to Fwords to prevent being checked by Dr.Com.
 
 Package: ubox
@@ -3086,10 +3398,10 @@ Section: net
 SourceDateEpoch: 1672166329
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Architecture: x86_64
-Installed-Size: 8278
+Installed-Size: 8262
 Filename: uhttpd-mod-ubus_2022-10-31-23977554-1_x86_64.ipk
-Size: 9139
-SHA256sum: 38293bd0f45d643bea0e85da2f54462cb6b01f11c90548eaa9f742d05f5353fa
+Size: 9122
+SHA256sum: a467e3a453c68bc405528b13f550a2b9734b6f9e5eff87eb6a293911140b68b5
 Description:  The ubus plugin adds a HTTP/JSON RPC proxy for ubus and publishes the
  session.* namespace and procedures.
 
@@ -3167,39 +3479,93 @@ Size: 12552
 SHA256sum: 5682cdd577aa3e6a3c81b0304f596e3155bb01e5db1508f766fb26a3d4001bba
 Description:  OpenWrt signature verification utility
 
+Package: v2fly-geoip
+Version: 202402150038-1
+Depends: libc
+Source: package/v2raya-openwrt/v2fly-geodata
+SourceName: v2fly-geoip
+License: CC-BY-SA-4.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1708416196
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: all
+Installed-Size: 2561843
+Filename: v2fly-geoip_202402150038-1_all.ipk
+Size: 2337204
+SHA256sum: 847c211612e427aa73fe1a83da7e5d72802bcf64645218eeb62827a7136d0070
+Description:  A list to be used for routing purpose in Project V (geoip)
+
+Package: v2fly-geosite
+Version: 20240217140518-1
+Depends: libc
+Source: package/v2raya-openwrt/v2fly-geodata
+SourceName: v2fly-geosite
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1708416196
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: all
+Installed-Size: 490816
+Filename: v2fly-geosite_20240217140518-1_all.ipk
+Size: 490463
+SHA256sum: c44c640a088f4d8926fbf0cf824b0c42b10fd4f035d8b38f4e7be53fb0f433b7
+Description:  A list to be used for routing purpose in Project V (geosite)
+
 Package: v2ray-core
-Version: 5.7.0-1
+Version: 5.12.1-1
 Depends: libc, ca-bundle
 Source: package/helloworld/v2ray-core
 SourceName: v2ray-core
 License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1685639324
+SourceDateEpoch: 1701096966
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
-Installed-Size: 9331628
-Filename: v2ray-core_5.7.0-1_x86_64.ipk
-Size: 9305248
-SHA256sum: ebbbd96e43ddddac6b21d002721c619ff3afc4ae5ef73cf6e2bf3d45c22ce01e
+Installed-Size: 11568590
+Filename: v2ray-core_5.12.1-1_x86_64.ipk
+Size: 11523896
+SHA256sum: ecd46b13c7677f5716379b124ff99ef079598e4c905e47f3ce59d63b791d2fce
 Description:  Project V is a set of network tools that help you to build your own computer network.
  It secures your network connections and thus protects your privacy.
 
+Package: v2ray-extra
+Version: 5.12.1-1
+Depends: libc, v2ray-core
+Source: package/helloworld/v2ray-core
+SourceName: v2ray-extra
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1701096966
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: all
+Installed-Size: 298632
+Filename: v2ray-extra_5.12.1-1_all.ipk
+Size: 299359
+SHA256sum: b1689aa17bf3f21f7396b82c77fa635efb75850bf7466cbb3448251a91f26e7d
+Description:  Project V is a set of network tools that help you to build your own computer network.
+ It secures your network connections and thus protects your privacy.
+ 
+ This includes extra resources for v2ray-core.
+
 Package: v2ray-plugin
-Version: 5.7.0-1
+Version: 5.12.0-1
 Depends: libc, ca-bundle
 Source: package/helloworld/v2ray-plugin
 SourceName: v2ray-plugin
 License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1685639430
+SourceDateEpoch: 1701096948
 Maintainer: madeye <max.c.lv@gmail.com>
 Architecture: x86_64
-Installed-Size: 5247735
-Filename: v2ray-plugin_5.7.0-1_x86_64.ipk
-Size: 5236570
-SHA256sum: 137878b87547a0f87c9b36f6b2bd74470af492f57a28456bbbee41cfcb9364c7
+Installed-Size: 5148423
+Filename: v2ray-plugin_5.12.0-1_x86_64.ipk
+Size: 5137632
+SHA256sum: 3ef1ddda89f9c185bbba3cfa80ebc260ad524ef19a095ae6e404654cfbd630e7
 Description:  SIP003 plugin for shadowsocks, based on v2ray
 
 Package: v2raya
@@ -3210,13 +3576,13 @@ SourceName: v2raya
 License: AGPL-3.0-only
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1677894920
+SourceDateEpoch: 1697305841
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
-Installed-Size: 9818577
+Installed-Size: 9786148
 Filename: v2raya_1.5.9.1698.1-2_x86_64.ipk
-Size: 9785811
-SHA256sum: 0d605977290a406934a6be0a3484d5a9acf03a17eff91173bd9f5d0222c10d92
+Size: 9750342
+SHA256sum: 2afa1e308f9d07fedb6a0f9333eef30fffbed10053c09eaadbc5bd16f1a62d17
 Description:  v2rayA is a V2Ray Linux client supporting global transparent proxy,
  compatible with SS, SSR, Trojan(trojan-go), PingTunnel protocols.
 
@@ -3236,6 +3602,22 @@ Size: 46359
 SHA256sum: 81e5bfbb373381e4bc7860924765ba52b64e86e167e689af12e06bcbbd56eaa7
 Description:  A fast and secure FTP server (with aio support)
 
+Package: vxlan
+Version: 7
+Depends: libc, kmod-vxlan
+Source: package/network/config/vxlan
+SourceName: vxlan
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1623751087
+Maintainer: Matthias Schiffer <mschiffer@universe-factory.net>
+Architecture: all
+Installed-Size: 1453
+Filename: vxlan_7_all.ipk
+Size: 2221
+SHA256sum: 096cc9e7f8bbede30aa606b35721bc85c116ebfe30b9a69e88bab59508bc57eb
+Description:  Virtual eXtensible LAN config support in /etc/config/network.
+
 Package: wireguard-tools
 Version: 1.0.20210914-2
 Depends: libc, kmod-wireguard
@@ -3247,10 +3629,10 @@ Section: net
 SourceDateEpoch: 1632845080
 Maintainer: Jason A. Donenfeld <Jason@zx2c4.com>
 Architecture: x86_64
-Installed-Size: 26662
+Installed-Size: 26670
 Filename: wireguard-tools_1.0.20210914-2_x86_64.ipk
-Size: 27770
-SHA256sum: 6848323a3012a36cd03e70faabd8746b63e381c0a17092102a7ef52b25f5dc43
+Size: 27783
+SHA256sum: 07efb97d0b3c1cd324fb4b62806cd5cab2ecedbbb2d09c551b2cf8573a8b3c80
 Description:  WireGuard is a novel VPN that runs inside the Linux Kernel and utilizes
  state-of-the-art cryptography. It aims to be faster, simpler, leaner, and
  more useful than IPSec, while avoiding the massive headache. It intends to
@@ -3260,38 +3642,6 @@ Description:  WireGuard is a novel VPN that runs inside the Linux Kernel and uti
  
  This package provides the userspace control program for WireGuard,
  `wg(8)`, a netifd protocol helper, and a re-resolve watchdog script.
-
-Package: wireless-regdb
-Version: 2022.08.12-1
-Depends: libc
-Source: package/firmware/wireless-regdb
-SourceName: wireless-regdb
-Section: firmware
-SourceDateEpoch: 1666181640
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Architecture: all
-Installed-Size: 2192
-Filename: wireless-regdb_2022.08.12-1_all.ipk
-Size: 2910
-SHA256sum: 4a751b6a0dd8897c88e15ef4c8225808768dc4ebf6ac337d2d498e99c26f50b9
-Description:  Wireless Regulatory Database
-
-Package: wireless-tools
-Version: 29-7
-Depends: libc
-Source: package/network/utils/wireless-tools
-SourceName: wireless-tools
-License: GPL-2.0
-Section: net
-SourceDateEpoch: 1677741567
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Architecture: x86_64
-Installed-Size: 23332
-Filename: wireless-tools_29-7_x86_64.ipk
-Size: 24100
-SHA256sum: 6992e1ebcfbe1cbb010599aaeb8d8b0d67bb5dd60b3c567596c57506cf56c0a0
-Description:  This package contains a collection of tools for configuring wireless
- adapters implementing the "Linux Wireless Extensions".
 
 Package: wol
 Version: 0.7.1-3
@@ -3309,38 +3659,38 @@ Description:  wol implements Wake On LAN functionality in a small program.
  It wakes up hardware that is Magic Packet compliant.
 
 Package: xray-core
-Version: 1.8.3-1
+Version: 1.8.6-1
 Depends: libc, ca-bundle
 Source: package/helloworld/xray-core
 SourceName: xray-core
 License: MPL-2.0
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1687189492
+SourceDateEpoch: 1701097009
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
-Installed-Size: 9392313
-Filename: xray-core_1.8.3-1_x86_64.ipk
-Size: 9368628
-SHA256sum: 9a39154acd8f84361608e4349c778c49c4951ec55bff8ad445b33cc94aede910
+Installed-Size: 10103493
+Filename: xray-core_1.8.6-1_x86_64.ipk
+Size: 10076204
+SHA256sum: 79234fa2d7146287d90f6d943bcdd4029c9d566414a25249606b282cb54a9e55
 Description:  Xray, Penetrates Everything. It helps you to build your own computer network.
  It secures your network connections and thus protects your privacy.
 
 Package: xray-plugin
-Version: 1.8.3-1
+Version: 1.8.6-1
 Depends: libc, ca-bundle
 Source: package/helloworld/xray-plugin
 SourceName: xray-plugin
 License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1687189436
+SourceDateEpoch: 1701096988
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
 Architecture: x86_64
-Installed-Size: 6492254
-Filename: xray-plugin_1.8.3-1_x86_64.ipk
-Size: 6476900
-SHA256sum: 918b5ac5dc3bfd2dbd4b442a32f99cc8f2c077f9eb9a97172311bb3d0b099636
+Installed-Size: 6695530
+Filename: xray-plugin_1.8.6-1_x86_64.ipk
+Size: 6678145
+SHA256sum: 4570664bf428c8955130e8ea83f1ceb8eaacc50df2b830e088f449f0231c5eb1
 Description:  SIP003 plugin for Shadowsocks, based on Xray
 
 Package: zlib

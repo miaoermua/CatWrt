@@ -76,7 +76,7 @@ lede/bin/targets = miaoermua/CatWrt/targets
 
 > 如果不可用无法连接，可以在底部寻找分流源的使用方法示例，当然你也可以在使用之前就测试每一个可用的源。
 
-- VPS (Cloudflare Proxy): https://catwrt.eu.org
+- 阿里云 (双栈): https://repo.miaoer.xyz
 - Vercel: https://vercel.catwrt.eu.org
 - Netlify: https://netlify.catwrt.eu.org
 - Vercel (Cloudflare Proxy): https://cfvercel.catwrt.eu.org
@@ -89,12 +89,12 @@ lede/bin/targets = miaoermua/CatWrt/targets
 版本：v23.8
 
 ```mirrors
-src/gz openwrt_core https://catwrt.eu.org/targets/x86/64/packages
-src/gz openwrt_base https://catwrt.eu.org/x86_64/base
-src/gz openwrt_luci https://catwrt.eu.org/x86_64/luci
-src/gz openwrt_packages https://catwrt.eu.org/x86_64/packages
-src/gz openwrt_routing https://catwrt.eu.org/x86_64/routing
-src/gz openwrt_telephony https://catwrt.eu.org/x86_64/telephony
+src/gz openwrt_core https://repo.miaoer.xyz/targets/x86/64/packages
+src/gz openwrt_base https://repo.miaoer.xyz/x86_64/base
+src/gz openwrt_luci https://repo.miaoer.xyz/x86_64/luci
+src/gz openwrt_packages https://repo.miaoer.xyz/x86_64/packages
+src/gz openwrt_routing https://repo.miaoer.xyz/x86_64/routing
+src/gz openwrt_telephony https://repo.miaoer.xyz/x86_64/telephony
 ```
 
 **mt798x**
@@ -104,12 +104,12 @@ src/gz openwrt_telephony https://catwrt.eu.org/x86_64/telephony
 版本：v23.8
 
 ```mirrors
-src/gz openwrt_core https://catwrt.eu.org/targets/mt798x/filogic/packages
-src/gz openwrt_base https://catwrt.eu.org/mt798x/base
-src/gz openwrt_luci https://catwrt.eu.org/mt798x/luci
-src/gz openwrt_packages https://catwrt.eu.org/mt798x/packages
-src/gz openwrt_routing https://catwrt.eu.org/mt798x/routing
-src/gz openwrt_telephony https://catwrt.eu.org/mt798x/telephony
+src/gz openwrt_core https://repo.miaoer.xyz/targets/mt798x/filogic/packages
+src/gz openwrt_base https://repo.miaoer.xyz/mt798x/base
+src/gz openwrt_luci https://repo.miaoer.xyz/mt798x/luci
+src/gz openwrt_packages https://repo.miaoer.xyz/mt798x/packages
+src/gz openwrt_routing https://repo.miaoer.xyz/mt798x/routing
+src/gz openwrt_telephony https://repo.miaoer.xyz/mt798x/telephony
 ```
 
 **aarch64_generic**
@@ -119,12 +119,12 @@ src/gz openwrt_telephony https://catwrt.eu.org/mt798x/telephony
 版本：v22.12
 
 ```mirrors
-src/gz openwrt_core https://catwrt.eu.org/targets/rockchip/armv8/packages
-src/gz openwrt_base https://catwrt.eu.org/aarch64_generic/base
-src/gz openwrt_luci https://catwrt.eu.org/aarch64_generic/luci
-src/gz openwrt_packages https://catwrt.eu.org/aarch64_generic/packages
-src/gz openwrt_routing https://catwrt.eu.org/aarch64_generic/routing
-src/gz openwrt_telephony https://catwrt.eu.org/aarch64_generic/telephony
+src/gz openwrt_core https://repo.miaoer.xyz/targets/rockchip/armv8/packages
+src/gz openwrt_base https://repo.miaoer.xyz/aarch64_generic/base
+src/gz openwrt_luci https://repo.miaoer.xyz/aarch64_generic/luci
+src/gz openwrt_packages https://repo.miaoer.xyz/aarch64_generic/packages
+src/gz openwrt_routing https://repo.miaoer.xyz/aarch64_generic/routing
+src/gz openwrt_telephony https://repo.miaoer.xyz/aarch64_generic/telephony
 ```
 
 **mt7621**
@@ -134,12 +134,12 @@ src/gz openwrt_telephony https://catwrt.eu.org/aarch64_generic/telephony
 版本：v22.12
 
 ```mirrors
-src/gz openwrt_core https://catwrt.eu.org/targets/ramips/mt7621/packages
-src/gz openwrt_base https://catwrt.eu.org/mipsel_24kc/base
-src/gz openwrt_luci https://catwrt.eu.org/mipsel_24kc/luci
-src/gz openwrt_packages https://catwrt.eu.org/mipsel_24kc/packages
-src/gz openwrt_routing https://catwrt.eu.org/mipsel_24kc/routing
-src/gz openwrt_telephony https://catwrt.eu.org/mipsel_24kc/telephony
+src/gz openwrt_core https://repo.miaoer.xyz/targets/ramips/mt7621/packages
+src/gz openwrt_base https://repo.miaoer.xyz/mipsel_24kc/base
+src/gz openwrt_luci https://repo.miaoer.xyz/mipsel_24kc/luci
+src/gz openwrt_packages https://repo.miaoer.xyz/mipsel_24kc/packages
+src/gz openwrt_routing https://repo.miaoer.xyz/mipsel_24kc/routing
+src/gz openwrt_telephony https://repo.miaoer.xyz/mipsel_24kc/telephony
 ```
 
 ### 换源
@@ -166,13 +166,13 @@ src/gz openwrt_telephony https://vercel.catwrt.eu.org/mt798x/telephony
 以 CatWrt.v22.2 x86_64 示例
 
 ```mirrors
-src/gz openwrt_core https://catwrt.eu.org/history/v22.2/targets/x86/64/packages
-src/gz openwrt_base https://catwrt.eu.org/history/v22.2/x86_64/base
-src/gz openwrt_luci https://catwrt.eu.org/history/v22.2/x86_64/luci
-src/gz openwrt_oui https://catwrt.eu.org/history/v22.2/x86_64/oui
-src/gz openwrt_packages https://catwrt.eu.org/history/v22.2/x86_64/packages
-src/gz openwrt_routing https://catwrt.eu.org/history/v22.2/x86_64/routing
-src/gz openwrt_telephony https://catwrt.eu.org/history/v22.2/x86_64/telephony
+src/gz openwrt_core https://repo.miaoer.xyz/history/v22.2/targets/x86/64/packages
+src/gz openwrt_base https://repo.miaoer.xyz/history/v22.2/x86_64/base
+src/gz openwrt_luci https://repo.miaoer.xyz/history/v22.2/x86_64/luci
+src/gz openwrt_oui https://repo.miaoer.xyz/history/v22.2/x86_64/oui
+src/gz openwrt_packages https://repo.miaoer.xyz/history/v22.2/x86_64/packages
+src/gz openwrt_routing https://repo.miaoer.xyz/history/v22.2/x86_64/routing
+src/gz openwrt_telephony https://repo.miaoer.xyz/history/v22.2/x86_64/telephony
 ```
 
 #### 部署软件源

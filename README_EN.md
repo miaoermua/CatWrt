@@ -52,12 +52,12 @@ Traditional x86_64 (supports only x86_64/AMD64/64-bit; does not support x86_32/3
 Version：v23.8
 
 ```mirrors
-src/gz openwrt_core https://catwrt.eu.org/targets/x86/64/packages
-src/gz openwrt_base https://catwrt.eu.org/x86_64/base
-src/gz openwrt_luci https://catwrt.eu.org/x86_64/luci
-src/gz openwrt_packages https://catwrt.eu.org/x86_64/packages
-src/gz openwrt_routing https://catwrt.eu.org/x86_64/routing
-src/gz openwrt_telephony https://catwrt.eu.org/x86_64/telephony
+src/gz openwrt_core https://vercel.vercel.catwrt.eu.org/targets/x86/64/packages
+src/gz openwrt_base https://vercel.vercel.catwrt.eu.org/x86_64/base
+src/gz openwrt_luci https://vercel.vercel.catwrt.eu.org/x86_64/luci
+src/gz openwrt_packages https://vercel.vercel.catwrt.eu.org/x86_64/packages
+src/gz openwrt_routing https://vercel.vercel.catwrt.eu.org/x86_64/routing
+src/gz openwrt_telephony https://vercel.vercel.catwrt.eu.org/x86_64/telephony
 ```
 
 **mt798x**
@@ -67,12 +67,12 @@ Support devices: TP-Link TL-XDR 4288/6086/6088，Xiaomi Redmi AX6000
 Version：v23.8
 
 ```mirrors
-src/gz openwrt_core https://catwrt.eu.org/targets/mt798x/filogic/packages
-src/gz openwrt_base https://catwrt.eu.org/mt798x/base
-src/gz openwrt_luci https://catwrt.eu.org/mt798x/luci
-src/gz openwrt_packages https://catwrt.eu.org/mt798x/packages
-src/gz openwrt_routing https://catwrt.eu.org/mt798x/routing
-src/gz openwrt_telephony https://catwrt.eu.org/mt798x/telephony
+src/gz openwrt_core https://vercel.catwrt.eu.org/targets/mt798x/filogic/packages
+src/gz openwrt_base https://vercel.catwrt.eu.org/mt798x/base
+src/gz openwrt_luci https://vercel.catwrt.eu.org/mt798x/luci
+src/gz openwrt_packages https://vercel.catwrt.eu.org/mt798x/packages
+src/gz openwrt_routing https://vercel.catwrt.eu.org/mt798x/routing
+src/gz openwrt_telephony https://vercel.catwrt.eu.org/mt798x/telephony
 ```
 
 **mt7621**
@@ -82,17 +82,17 @@ Support devices: Xiaomi/Xiaomi Redmi AC2100，Newifi_d2
 Version：v22.12
 
 ```mirrors
-src/gz openwrt_core https://catwrt.eu.org/targets/ramips/mt7621/packages
-src/gz openwrt_base https://catwrt.eu.org/mipsel_24kc/base
-src/gz openwrt_luci https://catwrt.eu.org/mipsel_24kc/luci
-src/gz openwrt_packages https://catwrt.eu.org/mipsel_24kc/packages
-src/gz openwrt_routing https://catwrt.eu.org/mipsel_24kc/routing
-src/gz openwrt_telephony https://catwrt.eu.org/mipsel_24kc/telephony
+src/gz openwrt_core https://vercel.catwrt.eu.org/targets/ramips/mt7621/packages
+src/gz openwrt_base https://vercel.catwrt.eu.org/mipsel_24kc/base
+src/gz openwrt_luci https://vercel.catwrt.eu.org/mipsel_24kc/luci
+src/gz openwrt_packages https://vercel.catwrt.eu.org/mipsel_24kc/packages
+src/gz openwrt_routing https://vercel.catwrt.eu.org/mipsel_24kc/routing
+src/gz openwrt_telephony https://vercel.catwrt.eu.org/mipsel_24kc/telephony
 ```
 
 ### Alternative Host
 
-- VPS (Cloudflare Proxy): https://catwrt.eu.org
+- Aliyun: https://repo.miaoer.xyz
 - Vercel: https://vercel.catwrt.eu.org
 - Netlify: https://netlify.catwrt.eu.org
 - Vercel (Cloudflare Proxy): https://cfvercel.catwrt.eu.org

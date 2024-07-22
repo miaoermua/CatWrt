@@ -1,0 +1,86 @@
+name: Sync Repos
+
+on:
+  schedule:
+    - cron: '0 * * * *' # 每小时运行一次
+  push: # 当目标仓库有推送时触发
+    paths:
+      - 'projects/**' # 当 projects 目录下的文件有变化时触发
+  workflow_dispatch: # 手动触发
+
+jobs:
+  sync_repos:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout CatWrt repository
+      uses: actions/checkout@v2
+
+    - name: Create projects directory
+      run: mkdir -p projects/openwrt-leigodacc-manager projects/cattools projects/adguardfilter
+
+    - name: Checkout openwrt-leigodacc-manager repository
+      uses: actions/checkout@v2
+      with:
+        repository: miaoermua/openwrt-leigodacc-manager
+        path: openwrt-leigodacc-manager
+
+    - name: Checkout cattools repository
+      uses: actions/checkout@v2
+      with:
+        repository: miaoermua/cattools
+        path: cattools
+
+    - name: Checkout AdguardFilter repository
+      uses: actions/checkout@v2
+      with:
+        repository: miaoermua/AdguardFilter
+        path: adguardfilter
+
+    - name: Copy openwrt-leigodacc-manager files
+      run: |
+        rsync -av --exclude='.git' openwrt-leigodacc-manager/ projects/openwrt-leigodacc-manager/
+
+    - name: Copy cattools files
+      run: |
+        rsync -av --exclude='.git' cattools/ projects/cattools/
+
+    - name: Copy AdguardFilter files
+      run: |
+        rsync -av --exclude='.git' adguardfilter/ projects/adguardfilter/
+
+    - name: Get latest commit message from openwrt-leigodacc-manager
+      id: leigodacc_commit
+      run: |
+        cd openwrt-leigodacc-manager
+        echo "LEIGODACC_COMMIT_MSG=$(git log -1 --pretty=%B)" >> $GITHUB_ENV
+
+    - name: Get latest commit message from cattools
+      id: cattools_commit
+      run: |
+        cd cattools
+        echo "CATTOOLS_COMMIT_MSG=$(git log -1 --pretty=%B)" >> $GITHUB_ENV
+
+    - name: Get latest commit message from AdguardFilter
+      id: adguardfilter_commit
+      run: |
+        cd adguardfilter
+        echo "ADGUARDFILTER_COMMIT_MSG=$(git log -1 --pretty=%B)" >> $GITHUB_ENV
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add projects/openwrt-leigodacc-manager/
+        git add projects/cattools/
+        git add projects/adguardfilter/
+        git commit -m "Sync files from openwrt-leigodacc-manager, cattools, and AdguardFilter
+
+openwrt-leigodacc-manager: ${{ env.LEIGODACC_COMMIT_MSG }}
+
+cattools: ${{ env.CATTOOLS_COMMIT_MSG }}
+
+AdguardFilter: ${{ env.ADGURDFILTER_COMMIT_MSG }}"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

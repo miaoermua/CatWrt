@@ -32,7 +32,7 @@
 
 - **👍 获得高校学生，开源社区开发者的青睐，社区互相交流 OpenWrt 知识**<br>
 
-✅ 验证学生：武汉大学，华中科技大学，中南大学，杭州电子科技大学，江西理工大学<br><br>
+✅ 验证学生：武汉大学，华中科技大学，中南大学，杭州电子科技大学，江西理工大学等...<br><br>
 
 - **🪅 免费项目不包含商业收费项目，全面拥抱开源，轻松部署私有应用。**<br>
 
@@ -54,7 +54,7 @@
 
 CatWrt 是基于开源的 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版；可以查看发布博客留下的链接和本仓库提交更新时描述的源码地址。
 
-编译过程完全开源！通过和社区交流也能编译出自己的 CatWrt 关键是这些都是在社区活跃下都是免费的；CatWrt 修改项已开源，编译时可参考不推荐直接编译! [miaoermua/LEDE](https://github.com/miaoermua/LEDE) 遵守 [GPL2.0](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 协议，二次开发需要标注出处。
+编译过程完全开源！通过和社区交流也能编译出自己的 CatWrt 关键是这些都是在社区活跃下都是免费的；CatWrt 修改项已开源，编译时可参考不推荐直接编译! [miaoermua/catwrt_base](https://github.com/miaoermua/catwrt_base) 遵守 [GPL2.0](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 协议，二次开发需要标注出处。
 
 固件中绝不含任何后门和可以监控或者劫持你的 HTTPS 的闭源软件，所有对 LEDE 修改均已展示并开源，SSL 安全是互联网最后的壁垒，安全干净才是固件应该做到的。
 
@@ -71,6 +71,8 @@ lede/bin/targets = miaoermua/CatWrt/targets
 ***
 
 ## 软件源
+
+**使用 [Cattools](https://www.miaoer.xyz/posts/blog/cattools) 可快速配置软件源，无需繁琐配置。**
 
 假如使用前已经刷新列表 `opkg update` 请先在终端 `rm -f /var/lock/opkg.lock` 清理掉默认腾讯源的索引文件，再将源索引填入 CatWrt 发行版软件源中再刷新。
 
@@ -201,6 +203,10 @@ $ docker compose up -d
 将此仓库通过 git clone 拉取到服务器网站目录里，修改面板网站目录到 CatWrt 中；
 
 部署完成后再按照架构平台或系列修改模板到本地部署中。
+
+- 使用 Windows 部署
+
+[无法使用 CatWrt 在线源，那就本地部署一个！](https://www.miaoer.xyz/posts/blog/windows-deploy-catwrt-repo)
 
 ***
 

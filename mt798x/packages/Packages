@@ -1,3 +1,15 @@
+Package: UDPspeeder
+Version: 20210116.0-2
+Depends: libc, libstdcpp6, librt, libatomic1
+License: MIT
+Section: net
+Architecture: aarch64_cortex-a53
+Installed-Size: 73104
+Filename: UDPspeeder_20210116.0-2_aarch64_cortex-a53.ipk
+Size: 73789
+SHA256sum: 1610e16cd6bd2be34bcdc19874b7dc0f56c3e6e2036485180b5547fe29db6b93
+Description:  A Tunnel which Improves your Network Quality on a High-latency Lossy Link by using Forward Error Correction,for All Traffics(TCP/UDP/ICMP)
+
 Package: UnblockNeteaseMusic-Go
 Version: 0.2.13-1
 Depends: libc
@@ -35,31 +47,31 @@ SHA256sum: 6c5d7153255ae10d624eb4fc5d19872000a6dd250fed6c825d659e67464c9f49
 Description:  A client for issuing Letsencrypt certificates.
 
 Package: adblock
-Version: 4.1.4-5
-Depends: libc, jshn, jsonfilter, coreutils, coreutils-sort, ca-bundle, opkg
-License: GPL-3.0-or-later
+Version: 4.1.5-9
+Depends: libc, jshn, jsonfilter
+License: GPL-3.0+
 Section: net
 Architecture: all
-Installed-Size: 19850
-Filename: adblock_4.1.4-5_all.ipk
-Size: 20828
-SHA256sum: 0b344fe8b4d91630809d923b499a5f860593b2d0ed460b1859af08eeabecddcf
-Description:  Powerful adblock solution to block ad/abuse domains via dnsmasq, unbound, named or kresd.
+Installed-Size: 9570
+Filename: adblock_4.1.5-9_all.ipk
+Size: 10532
+SHA256sum: d54088ce75f09fe863e600289728c3b99f25c496c5f69ddc53dca66fc8e60947
+Description:  Powerful adblock script to block ad/abuse domains via dnsmasq, unbound, named, kresd or dnscrypt-proxy.
  The script supports many domain blacklist sites plus manual black- and whitelist overrides.
  Please see https://github.com/openwrt/packages/blob/master/net/adblock/files/README.md for further information.
  
 
 Package: aria2
 Version: 1.36.0-2
-Depends: libc, zlib, libstdcpp6, libopenssl1.1
+Depends: libc, zlib, libstdcpp6, libopenssl3
 License: GPLv2
 Section: net
 CPE-ID: cpe:/a:tatsuhiro_tsujikawa:aria2
 Architecture: aarch64_cortex-a53
-Installed-Size: 609387
+Installed-Size: 609269
 Filename: aria2_1.36.0-2_aarch64_cortex-a53.ipk
-Size: 609399
-SHA256sum: bf4711cf7808547f68dccaaf413eec0a6810dd31cbe15f77bb7a58ffb7bcb02a
+Size: 609228
+SHA256sum: 23d2fdd6c11b2ef41a9ab91c45a06cba68c0a36b6279f36a0ac79d570a196670
 Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
 
@@ -90,6 +102,18 @@ Description:  Extended attributes support
  - attr
  - getfattr
  - setfattr
+
+Package: autossh
+Version: 1.4g-2
+Depends: libc
+License: 0BSD
+Section: net
+Architecture: aarch64_cortex-a53
+Installed-Size: 10884
+Filename: autossh_1.4g-2_aarch64_cortex-a53.ipk
+Size: 11611
+SHA256sum: 5e200601188e37f7d902c05311eaa961b3e45ad0032048c1bb7029d3fa7eb063
+Description:  Autossh client
 
 Package: avahi-dbus-daemon
 Version: 0.8-7
@@ -130,6 +154,19 @@ Description:  Bash is an sh-compatible command language interpreter that execute
  commands read from the standard input or from a file. Bash also
  incorporates useful features from the Korn and C shells (ksh and csh).
 
+Package: boost-chrono
+Version: 1.81.0-1
+Depends: libc, libstdcpp6, libpthread, librt, boost-system
+License: BSL-1.0
+Section: libs
+CPE-ID: cpe:/a:boost:boost
+Architecture: aarch64_cortex-a53
+Installed-Size: 8092
+Filename: boost-chrono_1.81.0-1_aarch64_cortex-a53.ipk
+Size: 8843
+SHA256sum: 01fa76655dc3a6dad21f1e207c020b0a215977fca5edbcbddcaaf3465ffce584
+Description:  This package contains the Boost chrono library.
+
 Package: boost-date_time
 Version: 1.81.0-1
 Depends: libc, libstdcpp6, libpthread, librt
@@ -137,10 +174,10 @@ License: BSL-1.0
 Section: libs
 CPE-ID: cpe:/a:boost:boost
 Architecture: aarch64_cortex-a53
-Installed-Size: 917
+Installed-Size: 1040
 Filename: boost-date_time_1.81.0-1_aarch64_cortex-a53.ipk
-Size: 1736
-SHA256sum: 1627b93857fe6239861b3d3630618334429e6494db2843bf399b66dba7ccaa06
+Size: 1781
+SHA256sum: eb4dc9824904809431505549b348d73665c13e12981d68fcdf1e6f405d243803
 Description:  This package contains the Boost date_time library.
 
 Package: boost-program_options
@@ -150,11 +187,24 @@ License: BSL-1.0
 Section: libs
 CPE-ID: cpe:/a:boost:boost
 Architecture: aarch64_cortex-a53
-Installed-Size: 65051
+Installed-Size: 65050
 Filename: boost-program_options_1.81.0-1_aarch64_cortex-a53.ipk
-Size: 65866
-SHA256sum: 5dc275fe7be80727c38541f4feacd4dcf0e001b49daa9e3e5cc7e83f76e82605
+Size: 65864
+SHA256sum: 9507f498b1ea0302b27623154f40b266eef6c799e4004db49bf8d871241ad38a
 Description:  This package contains the Boost program_options library.
+
+Package: boost-random
+Version: 1.81.0-1
+Depends: libc, libstdcpp6, libpthread, librt, boost-system
+License: BSL-1.0
+Section: libs
+CPE-ID: cpe:/a:boost:boost
+Architecture: aarch64_cortex-a53
+Installed-Size: 7001
+Filename: boost-random_1.81.0-1_aarch64_cortex-a53.ipk
+Size: 7775
+SHA256sum: bf53389a4490775ca1064f2184a2297421fbd295c3950b54479e61dec076d30c
+Description:  This package contains the Boost random library.
 
 Package: boost-system
 Version: 1.81.0-1
@@ -163,10 +213,10 @@ License: BSL-1.0
 Section: libs
 CPE-ID: cpe:/a:boost:boost
 Architecture: aarch64_cortex-a53
-Installed-Size: 907
+Installed-Size: 1030
 Filename: boost-system_1.81.0-1_aarch64_cortex-a53.ipk
-Size: 1707
-SHA256sum: eb4abae0d149be68cda55bcebfbe2dd3cb915076b29ed6b18ac7fd5682b01467
+Size: 1767
+SHA256sum: 83dc4ab67414a2494f454d9b00a73b43d8608f091038792fc25bec8902c75eeb
 Description:  This package contains the Boost system library.
 
 Package: boost
@@ -219,19 +269,31 @@ Description:  This package provides the Boost v1.81.0 libraries.
  See more at http://www.boost.org/doc/libs/1_81_0/
 
 Package: btrfs-progs
-Version: 5.16.1-1
+Version: 5.16.1-2
 Depends: libc, libattr, libuuid1, libmount1, zlib, libblkid1, liblzo2, libpthread, kmod-fs-btrfs
 License: GPL-2.0-only
 Section: utils
 Architecture: aarch64_cortex-a53
-Installed-Size: 1012811
-Filename: btrfs-progs_5.16.1-1_aarch64_cortex-a53.ipk
-Size: 1013195
-SHA256sum: 4ba351c8e08dd24115d34ed0bf5ed45926c4a2853c6133e41c31def4966d8ba8
+Installed-Size: 1014264
+Filename: btrfs-progs_5.16.1-2_aarch64_cortex-a53.ipk
+Size: 1014025
+SHA256sum: c6f11e66152913cdc474094367391c6b9d2bc3f76a0fe0c4d25320786b8e03ef
 Description:  Btrfs is a new copy on write filesystem for Linux aimed at implementing
  advanced features while focusing on fault tolerance, repair and easy
  administration. Initially developed by Oracle, Btrfs is licensed under the
  GPL and open for contribution from anyone.
+
+Package: cgi-io
+Version: 2022-08-10-901b0f04-21
+Depends: libc, libubox20220927, libubus20220601
+License: GPL-2.0-or-later
+Section: net
+Architecture: aarch64_cortex-a53
+Installed-Size: 9369
+Filename: cgi-io_2022-08-10-901b0f04-21_aarch64_cortex-a53.ipk
+Size: 10157
+SHA256sum: 0f27b481c34e18f0008d5438423a63f94ab4134e999566b17053087433284182
+Description:  This package contains an cgi utility that is useful for up/downloading files
 
 Package: cgroupfs-mount
 Version: 2020-06-26-05494281-3
@@ -245,15 +307,15 @@ SHA256sum: 5937f5529cfa48e304385560605208028385c835421e9ae94ee3f5e21182b373
 Description:  Simple scripts to properly mount the cgroupfs hierarchy, especially structured for Debian packaging
 
 Package: containerd
-Version: 1.6.6-1
+Version: 1.7.6-1
 Depends: libc, btrfs-progs, runc
 License: Apache-2.0
 Section: utils
 Architecture: aarch64_cortex-a53
-Installed-Size: 32699049
-Filename: containerd_1.6.6-1_aarch64_cortex-a53.ipk
-Size: 32477414
-SHA256sum: 9389be786c12ef14b141dfbe69767e86cb9f7fde4752c642170139f5dc664b50
+Installed-Size: 34623858
+Filename: containerd_1.7.6-1_aarch64_cortex-a53.ipk
+Size: 34366851
+SHA256sum: 6924781898877cfeefb6c602409e1e79ed78b8bbd00d4dd9066318d4e9349ebb
 Description:  An industry-standard container runtime with an emphasis on simplicity, robustness and portability
 
 Package: coremark
@@ -269,101 +331,113 @@ SHA256sum: 026cf8a3e547788aa6e7bd0b87d4429ba4836b32733980221743d99528bd03a8
 Description:  Embedded Microprocessor Benchmark
 
 Package: coreutils-base64
-Version: 9.1-1
+Version: 9.3-1
 Depends: libc, coreutils
 Alternatives: 300:/bin/base64:/usr/libexec/base64-coreutils
 License: GPL-3.0-or-later
 Section: utils
 CPE-ID: cpe:/a:gnu:coreutils
 Architecture: aarch64_cortex-a53
-Installed-Size: 22789
-Filename: coreutils-base64_9.1-1_aarch64_cortex-a53.ipk
-Size: 23569
-SHA256sum: 724e08680bf7efcbfe20f6bb5a76151fe5719d9bd4f06c1dd773c95b439729c3
+Installed-Size: 24329
+Filename: coreutils-base64_9.3-1_aarch64_cortex-a53.ipk
+Size: 24988
+SHA256sum: 8167739e2cf78cc5ca1fbd1a51aa40b0529b141f7cf711a1f68ee5ea19df9d70
 Description:  Full version of standard GNU base64 utility.
 
 Package: coreutils-nohup
-Version: 9.1-1
+Version: 9.3-1
 Depends: libc, coreutils
 Alternatives: 300:/usr/bin/nohup:/usr/libexec/nohup-coreutils
 License: GPL-3.0-or-later
 Section: utils
 CPE-ID: cpe:/a:gnu:coreutils
 Architecture: aarch64_cortex-a53
-Installed-Size: 21270
-Filename: coreutils-nohup_9.1-1_aarch64_cortex-a53.ipk
-Size: 22047
-SHA256sum: 7a0d27d9e2028576c3ad4fa4b5dd6b10bd3fd9d516601af290bccc15103ed17d
+Installed-Size: 22937
+Filename: coreutils-nohup_9.3-1_aarch64_cortex-a53.ipk
+Size: 23619
+SHA256sum: 53dff6d989b0c54a4b23c33f14279caf2e6ac153386f74cfd98ae307d37401fd
 Description:  Full version of standard GNU nohup utility.
 
-Package: coreutils-sort
-Version: 9.1-1
-Depends: libc, coreutils, libpthread
-Alternatives: 300:/usr/bin/sort:/usr/libexec/sort-coreutils
-License: GPL-3.0-or-later
-Section: utils
-CPE-ID: cpe:/a:gnu:coreutils
-Architecture: aarch64_cortex-a53
-Installed-Size: 54313
-Filename: coreutils-sort_9.1-1_aarch64_cortex-a53.ipk
-Size: 55092
-SHA256sum: f967970e77bdfc372ffb1750cbdb947b47c89ad9cf0f9ecb8d300589da645f0a
-Description:  Full version of standard GNU sort utility.
-
 Package: coreutils-stat
-Version: 9.1-1
+Version: 9.3-1
 Depends: libc, coreutils
 Alternatives: 300:/bin/stat:/usr/libexec/stat-coreutils
 License: GPL-3.0-or-later
 Section: utils
 CPE-ID: cpe:/a:gnu:coreutils
 Architecture: aarch64_cortex-a53
-Installed-Size: 45064
-Filename: coreutils-stat_9.1-1_aarch64_cortex-a53.ipk
-Size: 45770
-SHA256sum: 4b0dbe3f49df3d5291a58c26862ecc66ede6a420a5eddde93eb97e308576fef3
+Installed-Size: 46937
+Filename: coreutils-stat_9.3-1_aarch64_cortex-a53.ipk
+Size: 47416
+SHA256sum: b31dbec28144820454ba9a56e895dab025cbec0d6506cf8923dbba5fad8d0111
 Description:  Full version of standard GNU stat utility.
 
 Package: coreutils-stty
-Version: 9.1-1
+Version: 9.3-1
 Depends: libc, coreutils
 Alternatives: 300:/bin/stty:/usr/libexec/stty-coreutils
 License: GPL-3.0-or-later
 Section: utils
 CPE-ID: cpe:/a:gnu:coreutils
 Architecture: aarch64_cortex-a53
-Installed-Size: 30175
-Filename: coreutils-stty_9.1-1_aarch64_cortex-a53.ipk
-Size: 30970
-SHA256sum: 4070c0937fdfb35475ddcdf46be58ad4acf7de6e558cd93f3345f3b4102a8349
+Installed-Size: 32467
+Filename: coreutils-stty_9.3-1_aarch64_cortex-a53.ipk
+Size: 32930
+SHA256sum: fa2dae9801a3b04d05e2636b3f55c998148e6e80e7b7f042e05ee534101a5a8b
 Description:  Full version of standard GNU stty utility.
 
+Package: coreutils-timeout
+Version: 9.3-1
+Depends: libc, coreutils, librt
+Alternatives: 300:/usr/bin/timeout:/usr/libexec/timeout-coreutils
+License: GPL-3.0-or-later
+Section: utils
+CPE-ID: cpe:/a:gnu:coreutils
+Architecture: aarch64_cortex-a53
+Installed-Size: 26756
+Filename: coreutils-timeout_9.3-1_aarch64_cortex-a53.ipk
+Size: 27471
+SHA256sum: 2ebc4e8dc2eb9b293aa6c429e57c6286fb61394addede1f5ae3a8e9dc40b1e9d
+Description:  Full version of standard GNU timeout utility.
+
 Package: coreutils
-Version: 9.1-1
+Version: 9.3-1
 Depends: libc
 License: GPL-3.0-or-later
 Section: utils
 CPE-ID: cpe:/a:gnu:coreutils
 Architecture: aarch64_cortex-a53
-Installed-Size: 95
-Filename: coreutils_9.1-1_aarch64_cortex-a53.ipk
-Size: 972
-SHA256sum: 76912b7e57163e4ffdd19836ad54a57cfeba73f50300bf6f057fcaa9cc3fcc9b
+Installed-Size: 96
+Filename: coreutils_9.3-1_aarch64_cortex-a53.ipk
+Size: 967
+SHA256sum: 25195b710774a80d968b3fe2daa4b0033bf13f71c715b726600c5a86720fea72
 Description:  Full versions of standard GNU utilities. If an equivalent Busybox applet is
  available, you should consider compiling that instead as Busybox applets are
  usually smaller, at the expense of reduced functionality.
 
+Package: cshark
+Version: 2020-07-22-c0d32fb6-1
+Depends: libc, libjson-c5, libpcap1, libuci20130104, libubox20220927, libuclient20201210, libustream-mbedtls20201210
+License: BSD-2-Clause
+Section: net
+Architecture: aarch64_cortex-a53
+Installed-Size: 8017
+Filename: cshark_2020-07-22-c0d32fb6-1_aarch64_cortex-a53.ipk
+Size: 8756
+SHA256sum: 31c0e4a718fa4bc3767e3aa4f82c286e3a0ce9ca3d11d93892d5f9bd4cc6d87b
+Description:  CloudShark capture tool
+
 Package: curl
-Version: 8.0.1-1
+Version: 8.5.0-1
 Depends: libc, libcurl4
 License: MIT
 Section: net
 CPE-ID: cpe:/a:haxx:libcurl
 Architecture: aarch64_cortex-a53
-Installed-Size: 59671
-Filename: curl_8.0.1-1_aarch64_cortex-a53.ipk
-Size: 60491
-SHA256sum: 3096974e10a4ec8885f1ea466551cb8f067d8ef390197aaa072e17058226efee
+Installed-Size: 65729
+Filename: curl_8.5.0-1_aarch64_cortex-a53.ipk
+Size: 66385
+SHA256sum: 60ba738aa310cb3e6d47dddc6803300afe3ec45d6a4ba9a493d30a7eca2d8305
 Description:  A client-side URL transfer utility
 
 Package: dawn
@@ -396,10 +470,10 @@ Version: 2.7.8-5
 License: GPL-2.0
 Section: net
 Architecture: all
-Installed-Size: 14577
+Installed-Size: 14583
 Filename: ddns-scripts_2.7.8-5_all.ipk
-Size: 15647
-SHA256sum: 399787286a03c7862ad60c7942ad3f1d74014a8c555888e43140871ec25432ee
+Size: 15651
+SHA256sum: 8d409c4bd9965941405c9717a6bde7f45d365a0d7f4f0fd174d95c7c1c965223
 Description:  Dynamic DNS Client scripts (with IPv6 support) - Info: http://wiki.openwrt.org/doc/howto/ddns.client
 
 Package: ddns-scripts_cloudflare.com-v4
@@ -408,10 +482,10 @@ Depends: ddns-scripts, curl
 License: GPL-2.0
 Section: net
 Architecture: all
-Installed-Size: 3090
+Installed-Size: 3089
 Filename: ddns-scripts_cloudflare.com-v4_2.7.8-5_all.ipk
-Size: 4198
-SHA256sum: e2f12a26cff81f8daa781f487aa10581fcc0a4a973b52998586decfeb978ac6e
+Size: 4202
+SHA256sum: fac5c5fb1e093bd99980b14482f60fa150e85498c8591251f6c0d1b2a3ec95b2
 Description:  Dynamic DNS Client scripts extension for CloudFlare.com API-v4 (require/install cURL)
 
 Package: dnsforwarder
@@ -422,59 +496,59 @@ Section: net
 Architecture: aarch64_cortex-a53
 Installed-Size: 87908
 Filename: dnsforwarder_6.1.15-11_aarch64_cortex-a53.ipk
-Size: 88507
-SHA256sum: ef59105be77507375b8f7e063be85d46df45faf7bfff76af65ddc6f7086ed697
+Size: 88469
+SHA256sum: bb956eb4b5e800dea2fbf750cae4f9f0fbfc8e30e86d265d1237c125643b2589
 Description:  Forwarding queries to customized domains (and their subdomains) to specified servers
  over a specified protocol (UDP or TCP). non-standard ports are supported.
 
 Package: dnsproxy
-Version: 0.48.2-1
+Version: 0.56.2-1
 Depends: libc, ca-bundle
 License: Apache-2.0
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 3639034
-Filename: dnsproxy_0.48.2-1_aarch64_cortex-a53.ipk
-Size: 3630739
-SHA256sum: 53a6df9492be483d37c45223af8de21248a09ac8754325915ff6626ebaafb110
+Installed-Size: 3569581
+Filename: dnsproxy_0.56.2-1_aarch64_cortex-a53.ipk
+Size: 3561482
+SHA256sum: 3fcc99df331a7b1689a9eaca16f6a92ea32b1a14d1af5e791cbb1bd4977c59fc
 Description:  A simple DNS proxy server that supports all existing DNS protocols including
  DNS-over-TLS, DNS-over-HTTPS, DNSCrypt, and DNS-over-QUIC.Moreover, it can
  work as a DNS-over-HTTPS, DNS-over-TLS or DNS-over-QUIC server.
 
 Package: docker-compose
-Version: 2.14.2-1
+Version: 2.23.0-1
 Depends: libc, docker
 License: Apache-2.0
 Section: utils
 Architecture: aarch64_cortex-a53
-Installed-Size: 12894243
-Filename: docker-compose_2.14.2-1_aarch64_cortex-a53.ipk
-Size: 12808675
-SHA256sum: 8b3084d632da044e3a2e6460ef69c868f3cec7dc60d4e70c43408df75eefb275
+Installed-Size: 14967040
+Filename: docker-compose_2.23.0-1_aarch64_cortex-a53.ipk
+Size: 14869753
+SHA256sum: 42c0cf06ebdaf56a16eec9272787eebf178ab946e262fc3930f88c414e06835e
 Description:  Multi-container orchestration for Docker
 
 Package: docker
-Version: 20.10.17-1
+Version: 24.0.7-3
 Depends: libc
 License: Apache-2.0
 Section: utils
 Architecture: aarch64_cortex-a53
-Installed-Size: 11583638
-Filename: docker_20.10.17-1_aarch64_cortex-a53.ipk
-Size: 11511008
-SHA256sum: a6aef7603cfb9c80cebf4c893b3b49e7c514dd26f901de82748840adb2376325
+Installed-Size: 7449728
+Filename: docker_24.0.7-3_aarch64_cortex-a53.ipk
+Size: 7420572
+SHA256sum: 31c950a78f6c29044ea555414a46b0d197b5e7704464ef1a29a217db61751c3a
 Description:  The CLI used in the Docker CE and Docker EE products.
 
 Package: dockerd
-Version: 20.10.17-1
-Depends: libc, btrfs-progs, ca-certificates, containerd, libdevmapper, libnetwork, tini, libseccomp, iptables-mod-extra, kmod-br-netfilter, kmod-ikconfig, kmod-nf-conntrack-netlink, kmod-nf-ipvs, kmod-nf-nat, kmod-veth
+Version: 24.0.7-4
+Depends: libc, ca-certificates, containerd, iptables, iptables-mod-extra, ip6tables, kmod-ipt-nat6, libseccomp, kmod-ipt-nat, kmod-ipt-physdev, kmod-nf-ipvs, kmod-veth, tini
 License: Apache-2.0
 Section: utils
 Architecture: aarch64_cortex-a53
-Installed-Size: 15076524
-Filename: dockerd_20.10.17-1_aarch64_cortex-a53.ipk
-Size: 15020980
-SHA256sum: 07ba1b2cca9cdb6c5359bb512102b39b6b26c5d900acfea600cf95a7605d030b
+Installed-Size: 18092572
+Filename: dockerd_24.0.7-4_aarch64_cortex-a53.ipk
+Size: 18026766
+SHA256sum: 1aeff1082c57b7c1ed6145a118fa16684d108427c4fed8b8322ec86cc0574327
 Description:  The Docker CE Engine.
 
 Package: etherwake
@@ -493,15 +567,15 @@ Description:  You can wake up WOL compliant Computers which have been powered do
  ether-wake also supports WOL passwords.
 
 Package: frpc
-Version: 0.47.0-1
+Version: 0.53.2-1
 Depends: libc
 License: Apache-2.0
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 3242478
-Filename: frpc_0.47.0-1_aarch64_cortex-a53.ipk
-Size: 3244027
-SHA256sum: c80c2c43aea3ada14dd9ef84ddd65fa2b44110eb094e7954c974281725200b1e
+Installed-Size: 3406326
+Filename: frpc_0.53.2-1_aarch64_cortex-a53.ipk
+Size: 3407899
+SHA256sum: e0856ad244b90d6daff094fb80831a2b76018038d0c642bd940faa715d678b92
 Description:  frp is a fast reverse proxy to help you expose a local server behind a NAT or firewall
  to the internet. As of now, it supports tcp & udp, as well as http and https protocols,
  where requests can be forwarded to internal services by domain name.
@@ -509,15 +583,15 @@ Description:  frp is a fast reverse proxy to help you expose a local server behi
  This package contains the frpc.
 
 Package: frps
-Version: 0.47.0-1
+Version: 0.53.2-1
 Depends: libc
 License: Apache-2.0
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 3902774
-Filename: frps_0.47.0-1_aarch64_cortex-a53.ipk
-Size: 3904380
-SHA256sum: d695b4c4cf220d55bb5acdddb98d7dd7c68b92f00e6c0962afd5e5ddd678120b
+Installed-Size: 4246170
+Filename: frps_0.53.2-1_aarch64_cortex-a53.ipk
+Size: 4247863
+SHA256sum: 45d7074d22d433c528a3cc98f9266a3af4226e74315a6abefd6b624fe2337d48
 Description:  frp is a fast reverse proxy to help you expose a local server behind a NAT or firewall
  to the internet. As of now, it supports tcp & udp, as well as http and https protocols,
  where requests can be forwarded to internal services by domain name.
@@ -526,32 +600,45 @@ Description:  frp is a fast reverse proxy to help you expose a local server behi
 
 Package: haproxy
 Version: 2.6.6-1
-Depends: libc, libpcre, libltdl7, zlib, libpthread, liblua5.3-5.3, libopenssl1.1, libncurses6, libreadline8, libatomic1
+Depends: libc, libpcre, libltdl7, zlib, libpthread, liblua5.3-5.3, libopenssl3, libncurses6, libreadline8, libatomic1
 License: GPL-2.0-only
 Section: net
 CPE-ID: cpe:/a:haproxy:haproxy
 Architecture: aarch64_cortex-a53
-Installed-Size: 1019834
+Installed-Size: 1021633
 Filename: haproxy_2.6.6-1_aarch64_cortex-a53.ipk
-Size: 1018876
-SHA256sum: bb12d6fbb5aada469c9c83241da567ad135cb49727eaa42e5ad96facd8928d8a
+Size: 1020111
+SHA256sum: 0ba4444a7d1a096c9b0d7fff5018d98e35b66170ba81e1cec608fd12c8483112
 Description:  Open source Reliable, High Performance TCP/HTTP Load Balancer.
  This package is built with SSL and LUA support.
 
 Package: htop
-Version: 3.2.2-1
+Version: 3.3.0-1
 Depends: libc, libncurses6
 License: GPL-2.0-or-later
 Section: admin
 CPE-ID: cpe:/a:htop:htop
 Architecture: aarch64_cortex-a53
-Installed-Size: 105916
-Filename: htop_3.2.2-1_aarch64_cortex-a53.ipk
-Size: 106791
-SHA256sum: 1ebcb49c43d7c2a5de4f6cc0a639273c57d280fe42806c11f7898a953a5e30f1
+Installed-Size: 115968
+Filename: htop_3.3.0-1_aarch64_cortex-a53.ipk
+Size: 116699
+SHA256sum: 36abfd29b4e7fe1a2e37046f20762475dba06021f55684f4729b766eba6e4b68
 Description:  Htop is an ncursed-based process viewer similar to top, but
  it allows to scroll the list vertically and horizontally to
  see all processes and their full command lines.
+
+Package: igmpproxy
+Version: 0.2.1-4
+Depends: libc
+License: GPL-2.0+
+Section: net
+Architecture: aarch64_cortex-a53
+Installed-Size: 19823
+Filename: igmpproxy_0.2.1-4_aarch64_cortex-a53.ipk
+Size: 20655
+SHA256sum: 6a876efa9deae1f418e05eb6912c921b5584778755c326d51da95a7c9d137d36
+Description:  IGMPproxy is a simple dynamic Multicast Routing Daemon using
+ only IGMP signalling (Internet Group Management Protocol).
 
 Package: iperf3
 Version: 3.12-1
@@ -725,18 +812,18 @@ SHA256sum: 22cd0ef49a7e48afe215e69d48a3f3aa80cadd3306492e4c0c44bd049de8d279
 Description:  libcbor is a C library for parsing and generating CBOR, the general-purpose schema-less binary data format.
 
 Package: libcurl4
-Version: 8.0.1-1
-Depends: libc, libopenssl1.1, libnghttp2-14, ca-bundle
+Version: 8.5.0-1
+Depends: libc, libopenssl3, libnghttp2-14, ca-bundle
 Provides: libcurl
 License: MIT
 Section: libs
 ABIVersion: 4
 CPE-ID: cpe:/a:haxx:libcurl
 Architecture: aarch64_cortex-a53
-Installed-Size: 194741
-Filename: libcurl4_8.0.1-1_aarch64_cortex-a53.ipk
-Size: 195481
-SHA256sum: 6f9bad0edd895898a8c49416b7fd7336664027515a02f0b8be21776758b15453
+Installed-Size: 216161
+Filename: libcurl4_8.5.0-1_aarch64_cortex-a53.ipk
+Size: 216663
+SHA256sum: a475cb767a2520527a0755dc545ba6471bde127a4ef2309fe5c95ad4685f2da2
 Description:  A client-side URL transfer library
 
 Package: libdaemon
@@ -772,20 +859,6 @@ Size: 129899
 SHA256sum: 093a58e2bed891621c620a44730ca4b7c92034eda1a00f8adda11bd3e5bb30fb
 Description:  Simple interprocess messaging system (library)
 
-Package: libdevmapper
-Version: 1.02.187
-Depends: libc, kmod-dm, libpthread, libuuid1, librt, libblkid1
-License: GPL-2.0 LGPL-2.1
-Section: libs
-CPE-ID: cpe:/a:heinz_mauelshagen:lvm2
-Architecture: aarch64_cortex-a53
-Installed-Size: 146676
-Filename: libdevmapper_1.02.187_aarch64_cortex-a53.ipk
-Size: 147519
-SHA256sum: 6b3c553e943f9ad98519e747198c132fff6b28af739fedfabe622e82db00cc40
-Description:  The device-mapper is a component of the 2.6 linux kernel that supports logical
- volume management. It is required by LVM2 and EVMS.
-
 Package: libev
 Version: 4.33-1
 Depends: libc
@@ -812,18 +885,39 @@ Size: 46572
 SHA256sum: 13528af8f0e0bcc8fc687bcb4877618dc946bd394a7f723f697f28d664e652d8
 Description:  A fast, non-validating, stream-oriented XML parsing library.
 
+Package: libffi
+Version: 3.4.2-2
+Depends: libc
+License: MIT
+Section: libs
+Architecture: aarch64_cortex-a53
+Installed-Size: 16448
+Filename: libffi_3.4.2-2_aarch64_cortex-a53.ipk
+Size: 17259
+SHA256sum: 58ea9695388169162c7c0237bac7357749295e87089d38c44919f5b2b42eb67f
+Description:  The libffi library provides a portable, high level programming interface to
+ various calling conventions. This allows a programmer to call any function
+ specified by a call interface description at run-time.
+ 
+ FFI stands for Foreign Function Interface. A foreign function interface is the
+ popular name for the interface that allows code written in one language to call
+ code written in another language. The libffi library really only provides the
+ lowest, machine dependent layer of a fully featured foreign function interface.
+ A layer must exist above libffi that handles type conversions for values passed
+ between the two languages.
+
 Package: libfido2-1
 Version: 1.12.0-1
-Depends: libc, libcbor0, libopenssl1.1, libudev, zlib
+Depends: libc, libcbor0, libopenssl3, libudev, zlib
 Provides: libfido2
 License: GPL-3.0-or-later
 Section: libs
 ABIVersion: -1
 Architecture: aarch64_cortex-a53
-Installed-Size: 80564
+Installed-Size: 80659
 Filename: libfido2-1_1.12.0-1_aarch64_cortex-a53.ipk
-Size: 81502
-SHA256sum: 5263bc1d7c23374de7cb8e3743ca790f6d12a81b0fd1804f76fc577c25521a84
+Size: 81614
+SHA256sum: 5d129e60bbb513afcefc629bd68cbe70c6dc2519ffa8fbcf55263b7f141f2b17
 Description:  libfido2 provides library functionality and command-line tools to communicate with a FIDO device over USB, and to verify attestation and assertion signatures.
  
  libfido2 supports the FIDO U2F (CTAP 1) and FIDO 2.0 (CTAP 2) protocols.
@@ -848,6 +942,20 @@ Description:  This is a general purpose cryptographic library based on the code 
  been disabled to reduce size (Blowfish, Twofish, Serpent,
  RC2, SEED, Camellia, CRC, MD4, TIGER-192, Whirlpool, ElGamal, ECC).
 
+Package: libgdbm
+Version: 1.21-1
+Depends: libc
+License: GPL-3.0-or-later
+Section: libs
+Architecture: aarch64_cortex-a53
+Installed-Size: 30378
+Filename: libgdbm_1.21-1_aarch64_cortex-a53.ipk
+Size: 31191
+SHA256sum: c5cef68a193b976d8cebb3808ec5a0aebcdbab398b2e3f019cdae7a0ba81fdad
+Description:  GNU database manager library
+ GNU dbm is a set of database routines that use extendible hashing and
+ works similar to the standard UNIX dbm routines.
+
 Package: libgnutls
 Version: 3.7.8-1
 Depends: libc, libnettle8, libgmp10, libatomic1
@@ -855,10 +963,10 @@ License: LGPL-2.1-or-later
 Section: libs
 CPE-ID: cpe:/a:gnu:gnutls
 Architecture: aarch64_cortex-a53
-Installed-Size: 887314
+Installed-Size: 887304
 Filename: libgnutls_3.7.8-1_aarch64_cortex-a53.ipk
-Size: 886390
-SHA256sum: 10bd5e5fb10352b0b72e70ba499b5e2b93a164b7b88dd573d06330a63c4f0281
+Size: 886329
+SHA256sum: 6d4d2fd28f2b6726b6ed6c4b7a3671f70b57746d555aa1dd788ff1bea07b6bf9
 Description:  GnuTLS is a secure communications library implementing the SSL, TLS
  and DTLS protocols and technologies around them. It provides a simple
  C language application programming interface (API) to access the secure
@@ -889,24 +997,24 @@ Depends: libc, libimobiledevice
 License: GPL-2.0-or-later
 Section: utils
 Architecture: aarch64_cortex-a53
-Installed-Size: 104848
+Installed-Size: 104863
 Filename: libimobiledevice-utils_1.3.0-2_aarch64_cortex-a53.ipk
-Size: 105247
-SHA256sum: c1e9897123886618d438967b30aeb6e20359a265d8f747c97667bb1c371d2212
+Size: 105183
+SHA256sum: 38219e5d51b5fac3ff317bb5271f643bc68f2c66ffb14a35b7ceb08d23483769
 Description:  libimobiledevice is a software library that talks the protocols to support
  iPhone®, iPod Touch®, iPad® and Apple TV® devices.
  This package contains the libimobiledevice utilities.
 
 Package: libimobiledevice
 Version: 1.3.0-2
-Depends: libc, libplist, libusbmuxd, libopenssl1.1
+Depends: libc, libplist, libusbmuxd, libopenssl3
 License: LGPL-2.1-or-later
 Section: libs
 Architecture: aarch64_cortex-a53
-Installed-Size: 58517
+Installed-Size: 58516
 Filename: libimobiledevice_1.3.0-2_aarch64_cortex-a53.ipk
-Size: 59419
-SHA256sum: e5c5655a66d2b4286dbb2586193c02b5e813dac9afa06ffd0ea7cb622e901426
+Size: 59404
+SHA256sum: 9eafe15c575847276b55750d46fbce8fc270d76b78e96bbbc6e98c5d0a7ed0e5
 Description:  libimobiledevice is a software library that talks the protocols to support
  iPhone®, iPod Touch®, iPad® and Apple TV® devices.
 
@@ -949,18 +1057,6 @@ Size: 39911
 SHA256sum: cb2596c2a80d152d8875c42e5a0740f22ae12676492694942ff4761f3012f787
 Description:  LZO is a data compression library which is suitable for data de-/compression
  in real-time. This means it favours speed over compression ratio.
-
-Package: libmaxminddb
-Version: 1.7.1-1
-Depends: libc
-License: Apache-2.0
-Section: libs
-Architecture: aarch64_cortex-a53
-Installed-Size: 14481
-Filename: libmaxminddb_1.7.1-1_aarch64_cortex-a53.ipk
-Size: 15207
-SHA256sum: f6d8743efc9875773521208577d042c52138f1b98becebe926b1cc5397771b0f
-Description:  The libmaxminddb library provides functions for working MaxMind DB files.
 
 Package: libminiupnpc
 Version: 2.2.3-1
@@ -1009,19 +1105,6 @@ Description:  libnetfilter_queue is a userspace library providing a programming
  interface (API) to packets that have been queued by the kernel
  packet filter.
 
-Package: libnetwork
-Version: 2022-06-02-f6ccccb1-1
-Depends: libc
-License: Apache-2.0
-Section: utils
-Architecture: aarch64_cortex-a53
-Installed-Size: 6434078
-Filename: libnetwork_2022-06-02-f6ccccb1-1_aarch64_cortex-a53.ipk
-Size: 6410813
-SHA256sum: 040fd6bd1f2745760562a270d3bdcc02d5bb0bbfc81f89c5ad8ea7105a532934
-Description:  Libnetwork provides a native Go implementation for connecting containers.
- The goal of libnetwork is to deliver a robust Container Network Model that provides a consistent programming interface and the required network abstractions for applications.
-
 Package: libnghttp2-14
 Version: 1.51.0-1
 Depends: libc
@@ -1048,6 +1131,19 @@ Size: 193926
 SHA256sum: cb9489e61755cef15d64bf52238b1dc2e0ad5b7492879cf5a20618f8a9a009e1
 Description:  GNU Parted shared library
 
+Package: libpcre2-16
+Version: 10.42-1
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+CPE-ID: cpe:/a:pcre:pcre
+Architecture: aarch64_cortex-a53
+Installed-Size: 106612
+Filename: libpcre2-16_10.42-1_aarch64_cortex-a53.ipk
+Size: 107333
+SHA256sum: 2df10745b209d8d38f8fbb90abba9d425e43e9c1cf004a3e504d4aeaf50f3bfc
+Description:  A Perl Compatible Regular Expression library (16bit support)
+
 Package: libplist
 Version: 2.2.0-3
 Depends: libc, libxml2
@@ -1059,6 +1155,21 @@ Filename: libplist_2.2.0-3_aarch64_cortex-a53.ipk
 Size: 24135
 SHA256sum: e286b74cdfacde636030561ead4e80bebc274b7a380a28f485ac789a0a3ed50e
 Description:  A library to handle Apple Property List format whereas it's binary or XML
+
+Package: libpython3-3.10
+Version: 3.10.7-3
+Depends: libc, libpthread, zlib
+Provides: libpython3
+License: PSF-2.0
+Section: lang
+ABIVersion: -3.10
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 1153611
+Filename: libpython3-3.10_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 1151374
+SHA256sum: 9dbda9a917c71eebd0c444c6a4979712df8dba8ad65e33aa497ddfba4624f35c
+Description:  This package contains only core Python library.
 
 Package: libruby3.1
 Version: 3.1.3-1
@@ -1105,6 +1216,24 @@ Description:  NaCl (pronounced "salt") is a new easy-to-use high-speed software 
  The same cannot be said of NIST curves, where the specific origins of certain constants are not described by the standards.
  And despite the emphasis on higher security, primitives are faster across-the-board than most implementations of the NIST standards.
 
+Package: libsqlite3-0
+Version: 3400000-1
+Depends: libc, libpthread, zlib
+Provides: libsqlite3
+License: PUBLICDOMAIN
+Section: libs
+ABIVersion: -0
+CPE-ID: cpe:/a:sqlite:sqlite
+Architecture: aarch64_cortex-a53
+Installed-Size: 535619
+Filename: libsqlite3-0_3400000-1_aarch64_cortex-a53.ipk
+Size: 536066
+SHA256sum: 0e301f4248d7f998f3e6a9732028196391e529973f5545ca493fe0e15468b2b0
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains the SQLite (v3.x) shared library, used by other
+ programs.
+
 Package: libtasn1
 Version: 4.19.0-1
 Depends: libc
@@ -1143,6 +1272,21 @@ Size: 20861
 SHA256sum: 5e32edbe0d210ac6ab5d6c4ddc60ceeaa93f1b82ccd43396f6736f16354eee61
 Description:  UDNS is a stub DNS resolver library with ability to perform both syncronous
  and asyncronous DNS queries.
+
+Package: libunbound
+Version: 1.18.0-1
+Depends: libc, ca-bundle, libopenssl3, libmnl0, libevent2-7, libpthread
+License: BSD-3-Clause
+Section: libs
+CPE-ID: cpe:/a:nlnetlabs:unbound
+Architecture: aarch64_cortex-a53
+Installed-Size: 467787
+Filename: libunbound_1.18.0-1_aarch64_cortex-a53.ipk
+Size: 464195
+SHA256sum: 91f04bd5127431db7245cbd278de97050033a15c75d4f84d98a444c760eceb0a
+Description:  This package contains the Unbound library including 'libevent', 'libmnl', and
+ 'libpthread' to better handle large networks with heavy query loads. Options
+ are available to custom trim Unbound for smaller targets.
 
 Package: liburing
 Version: 2.3-1
@@ -1194,16 +1338,16 @@ Description:  libuv is a multi-platform support library with a focus on asynchro
  pyuv, and others.
 
 Package: libwebsockets-full
-Version: 4.3.2-2
-Depends: libc, zlib, libcap, libubox20220927, libopenssl1.1, libuv1
+Version: 4.3.2-3
+Depends: libc, zlib, libcap, libubox20220927, libopenssl3, libuv1
 Provides: libwebsockets, libwebsockets-openssl
 License: MIT
 Section: libs
 Architecture: aarch64_cortex-a53
-Installed-Size: 201935
-Filename: libwebsockets-full_4.3.2-2_aarch64_cortex-a53.ipk
-Size: 202620
-SHA256sum: b06925cfdde9a44d86f136a521b889a1ca62544d6d2c2ac2616f294b5853d5ca
+Installed-Size: 203178
+Filename: libwebsockets-full_4.3.2-3_aarch64_cortex-a53.ipk
+Size: 203290
+SHA256sum: c167118bb95c01cf59932c2a2a9b8e3ea5f0ab8067fb66b71f06c7aa632b270a
 Description:  libwebsockets (Full - OpenSSL, libuv, plugins, CGI)
 
 Package: libxml2
@@ -1233,43 +1377,17 @@ SHA256sum: 30ceaeafa3fb3fc1f95aa0840fed358d501e73bc53c038294ac44fb62a796f9d
 Description:  Fast YAML 1.1 parser and emitter library
 
 Package: libzstd
-Version: 1.5.2-1
+Version: 1.5.5-3
 Depends: libc
 License: GPL-2.0-or-later
 Section: libs
 Architecture: aarch64_cortex-a53
-Installed-Size: 297668
-Filename: libzstd_1.5.2-1_aarch64_cortex-a53.ipk
-Size: 297973
-SHA256sum: 48b216a94cb647c01215d815120439137134dbe1d06fe2139b533632636b8a2f
+Installed-Size: 317951
+Filename: libzstd_1.5.5-3_aarch64_cortex-a53.ipk
+Size: 318249
+SHA256sum: ca4cda742370ed62377bf6054d554974d9ce50fa35520847e9f5476618bfec5b
 Description:  Zstandard - Fast real-time compression algorithm.
  This package provides libzstd library.
-
-Package: lua-cjson
-Version: 2.1.0-2
-Depends: libc, lua
-License: MIT
-Section: lang
-Architecture: aarch64_cortex-a53
-Installed-Size: 12668
-Filename: lua-cjson_2.1.0-2_aarch64_cortex-a53.ipk
-Size: 13421
-SHA256sum: dfb6083d3fe2f9e9a5e9302ff6e39c305b271efef9f68c24abe3ad9f9f655fcc
-Description:  Lua CJSON is a fast JSON encoding/parsing module for Lua.
-
-Package: luasocket
-Version: 3.1.0-1
-Depends: libc, lua
-License: MIT
-Section: lang
-Architecture: aarch64_cortex-a53
-Installed-Size: 62283
-Filename: luasocket_3.1.0-1_aarch64_cortex-a53.ipk
-Size: 63178
-SHA256sum: fcac0a5d48d413b8ad57dfbb3ca912a1a0cdf6976d6974264eaf94fc7be20c59
-Description:  LuaSocket is the most comprehensive networking support
- library for the Lua language. It provides easy access to
- TCP, UDP, DNS, SMTP, FTP, HTTP, MIME and much more.
 
 Package: miniupnpd
 Version: 2.0.20170421-3
@@ -1282,6 +1400,18 @@ Filename: miniupnpd_2.0.20170421-3_aarch64_cortex-a53.ipk
 Size: 59045
 SHA256sum: 935961c3705cca9b1f5f3c27f6e684e87830b5519260d16790e577d5dd90accc
 Description:  Lightweight UPnP IGD, NAT-PMP & PCP daemon
+
+Package: mosdns
+Version: 5.3.1-1
+Depends: libc, ca-bundle
+License: GPL-3.0
+Section: net
+Architecture: aarch64_cortex-a53
+Installed-Size: 5800307
+Filename: mosdns_5.3.1-1_aarch64_cortex-a53.ipk
+Size: 5783072
+SHA256sum: 353d2f00818c7e12704e5b98e6a8239e1a3de3532c08e91ff47883f90528212f
+Description:  A plug-in DNS forwarder/splitter
 
 Package: mwan3
 Version: 2.8.8-2
@@ -1299,27 +1429,27 @@ Description:  Hotplug script which makes configuration of multiple WAN interface
 
 Package: n2n
 Version: 3.0-1
-Depends: libc, libopenssl1.1, libpthread, libzstd, libcap, kmod-tun, resolveip
+Depends: libc, libopenssl3, libpthread, libzstd, libcap, kmod-tun, resolveip
 License: GPL-3.0
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 151814
+Installed-Size: 151837
 Filename: n2n_3.0-1_aarch64_cortex-a53.ipk
-Size: 152560
-SHA256sum: d20334599f57529d65929406c10f808635966a924fb7a699f9410fa97ae47707
+Size: 152600
+SHA256sum: 43661580241191c4e684ae7e2546876e415b4d4a52275162523742c6db9075be
 Description:  This package contains client node and supernode for the N2N infrastructure.
 
 Package: nano
-Version: 7.2-1
+Version: 7.2-2
 Depends: libc, libncurses6
 License: GPL-3.0-or-later
 Section: utils
 CPE-ID: cpe:/a:gnu:nano
 Architecture: aarch64_cortex-a53
-Installed-Size: 72871
-Filename: nano_7.2-1_aarch64_cortex-a53.ipk
-Size: 73755
-SHA256sum: 5e8abfb0532f3fbde4cf1c39167320de3cd1496f93caa5234a6bcdf09c10ce3d
+Installed-Size: 72870
+Filename: nano_7.2-2_aarch64_cortex-a53.ipk
+Size: 73795
+SHA256sum: 73cb9d8231b8438f5b8d0a9fbc555fddf3d1a175f5bcad1f46315b5a0b3d24d6
 Description:  Nano is a small and simple text editor for use on the terminal.
  
  Nano started as an enhanced clone of the Pico text editor.
@@ -1329,21 +1459,34 @@ Description:  Nano is a small and simple text editor for use on the terminal.
  Nano is an official GNU package.
 
 Package: netdata
-Version: 1.33.1-1
-Depends: libc, zlib, libuuid1, libuv1, libmnl0, libjson-c5
+Version: 1.33.1-2
+Depends: libc, zlib, libuuid1, libuv1, libmnl0, libjson-c5, coreutils-timeout
 License: GPL-3.0-or-later
 Section: admin
 CPE-ID: cpe:/a:my-netdata:netdata
 Architecture: aarch64_cortex-a53
-Installed-Size: 8017677
-Filename: netdata_1.33.1-1_aarch64_cortex-a53.ipk
-Size: 7987505
-SHA256sum: faeb0b5c4fb556bdacbc5517d2101efee76a58f5d25c3250f478767bb8225c25
+Installed-Size: 8019839
+Filename: netdata_1.33.1-2_aarch64_cortex-a53.ipk
+Size: 7989388
+SHA256sum: 9be6ec2a82b351cd4d1a5b633c9f15bf3514ac7b5a756e5cca17c6ffb57d418a
 Description:  netdata is a highly optimized Linux daemon providing real-time performance
  monitoring for Linux systems, applications and SNMP devices over the web.
  
  If you want to use Python plugins install python3, python3-yaml and
  python3-urllib3
+
+Package: netperf
+Version: 2.7.0-3
+Depends: libc
+License: Custom
+Section: net
+CPE-ID: cpe:/a:netperf:netperf
+Architecture: aarch64_cortex-a53
+Installed-Size: 143728
+Filename: netperf_2.7.0-3_aarch64_cortex-a53.ipk
+Size: 144070
+SHA256sum: 4505cc65e4ae97fd3c14c68ab7b95ca25b0f20418bd98e10fadb7a737c91244b
+Description:  Network performance measurement tool
 
 Package: nginx-mod-luci-ssl
 Version: 1.21.3-1
@@ -1373,30 +1516,30 @@ Description:  Support file for LuCI in nginx. Include custom nginx configuration
 
 Package: nginx-ssl-util
 Version: 1.6-15
-Depends: nginx-util (>=1.4-2), libc, libstdcpp6, libuci20130104, libubus20220601, libubox20220927, libpthread, libopenssl1.1, nginx-util, libpcre
+Depends: nginx-util (>=1.4-2), libc, libstdcpp6, libuci20130104, libubus20220601, libubox20220927, libpthread, libopenssl3, nginx-util, libpcre
 Conflicts: nginx-ssl-util-nopcre
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 58944
+Installed-Size: 58939
 Filename: nginx-ssl-util_1.6-15_aarch64_cortex-a53.ipk
-Size: 60052
-SHA256sum: 7cc66d8f51fc3f84ec8bc4aa5b80d0f667b93ee11d3bb8510f2f3cb9665b7375
+Size: 60074
+SHA256sum: ff7b2dd490f34b4804690cb3b64941e65a689244e81bb7b4bb993bee17fc02d6
 Description:  Utility that builds dynamically LAN listen directives for Nginx.
  Furthermore, it manages SSL directives for its server parts and can create
  corresponding (self-signed) certificates. It uses the PCRE library for performance.
 
 Package: nginx-ssl
 Version: 1.21.3-1
-Depends: nginx-ssl-util (>=1.5-1) (<2), libc, libopenssl1.1, libpthread, libpcre, nginx-ssl-util, zlib, libubus20220601, libblobmsg-json20220927, libjson-c5
+Depends: nginx-ssl-util (>=1.5-1) (<2), libc, libopenssl3, libpthread, libpcre, nginx-ssl-util, zlib, libubus20220601, libblobmsg-json20220927, libjson-c5
 Conflicts: nginx-all-module
 License: 2-clause BSD-like license
 Section: net
 CPE-ID: cpe:/a:nginx:nginx
 Architecture: aarch64_cortex-a53
-Installed-Size: 450656
+Installed-Size: 450647
 Filename: nginx-ssl_1.21.3-1_aarch64_cortex-a53.ipk
-Size: 432238
-SHA256sum: cfdddd7be43cb5829b7516c603537eb4856930d255ab181f0aadf0f2ac5ea228
+Size: 432090
+SHA256sum: b80ffd7305295cebcb2cd7c2460fd4dfedd36ec30ebd34bebf5c5091f2e8910b
 Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. This variant is compiled with SSL support enabled. To enable additional module select them in the nginx default configuration menu.
 
 Package: nginx-util
@@ -1469,70 +1612,83 @@ SHA256sum: e4ff2fbd731c87b949661ccb01b326781207a469e37af81bce824ebef9aee3ff
 Description:  NPS is a lightweight, high-performance, powerful intranet penetration proxy server,
  with a powerful web management terminal.
 
+Package: nps
+Version: 0.26.10-1
+Depends: libc, ca-bundle
+License: Apache-2.0
+Section: net
+Architecture: aarch64_cortex-a53
+Installed-Size: 4278202
+Filename: nps_0.26.10-1_aarch64_cortex-a53.ipk
+Size: 4267967
+SHA256sum: 1700626faa255b0b2eb0191f568e99642e6ca22a409c05eaaab79dee1f616706
+Description:  NPS is a lightweight, high-performance, powerful intranet penetration proxy server,
+ with a powerful web management terminal.
+
 Package: openssh-client
 Version: 9.3p1-1
-Depends: libc, libopenssl1.1, zlib
+Depends: libc, libopenssl3, zlib
 Alternatives: 200:/usr/bin/ssh:/usr/libexec/ssh-openssh, 200:/usr/bin/scp:/usr/libexec/scp-openssh
 License: BSD ISC
 Section: net
 CPE-ID: cpe:/a:openssh:openssh
 Architecture: aarch64_cortex-a53
-Installed-Size: 458353
+Installed-Size: 458223
 Filename: openssh-client_9.3p1-1_aarch64_cortex-a53.ipk
-Size: 459011
-SHA256sum: e905b383d15379643cfbefc90017de38c727a79be1b748c33fdaed32e71107ee
+Size: 458617
+SHA256sum: b44656395b3a3856d429085c247d9441d6f14557b2c8cd4046551d8f9d895567
 Description:  OpenSSH client.
 
 Package: openssh-keygen
 Version: 9.3p1-1
-Depends: libc, libopenssl1.1, zlib
+Depends: libc, libopenssl3, zlib
 License: BSD ISC
 Section: net
 CPE-ID: cpe:/a:openssh:openssh
 Architecture: aarch64_cortex-a53
-Installed-Size: 216309
+Installed-Size: 216435
 Filename: openssh-keygen_9.3p1-1_aarch64_cortex-a53.ipk
-Size: 216764
-SHA256sum: 37605fbe12495dee985e4bc95e4d8dfb5c905e10af35cb2bf4d03e6e7de285a4
+Size: 216792
+SHA256sum: 6fc60f50df973b5e0f7e9185160c0bb0de2b7e2a7774bd5b8268625ea6fac657
 Description:  OpenSSH keygen.
 
 Package: openssh-server
 Version: 9.3p1-1
-Depends: libc, libopenssl1.1, zlib, openssh-keygen, libfido2-1
+Depends: libc, libopenssl3, zlib, openssh-keygen, libfido2-1
 License: BSD ISC
 Section: net
 CPE-ID: cpe:/a:openssh:openssh
 Architecture: aarch64_cortex-a53
-Installed-Size: 391211
+Installed-Size: 391551
 Filename: openssh-server_9.3p1-1_aarch64_cortex-a53.ipk
-Size: 391729
-SHA256sum: 466c31d16c3c2229ffbd7d93fe24bf16ac937cfb2134b15a93a653db86f72a56
+Size: 391658
+SHA256sum: e77436d316e8d6956a710d24110af86b608a0f72e2fee8351b2e088151270604
 Description:  OpenSSH server.
 
 Package: openssh-sftp-client
 Version: 9.3p1-1
-Depends: libc, libopenssl1.1, zlib
+Depends: libc, libopenssl3, zlib
 License: BSD ISC
 Section: net
 CPE-ID: cpe:/a:openssh:openssh
 Architecture: aarch64_cortex-a53
-Installed-Size: 89674
+Installed-Size: 90004
 Filename: openssh-sftp-client_9.3p1-1_aarch64_cortex-a53.ipk
-Size: 90539
-SHA256sum: 6e022d29b74028990e55b35d21000c111ad8a1450f23a5017803b2a3f08a4233
+Size: 90627
+SHA256sum: 0b9db9834d9811e84f83e23988c9a67bfeedfb52a33aa966d02a362cf8bf3225
 Description:  OpenSSH SFTP client.
 
 Package: openssh-sftp-server
 Version: 9.3p1-1
-Depends: libc, libopenssl1.1, zlib
+Depends: libc, libopenssl3, zlib
 License: BSD ISC
 Section: net
 CPE-ID: cpe:/a:openssh:openssh
 Architecture: aarch64_cortex-a53
-Installed-Size: 62598
+Installed-Size: 62931
 Filename: openssh-sftp-server_9.3p1-1_aarch64_cortex-a53.ipk
-Size: 63422
-SHA256sum: a2d6d1f7200bc6fe11b863895e9490b0c7d54c3c8f19d9106f20f16e9e772702
+Size: 63519
+SHA256sum: 658d9b2e7e0b9ac242949e8dc27871cf5335a4e40dd8120674f434cee88641fc
 Description:  OpenSSH SFTP server.
 
 Package: openvpn-easy-rsa
@@ -1541,24 +1697,24 @@ Depends: libc, openssl-util
 License: GPL-2.0
 Section: net
 Architecture: all
-Installed-Size: 27880
+Installed-Size: 27881
 Filename: openvpn-easy-rsa_3.0.8-4_all.ipk
-Size: 28733
-SHA256sum: ed9ebb3108e09ab4822144aa9ab03d7defc1fb88b52123ea1d7912f48ff2cfa9
+Size: 28718
+SHA256sum: a644a92217e86535ddaf04ed6299829aeadf00ffb50cab28f085b61a9fb7150d
 Description:  CLI utility to build and manage a PKI CA.
 
 Package: openvpn-openssl
 Version: 2.5.8-1
-Depends: libc, kmod-tun, liblzo2, libopenssl1.1
+Depends: libc, kmod-tun, liblzo2, libopenssl3
 Provides: openvpn, openvpn-crypto
 License: GPL-2.0
 Section: net
 CPE-ID: cpe:/a:openvpn:openvpn
 Architecture: aarch64_cortex-a53
-Installed-Size: 230740
+Installed-Size: 231088
 Filename: openvpn-openssl_2.5.8-1_aarch64_cortex-a53.ipk
-Size: 231397
-SHA256sum: f26beb9552f98564ced8db748769c7bd0ad732b651a7842361652887f7aded05
+Size: 231734
+SHA256sum: ccc59f4ac9fc94ae0ebe4be7534a3beaa9303788642800fc23abba91fb476423
 Description:  Open source VPN solution using OpenSSL
 
 Package: p910nd
@@ -1622,20 +1778,401 @@ Size: 33267
 SHA256sum: babefceda7b4946d42420a114fd3b11f17319f5c6a9e2364f2b64e72ba7dac57
 Description:  PopTop pptp server
 
-Package: qBittorrent-static
-Version: 4.5.2_v2.0.8-1
-Depends: libc
-Section: net
+Package: python3-asyncio
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
 Architecture: aarch64_cortex-a53
-Installed-Size: 28335804
-Filename: qBittorrent-static_4.5.2_v2.0.8-1_aarch64_cortex-a53.ipk
-Size: 28155789
-SHA256sum: f0bf3ec807e6e79a358fc426716544b62755428d52051d77e52a33352043e652
+Installed-Size: 146908
+Filename: python3-asyncio_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 147867
+SHA256sum: d200d3481bd7afdbf37d1edfd8feff3bbf233b33c6e33caed7b2746a75403d8e
+Description:  Python 3.10 asyncio module
+
+Package: python3-base
+Version: 3.10.7-3
+Depends: libc, libpthread, zlib, libpython3-3.10
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 157479
+Filename: python3-base_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 157043
+SHA256sum: f3caf7b7e0c5a45046f394348059720ad405cf1e64330e633e4764bcca003add
+Description:  This package contains only the interpreter and the bare minimum
+ for the interpreter to start.
+
+Package: python3-cgi
+Version: 3.10.7-3
+Depends: libc, python3-light, python3-email
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 12279
+Filename: python3-cgi_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 13140
+SHA256sum: 3e2ed3d45bbc3c9e0ac7a7037fe51dcc3832aeeeb41e4309e8896711fdbc25bd
+Description:  Python 3.10 cgi module
+
+Package: python3-cgitb
+Version: 3.10.7-3
+Depends: libc, python3-light, python3-cgi, python3-pydoc
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 5512
+Filename: python3-cgitb_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 6347
+SHA256sum: e47c73173ded7e5d3e0034f8b8d8add578b180c80b256f6db7771791664d4f65
+Description:  Python 3.10 cgitb module
+
+Package: python3-codecs
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 774752
+Filename: python3-codecs_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 748193
+SHA256sum: 795cc4061277ced7eb9ad31eab989ecfd31db6a82913c20c7f7a20fc0be94a09
+Description:  Python 3.10 codecs + unicode support
+
+Package: python3-ctypes
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 70291
+Filename: python3-ctypes_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 70994
+SHA256sum: 3aed51545b63cccb8941c1dbc87d35a5925320f63a6ae5ec7f004ef3c3e53f9d
+Description:  Python 3.10 ctypes module
+
+Package: python3-dbm
+Version: 3.10.7-3
+Depends: libc, python3-light, libgdbm
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 19736
+Filename: python3-dbm_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 20314
+SHA256sum: 0e014108f29625eb5804eb507201b4138be0f36bd9703351a7a9fb5478ef8c58
+Description:  Python 3.10 dbm module
+
+Package: python3-decimal
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 89650
+Filename: python3-decimal_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 90459
+SHA256sum: 8a7fb2a792a85117c4a06d76b45aedcf3d4a6b2f57187be9c9dd12eab91da655
+Description:  Python 3.10 decimal module
+
+Package: python3-distutils
+Version: 3.10.7-3
+Depends: libc, python3-light, python3-email
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 171850
+Filename: python3-distutils_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 172840
+SHA256sum: a2e90b71baa66d95418f9272998aded15b15249ed61e1d42350c9273947045bf
+Description:  Python 3.10 distutils module
+
+Package: python3-email
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 114891
+Filename: python3-email_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 115836
+SHA256sum: c4ac00751442f852236d792f30313491b08aedbf7f706b2b4fe810fc46781a28
+Description:  Python 3.10 email module
+
+Package: python3-light
+Version: 3.10.7-3
+Depends: libc, python3-base, libffi, libbz2-1.0
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 2193696
+Filename: python3-light_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 2185405
+SHA256sum: ff6a9ad47e6962017b37d129ed1baf30c269d30375c043a00664c11d5326506f
+Description:  This package is essentially the python3-base package plus
+ a few of the rarely used (and big) libraries stripped out
+ into separate packages.
+
+Package: python3-logging
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 53981
+Filename: python3-logging_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 54934
+SHA256sum: 146939912060fb40d55efc74bc4c16be650168e98d32d389b0cd88ff7acff0f8
+Description:  Python 3.10 logging module
+
+Package: python3-lzma
+Version: 3.10.7-3
+Depends: libc, python3-light, liblzma
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 18590
+Filename: python3-lzma_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 19274
+SHA256sum: ee64220a5125cd686a8faf03b04a4380d4479c2bf716f6e7b3142eb539923102
+Description:  Python 3.10 lzma module
+
+Package: python3-multiprocessing
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 103241
+Filename: python3-multiprocessing_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 104023
+SHA256sum: 40008be898599feb3ac689a233932a8d50d2c270b178b751d17d626bda1f2cbc
+Description:  Python 3.10 multiprocessing
+
+Package: python3-ncurses
+Version: 3.10.7-3
+Depends: libc, python3-light, libncursesw6
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 52536
+Filename: python3-ncurses_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 53044
+SHA256sum: 052dd528aa673a76e5482eaa3c51958ce11c4a87818480417a1574be23234a64
+Description:  Python 3.10 ncurses module
+
+Package: python3-openssl
+Version: 3.10.7-3
+Depends: libc, python3-light, libopenssl3, ca-certs
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 84675
+Filename: python3-openssl_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 84556
+SHA256sum: e46e0fb894c8d4bf040742e87b8bd729b99d3a4448e3947425dea7acb79460de
+Description:  Python 3.10 SSL module
+
+Package: python3-pydoc
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 202634
+Filename: python3-pydoc_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 203571
+SHA256sum: 1d1259a6b0037903e7dd2911cfb871eb880c57edd5d311eea9a8902b004d2309
+Description:  Python 3.10 pydoc module
+
+Package: python3-readline
+Version: 3.10.7-3
+Depends: libc, python3-light, libreadline8, libncursesw6
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 11062
+Filename: python3-readline_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 11785
+SHA256sum: 23ef873863fa3717f489bf924af14d1fafbf1142721c03ab4ad2e650caaaab43
+Description:  Python 3.10 readline module
+
+Package: python3-sqlite3
+Version: 3.10.7-3
+Depends: libc, python3-light, libsqlite3-0
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 35267
+Filename: python3-sqlite3_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 35886
+SHA256sum: f2dbef879d37e74cbe3ae3139f61a77abba1f8b7076ab8e2ab47d6d2d1832c6b
+Description:  Python 3.10 sqlite3 module
+
+Package: python3-unittest
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 79256
+Filename: python3-unittest_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 80218
+SHA256sum: 541db89061c47daa8b17c4d4f13dc496caaa5dffdaec367dfad0dd3b0923b541
+Description:  Python 3.10 unittest module
+
+Package: python3-urllib
+Version: 3.10.7-3
+Depends: libc, python3-light, python3-email
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 51485
+Filename: python3-urllib_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 52433
+SHA256sum: e2a5ebd9093ee4b30e25cfdd4558f7c4d7833603268efb4d67933ce7e93bc42e
+Description:  Python 3.10 URL library module
+
+Package: python3-uuid
+Version: 3.10.7-3
+Depends: libc, python3-light, libuuid1
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 11394
+Filename: python3-uuid_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 12080
+SHA256sum: 86b3bfd29f43c311714fa063b7bbc442fbd8aa94caf48107fd62f6cdd200b897
+Description:  Python 3.10 UUID module
+
+Package: python3-xml
+Version: 3.10.7-3
+Depends: libc, python3-light, python3-urllib
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 220207
+Filename: python3-xml_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 220468
+SHA256sum: 0d0eef3c683bcad44efd9500a9dc300893da03d8c87ed1493e350153b41c220f
+Description:  Python 3.10 xml libs
+
+Package: python3
+Version: 3.10.7-3
+Depends: libc, python3-light, python3-asyncio, python3-cgi, python3-cgitb, python3-codecs, python3-ctypes, python3-dbm, python3-decimal, python3-distutils, python3-email, python3-logging, python3-lzma, python3-multiprocessing, python3-ncurses, python3-openssl, python3-pydoc, python3-readline, python3-sqlite3, python3-unittest, python3-urllib, python3-uuid, python3-xml
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: aarch64_cortex-a53
+Installed-Size: 95
+Filename: python3_3.10.7-3_aarch64_cortex-a53.ipk
+Size: 1086
+SHA256sum: c086ea0fe00b275a42644e1fa9223036d50cc7bd0cded5b17c8fb3b198f4bbdc
+Description:  This package contains the (almost) full Python install.
+ It's python3-light + all other packages.
+
+Package: qbittorrent
+Version: 4.4.5-1
+Depends: libc, libgcc1, libstdcpp6, rblibtorrent, libopenssl3, qt5-core, qt5-network, qt5-sql, qt5-xml, zlib
+Provides: qBittorrent
+License: GPL-2.0+
+Section: net
+CPE-ID: cpe:/a:qbittorrent:qbittorrent
+Architecture: aarch64_cortex-a53
+Installed-Size: 5962493
+Filename: qbittorrent_4.4.5-1_aarch64_cortex-a53.ipk
+Size: 5962365
+SHA256sum: a8e961016e4c1bbda2b98f86c7bd87e5206ae97018cd20a35acde237decf3673
 Description:  qBittorrent is a bittorrent client programmed in C++ / Qt that uses
  libtorrent (sometimes called libtorrent-rasterbar) by Arvid Norberg.
  It aims to be a good alternative to all other bittorrent clients out
  there. qBittorrent is fast, stable and provides unicode support as
  well as many features.
+
+Package: qt5-core
+Version: 5.15.8-1
+Depends: libc, libgcc1, libstdcpp6, libpcre2-16, zlib
+Section: libs
+CPE-ID: cpe:/a:qt:qt
+Architecture: aarch64_cortex-a53
+Installed-Size: 2776921
+Filename: qt5-core_5.15.8-1_aarch64_cortex-a53.ipk
+Size: 2770265
+SHA256sum: 56a0d9d042cdf22ecf537911457712ac2eea7419e329b363a0ce72d7fa9284c1
+Description:  This package contains the qt5 core library.
+
+Package: qt5-network
+Version: 5.15.8-1
+Depends: libc, libgcc1, libstdcpp6, qt5-core, libopenssl3, zlib
+Section: libs
+CPE-ID: cpe:/a:qt:qt
+Architecture: aarch64_cortex-a53
+Installed-Size: 586599
+Filename: qt5-network_5.15.8-1_aarch64_cortex-a53.ipk
+Size: 586154
+SHA256sum: fee1b5e8b934e3670af47a79f563fd70f26a8bbfe4b77860967797a839714137
+Description:  This package contains the qt5 network library.
+
+Package: qt5-sql
+Version: 5.15.8-1
+Depends: libc, libgcc1, libstdcpp6, qt5-core
+Section: libs
+CPE-ID: cpe:/a:qt:qt
+Architecture: aarch64_cortex-a53
+Installed-Size: 99511
+Filename: qt5-sql_5.15.8-1_aarch64_cortex-a53.ipk
+Size: 99729
+SHA256sum: 8390ff1ce43e73ad26326d97ceffa7ce84dd2b84461d064b86ad4092f42e5be2
+Description:  This package contains the qt5 sql library.
+
+Package: qt5-xml
+Version: 5.15.8-1
+Depends: libc, libgcc1, libstdcpp6, qt5-core
+Section: libs
+CPE-ID: cpe:/a:qt:qt
+Architecture: aarch64_cortex-a53
+Installed-Size: 102397
+Filename: qt5-xml_5.15.8-1_aarch64_cortex-a53.ipk
+Size: 103008
+SHA256sum: 72cfa91b9600e9228b0532e75de3434781d28860e2aca75cec53d4275aff467a
+Description:  This package contains the qt5 xml library.
+
+Package: rblibtorrent
+Version: 1.2.18-1
+Depends: libc, libgcc1, libstdcpp6, libopenssl3, boost, boost-system, boost-chrono, boost-random, libatomic1
+License: BSD
+Section: libs
+Architecture: aarch64_cortex-a53
+Installed-Size: 1072794
+Filename: rblibtorrent_1.2.18-1_aarch64_cortex-a53.ipk
+Size: 1070610
+SHA256sum: f5d814c5efc5f3b44bad52ef85ffd3440b68e12b7c2eba07d2761a91df0e16c6
+Description:  Rasterbar libtorrent is a C++ library that aims to be a good alternative to
+ all the other bittorrent implementations around. It is a library and not a
+ full featured client, although it comes with a working example client.
 
 Package: rp-pppoe-common
 Version: 3.15-1
@@ -1676,10 +2213,10 @@ License: BSD-2-Clause
 Section: lang
 CPE-ID: cpe:/a:ruby-lang:ruby
 Architecture: aarch64_cortex-a53
-Installed-Size: 43284
+Installed-Size: 43285
 Filename: ruby-bigdecimal_3.1.3-1_aarch64_cortex-a53.ipk
-Size: 44201
-SHA256sum: 83cb3b84e7fc52269ad8bd1ab4ab318a76795d157d621b761cde539174aea5a8
+Size: 44198
+SHA256sum: 0e12dda0035a57279747aaf78ca0fc8b8c6754555cb5ef11e273c268c9834839
 Description:  This package contains the ruby Arbitrary-precision decimal floating-point library.
  
  Provides:
@@ -1697,10 +2234,10 @@ License: BSD-2-Clause
 Section: lang
 CPE-ID: cpe:/a:ruby-lang:ruby
 Architecture: aarch64_cortex-a53
-Installed-Size: 62486
+Installed-Size: 62487
 Filename: ruby-date_3.1.3-1_aarch64_cortex-a53.ipk
-Size: 63362
-SHA256sum: f2a3416884ac1bad3e288f2b6811ca79c59cb97a745b368f18af5c5fc45f878d
+Size: 63360
+SHA256sum: f168d58873f1b5799157957757a2bc2c963115147a76be81add49884895cd82f
 Description:  This package contains the ruby Comparable module for handling dates.
  
  Provides:
@@ -1717,10 +2254,10 @@ License: BSD-2-Clause
 Section: lang
 CPE-ID: cpe:/a:ruby-lang:ruby
 Architecture: aarch64_cortex-a53
-Installed-Size: 25770
+Installed-Size: 25771
 Filename: ruby-digest_3.1.3-1_aarch64_cortex-a53.ipk
-Size: 26589
-SHA256sum: 8c0a3e93af822813523e7f6344356bd9cd25613bbc8926a7b48ab3b71677575e
+Size: 26590
+SHA256sum: ea9dbcfac3fe85c1cf209769330784e072279eac992b0d4941e74d5a5745eddc
 Description:  Provides digest* files. Can be configured to use OpenSSL or
  bundled hash functions.
  
@@ -1761,10 +2298,10 @@ License: BSD-2-Clause
 Section: lang
 CPE-ID: cpe:/a:ruby-lang:ruby
 Architecture: aarch64_cortex-a53
-Installed-Size: 3792
+Installed-Size: 3791
 Filename: ruby-forwardable_3.1.3-1_aarch64_cortex-a53.ipk
-Size: 4668
-SHA256sum: be4bd9977438e06b22f429ddb6e07b4d55d211abf81d5cf9161996297a1750a0
+Size: 4669
+SHA256sum: 947642d11e023ccfafc2c237c94121b977cc6c77ffec1ccedd71390037f0f618
 Description:  This package contains the ruby delegation of methods to a object.
  
  Provides:
@@ -1781,10 +2318,10 @@ License: BSD-2-Clause
 Section: lang
 CPE-ID: cpe:/a:ruby-lang:ruby
 Architecture: aarch64_cortex-a53
-Installed-Size: 5464
+Installed-Size: 5465
 Filename: ruby-pstore_3.1.3-1_aarch64_cortex-a53.ipk
-Size: 6312
-SHA256sum: f9d2a92c1f56e1ca5e176335a0eab80d4663e8601a54672e53973269dc361320
+Size: 6331
+SHA256sum: 6625420254223b05c1d8ff3554b623c61a0e4664d7823fac0264ed59a56dfcd5
 Description:  This package contains the ruby file based persistence.
  
  Provides:
@@ -1804,8 +2341,8 @@ CPE-ID: cpe:/a:ruby-lang:ruby
 Architecture: aarch64_cortex-a53
 Installed-Size: 33894
 Filename: ruby-psych_3.1.3-1_aarch64_cortex-a53.ipk
-Size: 34898
-SHA256sum: 14036211b86c047bb87def590a6be87f066b8252c4a18382dfc2691c6b177965
+Size: 34901
+SHA256sum: 43f65d5085539e212e7416732dc83e49056e04d003dad0aef6d1229517b00eca
 Description:  This package contains the ruby YAML parser and emitter.
  
  Provides:
@@ -1823,10 +2360,10 @@ License: BSD-2-Clause
 Section: lang
 CPE-ID: cpe:/a:ruby-lang:ruby
 Architecture: aarch64_cortex-a53
-Installed-Size: 12463
+Installed-Size: 12462
 Filename: ruby-stringio_3.1.3-1_aarch64_cortex-a53.ipk
-Size: 13295
-SHA256sum: 2f26ca9bdea681986a93162c6456f5e015fb902dd4011215b66458d609fe8eac
+Size: 13292
+SHA256sum: 3908903e1ddc7e0f93955c6c52bccd0d33c4eb3cd3bff966fefc197ceb9c0a37
 Description:  This package contains the ruby Pseudo `IO` class from/to `String`.
  
  Provides:
@@ -1844,8 +2381,8 @@ CPE-ID: cpe:/a:ruby-lang:ruby
 Architecture: aarch64_cortex-a53
 Installed-Size: 8913
 Filename: ruby-strscan_3.1.3-1_aarch64_cortex-a53.ipk
-Size: 9782
-SHA256sum: 6f033459a7a52b601305f43995a57d4ddf2907ca63ad80ad9454778636d90b1b
+Size: 9777
+SHA256sum: 4c46fd9543eadb14ff54db34edadafd8e3b5740da30df8d0f16c165d5888994f
 Description:  This package contains the ruby Lexical scanning operations on a String.
  
  Provides:
@@ -1861,10 +2398,10 @@ License: BSD-2-Clause
 Section: lang
 CPE-ID: cpe:/a:ruby-lang:ruby
 Architecture: aarch64_cortex-a53
-Installed-Size: 4354
+Installed-Size: 4351
 Filename: ruby-yaml_3.1.3-1_aarch64_cortex-a53.ipk
-Size: 5202
-SHA256sum: e6e40986f6f30554d2a23154c60b6def1eae0d0a43b48d934287a00fdffac313
+Size: 5195
+SHA256sum: 455b1019f3a55e24b228484a8637a7f27d1e3ffc351c0d6959430a23cf3c7572
 Description:  This package contains the ruby YAML toolkit.
  
  Provides:
@@ -1893,28 +2430,28 @@ Description:  Ruby is the interpreted scripting language for quick and easy
  
 
 Package: runc
-Version: 1.1.2-1
+Version: 1.1.9-1
 Depends: libc, libseccomp
 License: Apache-2.0
 Section: utils
 Architecture: aarch64_cortex-a53
-Installed-Size: 3317131
-Filename: runc_1.1.2-1_aarch64_cortex-a53.ipk
-Size: 3292244
-SHA256sum: 4fda1a79958a13a7ac05af79d8a7e465ca49e985040def32b12e5876e383a7de
+Installed-Size: 3376910
+Filename: runc_1.1.9-1_aarch64_cortex-a53.ipk
+Size: 3353312
+SHA256sum: bda107d4973cb0527616d13184da92841f42c9355fa6d7f4610c468ab794b2c2
 Description:  runc is a CLI tool for spawning and running containers according to the OCI specification.
 
 Package: samba4-libs
 Version: 4.14.14-1
-Depends: libc, libtirpc, libreadline8, libpopt0, libcap, zlib, libgnutls, libtasn1, libuuid1, libopenssl1.1, libpthread, liburing, attr, libavahi-client
+Depends: libc, libtirpc, libreadline8, libpopt0, libcap, zlib, libgnutls, libtasn1, libuuid1, libopenssl3, libpthread, liburing, attr, libavahi-client
 License: GPL-3.0-only
 Section: net
 CPE-ID: cpe:/a:samba:samba
 Architecture: aarch64_cortex-a53
-Installed-Size: 7997788
+Installed-Size: 8130256
 Filename: samba4-libs_4.14.14-1_aarch64_cortex-a53.ipk
-Size: 7944778
-SHA256sum: a39f9235a5ddf5dc92ddb891b92582f1a7168ee5fc954287dfe7c87c6e722918
+Size: 8042521
+SHA256sum: f47af1fff2bfa1c9335062d44d1ac2533f8b74c35dd53e09388d028d21ccfec2
 Description:  Samba 4.14.14 libs
 
 Package: samba4-server
@@ -1925,10 +2462,10 @@ License: GPL-3.0-only
 Section: net
 CPE-ID: cpe:/a:samba:samba
 Architecture: aarch64_cortex-a53
-Installed-Size: 245597
+Installed-Size: 248287
 Filename: samba4-server_4.14.14-1_aarch64_cortex-a53.ipk
-Size: 246407
-SHA256sum: 4381b9c300097d15e5874e6dc7e5554fdf2b9d4b1ed5220c7a7ee4b6b016e425
+Size: 248130
+SHA256sum: 530eeb586beed1dacd0ac448ea7bd7a71ab095c8a2301dec28682f3e6827c318
 Description:  installs: smbd (nmbd) smbpasswd pdbedit testparm (nmblookup) (smbcacls sharesec)
  (samba samba-tool ntlm_auth samba-gpupdate samba_dnsupdate samba_kcc samba_spnupdate samba_upgradedns samba_downgrade_db)
  
@@ -1973,28 +2510,28 @@ Description:  shadowsocks-libev ss-server
 
 Package: smartdns
 Version: 1.2023.42-1
-Depends: libc, libpthread, libopenssl1.1
+Depends: libc, libpthread, libopenssl3
 License: GPL-3.0-or-later
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 137642
+Installed-Size: 137499
 Filename: smartdns_1.2023.42-1_aarch64_cortex-a53.ipk
-Size: 138455
-SHA256sum: 7615569db54d9089d658f06aa9b2666c8679bc8e31b62337ce06a0149c19fe94
+Size: 138307
+SHA256sum: 1b51d846ba1e00f3600670f080e801e108508470def7070e52e66036a0659594
 Description:  SmartDNS is a local DNS server which accepts DNS query requests from local network clients,
  gets DNS query results from multiple upstream DNS servers concurrently, and returns the fastest IP to clients.
  Unlike dnsmasq's all-servers, smartdns returns the fastest IP, and encrypt DNS queries with DoT or DoH. 
 
 Package: smartmontools
-Version: 7.3-1
+Version: 7.4-1
 Depends: libc, libstdcpp6
 License: GPL-2.0-or-later
 Section: utils
 Architecture: aarch64_cortex-a53
-Installed-Size: 230037
-Filename: smartmontools_7.3-1_aarch64_cortex-a53.ipk
-Size: 230899
-SHA256sum: a12e55e59be36f3fcf5b5703622da5936982499724f156f29c7ee46dcde934e1
+Installed-Size: 258763
+Filename: smartmontools_7.4-1_aarch64_cortex-a53.ipk
+Size: 259412
+SHA256sum: 2816f5a30e3e5063ca27d60956fbfa89a2a43fcd52561b9495fc20c2f3ce21af
 Description:  smartmontools contains utility programs (smartctl) to
  control/monitor storage systems using the Self-Monitoring, Analysis
  and Reporting Technology System (S.M.A.R.T.) built into most modern
@@ -2007,10 +2544,10 @@ License: GPL-2.0-or-later OpenSSL
 Section: net
 CPE-ID: cpe:/a:dest-unreach:socat
 Architecture: aarch64_cortex-a53
-Installed-Size: 108747
+Installed-Size: 108744
 Filename: socat_1.7.4.4-1_aarch64_cortex-a53.ipk
-Size: 109727
-SHA256sum: 56bd6c77f5710097d1b928d04ad4e861f8a5fea43c34029693bb95550ef314ae
+Size: 109718
+SHA256sum: b161b235352f3e22cd69a8b77e5c260b0860f1ec97041a6150eca85e04d7246a
 Description:  SoCat (for SOcket CAT) establishes two bidirectional byte streams and
  transfers data between them.
  Data channels may be files, pipes, devices (terminal or modem, etc.), or
@@ -2018,305 +2555,318 @@ Description:  SoCat (for SOcket CAT) establishes two bidirectional byte streams 
  logging and tracing, different modes for interprocess communication and
  many more options.
 
+Package: speedtest-go
+Version: 1.2.1-1
+Depends: libc, ca-bundle
+License: MIT
+Section: net
+Architecture: aarch64_cortex-a53
+Installed-Size: 2669074
+Filename: speedtest-go_1.2.1-1_aarch64_cortex-a53.ipk
+Size: 2662318
+SHA256sum: 1877b2b26f6d7a57ab8d78ba3c42f7dff7d6a83513f407f6141b1467653fb8c8
+Description:  Command Line Interface and pure Go API to
+ Test Internet Speed using speedtest.net
+
 Package: sqm-scripts
 Version: 1.6.0-1
 Depends: libc, tc, kmod-sched-core, kmod-ifb, iptables, iptables-mod-ipopt, iptables-mod-conntrack-extra, kmod-sched-cake
 License: GPL-2.0-only
 Section: net
 Architecture: all
-Installed-Size: 18613
+Installed-Size: 18611
 Filename: sqm-scripts_1.6.0-1_all.ipk
-Size: 19457
-SHA256sum: 61b8001303fd5b19454da95662cb6386a5106193a3483e3841ace5a6cbab343a
+Size: 19458
+SHA256sum: f6ae8c6932c681295302183fa131862ca77c13956390de47e32119d7e2814d4b
 Description:  A set of scripts that does simple SQM configuration.
 
 Package: strongswan-charon
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 246540
-Filename: strongswan-charon_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 247098
-SHA256sum: 3dff2d685fad243d7f9b83c3c2ec5431745a3ca210aae3abd9753ff04a440a3c
+Installed-Size: 253107
+Filename: strongswan-charon_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 253320
+SHA256sum: 9e03537f3f5e48f94c9ef3e3001a03f0aac6eb3535ce82e076d779bee2f646f7
 Description:  StrongSwan is an OpenSource IPsec implementation for the Linux operating system.
  This package contains charon, an IKEv2 keying daemon.
 
 Package: strongswan-ipsec
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 5939
-Filename: strongswan-ipsec_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 6948
-SHA256sum: 03834d4a15e710323f658411feec3782aa72f2bad3eece275e727d513e50cf24
+Installed-Size: 5887
+Filename: strongswan-ipsec_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 6889
+SHA256sum: d0300a9a7163a477da3385bd6410aa828dc51ddce80f72d1ab6fdbbd8f69eb5c
 Description:  StrongSwan is an OpenSource IPsec implementation for the Linux operating system.
  This package contains the ipsec utility.
 
 Package: strongswan-minimal
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan, strongswan-charon, strongswan-mod-aes, strongswan-mod-gmp, strongswan-mod-hmac, strongswan-mod-kernel-netlink, strongswan-mod-nonce, strongswan-mod-pubkey, strongswan-mod-random, strongswan-mod-sha1, strongswan-mod-socket-default, strongswan-mod-stroke, strongswan-mod-updown, strongswan-mod-x509, strongswan-mod-xcbc
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
 Installed-Size: 95
-Filename: strongswan-minimal_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 1070
-SHA256sum: 1700c4396949fa95f0db319e9f97392945d8ae43befd36fa97ee28a8a3de0100
+Filename: strongswan-minimal_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 1059
+SHA256sum: 58089edba3fe676f50a4dae68efd7bcb6bc9907dbaf15941210a1d7c8058ea38
 Description:  StrongSwan is an OpenSource IPsec implementation for the Linux operating system.
  This meta-package contains only dependencies for a minimal IKEv2 setup.
 
 Package: strongswan-mod-aes
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 15393
-Filename: strongswan-mod-aes_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 15607
-SHA256sum: 328e3853a48c98bb60bd73afba28a0612bf75e574c9a4996073ef8c5eb6207a5
+Installed-Size: 15555
+Filename: strongswan-mod-aes_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 15381
+SHA256sum: 9c91621203739608f56857926909c6b1c85af96b2b64eb1e8704979aa7cbbd16
 Description:  StrongSwan AES crypto plugin
 
 Package: strongswan-mod-gmp
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan, libgmp10
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 12658
-Filename: strongswan-mod-gmp_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 13466
-SHA256sum: 3cead25688a1d7c0c8df82a66e8c252c65fda473a7b5741647a8c23ff1ff77e8
+Installed-Size: 12834
+Filename: strongswan-mod-gmp_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 13470
+SHA256sum: 0b89fc21231caa30190105ad4aa696c163ff7b63e5baa11610bc551f434337a0
 Description:  StrongSwan libgmp plugin
 
 Package: strongswan-mod-hmac
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 2659
-Filename: strongswan-mod-hmac_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 3474
-SHA256sum: c79087cbc8d0903a851aaf53ea0fb284d43157fbd1ae358d43ad5bbcf56da0d6
+Installed-Size: 2824
+Filename: strongswan-mod-hmac_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 3488
+SHA256sum: 39edf4fce7c477c1eee19978c94af1f4484ce270af8bf808100fd90aa9676a02
 Description:  StrongSwan HMAC crypto plugin
 
 Package: strongswan-mod-kernel-libipsec
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 22229
-Filename: strongswan-mod-kernel-libipsec_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 23025
-SHA256sum: 610fc5c8a9db3b1472166af63102a249de11f38a42d8ad4fb2d91a5a777b304d
+Installed-Size: 26019
+Filename: strongswan-mod-kernel-libipsec_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 26496
+SHA256sum: 289b066e704a8f408c92afc027e55052cd6479801d6d7e1617529061ea1e369c
 Description:  StrongSwan libipsec kernel interface plugin
 
 Package: strongswan-mod-kernel-netlink
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 36766
-Filename: strongswan-mod-kernel-netlink_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 37612
-SHA256sum: 365df91fa6ae0e99ab59efbda68bb7dd0d6c0cdaa01efbff115abaa03731b16f
+Installed-Size: 40724
+Filename: strongswan-mod-kernel-netlink_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 41337
+SHA256sum: e6ee983acd627f5d8de70cf58c654f30903b1f9099b4fc919ee2247ad2446c55
 Description:  StrongSwan netlink kernel interface plugin
 
 Package: strongswan-mod-nonce
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 1660
-Filename: strongswan-mod-nonce_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 2459
-SHA256sum: c380b65e4546615ab8e03e01e650f8d02061a71f75467257fe0193e787e30814
+Installed-Size: 1806
+Filename: strongswan-mod-nonce_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 2534
+SHA256sum: 9090b15b06efbbabdd1e0058f48f5b910f7cf62275d113c331811bf620456e23
 Description:  StrongSwan nonce genereation plugin
 
 Package: strongswan-mod-openssl
-Version: 5.9.5-1
-Depends: libc, strongswan, libopenssl1.1
+Version: 5.9.13-1
+Depends: libc, strongswan, libopenssl3
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 38537
-Filename: strongswan-mod-openssl_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 39358
-SHA256sum: a2a27b977fd6a784011ad2927096954d50b234bab5e750d23e58fc1dc1adb9b5
+Installed-Size: 41983
+Filename: strongswan-mod-openssl_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 42642
+SHA256sum: 074cae66754bb7367e1474bad3850663c79877558b775927afb08ac24ac28327
 Description:  StrongSwan OpenSSL crypto plugin
 
 Package: strongswan-mod-pubkey
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 2998
-Filename: strongswan-mod-pubkey_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 3809
-SHA256sum: b4d3c6f1c96a15a1c5321bc501041f32ec74b5682d6128211b442f3b61f6ef68
+Installed-Size: 3182
+Filename: strongswan-mod-pubkey_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 3850
+SHA256sum: 38c3cc4592cd52a09a240c187d5b67fa47db8f8f71824f84682f26b084439448
 Description:  StrongSwan raw public key plugin
 
 Package: strongswan-mod-random
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 2597
-Filename: strongswan-mod-random_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 3394
-SHA256sum: 01c45f9eab94fe944c88ae89ef4990d4b0b1e935b73ae059b467ea9a5fe4df98
+Installed-Size: 2767
+Filename: strongswan-mod-random_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 3426
+SHA256sum: 14d425c42ae9d96b57c9d244125b03b1e49e19f40e601f57040601a60f530d07
 Description:  StrongSwan RNG plugin
 
 Package: strongswan-mod-sha1
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 5689
-Filename: strongswan-mod-sha1_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 6507
-SHA256sum: 05001329c3966b6588788c29cb0f338c7e689ea3a79471597fed657d73c97d67
+Installed-Size: 5788
+Filename: strongswan-mod-sha1_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 6548
+SHA256sum: 6b6df552f54d8390e7bbc0cc58d426b38896217dc86a9b776f2a895eb652e7e5
 Description:  StrongSwan SHA1 crypto plugin
 
 Package: strongswan-mod-socket-default
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 5555
-Filename: strongswan-mod-socket-default_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 6393
-SHA256sum: bf3e927adba88ab49dc310d5173fb2ee5e202c97962f0c82f13c894f1df4d500
+Installed-Size: 5619
+Filename: strongswan-mod-socket-default_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 6404
+SHA256sum: 8f6e6f3fd2a5c6a93913ecb15b25a5ce5fd5cc33eef7c87d49b4d9ee37ef2c49
 Description:  StrongSwan default socket implementation for charon plugin
 
 Package: strongswan-mod-stroke
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan, strongswan-charon, strongswan-ipsec
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 69210
-Filename: strongswan-mod-stroke_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 70060
-SHA256sum: 0f68f510ad10019cdeec80af6cc663ffa3e395f7b0c6b3e418aed46ef62b0990
+Installed-Size: 69791
+Filename: strongswan-mod-stroke_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 70338
+SHA256sum: 860ad4785b6626f36844db0aa7427b5c136addf4ec8cf15b906531cdc48618bf
 Description:  StrongSwan Stroke plugin
 
 Package: strongswan-mod-updown
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 9459
-Filename: strongswan-mod-updown_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 10273
-SHA256sum: 51f919158b3b5cc04d280ccbb77ab864e061fe4d40e3961d6c79ee2afa1dc3e6
+Installed-Size: 9639
+Filename: strongswan-mod-updown_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 10325
+SHA256sum: 22336d783fd694567ab79ceda6d5f53263a4ffb201ab956be376525de45664af
 Description:  StrongSwan updown firewall plugin
 
 Package: strongswan-mod-x509
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 31360
-Filename: strongswan-mod-x509_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 32132
-SHA256sum: a42ae6769521cabda6fe45da62c6809a27203791511370d605ee23b8b22ad632
+Installed-Size: 35159
+Filename: strongswan-mod-x509_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 35858
+SHA256sum: d3c3c913c6c2fb9eeec37d107ef7f17bcbbab2b0f22147e50292482486b2bf68
 Description:  StrongSwan x509 certificate plugin
 
 Package: strongswan-mod-xauth-generic
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 3033
-Filename: strongswan-mod-xauth-generic_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 3846
-SHA256sum: d744b230270172a7b9b3b5ededa2f6b8cd102249617ddf7297ef702176777bff
+Installed-Size: 3213
+Filename: strongswan-mod-xauth-generic_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 3888
+SHA256sum: da1b39c40c9ed75fa7363858319b5223ad30f40661188b8c2ee1f40acd6662d3
 Description:  StrongSwan generic XAuth backend plugin
 
 Package: strongswan-mod-xcbc
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, strongswan
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 3162
-Filename: strongswan-mod-xcbc_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 3969
-SHA256sum: 9f9f67350afd3802612acff21ad1116f99f4df3beda1ecacc3285555143be7a3
+Installed-Size: 3353
+Filename: strongswan-mod-xcbc_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 4012
+SHA256sum: e021e381df2ca2fe6f81ae10a0c4710de95fa05c483729e5383e342911fd8986
 Description:  StrongSwan xcbc crypto plugin
 
 Package: strongswan
-Version: 5.9.5-1
+Version: 5.9.13-1
 Depends: libc, libpthread, ip, kmod-crypto-authenc, kmod-ipsec, kmod-ipsec4, kmod-ipsec6, kmod-ipt-ipsec, iptables-mod-ipsec
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:strongswan:strongswan
 Architecture: aarch64_cortex-a53
-Installed-Size: 175792
-Filename: strongswan_5.9.5-1_aarch64_cortex-a53.ipk
-Size: 176330
-SHA256sum: 62c06cbd3f796f00c45e35f2cbf8cd5237acb1ce60391741fe428b609229d0d6
+Installed-Size: 180033
+Filename: strongswan_5.9.13-1_aarch64_cortex-a53.ipk
+Size: 180381
+SHA256sum: b924b35d7867a74b418c1048d9e923a1c2b3dab650fd08eb9a8765586c4bd5d6
 Description:  StrongSwan is an OpenSource IPsec implementation for the Linux operating system.
  This package contains shared libraries and scripts.
 
 Package: tailscale
-Version: 1.42.0-1
+Version: 1.44.3-1
 Depends: libc, tailscaled
 License: BSD-3-Clause
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 4217517
-Filename: tailscale_1.42.0-1_aarch64_cortex-a53.ipk
-Size: 4206702
-SHA256sum: f5bf2871e3d0dc26021c8f2668d4250c413737f3a911a5f9e93b4cfc64b470e0
+Installed-Size: 4291875
+Filename: tailscale_1.44.3-1_aarch64_cortex-a53.ipk
+Size: 4281339
+SHA256sum: eac1566f40f1d63128ef0ff6041eb7979caafd3650bb705cf6ca649b383838ac
 Description:  It creates a secure network between your servers, computers,
  and cloud instances. Even when separated by firewalls or subnets.
 
 Package: tailscaled
-Version: 1.42.0-1
+Version: 1.44.3-1
 Depends: libc, ca-bundle, kmod-tun
 License: BSD-3-Clause
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 6837666
-Filename: tailscaled_1.42.0-1_aarch64_cortex-a53.ipk
-Size: 6820407
-SHA256sum: b55390603e7d60dc42d8b75d07867a9da0d2e2b7e81358c65c3ff6d976aad961
+Installed-Size: 6896378
+Filename: tailscaled_1.44.3-1_aarch64_cortex-a53.ipk
+Size: 6879650
+SHA256sum: 55158b287ec9883a3807c747134622024284b5ec9c63e3e7a70cdbc53c7fe407
 Description:  It creates a secure network between your servers, computers,
  and cloud instances. Even when separated by firewalls or subnets.
 
@@ -2349,15 +2899,15 @@ Description:  A tiny but valid init process for containers.
 
 Package: transmission-daemon-openssl
 Version: 2.94-8
-Depends: libc, libcurl4, libevent2-7, libminiupnpc, libnatpmp1, libpthread, librt, zlib, libopenssl1.1
+Depends: libc, libcurl4, libevent2-7, libminiupnpc, libnatpmp1, libpthread, librt, zlib, libopenssl3
 License: GPL-2.0-or-later
 Section: net
 CPE-ID: cpe:/a:transmissionbt:transmission
 Architecture: aarch64_cortex-a53
-Installed-Size: 191887
+Installed-Size: 191888
 Filename: transmission-daemon-openssl_2.94-8_aarch64_cortex-a53.ipk
-Size: 192787
-SHA256sum: e9d9c98a83c2810c0105b2acfb7b7740e581b566d1421c9b9ae7f19160bf5441
+Size: 192659
+SHA256sum: c42f1e44e64216a88bf3163a17e297b19b6d5142d79bbfee891e7c5de9563c1d
 Description:  Transmission is a simple BitTorrent client.
  It features a very simple, intuitive interface
  on top on an efficient, cross-platform back-end.
@@ -2378,14 +2928,14 @@ Description:  Transmission Web Control is a custom Web UI for Transmission.
 
 Package: ttyd
 Version: 1.6.3-3
-Depends: libc, libopenssl1.1, libjson-c5, libuv1, zlib, libwebsockets-full
+Depends: libc, libopenssl3, libjson-c5, libuv1, zlib, libwebsockets-full
 License: MIT
 Section: utils
 Architecture: aarch64_cortex-a53
-Installed-Size: 273287
+Installed-Size: 273329
 Filename: ttyd_1.6.3-3_aarch64_cortex-a53.ipk
-Size: 273961
-SHA256sum: 291c13e0751f7904bc372746496404489b1c51b8976f0d9c9c98998f12b62f3a
+Size: 274044
+SHA256sum: 94fb73a36a728545be303cb5db8177ad16212e44ef9c60cbd0e4c7168cb2072e
 Description:  ttyd is a command-line tool for sharing terminal over the web.
 
 Package: udpxy
@@ -2406,6 +2956,22 @@ Description:  udproxy makes it possible to convert UDP IPTV streams into HTTP
  provider but just use their own streaming client (for example
  popcornhour/mediatomb/vlc).
 
+Package: unbound-daemon
+Version: 1.18.0-1
+Depends: libc, ca-bundle, libopenssl3, libunbound
+License: BSD-3-Clause
+Section: net
+CPE-ID: cpe:/a:nlnetlabs:unbound
+Architecture: aarch64_cortex-a53
+Installed-Size: 143168
+Filename: unbound-daemon_1.18.0-1_aarch64_cortex-a53.ipk
+Size: 143775
+SHA256sum: 19ec63e452f83fb0779fcbb04ce330df820e877172c34f6f40d952ca7fb18b4f
+Description:  This package contains the Unbound daemon including 'libevent', 'libmnl', and
+ 'libpthread' to better handle large networks with heavy query loads. Options
+ are available under libraries/network/libunbound to custom trim Unbound for
+ smaller targets.
+
 Package: unzip
 Version: 6.0-8
 Depends: libc
@@ -2424,7 +2990,7 @@ Description:  InfoZIP's unzip program. With the exception of multi-volume archiv
 
 Package: usbmuxd
 Version: 1.1.1-1
-Depends: libc, librt, libusb-1.0-0, libusbmuxd, libopenssl1.1, libimobiledevice
+Depends: libc, librt, libusb-1.0-0, libusbmuxd, libopenssl3, libimobiledevice
 License: GPL-2.0-or-later
 Section: utils
 CPE-ID: cpe:/a:libimobiledevice:usbmuxd
@@ -2432,7 +2998,7 @@ Architecture: aarch64_cortex-a53
 Installed-Size: 31143
 Filename: usbmuxd_1.1.1-1_aarch64_cortex-a53.ipk
 Size: 32072
-SHA256sum: afd4eef24bcaa1f8bb2a5bb876dfcf314c04f2884891798185acd02b4610b718
+SHA256sum: 12b40ddfd668ca8b44bb1ddfefe36beabc22f1e3c53b559a905852dd8a6e9f84
 Description:  This daemon is in charge of multiplexing connections over USB to an iPhone or
  iPod touch. To users, it means you can sync your music, contacts, photos, etc.
  over USB. To developers, it means you can connect to any listening localhost
@@ -2452,14 +3018,14 @@ SHA256sum: 77e694ca567f92babc665254f84a3eaadc776cef00558296bdb6931a00808fce
 Description:  USB devices listing utilities
 
 Package: uugamebooster
-Version: v3.13.4-1
+Version: v3.15.0-1
 Depends: libc, kmod-tun
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 1523807
-Filename: uugamebooster_v3.13.4-1_aarch64_cortex-a53.ipk
-Size: 1521441
-SHA256sum: 17a802e72cf74760924ca89e99367b991e23818da0ef88d7a2035782d79e247c
+Installed-Size: 1525418
+Filename: uugamebooster_v3.15.0-1_aarch64_cortex-a53.ipk
+Size: 1523084
+SHA256sum: ea8132fe5fa564201386601a2cf81587139a1844d239d9ba30f7999a9eef7e90
 Description:  NetEase's UU Game Booster Accelerates Triple-A Gameplay and Market
 
 Package: uwsgi-cgi-plugin
@@ -2468,10 +3034,10 @@ Depends: libc, uwsgi
 License: GPL-2.0-or-later
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 9355
+Installed-Size: 9503
 Filename: uwsgi-cgi-plugin_2.0.20-1_aarch64_cortex-a53.ipk
-Size: 10144
-SHA256sum: e9fbf66f876ae8f4cc387684ad2a847d5ecdd2f76dc1e6b7252a97af3832a059
+Size: 10161
+SHA256sum: 24e1dcbdd3dc8a385efb99ed0d6c1f1b69e5d3589dc5143225496efe7a450d4e
 Description:  The CGI plugin for the uWSGI project.
 
 Package: uwsgi-luci-support
@@ -2492,10 +3058,10 @@ Depends: libc, uwsgi
 License: GPL-2.0-or-later
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 1772
+Installed-Size: 1948
 Filename: uwsgi-syslog-plugin_2.0.20-1_aarch64_cortex-a53.ipk
-Size: 2565
-SHA256sum: c77b0ef74be359a2bbbc7dc82f5b92026cbaf6a5f646d90739d364fdd9bc568c
+Size: 2617
+SHA256sum: 8f4d4aaca2e2bfb73525aa6468403b8a51a7a0d52a3647d8200ca72a1bda50e0
 Description:  The Syslog plugin for the uWSGI project.
 
 Package: uwsgi
@@ -2504,11 +3070,23 @@ Depends: libc, libpcre, libcap, libuuid1
 License: GPL-2.0-or-later
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 316506
+Installed-Size: 316990
 Filename: uwsgi_2.0.20-1_aarch64_cortex-a53.ipk
-Size: 316996
-SHA256sum: 37bc6d90cbb9792fb847c56c2ddcb18b32152b8e3fd30923aef0794512bcdaeb
+Size: 317273
+SHA256sum: 8238676431255872b1c6fae98b0a67d6a16a175546b3bec96c5520b03b79a250
 Description:  The uWSGI project (to be used together with nginx or nginx-ssl).
+
+Package: v2dat
+Version: 2022-12-15-47b8ee51-1
+Depends: libc
+License: GPL-3.0
+Section: utils
+Architecture: aarch64_cortex-a53
+Installed-Size: 2624215
+Filename: v2dat_2022-12-15-47b8ee51-1_aarch64_cortex-a53.ipk
+Size: 2617184
+SHA256sum: 651297ff6d43afe302526e65cc45a7f9e924fab29929947132e04a9503b11717
+Description:  V2ray geo/ip data unpack tools
 
 Package: v2ray-geoip
 Version: 202302090046-1
@@ -2573,17 +3151,17 @@ Description:  Restart network interfaces or reboot if pings to hosts fail, or se
 
 Package: wget-ssl
 Version: 1.21.3-1
-Depends: libc, libpcre, zlib, libopenssl1.1, librt
+Depends: libc, libpcre, zlib, libopenssl3, librt
 Provides: gnu-wget, wget
 Alternatives: 300:/usr/bin/wget:/usr/libexec/wget-ssl
 License: GPL-3.0-or-later
 Section: net
 CPE-ID: cpe:/a:gnu:wget
 Architecture: aarch64_cortex-a53
-Installed-Size: 214949
+Installed-Size: 214902
 Filename: wget-ssl_1.21.3-1_aarch64_cortex-a53.ipk
-Size: 215501
-SHA256sum: 8adfc26fb24d75a2acacce18b2ff026958d73f0df9e48350b24bf194dfeec44d
+Size: 215416
+SHA256sum: e78dd6ff3c9a094e04942c53e11f4b07402c91344902e0e3d4cb273b81a6515b
 Description:  Wget is a network utility to retrieve files from the Web using http
  and ftp, the two most widely used Internet protocols. It works
  non-interactively, so it will work in the background, after having
@@ -2651,14 +3229,14 @@ SHA256sum: 96cee7c576a85e7a1f1aa4d82dda177110fbfba8de59a7c00e9b91b4240ce738
 Description:  Contains: xz  lzcat lzma unlzma unxz xzcat
 
 Package: zerotier
-Version: 1.10.6-1
-Depends: libc, libpthread, libstdcpp6, kmod-tun, ip, libminiupnpc, libnatpmp1
+Version: 1.12.2-1
+Depends: libc, libpthread, libstdcpp6, kmod-tun, ip, libminiupnpc, libnatpmp1, libatomic1
 License: BSL 1.1
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 489141
-Filename: zerotier_1.10.6-1_aarch64_cortex-a53.ipk
-Size: 489405
-SHA256sum: a11210e3a492365d23a2f566b470c25784d35c09988a9d2ed051feee94cef87b
+Installed-Size: 555457
+Filename: zerotier_1.12.2-1_aarch64_cortex-a53.ipk
+Size: 555593
+SHA256sum: cb80ee40d2e1218000f2a1b68273139d2ea9e1d485b3377bf6dcf088527b8429
 Description:  ZeroTier creates a global provider-independent virtual private cloud network.
 

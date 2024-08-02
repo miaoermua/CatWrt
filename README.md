@@ -22,7 +22,7 @@
 
 ***
 
-🐧 欢迎来到 CatWrt 仓库，这里是软件源 Repo 发行版仓库。仅存在二级制文件，源码请转到 [miaoermua/LEDE](https://github.com/miaoermua/lede) 审查源代码。
+🐧 欢迎来到 CatWrt 仓库，这里是软件源 Repo 发行版仓库。仅存二级制文件，源码请转到 [miaoermua/LEDE](https://github.com/miaoermua/lede) & [miaoermua/catwrt_base](https://github.com/miaoermua/catwrt_base) 审查源代码。
 
 ## 项目
 
@@ -32,33 +32,33 @@
 
 - **👍 获得高校学生，开源社区开发者的青睐，社区互相交流 OpenWrt 知识**<br>
 
-✅ 验证学生：武汉大学，华中科技大学，中南大学，杭州电子科技大学，江西理工大学等...<br><br>
+✅ 验证学生：武汉大学，华中科技大学，中南大学，杭州电子科技大学，江西理工大学等高校...<br><br>
 
-- **🪅 免费项目不包含商业收费项目，全面拥抱开源，轻松部署私有应用。**<br>
+- **🪅 免费项目不包含商业收费项目，全面拥抱开源，轻松部署私有应用**<br>
 
-- **🆙 追求强大性能和可靠性，高效地享用 OpenWrt，可用性遥遥领先。**<br>
+- **🆙 追求强大性能和可靠性，高效地享用 OpenWrt，可用性 ++**<br>
 
-- **📦 CatWrt 软件源，使用 opkg 原生安装不随大流，Linux 学习从此开始……**<br><br>
+- **📦 CatWrt 软件源，使用 opkg 原生安装不随大流，Linux 学习从此开始...**<br><br>
 
 注:
 
-1. 项目未和高校开展活动项目合作，来源于社区用户提供的院校（侵联删）。
+1. 项目未和高校官方开展活动项目合作，来源于社区用户提供的院校（侵联删）。
 
 2. 项目免费开源，仅用于学术交流，严禁用于商业用途。
 
-3. 无内置商用配置文件，所有配置文件来自使用者与作者无关。
+3. 无内置商用配置文件，部分配置文件来自使用者与作者无关。
 
 ***
 
 ## 开源
 
-CatWrt 是基于开源的 Lean [LEDE](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版；可以查看发布博客留下的链接和本仓库提交更新时描述的源码地址。
+CatWrt 是基于开源的 [Lean's LEDE](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版；可以查看发布博客留下的链接和本仓库提交更新时描述的源码地址。
 
 编译过程完全开源！通过和社区交流也能编译出自己的 CatWrt 关键是这些都是在社区活跃下都是免费的；CatWrt 修改项已开源，编译时可参考不推荐直接编译! [miaoermua/catwrt_base](https://github.com/miaoermua/catwrt_base) 遵守 [GPL2.0](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 协议，二次开发需要标注出处。
 
 固件中绝不含任何后门和可以监控或者劫持你的 HTTPS 的闭源软件，所有对 LEDE 修改均已展示并开源，SSL 安全是互联网最后的壁垒，安全干净才是固件应该做到的。
 
-![示例](https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/blog/23-02-28/opensource.jpg)
+![示例图](https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/blog/23-02-28/opensource.jpg)
 
 文件对应仓库中编译结果：
 
@@ -72,7 +72,7 @@ lede/bin/targets = miaoermua/CatWrt/targets
 
 ## 软件源
 
-**使用 [Cattools](https://www.miaoer.xyz/posts/blog/cattools) 可快速配置软件源，无需繁琐配置。**
+**😍 使用 [Cattools](https://www.miaoer.xyz/posts/blog/cattools) 可快速配置软件源，无需下列繁琐配置。**
 
 假如使用前已经刷新列表 `opkg update` 请先在终端 `rm -f /var/lock/opkg.lock` 清理掉默认腾讯源的索引文件，再将源索引填入 CatWrt 发行版软件源中再刷新。
 

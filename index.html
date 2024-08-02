@@ -91,12 +91,12 @@
     
           // 源信息映射
           const domainSources = {
-            'repo.miaoer.xyz': '阿里云',
-            'catwrt.eu.org': '美国',
-            'cfnetlify.catwrt.eu.org': '☁️ Cloudflare-netlify 源',
-            'cfvercel.catwrt.eu.org': '☁️ Cloudflare-vercel 源',
-            'netlify.catwrt.eu.org': 'netlify 源',
-            'vercel.catwrt.eu.org': 'vercel 源',
+            'repo.miaoer.xyz': '广州 - 阿里云主站',
+            'github.catwrt.eu.org': 'Github Pages',
+            'cfnetlify.catwrt.eu.org': '☁️ Cloudflare - Netlify',
+            'cfvercel.catwrt.eu.org': '☁️ Cloudflare - Vercel',
+            'netlify.catwrt.eu.org': 'Netlify',
+            'vercel.catwrt.eu.org': 'Vercel',
           };
 
           // 查找域名对应源信息
@@ -110,7 +110,7 @@
           }
     
           // 显示源信息
-          document.getElementById('source-info').textContent = `当前源：${sourceInfo}`;
+          document.getElementById('source-info').textContent = `当前源站：${sourceInfo}`;
         });
       </script>
 </head>

@@ -328,6 +328,21 @@ SHA256sum: e01f507593fa85fc2bcbd82aae5d32786934e2c89a19c845da9330773e8073a5
 Description:  This package contains essential ext2 filesystem utilities which consists of
  e2fsck, mke2fs and most of the other core ext2 filesystem utilities.
 
+Package: ethtool
+Version: 6.0-1
+Depends: libc
+Conflicts: ethtool-full
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:kernel:ethtool
+Architecture: mipsel_24kc
+Installed-Size: 33935
+Filename: ethtool_6.0-1_mipsel_24kc.ipk
+Size: 34432
+SHA256sum: fb1a6c12aebbebe254f27676c92be462f7fb9c41fc9792358b36e08c40757533
+Description:  ethtool is a small utility for examining and tuning your ethernet-based
+ network interface
+
 Package: firewall
 Version: 2022-02-17-4cd7d4f3-3
 Depends: libc, libubox20220927, libubus20220601, libuci20130104, libip4tc2, libip6tc2, libxtables12, kmod-ipt-core, kmod-ipt-conntrack, iptables-mod-conntrack-extra, kmod-nf-conntrack6, kmod-ipt-nat, iptables-mod-fullconenat
@@ -1442,6 +1457,17 @@ Size: 98766
 SHA256sum: a97596b9e3213f101f9a68c280ddf56d4efeaa2403fb04aca008a35552458c66
 Description:  luci-app-store is a ipk store developed by LinkEase team
 
+Package: luci-app-ua2f
+Version: 1.8.0-1
+Depends: libc
+Section: luci
+Architecture: all
+Installed-Size: 2855
+Filename: luci-app-ua2f_1.8.0-1_all.ipk
+Size: 3546
+SHA256sum: e26c5822441b2e11da6ac202f2f6ab7820fb7c07d9635303873093848e1312e1
+Description:  Configure UA2F on the web.
+
 Package: luci-app-usb3disable
 Version: 1.0-1
 Depends: libc
@@ -1896,6 +1922,21 @@ Size: 23820
 SHA256sum: 72915eb9437397ce820e15950e9a3b720f54dfa6ac6217271ddf55d66131ac7c
 Description:  This package provides the UBUS RPC backend server to expose various
  functionality to frontend programs via JSON-RPC.
+
+Package: samba36-server
+Version: 4.0.26-9
+Depends: libc, libaio, libpthread, zlib, libpopt0
+License: GPLv3
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 1228943
+Filename: samba36-server_4.0.26-9_mipsel_24kc.ipk
+Size: 1213791
+SHA256sum: ba2017757b2aa9fcc40093235ecfd067887230bb3df457e0b044f6caa6a8128e
+Description:  The Samba software suite is a collection of programs that implements the
+ SMB protocol for UNIX systems, allowing you to serve files and printers to
+ Windows, NT, OS/2 and DOS clients. This protocol is sometimes also referred
+ to as the LanManager or Netbios protocol.
 
 Package: script-utils
 Version: 2.38.1-1

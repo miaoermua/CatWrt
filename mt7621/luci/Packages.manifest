@@ -537,6 +537,20 @@ Size: 2461
 SHA256sum: 3261dd1aaf8e56a9e36c313fbe50d1a480a003abfecc113a6509649a04434442
 Description:  Network Shares - Samba 4 SMB/CIFS module
 
+Package: luci-app-samba
+Version: git-24.182.36151-66d29de-1
+Depends: libc, samba36-server
+Source: feeds/luci/applications/luci-app-samba
+SourceName: luci-app-samba
+Section: luci
+SourceDateEpoch: 1719741751
+Architecture: all
+Installed-Size: 1493
+Filename: luci-app-samba_git-24.182.36151-66d29de-1_all.ipk
+Size: 2245
+SHA256sum: bfda85f4451f3285d3697433459fc08316a0c76097250dc222da48b532d26708
+Description:  Network Shares - Samba SMB/CIFS module
+
 Package: luci-app-smartdns
 Version: 1.2023.42-1
 Depends: libc, smartdns, luci-compat
@@ -1354,6 +1368,20 @@ Filename: luci-i18n-ramfree-zh-cn_1.0-1_all.ipk
 Size: 1238
 SHA256sum: 2af87ea930abe38494d022c5bffe2c6f0ac8226875d321d50d70d8e5432aed85
 Description:  Translation for luci-app-ramfree - 简体中文 (Simplified Chinese)
+
+Package: luci-i18n-samba-zh-cn
+Version: git-24.182.36151-66d29de-1
+Depends: libc, luci-app-samba
+Source: feeds/luci/applications/luci-app-samba
+SourceName: luci-i18n-samba-zh-cn
+Section: luci
+SourceDateEpoch: 1719741751
+Architecture: all
+Installed-Size: 1212
+Filename: luci-i18n-samba-zh-cn_git-24.182.36151-66d29de-1_all.ipk
+Size: 2059
+SHA256sum: cac9f9165d671b627719f2613b49ed12ee27947b0a817f23c2931d05c2e08586
+Description:  Translation for luci-app-samba - 简体中文 (Simplified Chinese)
 
 Package: luci-i18n-samba4-zh-cn
 Version: git-24.182.36151-66d29de-1

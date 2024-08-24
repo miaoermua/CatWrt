@@ -621,6 +621,18 @@ Size: 96326
 SHA256sum: 568a3de4a4b4965e45a760fe0cbe0ee5e46381ee0e82b2e8e0380202248d0d12
 Description:  Lightweight and flexible command-line JSON processor.
 
+Package: libaio
+Version: 0.3.113-1
+Depends: libc
+License: LGPL-2.1-only
+Section: libs
+Architecture: mipsel_24kc
+Installed-Size: 2339
+Filename: libaio_0.3.113-1_mipsel_24kc.ipk
+Size: 2934
+SHA256sum: 06bce3136bfd74d85e2f24c27daccc47d0f1e9c9355ccb8e7d74be919e077136
+Description:  Linux kernel AIO interface access library
+
 Package: libattr
 Version: 2.5.1-1
 Depends: libc
@@ -1349,6 +1361,28 @@ Description:  netdata is a highly optimized Linux daemon providing real-time per
  
  If you want to use Python plugins install python3, python3-yaml and
  python3-urllib3
+
+Package: nfs-utils-libs
+Version: 2.6.2-3
+Depends: libc, libblkid1, libuuid1, libtirpc
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 131
+Filename: nfs-utils-libs_2.6.2-3_mipsel_24kc.ipk
+Size: 862
+SHA256sum: 89a3ab265dcac4a9a0e44cba70b384bc1156362f76ae5749eaba7522158c31f4
+Description:  Libraries provided by nfs-utils
+
+Package: nfs-utils
+Version: 2.6.2-3
+Depends: libc, libblkid1, libuuid1, libtirpc
+Section: utils
+Architecture: mipsel_24kc
+Installed-Size: 45591
+Filename: nfs-utils_2.6.2-3_mipsel_24kc.ipk
+Size: 46108
+SHA256sum: d0edf1f256a45dc4380ca2cfa75fc7c694529f92959db4a1b54df6e0b9cfbe92
+Description:  Updated mount.nfs command - allows mounting nfs4 volumes
 
 Package: nginx-mod-luci-ssl
 Version: 1.21.3-1

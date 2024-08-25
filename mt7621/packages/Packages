@@ -814,6 +814,27 @@ Size: 39363
 SHA256sum: a80d8cb12b810fb1dc851aa42d1f9811d56472bcaad8bed6913f2303250118ad
 Description:  A fast, non-validating, stream-oriented XML parsing library.
 
+Package: libffi
+Version: 3.4.2-2
+Depends: libc
+License: MIT
+Section: libs
+Architecture: mipsel_24kc
+Installed-Size: 14137
+Filename: libffi_3.4.2-2_mipsel_24kc.ipk
+Size: 15007
+SHA256sum: 2b00cb2f8fc8cd498dacce7eba421d267b3bb0d9d18b23f0df2499a2418c381c
+Description:  The libffi library provides a portable, high level programming interface to
+ various calling conventions. This allows a programmer to call any function
+ specified by a call interface description at run-time.
+ 
+ FFI stands for Foreign Function Interface. A foreign function interface is the
+ popular name for the interface that allows code written in one language to call
+ code written in another language. The libffi library really only provides the
+ lowest, machine dependent layer of a fully featured foreign function interface.
+ A layer must exist above libffi that handles type conversions for values passed
+ between the two languages.
+
 Package: libfido2-1
 Version: 1.12.0-1
 Depends: libc, libcbor0, libopenssl3, libudev, zlib
@@ -849,6 +870,20 @@ Description:  This is a general purpose cryptographic library based on the code 
  random numbers and a lot of supporting functions. Some algorithms have
  been disabled to reduce size (Blowfish, Twofish, Serpent,
  RC2, SEED, Camellia, CRC, MD4, TIGER-192, Whirlpool, ElGamal, ECC).
+
+Package: libgdbm
+Version: 1.21-1
+Depends: libc
+License: GPL-3.0-or-later
+Section: libs
+Architecture: mipsel_24kc
+Installed-Size: 26986
+Filename: libgdbm_1.21-1_mipsel_24kc.ipk
+Size: 27641
+SHA256sum: 3b376ab39e0a4182c38d45721950cf3a09832f1e3811c09afcdcbb4ed85f62fc
+Description:  GNU database manager library
+ GNU dbm is a set of database routines that use extendible hashing and
+ works similar to the standard UNIX dbm routines.
 
 Package: libgnutls
 Version: 3.8.3-1
@@ -1095,6 +1130,21 @@ Size: 23691
 SHA256sum: 70dd8ef900fcc5d8fd1aaadcff80b112466596fe33d741a1d179d225293174b1
 Description:  A library to handle Apple Property List format whereas it's binary or XML
 
+Package: libpython3-3.10
+Version: 3.10.7-3
+Depends: libc, libpthread, zlib
+Provides: libpython3
+License: PSF-2.0
+Section: lang
+ABIVersion: -3.10
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 1037946
+Filename: libpython3-3.10_3.10.7-3_mipsel_24kc.ipk
+Size: 1032850
+SHA256sum: 1c2181f5b973d3b3b9667739bb18ead71b05e65b4b3e21345623a98abcb45df2
+Description:  This package contains only core Python library.
+
 Package: libruby3.1
 Version: 3.1.3-1
 Depends: libc, libpthread, librt, libgmp10, zlib
@@ -1126,6 +1176,24 @@ Description:  NaCl (pronounced "salt") is a new easy-to-use high-speed software 
  The design choices, particularly in regard to the Curve25519 Diffie-Hellman function, emphasize security (whereas NIST curves emphasize "performance" at the cost of security), and "magic constants" in NaCl/Sodium have clear rationales.
  The same cannot be said of NIST curves, where the specific origins of certain constants are not described by the standards.
  And despite the emphasis on higher security, primitives are faster across-the-board than most implementations of the NIST standards.
+
+Package: libsqlite3-0
+Version: 3400000-1
+Depends: libc, libpthread, zlib
+Provides: libsqlite3
+License: PUBLICDOMAIN
+Section: libs
+ABIVersion: -0
+CPE-ID: cpe:/a:sqlite:sqlite
+Architecture: mipsel_24kc
+Installed-Size: 356487
+Filename: libsqlite3-0_3400000-1_mipsel_24kc.ipk
+Size: 357172
+SHA256sum: 24434546cd5d3ae4dab321aa73f04a054ce0d53dc263f92ea303dadc81c5b1be
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains the SQLite (v3.x) shared library, used by other
+ programs.
 
 Package: libtasn1
 Version: 4.19.0-1
@@ -1661,6 +1729,388 @@ Size: 31296
 SHA256sum: 95b23c148781336442756acb88fea248ce9e715b4c0549814872b7eb62fd0fd1
 Description:  PopTop pptp server
 
+Package: python3-asyncio
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 146903
+Filename: python3-asyncio_3.10.7-3_mipsel_24kc.ipk
+Size: 147855
+SHA256sum: ca4d8c04b9386ee6ed66d9c1f2d7b26531a9fa0fe4ab5002dc3eee44a9175f9e
+Description:  Python 3.10 asyncio module
+
+Package: python3-base
+Version: 3.10.7-3
+Depends: libc, libpthread, zlib, libpython3-3.10
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 157553
+Filename: python3-base_3.10.7-3_mipsel_24kc.ipk
+Size: 157000
+SHA256sum: 62db54a3bba562b5478bc476796271e5cedd7ab27bc7584957732f9039f19c13
+Description:  This package contains only the interpreter and the bare minimum
+ for the interpreter to start.
+
+Package: python3-certifi
+Version: 2022.9.24-1
+Depends: libc, python3-light, python3-urllib
+License: MPL-2.0
+Section: lang
+Architecture: mipsel_24kc
+Installed-Size: 159558
+Filename: python3-certifi_2022.9.24-1_mipsel_24kc.ipk
+Size: 160508
+SHA256sum: a8d7797dd946a7ae4da8f1290a33f2c93298f6e0fb8cfc86902d3c2d785141f4
+Description:  Certifi is a carefully curated collection of Root Certificates for validating the
+ trustworthiness of SSL certificates while verifying the identity of TLS hosts.
+
+Package: python3-cgi
+Version: 3.10.7-3
+Depends: libc, python3-light, python3-email
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 12277
+Filename: python3-cgi_3.10.7-3_mipsel_24kc.ipk
+Size: 13136
+SHA256sum: 8818346e95788789707d4e8fc726a8720f7f06bffed55bc8744ed48fe8496746
+Description:  Python 3.10 cgi module
+
+Package: python3-cgitb
+Version: 3.10.7-3
+Depends: libc, python3-light, python3-cgi, python3-pydoc
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 5511
+Filename: python3-cgitb_3.10.7-3_mipsel_24kc.ipk
+Size: 6350
+SHA256sum: 929f194c488e668d5d71a1aaf021a13c32af01d688d996882b102bdf0d6192eb
+Description:  Python 3.10 cgitb module
+
+Package: python3-chardet
+Version: 5.1.0-1
+Depends: libc, python3-light, python3-logging
+License: LGPL-2.1
+Section: lang
+Architecture: mipsel_24kc
+Installed-Size: 183142
+Filename: python3-chardet_5.1.0-1_mipsel_24kc.ipk
+Size: 178458
+SHA256sum: 377744722931500cdf8d73612b4298cb31be4a42bb2994c2bbf77cdfbd2cf035
+Description:  Universal encoding detector for Python 2 and 3
+
+Package: python3-codecs
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 767413
+Filename: python3-codecs_3.10.7-3_mipsel_24kc.ipk
+Size: 739444
+SHA256sum: c13f07b3160703249d95937079551d88a2505f71fac90957dec7d7d3c4b4da5a
+Description:  Python 3.10 codecs + unicode support
+
+Package: python3-ctypes
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 63203
+Filename: python3-ctypes_3.10.7-3_mipsel_24kc.ipk
+Size: 63735
+SHA256sum: 25db2372ba6b0f386d2e0426fbf12b2725b58bed9d09aa5fa49ab963e140fa9d
+Description:  Python 3.10 ctypes module
+
+Package: python3-dbm
+Version: 3.10.7-3
+Depends: libc, python3-light, libgdbm
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 18175
+Filename: python3-dbm_3.10.7-3_mipsel_24kc.ipk
+Size: 18723
+SHA256sum: 9efa85358510646c804678e9ecf11d55b8711cf6cd55c9c778db27a7a322511d
+Description:  Python 3.10 dbm module
+
+Package: python3-decimal
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 80882
+Filename: python3-decimal_3.10.7-3_mipsel_24kc.ipk
+Size: 81464
+SHA256sum: 02afedac229343781da0adc0dc2d692c4ae11ea8294890f0f698edf9f640f896
+Description:  Python 3.10 decimal module
+
+Package: python3-distutils
+Version: 3.10.7-3
+Depends: libc, python3-light, python3-email
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 171786
+Filename: python3-distutils_3.10.7-3_mipsel_24kc.ipk
+Size: 172779
+SHA256sum: 719aa329f494029c4fe7b79a22fd0e25e539864802846dd3385d68645a8cf11b
+Description:  Python 3.10 distutils module
+
+Package: python3-email
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 114894
+Filename: python3-email_3.10.7-3_mipsel_24kc.ipk
+Size: 115847
+SHA256sum: 487c7781eab5bd853734e10bfeb0f0c0ef7f6abb913543b227787cd318ba535a
+Description:  Python 3.10 email module
+
+Package: python3-idna
+Version: 3.3-1
+Depends: libc, python3-light, python3-codecs
+License: BSD-3-Clause
+Section: lang
+Architecture: mipsel_24kc
+Installed-Size: 65284
+Filename: python3-idna_3.3-1_mipsel_24kc.ipk
+Size: 65146
+SHA256sum: 43989b492f55bd6c0ce7a8cbbee341a662dcae99d63cdc74ba5a45ebbfc107e4
+Description:  A library to support the Internationalised Domain Names in Applications
+ (IDNA) protocol as specified in RFC 5891. This version of the protocol
+ is often referred to as "IDNA2008" and can produce different results
+ from the earlier standard from 2003.
+
+Package: python3-light
+Version: 3.10.7-3
+Depends: libc, python3-base, libffi, libbz2-1.0
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 2139250
+Filename: python3-light_3.10.7-3_mipsel_24kc.ipk
+Size: 2130253
+SHA256sum: 089a73599cd1f0f4da5b002da9bdd9f39532561fd32b1ec76ab2e0dd2dc9e5f0
+Description:  This package is essentially the python3-base package plus
+ a few of the rarely used (and big) libraries stripped out
+ into separate packages.
+
+Package: python3-logging
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 53981
+Filename: python3-logging_3.10.7-3_mipsel_24kc.ipk
+Size: 54925
+SHA256sum: 14431079e2ea00b9297aa5de723f26525f5988842350dea8c01a7f7e57f011bc
+Description:  Python 3.10 logging module
+
+Package: python3-lzma
+Version: 3.10.7-3
+Depends: libc, python3-light, liblzma
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 17022
+Filename: python3-lzma_3.10.7-3_mipsel_24kc.ipk
+Size: 17655
+SHA256sum: 2708fb4fbc3985caa4c6be3445b815607bf47e4603bcaf78587e8454de64014e
+Description:  Python 3.10 lzma module
+
+Package: python3-multiprocessing
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 102758
+Filename: python3-multiprocessing_3.10.7-3_mipsel_24kc.ipk
+Size: 103493
+SHA256sum: e1b0ecf225203126f57b35bf04434276e13f13ee8f44e17c363d69de9021b0c1
+Description:  Python 3.10 multiprocessing
+
+Package: python3-ncurses
+Version: 3.10.7-3
+Depends: libc, python3-light, libncursesw6
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 44198
+Filename: python3-ncurses_3.10.7-3_mipsel_24kc.ipk
+Size: 44371
+SHA256sum: 8e74fb24083c022d5f0efa0cb2e71bdf67628a05264af9ed4b83e2756a30a13e
+Description:  Python 3.10 ncurses module
+
+Package: python3-openssl
+Version: 3.10.7-3
+Depends: libc, python3-light, libopenssl3, ca-certs
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 70398
+Filename: python3-openssl_3.10.7-3_mipsel_24kc.ipk
+Size: 69653
+SHA256sum: 3db542d4f973e0cb0ff7f01f0a7fafe22ca5ab8660e80bf41b7ded62458aa403
+Description:  Python 3.10 SSL module
+
+Package: python3-pydoc
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 202627
+Filename: python3-pydoc_3.10.7-3_mipsel_24kc.ipk
+Size: 203568
+SHA256sum: f047e7baacfe50333c6cf5b2477972538dcc4243db6e03f85d20a58e88f2593b
+Description:  Python 3.10 pydoc module
+
+Package: python3-readline
+Version: 3.10.7-3
+Depends: libc, python3-light, libreadline8, libncursesw6
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 9253
+Filename: python3-readline_3.10.7-3_mipsel_24kc.ipk
+Size: 9980
+SHA256sum: 6c00137ec71395b4f07a728e84417cdc0307b96eac5923f10a1edc0eb3e9445f
+Description:  Python 3.10 readline module
+
+Package: python3-requests
+Version: 2.28.2-1
+Depends: libc, python3-light, python3-chardet, python3-idna, python3-urllib3, python3-certifi
+License: Apache-2.0
+Section: lang
+CPE-ID: cpe:/a:python-requests:requests
+Architecture: mipsel_24kc
+Installed-Size: 62372
+Filename: python3-requests_2.28.2-1_mipsel_24kc.ipk
+Size: 63378
+SHA256sum: bd5dba35721298491e61926ce7e3c1b8509088d0472a284fb3222e2de63aea7a
+Description:  Requests is the only Non-GMO HTTP library for Python, safe for human consumption
+
+Package: python3-sqlite3
+Version: 3.10.7-3
+Depends: libc, python3-light, libsqlite3-0
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 29941
+Filename: python3-sqlite3_3.10.7-3_mipsel_24kc.ipk
+Size: 30637
+SHA256sum: 7321d426a71caf7b194c43bede5dc80efb52eb2658dfaa873470b1c8e701851f
+Description:  Python 3.10 sqlite3 module
+
+Package: python3-unittest
+Version: 3.10.7-3
+Depends: libc, python3-light
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 79242
+Filename: python3-unittest_3.10.7-3_mipsel_24kc.ipk
+Size: 80204
+SHA256sum: e25ea6bdcc16fe018ae342e800939bd7bc70dcd592d26f9284cf09715c632e34
+Description:  Python 3.10 unittest module
+
+Package: python3-urllib3
+Version: 1.25.11-1
+Depends: libc, python3
+License: MIT
+Section: lang
+CPE-ID: cpe:/a:urllib3_project:urllib3
+Architecture: mipsel_24kc
+Installed-Size: 129267
+Filename: python3-urllib3_1.25.11-1_mipsel_24kc.ipk
+Size: 130226
+SHA256sum: 940f9300b429d0cce71ddf170b5391994305ddc5948c0fbd60386e3c6acf198b
+Description:  HTTP library with thread-safe connection pooling, file post, and more.
+
+Package: python3-urllib
+Version: 3.10.7-3
+Depends: libc, python3-light, python3-email
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 51559
+Filename: python3-urllib_3.10.7-3_mipsel_24kc.ipk
+Size: 52513
+SHA256sum: 9ca546867c1e41721855a183713373c0ee7f80dd28e3686aa408973e9723e029
+Description:  Python 3.10 URL library module
+
+Package: python3-uuid
+Version: 3.10.7-3
+Depends: libc, python3-light, libuuid1
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 11376
+Filename: python3-uuid_3.10.7-3_mipsel_24kc.ipk
+Size: 12037
+SHA256sum: 114d60383c78ec466111d6930e836491c1354dd6a44f8b87b06985d4e6444e46
+Description:  Python 3.10 UUID module
+
+Package: python3-xml
+Version: 3.10.7-3
+Depends: libc, python3-light, python3-urllib
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 204755
+Filename: python3-xml_3.10.7-3_mipsel_24kc.ipk
+Size: 205151
+SHA256sum: 0fc2f8e1ee3974da7da3bf582b22ab7d2acd7112228ecca7c6b8579e9d6f0144
+Description:  Python 3.10 xml libs
+
+Package: python3
+Version: 3.10.7-3
+Depends: libc, python3-light, python3-asyncio, python3-cgi, python3-cgitb, python3-codecs, python3-ctypes, python3-dbm, python3-decimal, python3-distutils, python3-email, python3-logging, python3-lzma, python3-multiprocessing, python3-ncurses, python3-openssl, python3-pydoc, python3-readline, python3-sqlite3, python3-unittest, python3-urllib, python3-uuid, python3-xml
+License: PSF-2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: mipsel_24kc
+Installed-Size: 95
+Filename: python3_3.10.7-3_mipsel_24kc.ipk
+Size: 1075
+SHA256sum: d514ebe230bedcdeab080684687fd65b314ec584f7e15e2cd4fec477f86518bd
+Description:  This package contains the (almost) full Python install.
+ It's python3-light + all other packages.
+
 Package: rp-pppoe-common
 Version: 3.15-1
 Depends: libc, ppp
@@ -1942,10 +2392,10 @@ License: GPL-3.0-only
 Section: net
 CPE-ID: cpe:/a:samba:samba
 Architecture: mipsel_24kc
-Installed-Size: 7219198
+Installed-Size: 7221231
 Filename: samba4-libs_4.14.14-1_mipsel_24kc.ipk
-Size: 7140704
-SHA256sum: 9d646e8db40c3bdf4c6067da503f63451a18bbf25619f9115108aac45c5cd1c8
+Size: 7146011
+SHA256sum: a43745885f1d2a6a0bbcf01480a90c8b8edb399d50a1e86ec71a777605aaae5f
 Description:  Samba 4.14.14 libs
 
 Package: samba4-server
@@ -1956,10 +2406,10 @@ License: GPL-3.0-only
 Section: net
 CPE-ID: cpe:/a:samba:samba
 Architecture: mipsel_24kc
-Installed-Size: 233030
+Installed-Size: 233032
 Filename: samba4-server_4.14.14-1_mipsel_24kc.ipk
-Size: 232870
-SHA256sum: 165bb37551eab6b60f9870e879a9343fe86119b4a2853ca5f2b207ece87aaf5b
+Size: 232812
+SHA256sum: d6f04d2bc4af14b458fc5b2ea570c0d3ca94b1a4ffee00c0838c84478d5a1b0e
 Description:  installs: smbd (nmbd) smbpasswd pdbedit testparm (nmblookup) (smbcacls sharesec)
  (samba samba-tool ntlm_auth samba-gpupdate samba_dnsupdate samba_kcc samba_spnupdate samba_upgradedns samba_downgrade_db)
  

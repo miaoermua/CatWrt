@@ -89,12 +89,12 @@ CatWrt 是基于开源的 [Lean's LEDE](https://github.com/coolsnowwolf/lede) �
 版本：v23.8
 
 ```mirrors
-src/gz openwrt_core https://vercel.catwrt.eu.orgtargets/x86/64/packages
-src/gz openwrt_base https://vercel.catwrt.eu.orgx86_64/base
-src/gz openwrt_luci https://vercel.catwrt.eu.orgx86_64/luci
-src/gz openwrt_packages https://vercel.catwrt.eu.orgx86_64/packages
-src/gz openwrt_routing https://vercel.catwrt.eu.orgx86_64/routing
-src/gz openwrt_telephony https://vercel.catwrt.eu.orgx86_64/telephony
+src/gz openwrt_core https://vercel.catwrt.eu.org/targets/x86/64/packages
+src/gz openwrt_base https://vercel.catwrt.eu.org/x86_64/base
+src/gz openwrt_luci https://vercel.catwrt.eu.org/x86_64/luci
+src/gz openwrt_packages https://vercel.catwrt.eu.org/x86_64/packages
+src/gz openwrt_routing https://vercel.catwrt.eu.org/x86_64/routing
+src/gz openwrt_telephony https://vercel.catwrt.eu.org/x86_64/telephony
 ```
 
 **mt798x**
@@ -104,12 +104,12 @@ src/gz openwrt_telephony https://vercel.catwrt.eu.orgx86_64/telephony
 版本：v23.8
 
 ```mirrors
-src/gz openwrt_core https://vercel.catwrt.eu.orgtargets/mt798x/filogic/packages
-src/gz openwrt_base https://vercel.catwrt.eu.orgmt798x/base
-src/gz openwrt_luci https://vercel.catwrt.eu.orgmt798x/luci
-src/gz openwrt_packages https://vercel.catwrt.eu.orgmt798x/packages
-src/gz openwrt_routing https://vercel.catwrt.eu.orgmt798x/routing
-src/gz openwrt_telephony https://vercel.catwrt.eu.orgmt798x/telephony
+src/gz openwrt_core https://vercel.catwrt.eu.org/targets/mt798x/filogic/packages
+src/gz openwrt_base https://vercel.catwrt.eu.org/mt798x/base
+src/gz openwrt_luci https://vercel.catwrt.eu.org/mt798x/luci
+src/gz openwrt_packages https://vercel.catwrt.eu.org/mt798x/packages
+src/gz openwrt_routing https://vercel.catwrt.eu.org/mt798x/routing
+src/gz openwrt_telephony https://vercel.catwrt.eu.org/mt798x/telephony
 ```
 
 **aarch64_generic**
@@ -119,12 +119,12 @@ src/gz openwrt_telephony https://vercel.catwrt.eu.orgmt798x/telephony
 版本：v22.12
 
 ```mirrors
-src/gz openwrt_core https://vercel.catwrt.eu.orgtargets/rockchip/armv8/packages
-src/gz openwrt_base https://vercel.catwrt.eu.orgaarch64_generic/base
-src/gz openwrt_luci https://vercel.catwrt.eu.orgaarch64_generic/luci
-src/gz openwrt_packages https://vercel.catwrt.eu.orgaarch64_generic/packages
-src/gz openwrt_routing https://vercel.catwrt.eu.orgaarch64_generic/routing
-src/gz openwrt_telephony https://vercel.catwrt.eu.orgaarch64_generic/telephony
+src/gz openwrt_core https://vercel.catwrt.eu.org/targets/rockchip/armv8/packages
+src/gz openwrt_base https://vercel.catwrt.eu.org/aarch64_generic/base
+src/gz openwrt_luci https://vercel.catwrt.eu.org/aarch64_generic/luci
+src/gz openwrt_packages https://vercel.catwrt.eu.org/aarch64_generic/packages
+src/gz openwrt_routing https://vercel.catwrt.eu.org/aarch64_generic/routing
+src/gz openwrt_telephony https://vercel.catwrt.eu.org/aarch64_generic/telephony
 ```
 
 **mt7621**
@@ -134,12 +134,12 @@ src/gz openwrt_telephony https://vercel.catwrt.eu.orgaarch64_generic/telephony
 版本：v22.12
 
 ```mirrors
-src/gz openwrt_core https://vercel.catwrt.eu.orgtargets/ramips/mt7621/packages
-src/gz openwrt_base https://vercel.catwrt.eu.orgmipsel_24kc/base
-src/gz openwrt_luci https://vercel.catwrt.eu.orgmipsel_24kc/luci
-src/gz openwrt_packages https://vercel.catwrt.eu.orgmipsel_24kc/packages
-src/gz openwrt_routing https://vercel.catwrt.eu.orgmipsel_24kc/routing
-src/gz openwrt_telephony https://vercel.catwrt.eu.orgmipsel_24kc/telephony
+src/gz openwrt_core https://vercel.catwrt.eu.org/targets/ramips/mt7621/packages
+src/gz openwrt_base https://vercel.catwrt.eu.org/mipsel_24kc/base
+src/gz openwrt_luci https://vercel.catwrt.eu.org/mipsel_24kc/luci
+src/gz openwrt_packages https://vercel.catwrt.eu.org/mipsel_24kc/packages
+src/gz openwrt_routing https://vercel.catwrt.eu.org/mipsel_24kc/routing
+src/gz openwrt_telephony https://vercel.catwrt.eu.org/mipsel_24kc/telephony
 ```
 
 ### 换源

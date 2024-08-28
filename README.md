@@ -52,18 +52,18 @@
 
 CatWrt 是基于开源的 [Lean's LEDE](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版；可以查看发布博客留下的链接和本仓库提交更新时描述的源码地址。
 
-编译过程完全开源！通过和社区交流也能编译出自己的 CatWrt 关键是这些都是在社区活跃下都是免费的；CatWrt 修改项已开源，编译时可参考不推荐直接编译! [miaoermua/catwrt_base](https://github.com/miaoermua/catwrt_base) 遵守 [GPL2.0](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 协议，二次开发需要标注出处。
+项目是自由软件，编译过程完全可信，通过和社区交流自己动动手也能编译出完全一致的 CatWrt；固件中绝不含任何后门和可以监控或者劫持你的 TLS/SSL 闭源软件，CatWrt 对所有 LEDE 修改均已展示并开源，SSL 安全是互联网最后的壁垒，安全干净才是固件应该做到的。
 
-固件中绝不含任何后门和可以监控或者劫持你的 HTTPS 的闭源软件，所有对 LEDE 修改均已展示并开源，SSL 安全是互联网最后的壁垒，安全干净才是固件应该做到的。
+编译时可参考 [miaoermua/catwrt_base](https://github.com/miaoermua/catwrt_base) 遵守 [GPL2.0](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 协议，二次开发需要标注出处。
 
 ![示例图](https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/blog/23-02-28/opensource.jpg)
 
-文件对应仓库中编译结果：
+二进制包文件对应仓库中编译结果：
 
 ```
-lede/bin/packages = miaoermua/CatWrt/
+/home/lede/bin/packages = miaoermua/CatWrt/
 
-lede/bin/targets = miaoermua/CatWrt/targets
+/home/lede/bin/targets = miaoermua/CatWrt/targets
 ```
 
 ***
@@ -76,7 +76,7 @@ lede/bin/targets = miaoermua/CatWrt/targets
 
 > 如果不可用无法连接，可以在底部寻找分流源的使用方法示例，当然你也可以在使用之前就测试每一个可用的源。
 
-- 阿里云 (双栈): https://repo.miaoer.xyz
+- 阿里云: https://repo.miaoer.xyz
 - Vercel: https://vercel.catwrt.eu.org
 - Netlify: https://netlify.catwrt.eu.org
 - Vercel (Cloudflare Proxy): https://cfvercel.catwrt.eu.org
@@ -89,12 +89,12 @@ lede/bin/targets = miaoermua/CatWrt/targets
 版本：v23.8
 
 ```mirrors
-src/gz openwrt_core https://repo.miaoer.xyz/targets/x86/64/packages
-src/gz openwrt_base https://repo.miaoer.xyz/x86_64/base
-src/gz openwrt_luci https://repo.miaoer.xyz/x86_64/luci
-src/gz openwrt_packages https://repo.miaoer.xyz/x86_64/packages
-src/gz openwrt_routing https://repo.miaoer.xyz/x86_64/routing
-src/gz openwrt_telephony https://repo.miaoer.xyz/x86_64/telephony
+src/gz openwrt_core https://vercel.catwrt.eu.orgtargets/x86/64/packages
+src/gz openwrt_base https://vercel.catwrt.eu.orgx86_64/base
+src/gz openwrt_luci https://vercel.catwrt.eu.orgx86_64/luci
+src/gz openwrt_packages https://vercel.catwrt.eu.orgx86_64/packages
+src/gz openwrt_routing https://vercel.catwrt.eu.orgx86_64/routing
+src/gz openwrt_telephony https://vercel.catwrt.eu.orgx86_64/telephony
 ```
 
 **mt798x**
@@ -104,12 +104,12 @@ src/gz openwrt_telephony https://repo.miaoer.xyz/x86_64/telephony
 版本：v23.8
 
 ```mirrors
-src/gz openwrt_core https://repo.miaoer.xyz/targets/mt798x/filogic/packages
-src/gz openwrt_base https://repo.miaoer.xyz/mt798x/base
-src/gz openwrt_luci https://repo.miaoer.xyz/mt798x/luci
-src/gz openwrt_packages https://repo.miaoer.xyz/mt798x/packages
-src/gz openwrt_routing https://repo.miaoer.xyz/mt798x/routing
-src/gz openwrt_telephony https://repo.miaoer.xyz/mt798x/telephony
+src/gz openwrt_core https://vercel.catwrt.eu.orgtargets/mt798x/filogic/packages
+src/gz openwrt_base https://vercel.catwrt.eu.orgmt798x/base
+src/gz openwrt_luci https://vercel.catwrt.eu.orgmt798x/luci
+src/gz openwrt_packages https://vercel.catwrt.eu.orgmt798x/packages
+src/gz openwrt_routing https://vercel.catwrt.eu.orgmt798x/routing
+src/gz openwrt_telephony https://vercel.catwrt.eu.orgmt798x/telephony
 ```
 
 **aarch64_generic**
@@ -119,12 +119,12 @@ src/gz openwrt_telephony https://repo.miaoer.xyz/mt798x/telephony
 版本：v22.12
 
 ```mirrors
-src/gz openwrt_core https://repo.miaoer.xyz/targets/rockchip/armv8/packages
-src/gz openwrt_base https://repo.miaoer.xyz/aarch64_generic/base
-src/gz openwrt_luci https://repo.miaoer.xyz/aarch64_generic/luci
-src/gz openwrt_packages https://repo.miaoer.xyz/aarch64_generic/packages
-src/gz openwrt_routing https://repo.miaoer.xyz/aarch64_generic/routing
-src/gz openwrt_telephony https://repo.miaoer.xyz/aarch64_generic/telephony
+src/gz openwrt_core https://vercel.catwrt.eu.orgtargets/rockchip/armv8/packages
+src/gz openwrt_base https://vercel.catwrt.eu.orgaarch64_generic/base
+src/gz openwrt_luci https://vercel.catwrt.eu.orgaarch64_generic/luci
+src/gz openwrt_packages https://vercel.catwrt.eu.orgaarch64_generic/packages
+src/gz openwrt_routing https://vercel.catwrt.eu.orgaarch64_generic/routing
+src/gz openwrt_telephony https://vercel.catwrt.eu.orgaarch64_generic/telephony
 ```
 
 **mt7621**
@@ -134,12 +134,12 @@ src/gz openwrt_telephony https://repo.miaoer.xyz/aarch64_generic/telephony
 版本：v22.12
 
 ```mirrors
-src/gz openwrt_core https://repo.miaoer.xyz/targets/ramips/mt7621/packages
-src/gz openwrt_base https://repo.miaoer.xyz/mipsel_24kc/base
-src/gz openwrt_luci https://repo.miaoer.xyz/mipsel_24kc/luci
-src/gz openwrt_packages https://repo.miaoer.xyz/mipsel_24kc/packages
-src/gz openwrt_routing https://repo.miaoer.xyz/mipsel_24kc/routing
-src/gz openwrt_telephony https://repo.miaoer.xyz/mipsel_24kc/telephony
+src/gz openwrt_core https://vercel.catwrt.eu.orgtargets/ramips/mt7621/packages
+src/gz openwrt_base https://vercel.catwrt.eu.orgmipsel_24kc/base
+src/gz openwrt_luci https://vercel.catwrt.eu.orgmipsel_24kc/luci
+src/gz openwrt_packages https://vercel.catwrt.eu.orgmipsel_24kc/packages
+src/gz openwrt_routing https://vercel.catwrt.eu.orgmipsel_24kc/routing
+src/gz openwrt_telephony https://vercel.catwrt.eu.orgmipsel_24kc/telephony
 ```
 
 ### 换源
@@ -166,34 +166,40 @@ src/gz openwrt_telephony https://vercel.catwrt.eu.org/mt798x/telephony
 以 CatWrt.v22.2 x86_64 示例
 
 ```mirrors
-src/gz openwrt_core https://repo.miaoer.xyz/history/v22.2/targets/x86/64/packages
-src/gz openwrt_base https://repo.miaoer.xyz/history/v22.2/x86_64/base
-src/gz openwrt_luci https://repo.miaoer.xyz/history/v22.2/x86_64/luci
-src/gz openwrt_oui https://repo.miaoer.xyz/history/v22.2/x86_64/oui
-src/gz openwrt_packages https://repo.miaoer.xyz/history/v22.2/x86_64/packages
-src/gz openwrt_routing https://repo.miaoer.xyz/history/v22.2/x86_64/routing
-src/gz openwrt_telephony https://repo.miaoer.xyz/history/v22.2/x86_64/telephony
+src/gz openwrt_core https://vercel.catwrt.eu.orghistory/v22.2/targets/x86/64/packages
+src/gz openwrt_base https://vercel.catwrt.eu.orghistory/v22.2/x86_64/base
+src/gz openwrt_luci https://vercel.catwrt.eu.orghistory/v22.2/x86_64/luci
+src/gz openwrt_oui https://vercel.catwrt.eu.orghistory/v22.2/x86_64/oui
+src/gz openwrt_packages https://vercel.catwrt.eu.orghistory/v22.2/x86_64/packages
+src/gz openwrt_routing https://vercel.catwrt.eu.orghistory/v22.2/x86_64/routing
+src/gz openwrt_telephony https://vercel.catwrt.eu.orghistory/v22.2/x86_64/telephony
 ```
 
-#### 部署软件源
+## 如何部署 CatWrt
+
+[访问 CatWrt 发布博客](https://www.miaoer.xyz/posts/network/catwrt) | [Github Release](https://github.com/miaoermua/CatWrt/releases)
+
+CatWrt 支持大量机型，现已支持 Docker 部署，可以在 Linux 发行版机器上直接部署 CatWrt [1Panel 中跑 CatWrt 旁路网关 Docker 版 OpenWrt](https://www.miaoer.xyz/posts/network/1panel-deploy-catwrt-rootfs)
+
+## 部署软件源
 
 你可以将此仓库部署在你自己的服务器上搭建属于自己的软件源
 
 <br>
 
-- 使用 Docker 部署
-
-```bash
-$ docker run -d -p 1480:80 miaoer/catwrt-repo:latest
-```
-
-或拉取到本地使用 docker-compose 启动
-
+- 使用 docker-compose 部署，拉取到本地使用 启动
+- 
 ```bash
 $ wget https://fastly.jsdelivr.net/gh/miaoermua/CatWrt@main/docker-compose.yml
 
 $ docker compose up -d  
 # docker-compose up -d
+```
+
+使用命令直接部署
+
+```bash
+$ docker run -d -p 1480:80 miaoer/catwrt-repo:latest
 ```
 
 - 使用 Linux 面板部署

@@ -188,7 +188,7 @@ CatWrt 支持大量机型，现已支持 Docker 部署，可以在 Linux 发行�
 <br>
 
 - 使用 docker-compose 部署，拉取到本地使用 启动
-- 
+
 ```bash
 $ wget https://fastly.jsdelivr.net/gh/miaoermua/CatWrt@main/docker-compose.yml
 

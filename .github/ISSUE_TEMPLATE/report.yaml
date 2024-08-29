@@ -1,0 +1,86 @@
+name: 🐞 提交遇到的问题
+description: 提交使用 CatWrt 遇到的问题，需要帮助或者让我们改进
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        首先非常感谢你的反馈，帮助到了 CatWrt 社区排查问题，所有的努力都是值得的!
+
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: 提供 BUG 问题日志
+      description: |
+        请在 CatWrt 终端上执行 `cattools` & `/usr/bin/cattools` 工具箱，选择 Debug 以收集本次问题的日志. |
+        使用指南: <https://www.miaoer.xyz/posts/blog/cattools#Debug%20-%20%E6%8A%93%E5%8F%96%E6%97%A5%E5%BF%97>
+      placeholder: |
+        ## 采集到的日志信息可以节选生成的文件部分可疑问题的部分粘贴到此.
+      render: markdown
+
+  - type: textarea
+    id: prevalence
+    attributes:
+      label: 关于这个问题 BUG 描述
+      description: "你是怎么发现 BUG 的，你觉得是什么 插件/模块/系统组件 导致的问题，具体情况描述，以及持续时间，请点击此处的编辑器选择 📎 'Attach files' 上传你的日志"
+      placeholder: "How did you discover the bug? What plugin/module/system component caused the problem? A detailed description of the situation and how long it lasted"
+
+  - type: input
+    id: devices
+    attributes:
+      label: 你的设备
+      description: 填写你遇到问题的设备名字
+      placeholder: QEMU Standard PC AMD Ryzen 5 1600 Six-Core Processor
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: catwrt_version
+    attributes:
+      label: CatWrt_Version
+      description: 当前运行的 CatWrt 版本号
+      options:
+        - v24.9 (AMD64 & mt7621)
+        - v24.3 (mt798x)
+        - v24.1 (Rock64)
+        - v23.8 (AMD64 & mt798x)
+        - v23.5 (AMD64)
+        - v23.2 (AMD64 & mt798x & Rock64)
+        - v22.12 (AMD64 & mt798x & mt7621 & Rock64)
+        - Other BETA Version
+        
+
+  - type: dropdown
+    id: catwrt_arch
+    attributes:
+      label: CatWrt_Arch
+      description: 当前运行的 CatWrt 芯片架构平台
+      options:
+        - AMD64 (x86_64)
+        - Rock64 (Arm64)
+        - mt7621
+        - mt798x
+        - Other BETA Arch
+
+  - type: dropdown
+    id: bug_reproducible
+    attributes:
+      label: 能否复现 BUG
+      description: 请选择是否能复现
+      options:
+        - 能复现
+        - 不能复现
+        - 偶尔能复现
+
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: 最后确认
+      description: 同意后提交即可，我们看到会第一时间回复!
+      options:
+        - label: 我确认我的 BUG 来自 CatWrt，而不是其他 OpenWrt 固件
+          required: true
+        - label: 我将遵守 CatWrt 开源社区规范，不将设备用为商业目的
+          required: true
+        - label: 我已确认我的内容反馈内容的正确
+          required: true

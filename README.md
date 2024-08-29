@@ -146,17 +146,17 @@ src/gz openwrt_telephony https://vercel.catwrt.eu.org/mipsel_24kc/telephony
 
 #### 换可用源
 
-有时候 Cloudflare 并不是能访问的情况下，替换一下域名即可
+有时候其他镜像软件源无法访问时可以选择 Cloudflare 替换一下域名即可
 
-例如使用 vercel 提供的直连节点源
+例如在 vercel 的域名前面加入 cf 即可使用 CDN 源
 
 ```mirrors
-src/gz openwrt_core https://vercel.catwrt.eu.org/targets/mt798x/filogic/packages
-src/gz openwrt_base https://vercel.catwrt.eu.org/mt798x/base
-src/gz openwrt_luci https://vercel.catwrt.eu.org/mt798x/luci
-src/gz openwrt_packages https://vercel.catwrt.eu.org/mt798x/packages
-src/gz openwrt_routing https://vercel.catwrt.eu.org/mt798x/routing
-src/gz openwrt_telephony https://vercel.catwrt.eu.org/mt798x/telephony
+src/gz openwrt_core https://cfvercel.catwrt.eu.org/targets/mt798x/filogic/packages
+src/gz openwrt_base https://cfvercel.catwrt.eu.org/mt798x/base
+src/gz openwrt_luci https://cfvercel.catwrt.eu.org/mt798x/luci
+src/gz openwrt_packages https://cfvercel.catwrt.eu.org/mt798x/packages
+src/gz openwrt_routing https://cfvercel.catwrt.eu.org/mt798x/routing
+src/gz openwrt_telephony https://cfvercel.catwrt.eu.org/mt798x/telephony
 ```
 
 #### 使用历史（LTS）源
@@ -166,28 +166,26 @@ src/gz openwrt_telephony https://vercel.catwrt.eu.org/mt798x/telephony
 以 CatWrt.v22.2 x86_64 示例
 
 ```mirrors
-src/gz openwrt_core https://vercel.catwrt.eu.orghistory/v22.2/targets/x86/64/packages
-src/gz openwrt_base https://vercel.catwrt.eu.orghistory/v22.2/x86_64/base
-src/gz openwrt_luci https://vercel.catwrt.eu.orghistory/v22.2/x86_64/luci
-src/gz openwrt_oui https://vercel.catwrt.eu.orghistory/v22.2/x86_64/oui
-src/gz openwrt_packages https://vercel.catwrt.eu.orghistory/v22.2/x86_64/packages
-src/gz openwrt_routing https://vercel.catwrt.eu.orghistory/v22.2/x86_64/routing
-src/gz openwrt_telephony https://vercel.catwrt.eu.orghistory/v22.2/x86_64/telephony
+src/gz openwrt_core https://vercel.catwrt.eu.org/history/v22.2/targets/x86/64/packages
+src/gz openwrt_base https://vercel.catwrt.eu.org/history/v22.2/x86_64/base
+src/gz openwrt_luci https://vercel.catwrt.eu.org/history/v22.2/x86_64/luci
+src/gz openwrt_oui https://vercel.catwrt.eu.org/history/v22.2/x86_64/oui
+src/gz openwrt_packages https://vercel.catwrt.eu.org/history/v22.2/x86_64/packages
+src/gz openwrt_routing https://vercel.catwrt.eu.org/history/v22.2/x86_64/routing
+src/gz openwrt_telephony https://vercel.catwrt.eu.org/history/v22.2/x86_64/telephony
 ```
 
 ## 如何部署 CatWrt
 
-[访问 CatWrt 发布博客](https://www.miaoer.xyz/posts/network/catwrt) | [Github Release](https://github.com/miaoermua/CatWrt/releases)
-
-CatWrt 支持大量机型，现已支持 Docker 部署，可以在 Linux 发行版机器上直接部署 CatWrt [1Panel 中跑 CatWrt 旁路网关 Docker 版 OpenWrt](https://www.miaoer.xyz/posts/network/1panel-deploy-catwrt-rootfs)
+[访问 CatWrt 发布博客](https://www.miaoer.xyz/posts/network/catwrt) | [Github Release](https://github.com/miaoermua/CatWrt/releases) | [1Panel 中跑 CatWrt 旁路网关 Docker 版 OpenWrt](https://www.miaoer.xyz/posts/network/1panel-deploy-catwrt-rootfs)
 
 ## 部署软件源
 
-你可以将此仓库部署在你自己的服务器上搭建属于自己的软件源
+你可以将此仓库部署在你自己的服务器上搭建属于自己的软件源，需要在部署后按照上诉机型的软件源配置文件修改域名为你的容器地址
 
 <br>
 
-- 使用 docker-compose 部署，拉取到本地使用 启动
+- 使用 docker-compose 部署，将编排文件拉取到本地使用启动
 
 ```bash
 $ wget https://fastly.jsdelivr.net/gh/miaoermua/CatWrt@main/docker-compose.yml
@@ -196,7 +194,7 @@ $ docker compose up -d
 # docker-compose up -d
 ```
 
-使用命令直接部署
+或使用命令直接部署
 
 ```bash
 $ docker run -d -p 1480:80 miaoer/catwrt-repo:latest
@@ -204,9 +202,7 @@ $ docker run -d -p 1480:80 miaoer/catwrt-repo:latest
 
 - 使用 Linux 面板部署
 
-将此仓库通过 git clone 拉取到服务器网站目录里，修改面板网站目录到 CatWrt 中；
-
-部署完成后再按照架构平台或系列修改模板到本地部署中。
+将此仓库通过 `git clone https://github.com/miaoermua/CatWrt.git` 拉取到服务器网站目录里，修改面板网站目录到 CatWrt 中；
 
 - 使用 Windows 部署
 

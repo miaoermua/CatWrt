@@ -86,7 +86,7 @@ CatWrt 是基于开源的 [Lean's LEDE](https://github.com/coolsnowwolf/lede) �
 
 传统 x86 软路由 （仅支持 x86_64/AMD64/64 位；不支持 x86_32/386/32 位）
 
-版本：v23.8
+发行版本：[v24.9](https://www.miaoer.xyz/posts/network/CatWrt.v24.9.amd64)
 
 ```mirrors
 src/gz openwrt_core https://vercel.catwrt.eu.org/targets/x86/64/packages
@@ -101,7 +101,7 @@ src/gz openwrt_telephony https://vercel.catwrt.eu.org/x86_64/telephony
 
 支持 TP-link TL-XDR 4288/6086/6088，Xiaomi Redmi AX6000，Xiaomi WR30U，jcg q30，GL.inet mt3000，H3C nx30Pro
 
-版本：v23.8
+发行版本：[v23.8](https://www.miaoer.xyz/posts/network/catwrt.v23.8)
 
 ```mirrors
 src/gz openwrt_core https://vercel.catwrt.eu.org/targets/mt798x/filogic/packages
@@ -116,7 +116,7 @@ src/gz openwrt_telephony https://vercel.catwrt.eu.org/mt798x/telephony
 
 电犀牛 r66s，友善 r5s *（适配问题仅可用机型）*
 
-版本：v22.12
+发行版本：[v22.12](https://www.miaoer.xyz/posts/network/catwrt-v22.12-arm)
 
 ```mirrors
 src/gz openwrt_core https://vercel.catwrt.eu.org/targets/rockchip/armv8/packages
@@ -129,9 +129,9 @@ src/gz openwrt_telephony https://vercel.catwrt.eu.org/aarch64_generic/telephony
 
 **mt7621**
 
-小米/红米 AC2100，新路由 3（Newifi_d2）
+小米/红米 AC2100，新路由 3（Newifi_d2）等...
 
-版本：v22.12
+发行版本：[v24.9](https://www.miaoer.xyz/posts/network/CatWrt.v24.9.mt7621)
 
 ```mirrors
 src/gz openwrt_core https://vercel.catwrt.eu.org/targets/ramips/mt7621/packages

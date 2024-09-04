@@ -134,12 +134,12 @@ src/gz openwrt_telephony https://vercel.catwrt.eu.org/aarch64_generic/telephony
 发行版本：[v24.9](https://www.miaoer.xyz/posts/network/CatWrt.v24.9.mt7621)
 
 ```mirrors
-src/gz openwrt_core https://vercel.catwrt.eu.org/targets/ramips/mt7621/packages
-src/gz openwrt_base https://vercel.catwrt.eu.org/mipsel_24kc/base
-src/gz openwrt_luci https://vercel.catwrt.eu.org/mipsel_24kc/luci
-src/gz openwrt_packages https://vercel.catwrt.eu.org/mipsel_24kc/packages
-src/gz openwrt_routing https://vercel.catwrt.eu.org/mipsel_24kc/routing
-src/gz openwrt_telephony https://vercel.catwrt.eu.org/mipsel_24kc/telephony
+src/gz openwrt_core https://vercel.catwrt.eu.org/targets/mt7621/packages
+src/gz openwrt_base https://vercel.catwrt.eu.org/mt7621/base
+src/gz openwrt_luci https://vercel.catwrt.eu.org/mt7621/luci
+src/gz openwrt_packages https://vercel.catwrt.eu.org/mt7621/packages
+src/gz openwrt_routing https://vercel.catwrt.eu.org/mt7621/routing
+src/gz openwrt_telephony https://vercel.catwrt.eu.org/mt7621/telephony
 ```
 
 ### 换源

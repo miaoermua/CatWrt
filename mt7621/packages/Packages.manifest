@@ -3838,6 +3838,23 @@ Description:  This daemon is in charge of multiplexing connections over USB to a
  socket on the device. usbmuxd is not used for tethering data transfer, which
  uses a dedicated USB interface as a virtual network device.
 
+Package: usbutils
+Version: 014-1
+Depends: libc, libusb-1.0-0, libudev, librt, libpthread
+Source: feeds/packages/utils/usbutils
+SourceName: usbutils
+License: GPL-2.0-only
+LicenseFiles: COPYING
+Section: utils
+SourceDateEpoch: 1722755444
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: mipsel_24kc
+Installed-Size: 52158
+Filename: usbutils_014-1_mipsel_24kc.ipk
+Size: 52446
+SHA256sum: 9c589095df4a7575d1a40958d319af8af9440a8239edc5b1c84d7472e3996641
+Description:  USB devices listing utilities
+
 Package: uugamebooster
 Version: v6.3.10-1
 Depends: libc, kmod-tun

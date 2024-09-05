@@ -1860,7 +1860,7 @@ Description:  LuCI Support of PowerOff Router
 
 Package: luci-app-ssr-plus
 Version: 188-6
-Depends: libc, coreutils, coreutils-base64, dns2socks, dns2tcp, dnsmasq-full, ipset, kmod-ipt-nat, ip-full, iptables, iptables-mod-tproxy, lua, lua-neturl, libuci-lua, microsocks, tcping, resolveip, shadowsocksr-libev-ssr-check, uclient-fetch, libustream-openssl20201210, curl, xray-core, chinadns-ng, ipt2socks, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, simple-obfs, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir, trojan
+Depends: libc, coreutils, coreutils-base64, dns2socks, dns2tcp, dnsmasq-full, ipset, kmod-ipt-nat, ip-full, iptables, iptables-mod-tproxy, lua, lua-neturl, libuci-lua, microsocks, tcping, resolveip, shadowsocksr-libev-ssr-check, uclient-fetch, libustream-openssl20201210, chinadns-ng, ipt2socks, shadowsocks-libev-ss-local, shadowsocks-libev-ss-redir, simple-obfs, shadowsocksr-libev-ssr-local, shadowsocksr-libev-ssr-redir
 Source: package/helloworld/luci-app-ssr-plus
 SourceName: luci-app-ssr-plus
 Section: luci
@@ -1868,8 +1868,8 @@ SourceDateEpoch: 1724079544
 Architecture: all
 Installed-Size: 278116
 Filename: luci-app-ssr-plus_188-6_all.ipk
-Size: 278343
-SHA256sum: 63b946ae549c18aa318488cd2825e8185d829f351a1cc17d11cc19de31c9c9aa
+Size: 278330
+SHA256sum: 62762049eb53524d1bef64a0e5a286712927943ead52578d1517bdc2c2e5c10c
 Description:  SS/SSR/V2Ray/Trojan/NaiveProxy/Tuic/ShadowTLS/Hysteria/Socks5/Tun LuCI interface
 
 Package: luci-app-store
@@ -1987,6 +1987,23 @@ Size: 1840
 SHA256sum: aa9d1977583a8ab01681e69e618d678ec4fb52700f388407c203ec6735d65582
 Description:  Translation for luci-app-lucky - 简体中文 (Simplified Chinese)
 
+Package: luci-i18n-minieap-zh-cn
+Version: 2.1-1
+Depends: libc, luci-proto-minieap
+Source: package/luci-proto-minieap
+SourceName: luci-i18n-minieap-zh-cn
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+SourceDateEpoch: 1696869882
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Architecture: all
+Installed-Size: 1219
+Filename: luci-i18n-minieap-zh-cn_2.1-1_all.ipk
+Size: 2095
+SHA256sum: 8a58b27ba433c51b0afe38c49d8691453c4e3ade8150bf41f9872c166817b0f4
+Description:  Translation for luci-proto-minieap - 简体中文 (Simplified Chinese)
+
 Package: luci-i18n-oaf-zh-cn
 Version: 5.0.2-1
 Depends: libc, luci-app-oaf
@@ -2088,6 +2105,23 @@ Size: 79362
 SHA256sum: 9f44a0f70d703c273c964682620ccc18f311fc501ca1cc70c284b4b23a9590ab
 Description:  Xterm.js library
 
+Package: luci-proto-minieap
+Version: 2.1-1
+Depends: libc
+Source: package/luci-proto-minieap
+SourceName: luci-proto-minieap
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+SourceDateEpoch: 1696869882
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Architecture: all
+Installed-Size: 2360
+Filename: luci-proto-minieap_2.1-1_all.ipk
+Size: 3114
+SHA256sum: 821490b6aed93d91d176a76ef5f12513a4975602e2915e2b36c687ddd4722768
+Description:  LuCI support for MiniEAP
+
 Package: luci-theme-argon
 Version: 1.8.3-20230710
 Depends: libc, curl, jsonfilter
@@ -2169,6 +2203,23 @@ Size: 5643
 SHA256sum: 42025c7ea6fed554d2308dd1912e9c78f8cdee71e5e2a4fe5ab689a76c61a1b3
 Description:  A SOCKS5 service that you can run on your remote boxes to tunnel connections
  through them, if for some reason SSH doesn't cut it for you.
+
+Package: minieap-gdufs
+Version: 0.93-5
+Depends: libc
+Source: package/openwrt-minieap-gdufs
+SourceName: minieap-gdufs
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1696792817
+Maintainer: updateing
+Architecture: mipsel_24kc
+Installed-Size: 98567
+Filename: minieap-gdufs_0.93-5_mipsel_24kc.ipk
+Size: 98699
+SHA256sum: bbd9f169be47f697335824e680e533cf5add83d0f01e522063600df95b10168f
+Description:  Extensible 802.1x client with Ruijie v3 (v4) plugin
 
 Package: mount-utils
 Version: 2.38.1-1
@@ -3025,10 +3076,10 @@ Section: net
 SourceDateEpoch: 1724079544
 Maintainer: Xingwang Liao <kuoruan@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 14157699
+Installed-Size: 14186410
 Filename: v2ray-core_5.16.1-1_mipsel_24kc.ipk
-Size: 13902797
-SHA256sum: f637844e7ffeeb514e44e7adb8a74d732e5b4f100bc02b606cb4bfd1d0980451
+Size: 13930442
+SHA256sum: 28c02a82e26de05b576b070213c6d6741ca2a583b5e318f25e4820b83cfb87b1
 Description:  Project V is a set of network tools that help you to build your own computer network.
  It secures your network connections and thus protects your privacy.
  This package contains v2ray, geoip.dat and geosite.dat.

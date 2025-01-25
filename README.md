@@ -10,9 +10,9 @@
 
 客制化 OpenWrt 智能网关
 
-[安装应用](https://www.miaoer.xyz/posts/network/catwrt-install-application) | [CatWrt 博客](https://www.miaoer.xyz/posts/network/catwrt) | [❤️ 支持喵二](https://www.miaoer.xyz/sponsor)
+[安装应用](https://www.miaoer.net/posts/network/catwrt-install-application) | [CatWrt 博客](https://www.miaoer.net/posts/network/catwrt) | [❤️ 支持喵二](https://www.miaoer.net/sponsor)
 
-[![](https://img.shields.io/badge/blog-@CatWrt.svg)](https://www.miaoer.xyz/network/catwrt)
+[![](https://img.shields.io/badge/blog-@CatWrt.svg)](https://www.miaoer.net/network/catwrt)
 [![](https://img.shields.io/github/v/release/miaoermua/CatWrt)](https://github.com/miaoermua/CatWrt/releases)
 [![](https://img.shields.io/docker/stars/miaoer/catwrt-repo)](https://hub.docker.com/r/miaoer/catwrt-repo)
 [![](https://img.shields.io/docker/image-size/miaoer/catwrt-repo)](https://hub.docker.com/r/miaoer/catwrt-repo)
@@ -50,33 +50,36 @@
 
 ## 开源
 
-CatWrt 是基于开源的 [Lean's LEDE](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版；可以查看发布博客留下的链接和本仓库提交更新时描述的源码地址。
+CatWrt 是基于开源的 [Lean's LEDE](https://github.com/coolsnowwolf/lede) 仓库编译的 OpenWrt 发行版；本仓库是存储 CatWrt 的二进制软件包的仓库，如果你需要相关源码和修改项，可查看发布博客留下的链接和本仓库提交更新时描述的源码地址。
 
-项目是自由软件，编译过程完全可信，通过和社区交流自己动动手也能编译出完全一致的 CatWrt；固件中绝不含任何后门和可以监控或者劫持你的 TLS/SSL 闭源软件，CatWrt 对所有 LEDE 修改均已展示并开源，SSL 安全是互联网最后的壁垒，安全干净才是固件应该做到的。
+项目是自由软件，编译过程完全可信，通过社区动动手也能编译出完全一致的 CatWrt；固件中绝不含任何后门和可以监控或者劫持你的 TLS/SSL 闭源软件，CatWrt 对所有 LEDE 修改均已展示并开源，SSL 安全是互联网最后的壁垒，安全干净才是固件应该做到的。
 
-编译时可参考 [miaoermua/catwrt_base](https://github.com/miaoermua/catwrt_base) 遵守 [GPL2.0](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 协议，二次开发需要标注出处。
+源码编译参考 [miaoermua/catwrt_base](https://github.com/miaoermua/catwrt_base) 遵守 [GPL2.0](https://github.com/miaoermua/CatWrt/blob/main/COPYING) 协议，二次开发需要标注出处，二次开发导致的问题本人概不负责。
 
-![示例图](https://fastly.jsdelivr.net/gh/miaoermua/CatCDN@main/blog/23-02-28/opensource.jpg)
+![Open-source-examples](https://fastly.jsdelivr.net/gh/miaoermua/static@main/blog/23-02-28/opensource.jpg)
 
 二进制包文件对应仓库中编译结果：
 
 ```
-/home/lede/bin/packages = miaoermua/CatWrt/
+～/lede/bin/packages = miaoermua/CatWrt/
 
-/home/lede/bin/targets = miaoermua/CatWrt/targets
+～/lede/bin/targets = miaoermua/CatWrt/targets
+
+# 对应的目录是基于 catwrt_base 的默认目录，即 /home/lede & /home/catwrt_base
 ```
 
 ***
 
 ## 软件源
 
-**😍 使用 [Cattools](https://www.miaoer.xyz/posts/blog/cattools) 可快速配置软件源，无需下列繁琐配置。**
+**😍 使用 [Cattools](https://www.miaoer.net/posts/blog/cattools) 可快速配置软件源，无需下列繁琐配置。**
 
 假如使用前已经刷新列表 `opkg update` 请先在终端 `rm -f /var/lock/opkg.lock` 清理掉默认腾讯源的索引文件，再将源索引填入 CatWrt 发行版软件源中再刷新。
 
 > 如果不可用无法连接，可以在底部寻找分流源的使用方法示例，当然你也可以在使用之前就测试每一个可用的源。
 
 - 阿里云: https://repo.miaoer.xyz
+- Github: https://github.catwrt.eu.org
 - Vercel: https://vercel.catwrt.eu.org
 - Netlify: https://netlify.catwrt.eu.org
 - Vercel (Cloudflare Proxy): https://cfvercel.catwrt.eu.org
@@ -86,7 +89,7 @@ CatWrt 是基于开源的 [Lean's LEDE](https://github.com/coolsnowwolf/lede) �
 
 传统 x86 软路由 （仅支持 x86_64/AMD64/64 位；不支持 x86_32/386/32 位）
 
-发行版本：[v24.9](https://www.miaoer.xyz/posts/network/CatWrt.v24.9.amd64)
+发行版本：[v24.9](https://www.miaoer.net/posts/network/CatWrt.v24.9.amd64)
 
 ```mirrors
 src/gz openwrt_core https://vercel.catwrt.eu.org/targets/x86/64/packages
@@ -101,7 +104,7 @@ src/gz openwrt_telephony https://vercel.catwrt.eu.org/x86_64/telephony
 
 支持 TP-link TL-XDR 4288/6086/6088，Xiaomi Redmi AX6000，Xiaomi WR30U，jcg q30，GL.inet mt3000，H3C nx30Pro
 
-发行版本：[v23.8](https://www.miaoer.xyz/posts/network/catwrt.v23.8)
+发行版本：[v23.8](https://www.miaoer.net/posts/network/catwrt.v23.8)
 
 ```mirrors
 src/gz openwrt_core https://vercel.catwrt.eu.org/targets/mt798x/filogic/packages
@@ -116,7 +119,7 @@ src/gz openwrt_telephony https://vercel.catwrt.eu.org/mt798x/telephony
 
 电犀牛 r66s，友善 r5s *（适配问题仅可用机型）*
 
-发行版本：[v22.12](https://www.miaoer.xyz/posts/network/catwrt-v22.12-arm)
+发行版本：[v22.12](https://www.miaoer.net/posts/network/catwrt-v22.12-arm)
 
 ```mirrors
 src/gz openwrt_core https://vercel.catwrt.eu.org/targets/rockchip/armv8/packages
@@ -131,7 +134,7 @@ src/gz openwrt_telephony https://vercel.catwrt.eu.org/aarch64_generic/telephony
 
 小米/红米 AC2100，新路由 3（Newifi_d2）等...
 
-发行版本：[v24.9](https://www.miaoer.xyz/posts/network/CatWrt.v24.9.mt7621)
+发行版本：[v24.9](https://www.miaoer.net/posts/network/CatWrt.v24.9.mt7621)
 
 ```mirrors
 src/gz openwrt_core https://vercel.catwrt.eu.org/targets/mt7621/packages
@@ -177,11 +180,13 @@ src/gz openwrt_telephony https://vercel.catwrt.eu.org/history/v22.2/x86_64/telep
 
 ## 如何部署 CatWrt
 
-[访问 CatWrt 发布博客](https://www.miaoer.xyz/posts/network/catwrt) | [Github Release](https://github.com/miaoermua/CatWrt/releases) | [1Panel 中跑 CatWrt 旁路网关 Docker 版 OpenWrt](https://www.miaoer.xyz/posts/network/1panel-deploy-catwrt-rootfs)
+[访问 CatWrt 发布博客](https://www.miaoer.net/posts/network/catwrt) | [Github Release](https://github.com/miaoermua/CatWrt/releases) | [1Panel 中跑 CatWrt 旁路网关 Docker 版 OpenWrt](https://www.miaoer.net/posts/network/1panel-deploy-catwrt-rootfs)
+
+更多教程实用小技巧，请关注博客: [喵二の小博客](https://www.miaoer.net)
 
 ## 部署软件源
 
-你可以将此仓库部署在你自己的服务器上搭建属于自己的软件源，需要在部署后按照上诉机型的软件源配置文件修改域名为你的容器地址
+你可以将此仓库部署在你自己的服务器上搭建属于自己的软件源，这样可以在内外网拉取软件包时获得一个不错的速度，需要在部署后按照上诉机型的软件源修改为你的地址并对应路径即可食用。
 
 <br>
 
@@ -206,10 +211,10 @@ $ docker run -d -p 1480:80 miaoer/catwrt-repo:latest
 
 - 使用 Windows 部署
 
-[无法使用 CatWrt 在线源，那就本地部署一个！](https://www.miaoer.xyz/posts/blog/windows-deploy-catwrt-repo)
+[无法使用 CatWrt 在线源，那就本地部署一个！](https://www.miaoer.net/posts/blog/windows-deploy-catwrt-repo)
 
 ***
 
-欢迎预览 [博客](https://www.miaoer.xyz) 多多评论交流，欢迎使用后留下你的评论和 Star！
+欢迎预览 [博客](https://www.miaoer.net) 多多评论交流，欢迎使用后留下你的评论和 Star！
 
 i18n: [EN](https://github.com/miaoermua/CatWrt/blob/main/README_EN.md)
